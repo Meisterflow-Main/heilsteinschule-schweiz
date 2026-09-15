@@ -13,7 +13,7 @@ export default function Footer() {
   return (
     <footer className="relative mt-24 bg-amethyst text-white">
       <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6">
-        <div className="grid gap-12 lg:grid-cols-4">
+        <div className="grid gap-12 lg:grid-cols-5">
           <div className="lg:col-span-1">
             <img
               src="https://heilsteinschule.swiss/media/LogoName.png"
@@ -95,6 +95,69 @@ export default function Footer() {
                 >
                   Online Shop
                 </a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="font-heading text-sm font-semibold uppercase tracking-wider text-citrine-light">
+              Regionen
+            </h4>
+            <ul className="mt-5 space-y-3 text-sm">
+              <li>
+                <Link to="/regionen" className="text-white/70 transition hover:text-citrine-light">
+                  Alle Regionen
+                </Link>
+              </li>
+              <li>
+                <Link to="/regionen/asp" className="text-white/70 transition hover:text-citrine-light">
+                  Heilsteinberater Asp
+                </Link>
+              </li>
+              <li>
+                <Link to="/regionen/wallbach" className="text-white/70 transition hover:text-citrine-light">
+                  Heilsteinberater Wallbach
+                </Link>
+              </li>
+              <li>
+                <Link to="/regionen/bern" className="text-white/70 transition hover:text-citrine-light">
+                  Heilsteinberater Bern
+                </Link>
+              </li>
+              <li>
+                <Link to="/regionen/uster" className="text-white/70 transition hover:text-citrine-light">
+                  Heilsteinberater Uster
+                </Link>
+              </li>
+              <li>
+                <Link to="/regionen/zuerich" className="text-white/70 transition hover:text-citrine-light">
+                  Heilsteinberater Zürich
+                </Link>
+              </li>
+              <li>
+                <Link to="/regionen/basel" className="text-white/70 transition hover:text-citrine-light">
+                  Heilsteinberater Basel
+                </Link>
+              </li>
+              <li>
+                <Link to="/regionen/aarau" className="text-white/70 transition hover:text-citrine-light">
+                  Heilsteinberater Aarau
+                </Link>
+              </li>
+              <li>
+                <Link to="/regionen/baden" className="text-white/70 transition hover:text-citrine-light">
+                  Heilsteinberater Baden
+                </Link>
+              </li>
+              <li>
+                <Link to="/regionen/brugg" className="text-white/70 transition hover:text-citrine-light">
+                  Heilsteinberater Brugg
+                </Link>
+              </li>
+              <li>
+                <Link to="/regionen/olten" className="text-white/70 transition hover:text-citrine-light">
+                  Heilsteinberater Olten
+                </Link>
               </li>
             </ul>
           </div>

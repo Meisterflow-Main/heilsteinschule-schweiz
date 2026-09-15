@@ -18,6 +18,8 @@ import AuftragBewerten from '@/pages/AuftragBewerten';
 import Impressum from '@/pages/Impressum';
 import Datenschutz from '@/pages/Datenschutz';
 import AGB from '@/pages/AGB';
+import RegionPage from '@/pages/RegionPage';
+import RegionenIndex from '@/pages/RegionenIndex';
 // Add page imports here
 
 const AuthenticatedApp = () => {
@@ -58,6 +60,8 @@ const AuthenticatedApp = () => {
         <Route path="/impressum" element={<Impressum />} />
         <Route path="/datenschutz" element={<Datenschutz />} />
         <Route path="/agb" element={<AGB />} />
+        <Route path="/regionen" element={<RegionenIndex />} />
+        <Route path="/regionen/:slug" element={<RegionPage />} />
       </Route>
       <Route path="*" element={<PageNotFound />} />
     </Routes>
