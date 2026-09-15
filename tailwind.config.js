@@ -44,6 +44,18 @@ module.exports = {
   			border: 'hsl(var(--border))',
   			input: 'hsl(var(--input))',
   			ring: 'hsl(var(--ring))',
+  			amethyst: {
+  				DEFAULT: '#2B1B4D',
+  				deep: '#1F1438',
+  				soft: '#4A3670',
+  				mist: '#8E7BB5'
+  			},
+  			citrine: {
+  				DEFAULT: '#C19A3B',
+  				light: '#DDB55C',
+  				deep: '#9A7826'
+  			},
+  			quartz: '#FAF6F0',
   			chart: {
   				'1': 'hsl(var(--chart-1))',
   				'2': 'hsl(var(--chart-2))',
@@ -70,25 +82,31 @@ module.exports = {
   		},
   		keyframes: {
   			'accordion-down': {
-  				from: {
-  					height: '0'
-  				},
-  				to: {
-  					height: 'var(--radix-accordion-content-height)'
-  				}
+  				from: { height: '0' },
+  				to: { height: 'var(--radix-accordion-content-height)' }
   			},
   			'accordion-up': {
-  				from: {
-  					height: 'var(--radix-accordion-content-height)'
-  				},
-  				to: {
-  					height: '0'
-  				}
+  				from: { height: 'var(--radix-accordion-content-height)' },
+  				to: { height: '0' }
+  			},
+  			'fade-up': {
+  				from: { opacity: '0', transform: 'translateY(16px)' },
+  				to: { opacity: '1', transform: 'translateY(0)' }
+  			},
+  			'float': {
+  				'0%, 100%': { transform: 'translateY(0)' },
+  				'50%': { transform: 'translateY(-10px)' }
+  			},
+  			'shimmer': {
+  				'0%': { backgroundPosition: '-200% 0' },
+  				'100%': { backgroundPosition: '200% 0' }
   			}
   		},
   		animation: {
   			'accordion-down': 'accordion-down 0.2s ease-out',
-  			'accordion-up': 'accordion-up 0.2s ease-out'
+  			'accordion-up': 'accordion-up 0.2s ease-out',
+  			'fade-up': 'fade-up 0.7s ease-out both',
+  			'float': 'float 6s ease-in-out infinite'
   		}
   	}
   },
