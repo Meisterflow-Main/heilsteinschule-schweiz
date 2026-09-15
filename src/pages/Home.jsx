@@ -5,6 +5,7 @@ import { ArrowRight, Heart, Hand, Brain, Footprints, Sparkles, Play } from "luci
 import Reveal from "@/components/site/Reveal";
 import SectionHeading from "@/components/site/SectionHeading";
 import TeaserGrid from "@/components/site/TeaserGrid";
+import Reels from "@/components/site/Reels";
 
 const PRINCIPLES = [
   { icon: Brain, label: "Kopf", text: "Analytisches Wissen, welches erklärt, warum und wie die Heilsteine wirken." },
@@ -26,11 +27,17 @@ export default function Home() {
       {/* HERO */}
       <section className="relative overflow-hidden">
         <div className="absolute inset-0">
-          <img
-            src="https://heilsteinschule.swiss/media/wunderblock/SchuleWeb72x.jpg"
-            alt="Heilsteinschule Schweiz"
+          <video
+            autoPlay
+            muted
+            loop
+            playsInline
+            preload="metadata"
+            poster="https://heilsteinschule.swiss/media/wunderblock/SchuleWeb72x.jpg"
             className="h-full w-full object-cover"
-          />
+          >
+            <source src="https://media.base44.com/videos/public/6aa92ec5274311c12da18ee6/5f59658c9_Hero_Heilsteine.mp4" type="video/mp4" />
+          </video>
           <div className="absolute inset-0 bg-gradient-to-b from-amethyst-deep/85 via-amethyst/70 to-amethyst-deep/90" />
           <div className="absolute inset-0 bg-gradient-to-r from-amethyst-deep/60 to-transparent" />
         </div>
@@ -89,6 +96,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* INSTAGRAM REELS */}
+      <Reels />
 
       {/* LEITBILD */}
       <section className="relative mx-auto max-w-7xl px-4 py-24 sm:px-6">
