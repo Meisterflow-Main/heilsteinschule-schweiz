@@ -6,6 +6,18 @@ import PageNotFound from './lib/PageNotFound';
 import { AuthProvider, useAuth } from '@/lib/AuthContext';
 import UserNotRegisteredError from '@/components/UserNotRegisteredError';
 import ScrollToTop from './components/ScrollToTop';
+import Layout from '@/components/site/Layout';
+import Home from '@/pages/Home';
+import Ausbildung from '@/pages/Ausbildung';
+import News from '@/pages/News';
+import LadenPraxis from '@/pages/LadenPraxis';
+import Lehrfilme from '@/pages/Lehrfilme';
+import Kontakt from '@/pages/Kontakt';
+import InfoTag from '@/pages/InfoTag';
+import AuftragBewerten from '@/pages/AuftragBewerten';
+import Impressum from '@/pages/Impressum';
+import Datenschutz from '@/pages/Datenschutz';
+import AGB from '@/pages/AGB';
 // Add page imports here
 
 const AuthenticatedApp = () => {
@@ -34,7 +46,19 @@ const AuthenticatedApp = () => {
   // Render the main app
   return (
     <Routes>
-      {/* Add your page Route elements here */}
+      <Route element={<Layout />}>
+        <Route path="/" element={<Home />} />
+        <Route path="/ausbildung" element={<Ausbildung />} />
+        <Route path="/news" element={<News />} />
+        <Route path="/laden-praxis" element={<LadenPraxis />} />
+        <Route path="/lehrfilme" element={<Lehrfilme />} />
+        <Route path="/kontakt" element={<Kontakt />} />
+        <Route path="/info-tag" element={<InfoTag />} />
+        <Route path="/auftrag-bewerten" element={<AuftragBewerten />} />
+        <Route path="/impressum" element={<Impressum />} />
+        <Route path="/datenschutz" element={<Datenschutz />} />
+        <Route path="/agb" element={<AGB />} />
+      </Route>
       <Route path="*" element={<PageNotFound />} />
     </Routes>
   );
