@@ -5,19 +5,19 @@ import SectionHeading from "@/components/site/SectionHeading";
 import ContactForm from "@/components/site/ContactForm";
 
 const KATEGORIEN = [
-  { name: "Armbänder", img: "https://heilsteinschule.swiss/media/Laden/armbaender/fg-thumbs/Armbaender006.jpg" },
-  { name: "Heilsteine Auswahl", img: "https://heilsteinschule.swiss/media/Laden/heilsteine/fg-thumbs/Achat.jpg" },
+  { name: "Armbänder", img: "https://heilsteinschule.swiss/media/Laden/armbaender/Armbaender006.jpg" },
+  { name: "Heilsteine Auswahl", img: "https://heilsteinschule.swiss/media/Laden/heilsteine/Achat.jpg" },
 ];
 
 const GALERIE = [
-  { img: "https://heilsteinschule.swiss/media/Laden/fg-thumbs/20240226_100437.jpg", alt: "Heilsteinshop Asp" },
-  { img: "https://heilsteinschule.swiss/media/Laden/fg-thumbs/20240226_100059.jpg", alt: "Heilsteinshop Asp - Amethyst" },
-  { img: "https://heilsteinschule.swiss/media/Laden/fg-thumbs/20240226_100121.jpg", alt: "Heilsteinshop Asp - Kristalle" },
-  { img: "https://heilsteinschule.swiss/media/Laden/fg-thumbs/20240226_100013.jpg", alt: "Heilsteinshop Asp - Pyrit" },
-  { img: "https://heilsteinschule.swiss/media/Laden/fg-thumbs/20240226_100246.jpg", alt: "Heilsteinshop Asp - Halit Salz" },
-  { img: "https://heilsteinschule.swiss/media/Laden/fg-thumbs/20240226_100049.jpg", alt: "Heilsteinshop Asp - Kristalle Schweiz" },
-  { img: "https://heilsteinschule.swiss/media/Laden/fg-thumbs/20240226_101052.jpg", alt: "Anhänger - Heilsteinshop Asp" },
-  { img: "https://heilsteinschule.swiss/media/Laden/fg-thumbs/20240226_101124.jpg", alt: "Kunstwerke - Handarbeiten" },
+  { img: "https://heilsteinschule.swiss/media/Laden/20240226_100437.jpg", alt: "Heilsteinshop Asp" },
+  { img: "https://heilsteinschule.swiss/media/Laden/20240226_100059.jpg", alt: "Heilsteinshop Asp - Amethyst" },
+  { img: "https://heilsteinschule.swiss/media/Laden/20240226_100121.jpg", alt: "Heilsteinshop Asp - Kristalle" },
+  { img: "https://heilsteinschule.swiss/media/Laden/20240226_100013.jpg", alt: "Heilsteinshop Asp - Pyrit" },
+  { img: "https://heilsteinschule.swiss/media/Laden/20240226_100246.jpg", alt: "Heilsteinshop Asp - Halit Salz" },
+  { img: "https://heilsteinschule.swiss/media/Laden/20240226_100049.jpg", alt: "Heilsteinshop Asp - Kristalle Schweiz" },
+  { img: "https://heilsteinschule.swiss/media/Laden/20240226_101052.jpg", alt: "Anhänger - Heilsteinshop Asp" },
+  { img: "https://heilsteinschule.swiss/media/Laden/20240226_101124.jpg", alt: "Kunstwerke - Handarbeiten" },
 ];
 
 const OEFFNUNGSZEITEN = [
