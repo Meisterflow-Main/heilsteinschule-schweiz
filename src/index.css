@@ -24,6 +24,14 @@
     --input: 40 20% 88%;
     --ring: 43 53% 45%;
     --radius: 0.75rem;
+    --amethyst: 259 48% 20%;
+    --amethyst-deep: 258 47% 15%;
+    --amethyst-soft: 261 35% 33%;
+    --amethyst-mist: 260 28% 60%;
+    --citrine: 43 53% 49%;
+    --citrine-light: 41 66% 61%;
+    --citrine-deep: 42 60% 38%;
+    --quartz: 36 50% 96%;
     --font-heading: 'Poppins', ui-sans-serif, system-ui, sans-serif;
     --font-body: 'Inter', ui-sans-serif, system-ui, sans-serif;
     --font-display: 'Poppins', ui-sans-serif, system-ui, sans-serif;

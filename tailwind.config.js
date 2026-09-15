@@ -45,17 +45,17 @@ module.exports = {
   			input: 'hsl(var(--input))',
   			ring: 'hsl(var(--ring))',
   			amethyst: {
-  				DEFAULT: '#2B1B4D',
-  				deep: '#1F1438',
-  				soft: '#4A3670',
-  				mist: '#8E7BB5'
+  				DEFAULT: 'hsl(var(--amethyst))',
+  				deep: 'hsl(var(--amethyst-deep))',
+  				soft: 'hsl(var(--amethyst-soft))',
+  				mist: 'hsl(var(--amethyst-mist))'
   			},
   			citrine: {
-  				DEFAULT: '#C19A3B',
-  				light: '#DDB55C',
-  				deep: '#9A7826'
+  				DEFAULT: 'hsl(var(--citrine))',
+  				light: 'hsl(var(--citrine-light))',
+  				deep: 'hsl(var(--citrine-deep))'
   			},
-  			quartz: '#FAF6F0',
+  			quartz: 'hsl(var(--quartz))',
   			chart: {
   				'1': 'hsl(var(--chart-1))',
   				'2': 'hsl(var(--chart-2))',
