@@ -18,7 +18,7 @@ export default function Footer() {
             <img
               src="https://heilsteinschule.swiss/media/LogoName.png"
               alt="Heilsteinschule Schweiz"
-              className="h-12 w-auto brightness-0 invert"
+              className="h-14 w-auto rounded-xl bg-white/95 object-contain p-1.5"
             />
             <p className="mt-5 max-w-xs text-sm leading-relaxed text-white/70">
               Heilsteinkraft erfahren, spüren, lernen. Mit Kopf, Hand, Fuss und Herz zum
