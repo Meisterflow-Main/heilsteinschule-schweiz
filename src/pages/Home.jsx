@@ -6,6 +6,7 @@ import Reveal from "@/components/site/Reveal";
 import SectionHeading from "@/components/site/SectionHeading";
 import TeaserGrid from "@/components/site/TeaserGrid";
 import Reels from "@/components/site/Reels";
+import HistoryTimeline from "@/components/site/HistoryTimeline";
 
 const PRINCIPLES = [
   { icon: Brain, label: "Kopf", text: "Analytisches Wissen, welches erklärt, warum und wie die Heilsteine wirken." },
@@ -154,6 +155,9 @@ export default function Home() {
           </Reveal>
         </div>
       </section>
+
+      {/* HISTORIE TIMELINE */}
+      <HistoryTimeline />
 
       {/* TEASER GRID */}
       <div className="bg-quartz/60">
