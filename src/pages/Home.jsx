@@ -10,10 +10,10 @@ import HistoryTimeline from "@/components/site/HistoryTimeline";
 import StoneCollage from "@/components/site/StoneCollage";
 
 const PRINCIPLES = [
-  { icon: Brain, label: "Kopf", text: "Analytisches Wissen, welches erklärt, warum und wie die Heilsteine wirken." },
-  { icon: Hand, label: "Hand", text: "Die Kraft der Steine erleben und spüren, Methoden für Körper und Psyche erlernen." },
-  { icon: Footprints, label: "Fuss", text: "Die Steine unterwegs in den Alpen erfahren und die Mineralien unmittelbar erleben." },
-  { icon: Heart, label: "Herz", text: "Neugierde und Faszination als Startkapital — Liebe und Leidenschaft entstehen." },
+  { icon: Brain, label: "Kopf", text: "Analytisches Wissen, welches erklärt, warum und wie die Heilsteine wirken.", img: "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/85e503e9c_WhatsAppImage2026-09-22at0205382.jpeg" },
+  { icon: Hand, label: "Hand", text: "Die Kraft der Steine erleben und spüren, Methoden für Körper und Psyche erlernen.", img: "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/e02f39734_WhatsAppImage2026-09-22at0205362.jpeg" },
+  { icon: Footprints, label: "Fuss", text: "Die Steine unterwegs in den Alpen erfahren und die Mineralien unmittelbar erleben.", img: "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/718ef1e15_WhatsAppImage2026-09-22at02053610.jpeg" },
+  { icon: Heart, label: "Herz", text: "Neugierde und Faszination als Startkapital — Liebe und Leidenschaft entstehen.", img: "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/6aae553a3_WhatsAppImage2026-09-22at0205368.jpeg" },
 ];
 
 const TEAM = [
@@ -77,6 +77,21 @@ export default function Home() {
               >
                 <Play className="h-4 w-4" /> Kostenloser Info-Tag
               </Link>
+            </div>
+          </motion.div>
+          {/* Unterricht in der Natur */}
+          <motion.div
+            initial={{ opacity: 0, x: 40 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1, delay: 0.4, ease: [0.22, 1, 0.36, 1] }}
+            className="pointer-events-none absolute right-6 top-1/2 hidden -translate-y-1/2 lg:block"
+          >
+            <div className="w-48 overflow-hidden rounded-3xl border border-white/20 shadow-lift lg:w-56 xl:w-64">
+              <img
+                src="https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/aa0ebc8ed_WhatsAppImage2026-09-22at0205384.jpeg"
+                alt="Unterricht in der Natur"
+                className="aspect-[4/5] w-full object-cover"
+              />
             </div>
           </motion.div>
         </div>
@@ -153,6 +168,24 @@ export default function Home() {
                 </div>
               ))}
             </div>
+            {/* Kopf · Hand · Fuss · Herz — photo strip */}
+            <div className="mt-6 grid grid-cols-2 gap-4 sm:grid-cols-4">
+              {PRINCIPLES.map((p) => (
+                <div key={`photo-${p.label}`} className="group relative overflow-hidden rounded-2xl border border-border shadow-soft">
+                  <img
+                    src={p.img}
+                    alt={p.label}
+                    loading="lazy"
+                    className="aspect-[4/5] w-full object-cover transition duration-700 group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-amethyst-deep/80 via-transparent to-transparent" />
+                  <div className="absolute bottom-3 left-3 flex items-center gap-1.5">
+                    <p.icon className="h-4 w-4 text-citrine-light" />
+                    <span className="font-heading text-sm font-semibold text-white">{p.label}</span>
+                  </div>
+                </div>
+              ))}
+            </div>
           </Reveal>
         </div>
       </section>
@@ -201,6 +234,39 @@ export default function Home() {
             </video>
           </div>
         </Reveal>
+        {/* Lernumgebung — school in action */}
+        <div className="mt-10 grid gap-6 md:grid-cols-3">
+          <Reveal>
+            <div className="group overflow-hidden rounded-2xl border border-border shadow-soft">
+              <img
+                src="https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/4159114ae_WhatsAppImage2026-09-22at0205383.jpeg"
+                alt="Unterricht im Freien"
+                loading="lazy"
+                className="aspect-[4/3] w-full object-cover transition duration-700 group-hover:scale-105"
+              />
+            </div>
+          </Reveal>
+          <Reveal delay={0.1}>
+            <div className="group overflow-hidden rounded-2xl border border-border shadow-soft">
+              <img
+                src="https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/b26a362cd_WhatsAppImage2026-09-22at0205369.jpeg"
+                alt="Heilsteine in der Praxis"
+                loading="lazy"
+                className="aspect-[4/3] w-full object-cover transition duration-700 group-hover:scale-105"
+              />
+            </div>
+          </Reveal>
+          <Reveal delay={0.2}>
+            <div className="group overflow-hidden rounded-2xl border border-border shadow-soft">
+              <img
+                src="https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/e258510a7_WhatsAppImage2026-09-22at0205379.jpeg"
+                alt="Mineralien im Detail"
+                loading="lazy"
+                className="aspect-[4/3] w-full object-cover transition duration-700 group-hover:scale-105"
+              />
+            </div>
+          </Reveal>
+        </div>
       </section>
 
       {/* TEAM PREVIEW */}
@@ -212,6 +278,17 @@ export default function Home() {
               title="Menschen mit Herz für Heilsteine"
               subtitle="Dozentinnen und Dozenten, die ihre Leidenschaft für die Steinheilkunde weitergeben."
             />
+          </Reveal>
+          {/* Community — shared experiences in nature */}
+          <Reveal>
+            <div className="mb-10 overflow-hidden rounded-3xl border border-border shadow-soft">
+              <img
+                src="https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/718ef1e15_WhatsAppImage2026-09-22at02053610.jpeg"
+                alt="Gemeinschaft in der Natur"
+                loading="lazy"
+                className="aspect-[16/9] w-full object-cover"
+              />
+            </div>
           </Reveal>
           <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {TEAM.map((m, i) => (
