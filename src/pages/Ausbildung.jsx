@@ -42,7 +42,7 @@ const STANDORTE = [
 
 const TEAM = [
   { name: "Bruno Vogler Pfeiffer", role: "Schul-Gründer und Schulleiter", img: "https://heilsteinschule.swiss/media/topics-pictures/thumbs/bruno_vogler_pfeiffer.png" },
-  { name: "Ruth Rios", role: "Hauptdozentin der Heilsteinschule", img: "https://heilsteinschule.swiss/media/topics-pictures/thumbs/ruth-rios.jpg" },
+  { name: "Ruth Rios", role: "Hauptdozentin der Heilsteinschule", img: "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/460e2670f_ChatGPTImageSep21202602_29_12PM.png" },
   { name: "Pascal Bossard", role: "Kreativ verantwortlich, Leiter Alpenseminar", img: "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/057e4eb82_ChatGPTImageSep21202602_32_05PM.png" },
   { name: "Sarah Ziegenhagen", role: "Dozentin Uster ZH", img: "https://heilsteinschule.swiss/media/topics-pictures/thumbs/sarah_ziegenhagen_team_bild.jpg" },
   { name: "Joe Schnarwiler", role: "Dozent", img: "https://heilsteinschule.swiss/media/topics-pictures/thumbs/joe_schnarwiler.jpg" },
