@@ -29,6 +29,7 @@ const STANDORTE = [
     tage: "Wochenende, 09:00–17:00 Uhr, 1× monatlich",
     leitung: "Ruth Rios",
     hinweis: "Im selben Gebäude wie SVNH · Neue Klasse 2027 · 5 Min. ab HB",
+    weg: "ÖV: Vom Hauptbahnhof Bern ca. 6 Min. zu Fuss — Zug in Richtung Welle 7 verlassen, Richtung Süden zum Hirschengraben, weiter auf die Monbijoustrasse, dann rechts in die Kapellenstrasse. Hausnummer 5 links. Auto: Nur blaue Zone (1 Std.) und City West Parking. Keine eigenen Parkplätze.",
   },
   {
     name: "Schule Uster ZH",
@@ -185,6 +186,11 @@ export default function Ausbildung() {
                       <GraduationCap className="mt-0.5 h-4 w-4 shrink-0 text-citrine-deep" /> Leitung: {s.leitung}
                     </div>
                     <p className="mt-3 text-xs text-muted-foreground">{s.hinweis}</p>
+                    {s.weg && (
+                      <div className="mt-3 rounded-lg bg-quartz p-3 text-xs leading-relaxed text-muted-foreground">
+                        <strong className="text-amethyst">Wegbeschreibung:</strong> {s.weg}
+                      </div>
+                    )}
                   </div>
                 </div>
               </Reveal>
@@ -233,10 +239,10 @@ export default function Ausbildung() {
             <div className="mt-10 grid gap-4 sm:grid-cols-2">
               <div className="rounded-2xl border border-border bg-white p-6 shadow-soft">
                 <CalendarDays className="h-7 w-7 text-citrine-deep" />
-                <h3 className="mt-4 font-heading text-lg font-semibold text-amethyst">Schulkalender Bern 1</h3>
-                <p className="mt-1 text-sm text-muted-foreground">Start 21.05.2026 · Donnerstags</p>
+                <h3 className="mt-4 font-heading text-lg font-semibold text-amethyst">Schulkalender Bern 2</h3>
+                <p className="mt-1 text-sm text-muted-foreground">Start 23.01.2027 · Wochenenden</p>
                 <a
-                  href="https://heilsteinschule.swiss/ausbildung/schultermine/"
+                  href="https://heilsteinschule.swiss/ausbildung/schultermine/?dl=3"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="mt-4 inline-flex items-center gap-1 text-sm font-medium text-citrine-deep hover:underline"
@@ -247,9 +253,9 @@ export default function Ausbildung() {
               <div className="rounded-2xl border border-border bg-white p-6 shadow-soft">
                 <CalendarDays className="h-7 w-7 text-citrine-deep" />
                 <h3 className="mt-4 font-heading text-lg font-semibold text-amethyst">Schulkalender Asp8</h3>
-                <p className="mt-1 text-sm text-muted-foreground">166.91 KB · Übersicht</p>
+                <p className="mt-1 text-sm text-muted-foreground">Start 21.05.2026 · Donnerstags</p>
                 <a
-                  href="https://heilsteinschule.swiss/ausbildung/schultermine/"
+                  href="https://heilsteinschule.swiss/ausbildung/schultermine/?dl=15"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="mt-4 inline-flex items-center gap-1 text-sm font-medium text-citrine-deep hover:underline"
@@ -257,6 +263,38 @@ export default function Ausbildung() {
                   Download →
                 </a>
               </div>
+              <div className="rounded-2xl border border-border bg-white p-6 shadow-soft">
+                <CalendarDays className="h-7 w-7 text-citrine-deep" />
+                <h3 className="mt-4 font-heading text-lg font-semibold text-amethyst">Schulkalender Wallbach 1</h3>
+                <p className="mt-1 text-sm text-muted-foreground">Start 30.01.2027 · Wochenenden</p>
+                <a
+                  href="https://heilsteinschule.swiss/ausbildung/schultermine/?dl=28"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-4 inline-flex items-center gap-1 text-sm font-medium text-citrine-deep hover:underline"
+                >
+                  Download →
+                </a>
+              </div>
+              <div className="rounded-2xl border border-border bg-white p-6 shadow-soft">
+                <CalendarDays className="h-7 w-7 text-citrine-deep" />
+                <h3 className="mt-4 font-heading text-lg font-semibold text-amethyst">Schulkalender Wallbach 2</h3>
+                <p className="mt-1 text-sm text-muted-foreground">Start 21.01.2027 · Donnerstags</p>
+                <a
+                  href="https://heilsteinschule.swiss/ausbildung/schultermine/?dl=23"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-4 inline-flex items-center gap-1 text-sm font-medium text-citrine-deep hover:underline"
+                >
+                  Download →
+                </a>
+              </div>
+            </div>
+          </Reveal>
+          <Reveal delay={0.15}>
+            <div className="mt-6 rounded-2xl bg-quartz p-5 text-sm text-foreground/80">
+              <p className="font-semibold text-amethyst">Alpenseminar 2027: 23.06. – 27.06.2027 (für alle Klassen)</p>
+              <p className="mt-1 text-xs text-muted-foreground">Schulstart 2027 bei mindestens 5 Anmeldungen pro Lehrgang. Uster 1: ab 2027 geplant.</p>
             </div>
           </Reveal>
         </div>

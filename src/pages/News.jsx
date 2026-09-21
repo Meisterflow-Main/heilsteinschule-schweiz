@@ -6,6 +6,12 @@ import SectionHeading from "@/components/site/SectionHeading";
 
 const NEWS = [
   {
+    date: "16.09.2026",
+    title: "Neue Schultermine für Bern + Wallbach",
+    img: "https://heilsteinschule.swiss/media/.news_img/lernen.png",
+    text: "Neue Schultermine für Bern 2 (ab 23.01.2027), Wallbach 1 (ab 30.01.2027) und Wallbach 2 (ab 21.01.2027). Alpenseminar 2027: 23.06.–27.06.2027.",
+  },
+  {
     date: "03.09.2026",
     title: "Werner Kühni in Erinnerung",
     img: "https://heilsteinschule.swiss/media/.news_img/werner_kuehni_news.png",

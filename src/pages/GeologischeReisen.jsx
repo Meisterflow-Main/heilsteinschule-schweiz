@@ -1,0 +1,175 @@
+import React from "react";
+import { Link } from "react-router-dom";
+import { Mountain, Calendar, MapPin, ArrowRight, Camera } from "lucide-react";
+import Reveal from "@/components/site/Reveal";
+import SectionHeading from "@/components/site/SectionHeading";
+
+const EXKURSIONEN = [
+  { jahr: "2011–2021", ort: "Zentralalpen", dauer: "13× · 65 Tage" },
+  { jahr: "2015–2022", ort: "Jura Exkursionen", dauer: "12 Tage" },
+  { jahr: "2016", ort: "Portugal / Auroca", dauer: "7 Tage" },
+  { jahr: "2017", ort: "Azoren", dauer: "7 Tage" },
+  { jahr: "2013–2018", ort: "Vogesen / Odilienberg", dauer: "6 Tage" },
+  { jahr: "2018", ort: "Idar-Oberstein", dauer: "8 Tage" },
+  { jahr: "2020", ort: "Berchtesgaden", dauer: "4 Tage" },
+  { jahr: "2021", ort: "Tessin", dauer: "8 Tage" },
+  { jahr: "2021", ort: "Engadin", dauer: "8 Tage" },
+  { jahr: "2022", ort: "Zermatt", dauer: "6 Tage" },
+  { jahr: "2022", ort: "Heilsteinmuseum", dauer: "3 Tage" },
+];
+
+const ALPENSEMINAR_TAGE = [
+  {
+    tag: "1. Tag — 25.06.2025",
+    title: "Innertkirchen & Rosenlaui Gletscherschlucht",
+    text: "Die Exkursion startet in Innertkirchen, am Gadmerwasser Fluss. Hier finden wir Gneis, Calcit und interessante Heilsteine wie zum Beispiel Amphibolit, ein metamorphes Gestein, das aus Hornblende (dunkel) und Plagioklas-Feldspat (hell) besteht. Dieses beliebte Gestein wird auch «Salz und Pfeffer» Stein genannt. Anschliessend besuchen wir auf 1370 m ü. M. die Rosenlaui Gletscherschlucht. Eine imposante Schlucht mit wuchtigen Wasserfällen und fantastischen Felsformationen, aus tosend, sprudelnd, schäumendem Gletscherwasser geformt. Wir erkunden begeistert, auf dem gut gesicherten, 573 Meter langen Weg mit 12 Tunneln und 215 Treppenstufen, diese Sehenswürdigkeit inmitten prächtiger Bergwelt. Danach Weiterfahrt Richtung Schwarzwaldalp.",
+    img: "https://heilsteinschule.swiss/media/Alpenseminar_2025/Alpenseminar_2025_Titelbild.jpg",
+  },
+  {
+    tag: "2. Tag — 26.06.2025",
+    title: "Grosse Scheidegg & Grindelwald",
+    text: "Fahrt mit dem Bus über die Grosse Scheidegg nach Grindelwald. Am Ufer des Quellfluss Weisse Lütschine finden wir die unterschiedlichsten Variationen des Rosenlaui-Marmor, Handelsname für Kalkbrekzie. Vorbei an der Gletscherschlucht wandern wir zum Marmorsteinbruch. Beim Oberen Gletscher suchen und finden wir Pyrit in Tonschiefer. Ein kräftiger Donnerschlag gibt uns den Impuls, rechtzeitig dem Regenguss zu entkommen.",
+  },
+  {
+    tag: "3. Tag — 27.06.2025",
+    title: "Geologische Wanderung & Rhonegletscher",
+    text: "Geologische Wanderung von der grossen Scheidegg zur Schwarzwaldalp. Finden von Konkretionen (harte, mineralische Gebilde, die in Sedimenten und Sedimentgesteinen entstehen). Besichtigung des Rhonegletschers, Granit sehen und spüren. Danach Weiterfahrt Richtung Göscheneralp.",
+  },
+  {
+    tag: "4. Tag — 28.06.2025",
+    title: "Oberalppass & Strahler Legende",
+    text: "Geologische Exkursion: Wanderung zum Steinbruch oberhalb der Passhöhe des Oberalppass. Beim Aufstieg zum Steinbruch treffen wir auf eine verlassene Kluft. Daneben liegen vereinzelt kleine Bergkristalle für glückliche Finder. Wir finden Serpentinit, Talk, Schneequarz, Aktinolith und zu unserer grossen Freude: Magnetit Kristallin. Die Sonne strahlt, so auch unsere Augen. Am Nachmittag besuchen wir die Strahler Legende Peter Indergand, seine Schwester und seinen Sohn, in Ihrem Laden in Göschenen, den Sie für uns geöffnet haben.",
+    img: "https://heilsteinschule.swiss/media/Alpenseminar_2025/Bild_Tag_4-3.jpg",
+  },
+  {
+    tag: "5. Tag — 29.06.2025",
+    title: "Zertifikatsübergabe",
+    text: "Feierliche Übergabe der Zertifikate an die Schüler/-innen der Heilsteinschule welche bereits abgeschlossen haben. Rückblickend wurde ich nach dem/den Highlights an diesem Alpenseminar gefragt. Es waren in meiner Betrachtung die Teilnehmer, mit Begeisterung für die Natur und die Steine. Des Weiteren durfte ich grosse Freude und eine harmonische Zusammenarbeit im Leiterteam erfahren. Wir freuen uns schon heute auf ein weiteres Alpenseminar 2026.",
+    img: "https://heilsteinschule.swiss/media/Alpenseminar_2025/Zertifikate_%C3%BCbergabe1.jpg",
+  },
+];
+
+export default function GeologischeReisen() {
+  return (
+    <>
+      {/* Hero */}
+      <section className="relative overflow-hidden bg-amethyst text-white">
+        <div className="absolute inset-0 opacity-25">
+          <img src="https://heilsteinschule.swiss/media/Alpenseminar_2025/Alpenseminar_2025_Titelbild.jpg" alt="" className="h-full w-full object-cover" />
+        </div>
+        <div className="absolute inset-0 bg-gradient-to-r from-amethyst-deep via-amethyst/80 to-amethyst/40" />
+        <div className="relative mx-auto max-w-7xl px-4 py-24 sm:px-6">
+          <Reveal>
+            <div className="mb-4 inline-flex items-center gap-2 rounded-full glass-dark px-4 py-1.5 text-xs font-medium uppercase tracking-wider text-citrine-light">
+              <Mountain className="h-3.5 w-3.5" /> Exkursionen
+            </div>
+            <h1 className="font-heading text-4xl font-bold sm:text-5xl md:text-6xl">
+              Geologische <span className="text-gradient-gold">Reisen</span>
+            </h1>
+            <p className="mt-5 max-w-xl text-lg text-white/80">
+              Die Steine unterwegs in den Alpen und auf der ganzen Welt erfahren und die Auswirkungen der
+              Mineralien unmittelbar erleben.
+            </p>
+          </Reveal>
+        </div>
+      </section>
+
+      {/* Übersicht Exkursionen */}
+      <section className="mx-auto max-w-7xl px-4 py-20 sm:px-6">
+        <Reveal>
+          <SectionHeading
+            eyebrow="Rückblick"
+            title="Geologische Exkursionen"
+            subtitle="Seit 2011 bereisen wir die Welt der Steine — von den Zentralalpen über die Azoren bis nach Brasilien."
+          />
+        </Reveal>
+        <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          {EXKURSIONEN.map((e, i) => (
+            <Reveal key={i} delay={(i % 3) * 0.06}>
+              <div className="flex items-center gap-4 rounded-2xl border border-border bg-white p-5 shadow-soft transition hover:border-citrine hover:shadow-lift">
+                <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-citrine/15 text-citrine-deep">
+                  <Calendar className="h-5 w-5" />
+                </div>
+                <div>
+                  <p className="font-mono text-xs uppercase tracking-wider text-citrine-deep">{e.jahr}</p>
+                  <h3 className="font-heading text-base font-semibold text-amethyst">{e.ort}</h3>
+                  <p className="mt-0.5 text-xs text-muted-foreground">{e.dauer}</p>
+                </div>
+              </div>
+            </Reveal>
+          ))}
+        </div>
+      </section>
+
+      {/* Alpenseminar 2025 Detailbericht */}
+      <section className="bg-quartz/60">
+        <div className="mx-auto max-w-5xl px-4 py-20 sm:px-6">
+          <Reveal>
+            <SectionHeading
+              eyebrow="Alpenseminar 2025"
+              title="Exkursion zu den Heilsteinen der Schweizer Hochalpen"
+              subtitle="Ein 5-tägiger Rückblick von Pascal Bossard, Leiter Alpenseminar."
+            />
+          </Reveal>
+
+          <div className="mt-12 space-y-8">
+            {ALPENSEMINAR_TAGE.map((t, i) => (
+              <Reveal key={i} delay={(i % 2) * 0.08}>
+                <div className="overflow-hidden rounded-3xl border border-border bg-white shadow-soft">
+                  {t.img && (
+                    <div className="aspect-[16/9] overflow-hidden">
+                      <img src={t.img} alt={t.title} loading="lazy" className="h-full w-full object-cover" />
+                    </div>
+                  )}
+                  <div className="p-6 sm:p-8">
+                    <div className="flex items-center gap-2">
+                      <span className="flex h-8 w-8 items-center justify-center rounded-full bg-amethyst text-xs font-bold text-white">
+                        {i + 1}
+                      </span>
+                      <p className="font-mono text-xs uppercase tracking-wider text-citrine-deep">{t.tag}</p>
+                    </div>
+                    <h3 className="mt-3 font-heading text-lg font-semibold text-amethyst">{t.title}</h3>
+                    <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{t.text}</p>
+                  </div>
+                </div>
+              </Reveal>
+            ))}
+          </div>
+
+          {/* Zitat Pascal Bossard */}
+          <Reveal delay={0.1}>
+            <div className="mt-10 rounded-2xl bg-citrine/10 p-6 text-center">
+              <p className="text-sm italic leading-relaxed text-amethyst">
+                „Rückblickend wurde ich nach dem/den Highlights an diesem Alpenseminar gefragt. Es waren in
+                meiner Betrachtung die Teilnehmer, mit Begeisterung für die Natur und die Steine. Des
+                Weiteren durfte ich grosse Freude und eine harmonische Zusammenarbeit im Leiterteam
+                erfahren. Wir freuen uns schon heute auf ein weiteres Alpenseminar 2026."
+              </p>
+              <p className="mt-3 text-sm font-semibold text-citrine-deep">— Pascal Bossard, Leiter Alpenseminar</p>
+            </div>
+          </Reveal>
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section className="relative overflow-hidden bg-amethyst text-white">
+        <div className="relative mx-auto max-w-4xl px-4 py-16 text-center sm:px-6">
+          <Reveal>
+            <h2 className="font-heading text-2xl font-bold sm:text-3xl">
+              Das Alpenseminar ist Teil der Ausbildung
+            </h2>
+            <p className="mx-auto mt-4 max-w-lg text-white/75">
+              Der Besuch eines Alpenseminars als praktischer Ausbildungsteil ist obligatorisch.
+            </p>
+            <Link
+              to="/ausbildung"
+              className="mt-6 inline-flex items-center gap-2 rounded-full bg-citrine px-7 py-3.5 text-sm font-semibold text-amethyst-deep shadow-lift transition hover:bg-citrine-light"
+            >
+              Ausbildung entdecken <ArrowRight className="h-4 w-4" />
+            </Link>
+          </Reveal>
+        </div>
+      </section>
+    </>
+  );
+}

@@ -10,6 +10,8 @@ const NAV = [
   { label: "Blog", to: "/blog" },
   { label: "Laden & Praxis", to: "/laden-praxis" },
   { label: "Lehrfilme", to: "/lehrfilme" },
+  { label: "Reisen", to: "/geologische-reisen" },
+  { label: "Über uns", to: "/ueber-uns" },
   { label: "Info-Tag", to: "/info-tag" },
   { label: "Kontakt", to: "/kontakt" },
 ];
