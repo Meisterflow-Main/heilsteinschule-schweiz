@@ -19,7 +19,7 @@ const PRINCIPLES = [
 const TEAM = [
   { name: "Bruno Vogler Pfeiffer", role: "Schul-Gründer & Schulleiter", img: "https://heilsteinschule.swiss/media/topics-pictures/bruno_vogler_pfeiffer.png" },
   { name: "Ruth Rios", role: "Hauptdozentin", img: "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/6e96678d1_ChatGPTImageSep21202602_29_12PM.png" },
-  { name: "Pascal Bossard", role: "Leiter Alpenseminar", img: "https://heilsteinschule.swiss/media/topics-pictures/pascal_bossard.jpg" },
+  { name: "Pascal Bossard", role: "Leiter Alpenseminar", img: "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/057e4eb82_ChatGPTImageSep21202602_32_05PM.png" },
   { name: "Sarah Ziegenhagen", role: "Dozentin Uster ZH", img: "https://heilsteinschule.swiss/media/topics-pictures/sarah_ziegenhagen_team_bild.jpg" },
 ];
 
