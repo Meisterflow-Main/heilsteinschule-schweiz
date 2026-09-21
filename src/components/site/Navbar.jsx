@@ -46,6 +46,14 @@ export default function Navbar() {
             scrolled ? "glass shadow-soft" : "bg-transparent"
           }`}
         >
+          <Link to="/" className="flex items-center gap-3" aria-label="Heilsteinschule Schweiz Startseite">
+            <img
+              src="https://heilsteinschule.swiss/media/LogoName.png"
+              alt="Heilsteinschule Schweiz Logo"
+              className="h-9 w-auto sm:h-10"
+            />
+          </Link>
+
           <nav className="hidden items-center gap-1 lg:flex">
             {NAV.map((item) => {
               const active = location.pathname === item.to;
@@ -108,7 +116,7 @@ export default function Navbar() {
             </div>
           </nav>
 
-          <div className="ml-auto flex items-center gap-3">
+          <div className="flex items-center gap-2">
             <a
               href="tel:+41793896622"
               className="hidden items-center gap-2 rounded-full bg-citrine px-4 py-2 text-sm font-semibold text-amethyst-deep shadow-soft transition hover:bg-citrine-light sm:inline-flex"
@@ -122,13 +130,6 @@ export default function Navbar() {
             >
               {open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
             </button>
-            <Link to="/" className="flex items-center gap-3" aria-label="Heilsteinschule Schweiz Startseite">
-              <img
-                src="https://heilsteinschule.swiss/media/LogoName.png"
-                alt="Heilsteinschule Schweiz Logo"
-                className="h-9 w-auto sm:h-10"
-              />
-            </Link>
           </div>
         </div>
 
