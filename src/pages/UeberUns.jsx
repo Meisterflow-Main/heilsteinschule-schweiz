@@ -20,6 +20,26 @@ const INTERVIEW = [
   {
     q: "Welche Methoden erlernen die Schüler, um Heilsteine bei Klienten einzusetzen?",
     a: "In der Heilsteinschule lernen die Schüler über Kristallstrukturen und ihre Verbindung zu individuellen Lebensstilen. Sie lernen, Heilsteine auf verschiedene Weisen einzusetzen, wie beispielsweise auf den Körper auflegen, in Wasser einlegen und für Meditation verwenden. Zudem vermitteln wir ihnen Geologische Reise über 4 Tage auf den Azoren. Respekt vor den Steinen und ihrer jahrtausendalten Geschichte. Diese Kenntnisse helfen ihnen, sich und anderen in Lebenssituationen wie Stress und Druck besser zu unterstützen.",
+    img: "https://heilsteinschule.swiss/media/Reise/Geologische_Reise_Azoren.png",
+    imgAlt: "Geologische Reise auf den Azoren",
+  },
+  {
+    q: "Warum ist es wichtig, die Wirkungen der Heilsteine am eigenen Körper zu erfahren?",
+    a: "Immer ist das, was dir selber «widerfahren» ist, unauslöschlich in dir gespeichert. Du erkennst umgehend, «gut oder unnötig».",
+  },
+  {
+    q: "Wie können die Schüler das erlernte Wissen nach Abschluss der Ausbildung anwenden?",
+    a: "Ich sage immer, die Schule machst du in erster Linie für dich. Wenn du durch die Heilsteine, deine Lebensmitte, deine Gesundheit usw. gefunden hast, dann bist du bereit, dein Wissen, deine erfolgreichen Erfahrungen Dritten helfend zukommen zu lassen. Der Spruch «nur wer heil ist, darf heilen» gewinnt hier in seiner Bedeutung.",
+  },
+  {
+    q: "Was ist das Besondere an der analytischen Steinheilkunde, die an der Heilsteinschule Schweiz gelehrt wird?",
+    a: "Das Besondere bei uns ist das analytische, wissenschaftliche Grundwissen, das wir vermitteln. Über 90 % des Wissens, welches im Internet über Steine zu finden ist, entzieht sich der analytischen Steinheilkunde. Entstehung, Chemismus, Kristallstruktur, die Farbe wie auch die Form bestimmen verlässlich, was ein Stein zu leisten vermag. Michael Gienger hat daran 30 Jahre geforscht und es in über 20 Büchern niedergeschrieben. Vor 12 Jahren kaufte ich von ihm die Lizenz, dieses Wissen der Steinheilkunde unverfälscht lehren zu dürfen.",
+  },
+  {
+    q: "Wie können Heilsteine als Lebensbegleiter dienen?",
+    a: "Präventiv sind Steine sehr verlässliche Begleiter, wenn man ihnen vertraut. Dasselbe gilt, wenn eine Situation akut ist, sprich in der Form einer Krankheit sich bemerkbar macht. Hier können wir hilfreich sein. Aber der Mensch muss wollen. Die Schüler erkennen, dass ein Stein auch in seelischer oder psychischer Hinsicht ein Unterstützer sein kann, indem er tägliche Schritte auf dem individuellen Lebensweg begleitet. Er kann die Stimmung erhellen und aber auch Mut geben, Unangenehmes anzugehen und anzuschauen. Er hilft, Spannungen zu lösen und Blockaden aufzulösen.",
+    img: "https://heilsteinschule.swiss/media/Reise/Zermatt-blick_richtung_gornergrat_ab%20schwarzsee.png",
+    imgAlt: "Trockener Steg, Zermatt, 3000 m ü. M., 3-tägige Georeise 2022",
   },
   {
     q: "Warum ist es wichtig, die Wirkungen der Heilsteine am eigenen Körper zu erfahren?",
@@ -50,6 +70,8 @@ const INTERVIEW = [
     a: "Mein Hauptziel ist das Wachstum der Schule und die Entwicklung eines qualifizierten Teams. Wir legen Wert auf analytisches Lernen, unterstützt durch medizinisches Verständnis. Dabei steht immer im Vordergrund: Heilung kommt von innen, wir und die Steine können nur dabei helfen.",
   },
 ];
+
+const ARTICLE_IMG = "https://heilsteinschule.swiss/media/.news_img/nfz.webp";
 
 const PRINCIPLES = [
   { icon: Brain, label: "Kopf", text: "Analytisches Wissen, welches erklärt, warum und wie die Heilsteine wirken." },
@@ -176,9 +198,15 @@ export default function UeberUns() {
                   <span className="mt-1 flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-amethyst text-xs font-bold text-white">
                     {i + 1}
                   </span>
-                  <div>
+                  <div className="flex-1">
                     <h3 className="font-heading text-base font-semibold text-amethyst">{item.q}</h3>
                     <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{item.a}</p>
+                    {item.img && (
+                      <div className="mt-4 overflow-hidden rounded-xl border border-border">
+                        <img src={item.img} alt={item.imgAlt || ""} loading="lazy" className="w-full object-cover" />
+                        {item.imgAlt && <p className="px-3 py-2 text-xs text-muted-foreground">{item.imgAlt}</p>}
+                      </div>
+                    )}
                   </div>
                 </div>
               </div>
@@ -204,6 +232,7 @@ export default function UeberUns() {
                   <div className="mb-3 inline-flex items-center gap-2 rounded-full bg-citrine/15 px-3 py-1 text-xs font-medium text-citrine-deep">
                     <Quote className="h-3.5 w-3.5" /> Zeitungsbericht
                   </div>
+                  <img src={ARTICLE_IMG} alt="Neue Fricktaler Zeitung" className="mb-4 max-h-32 w-auto rounded-lg shadow-soft" />
                   <h3 className="font-heading text-xl font-semibold text-amethyst">Bruno Vogler ist Steinheiler</h3>
                   <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
                     Artikel in der Neuen Fricktaler Zeitung vom 19.1.2017 von Hildegard Siebold.

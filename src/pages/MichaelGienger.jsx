@@ -5,13 +5,14 @@ import Reveal from "@/components/site/Reveal";
 import SectionHeading from "@/components/site/SectionHeading";
 
 const GALLERY = [
-  { img: "https://heilsteinschule.swiss/media/rfg-folders/michael-gienger-gallery/Copacabana1.jpg", alt: "Copacabana Rio de Janeiro" },
+  { img: "https://heilsteinschule.swiss/media/rfg-folders/michael-gienger-gallery/Copacabana1.jpg", alt: "Copacabana Rio de Janeiro 3 Std. nach der Landung" },
+  { img: "https://heilsteinschule.swiss/media/rfg-folders/michael-gienger-gallery/Copacabana2.jpg", alt: "Copacabana Rio de Janeiro" },
   { img: "https://heilsteinschule.swiss/media/rfg-folders/michael-gienger-gallery/Michael_Petalith_roh_gefunden.jpg", alt: "Michael hat ein Petalith roh gefunden" },
-  { img: "https://heilsteinschule.swiss/media/rfg-folders/michael-gienger-gallery/Michael_Smaragdmine.jpg", alt: "Vor der Smaragdmine in Minas Gerais" },
-  { img: "https://heilsteinschule.swiss/media/rfg-folders/michael-gienger-gallery/Foto_durch_Bergkristall.jpg", alt: "Eingefangen durch eine 24 phasigen Bergkristall" },
-  { img: "https://heilsteinschule.swiss/media/rfg-folders/michael-gienger-gallery/Michael_Ginger_Pedro.jpg", alt: "Michael Ginger im Pegmatit" },
+  { img: "https://heilsteinschule.swiss/media/rfg-folders/michael-gienger-gallery/Michael_Smaragdmine.jpg", alt: "Vor der Smaragdmine in Minas Gerais, 1100 km nördlich ob Rio" },
+  { img: "https://heilsteinschule.swiss/media/rfg-folders/michael-gienger-gallery/Foto_durch_Bergkristall.jpg", alt: "Michael Ginger, eingefangen durch eine 24 phasigen geschliffenen Bergkristall" },
+  { img: "https://heilsteinschule.swiss/media/rfg-folders/michael-gienger-gallery/Michael_Ginger_Pedro.jpg", alt: "Michael Ginger im Pegmatit. Der einheimische Pedro zeigt uns seinen gefundenen Muskovit" },
   { img: "https://heilsteinschule.swiss/media/rfg-folders/michael-gienger-gallery/Michael_Buchseite_555.jpg", alt: "Michael schlägt in seinem Buch 555 nach" },
-  { img: "https://heilsteinschule.swiss/media/rfg-folders/michael-gienger-gallery/Michael_Bergkristall_Waschen.jpg", alt: "Michael beim Abwaschen eines Bergkristalls" },
+  { img: "https://heilsteinschule.swiss/media/rfg-folders/michael-gienger-gallery/Michael_Bergkristall_Waschen.jpg", alt: "Michael Ginger beim Abwaschen eines gefundenen Bergkristalls" },
 ];
 
 export default function MichaelGienger() {
@@ -97,15 +98,22 @@ export default function MichaelGienger() {
                   </p>
                 </div>
               </div>
-              <div className="mt-6 rounded-2xl bg-quartz p-6">
-                <Quote className="h-6 w-6 text-citrine-deep" />
-                <p className="mt-3 font-heading text-base italic leading-relaxed text-amethyst">
-                  Wenn da Stille ist, Ruhe, die nicht durchbrochen werden muss, weil es nichts zu tun gibt,
-                  weil da nicht einmal ein Gedanke an „Tun" ist, wenn da Stille ist, dann fühle ich – mich.
-                  Wenn da Stille ist, dann begegne ich mir, wie einem Freund nach langer Zeit, wortlos die
-                  Anwesenheit geniessend, weil es nichts zu sagen gibt, wenn da Stille ist.
-                </p>
-                <p className="mt-3 text-sm text-muted-foreground">— Michael Gienger, im Februar 2001</p>
+              <div className="mt-6 grid items-center gap-6 rounded-2xl bg-quartz p-6 sm:grid-cols-[auto_1fr]">
+                <img
+                  src="https://heilsteinschule.swiss/media/Michael_Gienger/Michael%20Gienger_im%20Februar_2011.jpg"
+                  alt="Michael im Februar 2001"
+                  className="mx-auto h-32 w-32 rounded-2xl object-cover shadow-soft"
+                />
+                <div>
+                  <Quote className="h-6 w-6 text-citrine-deep" />
+                  <p className="mt-3 font-heading text-base italic leading-relaxed text-amethyst">
+                    Wenn da Stille ist, Ruhe, die nicht durchbrochen werden muss, weil es nichts zu tun gibt,
+                    weil da nicht einmal ein Gedanke an „Tun" ist, wenn da Stille ist, dann fühle ich – mich.
+                    Wenn da Stille ist, dann begegne ich mir, wie einem Freund nach langer Zeit, wortlos die
+                    Anwesenheit geniessend, weil es nichts zu sagen gibt, wenn da Stille ist.
+                  </p>
+                  <p className="mt-3 text-sm text-muted-foreground">— Michael Gienger, im Februar 2001</p>
+                </div>
               </div>
             </div>
           </Reveal>

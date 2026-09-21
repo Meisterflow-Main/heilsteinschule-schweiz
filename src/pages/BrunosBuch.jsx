@@ -42,6 +42,13 @@ export default function BrunosBuch() {
             </div>
           </Reveal>
           <Reveal delay={0.1}>
+            <div className="mb-6 flex justify-center">
+              <img
+                src="https://heilsteinschule.swiss/media/.news_img/brunos_buch_isbn_no.png"
+                alt="Reise zu mir selbst - Buch ISBN 9798269951614"
+                className="max-h-40 w-auto rounded-2xl shadow-soft"
+              />
+            </div>
             <SectionHeading center={false} eyebrow="ISBN 9798269951614" title="Reise zu mir selbst" />
             <p className="mt-5 text-base leading-relaxed text-muted-foreground">
               Eine Lebensgeschichte zwischen Werkbank und Uniform: Aufgewachsen in der Schweiz der

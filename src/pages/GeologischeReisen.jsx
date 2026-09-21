@@ -39,15 +39,28 @@ const ALPENSEMINAR_TAGE = [
     tag: "4. Tag — 28.06.2025",
     title: "Oberalppass & Strahler Legende",
     text: "Geologische Exkursion: Wanderung zum Steinbruch oberhalb der Passhöhe des Oberalppass. Beim Aufstieg zum Steinbruch treffen wir auf eine verlassene Kluft. Daneben liegen vereinzelt kleine Bergkristalle für glückliche Finder. Wir finden Serpentinit, Talk, Schneequarz, Aktinolith und zu unserer grossen Freude: Magnetit Kristallin. Die Sonne strahlt, so auch unsere Augen. Am Nachmittag besuchen wir die Strahler Legende Peter Indergand, seine Schwester und seinen Sohn, in Ihrem Laden in Göschenen, den Sie für uns geöffnet haben.",
-    img: "https://heilsteinschule.swiss/media/Alpenseminar_2025/Bild_Tag_4-3.jpg",
+    imgs: [
+      "https://heilsteinschule.swiss/media/Alpenseminar_2025/Bild_Tag_4-1.jpg",
+      "https://heilsteinschule.swiss/media/Alpenseminar_2025/Bild_Tag_4-2.jpg",
+      "https://heilsteinschule.swiss/media/Alpenseminar_2025/Bild_Tag_4-3.jpg",
+    ],
   },
   {
     tag: "5. Tag — 29.06.2025",
     title: "Zertifikatsübergabe",
     text: "Feierliche Übergabe der Zertifikate an die Schüler/-innen der Heilsteinschule welche bereits abgeschlossen haben. Rückblickend wurde ich nach dem/den Highlights an diesem Alpenseminar gefragt. Es waren in meiner Betrachtung die Teilnehmer, mit Begeisterung für die Natur und die Steine. Des Weiteren durfte ich grosse Freude und eine harmonische Zusammenarbeit im Leiterteam erfahren. Wir freuen uns schon heute auf ein weiteres Alpenseminar 2026.",
-    img: "https://heilsteinschule.swiss/media/Alpenseminar_2025/Zertifikate_%C3%BCbergabe1.jpg",
+    imgs: [
+      "https://heilsteinschule.swiss/media/Alpenseminar_2025/Zertifikate_%C3%BCbergabe1.jpg",
+      "https://heilsteinschule.swiss/media/Alpenseminar_2025/Zertifikate_%C3%BCbergabe2.jpg",
+      "https://heilsteinschule.swiss/media/Alpenseminar_2025/Zertifikate_%C3%BCbergabe3.jpg",
+      "https://heilsteinschule.swiss/media/Alpenseminar_2025/Zertifikate_%C3%BCbergabe4.jpg",
+      "https://heilsteinschule.swiss/media/Alpenseminar_2025/Zertifikate_%C3%BCbergabe5.jpg",
+      "https://heilsteinschule.swiss/media/Alpenseminar_2025/Zertifikate_%C3%BCbergabe6.jpg",
+    ],
   },
 ];
+
+const BACKVIEW_IMG = "https://heilsteinschule.swiss/media/Alpenseminar_2025/Backview.jpg";
 
 export default function GeologischeReisen() {
   return (
@@ -121,6 +134,15 @@ export default function GeologischeReisen() {
                       <img src={t.img} alt={t.title} loading="lazy" className="h-full w-full object-cover" />
                     </div>
                   )}
+                  {t.imgs && (
+                    <div className="grid grid-cols-2 gap-1 sm:grid-cols-3">
+                      {t.imgs.map((src, j) => (
+                        <div key={j} className="aspect-square overflow-hidden">
+                          <img src={src} alt={`${t.title} ${j + 1}`} loading="lazy" className="h-full w-full object-cover transition duration-500 hover:scale-105" />
+                        </div>
+                      ))}
+                    </div>
+                  )}
                   <div className="p-6 sm:p-8">
                     <div className="flex items-center gap-2">
                       <span className="flex h-8 w-8 items-center justify-center rounded-full bg-amethyst text-xs font-bold text-white">
@@ -146,6 +168,12 @@ export default function GeologischeReisen() {
                 erfahren. Wir freuen uns schon heute auf ein weiteres Alpenseminar 2026."
               </p>
               <p className="mt-3 text-sm font-semibold text-citrine-deep">— Pascal Bossard, Leiter Alpenseminar</p>
+            </div>
+          </Reveal>
+
+          <Reveal delay={0.15}>
+            <div className="mt-6 overflow-hidden rounded-2xl border border-border shadow-soft">
+              <img src={BACKVIEW_IMG} alt="Rückblick und Vorfreude auf das Alpenseminar 2026" loading="lazy" className="h-full w-full object-cover" />
             </div>
           </Reveal>
         </div>
