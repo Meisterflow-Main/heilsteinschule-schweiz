@@ -47,7 +47,7 @@ const TEAM = [
   { name: "Sarah Ziegenhagen", role: "Dozentin Uster ZH", img: "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/744f004b6_ChatGPTImageSep21202602_35_44PM.png" },
   { name: "Joe Schnarwiler", role: "Dozent", img: "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/8ed080c78_ChatGPTImageSep21202602_36_58PM.png" },
   { name: "Maja Pfeiffer", role: "StV Schulleitung und Leitung Heilsteinshop-Asp", img: "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/d3b26ef85_ChatGPTImageSep21202602_40_48PM.png" },
-  { name: "Judith von Rotz", role: "Buchhaltung und Rechnungswesen", img: "https://heilsteinschule.swiss/media/topics-pictures/thumbs/judith_judith.vonrotz.png" },
+  { name: "Judith von Rotz", role: "Buchhaltung und Rechnungswesen", img: "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/1a6cef69a_ChatGPTImageSep21202602_42_52PM.png" },
   { name: "René Schmid", role: "IT Support — gesamte IT-Infrastruktur", img: "https://heilsteinschule.swiss/media/topics-pictures/thumbs/rene.jpg" },
 ];
 
