@@ -8,6 +8,7 @@ import TeaserGrid from "@/components/site/TeaserGrid";
 import Reels from "@/components/site/Reels";
 import HistoryTimeline from "@/components/site/HistoryTimeline";
 import StoneCollage from "@/components/site/StoneCollage";
+import MineralSelection from "@/components/site/MineralSelection";
 
 const PRINCIPLES = [
   { icon: Brain, label: "Kopf", text: "Analytisches Wissen, welches erklärt, warum und wie die Heilsteine wirken.", img: "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/85e503e9c_WhatsAppImage2026-09-22at0205382.jpeg" },
@@ -189,6 +190,9 @@ export default function Home() {
           </Reveal>
         </div>
       </section>
+
+      {/* MINERALIENAUSWAHL */}
+      <MineralSelection />
 
       {/* HISTORIE TIMELINE */}
       <HistoryTimeline />
