@@ -20,6 +20,7 @@ import Datenschutz from '@/pages/Datenschutz';
 import AGB from '@/pages/AGB';
 import RegionPage from '@/pages/RegionPage';
 import RegionenIndex from '@/pages/RegionenIndex';
+import Banner from '@/pages/Banner';
 // Add page imports here
 
 const AuthenticatedApp = () => {
@@ -62,6 +63,7 @@ const AuthenticatedApp = () => {
         <Route path="/agb" element={<AGB />} />
         <Route path="/regionen" element={<RegionenIndex />} />
         <Route path="/regionen/:slug" element={<RegionPage />} />
+        <Route path="/banner" element={<Banner />} />
       </Route>
       <Route path="*" element={<PageNotFound />} />
     </Routes>
