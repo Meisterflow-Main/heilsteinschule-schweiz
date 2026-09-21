@@ -21,6 +21,7 @@ import AGB from '@/pages/AGB';
 import RegionPage from '@/pages/RegionPage';
 import RegionenIndex from '@/pages/RegionenIndex';
 import Banner from '@/pages/Banner';
+import Blog from '@/pages/Blog';
 // Add page imports here
 
 const AuthenticatedApp = () => {
@@ -64,6 +65,7 @@ const AuthenticatedApp = () => {
         <Route path="/regionen" element={<RegionenIndex />} />
         <Route path="/regionen/:slug" element={<RegionPage />} />
         <Route path="/banner" element={<Banner />} />
+        <Route path="/blog" element={<Blog />} />
       </Route>
       <Route path="*" element={<PageNotFound />} />
     </Routes>

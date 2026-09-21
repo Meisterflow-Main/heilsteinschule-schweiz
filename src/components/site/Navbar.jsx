@@ -7,6 +7,7 @@ const NAV = [
   { label: "Start", to: "/" },
   { label: "Ausbildung", to: "/ausbildung" },
   { label: "News", to: "/news" },
+  { label: "Blog", to: "/blog" },
   { label: "Laden & Praxis", to: "/laden-praxis" },
   { label: "Lehrfilme", to: "/lehrfilme" },
   { label: "Info-Tag", to: "/info-tag" },
