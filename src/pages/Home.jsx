@@ -80,21 +80,6 @@ export default function Home() {
               </Link>
             </div>
           </motion.div>
-          {/* Unterricht in der Natur */}
-          <motion.div
-            initial={{ opacity: 0, x: 40 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 1, delay: 0.4, ease: [0.22, 1, 0.36, 1] }}
-            className="pointer-events-none absolute right-6 top-1/2 hidden -translate-y-1/2 lg:block"
-          >
-            <div className="w-48 overflow-hidden rounded-3xl border border-white/20 shadow-lift lg:w-56 xl:w-64">
-              <img
-                src="https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/aa0ebc8ed_WhatsAppImage2026-09-22at0205384.jpeg"
-                alt="Unterricht in der Natur"
-                className="aspect-[4/5] w-full object-cover"
-              />
-            </div>
-          </motion.div>
         </div>
 
         {/* Stat strip */}
