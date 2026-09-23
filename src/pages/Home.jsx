@@ -18,10 +18,10 @@ const PRINCIPLES = [
 ];
 
 const TEAM = [
-  { name: "Bruno Vogler Pfeiffer", role: "Schul-Gründer & Schulleiter", img: "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/ffaf18a07_WhatsAppImage2026-09-23at105952.jpeg" },
-  { name: "Ruth Rios", role: "Hauptdozentin", img: "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/ffaf18a07_WhatsAppImage2026-09-23at105952.jpeg" },
-  { name: "Pascal Bossard", role: "Leiter Alpenseminar", img: "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/ffaf18a07_WhatsAppImage2026-09-23at105952.jpeg" },
-  { name: "Sarah Ziegenhagen", role: "Dozentin Uster ZH", img: "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/ffaf18a07_WhatsAppImage2026-09-23at105952.jpeg" },
+  { name: "Bruno Vogler Pfeiffer", role: "Schul-Gründer & Schulleiter", img: "https://heilsteinschule.swiss/media/topics-pictures/bruno_vogler_pfeiffer.png" },
+  { name: "Ruth Rios", role: "Hauptdozentin", img: "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/460e2670f_ChatGPTImageSep21202602_29_12PM.png" },
+  { name: "Pascal Bossard", role: "Leiter Alpenseminar", img: "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/057e4eb82_ChatGPTImageSep21202602_32_05PM.png" },
+  { name: "Sarah Ziegenhagen", role: "Dozentin Uster ZH", img: "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/744f004b6_ChatGPTImageSep21202602_35_44PM.png" },
 ];
 
 export default function Home() {
@@ -268,12 +268,12 @@ export default function Home() {
               subtitle="Dozentinnen und Dozenten, die ihre Leidenschaft für die Steinheilkunde weitergeben."
             />
           </Reveal>
-          {/* Community — shared experiences in nature */}
+          {/* Dozenten-Team im Alpenseminar */}
           <Reveal>
             <div className="mb-10 overflow-hidden rounded-3xl border border-border shadow-soft">
               <img
-                src="https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/718ef1e15_WhatsAppImage2026-09-22at02053610.jpeg"
-                alt="Gemeinschaft in der Natur"
+                src="https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/ffaf18a07_WhatsAppImage2026-09-23at105952.jpeg"
+                alt="Dozenten-Team der Heilsteinschule Schweiz im Alpenseminar"
                 loading="lazy"
                 className="aspect-[16/9] w-full object-cover"
               />
