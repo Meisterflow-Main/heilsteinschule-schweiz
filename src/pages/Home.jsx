@@ -274,12 +274,12 @@ export default function Home() {
           </Reveal>
           {/* Dozenten-Team im Alpenseminar */}
           <Reveal>
-            <div className="mb-10 overflow-hidden rounded-3xl border border-border shadow-soft">
+            <div className="mb-10 overflow-hidden rounded-3xl border border-border bg-muted shadow-soft">
               <img
                 src="https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/ffaf18a07_WhatsAppImage2026-09-23at105952.jpeg"
                 alt="Dozenten-Team der Heilsteinschule Schweiz im Alpenseminar"
                 loading="lazy"
-                className="aspect-[16/9] w-full object-cover"
+                className="mx-auto w-full max-w-3xl object-contain"
               />
             </div>
           </Reveal>
