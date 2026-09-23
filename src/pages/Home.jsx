@@ -14,7 +14,7 @@ const PRINCIPLES = [
   { icon: Brain, label: "Kopf", text: "Analytisches Wissen, welches erklärt, warum und wie die Heilsteine wirken.", img: "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/85e503e9c_WhatsAppImage2026-09-22at0205382.jpeg" },
   { icon: Hand, label: "Hand", text: "Die Kraft der Steine erleben und spüren, Methoden für Körper und Psyche erlernen.", img: "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/e02f39734_WhatsAppImage2026-09-22at0205362.jpeg" },
   { icon: Footprints, label: "Fuss", text: "Die Steine unterwegs in den Alpen erfahren und die Mineralien unmittelbar erleben.", img: "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/718ef1e15_WhatsAppImage2026-09-22at02053610.jpeg" },
-  { icon: Heart, label: "Herz", text: "Neugierde und Faszination als Startkapital — Liebe und Leidenschaft entstehen.", img: "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/6aae553a3_WhatsAppImage2026-09-22at0205368.jpeg" },
+  { icon: Heart, label: "Herz", text: "Neugierde und Faszination als Startkapital — Liebe und Leidenschaft entstehen.", img: "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/d23c00bb6_WhatsAppImage2026-09-23at131934.jpeg" },
 ];
 
 const TEAM = [
