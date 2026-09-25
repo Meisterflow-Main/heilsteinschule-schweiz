@@ -101,7 +101,7 @@ export default function BrunosBuch() {
                       <Phone className="h-4 w-4" /> 079 389 66 22
                     </a>
                     <a
-                      href="mailto:info@heilsteinschule.ch"
+                      href="mailto:anfragen@heilsteinschule.ch"
                       className="inline-flex items-center justify-center gap-2 rounded-full border border-citrine px-6 py-3 text-sm font-semibold text-citrine-deep transition hover:bg-citrine/10"
                     >
                       <Mail className="h-4 w-4" /> E-Mail senden

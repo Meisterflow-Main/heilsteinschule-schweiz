@@ -187,8 +187,8 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a href="mailto:info@heilsteinschule.ch" className="flex items-center gap-3 text-white/70 transition hover:text-citrine-light">
-                  <Mail className="h-4 w-4 shrink-0 text-citrine-light" /> info@heilsteinschule.ch
+                <a href="mailto:anfragen@heilsteinschule.ch" className="flex items-center gap-3 text-white/70 transition hover:text-citrine-light">
+                  <Mail className="h-4 w-4 shrink-0 text-citrine-light" /> anfragen@heilsteinschule.ch
                 </a>
               </li>
             </ul>

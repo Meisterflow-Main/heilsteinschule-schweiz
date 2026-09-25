@@ -22,7 +22,7 @@ export default function Impressum() {
             <h3 className="font-heading text-base font-semibold text-amethyst">Kontakt</h3>
             <p className="mt-2">Tel. Nr.: 079 389 66 22</p>
             <p>Firmen Nr.: CHE-160.366.095</p>
-            <p>E-Mail: info(at)heilsteinschule(dot)ch</p>
+            <p>E-Mail: anfragen(at)heilsteinschule(dot)ch</p>
           </div>
           <div className="rounded-2xl border border-border bg-white p-6 shadow-soft">
             <h3 className="font-heading text-base font-semibold text-amethyst">Hinweis</h3>

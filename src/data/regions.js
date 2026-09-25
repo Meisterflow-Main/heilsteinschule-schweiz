@@ -26,7 +26,7 @@ export const REGIONS = [
         "Der Hauptsitz in Asp ist zugleich Heilsteinshop, Praxis und Ausbildungsort. Persönliche Beratung erhältst du während den Öffnungszeiten oder nach Vereinbarung.",
       address: "Dorfstrasse 22, 5025 Asp",
       phone: "+41 79 389 66 22",
-      email: "info@heilsteinschule.ch",
+      email: "anfragen@heilsteinschule.ch",
       hours: "Laden Asp: Mi & Sa, 10–17 Uhr",
     },
     services: {
@@ -128,7 +128,7 @@ export const REGIONS = [
         "Der Schulstandort Wallbach liegt zentral im Fricktal. Für Beratung und Anmeldung wendest du dich an den Hauptsitz der Heilsteinschule Schweiz in Asp.",
       address: "Dorfstrasse 22, 5025 Asp (Hauptsitz)",
       phone: "+41 79 389 66 22",
-      email: "info@heilsteinschule.ch",
+      email: "anfragen@heilsteinschule.ch",
       hours: "Laden Asp: Mi & Sa, 10–17 Uhr",
     },
     services: {
@@ -230,7 +230,7 @@ export const REGIONS = [
         "Der Schulstandort Bern liegt zentral in der Bundesstadt. Beratung und Anmeldung laufen über den Hauptsitz der Heilsteinschule Schweiz in Asp.",
       address: "Dorfstrasse 22, 5025 Asp (Hauptsitz)",
       phone: "+41 79 389 66 22",
-      email: "info@heilsteinschule.ch",
+      email: "anfragen@heilsteinschule.ch",
       hours: "Laden Asp: Mi & Sa, 10–17 Uhr",
     },
     services: {
@@ -332,7 +332,7 @@ export const REGIONS = [
         "Der Schulstandort Uster liegt zentral im Zürcher Oberland. Beratung und Anmeldung erfolgen über den Hauptsitz der Heilsteinschule Schweiz in Asp.",
       address: "Dorfstrasse 22, 5025 Asp (Hauptsitz)",
       phone: "+41 79 389 66 22",
-      email: "info@heilsteinschule.ch",
+      email: "anfragen@heilsteinschule.ch",
       hours: "Laden Asp: Mi & Sa, 10–17 Uhr",
     },
     services: {
@@ -434,7 +434,7 @@ export const REGIONS = [
         "Für Schülerinnen aus Zürich ist der nächste Ausbildungsstandort Uster im Zürcher Oberland. Beratung und Anmeldung laufen über den Hauptsitz in Asp.",
       address: "Dorfstrasse 22, 5025 Asp (Hauptsitz)",
       phone: "+41 79 389 66 22",
-      email: "info@heilsteinschule.ch",
+      email: "anfragen@heilsteinschule.ch",
       hours: "Laden Asp: Mi & Sa, 10–17 Uhr",
     },
     services: {
@@ -536,7 +536,7 @@ export const REGIONS = [
         "Für Schülerinnen aus Basel ist der nächste Ausbildungsstandort Asp im Fricktal. Beratung und Anmeldung erfolgen über den Hauptsitz der Heilsteinschule Schweiz.",
       address: "Dorfstrasse 22, 5025 Asp (Hauptsitz)",
       phone: "+41 79 389 66 22",
-      email: "info@heilsteinschule.ch",
+      email: "anfragen@heilsteinschule.ch",
       hours: "Laden Asp: Mi & Sa, 10–17 Uhr",
     },
     services: {
@@ -638,7 +638,7 @@ export const REGIONS = [
         "Für Schülerinnen aus Aarau ist der nächste Ausbildungsstandort Asp im Fricktal. Beratung und Anmeldung erfolgen über den Hauptsitz der Heilsteinschule Schweiz.",
       address: "Dorfstrasse 22, 5025 Asp (Hauptsitz)",
       phone: "+41 79 389 66 22",
-      email: "info@heilsteinschule.ch",
+      email: "anfragen@heilsteinschule.ch",
       hours: "Laden Asp: Mi & Sa, 10–17 Uhr",
     },
     services: {
@@ -740,7 +740,7 @@ export const REGIONS = [
         "Für Schülerinnen aus Baden ist der nächste Ausbildungsstandort Asp im Fricktal. Beratung und Anmeldung erfolgen über den Hauptsitz der Heilsteinschule Schweiz.",
       address: "Dorfstrasse 22, 5025 Asp (Hauptsitz)",
       phone: "+41 79 389 66 22",
-      email: "info@heilsteinschule.ch",
+      email: "anfragen@heilsteinschule.ch",
       hours: "Laden Asp: Mi & Sa, 10–17 Uhr",
     },
     services: {
@@ -842,7 +842,7 @@ export const REGIONS = [
         "Für Schülerinnen aus Brugg ist der nächste Ausbildungsstandort Asp im Fricktal. Beratung und Anmeldung erfolgen über den Hauptsitz der Heilsteinschule Schweiz.",
       address: "Dorfstrasse 22, 5025 Asp (Hauptsitz)",
       phone: "+41 79 389 66 22",
-      email: "info@heilsteinschule.ch",
+      email: "anfragen@heilsteinschule.ch",
       hours: "Laden Asp: Mi & Sa, 10–17 Uhr",
     },
     services: {
@@ -944,7 +944,7 @@ export const REGIONS = [
         "Für Schülerinnen aus Olten ist der nächste Ausbildungsstandort Asp im Fricktal. Beratung und Anmeldung erfolgen über den Hauptsitz der Heilsteinschule Schweiz.",
       address: "Dorfstrasse 22, 5025 Asp (Hauptsitz)",
       phone: "+41 79 389 66 22",
-      email: "info@heilsteinschule.ch",
+      email: "anfragen@heilsteinschule.ch",
       hours: "Laden Asp: Mi & Sa, 10–17 Uhr",
     },
     services: {

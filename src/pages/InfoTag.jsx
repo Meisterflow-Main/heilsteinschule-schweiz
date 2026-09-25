@@ -65,8 +65,8 @@ export default function InfoTag() {
               <Phone className="h-4 w-4" /> 079 389 66 22
             </a>
             <span className="hidden text-muted-foreground sm:inline">·</span>
-            <a href="mailto:info@heilsteinschule.ch" className="inline-flex items-center gap-2 font-semibold text-citrine-deep hover:underline">
-              <Mail className="h-4 w-4" /> info@heilsteinschule.ch
+            <a href="mailto:anfragen@heilsteinschule.ch" className="inline-flex items-center gap-2 font-semibold text-citrine-deep hover:underline">
+              <Mail className="h-4 w-4" /> anfragen@heilsteinschule.ch
             </a>
           </div>
         </Reveal>

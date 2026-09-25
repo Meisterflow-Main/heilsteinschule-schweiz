@@ -9,7 +9,7 @@ const SECTIONS = [
   },
   {
     t: "2. Verantwortliche Stellen und Kontakt",
-    c: "Verantwortlich für die in dieser Datenschutzerklärung beschriebene Verarbeitung ist: Heilsteinschule Schweiz, Heilsteinshop-Asp, Bruno Vogler Pfeiffer, Dorfstrasse 22, 5025 Asp. Bei Fragen und Anliegen rund um die Verarbeitung Ihrer Daten sowie Ihrer datenschutztechnischen Rechte uns gegenüber wenden Sie sich bitte an: Heilsteinschule Schweiz, Heilsteinshop-Asp, Bruno Vogler Pfeiffer, Dorfstrasse 22, 5025 Asp, E-Mail: info(at)heilsteinschule(dot)ch.",
+    c: "Verantwortlich für die in dieser Datenschutzerklärung beschriebene Verarbeitung ist: Heilsteinschule Schweiz, Heilsteinshop-Asp, Bruno Vogler Pfeiffer, Dorfstrasse 22, 5025 Asp. Bei Fragen und Anliegen rund um die Verarbeitung Ihrer Daten sowie Ihrer datenschutztechnischen Rechte uns gegenüber wenden Sie sich bitte an: Heilsteinschule Schweiz, Heilsteinshop-Asp, Bruno Vogler Pfeiffer, Dorfstrasse 22, 5025 Asp, E-Mail: anfragen(at)heilsteinschule(dot)ch.",
   },
   {
     t: "3. Bearbeitete Daten",

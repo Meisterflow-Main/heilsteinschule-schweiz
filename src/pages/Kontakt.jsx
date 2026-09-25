@@ -54,13 +54,13 @@ export default function Kontakt() {
                   <p className="mt-1 text-sm text-muted-foreground">+41 79 389 66 22</p>
                 </div>
               </a>
-              <a href="mailto:info@heilsteinschule.ch" className="flex items-start gap-4 rounded-2xl border border-border bg-white p-5 shadow-soft transition hover:border-citrine hover:shadow-lift">
+              <a href="mailto:anfragen@heilsteinschule.ch" className="flex items-start gap-4 rounded-2xl border border-border bg-white p-5 shadow-soft transition hover:border-citrine hover:shadow-lift">
                 <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-citrine/15 text-citrine-deep">
                   <Mail className="h-5 w-5" />
                 </div>
                 <div>
                   <h3 className="font-heading text-sm font-semibold text-amethyst">E-Mail</h3>
-                  <p className="mt-1 text-sm text-muted-foreground">info@heilsteinschule.ch</p>
+                  <p className="mt-1 text-sm text-muted-foreground">anfragen@heilsteinschule.ch</p>
                 </div>
               </a>
               <div className="flex items-start gap-4 rounded-2xl border border-border bg-white p-5 shadow-soft">
