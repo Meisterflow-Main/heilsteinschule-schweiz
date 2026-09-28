@@ -32,9 +32,9 @@ export default function Home() {
       <section className="relative overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src="https://heilsteinschule.swiss/media/Alpenseminar_2025/Alpenseminar_2025_Titelbild.jpg"
-            alt="Alpenseminar der Heilsteinschule Schweiz in den Bergen"
-            className="h-full w-full object-cover"
+            src="https://heilsteinschule.swiss/media/Ruth_Bruno_Aug_25_2.jpg"
+            alt="Unterricht mit Ruth Rios und Bruno Vogler Pfeiffer an der Heilsteinschule Schweiz"
+            className="h-full w-full object-cover object-center"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-amethyst-deep/85 via-amethyst/70 to-amethyst-deep/90" />
           <div className="absolute inset-0 bg-gradient-to-r from-amethyst-deep/60 to-transparent" />
