@@ -132,15 +132,11 @@ export default function Home() {
               title="Lehren und lernen mit Kopf, Hand, Fuss und Herz"
             />
             <p className="mt-5 text-base leading-relaxed text-muted-foreground">
-              Es ist mein innigster Wunsch, mit der Heilsteinschule die Steinheilkunde den Menschen näher
-              zu bringen. Die Zeit der Ausbildung ist ein Weg, den wir mit den Schülern gemeinsam gehen.
-              Als Heilsteinberater können sie dieses Wissen anwenden und weitergeben. Die Steinheilkunde
-              ist unsere Leidenschaft und unsere Freude.
-            </p>
-            <p className="mt-4 text-base leading-relaxed text-muted-foreground">
-              Seit 2008 beschäftige ich mich professionell mit Heilsteinen. Meine Ausbildung in
-              analytischer Steinheilkunde durchlief ich in Deutschland bei Michael Gienger, Werner Kühni
-              und Walter von Holst. Die Heilsteinschule Schweiz habe ich 2011 gegründet.
+              Es ist mein innigster Wunsch, die Steinheilkunde den Menschen näher zu bringen. Die
+              Ausbildung ist ein Weg, den wir mit Kopf, Hand, Fuss und Herz gemeinsam gehen. Seit 2008
+              beschäftige ich mich professionell mit Heilsteinen, meine Ausbildung in analytischer
+              Steinheilkunde durchlief ich in Deutschland bei Michael Gienger, Werner Kühni und Walter
+              von Holst. Die Heilsteinschule Schweiz habe ich 2011 gegründet.
             </p>
             <div className="mt-8 grid gap-4 sm:grid-cols-2">
               {PRINCIPLES.map((p) => (
@@ -155,24 +151,7 @@ export default function Home() {
                 </div>
               ))}
             </div>
-            {/* Kopf · Hand · Fuss · Herz — photo strip */}
-            <div className="mt-6 grid grid-cols-2 gap-4 sm:grid-cols-4">
-              {PRINCIPLES.map((p) => (
-                <div key={`photo-${p.label}`} className="group relative overflow-hidden rounded-2xl border border-border shadow-soft">
-                  <img
-                    src={p.img}
-                    alt={p.label}
-                    loading="lazy"
-                    className="aspect-[4/5] w-full object-cover transition duration-700 group-hover:scale-105"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-amethyst-deep/80 via-transparent to-transparent" />
-                  <div className="absolute bottom-3 left-3 flex items-center gap-1.5">
-                    <p.icon className="h-4 w-4 text-citrine-light" />
-                    <span className="font-heading text-sm font-semibold text-white">{p.label}</span>
-                  </div>
-                </div>
-              ))}
-            </div>
+
           </Reveal>
         </div>
       </section>
@@ -227,39 +206,7 @@ export default function Home() {
             </video>
           </div>
         </Reveal>
-        {/* Lernumgebung — school in action */}
-        <div className="mt-10 grid gap-6 md:grid-cols-3">
-          <Reveal>
-            <div className="group overflow-hidden rounded-2xl border border-border shadow-soft">
-              <img
-                src="https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/4159114ae_WhatsAppImage2026-09-22at0205383.jpeg"
-                alt="Unterricht im Freien"
-                loading="lazy"
-                className="aspect-[4/3] w-full object-cover transition duration-700 group-hover:scale-105"
-              />
-            </div>
-          </Reveal>
-          <Reveal delay={0.1}>
-            <div className="group overflow-hidden rounded-2xl border border-border shadow-soft">
-              <img
-                src="https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/b26a362cd_WhatsAppImage2026-09-22at0205369.jpeg"
-                alt="Heilsteine in der Praxis"
-                loading="lazy"
-                className="aspect-[4/3] w-full object-cover transition duration-700 group-hover:scale-105"
-              />
-            </div>
-          </Reveal>
-          <Reveal delay={0.2}>
-            <div className="group overflow-hidden rounded-2xl border border-border shadow-soft">
-              <img
-                src="https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/e258510a7_WhatsAppImage2026-09-22at0205379.jpeg"
-                alt="Mineralien im Detail"
-                loading="lazy"
-                className="aspect-[4/3] w-full object-cover transition duration-700 group-hover:scale-105"
-              />
-            </div>
-          </Reveal>
-        </div>
+
       </section>
 
       {/* TEAM PREVIEW */}
