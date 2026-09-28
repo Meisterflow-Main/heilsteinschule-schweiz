@@ -19,6 +19,11 @@ const REELS = [
     title: "Ausbildung mit Herz",
     caption: "Mit Kopf, Hand, Fuss und Herz zum Heilsteinberater.",
   },
+  {
+    src: "https://heilsteinschule.swiss/media/Filme/Energiesteine_reinigen_und_aufladen.mp4",
+    title: "Energiesteine reinigen & aufladen",
+    caption: "Viele Steine haben besondere Eigenschaften — richtig reinigen und aufladen.",
+  },
 ];
 
 export default function Reels() {
@@ -31,7 +36,7 @@ export default function Reels() {
           subtitle="Eindrücke aus unserer Welt der Steinheilkunde — Anwendung, Laden und Ausbildung."
         />
       </Reveal>
-      <div className="mt-12 grid grid-cols-2 gap-4 sm:gap-6 lg:grid-cols-3">
+      <div className="mt-12 grid grid-cols-2 gap-4 sm:gap-6 lg:grid-cols-4">
         {REELS.map((r, i) => (
           <Reveal key={i} delay={i * 0.08}>
             <figure className="group relative overflow-hidden rounded-2xl border border-border bg-amethyst shadow-soft transition hover:-translate-y-1 hover:shadow-lift">
