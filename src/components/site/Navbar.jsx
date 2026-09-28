@@ -9,6 +9,7 @@ const NAV = [
   { label: "News", to: "/news" },
   { label: "Blog", to: "/blog" },
   { label: "Laden & Praxis", to: "/laden-praxis" },
+  { label: "Online Shop", href: "https://heilstein-shop.com/" },
   { label: "Lehrfilme", to: "/lehrfilme" },
   { label: "Reisen", to: "/geologische-reisen" },
   { label: "Über uns", to: "/ueber-uns" },
@@ -58,17 +59,25 @@ export default function Navbar() {
 
           <nav className="hidden items-center gap-1 lg:flex">
             {NAV.map((item) => {
-              const active = location.pathname === item.to;
+              const active = item.to && location.pathname === item.to;
+              const cls = `relative rounded-full px-3.5 py-2 text-sm font-medium transition ${
+                active ? "text-amethyst" : "text-foreground/70 hover:text-amethyst"
+              }`;
+              if (item.href) {
+                return (
+                  <a
+                    key={item.label}
+                    href={item.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={cls}
+                  >
+                    {item.label}
+                  </a>
+                );
+              }
               return (
-                <Link
-                  key={item.to}
-                  to={item.to}
-                  className={`relative rounded-full px-3.5 py-2 text-sm font-medium transition ${
-                    active
-                      ? "text-amethyst"
-                      : "text-foreground/70 hover:text-amethyst"
-                  }`}
-                >
+                <Link key={item.to} to={item.to} className={cls}>
                   {item.label}
                   {active && (
                     <span className="absolute inset-x-3 -bottom-0.5 h-px bg-citrine" />
@@ -144,6 +153,19 @@ export default function Navbar() {
           <div className="glass rounded-2xl p-3 shadow-soft">
             <nav className="flex flex-col">
               {NAV.map((item) => {
+                if (item.href) {
+                  return (
+                    <a
+                      key={item.label}
+                      href={item.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="rounded-xl px-4 py-3 text-base font-medium text-foreground/80 transition hover:bg-muted"
+                    >
+                      {item.label}
+                    </a>
+                  );
+                }
                 const active = location.pathname === item.to;
                 return (
                   <Link
