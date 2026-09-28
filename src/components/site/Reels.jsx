@@ -5,11 +5,6 @@ import SectionHeading from "@/components/site/SectionHeading";
 
 const REELS = [
   {
-    src: "https://media.base44.com/videos/public/6aa92ec5274311c12da18ee6/441be9d9d_Reel_Amethyst.mp4",
-    title: "Amethyst — Kraft der Klarheit",
-    caption: "Tiefenvioletter Amethyst, der Stein der inneren Ruhe und Klarheit.",
-  },
-  {
     src: "https://media.base44.com/videos/public/6aa92ec5274311c12da18ee6/a9e81d6e8_Reel_Steinanwendung.mp4",
     title: "Steinanwendung erleben",
     caption: "Heilsteine behutsam auflegen — Gelerntes am eigenen Körper erfahren.",
@@ -33,10 +28,10 @@ export default function Reels() {
         <SectionHeading
           eyebrow="Instagram Reels"
           title="Heilsteine in bewegten Bildern"
-          subtitle="Eindrücke aus unserer Welt der Steinheilkunde — Kristalle, Anwendung, Laden und Ausbildung."
+          subtitle="Eindrücke aus unserer Welt der Steinheilkunde — Anwendung, Laden und Ausbildung."
         />
       </Reveal>
-      <div className="mt-12 grid grid-cols-2 gap-4 sm:gap-6 lg:grid-cols-4">
+      <div className="mt-12 grid grid-cols-2 gap-4 sm:gap-6 lg:grid-cols-3">
         {REELS.map((r, i) => (
           <Reveal key={i} delay={i * 0.08}>
             <figure className="group relative overflow-hidden rounded-2xl border border-border bg-amethyst shadow-soft transition hover:-translate-y-1 hover:shadow-lift">

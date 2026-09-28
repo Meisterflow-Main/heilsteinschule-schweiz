@@ -31,17 +31,11 @@ export default function Home() {
       {/* HERO */}
       <section className="relative overflow-hidden">
         <div className="absolute inset-0">
-          <video
-            autoPlay
-            muted
-            loop
-            playsInline
-            preload="metadata"
-            poster="https://heilsteinschule.swiss/media/wunderblock/SchuleWeb72x.jpg"
+          <img
+            src="https://heilsteinschule.swiss/media/Alpenseminar_2025/Alpenseminar_2025_Titelbild.jpg"
+            alt="Alpenseminar der Heilsteinschule Schweiz in den Bergen"
             className="h-full w-full object-cover"
-          >
-            <source src="https://media.base44.com/videos/public/6aa92ec5274311c12da18ee6/5f59658c9_Hero_Heilsteine.mp4" type="video/mp4" />
-          </video>
+          />
           <div className="absolute inset-0 bg-gradient-to-b from-amethyst-deep/85 via-amethyst/70 to-amethyst-deep/90" />
           <div className="absolute inset-0 bg-gradient-to-r from-amethyst-deep/60 to-transparent" />
         </div>

@@ -3,16 +3,16 @@ import Reveal from "@/components/site/Reveal";
 import SectionHeading from "@/components/site/SectionHeading";
 
 const STONES = [
-  { src: "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/69cd20212_20260712_124820.jpg", alt: "Bergkristall mit Einschlüssen", span: "tall" },
-  { src: "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/1edbdc4d6_2Farbsteine_DSC01954.jpg", alt: "Farbsteine", span: "wide" },
-  { src: "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/9b51048f6_20260823_145828.jpg", alt: "Versteinerung" },
-  { src: "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/08ae688ee_IMG-20260627-WA0115.jpg", alt: "Bergkristall-Gruppe" },
-  { src: "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/ad3650a45_IMG-20260627-WA0116.jpg", alt: "Bergkristall-Cluster" },
-  { src: "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/56966242c_20260823_145230.jpg", alt: "Fossilien mit Kristallen" },
-  { src: "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/16a773336_20260723_121611.jpg", alt: "Kristall mit grünem Apex" },
-  { src: "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/7c73f5092_20260813_112649.jpg", alt: "Ammonit im Gestein" },
-  { src: "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/1447fd1c8_20260823_152412.jpg", alt: "Fossil im Kalkstein" },
-  { src: "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/59ea73f0e_20260823_145411.jpg", alt: "Fossil in Hand" },
+  { src: "https://heilsteinschule.swiss/media/Alpenseminar_2025/Alpenseminar_2025_Titelbild.jpg", alt: "Alpenseminar in den Schweizer Alpen", span: "tall" },
+  { src: "https://heilsteinschule.swiss/media/Ruth_Bruno_Aug_25_2.jpg", alt: "Unterricht mit Ruth Rios und Bruno Vogler Pfeiffer", span: "wide" },
+  { src: "https://heilsteinschule.swiss/media/Alpenseminar_2025/Bild_Tag_4-1.jpg", alt: "Geologische Exkursion am Oberalppass" },
+  { src: "https://heilsteinschule.swiss/media/Alpenseminar_2025/Zertifikate_%C3%BCbergabe1.jpg", alt: "Zertifikatsübergabe an die Absolventinnen und Absolventen" },
+  { src: "https://heilsteinschule.swiss/media/Alpenseminar_2025/Bild_Tag_4-2.jpg", alt: "Heilsteine sammeln in den Alpen" },
+  { src: "https://heilsteinschule.swiss/media/Alpenseminar_2025/Backview.jpg", alt: "Leiterteam des Alpenseminars" },
+  { src: "https://heilsteinschule.swiss/media/Alpenseminar_2025/Bild_Tag_4-3.jpg", alt: "Mineralien am Oberalppass" },
+  { src: "https://heilsteinschule.swiss/media/Alpenseminar_2025/Zertifikate_%C3%BCbergabe2.jpg", alt: "Zertifikatsübergabe im Kreis der Absolventen" },
+  { src: "https://heilsteinschule.swiss/media/wunderblock/Schule_Asp_n_he_Quelle.jpg", alt: "Schul- und Ladenstandort Asp" },
+  { src: "https://heilsteinschule.swiss/media/Laden/20240226_100437.jpg", alt: "Heilsteinshop Asp — Beratung im Laden" },
 ];
 
 const QR_URL = "https://api.qrserver.com/v1/create-qr-code/?data=https%3A%2F%2Fheilsteinschule.swiss&size=400x400&color=2B1B4D&margin=0";
@@ -23,9 +23,9 @@ export default function StoneCollage() {
     <section className="mx-auto max-w-7xl px-4 py-20 sm:px-6">
       <Reveal>
         <SectionHeading
-          eyebrow="Schweizer Heilsteine"
-          title="Unsere Steine im Porträt"
-          subtitle="Eine Auswahl unserer geprüften Schweizer Heilsteine — vom Bergkristall bis zum Ammonit."
+          eyebrow="Schule in Aktion"
+          title="Unterricht, Exkursionen und Menschen"
+          subtitle="Eindrücke aus dem Alpenseminar, den geologischen Exkursionen und dem Schulalltag — mit Kopf, Hand, Fuss und Herz."
         />
       </Reveal>
 
@@ -70,9 +70,9 @@ export default function StoneCollage() {
                 className="mt-3 font-heading text-base font-bold leading-tight sm:text-lg"
                 style={{ color: "#FFFFFF" }}
               >
-                Heilsteine
+                Heilsteinschule
                 <br />
-                aus der Schweiz
+                Schweiz
               </h3>
 
               <p
