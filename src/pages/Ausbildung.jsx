@@ -297,12 +297,14 @@ export default function Ausbildung() {
                   Download →
                 </a>
               </div>
-            </div>
-          </Reveal>
-          <Reveal delay={0.15}>
-            <div className="mt-6 rounded-2xl bg-quartz p-5 text-sm text-foreground/80">
-              <p className="font-semibold text-amethyst">Alpenseminar 2027: 23.06. – 27.06.2027 (für alle Klassen)</p>
-              <p className="mt-1 text-xs text-muted-foreground">Schulstart 2027 bei mindestens 5 Anmeldungen pro Lehrgang. Uster 1: ab 2027 geplant.</p>
+              <div className="rounded-2xl border border-citrine/40 bg-citrine/5 p-6 shadow-soft">
+                <CalendarDays className="h-7 w-7 text-citrine-deep" />
+                <h3 className="mt-4 font-heading text-lg font-semibold text-amethyst">Alpenseminar 2027</h3>
+                <p className="mt-1 text-sm text-muted-foreground">23.06. – 27.06.2027 · Für alle Klassen</p>
+                <p className="mt-3 text-xs leading-relaxed text-muted-foreground">
+                  Schulstart 2027 bei mindestens 5 Anmeldungen pro Lehrgang. Uster 1: ab 2027 geplant.
+                </p>
+              </div>
             </div>
           </Reveal>
         </div>
