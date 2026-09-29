@@ -46,7 +46,7 @@ const NEWS = [
     date: "07.03.2026",
     title: "Rückblick der Gesundheitsmesse",
     img: "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/6878e2233_ChatGPTImageSep29202610_13_15PM.png",
-    objectPos: "object-contain",
+    aspect: "aspect-square",
     text: "Wir waren Aussteller an der Gesundheitsmesse der SVNH in Sempach 7.3.26 — interessante Begegnungen und freudvolle Gespräche.",
     to: "https://www.svnh.ch/",
     external: true,
@@ -130,7 +130,7 @@ export default function News() {
           {NEWS.map((n, i) => (
             <Reveal key={i} delay={(i % 3) * 0.08}>
               <article className="group flex h-full flex-col overflow-hidden rounded-2xl border border-border bg-white shadow-soft transition hover:-translate-y-1 hover:shadow-lift">
-                <div className="aspect-[16/10] overflow-hidden bg-muted">
+                <div className={`${n.aspect ?? "aspect-[16/10]"} overflow-hidden bg-muted`}>
                   <img src={n.img} alt={n.title} loading="lazy" className={`h-full w-full object-cover transition duration-700 group-hover:scale-105 ${n.objectPos ?? ""}`} />
                 </div>
                 <div className="flex flex-1 flex-col p-5">
