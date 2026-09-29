@@ -65,7 +65,8 @@ const NEWS = [
   {
     date: "16.02.2026",
     title: "Ein Info-Nachmittag in Uster",
-    img: "https://heilsteinschule.swiss/media/.news_img/info-tag_1_1.jpg",
+    img: "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/51c247e89_ChatGPTImageSep29202610_16_52PM.png",
+    aspect: "aspect-square",
     text: "Bewegte uns alle, weckte grosse Freude am Wesen der Heilsteine und ihrer verborgenen Energie. Steinherzlichen Dank an alle.",
     to: "https://www.facebook.com/groups/1905182292833468",
     external: true,
