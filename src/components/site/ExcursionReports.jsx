@@ -105,6 +105,17 @@ export default function ExcursionReports() {
             />
           </Reveal>
 
+          <Reveal delay={0.05}>
+            <div className="mt-10 overflow-hidden rounded-3xl border border-border shadow-lift">
+              <img
+                src="https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/51c511c41_ChatGPTImageSep29202609_42_30PM.png"
+                alt="Alpenseminar 2025 — Gruppenfoto der Heilsteinschule Schweiz in den Hochalpen"
+                loading="lazy"
+                className="aspect-[16/9] w-full object-cover object-center"
+              />
+            </div>
+          </Reveal>
+
           <div className="mt-12 space-y-8">
             {ALPENSEMINAR_TAGE.map((t, i) => (
               <Reveal key={i} delay={(i % 2) * 0.08}>
