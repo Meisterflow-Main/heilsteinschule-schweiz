@@ -232,7 +232,7 @@ export default function Ausbildung() {
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {TEAM.map((m, i) => (
             <Reveal key={m.name} delay={i * 0.06}>
-              <div className="group overflow-hidden rounded-2xl border border-border bg-white shadow-soft transition hover:-translate-y-1 hover:shadow-lift">
+              <Link to="/ueber-uns" className="group block overflow-hidden rounded-2xl border border-border bg-white shadow-soft transition hover:-translate-y-1 hover:border-citrine hover:shadow-lift">
                 <div className="aspect-square overflow-hidden bg-muted">
                   <img src={m.img} alt={m.name} loading="lazy" className="h-full w-full object-cover transition duration-700 group-hover:scale-105" />
                 </div>
@@ -240,7 +240,7 @@ export default function Ausbildung() {
                   <h3 className="font-heading text-base font-semibold text-amethyst">{m.name}</h3>
                   <p className="mt-1 text-xs leading-relaxed text-muted-foreground">{m.role}</p>
                 </div>
-              </div>
+              </Link>
             </Reveal>
           ))}
         </div>
