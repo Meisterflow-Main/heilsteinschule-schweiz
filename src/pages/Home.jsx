@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 import { ArrowRight, Heart, Hand, Brain, Footprints, Sparkles, Play } from "lucide-react";
 import Reveal from "@/components/site/Reveal";
 import SectionHeading from "@/components/site/SectionHeading";
-import TeaserGrid from "@/components/site/TeaserGrid";
 import Reels from "@/components/site/Reels";
 import HistoryTimeline from "@/components/site/HistoryTimeline";
 import StoneCollage from "@/components/site/StoneCollage";
@@ -156,59 +155,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* WERNER KÜHNI — IN LIEBEVOLLER ERINNERUNG */}
-      <WernerKuehniMemorial />
-
-      {/* MINERALIENAUSWAHL */}
-      <MineralSelection />
-
-      {/* HISTORIE TIMELINE */}
-      <HistoryTimeline />
-
-      {/* STEIN-COLLAGE */}
-      <StoneCollage />
-
-      {/* TEASER GRID */}
-      <div className="bg-quartz/60">
-        <div className="mx-auto max-w-7xl px-4 pt-20 sm:px-6">
-          <Reveal>
-            <SectionHeading
-              eyebrow="Schnell gefunden"
-              title="Unsere Themen im Überblick"
-              subtitle="Wählen Sie Ihren Weg in die Welt der Heilsteine — von der Ausbildung über den Laden bis zu Lehrfilmen."
-            />
-          </Reveal>
-        </div>
-        <TeaserGrid />
-      </div>
-
-      {/* VIDEO */}
-      <section className="mx-auto max-w-5xl px-4 py-24 sm:px-6">
-        <Reveal>
-          <SectionHeading
-            eyebrow="In bewegten Bildern"
-            title="Die Heilsteinschule Schweiz stellt sich vor"
-            subtitle="Wir stellen uns gerne vor — ein Einblick in unsere Werte, unsere Methode und unsere Leidenschaft."
-          />
-        </Reveal>
-        <Reveal delay={0.1}>
-          <div className="mt-10 overflow-hidden rounded-3xl border border-border bg-black shadow-lift">
-            <video
-              controls
-              preload="none"
-              poster="https://www.heilsteinschule.swiss/media/Filme/Vorstellung_Film.png"
-              className="aspect-video w-full"
-            >
-              <source
-                src="https://www.heilsteinschule.swiss/media/Filme/Heilsteinschule_Schweiz_Vorstellung.webm"
-                type="video/webm"
-              />
-            </video>
-          </div>
-        </Reveal>
-
-      </section>
-
       {/* TEAM PREVIEW */}
       <section className="bg-quartz/60">
         <div className="mx-auto max-w-7xl px-4 py-24 sm:px-6">
@@ -259,6 +205,45 @@ export default function Home() {
             </Link>
           </div>
         </div>
+      </section>
+
+      {/* WERNER KÜHNI — IN LIEBEVOLLER ERINNERUNG */}
+      <WernerKuehniMemorial />
+
+      {/* MINERALIENAUSWAHL */}
+      <MineralSelection />
+
+      {/* HISTORIE TIMELINE */}
+      <HistoryTimeline />
+
+      {/* STEIN-COLLAGE */}
+      <StoneCollage />
+
+      {/* VIDEO */}
+      <section className="mx-auto max-w-5xl px-4 py-24 sm:px-6">
+        <Reveal>
+          <SectionHeading
+            eyebrow="In bewegten Bildern"
+            title="Die Heilsteinschule Schweiz stellt sich vor"
+            subtitle="Wir stellen uns gerne vor — ein Einblick in unsere Werte, unsere Methode und unsere Leidenschaft."
+          />
+        </Reveal>
+        <Reveal delay={0.1}>
+          <div className="mt-10 overflow-hidden rounded-3xl border border-border bg-black shadow-lift">
+            <video
+              controls
+              preload="none"
+              poster="https://www.heilsteinschule.swiss/media/Filme/Vorstellung_Film.png"
+              className="aspect-video w-full"
+            >
+              <source
+                src="https://www.heilsteinschule.swiss/media/Filme/Heilsteinschule_Schweiz_Vorstellung.webm"
+                type="video/webm"
+              />
+            </video>
+          </div>
+        </Reveal>
+
       </section>
 
       {/* CTA */}
