@@ -44,13 +44,13 @@ const STANDORTE = [
 
 const TEAM = [
   { name: "Bruno Vogler Pfeiffer", role: "Schul-Gründer und Schulleiter", img: "https://heilsteinschule.swiss/media/topics-pictures/thumbs/bruno_vogler_pfeiffer.png" },
-  { name: "Ruth Rios", role: "Hauptdozentin der Heilsteinschule", img: "https://heilsteinschule.swiss/media/topics-pictures/thumbs/ruth-rios.jpg" },
-  { name: "Pascal Bossard", role: "Kreativ verantwortlich, Leiter Alpenseminar", img: "https://heilsteinschule.swiss/media/topics-pictures/thumbs/pascal_bossard.jpg" },
-  { name: "Sarah Ziegenhagen", role: "Dozentin Uster ZH", img: "https://heilsteinschule.swiss/media/topics-pictures/thumbs/sarah_ziegenhagen_team_bild.jpg" },
-  { name: "Joe Schnarwiler", role: "Dozent", img: "https://heilsteinschule.swiss/media/topics-pictures/thumbs/joe_schnarwiler.jpg" },
-  { name: "Maja Pfeiffer", role: "StV Schulleitung und Leitung Heilsteinshop-Asp", img: "https://heilsteinschule.swiss/media/topics-pictures/thumbs/maja_pfeiffer.png" },
-  { name: "Judith von Rotz", role: "Buchhaltung und Rechnungswesen", img: "https://heilsteinschule.swiss/media/topics-pictures/thumbs/judith_judith.vonrotz.png" },
-  { name: "René Schmid", role: "IT Support — gesamte IT-Infrastruktur", img: "https://heilsteinschule.swiss/media/topics-pictures/thumbs/rene.jpg" },
+  { name: "Ruth Rios", role: "Hauptdozentin der Heilsteinschule", img: "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/460e2670f_ChatGPTImageSep21202602_29_12PM.png" },
+  { name: "Pascal Bossard", role: "Kreativ verantwortlich, Leiter Alpenseminar", img: "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/057e4eb82_ChatGPTImageSep21202602_32_05PM.png" },
+  { name: "Sarah Ziegenhagen", role: "Dozentin Uster ZH", img: "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/744f004b6_ChatGPTImageSep21202602_35_44PM.png" },
+  { name: "Joe Schnarwiler", role: "Dozent", img: "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/8ed080c78_ChatGPTImageSep21202602_36_58PM.png" },
+  { name: "Maja Pfeiffer", role: "StV Schulleitung und Leitung Heilsteinshop-Asp", img: "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/d3b26ef85_ChatGPTImageSep21202602_40_48PM.png" },
+  { name: "Judith von Rotz", role: "Buchhaltung und Rechnungswesen", img: "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/1a6cef69a_ChatGPTImageSep21202602_42_52PM.png" },
+  { name: "René Schmid", role: "IT Support — gesamte IT-Infrastruktur", img: "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/16619e80b_ChatGPTImageSep21202602_43_39PM.png" },
 ];
 
 const VORAUSSETZUNGEN = [
