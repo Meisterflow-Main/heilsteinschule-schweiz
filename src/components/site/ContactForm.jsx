@@ -5,7 +5,7 @@ import { Loader2, CheckCircle2, AlertCircle, Send } from "lucide-react";
 const WEBHOOK_URL =
   "https://app.meisterflow.ch/api/webhooks/enquiries/a902bb23d7e98901900e3750083b670344a14683633ae15f";
 
-export default function ContactForm({ defaultDescription = "", compact = false, idPrefix = "" }) {
+export default function ContactForm({ defaultDescription = "", compact = false, idPrefix = "", inquiryType = "allgemeine_anfrage" }) {
   const [form, setForm] = useState({
     name: "",
     email: "",
@@ -43,6 +43,7 @@ export default function ContactForm({ defaultDescription = "", compact = false, 
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
+          type: inquiryType,
           name: form.name.trim(),
           email: form.email.trim(),
           phone: form.phone.trim(),

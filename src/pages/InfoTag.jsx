@@ -79,7 +79,7 @@ export default function InfoTag() {
           </Reveal>
           <Reveal delay={0.1}>
             <div className="mt-10 rounded-3xl border border-border bg-white p-6 shadow-soft sm:p-8">
-              <ContactForm defaultDescription="Anmeldung zum Info-Tag" idPrefix="infotag" />
+              <ContactForm defaultDescription="Anmeldung zum Info-Tag" idPrefix="infotag" inquiryType="infotag_anmeldung" />
             </div>
           </Reveal>
           <div className="mt-8 flex items-center justify-center gap-2 text-sm text-muted-foreground">

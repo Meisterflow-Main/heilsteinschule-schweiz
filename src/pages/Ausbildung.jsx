@@ -4,6 +4,7 @@ import { Check, MapPin, Clock, CalendarDays, GraduationCap, ArrowRight } from "l
 import Reveal from "@/components/site/Reveal";
 import SectionHeading from "@/components/site/SectionHeading";
 import ContactForm from "@/components/site/ContactForm";
+import EnrollmentForm from "@/components/site/EnrollmentForm";
 
 const STANDORTE = [
   {
@@ -145,12 +146,20 @@ export default function Ausbildung() {
                 <strong>Anzahlung:</strong> CHF 250.– zur Platzreservation (wird angerechnet). Schüler
                 erhalten 20% Rabatt im Heilsteinshop-Asp.
               </div>
-              <Link
-                to="/kontakt"
-                className="mt-6 inline-flex items-center gap-2 rounded-full bg-amethyst px-6 py-3 text-sm font-semibold text-white transition hover:bg-amethyst-deep"
-              >
-                Jetzt anmelden <ArrowRight className="h-4 w-4" />
-              </Link>
+              <div className="mt-6 flex flex-col gap-3">
+                <a
+                  href="#anmeldung"
+                  className="inline-flex items-center justify-center gap-2 rounded-full bg-citrine px-6 py-3 text-sm font-semibold text-amethyst-deep shadow-soft transition hover:bg-citrine-light"
+                >
+                  Verbindlich anmelden <ArrowRight className="h-4 w-4" />
+                </a>
+                <Link
+                  to="/kontakt"
+                  className="inline-flex items-center justify-center gap-2 rounded-full border border-border px-6 py-3 text-sm font-semibold text-amethyst transition hover:bg-quartz"
+                >
+                  Erst Fragen? Anfrage senden
+                </Link>
+              </div>
             </div>
           </Reveal>
         </div>
@@ -300,20 +309,38 @@ export default function Ausbildung() {
         </div>
       </section>
 
-      {/* Anmeldeformular */}
+      {/* Allgemeine Anfrage (unverbindlich) */}
       <section className="mx-auto max-w-3xl px-4 py-24 sm:px-6">
         <Reveal>
           <SectionHeading
-            eyebrow="Anmeldung"
-            title="Zur Schulanmeldung / Info-Tag"
-            subtitle="Wir freuen uns auf Ihre Anmeldung. Senden Sie uns Ihre Anfrage — wir melden uns schnellstmöglich."
+            eyebrow="Allgemeine Anfrage"
+            title="Noch Fragen zur Ausbildung?"
+            subtitle="Unverbindliche Anfrage — wir beantworten gerne Ihre Fragen zu Inhalt, Kosten, Ablauf und Terminen. Verbindlich anmelden können Sie sich weiter unten."
           />
         </Reveal>
         <Reveal delay={0.1}>
           <div className="mt-10 rounded-3xl border border-border bg-white p-6 shadow-soft sm:p-8">
-            <ContactForm defaultDescription="Anmeldung zur Ausbildung / Info-Tag" idPrefix="ausb" />
+            <ContactForm defaultDescription="Anfrage zur Ausbildung" idPrefix="ausbfrage" inquiryType="ausbildung_anfrage" />
           </div>
         </Reveal>
+      </section>
+
+      {/* Verbindliche Anmeldung */}
+      <section id="anmeldung" className="bg-quartz/60 scroll-mt-24">
+        <div className="mx-auto max-w-3xl px-4 py-24 sm:px-6">
+          <Reveal>
+            <SectionHeading
+              eyebrow="Verbindliche Anmeldung"
+              title="Anmeldung zur Ausbildung"
+              subtitle="Mit diesem Formular melden Sie sich verbindlich zur Grundausbildung an. Die Anzahlung von CHF 250.– sichert Ihren Platz und wird bei der Rechnung angerechnet."
+            />
+          </Reveal>
+          <Reveal delay={0.1}>
+            <div className="mt-10 rounded-3xl border border-border bg-white p-6 shadow-soft sm:p-8">
+              <EnrollmentForm idPrefix="anmeldung" />
+            </div>
+          </Reveal>
+        </div>
       </section>
     </>
   );
