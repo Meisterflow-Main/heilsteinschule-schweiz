@@ -38,7 +38,7 @@ const INTERVIEW = [
   {
     q: "Wie können Heilsteine als Lebensbegleiter dienen?",
     a: "Präventiv sind Steine sehr verlässliche Begleiter, wenn man ihnen vertraut. Dasselbe gilt, wenn eine Situation akut ist, sprich in der Form einer Krankheit sich bemerkbar macht. Hier können wir hilfreich sein. Aber der Mensch muss wollen. Die Schüler erkennen, dass ein Stein auch in seelischer oder psychischer Hinsicht ein Unterstützer sein kann, indem er tägliche Schritte auf dem individuellen Lebensweg begleitet. Er kann die Stimmung erhellen und aber auch Mut geben, Unangenehmes anzugehen und anzuschauen. Er hilft, Spannungen zu lösen und Blockaden aufzulösen.",
-    img: "https://heilsteinschule.swiss/media/Reise/Zermatt-blick_richtung_gornergrat_ab%20schwarzsee.png",
+    img: "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/1cb2b69f3_ChatGPTImageSep30202602_08_20AM.png",
     imgAlt: "Trockener Steg, Zermatt, 3000 m ü. M., 3-tägige Georeise 2022",
   },
   {
