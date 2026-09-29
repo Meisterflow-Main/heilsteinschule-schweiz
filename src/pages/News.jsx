@@ -17,7 +17,7 @@ const NEWS = [
   {
     date: "03.09.2026",
     title: "Werner Kühni in Erinnerung",
-    img: "https://heilsteinschule.swiss/media/.news_img/werner_kuehni_news.png",
+    img: "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/0a2ea8652_ChatGPTImageSep29202610_09_59PM.png",
     text: "R.I.P. Werner Kühni! Unser letztes Treffen — Heilstein Museum in Stockholm mit Werner Kühni.",
     to: "https://heilsteinschule.swiss/diverses/geologische-reisen/heilstein-museum-2022/",
     external: true,
