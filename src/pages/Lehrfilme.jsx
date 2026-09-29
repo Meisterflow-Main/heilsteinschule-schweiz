@@ -15,7 +15,7 @@ const FILME = [
     title: "Kolloidales Silber — Film vom 07. Juni 2024",
     date: "Juni 2024",
     text: "Natürliche Alternativen — Kolloidales Silber und Borax als wirksame Heilmittel mit Werner Kühni und Manuel Litschi.",
-    img: "https://heilsteinschule.swiss/media/.news_img/studieren.jpg",
+    img: "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/215017265_ChatGPTImageSep30202601_52_21AM.png",
     href: "https://heilstein-shop.com/koll_silber/",
   },
   {
