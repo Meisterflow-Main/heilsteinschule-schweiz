@@ -9,6 +9,7 @@ import HistoryTimeline from "@/components/site/HistoryTimeline";
 import StoneCollage from "@/components/site/StoneCollage";
 import MineralSelection from "@/components/site/MineralSelection";
 import WernerKuehniMemorial from "@/components/site/WernerKuehniMemorial";
+import LearningActivities from "@/components/site/LearningActivities";
 
 const PRINCIPLES = [
   { icon: Brain, label: "Kopf", text: "Analytisches Wissen, welches erklärt, warum und wie die Heilsteine wirken.", img: "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/85e503e9c_WhatsAppImage2026-09-22at0205382.jpeg" },
@@ -102,6 +103,9 @@ export default function Home() {
 
       {/* INSTAGRAM REELS */}
       <Reels />
+
+      {/* LERNEN BEI UNS — Schule, Menschen & Naturerlebnis */}
+      <LearningActivities />
 
       {/* LEITBILD */}
       <section className="relative mx-auto max-w-7xl px-4 py-24 sm:px-6">
