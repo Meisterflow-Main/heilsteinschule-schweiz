@@ -6,7 +6,6 @@ import SectionHeading from "@/components/site/SectionHeading";
 const SHOP_HEILSTEINE = "https://heilstein-shop.com/heilsteine/";
 
 const VIDEOS = [
-  { src: "https://media.base44.com/videos/public/6aa92ec5274311c12da18ee6/05b4e9b71_WhatsAppVideo2026-09-22at0210584.mp4", label: "Auswahl", href: SHOP_HEILSTEINE },
   { src: "https://media.base44.com/videos/public/6aa92ec5274311c12da18ee6/270c228e7_WhatsAppVideo2026-09-22at0210583.mp4", label: "Prüfung", href: SHOP_HEILSTEINE },
   { src: "https://media.base44.com/videos/public/6aa92ec5274311c12da18ee6/2847934fa_WhatsAppVideo2026-09-22at0210582.mp4", label: "Befühlen", href: SHOP_HEILSTEINE },
   { src: "https://media.base44.com/videos/public/6aa92ec5274311c12da18ee6/df17ff5f2_WhatsAppVideo2026-09-22at0210581.mp4", label: "Vergleich", href: SHOP_HEILSTEINE },
@@ -87,7 +86,7 @@ export default function MineralSelection() {
           subtitle="Jeder Heilstein wird einzeln in die Hand genommen, geprüft und ausgewählt. Mit Wissen, Gefühl und Intuition entscheiden wir, welche Mineralien als Lebensbegleiter dienen dürfen. Klicken Sie auf ein Porträt für die Beschreibung im Online-Shop."
         />
       </Reveal>
-      <div className="mt-12 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-5 sm:gap-6">
+      <div className="mt-12 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4 sm:gap-6">
         {VIDEOS.map((v, i) => (
           <VideoCard key={i} src={v.src} label={v.label} delay={i * 0.06} href={v.href} />
         ))}
