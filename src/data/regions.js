@@ -31,7 +31,7 @@ export const REGIONS = [
     },
     services: {
       intro:
-        "In Asp bieten wir das vollständige Ausbildungsprogramm der Heilsteinschule an – von der Grundausbildung bis zum vertiefenden Alpenseminar.",
+        "In Asp bieten wir die vollständige Grundausbildung sowie kostenlose Info-Nachmittage an. Das Alpenseminar findet in den Schweizer Alpen statt.",
       items: [
         {
           title: "Grundausbildung Heilsteinberater",
@@ -41,7 +41,7 @@ export const REGIONS = [
         {
           title: "Alpenseminar",
           description:
-            "Das Alpenseminar ist der praktische Ausbildungsteil und obligatorisch für das Schulzertifikat. Vier Übernachtungen mit Frühstück und Abendessen vertiefen das Erlernte in den Bergen rund um Asp.",
+            "Das Alpenseminar ist der praktische Ausbildungsteil und obligatorisch für das Schulzertifikat. Vier Übernachtungen mit Frühstück und Abendessen vertiefen das Erlernte in den Schweizer Alpen.",
         },
         {
           title: "Info-Nachmittag Asp",
@@ -84,7 +84,7 @@ export const REGIONS = [
       { q: "Wie lange dauert die Ausbildung in Asp?", a: "Die Ausbildung in Asp erstreckt sich über mindestens drei Vierteljahre. Maximal zwei Fehltage sind erlaubt, ausgefallene Schultage lassen sich in einer Parallelklasse nachholen." },
       { q: "Kann ich mich online anmelden?", a: "Ja, die Anmeldung zur Heilsteinschule in Asp erfolgt online, schriftlich oder per E-Mail. Mit der Anzahlung von CHF 250 wird deine Anmeldung verbindlich und dein Platz reserviert." },
       { q: "Brauche ich Vorkenntnisse für die Steinheilkunde?", a: "Neu im Fricktal startest du ohne Vorkenntnisse. Wichtig sind Freude an Steinen, Offenheit für die Natur und ein offenes Herz – alles Weitere vermitteln dir die Dozenten in Asp." },
-      { q: "Wo finden die Schultage in Asp statt?", a: "Die Schultage finden im Hauptsitz der Heilsteinschule in Asp statt, direkt mit Heilsteinshop und Praxis. Ab fünf Schülerinnen wird der Beginn festgelegt, ab zehn unterrichten zwei Dozenten." },
+      { q: "Wo finden die Schultage in Asp statt?", a: "Die Schultage finden im Hauptsitz der Heilsteinschule in Asp statt, direkt mit Heilsteinshop und Praxis. Die Klassen umfassen 5 bis 8 Schülerinnen, der Beginn wird festgelegt, sobald 5 Anmeldungen vorliegen." },
       { q: "Ist das Alpenseminar in Asp inbegriffen?", a: "Das Alpenseminar ist obligatorisch für das Zertifikat, jedoch nicht im Ausbildungsbetrag enthalten. Für vier Übernachtungen mit Halbpension fallen ca. CHF 490 an, zahlbar direkt im Seminarhotel." },
     ],
     otherServices: [
@@ -120,20 +120,20 @@ export const REGIONS = [
     usps: [
       { icon: "Sparkles", title: "Seit 2011", description: "Langjährige Erfahrung in Steinheilkunde" },
       { icon: "Award", title: "SVNH-zertifiziert", description: "Anerkannter Ausbildungszweig" },
-      { icon: "Users", title: "Dozententeam", description: "Unterricht ab zehn Schülern doppelt" },
+      { icon: "Users", title: "Dozententeam", description: "Kleine Klassen mit 5 bis 8 Schülerinnen" },
       { icon: "Hand", title: "Praxisnah", description: "Steine direkt in die Hand nehmen" },
     ],
     contact: {
       intro:
-        "Der Schulstandort Wallbach liegt zentral im Fricktal. Für Beratung und Anmeldung wendest du dich an den Hauptsitz der Heilsteinschule Schweiz in Asp.",
-      address: "Dorfstrasse 22, 5025 Asp (Hauptsitz)",
+        "Der Schulstandort Wallbach liegt an der Rheinstrasse 29 im Fricktal. Hier finden die Kurse vor Ort statt. Beratung und Anmeldung laufen über den Hauptsitz der Heilsteinschule Schweiz in Asp.",
+      address: "Rheinstrasse 29, 4323 Wallbach AG",
       phone: "+41 79 389 66 22",
       email: "anfragen@heilsteinschule.ch",
       hours: "Laden Asp: Mi & Sa, 10–17 Uhr",
     },
     services: {
       intro:
-        "Am Standort Wallbach führen wir die Grundausbildung und ergänzende Seminare durch – eng abgestimmt mit dem Hauptsitz in Asp.",
+        "Am Standort Wallbach führen wir die Grundausbildung durch – eng abgestimmt mit dem Hauptsitz in Asp. Info-Nachmittage finden in Asp und Bern statt.",
       items: [
         {
           title: "Grundausbildung Heilsteinberater",
@@ -146,18 +146,18 @@ export const REGIONS = [
             "Das praktische Alpenseminar vertieft das Wissen aus Wallbach mit vier Übernachtungen in den Alpen. Es ist obligatorisch für das Schulzertifikat der Heilsteinschule.",
         },
         {
-          title: "Info-Nachmittag Wallbach",
+          title: "Info-Nachmittag in Asp oder Bern",
           description:
-            "Vor der Anmeldung lernst du an einem kostenlosen Info-Nachmittag die Steinheilkunde und das Dozententeam kennen – unverbindlich und herzig in Wallbach.",
+            "Kostenlose Info-Nachmittage finden in Asp und Bern statt – ideal, um vor der Anmeldung die Schule, das Dozententeam und die Steinheilkunde unverbindlich kennenzulernen.",
         },
       ],
     },
     whyUs: {
       intro:
-        "Wallbach liegt verkehrsgünstig an der Grenze zum Kanton Solothurn und ist für Schüler aus dem Fricktal und dem Baselbiet schnell erreichbar.",
+        "Wallbach liegt im nordwestlichen Fricktal, nahe des Rheins und der deutschen Grenze, und ist für Schüler aus dem Fricktal und dem Baselbiet schnell erreichbar.",
       reasons: [
         { headline: "Gute Anbindung im Fricktal", description: "Schnell erreichbar aus Wallbach und Umgebung." },
-        { headline: "Kleine Klassen", description: "Ab zehn Schülern unterrichten zwei Dozenten." },
+        { headline: "Kleine Klassen", description: "5 bis 8 Schülerinnen für persönliche Betreuung." },
         { headline: "SVNH-zertifiziert", description: "Anerkannter Abschluss in Steinheilkunde." },
         { headline: "Praxiserprobtes Team", description: "Dozenten mit eigener Heilsteinpraxis." },
         { headline: "Individuelle Verschiebung", description: "Schultage lassen sich flexibel nachholen." },
@@ -186,7 +186,7 @@ export const REGIONS = [
       { q: "Wie lange dauert die Ausbildung in Wallbach?", a: "Die Ausbildung in Wallbach dauert mindestens drei Vierteljahre. Maximal zwei Fehltage sind erlaubt, Nachholtermine in einer Parallelklasse sind jederzeit möglich." },
       { q: "Kann ich mich online für Wallbach anmelden?", a: "Ja, die Anmeldung erfolgt online, schriftlich oder per E-Mail über den Hauptsitz in Asp. Mit der Anzahlung von CHF 250 wird deine Anmeldung für Wallbach verbindlich." },
       { q: "Brauche ich Vorkenntnisse in Steinheilkunde?", a: "Nein, in Wallbach startest du ohne Vorkenntnisse. Freude an Steinen und Offenheit für die Natur genügen – das Dozententeam führt dich Schritt für Schritt in die Steinheilkunde ein." },
-      { q: "Wo finden die Schultage in Wallbach statt?", a: "Die Schultage finden am Schulstandort Wallbach statt, organisiert über den Hauptsitz in Asp. Ab fünf angemeldeten Schülern wird der Beginn festgelegt." },
+      { q: "Wo finden die Schultage in Wallbach statt?", a: "Die Schultage finden am Schulstandort Wallbach an der Rheinstrasse 29 statt, organisiert über den Hauptsitz in Asp. Die Klassen umfassen 5 bis 8 Schülerinnen, der Beginn wird festgelegt, sobald 5 Anmeldungen vorliegen." },
       { q: "Ist das Alpenseminar für Wallbach verpflichtend?", a: "Ja, das Alpenseminar ist obligatorisch für das Zertifikat. Für vier Übernachtungen mit Halbpension fallen ca. CHF 490 an, zahlbar direkt im Seminarhotel." },
     ],
     otherServices: [
@@ -198,7 +198,7 @@ export const REGIONS = [
     ],
     area: {
       intro:
-        "Wallbach liegt zentral an der Grenze zum Kanton Solothurn. Unser Einzugsgebiet erstreckt sich über das Fricktal und die angrenzenden Regionen.",
+        "Wallbach liegt zentral im nordwestlichen Fricktal, nahe des Rheins. Unser Einzugsgebiet erstreckt sich über das Fricktal und die angrenzenden Regionen.",
       places: ["Wallbach", "Mumpf", "Obermumpf", "Stein", "Bad Zurzach", "Kaiserstuhl", "Fisibach", "Zurzach", "Böttstein", "Döttingen"],
     },
     finalCta: {
@@ -227,8 +227,8 @@ export const REGIONS = [
     ],
     contact: {
       intro:
-        "Der Schulstandort Bern liegt zentral in der Bundesstadt. Beratung und Anmeldung laufen über den Hauptsitz der Heilsteinschule Schweiz in Asp.",
-      address: "Dorfstrasse 22, 5025 Asp (Hauptsitz)",
+        "Der Schulstandort Bern liegt zentral in der Bundesstadt an der Kapellenstrasse 5, im selben Gebäude wie der Schweizerische Verband für Natürliches Heilen (SVNH). Beratung und Anmeldung laufen über den Hauptsitz der Heilsteinschule Schweiz in Asp.",
+      address: "Kapellenstrasse 5 (4. Stock), 3011 Bern",
       phone: "+41 79 389 66 22",
       email: "anfragen@heilsteinschule.ch",
       hours: "Laden Asp: Mi & Sa, 10–17 Uhr",
@@ -258,7 +258,7 @@ export const REGIONS = [
       intro:
         "Bern als Ausbildungsstandort verbindet städtische Erreichbarkeit mit der langen Tradition der Heilsteinschule Schweiz.",
       reasons: [
-        { headline: "Zentral in der Bundesstadt", description: "Gut erreichbar mit ÖV aus dem Seeland." },
+        { headline: "Zentral in der Bundesstadt", description: "6 Gehminuten ab Hauptbahnhof Bern." },
         { headline: "Erfahrene Dozenten", description: "Lehrpersonen mit eigener Heilsteinpraxis." },
         { headline: "SVNH-zertifiziert", description: "Anerkannter Steinheilkunde-Abschluss." },
         { headline: "Kleine Klassen", description: "Persönliche Betreuung in Bern." },
@@ -288,7 +288,7 @@ export const REGIONS = [
       { q: "Wie lange dauert die Ausbildung in Bern?", a: "In Bern erstreckt sich die Ausbildung über mindestens drei Vierteljahre. Maximal zwei Fehltage sind erlaubt, ausgefallene Tage lassen sich in einer Parallelklasse nachholen." },
       { q: "Kann ich mich online für Bern anmelden?", a: "Ja, die Anmeldung erfolgt online, schriftlich oder per E-Mail über den Hauptsitz in Asp. Mit der Anzahlung von CHF 250 wird deine Anmeldung für den Standort Bern verbindlich." },
       { q: "Brauche ich Vorkenntnisse in Steinheilkunde?", a: "Nein, in Bern startest du ohne Vorkenntnisse. Wichtig sind Freude an Steinen und Offenheit – das Dozententeam führt dich Schritt für Schritt in die Steinheilkunde ein." },
-      { q: "Wo finden die Schultage in Bern statt?", a: "Die Schultage finden am Schulstandort Bern statt, organisiert über den Hauptsitz in Asp. Ab fünf angemeldeten Schülern wird der Schulbeginn festgelegt." },
+      { q: "Wo finden die Schultage in Bern statt?", a: "Die Schultage finden am Schulstandort Bern an der Kapellenstrasse 5 statt, organisiert über den Hauptsitz in Asp. Die Klassen umfassen 5 bis 8 Schülerinnen, der Beginn wird festgelegt, sobald 5 Anmeldungen vorliegen." },
       { q: "Ist das Alpenseminar für Bern verpflichtend?", a: "Ja, das Alpenseminar ist obligatorisch für das Zertifikat. Für vier Übernachtungen mit Halbpension fallen ca. CHF 490 an, zahlbar direkt im Seminarhotel." },
     ],
     otherServices: [
@@ -319,7 +319,7 @@ export const REGIONS = [
       eyebrow: "Heilsteine in Uster",
       h1: "Heilsteinberater Ausbildung in Uster – Steinheilkunde im Zürcher Oberland",
       description:
-        "In Uster bringt die Heilsteinschule Schweiz die SVNH-zertifizierte Ausbildung zum Heilsteinberater ins Zürcher Oberland. Praxisnah und fundiert – mit Dozenten, die ihre Leidenschaft für Steine weitergeben.",
+        "In Uster bringt die Heilsteinschule Schweiz die SVNH-zertifizierte Ausbildung zum Heilsteinberater ins Zürcher Oberland. Eine neue Klasse ist ab 2027 geplant – praxisnah und fundert, mit Dozentin Sarah Ziegenhagen.",
     },
     usps: [
       { icon: "Sparkles", title: "Seit 2011", description: "Etablierte Steinheilkunde-Schule" },
@@ -337,7 +337,7 @@ export const REGIONS = [
     },
     services: {
       intro:
-        "In Uster bieten wir die Grundausbildung sowie Info-Nachmittage an – eng verbunden mit dem Hauptsitz in Asp und dem gesamten Dozententeam.",
+        "In Uster ist eine neue Klasse ab 2027 geplant. Info-Nachmittage finden in Asp und Bern statt – eng verbunden mit dem Hauptsitz in Asp und dem gesamten Dozententeam.",
       items: [
         {
           title: "Grundausbildung Heilsteinberater",
@@ -350,9 +350,9 @@ export const REGIONS = [
             "Das Alpenseminar vertieft das Usterer Wissen mit vier Übernachtungen in den Bergen und ist obligatorisch für das Schulzertifikat der Heilsteinschule.",
         },
         {
-          title: "Info-Nachmittag Uster",
+          title: "Info-Nachmittag in Asp oder Bern",
           description:
-            "Am kostenlosen Info-Nachmittag in Uster lernst du die Heilsteinschule und die Steinheilkunde unverbindlich kennen – ideal, um vor der Anmeldung zu schnuppern.",
+            "Kostenlose Info-Nachmittage finden in Asp und Bern statt – ideal, um vor der Anmeldung die Heilsteinschule und die Steinheilkunde unverbindlich kennenzulernen.",
         },
       ],
     },
@@ -390,7 +390,7 @@ export const REGIONS = [
       { q: "Wie lange dauert die Ausbildung in Uster?", a: "In Uster dauert die Ausbildung mindestens drei Vierteljahre. Maximal zwei Fehltage sind erlaubt, ausgefallene Schultage lassen sich in einer Parallelklasse nachholen." },
       { q: "Kann ich mich online für Uster anmelden?", a: "Ja, die Anmeldung erfolgt online, schriftlich oder per E-Mail über den Hauptsitz in Asp. Mit der Anzahlung von CHF 250 wird deine Anmeldung für Uster verbindlich." },
       { q: "Brauche ich Vorkenntnisse in Steinheilkunde?", a: "Nein, in Uster startest du ohne Vorkenntnisse. Freude an Steinen und ein offenes Herz genügen – die Dozentin führt dich Schritt für Schritt in die Steinheilkunde ein." },
-      { q: "Wo finden die Schultage in Uster statt?", a: "Die Schultage finden am Schulstandort Uster statt, organisiert über den Hauptsitz in Asp. Ab fünf angemeldeten Schülern wird der Beginn festgelegt." },
+      { q: "Wo finden die Schultage in Uster statt?", a: "Die Schultage finden am Schulstandort Uster statt (neue Klasse 2027 geplant), organisiert über den Hauptsitz in Asp. Die Klassen umfassen 5 bis 8 Schülerinnen, der Beginn wird festgelegt, sobald 5 Anmeldungen vorliegen." },
       { q: "Ist das Alpenseminar für Uster verpflichtend?", a: "Ja, das Alpenseminar ist obligatorisch für das Zertifikat. Für vier Übernachtungen mit Halbpension fallen ca. CHF 490 an, zahlbar direkt im Seminarhotel." },
     ],
     otherServices: [
@@ -421,7 +421,7 @@ export const REGIONS = [
       eyebrow: "Heilsteine in Zürich",
       h1: "Heilsteinberater Ausbildung für Zürich – Steinheilkunde hautnah erleben",
       description:
-        "Für Interessierte aus Zürich führt die Heilsteinschule Schweiz die SVNH-zertifizierte Ausbildung zum Heilsteinberater am nahen Standort Uster durch. Praxisnah, fundiert und mit Dozenten, die selbst in der Steinheilkunde arbeiten.",
+        "Für Interessierte aus Zürich führt die Heilsteinschule Schweiz die SVNH-zertifizierte Ausbildung zum Heilsteinberater am nahen Standort Uster durch (neue Klasse ab 2027 geplant). Praxisnah, fundiert und mit Dozenten, die selbst in der Steinheilkunde arbeiten.",
     },
     usps: [
       { icon: "Sparkles", title: "Seit 2011", description: "Über 250 ausgebildete Berater" },
@@ -439,7 +439,7 @@ export const REGIONS = [
     },
     services: {
       intro:
-        "Im Raum Zürich bieten wir die Grundausbildung am Standort Uster an – ergänzt durch Info-Nachmittage und das Alpenseminar.",
+        "Im Raum Zürich bieten wir die Grundausbildung am Standort Uster an (neue Klasse ab 2027). Info-Nachmittage finden in Asp und Bern statt, das Alpenseminar in den Schweizer Alpen.",
       items: [
         {
           title: "Grundausbildung Heilsteinberater",
@@ -454,7 +454,7 @@ export const REGIONS = [
         {
           title: "Info-Nachmittag für Zürich",
           description:
-            "Am kostenlosen Info-Nachmittag in Uster lernst du die Heilsteinschule und die Steinheilkunde unverbindlich kennen – ideal für Interessierte aus Zürich.",
+            "Kostenlose Info-Nachmittage finden in Asp und Bern statt – ideal für Interessierte aus Zürich, um die Heilsteinschule und die Steinheilkunde unverbindlich kennenzulernen.",
         },
       ],
     },
@@ -492,7 +492,7 @@ export const REGIONS = [
       { q: "Wie lange dauert die Ausbildung ab Zürich?", a: "Ab Zürich dauert die Ausbildung mindestens drei Vierteljahre am Standort Uster. Maximal zwei Fehltage sind erlaubt, Nachholtermine in einer Parallelklasse sind möglich." },
       { q: "Kann ich mich online für Zürich anmelden?", a: "Ja, die Anmeldung erfolgt online, schriftlich oder per E-Mail über den Hauptsitz in Asp. Mit der Anzahlung von CHF 250 wird deine Anmeldung für den Raum Zürich verbindlich." },
       { q: "Brauche ich Vorkenntnisse in Steinheilkunde?", a: "Nein, ab Zürich startest du ohne Vorkenntnisse. Freude an Steinen und ein offenes Herz genügen – das Dozententeam führt dich Schritt für Schritt in die Steinheilkunde ein." },
-      { q: "Wo finden die Schultage für Zürich statt?", a: "Die Schultage finden am Standort Uster statt, organisiert über den Hauptsitz in Asp. Ab fünf angemeldeten Schülern wird der Schulbeginn festgelegt." },
+      { q: "Wo finden die Schultage für Zürich statt?", a: "Die Schultage finden am Standort Uster statt, organisiert über den Hauptsitz in Asp. Die Klassen umfassen 5 bis 8 Schülerinnen, der Beginn wird festgelegt, sobald 5 Anmeldungen vorliegen." },
       { q: "Ist das Alpenseminar für Zürich verpflichtend?", a: "Ja, das Alpenseminar ist obligatorisch für das Zertifikat. Für vier Übernachtungen mit Halbpension fallen ca. CHF 490 an, zahlbar direkt im Seminarhotel." },
     ],
     otherServices: [
@@ -594,7 +594,7 @@ export const REGIONS = [
       { q: "Wie lange dauert die Ausbildung ab Basel?", a: "Ab Basel dauert die Ausbildung mindestens drei Vierteljahre am Standort Asp. Maximal zwei Fehltage sind erlaubt, ausgefallene Tage lassen sich in einer Parallelklasse nachholen." },
       { q: "Kann ich mich online für Basel anmelden?", a: "Ja, die Anmeldung erfolgt online, schriftlich oder per E-Mail über den Hauptsitz in Asp. Mit der Anzahlung von CHF 250 wird deine Anmeldung für den Raum Basel verbindlich." },
       { q: "Brauche ich Vorkenntnisse in Steinheilkunde?", a: "Nein, ab Basel startest du ohne Vorkenntnisse. Freude an Steinen und ein offenes Herz genügen – das Dozententeam führt dich Schritt für Schritt in die Steinheilkunde ein." },
-      { q: "Wo finden die Schultage für Basel statt?", a: "Die Schultage finden am Standort Asp im Fricktal statt, organisiert über den Hauptsitz. Ab fünf angemeldeten Schülern wird der Schulbeginn festgelegt." },
+      { q: "Wo finden die Schultage für Basel statt?", a: "Die Schultage finden am Standort Asp im Fricktal statt, organisiert über den Hauptsitz. Die Klassen umfassen 5 bis 8 Schülerinnen, der Beginn wird festgelegt, sobald 5 Anmeldungen vorliegen." },
       { q: "Ist das Alpenseminar für Basel verpflichtend?", a: "Ja, das Alpenseminar ist obligatorisch für das Zertifikat. Für vier Übernachtungen mit Halbpension fallen ca. CHF 490 an, zahlbar direkt im Seminarhotel." },
     ],
     otherServices: [
@@ -696,7 +696,7 @@ export const REGIONS = [
       { q: "Wie lange dauert die Ausbildung ab Aarau?", a: "Ab Aarau dauert die Ausbildung mindestens drei Vierteljahre am Standort Asp. Maximal zwei Fehltage sind erlaubt, ausgefallene Tage lassen sich in einer Parallelklasse nachholen." },
       { q: "Kann ich mich online für Aarau anmelden?", a: "Ja, die Anmeldung erfolgt online, schriftlich oder per E-Mail über den Hauptsitz in Asp. Mit der Anzahlung von CHF 250 wird deine Anmeldung für den Raum Aarau verbindlich." },
       { q: "Brauche ich Vorkenntnisse in Steinheilkunde?", a: "Nein, ab Aarau startest du ohne Vorkenntnisse. Freude an Steinen und ein offenes Herz genügen – das Dozententeam führt dich Schritt für Schritt in die Steinheilkunde ein." },
-      { q: "Wo finden die Schultage für Aarau statt?", a: "Die Schultage finden am Standort Asp im Fricktal statt, organisiert über den Hauptsitz. Ab fünf angemeldeten Schülern wird der Schulbeginn festgelegt." },
+      { q: "Wo finden die Schultage für Aarau statt?", a: "Die Schultage finden am Standort Asp im Fricktal statt, organisiert über den Hauptsitz. Die Klassen umfassen 5 bis 8 Schülerinnen, der Beginn wird festgelegt, sobald 5 Anmeldungen vorliegen." },
       { q: "Ist das Alpenseminar für Aarau verpflichtend?", a: "Ja, das Alpenseminar ist obligatorisch für das Zertifikat. Für vier Übernachtungen mit Halbpension fallen ca. CHF 490 an, zahlbar direkt im Seminarhotel." },
     ],
     otherServices: [
@@ -798,7 +798,7 @@ export const REGIONS = [
       { q: "Wie lange dauert die Ausbildung ab Baden?", a: "Ab Baden dauert die Ausbildung mindestens drei Vierteljahre am Standort Asp. Maximal zwei Fehltage sind erlaubt, ausgefallene Tage lassen sich in einer Parallelklasse nachholen." },
       { q: "Kann ich mich online für Baden anmelden?", a: "Ja, die Anmeldung erfolgt online, schriftlich oder per E-Mail über den Hauptsitz in Asp. Mit der Anzahlung von CHF 250 wird deine Anmeldung für den Raum Baden verbindlich." },
       { q: "Brauche ich Vorkenntnisse in Steinheilkunde?", a: "Nein, ab Baden startest du ohne Vorkenntnisse. Freude an Steinen und ein offenes Herz genügen – das Dozententeam führt dich Schritt für Schritt in die Steinheilkunde ein." },
-      { q: "Wo finden die Schultage für Baden statt?", a: "Die Schultage finden am Standort Asp im Fricktal statt, organisiert über den Hauptsitz. Ab fünf angemeldeten Schülern wird der Schulbeginn festgelegt." },
+      { q: "Wo finden die Schultage für Baden statt?", a: "Die Schultage finden am Standort Asp im Fricktal statt, organisiert über den Hauptsitz. Die Klassen umfassen 5 bis 8 Schülerinnen, der Beginn wird festgelegt, sobald 5 Anmeldungen vorliegen." },
       { q: "Ist das Alpenseminar für Baden verpflichtend?", a: "Ja, das Alpenseminar ist obligatorisch für das Zertifikat. Für vier Übernachtungen mit Halbpension fallen ca. CHF 490 an, zahlbar direkt im Seminarhotel." },
     ],
     otherServices: [
@@ -900,7 +900,7 @@ export const REGIONS = [
       { q: "Wie lange dauert die Ausbildung ab Brugg?", a: "Ab Brugg dauert die Ausbildung mindestens drei Vierteljahre am Standort Asp. Maximal zwei Fehltage sind erlaubt, ausgefallene Tage lassen sich in einer Parallelklasse nachholen." },
       { q: "Kann ich mich online für Brugg anmelden?", a: "Ja, die Anmeldung erfolgt online, schriftlich oder per E-Mail über den Hauptsitz in Asp. Mit der Anzahlung von CHF 250 wird deine Anmeldung für den Raum Brugg verbindlich." },
       { q: "Brauche ich Vorkenntnisse in Steinheilkunde?", a: "Nein, ab Brugg startest du ohne Vorkenntnisse. Freude an Steinen und ein offenes Herz genügen – das Dozententeam führt dich Schritt für Schritt in die Steinheilkunde ein." },
-      { q: "Wo finden die Schultage für Brugg statt?", a: "Die Schultage finden am Standort Asp im Fricktal statt, organisiert über den Hauptsitz. Ab fünf angemeldeten Schülern wird der Schulbeginn festgelegt." },
+      { q: "Wo finden die Schultage für Brugg statt?", a: "Die Schultage finden am Standort Asp im Fricktal statt, organisiert über den Hauptsitz. Die Klassen umfassen 5 bis 8 Schülerinnen, der Beginn wird festgelegt, sobald 5 Anmeldungen vorliegen." },
       { q: "Ist das Alpenseminar für Brugg verpflichtend?", a: "Ja, das Alpenseminar ist obligatorisch für das Zertifikat. Für vier Übernachtungen mit Halbpension fallen ca. CHF 490 an, zahlbar direkt im Seminarhotel." },
     ],
     otherServices: [
@@ -1002,7 +1002,7 @@ export const REGIONS = [
       { q: "Wie lange dauert die Ausbildung ab Olten?", a: "Ab Olten dauert die Ausbildung mindestens drei Vierteljahre am Standort Asp. Maximal zwei Fehltage sind erlaubt, ausgefallene Tage lassen sich in einer Parallelklasse nachholen." },
       { q: "Kann ich mich online für Olten anmelden?", a: "Ja, die Anmeldung erfolgt online, schriftlich oder per E-Mail über den Hauptsitz in Asp. Mit der Anzahlung von CHF 250 wird deine Anmeldung für den Raum Olten verbindlich." },
       { q: "Brauche ich Vorkenntnisse in Steinheilkunde?", a: "Nein, ab Olten startest du ohne Vorkenntnisse. Freude an Steinen und ein offenes Herz genügen – das Dozententeam führt dich Schritt für Schritt in die Steinheilkunde ein." },
-      { q: "Wo finden die Schultage für Olten statt?", a: "Die Schultage finden am Standort Asp im Fricktal statt, organisiert über den Hauptsitz. Ab fünf angemeldeten Schülern wird der Schulbeginn festgelegt." },
+      { q: "Wo finden die Schultage für Olten statt?", a: "Die Schultage finden am Standort Asp im Fricktal statt, organisiert über den Hauptsitz. Die Klassen umfassen 5 bis 8 Schülerinnen, der Beginn wird festgelegt, sobald 5 Anmeldungen vorliegen." },
       { q: "Ist das Alpenseminar für Olten verpflichtend?", a: "Ja, das Alpenseminar ist obligatorisch für das Zertifikat. Für vier Übernachtungen mit Halbpension fallen ca. CHF 490 an, zahlbar direkt im Seminarhotel." },
     ],
     otherServices: [
