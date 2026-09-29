@@ -5,9 +5,16 @@ import { Image } from "@/components/ui/image";
 const TIMELINE = [
   {
     year: "1970",
-    img: "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/08c713d17_Screenshot_20260911_104842_Facebook1.jpg",
+    img: "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/f768a42ec_ChatGPTImageSep29202603_38_30PM.png",
+    img2: "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/3d05b47e6_ChatGPTImageSep29202603_43_51PM.png",
     title: "Die Handwerksjahre",
     text: "Mit 16 Jahren absolviert Bruno Vogler Pfeiffer eine Schreinerlehre und hängt eine Maurerlehre als Zusatzausbildung an — der erste bewusste Umgang mit Holz und Stein.",
+  },
+  {
+    year: "1987",
+    img: "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/53397d677_ChatGPTImageSep29202603_38_20PM.png",
+    title: "Im Dienst",
+    text: "Nach der Handwerkszeit und Auslandreisen absolviert er 1982 die Polizeirekrutenschule und dient bis 1990 bei der Kapo Aargau — Verantwortung im Dienst, bevor es ihn in die Wirtschaft zieht.",
   },
   {
     year: "2007",
@@ -42,27 +49,37 @@ export default function HistoryTimeline() {
               Der Weg zur <span className="text-gradient-gold">Heilsteinschule</span>
             </h2>
             <p className="mt-4 text-base leading-relaxed text-white/70 sm:text-lg">
-              Drei Stationen aus dem Leben von Bruno Vogler Pfeiffer — vom Handwerker zum Gründer der Heilsteinschule Schweiz.
+              Vier Stationen aus dem Leben von Bruno Vogler Pfeiffer — vom Handwerker über den Dienst zum Gründer der Heilsteinschule Schweiz.
             </p>
           </div>
         </Reveal>
 
-        <div className="mt-16 grid gap-10 lg:grid-cols-3">
+        <div className="mt-16 grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
           {TIMELINE.map((item, i) => (
-            <Reveal key={item.year} delay={i * 0.15}>
+            <Reveal key={item.year} delay={i * 0.12}>
               <div className="group relative">
                 <div className="mb-6 flex items-center justify-center gap-4">
-                  <span className="h-px w-12 bg-citrine/40" />
-                  <span className="font-heading text-5xl font-bold text-gradient-gold sm:text-6xl">{item.year}</span>
-                  <span className="h-px w-12 bg-citrine/40" />
+                  <span className="h-px w-8 bg-citrine/40" />
+                  <span className="font-heading text-4xl font-bold text-gradient-gold sm:text-5xl">{item.year}</span>
+                  <span className="h-px w-8 bg-citrine/40" />
                 </div>
-                <div className="overflow-hidden rounded-2xl border border-white/10 shadow-lift transition duration-500 group-hover:border-citrine/40">
+                <div className="relative overflow-hidden rounded-2xl border border-white/10 shadow-lift transition duration-500 group-hover:border-citrine/40">
                   <Image
                     src={item.img}
                     alt={`${item.title} – ${item.year}`}
                     className="aspect-[4/5] w-full bg-amethyst-soft/20"
                     fittingType="fill"
                   />
+                  {item.img2 && (
+                    <div className="absolute bottom-3 right-3 w-1/3 overflow-hidden rounded-lg border-2 border-citrine/70 shadow-lift">
+                      <Image
+                        src={item.img2}
+                        alt={`Maurerlehre – ${item.year}`}
+                        className="aspect-[4/5] w-full bg-amethyst-soft/20"
+                        fittingType="fill"
+                      />
+                    </div>
+                  )}
                 </div>
                 <div className="mt-5 text-center">
                   <h3 className="font-heading text-lg font-semibold text-citrine-light">{item.title}</h3>
