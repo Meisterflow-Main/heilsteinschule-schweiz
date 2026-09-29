@@ -9,42 +9,49 @@ const FILME = [
     date: "Mai 2024",
     text: "Werner Kühni und Julia Barthelmes über die transformative Wirkung von Heilsteinen und Ätherischen Ölen auf mentale Gesundheitszustände wie Depressionen, Burnout, Hormonprobleme und Stimmungsschwankungen.",
     img: "https://heilsteinschule.swiss/media/.news_img/werner_kuehni_news.png",
+    href: "https://qs24.tv/",
   },
   {
     title: "Kolloidales Silber — Film vom 07. Juni 2024",
     date: "Juni 2024",
     text: "Natürliche Alternativen — Kolloidales Silber und Borax als wirksame Heilmittel mit Werner Kühni und Manuel Litschi.",
     img: "https://heilsteinschule.swiss/media/.news_img/studieren.jpg",
+    href: "https://heilstein-shop.com/koll_silber/",
   },
   {
     title: "Kolloidales Silber — Film vom 11. Juli 2019",
     date: "Juli 2019",
     text: "Kolloidales Silber selber herstellen. Natürliche Alternativen und wirksame Heilmittel.",
     img: "https://heilsteinschule.swiss/media/.news_img/20240226_100437.jpg",
+    href: "https://heilstein-shop.com/koll_silber/",
   },
   {
     title: "Energiesteine reinigen und aufladen",
     date: "2021",
     text: "Viele Steine haben besondere Eigenschaften. Es gibt Edelsteine, die andere reinieren können und die selbst Energie aufnehmen. Effektive und unnötige Methoden.",
     img: "https://heilsteinschule.swiss/media/.news_img/info-tag_1_1.jpg",
+    href: "https://qs24.tv/",
   },
   {
     title: "Ein Stein als Herzöffner — Zermatt",
     date: "Sonderbeitrag",
     text: "Zermatt begeistert durch die Vielfalt der Gesteine. Das Kronjuwel der Schweiz ist der wunderschöne Allalin Gabbro — wirkt besonders als Herzöffner.",
     img: "https://heilsteinschule.swiss/media/.news_img/irene_marty_1.jpg",
+    href: "https://heilstein-shop.com/bakery/allalin-gabbro-ts-10/?searchresult=1&sstring=Allalin+Gabbro#wbce_14",
   },
   {
     title: "Persönlicher Entwicklungsprozess — Ruth und ihre Lieblingssteine",
     date: "Porträt",
     text: "Ruth Rios ist Heilsteinberaterin und Schöpferin der Kreation diopteia. Seit über 30 Jahren begleitet sie Menschen in ihren persönlichen Entwicklungsprozessen.",
     img: "https://heilsteinschule.swiss/media/.news_img/zertifizierung_lehrgang_asp6_39.jpg",
+    href: "https://heilsteinschule.swiss/topics/ruth-rios/",
   },
   {
     title: "Wirkung: Halit mit Baryt",
     date: "Sonderbeitrag",
     text: "Bruno Vogler Pfeiffer und Joe Schnarwiler haben gemeinsam ein Oktaeder entwickelt. Besonders die Wirkung von Halit mit Baryt kann die Energie im Raum deutlich verändern.",
     img: "https://heilsteinschule.swiss/media/.news_img/wallbach_innen.jpeg",
+    href: "https://qs24.tv/",
   },
 ];
 
@@ -80,7 +87,12 @@ export default function Lehrfilme() {
         <div className="mt-12 grid gap-6 lg:grid-cols-2">
           {FILME.map((f, i) => (
             <Reveal key={i} delay={(i % 2) * 0.08}>
-              <article className="group flex flex-col overflow-hidden rounded-2xl border border-border bg-white shadow-soft transition hover:-translate-y-1 hover:shadow-lift sm:flex-row">
+              <a
+                href={f.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group flex flex-col overflow-hidden rounded-2xl border border-border bg-white shadow-soft transition hover:-translate-y-1 hover:shadow-lift sm:flex-row"
+              >
                 <div className="relative aspect-video w-full overflow-hidden bg-muted sm:aspect-square sm:w-40 sm:shrink-0">
                   <img src={f.img} alt={f.title} loading="lazy" className="h-full w-full object-cover transition duration-700 group-hover:scale-105" />
                   <div className="absolute inset-0 flex items-center justify-center bg-amethyst/30 opacity-0 transition group-hover:opacity-100">
@@ -93,8 +105,11 @@ export default function Lehrfilme() {
                   <span className="font-mono text-xs uppercase tracking-wider text-citrine-deep">{f.date}</span>
                   <h3 className="mt-1.5 font-heading text-base font-semibold leading-snug text-amethyst">{f.title}</h3>
                   <p className="mt-2 flex-1 text-sm leading-relaxed text-muted-foreground">{f.text}</p>
+                  <span className="mt-3 inline-flex items-center gap-1.5 text-sm font-semibold text-citrine-deep">
+                    Film ansehen <Play className="h-3.5 w-3.5" />
+                  </span>
                 </div>
-              </article>
+              </a>
             </Reveal>
           ))}
         </div>
