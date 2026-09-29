@@ -11,7 +11,7 @@ const TIMELINE = [
   },
   {
     year: "2007",
-    img: "https://heilsteinschule.swiss/media/.news_img/bruno-2016-grosse-scheidegg1.png",
+    img: "https://heilsteinschule.swiss/media/wunderblock/Bruno.jpg",
     title: "Der Weg zu den Heilsteinen",
     text: "2001 beginnt er eine mediale Ausbildung und stösst auf die verlässliche Kraft der Heilsteine. 2007 absolviert er die Grundausbildung in analytischer Steinheilkunde bei Michael Gienger.",
   },
