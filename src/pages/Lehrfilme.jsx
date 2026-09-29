@@ -50,7 +50,7 @@ const FILME = [
     title: "Wirkung: Halit mit Baryt",
     date: "Sonderbeitrag",
     text: "Bruno Vogler Pfeiffer und Joe Schnarwiler haben gemeinsam ein Oktaeder entwickelt. Besonders die Wirkung von Halit mit Baryt kann die Energie im Raum deutlich verändern.",
-    img: "https://heilsteinschule.swiss/media/.news_img/wallbach_innen.jpeg",
+    img: "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/33d9d714d_ChatGPTImageSep29202610_11_06PM.png",
     href: "https://qs24.tv/",
   },
 ];
