@@ -49,12 +49,12 @@ const ALPENSEMINAR_TAGE = [
     title: "Zertifikatsübergabe",
     text: "Feierliche Übergabe der Zertifikate an die Schüler/-innen der Heilsteinschule welche bereits abgeschlossen haben. Rückblickend wurde ich nach dem/den Highlights an diesem Alpenseminar gefragt. Es waren in meiner Betrachtung die Teilnehmer, mit Begeisterung für die Natur und die Steine. Des Weiteren durfte ich grosse Freude und eine harmonische Zusammenarbeit im Leiterteam erfahren. Wir freuen uns schon heute auf ein weiteres Alpenseminar 2026.",
     imgs: [
-      "https://heilsteinschule.swiss/media/Alpenseminar_2025/Zertifikate_%C3%BCbergabe1.jpg",
-      "https://heilsteinschule.swiss/media/Alpenseminar_2025/Zertifikate_%C3%BCbergabe2.jpg",
-      "https://heilsteinschule.swiss/media/Alpenseminar_2025/Zertifikate_%C3%BCbergabe3.jpg",
-      "https://heilsteinschule.swiss/media/Alpenseminar_2025/Zertifikate_%C3%BCbergabe4.jpg",
-      "https://heilsteinschule.swiss/media/Alpenseminar_2025/Zertifikate_%C3%BCbergabe5.jpg",
-      "https://heilsteinschule.swiss/media/Alpenseminar_2025/Zertifikate_%C3%BCbergabe6.jpg",
+      "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/58499c23c_ChatGPTImageSep29202609_46_32PM.png",
+      "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/4f0020866_ChatGPTImageSep29202609_50_08PM.png",
+      "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/1db3a3465_ChatGPTImageSep29202609_58_23PM.png",
+      "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/60d9c1562_ChatGPTImageSep29202609_57_12PM.png",
+      "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/5b9f237d2_ChatGPTImageSep29202609_53_17PM.png",
+      "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/1acaf1b1f_ChatGPTImageSep29202609_51_55PM.png",
     ],
   },
 ];
