@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { Loader2, CheckCircle2, AlertCircle, GraduationCap } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const WEBHOOK_URL =
   "https://app.meisterflow.ch/api/webhooks/enquiries/a902bb23d7e98901900e3750083b670344a14683633ae15f";
@@ -15,7 +16,7 @@ const STARTS = [
   "Noch unentschieden / Beratung erwünscht",
 ];
 
-export default function EnrollmentForm({ idPrefix = "enrol" }) {
+export default function EnrollmentForm({ idPrefix = "enrol", showTerms = true }) {
   const [form, setForm] = useState({
     name: "",
     email: "",
@@ -219,6 +220,13 @@ export default function EnrollmentForm({ idPrefix = "enrol" }) {
           />
         </div>
 
+        {showTerms && (
+          <div className="rounded-xl border border-citrine/30 bg-citrine/5 p-4 text-xs leading-relaxed text-muted-foreground">
+            <strong className="text-amethyst">Anmeldebedingungen:</strong> Die Anmeldung ist verbindlich
+            und wird mit der Anzahlung von CHF 250.– für die Platzreservation rechtsgültig. Dieser Betrag
+            wird an die erste Rate angerechnet. Bei Rücktritt verfällt der Unkostenbeitrag.
+          </div>
+        )}
         <label className="flex items-start gap-3 rounded-xl bg-quartz p-4 text-sm text-foreground/80">
           <input
             type="checkbox"
@@ -228,9 +236,10 @@ export default function EnrollmentForm({ idPrefix = "enrol" }) {
             className="mt-0.5 h-4 w-4 shrink-0 rounded border-border text-citrine focus:ring-citrine/20"
           />
           <span>
-            Ich bestätige die <strong className="text-amethyst">verbindliche Anmeldung</strong> zur Ausbildung
-            und habe die <a href="/agb" className="text-citrine-deep underline underline-offset-2">AGB</a> gelesen.
-            Die Anzahlung von <strong>CHF 250.–</strong> zur Platzreservation wird bei der Rechnung angerechnet.
+            Ich habe die <strong className="text-amethyst">Anmeldebedingungen</strong> und die{" "}
+            <Link to="/agb" className="text-citrine-deep underline underline-offset-2">AGB</Link> gelesen
+            und akzeptiert. Ich bestätige die <strong className="text-amethyst">verbindliche Anmeldung</strong>{" "}
+            mit der Anzahlung von <strong>CHF 250.–</strong> zur Platzreservation.
             <span className="text-citrine-deep">*</span>
           </span>
         </label>

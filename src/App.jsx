@@ -26,6 +26,8 @@ import UeberUns from '@/pages/UeberUns';
 import SchuelerBerichte from '@/pages/SchuelerBerichte';
 import BrunosBuch from '@/pages/BrunosBuch';
 import MichaelGienger from '@/pages/MichaelGienger';
+import FrageAusbildung from '@/pages/FrageAusbildung';
+import Anmeldung from '@/pages/Anmeldung';
 // Add page imports here
 
 const AuthenticatedApp = () => {
@@ -74,6 +76,8 @@ const AuthenticatedApp = () => {
         <Route path="/schueler-berichte" element={<SchuelerBerichte />} />
         <Route path="/brunos-buch" element={<BrunosBuch />} />
         <Route path="/michael-gienger" element={<MichaelGienger />} />
+        <Route path="/ausbildung-anfrage" element={<FrageAusbildung />} />
+        <Route path="/ausbildung-anmeldung" element={<Anmeldung />} />
       </Route>
       <Route path="*" element={<PageNotFound />} />
     </Routes>

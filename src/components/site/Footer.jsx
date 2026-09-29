@@ -50,7 +50,6 @@ export default function Footer() {
                 { label: "Blog", to: "/blog" },
                 { label: "Laden & Praxis", to: "/laden-praxis" },
                 { label: "Lehrfilme", to: "/lehrfilme" },
-                { label: "Geologische Reisen", to: "/geologische-reisen" },
                 { label: "Über uns", to: "/ueber-uns" },
                 { label: "Schüler-Berichte", to: "/schueler-berichte" },
                 { label: "Brunos Buch", to: "/brunos-buch" },

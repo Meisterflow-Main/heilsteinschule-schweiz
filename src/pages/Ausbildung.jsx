@@ -1,10 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Check, MapPin, Clock, CalendarDays, GraduationCap, ArrowRight, FileText } from "lucide-react";
+import { Check, MapPin, Clock, CalendarDays, GraduationCap, ArrowRight, FileText, HelpCircle } from "lucide-react";
 import Reveal from "@/components/site/Reveal";
 import SectionHeading from "@/components/site/SectionHeading";
-import ContactForm from "@/components/site/ContactForm";
-import EnrollmentForm from "@/components/site/EnrollmentForm";
 import ExcursionReports from "@/components/site/ExcursionReports";
 
 const STANDORTE = [
@@ -158,14 +156,14 @@ export default function Ausbildung() {
                 <FileText className="h-4 w-4" /> Allgemeine Geschäftsbedingungen (AGB) ansehen
               </Link>
               <div className="mt-6 flex flex-col gap-3">
-                <a
-                  href="#anmeldung"
+                <Link
+                  to="/ausbildung-anmeldung"
                   className="inline-flex items-center justify-center gap-2 rounded-full bg-citrine px-6 py-3 text-sm font-semibold text-amethyst-deep shadow-soft transition hover:bg-citrine-light"
                 >
                   Verbindlich anmelden <ArrowRight className="h-4 w-4" />
-                </a>
+                </Link>
                 <Link
-                  to="/kontakt"
+                  to="/ausbildung-anfrage"
                   className="inline-flex items-center justify-center gap-2 rounded-full border border-border px-6 py-3 text-sm font-semibold text-amethyst transition hover:bg-quartz"
                 >
                   Erst Fragen? Anfrage senden
@@ -325,44 +323,49 @@ export default function Ausbildung() {
         </div>
       </section>
 
-      {/* Allgemeine Anfrage (unverbindlich) */}
-      <section className="mx-auto max-w-3xl px-4 py-24 sm:px-6">
+      {/* CTA: Frage und Anmeldung */}
+      <section className="mx-auto max-w-5xl px-4 py-24 sm:px-6">
         <Reveal>
           <SectionHeading
-            eyebrow="Allgemeine Anfrage"
-            title="Noch Fragen zur Ausbildung?"
-            subtitle="Unverbindliche Anfrage — wir beantworten gerne Ihre Fragen zu Inhalt, Kosten, Ablauf und Terminen. Verbindlich anmelden können Sie sich weiter unten."
+            eyebrow="Nächste Schritte"
+            title="Frage stellen oder anmelden"
+            subtitle="Wählen Sie den für Sie passenden Weg: unverbindlich eine Frage stellen oder sich direkt verbindlich zur Ausbildung anmelden."
           />
         </Reveal>
-        <Reveal delay={0.1}>
-          <div className="mt-10 rounded-3xl border border-border bg-white p-6 shadow-soft sm:p-8">
-            <ContactForm defaultDescription="Anfrage zur Ausbildung" idPrefix="ausbfrage" inquiryType="ausbildung_anfrage" />
-          </div>
-        </Reveal>
-      </section>
-
-      {/* Verbindliche Anmeldung */}
-      <section id="anmeldung" className="bg-quartz/60 scroll-mt-24">
-        <div className="mx-auto max-w-3xl px-4 py-24 sm:px-6">
+        <div className="mt-12 grid gap-6 md:grid-cols-2">
           <Reveal>
-            <SectionHeading
-              eyebrow="Verbindliche Anmeldung"
-              title="Anmeldung zur Ausbildung"
-              subtitle="Mit diesem Formular melden Sie sich verbindlich zur Grundausbildung an. Die Anzahlung von CHF 250.– sichert Ihren Platz und wird bei der Rechnung angerechnet. Bitte beachten Sie auch unsere Allgemeinen Geschäftsbedingungen (AGB)."
-            />
-            <div className="mt-6 flex justify-center">
-              <Link
-                to="/agb"
-                className="inline-flex items-center gap-1.5 text-sm font-medium text-citrine-deep underline underline-offset-2 hover:text-citrine"
-              >
-                <FileText className="h-4 w-4" /> Allgemeine Geschäftsbedingungen (AGB) ansehen
-              </Link>
-            </div>
+            <Link
+              to="/ausbildung-anfrage"
+              className="group flex h-full flex-col rounded-3xl border border-border bg-white p-8 shadow-soft transition hover:-translate-y-1 hover:border-citrine hover:shadow-lift"
+            >
+              <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-citrine/15 text-citrine-deep">
+                <HelpCircle className="h-6 w-6" />
+              </div>
+              <h3 className="mt-5 font-heading text-xl font-semibold text-amethyst">Frage zur Ausbildung</h3>
+              <p className="mt-2 flex-1 text-sm leading-relaxed text-muted-foreground">
+                Unverbindlich — wir beantworten gerne Ihre Fragen zu Inhalt, Kosten, Ablauf und Terminen.
+              </p>
+              <span className="mt-5 inline-flex items-center gap-1.5 text-sm font-semibold text-citrine-deep">
+                Anfrage senden <ArrowRight className="h-4 w-4 transition group-hover:translate-x-0.5" />
+              </span>
+            </Link>
           </Reveal>
           <Reveal delay={0.1}>
-            <div className="mt-10 rounded-3xl border border-border bg-white p-6 shadow-soft sm:p-8">
-              <EnrollmentForm idPrefix="anmeldung" />
-            </div>
+            <Link
+              to="/ausbildung-anmeldung"
+              className="group flex h-full flex-col rounded-3xl border border-citrine/40 bg-citrine/5 p-8 shadow-soft transition hover:-translate-y-1 hover:shadow-lift"
+            >
+              <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-citrine text-amethyst-deep">
+                <GraduationCap className="h-6 w-6" />
+              </div>
+              <h3 className="mt-5 font-heading text-xl font-semibold text-amethyst">Verbindlich anmelden</h3>
+              <p className="mt-2 flex-1 text-sm leading-relaxed text-muted-foreground">
+                Bereit zum Einstieg? Melden Sie sich verbindlich an. Anzahlung CHF 250.– zur Platzreservation.
+              </p>
+              <span className="mt-5 inline-flex items-center gap-1.5 text-sm font-semibold text-citrine-deep">
+                Zur Anmeldung <ArrowRight className="h-4 w-4 transition group-hover:translate-x-0.5" />
+              </span>
+            </Link>
           </Reveal>
         </div>
       </section>
