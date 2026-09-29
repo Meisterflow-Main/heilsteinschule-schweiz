@@ -21,7 +21,7 @@ const STANDORTE = [
     img: "https://heilsteinschule.swiss/media/wunderblock/wallbach-ag.jpg",
     tage: "Donnerstag 09–17h (2×/Monat), Sa/So 1×/Monat",
     leitung: "Ruth Rios",
-    hinweis: "Parkplätze beim Haus vorhanden · Start 15. Okt. 2026",
+    hinweis: "Parkplätze beim Haus vorhanden",
   },
   {
     name: "Schule Bern",
@@ -29,7 +29,7 @@ const STANDORTE = [
     img: "https://heilsteinschule.swiss/media/wunderblock/svnh-gebaeude.jpg",
     tage: "Wochenende, 09:00–17:00 Uhr, 1× monatlich",
     leitung: "Ruth Rios",
-    hinweis: "Im selben Gebäude wie SVNH · Neue Klasse 2027 · 5 Min. ab HB",
+    hinweis: "Im selben Gebäude wie SVNH · Neue Klasse 2027 · 6 Min. ab HB",
     weg: "ÖV: Vom Hauptbahnhof Bern ca. 6 Min. zu Fuss — Zug in Richtung Welle 7 verlassen, Richtung Süden zum Hirschengraben, weiter auf die Monbijoustrasse, dann rechts in die Kapellenstrasse. Hausnummer 5 links. Auto: Nur blaue Zone (1 Std.) und City West Parking. Keine eigenen Parkplätze.",
   },
   {

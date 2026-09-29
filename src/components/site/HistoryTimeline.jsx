@@ -7,19 +7,19 @@ const TIMELINE = [
     year: "1970",
     img: "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/08c713d17_Screenshot_20260911_104842_Facebook1.jpg",
     title: "Die Handwerksjahre",
-    text: "Als junger Handwerker lernt Bruno Vogler Pfeiffer den sorgfältigen Umgang mit Naturmaterialien — Holz und Stein prägen sein Gespür für Material und Struktur.",
+    text: "Mit 16 Jahren absolviert Bruno Vogler Pfeiffer eine Schreinerlehre und hängt eine Maurerlehre als Zusatzausbildung an — der erste bewusste Umgang mit Holz und Stein.",
   },
   {
-    year: "1975",
-    img: "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/32636db50_Screenshot_20260415_180704_WhatsApp_resized1.jpg",
-    title: "Familie und Beruf",
-    text: "Prägende Jahre, in denen Verantwortung und die Verbundenheit mit der Natur wachsen — der Grundstein für den späteren Weg zur Heilsteinkunde.",
+    year: "2007",
+    img: "https://heilsteinschule.swiss/media/.news_img/bruno-2016-grosse-scheidegg1.png",
+    title: "Der Weg zu den Heilsteinen",
+    text: "2001 beginnt er eine mediale Ausbildung und stösst auf die verlässliche Kraft der Heilsteine. 2007 absolviert er die Grundausbildung in analytischer Steinheilkunde bei Michael Gienger.",
   },
   {
-    year: "1984",
-    img: "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/d5f80bf3b_Screenshot_20260415_180711_WhatsApp1.jpg",
-    title: "Die Arbeit mit Stein",
-    text: "Maurerhandwerk und Naturmaterialien vertiefen das Verständnis für Gestein — ein entscheidender Schritt auf dem Weg zur Heilsteinschule Schweiz.",
+    year: "2011",
+    img: "https://heilsteinschule.swiss/media/topics-pictures/bruno_vogler_pfeiffer.png",
+    title: "Gründung der Heilsteinschule",
+    text: "Bruno Vogler Pfeiffer gründet die Heilsteinschule Schweiz und bildet bis heute über 250 Personen aus. Die Schule ist SVNH-zertifiziert, der Heilsteinshop-Asp GKS-zertifiziert.",
   },
 ];
 

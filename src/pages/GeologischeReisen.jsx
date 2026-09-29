@@ -93,7 +93,7 @@ export default function GeologischeReisen() {
           <SectionHeading
             eyebrow="Rückblick"
             title="Geologische Exkursionen"
-            subtitle="Seit 2011 bereisen wir die Welt der Steine — von den Zentralalpen über die Azoren bis nach Brasilien."
+            subtitle="Seit 2011 bereisen wir die Welt der Steine — von den Zentralalpen über die Azoren bis in die Vogesen."
           />
         </Reveal>
         <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
