@@ -59,7 +59,7 @@ export default function Navbar() {
           <nav className="hidden items-center gap-1 lg:flex">
             {NAV.map((item) => {
               const active = item.to && location.pathname === item.to;
-              const cls = `relative rounded-full px-3.5 py-2 text-sm font-medium transition ${
+              const cls = `relative whitespace-nowrap rounded-full px-3.5 py-2 text-sm font-medium transition ${
                 active ? "text-amethyst" : "text-foreground/70 hover:text-amethyst"
               }`;
               if (item.href) {
@@ -90,7 +90,7 @@ export default function Navbar() {
               onMouseLeave={() => setRegionsOpen(false)}
             >
               <button
-                className={`relative inline-flex items-center gap-1 rounded-full px-3.5 py-2 text-sm font-medium transition ${
+                className={`relative inline-flex whitespace-nowrap items-center gap-1 rounded-full px-3.5 py-2 text-sm font-medium transition ${
                   isRegion ? "text-amethyst" : "text-foreground/70 hover:text-amethyst"
                 }`}
                 onClick={() => setRegionsOpen((o) => !o)}
