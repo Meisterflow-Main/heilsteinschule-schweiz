@@ -6,7 +6,7 @@ import ContactForm from "@/components/site/ContactForm";
 
 const KATEGORIEN = [
   { name: "Armbänder", img: "https://heilsteinschule.swiss/media/Laden/armbaender/Armbaender006.jpg" },
-  { name: "Heilsteine Auswahl", img: "https://heilsteinschule.swiss/media/Laden/heilsteine/Achat.jpg" },
+  { name: "Heilsteine Auswahl", img: "https://heilsteinschule.swiss/media/Laden/20240226_102525.jpg" },
 ];
 
 const GALERIE = [
