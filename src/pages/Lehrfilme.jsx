@@ -36,7 +36,7 @@ const FILME = [
     title: "Ein Stein als Herzöffner — Zermatt",
     date: "Sonderbeitrag",
     text: "Zermatt begeistert durch die Vielfalt der Gesteine. Das Kronjuwel der Schweiz ist der wunderschöne Allalin Gabbro — wirkt besonders als Herzöffner.",
-    img: "https://heilsteinschule.swiss/media/.news_img/irene_marty_1.jpg",
+    img: "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/ff7b69cc6_ChatGPTImageSep29202610_11_59PM.png",
     href: "https://heilstein-shop.com/bakery/allalin-gabbro-ts-10/?searchresult=1&sstring=Allalin+Gabbro#wbce_14",
   },
   {
