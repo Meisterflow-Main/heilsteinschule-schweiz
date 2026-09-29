@@ -40,7 +40,7 @@ export default function Home() {
             aria-label="Unterricht mit Ruth Rios und Bruno Vogler Pfeiffer an der Heilsteinschule Schweiz"
             className="h-full w-full object-cover object-center"
           >
-            <source src="https://heilsteinschule.swiss/media/Filme/Wirkung_Heilsteine.mp4" type="video/mp4" />
+            <source src="https://media.base44.com/videos/public/6aa92ec5274311c12da18ee6/c86ec908b_WhatsAppVideo2026-09-22at021058.mp4" type="video/mp4" />
           </video>
           <div className="absolute inset-0 bg-gradient-to-b from-amethyst-deep/85 via-amethyst/70 to-amethyst-deep/90" />
           <div className="absolute inset-0 bg-gradient-to-r from-amethyst-deep/60 to-transparent" />
