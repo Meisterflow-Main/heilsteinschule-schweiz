@@ -26,7 +26,6 @@ import UeberUns from '@/pages/UeberUns';
 import SchuelerBerichte from '@/pages/SchuelerBerichte';
 import BrunosBuch from '@/pages/BrunosBuch';
 import MichaelGienger from '@/pages/MichaelGienger';
-import GeologischeReisen from '@/pages/GeologischeReisen';
 // Add page imports here
 
 const AuthenticatedApp = () => {
@@ -75,7 +74,6 @@ const AuthenticatedApp = () => {
         <Route path="/schueler-berichte" element={<SchuelerBerichte />} />
         <Route path="/brunos-buch" element={<BrunosBuch />} />
         <Route path="/michael-gienger" element={<MichaelGienger />} />
-        <Route path="/geologische-reisen" element={<GeologischeReisen />} />
       </Route>
       <Route path="*" element={<PageNotFound />} />
     </Routes>

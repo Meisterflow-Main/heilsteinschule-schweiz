@@ -1,6 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import { Mountain, Calendar, MapPin, ArrowRight, Camera } from "lucide-react";
+import { Calendar, Mountain } from "lucide-react";
 import Reveal from "@/components/site/Reveal";
 import SectionHeading from "@/components/site/SectionHeading";
 
@@ -62,38 +61,16 @@ const ALPENSEMINAR_TAGE = [
 
 const BACKVIEW_IMG = "https://heilsteinschule.swiss/media/Alpenseminar_2025/Backview.jpg";
 
-export default function GeologischeReisen() {
+export default function ExcursionReports() {
   return (
     <>
-      {/* Hero */}
-      <section className="relative overflow-hidden bg-amethyst text-white">
-        <div className="absolute inset-0 opacity-25">
-          <img src="https://heilsteinschule.swiss/media/Alpenseminar_2025/Alpenseminar_2025_Titelbild.jpg" alt="" className="h-full w-full object-cover" />
-        </div>
-        <div className="absolute inset-0 bg-gradient-to-r from-amethyst-deep via-amethyst/80 to-amethyst/40" />
-        <div className="relative mx-auto max-w-7xl px-4 py-24 sm:px-6">
-          <Reveal>
-            <div className="mb-4 inline-flex items-center gap-2 rounded-full glass-dark px-4 py-1.5 text-xs font-medium uppercase tracking-wider text-citrine-light">
-              <Mountain className="h-3.5 w-3.5" /> Exkursionen
-            </div>
-            <h1 className="font-heading text-4xl font-bold sm:text-5xl md:text-6xl">
-              Geologische <span className="text-gradient-gold">Reisen</span>
-            </h1>
-            <p className="mt-5 max-w-xl text-lg text-white/80">
-              Die Steine unterwegs in den Alpen und auf der ganzen Welt erfahren und die Auswirkungen der
-              Mineralien unmittelbar erleben.
-            </p>
-          </Reveal>
-        </div>
-      </section>
-
       {/* Übersicht Exkursionen */}
-      <section className="mx-auto max-w-7xl px-4 py-20 sm:px-6">
+      <section id="exkursionen" className="mx-auto max-w-7xl scroll-mt-24 px-4 py-24 sm:px-6">
         <Reveal>
           <SectionHeading
-            eyebrow="Rückblick"
-            title="Geologische Exkursionen"
-            subtitle="Seit 2011 bereisen wir die Welt der Steine — von den Zentralalpen über die Azoren bis in die Vogesen."
+            eyebrow="Praktischer Ausbildungsteil"
+            title="Geologische Exkursionen & Alpenseminar"
+            subtitle="Die Steine unterwegs in den Alpen und auf der ganzen Welt erfahren — seit 2011 bereisen wir die Welt der Steine, von den Zentralalpen über die Azoren bis in die Vogesen."
           />
         </Reveal>
         <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
@@ -116,10 +93,13 @@ export default function GeologischeReisen() {
 
       {/* Alpenseminar 2025 Detailbericht */}
       <section className="bg-quartz/60">
-        <div className="mx-auto max-w-5xl px-4 py-20 sm:px-6">
+        <div className="mx-auto max-w-5xl px-4 py-24 sm:px-6">
           <Reveal>
+            <div className="mb-3 flex items-center justify-center gap-2">
+              <Mountain className="h-4 w-4 text-citrine-deep" />
+              <span className="font-mono text-xs uppercase tracking-[0.2em] text-citrine-deep">Alpenseminar 2025</span>
+            </div>
             <SectionHeading
-              eyebrow="Alpenseminar 2025"
               title="Exkursion zu den Heilsteinen der Schweizer Hochalpen"
               subtitle="Ein 5-tägiger Rückblick von Pascal Bossard, Leiter Alpenseminar."
             />
@@ -175,26 +155,6 @@ export default function GeologischeReisen() {
             <div className="mt-6 overflow-hidden rounded-2xl border border-border shadow-soft">
               <img src={BACKVIEW_IMG} alt="Rückblick und Vorfreude auf das Alpenseminar 2026" loading="lazy" className="h-full w-full object-cover" />
             </div>
-          </Reveal>
-        </div>
-      </section>
-
-      {/* CTA */}
-      <section className="relative overflow-hidden bg-amethyst text-white">
-        <div className="relative mx-auto max-w-4xl px-4 py-16 text-center sm:px-6">
-          <Reveal>
-            <h2 className="font-heading text-2xl font-bold sm:text-3xl">
-              Das Alpenseminar ist Teil der Ausbildung
-            </h2>
-            <p className="mx-auto mt-4 max-w-lg text-white/75">
-              Der Besuch eines Alpenseminars als praktischer Ausbildungsteil ist obligatorisch.
-            </p>
-            <Link
-              to="/ausbildung"
-              className="mt-6 inline-flex items-center gap-2 rounded-full bg-citrine px-7 py-3.5 text-sm font-semibold text-amethyst-deep shadow-lift transition hover:bg-citrine-light"
-            >
-              Ausbildung entdecken <ArrowRight className="h-4 w-4" />
-            </Link>
           </Reveal>
         </div>
       </section>

@@ -11,7 +11,6 @@ const NAV = [
   { label: "Laden & Praxis", to: "/laden-praxis" },
   { label: "Online Shop", href: "https://heilstein-shop.com/" },
   { label: "Lehrfilme", to: "/lehrfilme" },
-  { label: "Reisen", to: "/geologische-reisen" },
   { label: "Über uns", to: "/ueber-uns" },
   { label: "Info-Tag", to: "/info-tag" },
   { label: "Kontakt", to: "/kontakt" },

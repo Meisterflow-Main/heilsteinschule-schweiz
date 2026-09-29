@@ -5,6 +5,7 @@ import Reveal from "@/components/site/Reveal";
 import SectionHeading from "@/components/site/SectionHeading";
 import ContactForm from "@/components/site/ContactForm";
 import EnrollmentForm from "@/components/site/EnrollmentForm";
+import ExcursionReports from "@/components/site/ExcursionReports";
 
 const STANDORTE = [
   {
@@ -308,6 +309,9 @@ export default function Ausbildung() {
           </Reveal>
         </div>
       </section>
+
+      {/* Exkursionen & Alpenseminar (Praktischer Ausbildungsteil) */}
+      <ExcursionReports />
 
       {/* Allgemeine Anfrage (unverbindlich) */}
       <section className="mx-auto max-w-3xl px-4 py-24 sm:px-6">
