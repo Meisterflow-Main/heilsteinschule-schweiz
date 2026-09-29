@@ -36,6 +36,7 @@ const NEWS = [
     date: "15.04.2026",
     title: "Im Bann der Quarz-Kristalle (Irene Marty)",
     img: "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/9960bc12d_ChatGPTImageSep29202610_11_59PM.png",
+    objectPos: "object-top",
     text: "In welchen Kinos läuft der Film? Vorführung Buchen ab 23. April. Trailer anschauen und Flyer herunterladen.",
     to: "https://imbannderquarzkristalle.ch/#kino",
     external: true,
@@ -129,7 +130,7 @@ export default function News() {
             <Reveal key={i} delay={(i % 3) * 0.08}>
               <article className="group flex h-full flex-col overflow-hidden rounded-2xl border border-border bg-white shadow-soft transition hover:-translate-y-1 hover:shadow-lift">
                 <div className="aspect-[16/10] overflow-hidden bg-muted">
-                  <img src={n.img} alt={n.title} loading="lazy" className="h-full w-full object-cover transition duration-700 group-hover:scale-105" />
+                  <img src={n.img} alt={n.title} loading="lazy" className={`h-full w-full object-cover transition duration-700 group-hover:scale-105 ${n.objectPos ?? ""}`} />
                 </div>
                 <div className="flex flex-1 flex-col p-5">
                   <div className="flex items-center gap-2 text-xs text-muted-foreground">
