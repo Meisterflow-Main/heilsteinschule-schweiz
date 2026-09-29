@@ -39,9 +39,9 @@ const ALPENSEMINAR_TAGE = [
     title: "Oberalppass & Strahler Legende",
     text: "Geologische Exkursion: Wanderung zum Steinbruch oberhalb der Passhöhe des Oberalppass. Beim Aufstieg zum Steinbruch treffen wir auf eine verlassene Kluft. Daneben liegen vereinzelt kleine Bergkristalle für glückliche Finder. Wir finden Serpentinit, Talk, Schneequarz, Aktinolith und zu unserer grossen Freude: Magnetit Kristallin. Die Sonne strahlt, so auch unsere Augen. Am Nachmittag besuchen wir die Strahler Legende Peter Indergand, seine Schwester und seinen Sohn, in Ihrem Laden in Göschenen, den Sie für uns geöffnet haben.",
     imgs: [
-      "https://heilsteinschule.swiss/media/Alpenseminar_2025/Bild_Tag_4-1.jpg",
-      "https://heilsteinschule.swiss/media/Alpenseminar_2025/Bild_Tag_4-2.jpg",
-      "https://heilsteinschule.swiss/media/Alpenseminar_2025/Bild_Tag_4-3.jpg",
+      "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/763852b6f_ChatGPTImageSep29202609_42_37PM.png",
+      "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/ab7de1fe6_ChatGPTImageSep29202609_43_38PM.png",
+      "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/25bc86843_ChatGPTImageSep29202609_44_50PM.png",
     ],
   },
   {
