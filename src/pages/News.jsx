@@ -55,7 +55,8 @@ const NEWS = [
   {
     date: "01.03.2026",
     title: "Aktion 40% auf ausgewählte Armbänder",
-    img: "https://heilsteinschule.swiss/media/.news_img/20240226_100437.jpg",
+    img: "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/40e36040b_ChatGPTImageSep29202610_14_46PM.png",
+    aspect: "aspect-square",
     text: "Auf ausgewählte Armbänder der Kreation diopteia. Diese Armbänder möchten DIR gerne Unterstützung und Schönheit bringen.",
     to: "https://heilstein-shop.com/action/",
     external: true,
