@@ -4,17 +4,17 @@ import Reveal from "@/components/site/Reveal";
 import SectionHeading from "@/components/site/SectionHeading";
 
 const EXKURSIONEN = [
-  { jahr: "2011–2021", ort: "Zentralalpen", dauer: "13× · 65 Tage" },
-  { jahr: "2015–2022", ort: "Jura Exkursionen", dauer: "12 Tage" },
-  { jahr: "2016", ort: "Portugal / Auroca", dauer: "7 Tage" },
-  { jahr: "2017", ort: "Azoren", dauer: "7 Tage" },
-  { jahr: "2013–2018", ort: "Vogesen / Odilienberg", dauer: "6 Tage" },
-  { jahr: "2018", ort: "Idar-Oberstein", dauer: "8 Tage" },
-  { jahr: "2020", ort: "Berchtesgaden", dauer: "4 Tage" },
-  { jahr: "2021", ort: "Tessin", dauer: "8 Tage" },
-  { jahr: "2021", ort: "Engadin", dauer: "8 Tage" },
-  { jahr: "2022", ort: "Zermatt", dauer: "6 Tage" },
-  { jahr: "2022", ort: "Heilsteinmuseum", dauer: "3 Tage" },
+  { jahr: "2011–2021", ort: "Zentralalpen" },
+  { jahr: "2015–2022", ort: "Jura Exkursionen" },
+  { jahr: "2016", ort: "Portugal / Auroca" },
+  { jahr: "2017", ort: "Azoren" },
+  { jahr: "2013–2018", ort: "Vogesen / Odilienberg" },
+  { jahr: "2018", ort: "Idar-Oberstein" },
+  { jahr: "2020", ort: "Berchtesgaden" },
+  { jahr: "2021", ort: "Tessin" },
+  { jahr: "2021", ort: "Engadin" },
+  { jahr: "2022", ort: "Zermatt" },
+  { jahr: "2022", ort: "Heilsteinmuseum" },
 ];
 
 const ALPENSEMINAR_TAGE = [
@@ -83,7 +83,6 @@ export default function ExcursionReports() {
                 <div>
                   <p className="font-mono text-xs uppercase tracking-wider text-citrine-deep">{e.jahr}</p>
                   <h3 className="font-heading text-base font-semibold text-amethyst">{e.ort}</h3>
-                  <p className="mt-0.5 text-xs text-muted-foreground">{e.dauer}</p>
                 </div>
               </div>
             </Reveal>

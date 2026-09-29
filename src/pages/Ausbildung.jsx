@@ -164,6 +164,9 @@ export default function Ausbildung() {
         </div>
       </section>
 
+      {/* Exkursionen & Alpenseminar (Praktischer Ausbildungsteil) */}
+      <ExcursionReports />
+
       {/* Schulorte */}
       <section className="bg-quartz/60">
         <div className="mx-auto max-w-7xl px-4 py-24 sm:px-6">
@@ -309,9 +312,6 @@ export default function Ausbildung() {
           </Reveal>
         </div>
       </section>
-
-      {/* Exkursionen & Alpenseminar (Praktischer Ausbildungsteil) */}
-      <ExcursionReports />
 
       {/* Allgemeine Anfrage (unverbindlich) */}
       <section className="mx-auto max-w-3xl px-4 py-24 sm:px-6">
