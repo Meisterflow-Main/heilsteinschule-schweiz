@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { ArrowRight, Heart, Hand, Brain, Footprints, Sparkles, Play } from "lucide-react";
@@ -25,12 +25,25 @@ const TEAM = [
 ];
 
 export default function Home() {
+  const heroVideoRef = useRef(null);
+
+  useEffect(() => {
+    const v = heroVideoRef.current;
+    if (v) {
+      const setRate = () => { v.playbackRate = 0.5; };
+      v.addEventListener("loadedmetadata", setRate);
+      if (v.readyState >= 1) setRate();
+      return () => v.removeEventListener("loadedmetadata", setRate);
+    }
+  }, []);
+
   return (
     <>
       {/* HERO */}
       <section className="relative overflow-hidden">
         <div className="absolute inset-0">
           <video
+            ref={heroVideoRef}
             autoPlay
             muted
             loop
