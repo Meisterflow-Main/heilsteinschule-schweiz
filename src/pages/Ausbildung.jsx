@@ -65,8 +65,6 @@ const LEISTUNGEN = [
   "Ganzjähriger Start, Dauer mindestens ¾ Jahr",
   "Sobald 5 Schüler angemeldet sind, wird der Schulbeginn festgelegt",
   "Bei Klassen über 10 Schüler: 2 Dozenten",
-  "Maximal 2 Fehltage — Nachholung in Parallelklasse möglich",
-  "Alpenseminar als praktischer Ausbildungsteil obligatorisch",
   "Persönlicher Zugang zur Cloud der Heilsteinschule",
 ];
 
