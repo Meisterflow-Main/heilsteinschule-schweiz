@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Check, MapPin, Clock, CalendarDays, GraduationCap, ArrowRight } from "lucide-react";
+import { Check, MapPin, Clock, CalendarDays, GraduationCap, ArrowRight, FileText } from "lucide-react";
 import Reveal from "@/components/site/Reveal";
 import SectionHeading from "@/components/site/SectionHeading";
 import ContactForm from "@/components/site/ContactForm";
@@ -114,6 +114,12 @@ export default function Ausbildung() {
               Parallel-Klasse nachgeholt werden. Der Besuch eines Alpenseminars als praktischer
               Ausbildungsteil ist obligatorisch.
             </p>
+            <Link
+              to="/agb"
+              className="mt-4 inline-flex items-center gap-1.5 text-sm font-medium text-citrine-deep underline underline-offset-2 hover:text-citrine"
+            >
+              <FileText className="h-4 w-4" /> Allgemeine Geschäftsbedingungen (AGB) ansehen
+            </Link>
           </Reveal>
 
           <Reveal delay={0.1}>
@@ -145,6 +151,12 @@ export default function Ausbildung() {
                 <strong>Anzahlung:</strong> CHF 250.– zur Platzreservation (wird angerechnet). Schüler
                 erhalten 20% Rabatt im Heilsteinshop-Asp.
               </div>
+              <Link
+                to="/agb"
+                className="mt-3 inline-flex items-center gap-1.5 text-sm font-medium text-citrine-deep underline underline-offset-2 hover:text-citrine"
+              >
+                <FileText className="h-4 w-4" /> Allgemeine Geschäftsbedingungen (AGB) ansehen
+              </Link>
               <div className="mt-6 flex flex-col gap-3">
                 <a
                   href="#anmeldung"
@@ -336,8 +348,16 @@ export default function Ausbildung() {
             <SectionHeading
               eyebrow="Verbindliche Anmeldung"
               title="Anmeldung zur Ausbildung"
-              subtitle="Mit diesem Formular melden Sie sich verbindlich zur Grundausbildung an. Die Anzahlung von CHF 250.– sichert Ihren Platz und wird bei der Rechnung angerechnet."
+              subtitle="Mit diesem Formular melden Sie sich verbindlich zur Grundausbildung an. Die Anzahlung von CHF 250.– sichert Ihren Platz und wird bei der Rechnung angerechnet. Bitte beachten Sie auch unsere Allgemeinen Geschäftsbedingungen (AGB)."
             />
+            <div className="mt-6 flex justify-center">
+              <Link
+                to="/agb"
+                className="inline-flex items-center gap-1.5 text-sm font-medium text-citrine-deep underline underline-offset-2 hover:text-citrine"
+              >
+                <FileText className="h-4 w-4" /> Allgemeine Geschäftsbedingungen (AGB) ansehen
+              </Link>
+            </div>
           </Reveal>
           <Reveal delay={0.1}>
             <div className="mt-10 rounded-3xl border border-border bg-white p-6 shadow-soft sm:p-8">
