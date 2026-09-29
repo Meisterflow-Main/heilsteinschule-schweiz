@@ -6,9 +6,14 @@ const TIMELINE = [
   {
     year: "1970",
     img: "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/f768a42ec_ChatGPTImageSep29202603_38_30PM.png",
-    img2: "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/3d05b47e6_ChatGPTImageSep29202603_43_51PM.png",
-    title: "Die Handwerksjahre",
-    text: "Mit 16 Jahren absolviert Bruno Vogler Pfeiffer eine Schreinerlehre und hängt eine Maurerlehre als Zusatzausbildung an — der erste bewusste Umgang mit Holz und Stein.",
+    title: "Die Schreinerlehre",
+    text: "Mit 16 Jahren absolviert Bruno Vogler Pfeiffer eine Schreinerlehre — der erste bewusste Umgang mit Holz und der Grundstein seiner handwerklichen Präzision.",
+  },
+  {
+    year: "1975",
+    img: "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/3d05b47e6_ChatGPTImageSep29202603_43_51PM.png",
+    title: "Die Maurerlehre",
+    text: "Als Zusatzausbildung hängt er eine Maurerlehre an — der erste bewusste Umgang mit Stein, der später den Weg zu den Heilsteinen bahnt.",
   },
   {
     year: "1987",
@@ -17,16 +22,10 @@ const TIMELINE = [
     text: "Nach der Handwerkszeit und Auslandreisen absolviert er 1982 die Polizeirekrutenschule und dient bis 1990 bei der Kapo Aargau — Verantwortung im Dienst, bevor es ihn in die Wirtschaft zieht.",
   },
   {
-    year: "2007",
-    img: "https://heilsteinschule.swiss/media/wunderblock/Bruno.jpg",
-    title: "Der Weg zu den Heilsteinen",
-    text: "2001 beginnt er eine mediale Ausbildung und stösst auf die verlässliche Kraft der Heilsteine. 2007 absolviert er die Grundausbildung in analytischer Steinheilkunde bei Michael Gienger.",
-  },
-  {
     year: "2011",
     img: "https://heilsteinschule.swiss/media/topics-pictures/bruno_vogler_pfeiffer.png",
     title: "Gründung der Heilsteinschule",
-    text: "Bruno Vogler Pfeiffer gründet die Heilsteinschule Schweiz und bildet bis heute über 250 Personen aus. Die Schule ist SVNH-zertifiziert, der Heilsteinshop-Asp GKS-zertifiziert.",
+    text: "Nach der Ausbildung in analytischer Steinheilkunde bei Michael Gienger gründet Bruno Vogler Pfeiffer die Heilsteinschule Schweiz und bildet bis heute über 250 Personen aus.",
   },
 ];
 
@@ -70,16 +69,6 @@ export default function HistoryTimeline() {
                     className="aspect-[4/5] w-full bg-amethyst-soft/20"
                     fittingType="fill"
                   />
-                  {item.img2 && (
-                    <div className="absolute bottom-3 right-3 w-1/3 overflow-hidden rounded-lg border-2 border-citrine/70 shadow-lift">
-                      <Image
-                        src={item.img2}
-                        alt={`Maurerlehre – ${item.year}`}
-                        className="aspect-[4/5] w-full bg-amethyst-soft/20"
-                        fittingType="fill"
-                      />
-                    </div>
-                  )}
                 </div>
                 <div className="mt-5 text-center">
                   <h3 className="font-heading text-lg font-semibold text-citrine-light">{item.title}</h3>
