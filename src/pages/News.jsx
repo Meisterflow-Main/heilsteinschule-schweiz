@@ -45,7 +45,8 @@ const NEWS = [
   {
     date: "07.03.2026",
     title: "Rückblick der Gesundheitsmesse",
-    img: "https://heilsteinschule.swiss/media/.news_img/svnh-logo.jpg",
+    img: "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/6878e2233_ChatGPTImageSep29202610_13_15PM.png",
+    objectPos: "object-contain",
     text: "Wir waren Aussteller an der Gesundheitsmesse der SVNH in Sempach 7.3.26 — interessante Begegnungen und freudvolle Gespräche.",
     to: "https://www.svnh.ch/",
     external: true,
