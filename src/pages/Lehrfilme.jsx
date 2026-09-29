@@ -29,7 +29,7 @@ const FILME = [
     title: "Energiesteine reinigen und aufladen",
     date: "2021",
     text: "Viele Steine haben besondere Eigenschaften. Es gibt Edelsteine, die andere reinieren können und die selbst Energie aufnehmen. Effektive und unnötige Methoden.",
-    img: "https://heilsteinschule.swiss/media/.news_img/info-tag_1_1.jpg",
+    img: "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/cba69f5b4_ChatGPTImageSep29202610_16_52PM.png",
     href: "https://qs24.tv/",
   },
   {
