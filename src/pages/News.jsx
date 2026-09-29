@@ -35,7 +35,7 @@ const NEWS = [
   {
     date: "15.04.2026",
     title: "Im Bann der Quarz-Kristalle (Irene Marty)",
-    img: "https://heilsteinschule.swiss/media/.news_img/irene_marty_1.jpg",
+    img: "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/9960bc12d_ChatGPTImageSep29202610_11_59PM.png",
     text: "In welchen Kinos läuft der Film? Vorführung Buchen ab 23. April. Trailer anschauen und Flyer herunterladen.",
     to: "https://imbannderquarzkristalle.ch/#kino",
     external: true,
