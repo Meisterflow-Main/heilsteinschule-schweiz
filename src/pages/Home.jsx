@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 import { ArrowRight, Heart, Hand, Brain, Footprints, Sparkles, Play } from "lucide-react";
 import Reveal from "@/components/site/Reveal";
 import SectionHeading from "@/components/site/SectionHeading";
-import Reels from "@/components/site/Reels";
 import HistoryTimeline from "@/components/site/HistoryTimeline";
 import StoneCollage from "@/components/site/StoneCollage";
 import MineralSelection from "@/components/site/MineralSelection";
@@ -101,8 +100,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* INSTAGRAM REELS */}
-      <Reels />
+      {/* MINERALIENAUSWAHL */}
+      <MineralSelection />
 
       {/* LERNEN BEI UNS — Schule, Menschen & Naturerlebnis */}
       <LearningActivities />
@@ -213,9 +212,6 @@ export default function Home() {
 
       {/* WERNER KÜHNI — IN LIEBEVOLLER ERINNERUNG */}
       <WernerKuehniMemorial />
-
-      {/* MINERALIENAUSWAHL */}
-      <MineralSelection />
 
       {/* HISTORIE TIMELINE */}
       <HistoryTimeline />
