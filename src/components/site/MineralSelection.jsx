@@ -1,19 +1,21 @@
 import React, { useRef, useEffect } from "react";
-import { Gem } from "lucide-react";
+import { Gem, ExternalLink } from "lucide-react";
 import Reveal from "@/components/site/Reveal";
 import SectionHeading from "@/components/site/SectionHeading";
 
+const SHOP_HEILSTEINE = "https://heilstein-shop.com/heilsteine/";
+
 const VIDEOS = [
-  { src: "https://media.base44.com/videos/public/6aa92ec5274311c12da18ee6/05b4e9b71_WhatsAppVideo2026-09-22at0210584.mp4", label: "Auswahl" },
-  { src: "https://media.base44.com/videos/public/6aa92ec5274311c12da18ee6/270c228e7_WhatsAppVideo2026-09-22at0210583.mp4", label: "Prüfung" },
-  { src: "https://media.base44.com/videos/public/6aa92ec5274311c12da18ee6/2847934fa_WhatsAppVideo2026-09-22at0210582.mp4", label: "Befühlen" },
-  { src: "https://media.base44.com/videos/public/6aa92ec5274311c12da18ee6/df17ff5f2_WhatsAppVideo2026-09-22at0210581.mp4", label: "Vergleich" },
-  { src: "https://media.base44.com/videos/public/6aa92ec5274311c12da18ee6/b6f4d6066_WhatsAppVideo2026-09-22at021058.mp4", label: "Entscheidung" },
+  { src: "https://media.base44.com/videos/public/6aa92ec5274311c12da18ee6/05b4e9b71_WhatsAppVideo2026-09-22at0210584.mp4", label: "Auswahl", href: SHOP_HEILSTEINE },
+  { src: "https://media.base44.com/videos/public/6aa92ec5274311c12da18ee6/270c228e7_WhatsAppVideo2026-09-22at0210583.mp4", label: "Prüfung", href: SHOP_HEILSTEINE },
+  { src: "https://media.base44.com/videos/public/6aa92ec5274311c12da18ee6/2847934fa_WhatsAppVideo2026-09-22at0210582.mp4", label: "Befühlen", href: SHOP_HEILSTEINE },
+  { src: "https://media.base44.com/videos/public/6aa92ec5274311c12da18ee6/df17ff5f2_WhatsAppVideo2026-09-22at0210581.mp4", label: "Vergleich", href: SHOP_HEILSTEINE },
+  { src: "https://media.base44.com/videos/public/6aa92ec5274311c12da18ee6/b6f4d6066_WhatsAppVideo2026-09-22at021058.mp4", label: "Entscheidung", href: SHOP_HEILSTEINE },
 ];
 
 const TRIM_SECONDS = 18;
 
-function VideoCard({ src, label, delay }) {
+function VideoCard({ src, label, delay, href }) {
   const videoRef = useRef(null);
 
   useEffect(() => {
@@ -45,7 +47,12 @@ function VideoCard({ src, label, delay }) {
 
   return (
     <Reveal delay={delay}>
-      <figure className="group relative overflow-hidden rounded-2xl border border-border bg-amethyst shadow-soft transition hover:-translate-y-1 hover:shadow-lift">
+      <a
+        href={href}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="group relative block overflow-hidden rounded-2xl border border-border bg-amethyst shadow-soft transition hover:-translate-y-1 hover:shadow-lift"
+      >
         <div className="relative aspect-[4/5] overflow-hidden bg-black">
           <video
             ref={videoRef}
@@ -61,8 +68,11 @@ function VideoCard({ src, label, delay }) {
           <div className="absolute left-3 top-3 inline-flex items-center gap-1.5 rounded-full glass px-2.5 py-1 text-[11px] font-medium text-amethyst">
             <Gem className="h-3 w-3" /> {label}
           </div>
+          <div className="absolute bottom-3 right-3 inline-flex items-center gap-1 rounded-full bg-citrine px-2.5 py-1 text-[11px] font-semibold text-amethyst-deep opacity-0 transition group-hover:opacity-100">
+            <ExternalLink className="h-3 w-3" /> Im Shop
+          </div>
         </div>
-      </figure>
+      </a>
     </Reveal>
   );
 }
@@ -73,13 +83,13 @@ export default function MineralSelection() {
       <Reveal>
         <SectionHeading
           eyebrow="Mineralienauswahl"
-          title="Mit allen Sinnen den richtigen Stein finden"
-          subtitle="Jeder Heilstein wird einzeln in die Hand genommen, geprüft und ausgewählt. Mit Wissen, Gefühl und Intuition entscheiden wir, welche Mineralien als Lebensbegleiter dienen dürfen."
+          title="Einige Mineralien im Porträt"
+          subtitle="Jeder Heilstein wird einzeln in die Hand genommen, geprüft und ausgewählt. Mit Wissen, Gefühl und Intuition entscheiden wir, welche Mineralien als Lebensbegleiter dienen dürfen. Klicken Sie auf ein Porträt für die Beschreibung im Online-Shop."
         />
       </Reveal>
       <div className="mt-12 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-5 sm:gap-6">
         {VIDEOS.map((v, i) => (
-          <VideoCard key={i} src={v.src} label={v.label} delay={i * 0.06} />
+          <VideoCard key={i} src={v.src} label={v.label} delay={i * 0.06} href={v.href} />
         ))}
       </div>
     </section>
