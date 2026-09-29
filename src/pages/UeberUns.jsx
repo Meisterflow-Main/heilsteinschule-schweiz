@@ -260,7 +260,7 @@ export default function UeberUns() {
               <div className="grid gap-0 md:grid-cols-2">
                 <div className="overflow-hidden">
                   <img
-                    src="https://heilsteinschule.swiss/media/Steinmandli.png"
+                    src="https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/43715b4e1_ChatGPTImageSep30202602_10_51AM.png"
                     alt="S'Steinmanndli von Asp"
                     className="h-full w-full object-cover"
                   />
