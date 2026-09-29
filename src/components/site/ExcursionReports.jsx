@@ -59,7 +59,7 @@ const ALPENSEMINAR_TAGE = [
   },
 ];
 
-const BACKVIEW_IMG = "https://heilsteinschule.swiss/media/Alpenseminar_2025/Backview.jpg";
+const BACKVIEW_IMG = "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/a891f19f9_WhatsAppImage2026-09-23at105952.jpeg";
 
 export default function ExcursionReports() {
   return (
