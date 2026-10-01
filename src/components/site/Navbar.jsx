@@ -56,10 +56,10 @@ export default function Navbar() {
             />
           </Link>
 
-          <nav className="hidden items-center gap-1 lg:flex">
+          <nav className="hidden items-center gap-0 lg:flex">
             {NAV.map((item) => {
               const active = item.to && location.pathname === item.to;
-              const cls = `relative whitespace-nowrap rounded-full px-3.5 py-2 text-sm font-medium transition ${
+              const cls = `relative whitespace-nowrap rounded-full px-2 py-2 text-xs font-medium transition ${
                 active ? "text-amethyst" : "text-foreground/70 hover:text-amethyst"
               }`;
               if (item.href) {
@@ -90,7 +90,7 @@ export default function Navbar() {
               onMouseLeave={() => setRegionsOpen(false)}
             >
               <button
-                className={`relative inline-flex whitespace-nowrap items-center gap-1 rounded-full px-3.5 py-2 text-sm font-medium transition ${
+              className={`relative inline-flex whitespace-nowrap items-center gap-1 rounded-full px-2 py-2 text-xs font-medium transition ${
                   isRegion ? "text-amethyst" : "text-foreground/70 hover:text-amethyst"
                 }`}
                 onClick={() => setRegionsOpen((o) => !o)}
@@ -129,9 +129,9 @@ export default function Navbar() {
           <div className="flex items-center gap-2">
             <a
               href="tel:+41793896622"
-              className="hidden items-center gap-2 rounded-full bg-citrine px-4 py-2 text-sm font-semibold text-amethyst-deep shadow-soft transition hover:bg-citrine-light sm:inline-flex"
+              className="ml-2 hidden items-center gap-1.5 whitespace-nowrap rounded-full bg-citrine px-3 py-2 text-xs font-semibold text-amethyst-deep shadow-soft transition hover:bg-citrine-light sm:inline-flex"
             >
-              <Phone className="h-4 w-4" /> 079 389 66 22
+              <Phone className="h-3.5 w-3.5" /> 079 389 66 22
             </a>
             <button
               onClick={() => setOpen((o) => !o)}
