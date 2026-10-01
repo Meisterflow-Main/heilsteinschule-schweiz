@@ -273,6 +273,14 @@ export default function Home() {
         </div>
         <div className="relative mx-auto max-w-4xl px-4 py-24 text-center sm:px-6">
           <Reveal>
+            <div className="mb-6 inline-flex items-center gap-2 rounded-full bg-white/10 px-4 py-2">
+              <svg viewBox="0 0 32 32" className="h-5 w-5" aria-label="Schweizer Flagge" role="img">
+                <rect width="32" height="32" rx="4" fill="#D52B1E" />
+                <rect x="13" y="6" width="6" height="20" fill="#FFFFFF" />
+                <rect x="6" y="13" width="20" height="6" fill="#FFFFFF" />
+              </svg>
+              <span className="text-xs font-bold uppercase tracking-[0.18em] text-white">Made in Switzerland</span>
+            </div>
             <h2 className="font-heading text-3xl font-bold sm:text-4xl md:text-5xl">
               Vertrauen Sie auf die <span className="text-gradient-gold">Kräfte der Natur</span>
             </h2>
