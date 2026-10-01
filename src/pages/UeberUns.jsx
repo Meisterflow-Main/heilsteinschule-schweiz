@@ -46,10 +46,6 @@ const INTERVIEW = [
     a: "Immer ist das, was dir selber «widerfahren» ist, unauslöschlich in dir gespeichert. Du erkennst umgehend, «gut oder unnötig».",
   },
   {
-    q: "Wie können die Schüler das erlernte Wissen nach Abschluss der Ausbildung anwenden?",
-    a: "Ich sage immer, die Schule machst du in erster Linie für dich. Wenn du durch die Heilsteine, deine Lebensmitte, deine Gesundheit usw. gefunden hast, dann bist du bereit, dein Wissen, deine erfolgreichen Erfahrungen Dritten helfend zukommen zu lassen. Der Spruch «nur wer heil ist, darf heilen» gewinnt hier in seiner Bedeutung.",
-  },
-  {
     q: "Was ist das Besondere an der analytischen Steinheilkunde, die an der Heilsteinschule Schweiz gelehrt wird?",
     a: "Das Besondere bei uns ist das analytische, wissenschaftliche Grundwissen, das wir vermitteln. Über 90 % des Wissens, welches im Internet über Steine zu finden ist, entzieht sich der analytischen Steinheilkunde. Entstehung, Chemismus, Kristallstruktur, die Farbe wie auch die Form bestimmen verlässlich, was ein Stein zu leisten vermag. Michael Gienger hat daran 30 Jahre geforscht und es in über 20 Büchern niedergeschrieben. Vor 12 Jahren kaufte ich von ihm die Lizenz, dieses Wissen der Steinheilkunde unverfälscht lehren zu dürfen.",
   },
