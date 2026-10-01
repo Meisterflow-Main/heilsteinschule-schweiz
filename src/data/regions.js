@@ -310,108 +310,6 @@ export const REGIONS = [
     },
   },
   {
-    slug: "uster",
-    city: "Uster",
-    region: "Zürcher Oberland, Zürich",
-    metaTitle: "Heilsteinberater Ausbildung Uster | Heilsteinschule Schweiz",
-    metaDescription: "Heilsteinberater Ausbildung in Uster ZH: SVNH-zertifiziert und praxisnah bei der Heilsteinschule Schweiz. Steinheilkunde im Zürcher Oberland erlernen.",
-    hero: {
-      eyebrow: "Heilsteine in Uster",
-      h1: "Heilsteinberater Ausbildung in Uster – Steinheilkunde im Zürcher Oberland",
-      description:
-        "In Uster bringt die Heilsteinschule Schweiz die SVNH-zertifizierte Ausbildung zum Heilsteinberater ins Zürcher Oberland. Eine neue Klasse ist ab 2027 geplant – praxisnah und fundert, mit Dozentin Sarah Ziegenhagen.",
-    },
-    usps: [
-      { icon: "Sparkles", title: "Seit 2011", description: "Etablierte Steinheilkunde-Schule" },
-      { icon: "Award", title: "SVNH-zertifiziert", description: "Offiziell anerkanntes Zertifikat" },
-      { icon: "Users", title: "Dozentin vor Ort", description: "Sarah Ziegenhagen unterrichtet in Uster" },
-      { icon: "Hand", title: "Praxisnah", description: "Steine direkt in die Hand nehmen" },
-    ],
-    contact: {
-      intro:
-        "Der Schulstandort Uster liegt zentral im Zürcher Oberland. Beratung und Anmeldung erfolgen über den Hauptsitz der Heilsteinschule Schweiz in Asp.",
-      address: "Dorfstrasse 22, 5025 Asp (Hauptsitz)",
-      phone: "+41 79 389 66 22",
-      email: "anfragen@heilsteinschule.ch",
-      hours: "Laden Asp: Mi & Sa, 10–17 Uhr",
-    },
-    services: {
-      intro:
-        "In Uster ist eine neue Klasse ab 2027 geplant. Info-Nachmittage finden in Asp und Bern statt – eng verbunden mit dem Hauptsitz in Asp und dem gesamten Dozententeam.",
-      items: [
-        {
-          title: "Grundausbildung Heilsteinberater",
-          description:
-            "Die SVNH-zertifizierte Ausbildung in Uster dauert mindestens drei Vierteljahre. Schulungsunterlagen und Zertifizierung sind im Preis von CHF 4250 enthalten, zahlbar in zwei Raten.",
-        },
-        {
-          title: "Alpenseminar",
-          description:
-            "Das Alpenseminar vertieft das Usterer Wissen mit vier Übernachtungen in den Bergen und ist obligatorisch für das Schulzertifikat der Heilsteinschule.",
-        },
-        {
-          title: "Info-Nachmittag in Asp oder Bern",
-          description:
-            "Kostenlose Info-Nachmittage finden in Asp und Bern statt – ideal, um vor der Anmeldung die Heilsteinschule und die Steinheilkunde unverbindlich kennenzulernen.",
-        },
-      ],
-    },
-    whyUs: {
-      intro:
-        "Uster ist der Zürcher Standort der Heilsteinschule. Dozentin Sarah Ziegenhagen unterrichtet hier und bringt ihre Begeisterung für amorphe Steine direkt in den Unterricht.",
-      reasons: [
-        { headline: "Dozentin vor Ort in Uster", description: "Sarah Ziegenhagen unterrichtet persönlich." },
-        { headline: "S-Bahn-Anschluss", description: "Schnell erreichbar aus Zürich und Winterthur." },
-        { headline: "SVNH-zertifiziert", description: "Anerkannter Steinheilkunde-Abschluss." },
-        { headline: "Praxiserprobtes Team", description: "Dozenten mit eigener Heilsteinpraxis." },
-        { headline: "Flexible Schultage", description: "Nachholen an anderen Standorten möglich." },
-      ],
-      cta: "Jetzt Offerte anfordern",
-    },
-    costs: {
-      intro:
-        "Die Ausbildung in Uster kostet CHF 4250 inklusive Unterlagen und Zertifizierung. Die Anzahlung von CHF 250 reserviert deinen Platz im Zürcher Oberland.",
-      items: [
-        "CHF 4250.– inkl. Unterlagen und Zertifikat",
-        "Zwei Raten, erste 4 Wochen vor Kursbeginn",
-        "Anzahlung CHF 250.– zur Platzreservation",
-        "Alpenseminar ca. CHF 490.– für Übernachtungen",
-      ],
-      cta: "Jetzt Offerte anfordern",
-    },
-    reviews: {
-      intro:
-        "Teilnehmende aus Uster und dem Zürcher Oberland loben die Praxisnähe und die persönliche Betreuung durch das Dozententeam.",
-      rating: "5.0",
-      count: "Über 250 Absolventen",
-    },
-    faq: [
-      { q: "Was kostet die Heilsteinberater Ausbildung in Uster?", a: "Die SVNH-zertifizierte Grundausbildung in Uster kostet CHF 4250 inklusive Schulungsunterlagen und Zertifizierung. Die Anzahlung von CHF 250 sichert deinen Platz und wird an die erste Rate angerechnet." },
-      { q: "Wie lange dauert die Ausbildung in Uster?", a: "In Uster dauert die Ausbildung mindestens drei Vierteljahre. Maximal zwei Fehltage sind erlaubt, ausgefallene Schultage lassen sich in einer Parallelklasse nachholen." },
-      { q: "Kann ich mich online für Uster anmelden?", a: "Ja, die Anmeldung erfolgt online, schriftlich oder per E-Mail über den Hauptsitz in Asp. Mit der Anzahlung von CHF 250 wird deine Anmeldung für Uster verbindlich." },
-      { q: "Brauche ich Vorkenntnisse in Steinheilkunde?", a: "Nein, in Uster startest du ohne Vorkenntnisse. Freude an Steinen und ein offenes Herz genügen – die Dozentin führt dich Schritt für Schritt in die Steinheilkunde ein." },
-      { q: "Wo finden die Schultage in Uster statt?", a: "Die Schultage finden am Schulstandort Uster statt (neue Klasse 2027 geplant), organisiert über den Hauptsitz in Asp. Die Klassen umfassen 5 bis 8 Schülerinnen, der Beginn wird festgelegt, sobald 5 Anmeldungen vorliegen." },
-      { q: "Ist das Alpenseminar für Uster verpflichtend?", a: "Ja, das Alpenseminar ist obligatorisch für das Zertifikat. Für vier Übernachtungen mit Halbpension fallen ca. CHF 490 an, zahlbar direkt im Seminarhotel." },
-    ],
-    otherServices: [
-      { label: "Steinheilkunde-Anwendungen", to: "/laden-praxis" },
-      { label: "Heilsteinberatung", to: "/kontakt" },
-      { label: "Heilsteinshop Asp", to: "/laden-praxis" },
-      { label: "Lehrfilme", to: "/lehrfilme" },
-      { label: "News & Themen", to: "/news" },
-    ],
-    area: {
-      intro:
-        "Uster ist das Tor zum Zürcher Oberland und mit der S-Bahn bestens erreichbar. Unser Einzugsgebiet umfasst den ganzen Kanton Zürich.",
-      places: ["Uster", "Wetzikon", "Dübendorf", "Volketswil", "Fehraltorf", "Pfäffikon", "Hinwil", "Bäretswil", "Gossau", "Greifensee"],
-    },
-    finalCta: {
-      title: "Steinheilkunde in Uster starten",
-      text: "Melde dich jetzt für die Heilsteinberater Ausbildung in Uster an und entdecke die Kraft der Heilsteine im Zürcher Oberland.",
-      button: "Termin buchen",
-    },
-  },
-  {
     slug: "zuerich",
     city: "Zürich",
     region: "Zürich",
@@ -421,7 +319,7 @@ export const REGIONS = [
       eyebrow: "Heilsteine in Zürich",
       h1: "Heilsteinberater Ausbildung für Zürich – Steinheilkunde hautnah erleben",
       description:
-        "Für Interessierte aus Zürich führt die Heilsteinschule Schweiz die SVNH-zertifizierte Ausbildung zum Heilsteinberater am nahen Standort Uster durch (neue Klasse ab 2027 geplant). Praxisnah, fundiert und mit Dozenten, die selbst in der Steinheilkunde arbeiten.",
+        "Für Interessierte aus Zürich führt die Heilsteinschule Schweiz die SVNH-zertifizierte Ausbildung zum Heilsteinberater am nahen Standort Asp durch. Praxisnah, fundiert und mit Dozenten, die selbst in der Steinheilkunde arbeiten.",
     },
     usps: [
       { icon: "Sparkles", title: "Seit 2011", description: "Über 250 ausgebildete Berater" },
@@ -431,7 +329,7 @@ export const REGIONS = [
     ],
     contact: {
       intro:
-        "Für Schülerinnen aus Zürich ist der nächste Ausbildungsstandort Uster im Zürcher Oberland. Beratung und Anmeldung laufen über den Hauptsitz in Asp.",
+        "Für Schülerinnen aus Zürich ist der nächste Ausbildungsstandort Asp im Fricktal. Beratung und Anmeldung laufen über den Hauptsitz in Asp.",
       address: "Dorfstrasse 22, 5025 Asp (Hauptsitz)",
       phone: "+41 79 389 66 22",
       email: "anfragen@heilsteinschule.ch",
@@ -439,12 +337,12 @@ export const REGIONS = [
     },
     services: {
       intro:
-        "Im Raum Zürich bieten wir die Grundausbildung am Standort Uster an (neue Klasse ab 2027). Info-Nachmittage finden in Asp und Bern statt, das Alpenseminar in den Schweizer Alpen.",
+        "Im Raum Zürich bieten wir die Grundausbildung am Standort Asp an. Info-Nachmittage finden in Asp und Bern statt, das Alpenseminar in den Schweizer Alpen.",
       items: [
         {
           title: "Grundausbildung Heilsteinberater",
           description:
-            "Die SVNH-zertifizierte Ausbildung für Zürich findet in Uster statt und dauert mindestens drei Vierteljahre. Unterlagen und Zertifikat sind im Preis von CHF 4250 enthalten.",
+            "Die SVNH-zertifizierte Ausbildung für Zürich findet in Asp statt und dauert mindestens drei Vierteljahre. Unterlagen und Zertifikat sind im Preis von CHF 4250 enthalten.",
         },
         {
           title: "Alpenseminar",
@@ -460,10 +358,10 @@ export const REGIONS = [
     },
     whyUs: {
       intro:
-        "Zürich ist mit der S-Bahn in kurzer Zeit am Standort Uster. So profitierst du von der Grossstadt aus dennoch von persönlicher Betreuung und kleinen Klassen.",
+        "Zürich ist über die A1 und mit der S-Bahn in rund 45 Minuten im Fricktal am Standort Asp. So profitierst du von der Grossstadt aus dennoch von persönlicher Betreuung und kleinen Klassen.",
       reasons: [
-        { headline: "Schnell ab Zürich HB", description: "Uster in rund 30 Minuten erreichbar." },
-        { headline: "Dozentin im Zürcher Oberland", description: "Sarah Ziegenhagen unterrichtet persönlich." },
+        { headline: "Schnell ab Zürich", description: "Asp im Fricktal in rund 45 Minuten." },
+        { headline: "Heilsteinshop vor Ort", description: "Laden und Praxis direkt an der Schule." },
         { headline: "SVNH-zertifiziert", description: "Anerkannter Steinheilkunde-Abschluss." },
         { headline: "Kleine Klassen", description: "Persönliche Betreuung statt Anonymität." },
         { headline: "Flexible Schultage", description: "Nachholen an anderen Standorten möglich." },
@@ -472,7 +370,7 @@ export const REGIONS = [
     },
     costs: {
       intro:
-        "Die Ausbildung für Zürich kostet CHF 4250 inklusive Unterlagen und Zertifizierung. Die Anzahlung von CHF 250 reserviert deinen Platz am Standort Uster.",
+        "Die Ausbildung für Zürich kostet CHF 4250 inklusive Unterlagen und Zertifizierung. Die Anzahlung von CHF 250 reserviert deinen Platz am Standort Asp.",
       items: [
         "CHF 4250.– inkl. Unterlagen und Zertifikat",
         "Zwei Raten, erste 4 Wochen vor Kursbeginn",
@@ -483,16 +381,16 @@ export const REGIONS = [
     },
     reviews: {
       intro:
-        "Viele Teilnehmende aus der Stadt Zürich schätzen die ruhige, praxisnahe Ausbildung im nahen Zürcher Oberland.",
+        "Viele Teilnehmende aus der Stadt Zürich schätzen die ruhige, praxisnahe Ausbildung am Standort Asp im Fricktal.",
       rating: "5.0",
       count: "Über 250 Absolventen",
     },
     faq: [
-      { q: "Was kostet die Heilsteinberater Ausbildung für Zürich?", a: "Die SVNH-zertifizierte Grundausbildung am Standort Uster kostet CHF 4250 inklusive Schulungsunterlagen und Zertifizierung. Die Anzahlung von CHF 250 sichert deinen Platz und wird an die erste Rate angerechnet." },
-      { q: "Wie lange dauert die Ausbildung ab Zürich?", a: "Ab Zürich dauert die Ausbildung mindestens drei Vierteljahre am Standort Uster. Maximal zwei Fehltage sind erlaubt, Nachholtermine in einer Parallelklasse sind möglich." },
+      { q: "Was kostet die Heilsteinberater Ausbildung für Zürich?", a: "Die SVNH-zertifizierte Grundausbildung am Standort Asp kostet CHF 4250 inklusive Schulungsunterlagen und Zertifizierung. Die Anzahlung von CHF 250 sichert deinen Platz und wird an die erste Rate angerechnet." },
+      { q: "Wie lange dauert die Ausbildung ab Zürich?", a: "Ab Zürich dauert die Ausbildung mindestens drei Vierteljahre am Standort Asp. Maximal zwei Fehltage sind erlaubt, Nachholtermine in einer Parallelklasse sind möglich." },
       { q: "Kann ich mich online für Zürich anmelden?", a: "Ja, die Anmeldung erfolgt online, schriftlich oder per E-Mail über den Hauptsitz in Asp. Mit der Anzahlung von CHF 250 wird deine Anmeldung für den Raum Zürich verbindlich." },
       { q: "Brauche ich Vorkenntnisse in Steinheilkunde?", a: "Nein, ab Zürich startest du ohne Vorkenntnisse. Freude an Steinen und ein offenes Herz genügen – das Dozententeam führt dich Schritt für Schritt in die Steinheilkunde ein." },
-      { q: "Wo finden die Schultage für Zürich statt?", a: "Die Schultage finden am Standort Uster statt, organisiert über den Hauptsitz in Asp. Die Klassen umfassen 5 bis 8 Schülerinnen, der Beginn wird festgelegt, sobald 5 Anmeldungen vorliegen." },
+      { q: "Wo finden die Schultage für Zürich statt?", a: "Die Schultage finden am Standort Asp im Fricktal statt, organisiert über den Hauptsitz. Die Klassen umfassen 5 bis 8 Schülerinnen, der Beginn wird festgelegt, sobald 5 Anmeldungen vorliegen." },
       { q: "Ist das Alpenseminar für Zürich verpflichtend?", a: "Ja, das Alpenseminar ist obligatorisch für das Zertifikat. Für vier Übernachtungen mit Halbpension fallen ca. CHF 490 an, zahlbar direkt im Seminarhotel." },
     ],
     otherServices: [
@@ -504,8 +402,8 @@ export const REGIONS = [
     ],
     area: {
       intro:
-        "Zürich ist mit der S-Bahn hervorragend an den Standort Uster angebunden. Unser Einzugsgebiet umfasst die Stadt und den ganzen Kanton.",
-      places: ["Zürich", "Uster", "Winterthur", "Dübendorf", "Dietikon", "Wetzikon", "Thalwil", "Horgen", "Meilen", "Bülach"],
+        "Zürich ist über die A1 und mit der S-Bahn hervorragend ins Fricktal erreichbar. Unser Einzugsgebiet umfasst die Stadt und den ganzen Kanton.",
+      places: ["Zürich", "Winterthur", "Dübendorf", "Dietikon", "Wetzikon", "Thalwil", "Horgen", "Meilen", "Bülach", "Schlieren"],
     },
     finalCta: {
       title: "Steinheilkunde ab Zürich erleben",

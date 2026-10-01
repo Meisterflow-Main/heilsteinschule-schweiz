@@ -22,7 +22,7 @@ const TEASERS = [
   },
   {
     title: "Unsere Standorte",
-    text: "Schulen in: Asp, Wallbach, Bern und Uster",
+    text: "Schulen in: Asp, Wallbach und Bern",
     img: "https://heilsteinschule.swiss/media/teasers-pictures/uebersicht-alle-standorte.png",
     to: "/ausbildung",
   },

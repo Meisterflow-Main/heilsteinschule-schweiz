@@ -31,14 +31,6 @@ const STANDORTE = [
     hinweis: "Im selben Gebäude wie SVNH · Neue Klasse 2027 · 6 Min. ab HB",
     weg: "ÖV: Vom Hauptbahnhof Bern ca. 6 Min. zu Fuss — Zug in Richtung Welle 7 verlassen, Richtung Süden zum Hirschengraben, weiter auf die Monbijoustrasse, dann rechts in die Kapellenstrasse. Hausnummer 5 links. Auto: Nur blaue Zone (1 Std.) und City West Parking. Keine eigenen Parkplätze.",
   },
-  {
-    name: "Schule Uster ZH",
-    ort: "Brauereistrasse 10, 8610 Uster",
-    img: "https://heilsteinschule.swiss/media/wunderblock/schulort-uster1.jpg",
-    tage: "Neue Klasse 2027 geplant",
-    leitung: "Sarah Ziegenhagen",
-    hinweis: "Parkplätze beim Haus vorhanden",
-  },
 ];
 
 const VORAUSSETZUNGEN = [
@@ -172,8 +164,8 @@ export default function Ausbildung() {
           <Reveal>
             <SectionHeading
               eyebrow="Schulorte"
-              title="Asp · Wallbach · Bern · Uster"
-              subtitle="Vier Standorte in der Schweiz — finden Sie den Lernort, der zu Ihnen passt."
+              title="Asp · Wallbach · Bern"
+              subtitle="Drei Standorte in der Schweiz — finden Sie den Lernort, der zu Ihnen passt."
             />
           </Reveal>
           <div className="mt-12 grid gap-6 md:grid-cols-2">
@@ -278,7 +270,7 @@ export default function Ausbildung() {
                 <h3 className="mt-4 font-heading text-lg font-semibold text-amethyst">Alpenseminar 2027</h3>
                 <p className="mt-1 text-sm text-muted-foreground">23.06. – 27.06.2027 · Für alle Klassen</p>
                 <p className="mt-3 text-xs leading-relaxed text-muted-foreground">
-                  Schulstart 2027 bei mindestens 5 Anmeldungen pro Lehrgang. Uster 1: ab 2027 geplant.
+                  Schulstart 2027 bei mindestens 5 Anmeldungen pro Lehrgang.
                 </p>
               </div>
             </div>

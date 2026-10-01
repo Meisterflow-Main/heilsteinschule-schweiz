@@ -130,11 +130,6 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link to="/regionen/uster" className="text-white/70 transition hover:text-citrine-light">
-                  Heilsteinberater Uster
-                </Link>
-              </li>
-              <li>
                 <Link to="/regionen/zuerich" className="text-white/70 transition hover:text-citrine-light">
                   Heilsteinberater Zürich
                 </Link>

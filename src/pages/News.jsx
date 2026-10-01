@@ -63,16 +63,6 @@ const NEWS = [
     cta: "Zur Aktion im Shop",
   },
   {
-    date: "16.02.2026",
-    title: "Ein Info-Nachmittag in Uster",
-    img: "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/51c247e89_ChatGPTImageSep29202610_16_52PM.png",
-    aspect: "aspect-square",
-    text: "Bewegte uns alle, weckte grosse Freude am Wesen der Heilsteine und ihrer verborgenen Energie. Steinherzlichen Dank an alle.",
-    to: "https://www.facebook.com/groups/1905182292833468",
-    external: true,
-    cta: "Zur Facebook-Seite",
-  },
-  {
     date: "12.11.2025",
     title: "Reise zu mir selbst — Buch ISBN 9798269951614",
     img: "https://heilsteinschule.swiss/media/Brunos_Buch/20251103_132034.jpg",
@@ -111,7 +101,7 @@ export default function News() {
     <>
       <section className="relative overflow-hidden bg-amethyst text-white">
         <div className="absolute inset-0 opacity-20">
-          <img src="https://heilsteinschule.swiss/media/Info-Tag_Uster_14-02-26.png" alt="" className="h-full w-full object-cover" />
+          <img src="https://heilsteinschule.swiss/media/Ruth_Bruno_Aug_25_2.jpg" alt="" className="h-full w-full object-cover" />
         </div>
         <div className="absolute inset-0 bg-gradient-to-r from-amethyst-deep via-amethyst/80 to-amethyst/40" />
         <div className="relative mx-auto max-w-7xl px-4 py-24 sm:px-6">
