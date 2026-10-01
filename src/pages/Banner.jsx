@@ -105,6 +105,17 @@ export default function Banner() {
               className="flex flex-[1] flex-col items-center justify-center px-6 py-8 text-center"
               style={{ background: "#2B1B4D" }}
             >
+              <div className="mb-4 flex items-center gap-2 rounded-full bg-white/10 px-3 py-1.5">
+                <svg viewBox="0 0 32 32" className="h-5 w-5" aria-label="Schweizer Flagge" role="img">
+                  <rect width="32" height="32" rx="4" fill="#D52B1E" />
+                  <rect x="13" y="6" width="6" height="20" fill="#FFFFFF" />
+                  <rect x="6" y="13" width="20" height="6" fill="#FFFFFF" />
+                </svg>
+                <span className="text-[0.6rem] font-bold uppercase tracking-[0.18em]" style={{ color: "#FFFFFF" }}>
+                  Made in Switzerland
+                </span>
+              </div>
+
               <div className="rounded-2xl bg-white px-6 py-4 shadow-lg">
                 <img
                   src={LOGO_URL}
