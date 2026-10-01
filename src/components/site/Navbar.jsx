@@ -52,7 +52,7 @@ export default function Navbar() {
             <img
               src="https://heilsteinschule.swiss/media/LogoName.png"
               alt="Heilsteinschule Schweiz Logo"
-              className="h-11 w-auto rounded-xl bg-white/95 object-contain p-1.5 sm:h-12"
+              className="h-14 w-auto rounded-xl bg-white object-contain p-2 shadow-soft sm:h-16"
             />
           </Link>
 
