@@ -41,17 +41,6 @@ const STANDORTE = [
   },
 ];
 
-const TEAM = [
-  { name: "Bruno Vogler Pfeiffer", role: "Schul-Gründer und Schulleiter", img: "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/e7dc15219_ChatGPTImageSep30202602_17_44AM.png" },
-  { name: "Ruth Rios", role: "Hauptdozentin der Heilsteinschule", img: "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/460e2670f_ChatGPTImageSep21202602_29_12PM.png" },
-  { name: "Pascal Bossard", role: "Kreativ verantwortlich, Leiter Alpenseminar", img: "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/057e4eb82_ChatGPTImageSep21202602_32_05PM.png" },
-  { name: "Sarah Ziegenhagen", role: "Dozentin Uster ZH", img: "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/744f004b6_ChatGPTImageSep21202602_35_44PM.png" },
-  { name: "Joe Schnarwiler", role: "Dozent", img: "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/8ed080c78_ChatGPTImageSep21202602_36_58PM.png" },
-  { name: "Maja Pfeiffer", role: "StV Schulleitung und Leitung Heilsteinshop-Asp", img: "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/d3b26ef85_ChatGPTImageSep21202602_40_48PM.png" },
-  { name: "Judith von Rotz", role: "Buchhaltung und Rechnungswesen", img: "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/1a6cef69a_ChatGPTImageSep21202602_42_52PM.png" },
-  { name: "René Schmid", role: "IT Support — gesamte IT-Infrastruktur", img: "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/16619e80b_ChatGPTImageSep21202602_43_39PM.png" },
-];
-
 const VORAUSSETZUNGEN = [
   "Freude an Steinen und den Heilkräften der Natur.",
   "Willen, eine neue Herausforderung anzunehmen.",
@@ -217,32 +206,6 @@ export default function Ausbildung() {
               </Reveal>
             ))}
           </div>
-        </div>
-      </section>
-
-      {/* Team */}
-      <section className="mx-auto max-w-7xl px-4 py-24 sm:px-6">
-        <Reveal>
-          <SectionHeading
-            eyebrow="Dozenten-Team"
-            title="Team Heilsteinschule"
-            subtitle="Für mehr Info klicken Sie jeweils auf die Person."
-          />
-        </Reveal>
-        <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-          {TEAM.map((m, i) => (
-            <Reveal key={m.name} delay={i * 0.06}>
-              <Link to="/ueber-uns" className="group block overflow-hidden rounded-2xl border border-border bg-white shadow-soft transition hover:-translate-y-1 hover:border-citrine hover:shadow-lift">
-                <div className="aspect-square overflow-hidden bg-muted">
-                  <img src={m.img} alt={m.name} loading="lazy" className="h-full w-full object-cover transition duration-700 group-hover:scale-105" />
-                </div>
-                <div className="p-4 text-center">
-                  <h3 className="font-heading text-base font-semibold text-amethyst">{m.name}</h3>
-                  <p className="mt-1 text-xs leading-relaxed text-muted-foreground">{m.role}</p>
-                </div>
-              </Link>
-            </Reveal>
-          ))}
         </div>
       </section>
 
