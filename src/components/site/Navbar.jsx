@@ -48,11 +48,17 @@ export default function Navbar() {
             scrolled ? "glass shadow-soft" : "bg-transparent"
           }`}
         >
-          <Link to="/" className="flex items-center gap-3" aria-label="Heilsteinschule Schweiz Startseite">
+          <Link
+            to="/"
+            className={`flex items-center gap-2.5 rounded-xl transition-all duration-500 ${
+              scrolled ? "" : "glass px-2.5 py-1.5 shadow-soft"
+            }`}
+            aria-label="Heilsteinschule Schweiz Startseite"
+          >
             <img
               src="https://heilsteinschule.swiss/media/LogoName.png"
               alt="Heilsteinschule Schweiz Logo"
-              className="h-9 w-auto sm:h-10"
+              className="h-10 w-auto sm:h-11"
             />
           </Link>
 
