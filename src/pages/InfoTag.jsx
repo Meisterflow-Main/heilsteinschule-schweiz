@@ -34,8 +34,8 @@ export default function InfoTag() {
             </div>
             <h1 className="font-heading text-4xl font-bold sm:text-5xl md:text-6xl">Info-Tag</h1>
             <p className="mt-5 max-w-xl text-lg text-white/80">
-              Kostenloser Infonachmittag an der Heilsteinschule — erfahren Sie mehr über die
-              faszinierende Welt der Heilsteine und unsere Ausbildung.
+              Kostenloser Infonachmittag an der Heilsteinschule in Asp und Bern — erfahren Sie mehr über
+              die faszinierende Welt der Heilsteine und unsere Ausbildung.
             </p>
           </Reveal>
         </div>
@@ -43,7 +43,7 @@ export default function InfoTag() {
 
       <section className="mx-auto max-w-5xl px-4 py-20 sm:px-6">
         <Reveal>
-          <SectionHeading eyebrow="Termine" title="Wir freuen uns auf Ihre Anmeldung" subtitle="Anmeldung per Formular, Telefon oder E-Mail." />
+          <SectionHeading eyebrow="Termine" title="Wir freuen uns auf Ihre Anmeldung" subtitle="Der Infonachmittag findet in Asp und Bern statt. Anmeldung per Formular, Telefon oder E-Mail." />
         </Reveal>
         <div className="mt-12 grid gap-6 sm:grid-cols-2">
           {TERMINE.map((t, i) => (
