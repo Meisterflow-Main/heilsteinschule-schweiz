@@ -10,6 +10,7 @@ export default function ContactForm({ defaultDescription = "", compact = false, 
     name: "",
     email: "",
     phone: "",
+    preferredDate: "",
     description: defaultDescription,
     company: "", // honeypot
   });
@@ -47,13 +48,14 @@ export default function ContactForm({ defaultDescription = "", compact = false, 
           name: form.name.trim(),
           email: form.email.trim(),
           phone: form.phone.trim(),
+          preferred_date: form.preferredDate || null,
           description: form.description.trim(),
         }),
       });
       if (!res.ok) throw new Error("Network response was not ok");
       setStatus("success");
       setSubmittedOnce(true);
-      setForm({ name: "", email: "", phone: "", description: defaultDescription, company: "" });
+      setForm({ name: "", email: "", phone: "", preferredDate: "", description: defaultDescription, company: "" });
     } catch (err) {
       setStatus("error");
     }
@@ -145,6 +147,22 @@ export default function ContactForm({ defaultDescription = "", compact = false, 
               placeholder="+41 79 ..."
             />
           </div>
+        </div>
+
+        <div>
+          <label htmlFor={`${idPrefix}preferredDate`} className="mb-1.5 block text-sm font-medium text-amethyst">
+            Wunschtermin
+          </label>
+          <input
+            id={`${idPrefix}preferredDate`}
+            name="preferredDate"
+            type="date"
+            value={form.preferredDate}
+            onChange={handleChange}
+            min={new Date().toISOString().split("T")[0]}
+            className="w-full rounded-xl border border-border bg-white/70 px-4 py-3 text-foreground outline-none transition focus:border-citrine focus:ring-2 focus:ring-citrine/20"
+          />
+          <p className="mt-1 text-xs text-muted-foreground">Optional — wir bestätigen den Termin telefonisch oder per E-Mail.</p>
         </div>
 
         <div>

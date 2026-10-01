@@ -133,11 +133,11 @@ export default function LadenPraxis() {
       <section className="bg-quartz/60">
         <div className="mx-auto max-w-3xl px-4 py-20 sm:px-6">
           <Reveal>
-            <SectionHeading eyebrow="Beratung" title="Termin oder Beratung anfragen" subtitle="Wir beraten Sie gerne persönlich — im Laden in Asp oder ausserhalb der Öffnungszeiten per Telefon und E-Mail." />
+            <SectionHeading eyebrow="Beratung" title="Termin für Beratung buchen" subtitle="Buchen Sie eine persönliche Beratung im Heilsteinshop-Asp. Wählen Sie einen Wunschtermin — wir bestätigen ihn telefonisch oder per E-Mail." />
           </Reveal>
           <Reveal delay={0.1}>
             <div className="mt-10 rounded-3xl border border-border bg-white p-6 shadow-soft sm:p-8">
-              <ContactForm defaultDescription="Beratung / Termin im Heilsteinshop-Asp" idPrefix="laden" compact />
+              <ContactForm defaultDescription="Beratung / Termin im Heilsteinshop-Asp" idPrefix="laden" inquiryType="termin_beratung" compact />
             </div>
           </Reveal>
           <div className="mt-8 flex items-center justify-center gap-2 text-sm text-muted-foreground">
