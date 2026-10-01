@@ -49,11 +49,10 @@ export default function Home() {
             muted
             loop
             playsInline
-            poster="https://heilsteinschule.swiss/media/Ruth_Bruno_Aug_25_2.jpg"
-            aria-label="Unterricht mit Ruth Rios und Bruno Vogler Pfeiffer an der Heilsteinschule Schweiz"
+            aria-label="Nahaufnahme natürlicher Amethyst-Kristalle"
             className="h-full w-full object-cover object-center"
           >
-            <source src="https://media.base44.com/videos/public/6aa92ec5274311c12da18ee6/c86ec908b_WhatsAppVideo2026-09-22at021058.mp4" type="video/mp4" />
+            <source src="https://media.base44.com/videos/public/6aa92ec5274311c12da18ee6/dd0714200_Hero_Crystal_Macro.mp4" type="video/mp4" />
           </video>
           <div className="absolute inset-0 bg-gradient-to-b from-amethyst-deep/40 via-amethyst/10 to-amethyst-deep/45" />
           <div className="absolute inset-0 bg-gradient-to-r from-amethyst-deep/45 to-transparent" />
