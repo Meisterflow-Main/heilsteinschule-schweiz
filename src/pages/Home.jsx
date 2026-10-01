@@ -31,7 +31,7 @@ export default function Home() {
   useEffect(() => {
     const v = heroVideoRef.current;
     if (v) {
-      const setRate = () => { v.playbackRate = 0.5; };
+      const setRate = () => { v.playbackRate = 0.35; };
       v.addEventListener("loadedmetadata", setRate);
       if (v.readyState >= 1) setRate();
       return () => v.removeEventListener("loadedmetadata", setRate);

@@ -21,6 +21,7 @@ function VideoCard({ src, label, delay, href }) {
     const v = videoRef.current;
     if (!v) return;
 
+    const setRate = () => { v.playbackRate = 0.5; };
     const tryPlay = () => {
       v.play().catch(() => {
         // Retry once after a short delay if autoplay was blocked
@@ -36,11 +37,14 @@ function VideoCard({ src, label, delay, href }) {
 
     v.addEventListener("timeupdate", onTimeUpdate);
     v.addEventListener("loadeddata", tryPlay);
+    v.addEventListener("loadedmetadata", setRate);
+    if (v.readyState >= 1) setRate();
     tryPlay();
 
     return () => {
       v.removeEventListener("timeupdate", onTimeUpdate);
       v.removeEventListener("loadeddata", tryPlay);
+      v.removeEventListener("loadedmetadata", setRate);
     };
   }, []);
 
