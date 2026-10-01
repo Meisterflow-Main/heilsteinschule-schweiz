@@ -154,7 +154,7 @@ export const REGIONS = [
     },
     whyUs: {
       intro:
-        "Wallbach liegt im nordwestlichen Fricktal, nahe des Rheins und der deutschen Grenze, und ist für Schüler aus dem Fricktal und dem Baselbiet schnell erreichbar.",
+        "Wallbach liegt im Kanton Aargau, nahe der deutschen Grenze und des Rheins, und ist für Schüler aus dem Fricktal und dem Baselbiet schnell erreichbar.",
       reasons: [
         { headline: "Gute Anbindung im Fricktal", description: "Schnell erreichbar aus Wallbach und Umgebung." },
         { headline: "Kleine Klassen", description: "5 bis 8 Schülerinnen für persönliche Betreuung." },
