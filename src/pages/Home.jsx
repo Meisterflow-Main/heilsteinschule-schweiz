@@ -55,8 +55,8 @@ export default function Home() {
           >
             <source src="https://media.base44.com/videos/public/6aa92ec5274311c12da18ee6/c86ec908b_WhatsAppVideo2026-09-22at021058.mp4" type="video/mp4" />
           </video>
-          <div className="absolute inset-0 bg-gradient-to-b from-amethyst-deep/85 via-amethyst/70 to-amethyst-deep/90" />
-          <div className="absolute inset-0 bg-gradient-to-r from-amethyst-deep/60 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-b from-amethyst-deep/40 via-amethyst/10 to-amethyst-deep/45" />
+          <div className="absolute inset-0 bg-gradient-to-r from-amethyst-deep/45 to-transparent" />
         </div>
 
         <div className="relative mx-auto flex min-h-[88vh] max-w-7xl flex-col justify-center px-4 py-28 sm:px-6">
