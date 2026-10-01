@@ -8,7 +8,7 @@ const NEWS = [
   {
     date: "16.09.2026",
     title: "Neue Schultermine für Bern + Wallbach",
-    img: "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/8a2b2bb93_ChatGPTImageSep29202610_05_47PM.png",
+    img: "https://heilsteinschule.swiss/media/.news_img/lernen.png",
     text: "Neue Schultermine für Bern 2 (ab 23.01.2027), Wallbach 1 (ab 30.01.2027) und Wallbach 2 (ab 21.01.2027). Alpenseminar 2027: 23.06.–27.06.2027.",
     to: "/ausbildung",
     external: false,
@@ -17,7 +17,7 @@ const NEWS = [
   {
     date: "03.09.2026",
     title: "Werner Kühni in Erinnerung",
-    img: "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/0a2ea8652_ChatGPTImageSep29202610_09_59PM.png",
+    img: "https://heilsteinschule.swiss/media/.news_img/werner_kuehni_news.png",
     text: "R.I.P. Werner Kühni! Unser letztes Treffen — Heilstein Museum in Stockholm mit Werner Kühni.",
     to: "https://heilsteinschule.swiss/diverses/geologische-reisen/heilstein-museum-2022/",
     external: true,
@@ -26,7 +26,7 @@ const NEWS = [
   {
     date: "11.07.2026",
     title: "Neuer Standort Wallbach AG",
-    img: "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/d88879975_ChatGPTImageSep29202610_11_06PM.png",
+    img: "https://heilsteinschule.swiss/media/.news_img/wallbach_innen.jpeg",
     text: "Neuer Ausbildungsstandort der Heilsteinschule Schweiz im Fricktal. Geplanter Lehrgangsstart: Donnerstag, 15. Oktober 2026.",
     to: "/ausbildung",
     external: false,
@@ -35,7 +35,7 @@ const NEWS = [
   {
     date: "07.03.2026",
     title: "Rückblick der Gesundheitsmesse",
-    img: "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/6878e2233_ChatGPTImageSep29202610_13_15PM.png",
+    img: "https://heilsteinschule.swiss/media/.news_img/svnh-logo.jpg",
     aspect: "aspect-square",
     text: "Wir waren Aussteller an der Gesundheitsmesse der SVNH in Sempach 7.3.26 — interessante Begegnungen und freudvolle Gespräche.",
     to: "https://www.svnh.ch/",
@@ -45,7 +45,7 @@ const NEWS = [
   {
     date: "01.03.2026",
     title: "Aktion 40% auf ausgewählte Armbänder",
-    img: "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/40e36040b_ChatGPTImageSep29202610_14_46PM.png",
+    img: "https://heilsteinschule.swiss/media/.news_img/20240226_100437.jpg",
     aspect: "aspect-square",
     text: "Auf ausgewählte Armbänder der Kreation diopteia. Diese Armbänder möchten DIR gerne Unterstützung und Schönheit bringen.",
     to: "https://heilstein-shop.com/action/",
