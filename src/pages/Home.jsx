@@ -9,6 +9,7 @@ import StoneCollage from "@/components/site/StoneCollage";
 import MineralSelection from "@/components/site/MineralSelection";
 import WernerKuehniMemorial from "@/components/site/WernerKuehniMemorial";
 import LearningActivities from "@/components/site/LearningActivities";
+import BookPromo from "@/components/site/BookPromo";
 import OptimizedImage from "@/components/site/OptimizedImage";
 
 const PRINCIPLES = [
@@ -223,6 +224,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* BUCH-PROMOTION */}
+      <BookPromo />
 
       {/* WERNER KÜHNI — IN LIEBEVOLLER ERINNERUNG */}
       <WernerKuehniMemorial />
