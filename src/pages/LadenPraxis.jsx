@@ -134,6 +134,16 @@ export default function LadenPraxis() {
         <div className="mx-auto max-w-3xl px-4 py-20 sm:px-6">
           <Reveal>
             <SectionHeading eyebrow="Beratung" title="Termin für Beratung buchen" subtitle="Buchen Sie eine persönliche Beratung im Heilsteinshop-Asp. Wählen Sie einen Wunschtermin — wir bestätigen ihn telefonisch oder per E-Mail." />
+            <Reveal delay={0.05}>
+              <div className="mt-6 flex items-start gap-3 rounded-2xl border border-citrine/30 bg-citrine/5 p-5 text-sm leading-relaxed text-amethyst">
+                <Clock className="mt-0.5 h-5 w-5 shrink-0 text-citrine-deep" />
+                <p>
+                  Die ersten <strong>15 Minuten</strong> der Beratung sind für Sie
+                  <strong> kostenlos</strong>. Für eine darüber hinausgehende, vertiefte Beratung
+                  berechnen wir <strong>CHF 300.– bis 400.–</strong>.
+                </p>
+              </div>
+            </Reveal>
           </Reveal>
           <Reveal delay={0.1}>
             <div className="mt-10 rounded-3xl border border-border bg-white p-6 shadow-soft sm:p-8">
