@@ -4,6 +4,7 @@ import { ArrowRight, BookOpen, Compass, Mountain } from "lucide-react";
 import Reveal from "@/components/site/Reveal";
 import SectionHeading from "@/components/site/SectionHeading";
 import { Image } from "@/components/ui/image";
+import OptimizedImage from "@/components/site/OptimizedImage";
 
 const ACTIVITIES = [
   {
@@ -55,10 +56,10 @@ export default function LearningActivities() {
                     fittingType="fill"
                   />
                 ) : (
-                  <img
+                  <OptimizedImage
                     src={a.img}
                     alt={a.label}
-                    loading="lazy"
+                    width={800}
                     className="h-full w-full object-cover transition duration-700 group-hover:scale-105"
                   />
                 )}

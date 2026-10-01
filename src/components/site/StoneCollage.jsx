@@ -1,6 +1,7 @@
 import React from "react";
 import Reveal from "@/components/site/Reveal";
 import SectionHeading from "@/components/site/SectionHeading";
+import OptimizedImage from "@/components/site/OptimizedImage";
 
 const STONES = [
   { src: "https://heilsteinschule.swiss/media/Alpenseminar_2025/Alpenseminar_2025_Titelbild.jpg", alt: "Alpenseminar in den Schweizer Alpen", span: "tall" },
@@ -41,10 +42,10 @@ export default function StoneCollage() {
                     stone.span === "tall" ? "row-span-2" : stone.span === "wide" ? "col-span-2" : ""
                   }`}
                 >
-                  <img
+                  <OptimizedImage
                     src={stone.src}
                     alt={stone.alt}
-                    loading="lazy"
+                    width={500}
                     className="h-full w-full object-cover transition duration-700 hover:scale-105"
                   />
                 </div>

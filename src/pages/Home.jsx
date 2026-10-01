@@ -9,6 +9,7 @@ import StoneCollage from "@/components/site/StoneCollage";
 import MineralSelection from "@/components/site/MineralSelection";
 import WernerKuehniMemorial from "@/components/site/WernerKuehniMemorial";
 import LearningActivities from "@/components/site/LearningActivities";
+import OptimizedImage from "@/components/site/OptimizedImage";
 
 const PRINCIPLES = [
   { icon: Brain, label: "Kopf", text: "Analytisches Wissen, welches erklärt, warum und wie die Heilsteine wirken.", img: "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/85e503e9c_WhatsAppImage2026-09-22at0205382.jpeg" },
@@ -125,9 +126,10 @@ export default function Home() {
           <Reveal>
             <div className="relative">
               <div className="overflow-hidden rounded-3xl shadow-lift">
-                <img
+                <OptimizedImage
                   src="https://heilsteinschule.swiss/media/wunderblock/Bruno.jpg"
                   alt="Bruno Vogler Pfeiffer"
+                  width={900}
                   className="aspect-[4/5] w-full object-cover"
                 />
               </div>
@@ -184,10 +186,10 @@ export default function Home() {
           {/* Dozenten-Team im Alpenseminar */}
           <Reveal>
             <div className="mb-10 overflow-hidden rounded-3xl border border-border bg-muted shadow-soft">
-              <img
+              <OptimizedImage
                 src="https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/ffaf18a07_WhatsAppImage2026-09-23at105952.jpeg"
                 alt="Dozenten-Team der Heilsteinschule Schweiz im Alpenseminar"
-                loading="lazy"
+                width={1280}
                 className="mx-auto w-full max-w-3xl object-contain"
               />
             </div>
@@ -197,10 +199,10 @@ export default function Home() {
               <Reveal key={m.name} delay={i * 0.08}>
                 <Link to="/ueber-uns" className="group block overflow-hidden rounded-2xl border border-border bg-white shadow-soft transition hover:-translate-y-1 hover:border-citrine hover:shadow-lift">
                   <div className="aspect-square overflow-hidden bg-muted">
-                    <img
+                    <OptimizedImage
                       src={m.img}
                       alt={m.name}
-                      loading="lazy"
+                      width={600}
                       className="h-full w-full object-cover transition duration-700 group-hover:scale-105"
                     />
                   </div>
@@ -262,9 +264,11 @@ export default function Home() {
       {/* CTA */}
       <section className="relative overflow-hidden bg-amethyst text-white">
         <div className="absolute inset-0 opacity-20">
-          <img
+          <OptimizedImage
             src="https://heilsteinschule.swiss/media/wunderblock/Schule_Asp_n_he_Quelle.jpg"
             alt=""
+            width={1600}
+            loading="eager"
             className="h-full w-full object-cover"
           />
         </div>

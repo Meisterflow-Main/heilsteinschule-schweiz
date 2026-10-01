@@ -1,6 +1,7 @@
 import React from "react";
 import { Heart } from "lucide-react";
 import Reveal from "@/components/site/Reveal";
+import OptimizedImage from "@/components/site/OptimizedImage";
 
 const WERNER_IMG = "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/fe29109e8_WhatsAppImage2026-09-23at1101521.jpeg";
 
@@ -15,10 +16,10 @@ export default function WernerKuehniMemorial() {
           <Reveal>
             <div className="relative mx-auto max-w-sm">
               <div className="overflow-hidden rounded-3xl border border-citrine/30 shadow-lift">
-                <img
+                <OptimizedImage
                   src={WERNER_IMG}
                   alt="In liebevoller Erinnerung an Werner Kühni"
-                  loading="lazy"
+                  width={700}
                   className="aspect-[3/4] w-full object-cover"
                 />
               </div>
