@@ -38,27 +38,21 @@ export default function Navbar() {
 
   return (
     <header
-      className={`fixed inset-x-0 top-0 z-50 transition-all duration-500 ${
-        scrolled ? "py-2" : "py-4"
+      className={`sticky top-0 z-50 transition-all duration-500 ${
+        scrolled ? "py-2" : "py-3"
       }`}
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6">
-        <div
-          className={`flex items-center justify-between rounded-2xl px-4 py-2.5 transition-all duration-500 ${
-            scrolled ? "glass shadow-soft" : "bg-transparent"
-          }`}
-        >
+        <div className="flex items-center justify-between rounded-2xl glass px-4 py-2.5 shadow-soft transition-all duration-500">
           <Link
             to="/"
-            className={`flex items-center gap-2.5 rounded-xl transition-all duration-500 ${
-              scrolled ? "" : "glass px-2.5 py-1.5 shadow-soft"
-            }`}
+            className="flex items-center rounded-xl transition-all duration-500"
             aria-label="Heilsteinschule Schweiz Startseite"
           >
             <img
               src="https://heilsteinschule.swiss/media/LogoName.png"
               alt="Heilsteinschule Schweiz Logo"
-              className="h-10 w-auto sm:h-11"
+              className="h-11 w-auto rounded-xl bg-white/95 object-contain p-1.5 sm:h-12"
             />
           </Link>
 
