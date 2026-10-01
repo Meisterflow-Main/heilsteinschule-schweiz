@@ -33,16 +33,6 @@ const NEWS = [
     cta: "Jetzt anmelden",
   },
   {
-    date: "15.04.2026",
-    title: "Im Bann der Quarz-Kristalle (Irene Marty)",
-    img: "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/9960bc12d_ChatGPTImageSep29202610_11_59PM.png",
-    objectPos: "object-top",
-    text: "In welchen Kinos läuft der Film? Vorführung Buchen ab 23. April. Trailer anschauen und Flyer herunterladen.",
-    to: "https://imbannderquarzkristalle.ch/#kino",
-    external: true,
-    cta: "Kinos finden",
-  },
-  {
     date: "07.03.2026",
     title: "Rückblick der Gesundheitsmesse",
     img: "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/6878e2233_ChatGPTImageSep29202610_13_15PM.png",
