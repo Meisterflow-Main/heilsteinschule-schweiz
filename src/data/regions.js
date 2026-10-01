@@ -198,7 +198,7 @@ export const REGIONS = [
     ],
     area: {
       intro:
-        "Wallbach liegt zentral im nordwestlichen Fricktal, nahe des Rheins. Unser Einzugsgebiet erstreckt sich über das Fricktal und die angrenzenden Regionen.",
+        "Wallbach liegt im Kanton Aargau, nahe der deutschen Grenze und des Rheins. Unser Einzugsgebiet erstreckt sich über das Fricktal und die angrenzenden Regionen.",
       places: ["Wallbach", "Mumpf", "Obermumpf", "Stein", "Bad Zurzach", "Kaiserstuhl", "Fisibach", "Zurzach", "Böttstein", "Döttingen"],
     },
     finalCta: {
