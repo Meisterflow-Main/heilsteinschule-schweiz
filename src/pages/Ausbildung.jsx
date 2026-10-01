@@ -20,7 +20,7 @@ const STANDORTE = [
     img: "https://heilsteinschule.swiss/media/wunderblock/wallbach-ag.jpg",
     tage: "Donnerstag 09–17h (2×/Monat), Sa/So 1×/Monat",
     leitung: "Ruth Rios",
-    hinweis: "Parkplätze beim Haus vorhanden",
+    hinweis: "Nur Grundausbildung — keine Seminare · Parkplätze beim Haus vorhanden",
   },
   {
     name: "Schule Bern",

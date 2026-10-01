@@ -125,7 +125,7 @@ export const REGIONS = [
     ],
     contact: {
       intro:
-        "Der Schulstandort Wallbach liegt an der Rheinstrasse 29 im Fricktal. Hier finden die Kurse vor Ort statt. Beratung und Anmeldung laufen über den Hauptsitz der Heilsteinschule Schweiz in Asp.",
+        "Der Schulstandort Wallbach liegt an der Rheinstrasse 29 im Fricktal. Hier findet ausschliesslich die Grundausbildung statt – keine Seminare. Beratung und Anmeldung laufen über den Hauptsitz der Heilsteinschule Schweiz in Asp.",
       address: "Rheinstrasse 29, 4323 Wallbach AG",
       phone: "+41 79 389 66 22",
       email: "anfragen@heilsteinschule.ch",
@@ -133,7 +133,7 @@ export const REGIONS = [
     },
     services: {
       intro:
-        "Am Standort Wallbach führen wir die Grundausbildung durch – eng abgestimmt mit dem Hauptsitz in Asp. Info-Nachmittage finden in Asp und Bern statt.",
+        "Am Standort Wallbach führen wir ausschliesslich die Grundausbildung durch – keine Seminare. Eng abgestimmt mit dem Hauptsitz in Asp. Info-Nachmittage finden in Asp und Bern statt.",
       items: [
         {
           title: "Grundausbildung Heilsteinberater",
