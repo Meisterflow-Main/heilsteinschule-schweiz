@@ -193,7 +193,7 @@ export default function UeberUns() {
       </section>
 
       {/* Team */}
-      <section className="mx-auto max-w-7xl px-4 py-20 sm:px-6">
+      <section id="team" className="scroll-mt-24 mx-auto max-w-7xl px-4 py-20 sm:px-6">
         <Reveal>
           <SectionHeading
             eyebrow="Unser Team"

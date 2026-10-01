@@ -196,7 +196,7 @@ export default function Home() {
           <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {TEAM.map((m, i) => (
               <Reveal key={m.name} delay={i * 0.08}>
-                <Link to="/ueber-uns" className="group block overflow-hidden rounded-2xl border border-border bg-white shadow-soft transition hover:-translate-y-1 hover:border-citrine hover:shadow-lift">
+                <Link to="/ueber-uns#team" className="group block overflow-hidden rounded-2xl border border-border bg-white shadow-soft transition hover:-translate-y-1 hover:border-citrine hover:shadow-lift">
                   <div className="aspect-square overflow-hidden bg-muted">
                     <OptimizedImage
                       src={m.img}
@@ -215,7 +215,7 @@ export default function Home() {
           </div>
           <div className="mt-10 text-center">
             <Link
-              to="/ausbildung"
+              to="/ueber-uns#team"
               className="inline-flex items-center gap-2 text-sm font-semibold text-amethyst underline underline-offset-4 hover:text-citrine-deep"
             >
               Gesamtes Team ansehen <ArrowRight className="h-4 w-4" />
