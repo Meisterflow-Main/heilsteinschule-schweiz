@@ -20,10 +20,7 @@ const GALERIE = [
   { img: "https://heilsteinschule.swiss/media/Laden/20240226_101124.jpg", alt: "Kunstwerke - Handarbeiten" },
 ];
 
-const OEFFNUNGSZEITEN = [
-  { tag: "Mittwoch", zeit: "14:00 – 17:30 h" },
-  { tag: "Samstag", zeit: "10:00 – 16:00 h" },
-];
+
 
 export default function LadenPraxis() {
   return (
@@ -52,15 +49,14 @@ export default function LadenPraxis() {
         <div className="grid gap-10 lg:grid-cols-2">
           <Reveal>
             <SectionHeading center={false} eyebrow="Öffnungszeiten" title="Wann wir für Sie da sind" />
-            <div className="mt-6 space-y-3">
-              {OEFFNUNGSZEITEN.map((o) => (
-                <div key={o.tag} className="flex items-center justify-between rounded-xl border border-border bg-white p-4 shadow-soft">
-                  <span className="flex items-center gap-2 font-medium text-amethyst">
-                    <Clock className="h-4 w-4 text-citrine-deep" /> {o.tag}
-                  </span>
-                  <span className="font-mono text-sm text-foreground/80">{o.zeit}</span>
-                </div>
-              ))}
+            <div className="mt-6 rounded-2xl border border-border bg-white p-5 shadow-soft">
+              <p className="flex items-center gap-2 font-medium text-amethyst">
+                <Clock className="h-4 w-4 text-citrine-deep" /> Dreimal pro Monat geöffnet
+              </p>
+              <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                Der Heilsteinshop-Asp ist jeweils dreimal im Monat geöffnet. Die genauen Daten und Zeiten
+                erfahren Sie auf Anfrage — gerne per Telefon oder E-Mail.
+              </p>
             </div>
             <div className="mt-6 rounded-2xl bg-citrine/10 p-5 text-sm text-amethyst">
               Ausserhalb der Öffnungszeiten: bitte rufen Sie uns an oder schreiben Sie eine E-Mail.
