@@ -116,30 +116,6 @@ export default function UeberUns() {
         </div>
       </section>
 
-      {/* Leitbild Prinzipien */}
-      <section className="mx-auto max-w-7xl px-4 py-20 sm:px-6">
-        <Reveal>
-          <SectionHeading
-            eyebrow="Unser Leitbild"
-            title="Lehren und lernen mit Kopf, Hand, Fuss und Herz"
-            subtitle="Die Schüler sollen Gelerntes erfahren und erspüren — nur Erlerntes bleibt nicht lange."
-          />
-        </Reveal>
-        <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-          {PRINCIPLES.map((p, i) => (
-            <Reveal key={p.label} delay={i * 0.08}>
-              <div className="flex h-full flex-col items-center rounded-2xl border border-border bg-white p-6 text-center shadow-soft">
-                <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-citrine/15 text-citrine-deep">
-                  <p.icon className="h-7 w-7" />
-                </div>
-                <h3 className="mt-4 font-heading text-lg font-semibold text-amethyst">{p.label}</h3>
-                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{p.text}</p>
-              </div>
-            </Reveal>
-          ))}
-        </div>
-      </section>
-
       {/* Bruno Portrait */}
       <section className="bg-quartz/60">
         <div className="mx-auto max-w-7xl px-4 py-20 sm:px-6">
@@ -215,6 +191,32 @@ export default function UeberUns() {
               </div>
             </Reveal>
           ))}
+        </div>
+      </section>
+
+      {/* Leitbild Prinzipien */}
+      <section className="bg-quartz/60">
+        <div className="mx-auto max-w-7xl px-4 py-20 sm:px-6">
+          <Reveal>
+            <SectionHeading
+              eyebrow="Unser Leitbild"
+              title="Lehren und lernen mit Kopf, Hand, Fuss und Herz"
+              subtitle="Die Schüler sollen Gelerntes erfahren und erspüren — nur Erlerntes bleibt nicht lange."
+            />
+          </Reveal>
+          <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+            {PRINCIPLES.map((p, i) => (
+              <Reveal key={p.label} delay={i * 0.08}>
+                <div className="flex h-full flex-col items-center rounded-2xl border border-border bg-white p-6 text-center shadow-soft">
+                  <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-citrine/15 text-citrine-deep">
+                    <p.icon className="h-7 w-7" />
+                  </div>
+                  <h3 className="mt-4 font-heading text-lg font-semibold text-amethyst">{p.label}</h3>
+                  <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{p.text}</p>
+                </div>
+              </Reveal>
+            ))}
+          </div>
         </div>
       </section>
 
