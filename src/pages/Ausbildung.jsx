@@ -42,7 +42,7 @@ const VORAUSSETZUNGEN = [
 
 const LEISTUNGEN = [
   "Ganzjähriger Start, Dauer mindestens ¾ Jahr",
-  "Klassengrösse: mindestens 5, maximal 8 Teilnehmer pro Kurs",
+  "Klassengrösse: 5–6 Teilnehmer pro Kurs",
   "Sobald 5 Schüler angemeldet sind, wird der Schulbeginn festgelegt",
   "Persönlicher Zugang zur Cloud der Heilsteinschule",
 ];
@@ -173,10 +173,6 @@ export default function Ausbildung() {
                 <li className="flex items-start gap-2">
                   <Check className="mt-0.5 h-4 w-4 shrink-0 text-citrine-deep" />
                   Schultage können während der Ausbildung verschoben und auch an einem anderen Standort nachgeholt werden. Ab dem 3. Verschiebetag verrechnen wir für unsere Umtriebe CHF 30.– pro Tag, CHF 60.– pro Wochenende.
-                </li>
-                <li className="flex items-start gap-2">
-                  <Check className="mt-0.5 h-4 w-4 shrink-0 text-citrine-deep" />
-                  Bei Klassen über 10 Schüler werden die Schultage durch 2 Dozenten geführt.
                 </li>
               </ul>
             </div>
