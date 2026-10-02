@@ -4,7 +4,6 @@ import { Check, MapPin, Clock, CalendarDays, GraduationCap, ArrowRight, FileText
 import Reveal from "@/components/site/Reveal";
 import SectionHeading from "@/components/site/SectionHeading";
 import ExcursionReports from "@/components/site/ExcursionReports";
-import Schultermine from "@/components/site/Schultermine";
 
 const STANDORTE = [
   {
@@ -256,17 +255,22 @@ export default function Ausbildung() {
         </div>
       </section>
 
-      {/* Schultermine */}
+      {/* Schultermine — Teaser zur separaten Seite */}
       <section className="bg-quartz/60">
-        <div className="mx-auto max-w-5xl px-4 py-24 sm:px-6">
-          <Schultermine />
+        <div className="mx-auto max-w-5xl px-4 py-20 sm:px-6">
           <Reveal>
-            <div className="mt-10 text-center">
+            <div className="flex flex-col items-center gap-4 rounded-3xl border border-border bg-white p-8 text-center shadow-soft sm:flex-row sm:justify-between sm:text-left">
+              <div>
+                <h3 className="font-heading text-xl font-semibold text-amethyst">Schultermine & Kalender</h3>
+                <p className="mt-1 text-sm text-muted-foreground">
+                  Alle neuen Schultermine, Schulkalender-Downloads und das Alpenseminar 2027.
+                </p>
+              </div>
               <Link
                 to="/schultermine"
-                className="inline-flex items-center gap-1.5 text-sm font-semibold text-citrine-deep hover:underline"
+                className="inline-flex shrink-0 items-center gap-2 rounded-full bg-citrine px-6 py-3 text-sm font-semibold text-amethyst-deep shadow-soft transition hover:bg-citrine-light"
               >
-                Alle Schultermine auf einer Seite ansehen <ArrowRight className="h-4 w-4" />
+                Zur Seite Schultermine <ArrowRight className="h-4 w-4" />
               </Link>
             </div>
           </Reveal>
