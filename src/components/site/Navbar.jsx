@@ -8,7 +8,6 @@ const NAV = [
   { label: "Ausbildung", to: "/ausbildung" },
   { label: "News", to: "/news" },
   { label: "Blog", to: "/blog" },
-  { label: "Granit & Gneis", to: "/granit-gneis" },
   { label: "Online Shop", href: "https://heilstein-shop.com/" },
   { label: "Lehrfilme", to: "/lehrfilme" },
   { label: "Über uns", to: "/ueber-uns" },
@@ -26,7 +25,7 @@ export default function Navbar() {
   const location = useLocation();
 
   const isRegion = location.pathname.startsWith("/regionen");
-  const isLaden = ["/laden-praxis", "/verkaufsladen-asp"].includes(location.pathname);
+  const isLaden = ["/laden-praxis", "/verkaufsladen-asp", "/granit-gneis"].includes(location.pathname);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 24);
@@ -119,6 +118,12 @@ export default function Navbar() {
                     className="flex items-center gap-2 rounded-xl px-3 py-2 text-sm text-foreground/80 transition hover:bg-amethyst/5 hover:text-amethyst"
                   >
                     <Gem className="h-3.5 w-3.5 text-citrine-deep" /> Verkaufsladen Asp
+                  </Link>
+                  <Link
+                    to="/granit-gneis"
+                    className="flex items-center gap-2 rounded-xl px-3 py-2 text-sm text-foreground/80 transition hover:bg-amethyst/5 hover:text-amethyst"
+                  >
+                    <Gem className="h-3.5 w-3.5 text-citrine-deep" /> Granit & Gneis
                   </Link>
                 </div>
               </div>
@@ -239,6 +244,12 @@ export default function Navbar() {
                     className="block rounded-lg px-3 py-2 text-sm text-foreground/75 transition hover:bg-amethyst/5 hover:text-amethyst"
                   >
                     Verkaufsladen Asp
+                  </Link>
+                  <Link
+                    to="/granit-gneis"
+                    className="block rounded-lg px-3 py-2 text-sm text-foreground/75 transition hover:bg-amethyst/5 hover:text-amethyst"
+                  >
+                    Granit & Gneis
                   </Link>
                 </div>
               )}
