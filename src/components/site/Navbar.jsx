@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X, Phone, ChevronDown, MapPin } from "lucide-react";
+import { Menu, X, Phone, ChevronDown, MapPin, Gem } from "lucide-react";
 import { REGIONS } from "@/data/regions";
 
 const NAV = [
@@ -8,7 +8,7 @@ const NAV = [
   { label: "Ausbildung", to: "/ausbildung" },
   { label: "News", to: "/news" },
   { label: "Blog", to: "/blog" },
-  { label: "Laden & Praxis", to: "/laden-praxis" },
+  { label: "Granit & Gneis", to: "/granit-gneis" },
   { label: "Online Shop", href: "https://heilstein-shop.com/" },
   { label: "Lehrfilme", to: "/lehrfilme" },
   { label: "Über uns", to: "/ueber-uns" },
@@ -21,9 +21,12 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
   const [regionsOpen, setRegionsOpen] = useState(false);
   const [mobileRegions, setMobileRegions] = useState(false);
+  const [ladenOpen, setLadenOpen] = useState(false);
+  const [mobileLaden, setMobileLaden] = useState(false);
   const location = useLocation();
 
   const isRegion = location.pathname.startsWith("/regionen");
+  const isLaden = ["/laden-praxis", "/verkaufsladen-asp"].includes(location.pathname);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 24);
@@ -84,6 +87,42 @@ export default function Navbar() {
                 </Link>
               );
             })}
+            <div
+              className="relative"
+              onMouseEnter={() => setLadenOpen(true)}
+              onMouseLeave={() => setLadenOpen(false)}
+            >
+              <button
+                className={`relative inline-flex whitespace-nowrap items-center gap-1 rounded-full px-2 py-2 text-xs font-medium transition ${
+                  isLaden ? "text-amethyst" : "text-foreground/70 hover:text-amethyst"
+                }`}
+                onClick={() => setLadenOpen((o) => !o)}
+              >
+                Laden & Praxis
+                <ChevronDown className={`h-4 w-4 transition-transform ${ladenOpen ? "rotate-180" : ""}`} />
+                {isLaden && <span className="absolute inset-x-3 -bottom-0.5 h-px bg-citrine" />}
+              </button>
+              <div
+                className={`absolute left-0 top-full z-50 w-60 pt-2 transition-all duration-200 ${
+                  ladenOpen ? "visible opacity-100 translate-y-0" : "invisible opacity-0 translate-y-1"
+                }`}
+              >
+                <div className="glass rounded-2xl p-2 shadow-lift">
+                  <Link
+                    to="/laden-praxis"
+                    className="flex items-center gap-2 rounded-xl px-3 py-2 text-sm font-semibold text-amethyst transition hover:bg-amethyst/5"
+                  >
+                    <Gem className="h-4 w-4 text-citrine-deep" /> Laden & Praxis
+                  </Link>
+                  <Link
+                    to="/verkaufsladen-asp"
+                    className="flex items-center gap-2 rounded-xl px-3 py-2 text-sm text-foreground/80 transition hover:bg-amethyst/5 hover:text-amethyst"
+                  >
+                    <Gem className="h-3.5 w-3.5 text-citrine-deep" /> Verkaufsladen Asp
+                  </Link>
+                </div>
+              </div>
+            </div>
             <div
               className="relative"
               onMouseEnter={() => setRegionsOpen(true)}
@@ -178,6 +217,31 @@ export default function Navbar() {
                   </Link>
                 );
               })}
+              <button
+                onClick={() => setMobileLaden((o) => !o)}
+                className="flex items-center justify-between rounded-xl px-4 py-3 text-base font-medium text-foreground/80 transition hover:bg-muted"
+              >
+                <span className="inline-flex items-center gap-2">
+                  <Gem className="h-4 w-4 text-citrine-deep" /> Laden & Praxis
+                </span>
+                <ChevronDown className={`h-4 w-4 transition-transform ${mobileLaden ? "rotate-180" : ""}`} />
+              </button>
+              {mobileLaden && (
+                <div className="ml-3 rounded-xl bg-muted/50 p-1">
+                  <Link
+                    to="/laden-praxis"
+                    className="block rounded-lg px-3 py-2 text-sm font-semibold text-amethyst transition hover:bg-amethyst/5"
+                  >
+                    Laden & Praxis
+                  </Link>
+                  <Link
+                    to="/verkaufsladen-asp"
+                    className="block rounded-lg px-3 py-2 text-sm text-foreground/75 transition hover:bg-amethyst/5 hover:text-amethyst"
+                  >
+                    Verkaufsladen Asp
+                  </Link>
+                </div>
+              )}
               <button
                 onClick={() => setMobileRegions((o) => !o)}
                 className="flex items-center justify-between rounded-xl px-4 py-3 text-base font-medium text-foreground/80 transition hover:bg-muted"

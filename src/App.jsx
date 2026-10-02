@@ -28,6 +28,8 @@ import BrunosBuch from '@/pages/BrunosBuch';
 import MichaelGienger from '@/pages/MichaelGienger';
 import FrageAusbildung from '@/pages/FrageAusbildung';
 import Anmeldung from '@/pages/Anmeldung';
+import VerkaufsladenAsp from '@/pages/VerkaufsladenAsp';
+import GranitGneis from '@/pages/GranitGneis';
 // Add page imports here
 
 const AuthenticatedApp = () => {
@@ -78,6 +80,8 @@ const AuthenticatedApp = () => {
         <Route path="/michael-gienger" element={<MichaelGienger />} />
         <Route path="/ausbildung-anfrage" element={<FrageAusbildung />} />
         <Route path="/ausbildung-anmeldung" element={<Anmeldung />} />
+        <Route path="/verkaufsladen-asp" element={<VerkaufsladenAsp />} />
+        <Route path="/granit-gneis" element={<GranitGneis />} />
       </Route>
       <Route path="*" element={<PageNotFound />} />
     </Routes>
