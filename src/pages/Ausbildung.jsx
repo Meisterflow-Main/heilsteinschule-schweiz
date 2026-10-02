@@ -1,37 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Check, MapPin, Clock, CalendarDays, GraduationCap, ArrowRight, FileText, HelpCircle } from "lucide-react";
+import { Check, GraduationCap, ArrowRight, FileText, HelpCircle } from "lucide-react";
 import Reveal from "@/components/site/Reveal";
 import SectionHeading from "@/components/site/SectionHeading";
 import ExcursionReports from "@/components/site/ExcursionReports";
-
-const STANDORTE = [
-  {
-    name: "Schule Asp",
-    ort: "Heilsteinshop-Asp, Dorfstrasse 22, 5025 Asp",
-    img: "https://heilsteinschule.swiss/media/wunderblock/Schule_Asp_n_he_Quelle.jpg",
-    tage: "Donnerstag, 09:00–17:00 Uhr, 2× monatlich",
-    leitung: "Ruth Rios",
-    hinweis: "Hauptsitz und Laden · Parkplätze beim Haus vorhanden",
-  },
-  {
-    name: "Wallbach AG (Fricktal)",
-    ort: "Rheinstrasse 29, 4323 Wallbach AG",
-    img: "https://heilsteinschule.swiss/media/wunderblock/wallbach-ag.jpg",
-    tage: "Donnerstag 09–17h (2×/Monat), Sa/So 1×/Monat",
-    leitung: "Ruth Rios",
-    hinweis: "Nur Grundausbildung — keine Seminare · Parkplätze beim Haus vorhanden",
-  },
-  {
-    name: "Schule Bern",
-    ort: "Kapellenstrasse 5 (4. Stock), 3011 Bern",
-    img: "https://heilsteinschule.swiss/media/wunderblock/svnh-gebaeude.jpg",
-    tage: "Wochenende, 09:00–17:00 Uhr, 1× monatlich",
-    leitung: "Ruth Rios",
-    hinweis: "Im selben Gebäude wie SVNH · Neue Klasse 2027 · 6 Min. ab HB",
-    weg: "ÖV: Vom Hauptbahnhof Bern ca. 6 Min. zu Fuss — Zug in Richtung Welle 7 verlassen, Richtung Süden zum Hirschengraben, weiter auf die Monbijoustrasse, dann rechts in die Kapellenstrasse. Hausnummer 5 links. Auto: Nur blaue Zone (1 Std.) und City West Parking. Keine eigenen Parkplätze.",
-  },
-];
 
 const VORAUSSETZUNGEN = [
   "Freude an Steinen und den Heilkräften der Natur.",
@@ -212,46 +184,25 @@ export default function Ausbildung() {
       {/* Exkursionen & Alpenseminar (Praktischer Ausbildungsteil) */}
       <ExcursionReports />
 
-      {/* Schulorte */}
+      {/* Schulorte — Teaser zur separaten Seite */}
       <section className="bg-quartz/60">
-        <div className="mx-auto max-w-7xl px-4 py-24 sm:px-6">
+        <div className="mx-auto max-w-5xl px-4 py-20 sm:px-6">
           <Reveal>
-            <SectionHeading
-              eyebrow="Schulorte"
-              title="Asp · Wallbach · Bern"
-              subtitle="Drei Standorte in der Schweiz — finden Sie den Lernort, der zu Ihnen passt."
-            />
+            <div className="flex flex-col items-center gap-4 rounded-3xl border border-border bg-white p-8 text-center shadow-soft sm:flex-row sm:justify-between sm:text-left">
+              <div>
+                <h3 className="font-heading text-xl font-semibold text-amethyst">Schulorte</h3>
+                <p className="mt-1 text-sm text-muted-foreground">
+                  Asp · Wallbach · Bern · Uster — vier Standorte mit Adressen, Kurszeiten und Wegbeschreibungen.
+                </p>
+              </div>
+              <Link
+                to="/schulorte"
+                className="inline-flex shrink-0 items-center gap-2 rounded-full bg-citrine px-6 py-3 text-sm font-semibold text-amethyst-deep shadow-soft transition hover:bg-citrine-light"
+              >
+                Zur Seite Schulorte <ArrowRight className="h-4 w-4" />
+              </Link>
+            </div>
           </Reveal>
-          <div className="mt-12 grid gap-6 md:grid-cols-2">
-            {STANDORTE.map((s, i) => (
-              <Reveal key={s.name} delay={i * 0.08}>
-                <div className="group overflow-hidden rounded-2xl border border-border bg-white shadow-soft transition hover:-translate-y-1 hover:shadow-lift">
-                  <div className="relative aspect-[16/10] overflow-hidden">
-                    <img src={s.img} alt={s.name} loading="lazy" className="h-full w-full object-cover transition duration-700 group-hover:scale-105" />
-                    <div className="absolute inset-0 bg-gradient-to-t from-amethyst/60 to-transparent" />
-                    <h3 className="absolute bottom-4 left-5 font-heading text-xl font-semibold text-white">{s.name}</h3>
-                  </div>
-                  <div className="p-6">
-                    <div className="flex items-start gap-2 text-sm text-foreground/80">
-                      <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-citrine-deep" /> {s.ort}
-                    </div>
-                    <div className="mt-3 flex items-start gap-2 text-sm text-foreground/80">
-                      <Clock className="mt-0.5 h-4 w-4 shrink-0 text-citrine-deep" /> {s.tage}
-                    </div>
-                    <div className="mt-3 flex items-start gap-2 text-sm text-foreground/80">
-                      <GraduationCap className="mt-0.5 h-4 w-4 shrink-0 text-citrine-deep" /> Leitung: {s.leitung}
-                    </div>
-                    <p className="mt-3 text-xs text-muted-foreground">{s.hinweis}</p>
-                    {s.weg && (
-                      <div className="mt-3 rounded-lg bg-quartz p-3 text-xs leading-relaxed text-muted-foreground">
-                        <strong className="text-amethyst">Wegbeschreibung:</strong> {s.weg}
-                      </div>
-                    )}
-                  </div>
-                </div>
-              </Reveal>
-            ))}
-          </div>
         </div>
       </section>
 

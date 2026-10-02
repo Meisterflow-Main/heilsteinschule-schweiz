@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X, Phone, ChevronDown, MapPin, Gem, GraduationCap, CalendarDays } from "lucide-react";
+import { Menu, X, Phone, ChevronDown, MapPin, Gem, GraduationCap, CalendarDays, MapPinned } from "lucide-react";
 import { REGIONS } from "@/data/regions";
 
 const NAV = [
@@ -27,7 +27,7 @@ export default function Navbar() {
   const location = useLocation();
 
   const isRegion = location.pathname.startsWith("/regionen");
-  const isAusbildung = ["/ausbildung", "/schultermine"].includes(location.pathname);
+  const isAusbildung = ["/ausbildung", "/schultermine", "/schulorte"].includes(location.pathname);
   const isLaden = ["/laden-praxis", "/verkaufsladen-asp", "/granit-gneis", "/armbaender-kreation-diopteia"].includes(location.pathname);
 
   useEffect(() => {
@@ -102,6 +102,12 @@ export default function Navbar() {
                           className="flex items-center gap-2 rounded-xl px-3 py-2 text-sm text-foreground/80 transition hover:bg-amethyst/5 hover:text-amethyst"
                         >
                           <CalendarDays className="h-3.5 w-3.5 text-citrine-deep" /> Schultermine
+                        </Link>
+                        <Link
+                          to="/schulorte"
+                          className="flex items-center gap-2 rounded-xl px-3 py-2 text-sm text-foreground/80 transition hover:bg-amethyst/5 hover:text-amethyst"
+                        >
+                          <MapPinned className="h-3.5 w-3.5 text-citrine-deep" /> Schulorte
                         </Link>
                       </div>
                     </div>
@@ -271,6 +277,12 @@ export default function Navbar() {
                             className="block rounded-lg px-3 py-2 text-sm text-foreground/75 transition hover:bg-amethyst/5 hover:text-amethyst"
                           >
                             Schultermine
+                          </Link>
+                          <Link
+                            to="/schulorte"
+                            className="block rounded-lg px-3 py-2 text-sm text-foreground/75 transition hover:bg-amethyst/5 hover:text-amethyst"
+                          >
+                            Schulorte
                           </Link>
                         </div>
                       )}
