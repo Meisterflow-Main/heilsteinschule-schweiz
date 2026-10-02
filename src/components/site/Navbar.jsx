@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X, Phone, ChevronDown, MapPin, Gem } from "lucide-react";
+import { Menu, X, Phone, ChevronDown, MapPin, Gem, GraduationCap, CalendarDays } from "lucide-react";
 import { REGIONS } from "@/data/regions";
 
 const NAV = [
@@ -22,9 +22,12 @@ export default function Navbar() {
   const [mobileRegions, setMobileRegions] = useState(false);
   const [ladenOpen, setLadenOpen] = useState(false);
   const [mobileLaden, setMobileLaden] = useState(false);
+  const [ausbildungOpen, setAusbildungOpen] = useState(false);
+  const [mobileAusbildung, setMobileAusbildung] = useState(false);
   const location = useLocation();
 
   const isRegion = location.pathname.startsWith("/regionen");
+  const isAusbildung = ["/ausbildung", "/schultermine"].includes(location.pathname);
   const isLaden = ["/laden-praxis", "/verkaufsladen-asp", "/granit-gneis", "/armbaender-kreation-diopteia"].includes(location.pathname);
 
   useEffect(() => {
@@ -64,6 +67,47 @@ export default function Navbar() {
               const cls = `relative whitespace-nowrap rounded-full px-2 py-2 text-xs font-medium transition ${
                 active ? "text-amethyst" : "text-foreground/70 hover:text-amethyst"
               }`;
+              if (item.label === "Ausbildung") {
+                return (
+                  <div
+                    key="Ausbildung"
+                    className="relative"
+                    onMouseEnter={() => setAusbildungOpen(true)}
+                    onMouseLeave={() => setAusbildungOpen(false)}
+                  >
+                    <button
+                      className={`relative inline-flex whitespace-nowrap items-center gap-1 rounded-full px-2 py-2 text-xs font-medium transition ${
+                        isAusbildung ? "text-amethyst" : "text-foreground/70 hover:text-amethyst"
+                      }`}
+                      onClick={() => setAusbildungOpen((o) => !o)}
+                    >
+                      Ausbildung
+                      <ChevronDown className={`h-4 w-4 transition-transform ${ausbildungOpen ? "rotate-180" : ""}`} />
+                      {isAusbildung && <span className="absolute inset-x-3 -bottom-0.5 h-px bg-citrine" />}
+                    </button>
+                    <div
+                      className={`absolute left-0 top-full z-50 w-56 pt-2 transition-all duration-200 ${
+                        ausbildungOpen ? "visible opacity-100 translate-y-0" : "invisible opacity-0 translate-y-1"
+                      }`}
+                    >
+                      <div className="glass rounded-2xl p-2 shadow-lift">
+                        <Link
+                          to="/ausbildung"
+                          className="flex items-center gap-2 rounded-xl px-3 py-2 text-sm font-semibold text-amethyst transition hover:bg-amethyst/5"
+                        >
+                          <GraduationCap className="h-4 w-4 text-citrine-deep" /> Ausbildung
+                        </Link>
+                        <Link
+                          to="/schultermine"
+                          className="flex items-center gap-2 rounded-xl px-3 py-2 text-sm text-foreground/80 transition hover:bg-amethyst/5 hover:text-amethyst"
+                        >
+                          <CalendarDays className="h-3.5 w-3.5 text-citrine-deep" /> Schultermine
+                        </Link>
+                      </div>
+                    </div>
+                  </div>
+                );
+              }
               if (item.href) {
                 return (
                   <a
@@ -202,6 +246,37 @@ export default function Navbar() {
           <div className="glass rounded-2xl p-3 shadow-soft">
             <nav className="flex flex-col">
               {NAV.map((item) => {
+                if (item.label === "Ausbildung") {
+                  return (
+                    <div key="Ausbildung">
+                      <button
+                        onClick={() => setMobileAusbildung((o) => !o)}
+                        className="flex w-full items-center justify-between rounded-xl px-4 py-3 text-base font-medium text-foreground/80 transition hover:bg-muted"
+                      >
+                        <span className="inline-flex items-center gap-2">
+                          <GraduationCap className="h-4 w-4 text-citrine-deep" /> Ausbildung
+                        </span>
+                        <ChevronDown className={`h-4 w-4 transition-transform ${mobileAusbildung ? "rotate-180" : ""}`} />
+                      </button>
+                      {mobileAusbildung && (
+                        <div className="ml-3 rounded-xl bg-muted/50 p-1">
+                          <Link
+                            to="/ausbildung"
+                            className="block rounded-lg px-3 py-2 text-sm font-semibold text-amethyst transition hover:bg-amethyst/5"
+                          >
+                            Ausbildung
+                          </Link>
+                          <Link
+                            to="/schultermine"
+                            className="block rounded-lg px-3 py-2 text-sm text-foreground/75 transition hover:bg-amethyst/5 hover:text-amethyst"
+                          >
+                            Schultermine
+                          </Link>
+                        </div>
+                      )}
+                    </div>
+                  );
+                }
                 if (item.href) {
                   return (
                     <a

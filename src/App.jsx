@@ -31,6 +31,7 @@ import Anmeldung from '@/pages/Anmeldung';
 import VerkaufsladenAsp from '@/pages/VerkaufsladenAsp';
 import GranitGneis from '@/pages/GranitGneis';
 import ArmbaenderDiopteia from '@/pages/ArmbaenderDiopteia';
+import Schultermine from '@/pages/Schultermine';
 // Add page imports here
 
 const AuthenticatedApp = () => {
@@ -84,6 +85,7 @@ const AuthenticatedApp = () => {
         <Route path="/verkaufsladen-asp" element={<VerkaufsladenAsp />} />
         <Route path="/granit-gneis" element={<GranitGneis />} />
         <Route path="/armbaender-kreation-diopteia" element={<ArmbaenderDiopteia />} />
+        <Route path="/schultermine" element={<Schultermine />} />
       </Route>
       <Route path="*" element={<PageNotFound />} />
     </Routes>
