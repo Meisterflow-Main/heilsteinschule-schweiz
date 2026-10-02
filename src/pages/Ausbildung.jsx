@@ -155,6 +155,64 @@ export default function Ausbildung() {
         </div>
       </section>
 
+      {/* Rabatt & Spezielles */}
+      <section className="mx-auto max-w-7xl px-4 py-20 sm:px-6">
+        <div className="grid gap-6 md:grid-cols-2">
+          <Reveal>
+            <div className="h-full rounded-3xl border border-border bg-white p-8 shadow-soft">
+              <h3 className="font-heading text-xl font-semibold text-amethyst">Rabatt & Spezielles</h3>
+              <ul className="mt-5 space-y-3 text-sm leading-relaxed text-foreground/80">
+                <li className="flex items-start gap-2">
+                  <Check className="mt-0.5 h-4 w-4 shrink-0 text-citrine-deep" />
+                  Während der Ausbildung erhalten die Schüler der Heilsteinschule Schweiz im Heilsteinshop-Asp 20% Rabatt auf die meisten Artikel.
+                </li>
+                <li className="flex items-start gap-2">
+                  <Check className="mt-0.5 h-4 w-4 shrink-0 text-citrine-deep" />
+                  Die Schüler erhalten einen persönlichen Zugang zur Cloud der Heilsteinschule.
+                </li>
+                <li className="flex items-start gap-2">
+                  <Check className="mt-0.5 h-4 w-4 shrink-0 text-citrine-deep" />
+                  Schultage können während der Ausbildung verschoben und auch an einem anderen Standort nachgeholt werden. Ab dem 3. Verschiebetag verrechnen wir für unsere Umtriebe CHF 30.– pro Tag, CHF 60.– pro Wochenende.
+                </li>
+                <li className="flex items-start gap-2">
+                  <Check className="mt-0.5 h-4 w-4 shrink-0 text-citrine-deep" />
+                  Bei Klassen über 10 Schüler werden die Schultage durch 2 Dozenten geführt.
+                </li>
+              </ul>
+            </div>
+          </Reveal>
+          <Reveal delay={0.1}>
+            <div className="h-full rounded-3xl border border-border bg-white p-8 shadow-soft">
+              <h3 className="font-heading text-xl font-semibold text-amethyst">Anmeldung</h3>
+              <p className="mt-5 text-sm leading-relaxed text-foreground/80">
+                Die Anmeldung zur Heilsteinschule erfolgt online auf der Homepage, schriftlich oder per
+                E-Mail. Die Anmeldung wird verbindlich mit der Anzahlung von{" "}
+                <strong className="text-amethyst">CHF 250.–</strong> für die Platzreservation. Dieser
+                Betrag wird an die erste Rate der Ausbildungskosten angerechnet.
+              </p>
+              <div className="mt-4 rounded-xl bg-quartz p-4 text-sm leading-relaxed text-foreground/80">
+                Falls die Anmeldung zurückgezogen wird, verfällt der Unkostenbeitrag zu Gunsten der
+                Heilsteinschule.
+              </div>
+              <div className="mt-5 flex flex-col gap-3">
+                <Link
+                  to="/ausbildung-anmeldung"
+                  className="inline-flex items-center justify-center gap-2 rounded-full bg-citrine px-6 py-3 text-sm font-semibold text-amethyst-deep shadow-soft transition hover:bg-citrine-light"
+                >
+                  Verbindlich anmelden <ArrowRight className="h-4 w-4" />
+                </Link>
+                <Link
+                  to="/agb"
+                  className="inline-flex items-center justify-center gap-1.5 text-sm font-medium text-citrine-deep underline underline-offset-2 hover:text-citrine"
+                >
+                  <FileText className="h-4 w-4" /> Unsere AGB's sind auf der Homepage ersichtlich
+                </Link>
+              </div>
+            </div>
+          </Reveal>
+        </div>
+      </section>
+
       {/* Exkursionen & Alpenseminar (Praktischer Ausbildungsteil) */}
       <ExcursionReports />
 
