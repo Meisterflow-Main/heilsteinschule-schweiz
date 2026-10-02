@@ -30,6 +30,7 @@ import FrageAusbildung from '@/pages/FrageAusbildung';
 import Anmeldung from '@/pages/Anmeldung';
 import VerkaufsladenAsp from '@/pages/VerkaufsladenAsp';
 import GranitGneis from '@/pages/GranitGneis';
+import ArmbaenderDiopteia from '@/pages/ArmbaenderDiopteia';
 // Add page imports here
 
 const AuthenticatedApp = () => {
@@ -82,6 +83,7 @@ const AuthenticatedApp = () => {
         <Route path="/ausbildung-anmeldung" element={<Anmeldung />} />
         <Route path="/verkaufsladen-asp" element={<VerkaufsladenAsp />} />
         <Route path="/granit-gneis" element={<GranitGneis />} />
+        <Route path="/armbaender-kreation-diopteia" element={<ArmbaenderDiopteia />} />
       </Route>
       <Route path="*" element={<PageNotFound />} />
     </Routes>
