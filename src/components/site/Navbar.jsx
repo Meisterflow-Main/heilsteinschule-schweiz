@@ -30,7 +30,7 @@ export default function Navbar() {
   const isRegion = location.pathname.startsWith("/regionen");
   const isAusbildung = ["/ausbildung", "/schultermine", "/schulorte"].includes(location.pathname);
   const isLaden = ["/laden-praxis", "/verkaufsladen-asp", "/granit-gneis", "/armbaender-kreation-diopteia"].includes(location.pathname);
-  const isDiverses = ["/michael-gienger", "/schueler-berichte", "/brunos-buch"].includes(location.pathname);
+  const isDiverses = ["/michael-gienger", "/schueler-berichte", "/brunos-buch", "/geologische-reisen"].includes(location.pathname);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 24);
@@ -265,6 +265,12 @@ export default function Navbar() {
                   >
                     <BookOpen className="h-3.5 w-3.5 text-citrine-deep" /> Brunos Buch
                   </Link>
+                  <Link
+                    to="/geologische-reisen"
+                    className="flex items-center gap-2 rounded-xl px-3 py-2 text-sm text-foreground/80 transition hover:bg-amethyst/5 hover:text-amethyst"
+                  >
+                    <BookOpen className="h-3.5 w-3.5 text-citrine-deep" /> Geologische Reisen
+                  </Link>
                 </div>
               </div>
             </div>
@@ -452,6 +458,12 @@ export default function Navbar() {
                     className="block rounded-lg px-3 py-2 text-sm text-foreground/75 transition hover:bg-amethyst/5 hover:text-amethyst"
                   >
                     Brunos Buch
+                  </Link>
+                  <Link
+                    to="/geologische-reisen"
+                    className="block rounded-lg px-3 py-2 text-sm text-foreground/75 transition hover:bg-amethyst/5 hover:text-amethyst"
+                  >
+                    Geologische Reisen
                   </Link>
                 </div>
               )}

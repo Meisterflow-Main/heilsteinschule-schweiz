@@ -33,6 +33,7 @@ import GranitGneis from '@/pages/GranitGneis';
 import ArmbaenderDiopteia from '@/pages/ArmbaenderDiopteia';
 import Schultermine from '@/pages/Schultermine';
 import Schulorte from '@/pages/Schulorte';
+import GeologischeReisen from '@/pages/GeologischeReisen';
 // Add page imports here
 
 const AuthenticatedApp = () => {
@@ -88,6 +89,7 @@ const AuthenticatedApp = () => {
         <Route path="/armbaender-kreation-diopteia" element={<ArmbaenderDiopteia />} />
         <Route path="/schultermine" element={<Schultermine />} />
         <Route path="/schulorte" element={<Schulorte />} />
+        <Route path="/geologische-reisen" element={<GeologischeReisen />} />
       </Route>
       <Route path="*" element={<PageNotFound />} />
     </Routes>
