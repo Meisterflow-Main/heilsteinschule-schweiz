@@ -1,8 +1,9 @@
 import React from "react";
-import { Clock, MapPin, Phone, Gem, ShieldCheck, ExternalLink } from "lucide-react";
+import { Clock, MapPin, Phone, Gem, ShieldCheck, ExternalLink, Store, Globe } from "lucide-react";
 import Reveal from "@/components/site/Reveal";
 import SectionHeading from "@/components/site/SectionHeading";
 import ContactForm from "@/components/site/ContactForm";
+import { getUpcomingDates } from "@/data/oeffnungsdaten";
 
 const KATEGORIEN = [
   { name: "Armbänder", img: "https://heilsteinschule.swiss/media/Laden/armbaender/Armbaender006.jpg" },
@@ -23,6 +24,7 @@ const GALERIE = [
 
 
 export default function LadenPraxis() {
+  const upcomingDates = getUpcomingDates();
   return (
     <>
       <section className="relative overflow-hidden bg-amethyst text-white">
@@ -48,19 +50,32 @@ export default function LadenPraxis() {
       <section className="mx-auto max-w-7xl px-4 py-20 sm:px-6">
         <div className="grid gap-10 lg:grid-cols-2">
           <Reveal>
-            <SectionHeading center={false} eyebrow="Öffnungszeiten" title="Wann wir für Sie da sind" />
+            <SectionHeading center={false} eyebrow="Öffnungszeiten" title="Dreimal im Monat geöffnet" />
             <div className="mt-6 rounded-2xl border border-border bg-white p-5 shadow-soft">
               <p className="flex items-center gap-2 font-medium text-amethyst">
-                <Clock className="h-4 w-4 text-citrine-deep" /> Dreimal pro Monat geöffnet
+                <Clock className="h-4 w-4 text-citrine-deep" /> Aktuelle Öffnungstermine
               </p>
-              <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-                Der Heilsteinshop-Asp ist dreimal im Monat geöffnet. Die genauen Daten und Zeiten finden Sie
-                auf der Seite{" "}
-                <a href="https://heilsteinschule.swiss/laden---praxis/" target="_blank" rel="noopener noreferrer" className="text-citrine-deep underline underline-offset-2 hover:text-citrine">
-                  Laden & Praxis
-                </a>{" "}
-                oder auf Anfrage per Telefon oder E-Mail.
-              </p>
+              {upcomingDates.length > 0 ? (
+                <ul className="mt-3 space-y-1.5">
+                  {upcomingDates.map((d) => (
+                    <li key={d.date} className="flex items-center gap-2 text-sm text-foreground/80">
+                      <span className="h-1.5 w-1.5 rounded-full bg-citrine" /> {d.label}
+                    </li>
+                  ))}
+                </ul>
+              ) : (
+                <p className="mt-2 text-sm text-muted-foreground">
+                  Die nächsten Termine werden kurzfristig bekanntgegeben.
+                </p>
+              )}
+              <a
+                href="https://heilsteinschule.swiss/laden---praxis/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-citrine-deep underline underline-offset-2 hover:text-citrine"
+              >
+                Aktuelle Termine ansehen <ExternalLink className="h-3.5 w-3.5" />
+              </a>
             </div>
             <div className="mt-6 rounded-2xl bg-citrine/10 p-5 text-sm text-amethyst">
               Ausserhalb der Öffnungszeiten: bitte rufen Sie uns an oder schreiben Sie eine E-Mail.
@@ -68,14 +83,6 @@ export default function LadenPraxis() {
             <div className="mt-6 flex flex-col gap-3 sm:flex-row">
               <a href="tel:+41793896622" className="inline-flex items-center justify-center gap-2 rounded-full bg-amethyst px-6 py-3 text-sm font-semibold text-white transition hover:bg-amethyst-deep">
                 <Phone className="h-4 w-4" /> 079 389 66 22
-              </a>
-              <a
-                href="https://heilstein-shop.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 rounded-full border border-citrine px-6 py-3 text-sm font-semibold text-citrine-deep transition hover:bg-citrine/10"
-              >
-                Zum Online-Shop <ExternalLink className="h-3.5 w-3.5" />
               </a>
             </div>
           </Reveal>
@@ -94,6 +101,57 @@ export default function LadenPraxis() {
             </div>
           </Reveal>
         </div>
+      </section>
+
+      {/* Shop & Praxis vs Online-Shop — klare Unterscheidung */}
+      <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6">
+        <Reveal>
+          <div className="grid gap-6 md:grid-cols-2">
+            <div className="rounded-3xl border border-border bg-white p-8 shadow-soft">
+              <div className="flex items-center gap-3">
+                <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-amethyst/10 text-amethyst">
+                  <Store className="h-6 w-6" />
+                </div>
+                <div>
+                  <h3 className="font-heading text-lg font-semibold text-amethyst">Shop & Praxis</h3>
+                  <p className="text-sm text-muted-foreground">Physischer Standort</p>
+                </div>
+              </div>
+              <p className="mt-4 text-sm leading-relaxed text-foreground/80">
+                <strong className="text-amethyst">Heilsteinshop-Asp</strong> — Dorfstrasse 22, 5025 Asp.
+                Dreimal im Monat geöffnet. Persönliche Beratung, Rohsteine, Trommelsteine, Anhänger,
+                Armbänder und Halsketten vor Ort.
+              </p>
+              <div className="mt-4 flex items-center gap-2 text-sm text-muted-foreground">
+                <MapPin className="h-4 w-4 text-citrine-deep" /> Dorfstrasse 22, 5025 Asp
+              </div>
+            </div>
+            <div className="rounded-3xl border border-citrine/40 bg-citrine/5 p-8 shadow-soft">
+              <div className="flex items-center gap-3">
+                <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-citrine/15 text-citrine-deep">
+                  <Globe className="h-6 w-6" />
+                </div>
+                <div>
+                  <h3 className="font-heading text-lg font-semibold text-amethyst">Online-Shop</h3>
+                  <p className="text-sm text-muted-foreground">Online bestellen</p>
+                </div>
+              </div>
+              <p className="mt-4 text-sm leading-relaxed text-foreground/80">
+                <strong className="text-amethyst">heilstein-shop.com</strong> — rund um die Uhr
+                online bestellen. Armbänder der Kreation diopteia, Heilsteine, Kolloidales Silber
+                und vieles mehr.
+              </p>
+              <a
+                href="https://heilstein-shop.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-5 inline-flex items-center justify-center gap-2 rounded-full bg-citrine px-6 py-3 text-sm font-semibold text-amethyst-deep shadow-soft transition hover:bg-citrine-light"
+              >
+                Zum Online-Shop <ExternalLink className="h-4 w-4" />
+              </a>
+            </div>
+          </div>
+        </Reveal>
       </section>
 
       {/* Kategorien */}
@@ -144,14 +202,14 @@ export default function LadenPraxis() {
                 <p>
                   Die ersten <strong>15 Minuten</strong> der Beratung sind für Sie
                   <strong> kostenlos</strong>. Für eine darüber hinausgehende, vertiefte Beratung
-                  berechnen wir <strong>CHF 300.– bis 400.–</strong>.
+                  berechnen wir <strong>CHF 300.– bis 400.– pro Beratung</strong>.
                 </p>
               </div>
             </Reveal>
           </Reveal>
           <Reveal delay={0.1}>
             <div className="mt-10 rounded-3xl border border-border bg-white p-6 shadow-soft sm:p-8">
-              <ContactForm defaultDescription="Beratung / Termin im Heilsteinshop-Asp" idPrefix="laden" inquiryType="termin_beratung" compact />
+              <ContactForm defaultDescription="Beratung / Termin im Heilsteinshop-Asp" idPrefix="laden" inquiryType="termin_beratung" compact availableDates={upcomingDates} />
             </div>
           </Reveal>
           <div className="mt-8 flex items-center justify-center gap-2 text-sm text-muted-foreground">

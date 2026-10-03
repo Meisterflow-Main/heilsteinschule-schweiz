@@ -5,7 +5,7 @@ import { Loader2, CheckCircle2, AlertCircle, Send } from "lucide-react";
 const WEBHOOK_URL =
   "https://app.meisterflow.ch/api/webhooks/enquiries/a902bb23d7e98901900e3750083b670344a14683633ae15f";
 
-export default function ContactForm({ defaultDescription = "", compact = false, idPrefix = "", inquiryType = "allgemeine_anfrage" }) {
+export default function ContactForm({ defaultDescription = "", compact = false, idPrefix = "", inquiryType = "allgemeine_anfrage", availableDates = null }) {
   const [form, setForm] = useState({
     name: "",
     email: "",
@@ -151,18 +151,38 @@ export default function ContactForm({ defaultDescription = "", compact = false, 
 
         <div>
           <label htmlFor={`${idPrefix}preferredDate`} className="mb-1.5 block text-sm font-medium text-amethyst">
-            Wunschtermin
+            {availableDates ? "Öffnungstermin wählen" : "Wunschtermin"}
           </label>
-          <input
-            id={`${idPrefix}preferredDate`}
-            name="preferredDate"
-            type="date"
-            value={form.preferredDate}
-            onChange={handleChange}
-            min={new Date().toISOString().split("T")[0]}
-            className="w-full rounded-xl border border-border bg-white/70 px-4 py-3 text-foreground outline-none transition focus:border-citrine focus:ring-2 focus:ring-citrine/20"
-          />
-          <p className="mt-1 text-xs text-muted-foreground">Optional — wir bestätigen den Termin telefonisch oder per E-Mail.</p>
+          {availableDates && availableDates.length > 0 ? (
+            <>
+              <select
+                id={`${idPrefix}preferredDate`}
+                name="preferredDate"
+                value={form.preferredDate}
+                onChange={handleChange}
+                className="w-full rounded-xl border border-border bg-white/70 px-4 py-3 text-foreground outline-none transition focus:border-citrine focus:ring-2 focus:ring-citrine/20"
+              >
+                <option value="">— Bitte wählen —</option>
+                {availableDates.map((d) => (
+                  <option key={d.date} value={d.date}>{d.label}</option>
+                ))}
+              </select>
+              <p className="mt-1 text-xs text-muted-foreground">Wählen Sie einen der verfügbaren Öffnungstermine.</p>
+            </>
+          ) : (
+            <>
+              <input
+                id={`${idPrefix}preferredDate`}
+                name="preferredDate"
+                type="date"
+                value={form.preferredDate}
+                onChange={handleChange}
+                min={new Date().toISOString().split("T")[0]}
+                className="w-full rounded-xl border border-border bg-white/70 px-4 py-3 text-foreground outline-none transition focus:border-citrine focus:ring-2 focus:ring-citrine/20"
+              />
+              <p className="mt-1 text-xs text-muted-foreground">Optional — wir bestätigen den Termin telefonisch oder per E-Mail.</p>
+            </>
+          )}
         </div>
 
         <div>
