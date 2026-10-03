@@ -1,16 +1,19 @@
 import React, { useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { ArrowRight, Heart, Hand, Brain, Footprints, Sparkles, Play } from "lucide-react";
+import { ArrowRight, Heart, Hand, Brain, Footprints, Sparkles, Play, Users, Video, MapPin } from "lucide-react";
 import Reveal from "@/components/site/Reveal";
 import SectionHeading from "@/components/site/SectionHeading";
-import HistoryTimeline from "@/components/site/HistoryTimeline";
 import StoneCollage from "@/components/site/StoneCollage";
 import MineralSelection from "@/components/site/MineralSelection";
-import WernerKuehniMemorial from "@/components/site/WernerKuehniMemorial";
 import LearningActivities from "@/components/site/LearningActivities";
 import BookPromo from "@/components/site/BookPromo";
 import OptimizedImage from "@/components/site/OptimizedImage";
+import HomeEducation from "@/components/site/HomeEducation";
+import HomeLocations from "@/components/site/HomeLocations";
+import HomeInfoTag from "@/components/site/HomeInfoTag";
+import HomeShopSection from "@/components/site/HomeShopSection";
+import HomeNewsletter from "@/components/site/HomeNewsletter";
 
 const PRINCIPLES = [
   { icon: Brain, label: "Kopf", text: "Analytisches Wissen, welches erklärt, warum und wie die Heilsteine wirken.", img: "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/85e503e9c_WhatsAppImage2026-09-22at0205382.jpeg" },
@@ -40,7 +43,7 @@ export default function Home() {
 
   return (
     <>
-      {/* HERO */}
+      {/* 1. HERO */}
       <section className="relative overflow-hidden">
         <div className="absolute inset-0">
           <video
@@ -78,29 +81,21 @@ export default function Home() {
               Wirkungen erfahren.
             </p>
             <div className="mt-9 flex flex-col gap-3 sm:flex-row">
-              <Link
-                to="/ausbildung"
-                className="group inline-flex items-center justify-center gap-2 rounded-full bg-citrine px-7 py-4 font-semibold text-amethyst-deep shadow-lift transition hover:bg-citrine-light"
-              >
-                Ausbildung entdecken
-                <ArrowRight className="h-4 w-4 transition group-hover:translate-x-1" />
+              <Link to="/ausbildung" className="group inline-flex items-center justify-center gap-2 rounded-full bg-citrine px-7 py-4 font-semibold text-amethyst-deep shadow-lift transition hover:bg-citrine-light">
+                Ausbildung entdecken <ArrowRight className="h-4 w-4 transition group-hover:translate-x-1" />
               </Link>
-              <Link
-                to="/info-tag"
-                className="inline-flex items-center justify-center gap-2 rounded-full border border-white/30 px-7 py-4 font-semibold text-white transition hover:bg-white/10"
-              >
-                <Play className="h-4 w-4" /> Kostenloser Info-Tag
+              <Link to="/info-tag" className="inline-flex items-center justify-center gap-2 rounded-full border border-white/30 px-7 py-4 font-semibold text-white transition hover:bg-white/10">
+                <Play className="h-4 w-4" /> Zum Informationsnachmittag
               </Link>
             </div>
           </motion.div>
         </div>
 
-        {/* Stat strip */}
         <div className="relative border-t border-white/10 bg-amethyst-deep/40">
           <div className="mx-auto grid max-w-7xl grid-cols-2 gap-px px-4 sm:grid-cols-4 sm:px-6">
             {[
               { n: "2011", l: "Gegründet" },
-              { n: "4", l: "Schulstandorte" },
+              { n: "3 + 1", l: "Schulstandorte + Alpenseminar" },
               { n: "SVNH", l: "Zertifiziert" },
               { n: "GKS", l: "Geprüfte Steine" },
             ].map((s) => (
@@ -113,40 +108,40 @@ export default function Home() {
         </div>
       </section>
 
-      {/* MINERALIENAUSWAHL */}
+      {/* 2. MINERALIENAUSWAHL */}
       <MineralSelection />
 
-      {/* LERNEN BEI UNS — Schule, Menschen & Naturerlebnis */}
+      {/* 3. EDUCATION / AUSBILDUNG */}
+      <HomeEducation />
+
+      {/* 4. SCHOOL LOCATIONS */}
+      <HomeLocations />
+
+      {/* 5. LERNEN BEI UNS */}
       <LearningActivities />
 
-      {/* LEITBILD */}
+      {/* 6. INFORMATION AFTERNOON */}
+      <HomeInfoTag />
+
+      {/* 7. SHOP & PRAXIS + ONLINE-SHOP */}
+      <HomeShopSection />
+
+      {/* 8. LEITBILD */}
       <section className="relative mx-auto max-w-7xl px-4 py-24 sm:px-6">
         <div className="grid items-center gap-12 lg:grid-cols-2">
           <Reveal>
             <div className="relative">
               <div className="overflow-hidden rounded-3xl shadow-lift">
-                <OptimizedImage
-                  src="https://heilsteinschule.swiss/media/wunderblock/Bruno.jpg"
-                  alt="Bruno Vogler Pfeiffer"
-                  width={900}
-                  className="aspect-[4/5] w-full object-cover"
-                />
+                <OptimizedImage src="https://heilsteinschule.swiss/media/wunderblock/Bruno.jpg" alt="Bruno Vogler Pfeiffer" width={900} className="aspect-[4/5] w-full object-cover" />
               </div>
               <div className="absolute -bottom-6 -right-4 max-w-[16rem] rounded-2xl glass p-5 shadow-lift sm:-right-8">
-                <p className="font-heading text-lg font-semibold italic text-amethyst">
-                  „Steine sind mein Leben, meine Berufung und meine Erfüllung.“
-                </p>
+                <p className="font-heading text-lg font-semibold italic text-amethyst">„Steine sind mein Leben, meine Berufung und meine Erfüllung.“</p>
                 <p className="mt-2 text-sm text-muted-foreground">— Bruno Vogler Pfeiffer</p>
               </div>
             </div>
           </Reveal>
-
           <Reveal delay={0.1}>
-            <SectionHeading
-              center={false}
-              eyebrow="Unser Leitbild"
-              title="Lehren und lernen mit Kopf, Hand, Fuss und Herz"
-            />
+            <SectionHeading center={false} eyebrow="Die Schule" title="Lehren und lernen mit Kopf, Hand, Fuss und Herz" />
             <p className="mt-5 text-base leading-relaxed text-muted-foreground">
               Es ist mein innigster Wunsch, die Steinheilkunde den Menschen näher zu bringen. Die
               Ausbildung ist ein Weg, den wir mit Kopf, Hand, Fuss und Herz gemeinsam gehen. Seit 2008
@@ -167,43 +162,25 @@ export default function Home() {
                 </div>
               ))}
             </div>
-
+            <Link to="/ueber-uns" className="mt-8 inline-flex items-center gap-2 text-sm font-semibold text-citrine-deep underline underline-offset-4 hover:text-citrine">
+              Die Schule entdecken <ArrowRight className="h-4 w-4" />
+            </Link>
           </Reveal>
         </div>
       </section>
 
-      {/* TEAM PREVIEW */}
+      {/* 9. TEAM PREVIEW */}
       <section className="bg-quartz/60">
         <div className="mx-auto max-w-7xl px-4 py-24 sm:px-6">
           <Reveal>
-            <SectionHeading
-              eyebrow="Unser Team"
-              title="Menschen mit Herz für Heilsteine"
-              subtitle="Dozentinnen und Dozenten, die ihre Leidenschaft für die Steinheilkunde weitergeben."
-            />
-          </Reveal>
-          {/* Dozenten-Team im Alpenseminar */}
-          <Reveal>
-            <div className="mb-10 overflow-hidden rounded-3xl border border-border bg-muted shadow-soft">
-              <OptimizedImage
-                src="https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/ffaf18a07_WhatsAppImage2026-09-23at105952.jpeg"
-                alt="Dozenten-Team der Heilsteinschule Schweiz im Alpenseminar"
-                width={1280}
-                className="mx-auto w-full max-w-3xl object-contain"
-              />
-            </div>
+            <SectionHeading eyebrow="Unser Team" title="Menschen mit Herz für Heilsteine" subtitle="Dozentinnen und Dozenten, die ihre Leidenschaft für die Steinheilkunde weitergeben." />
           </Reveal>
           <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {TEAM.map((m, i) => (
               <Reveal key={m.name} delay={i * 0.08}>
                 <Link to="/ueber-uns#team" className="group block overflow-hidden rounded-2xl border border-border bg-white shadow-soft transition hover:-translate-y-1 hover:border-citrine hover:shadow-lift">
                   <div className="aspect-square overflow-hidden bg-muted">
-                    <OptimizedImage
-                      src={m.img}
-                      alt={m.name}
-                      width={600}
-                      className="h-full w-full object-cover transition duration-700 group-hover:scale-105"
-                    />
+                    <OptimizedImage src={m.img} alt={m.name} width={600} className="h-full w-full object-cover transition duration-700 group-hover:scale-105" />
                   </div>
                   <div className="p-4 text-center">
                     <h3 className="font-heading text-base font-semibold text-amethyst">{m.name}</h3>
@@ -214,65 +191,93 @@ export default function Home() {
             ))}
           </div>
           <div className="mt-10 text-center">
-            <Link
-              to="/ueber-uns#team"
-              className="inline-flex items-center gap-2 text-sm font-semibold text-amethyst underline underline-offset-4 hover:text-citrine-deep"
-            >
+            <Link to="/ueber-uns#team" className="inline-flex items-center gap-2 text-sm font-semibold text-amethyst underline underline-offset-4 hover:text-citrine-deep">
               Gesamtes Team ansehen <ArrowRight className="h-4 w-4" />
             </Link>
           </div>
         </div>
       </section>
 
-      {/* BUCH-PROMOTION */}
+      {/* 10. BUCH-PROMOTION */}
       <BookPromo />
 
-      {/* WERNER KÜHNI — IN LIEBEVOLLER ERINNERUNG */}
-      <WernerKuehniMemorial />
+      {/* 11. STUDENT EXPERIENCES */}
+      <section className="mx-auto max-w-7xl px-4 py-24 sm:px-6">
+        <Reveal>
+          <SectionHeading eyebrow="Erfahrungsberichte" title="Was Schülerinnen und Schüler sagen" subtitle="Authentische Stimmen von Absolventinnen und Absolventen der Heilsteinschule Schweiz." />
+        </Reveal>
+        <Reveal delay={0.1}>
+          <div className="mt-10 flex justify-center">
+            <Link to="/schueler-berichte" className="inline-flex items-center gap-2 rounded-full bg-amethyst px-7 py-4 font-semibold text-white shadow-soft transition hover:bg-amethyst-soft">
+              <Users className="h-4 w-4" /> Erfahrungsberichte lesen <ArrowRight className="h-4 w-4" />
+            </Link>
+          </div>
+        </Reveal>
+      </section>
 
-      {/* HISTORIE TIMELINE */}
-      <HistoryTimeline />
-
-      {/* STEIN-COLLAGE */}
+      {/* 12. STEIN-COLLAGE */}
       <StoneCollage />
 
-      {/* VIDEO */}
+      {/* 13. VIDEO — Educational Videos */}
       <section className="mx-auto max-w-5xl px-4 py-24 sm:px-6">
         <Reveal>
-          <SectionHeading
-            eyebrow="In bewegten Bildern"
-            title="Die Heilsteinschule Schweiz stellt sich vor"
-            subtitle="Wir stellen uns gerne vor — ein Einblick in unsere Werte, unsere Methode und unsere Leidenschaft."
-          />
+          <SectionHeading eyebrow="Pädagogische Videos" title="Die Heilsteinschule Schweiz stellt sich vor" subtitle="Wir stellen uns gerne vor — ein Einblick in unsere Werte, unsere Methode und unsere Leidenschaft." />
         </Reveal>
         <Reveal delay={0.1}>
           <div className="mt-10 overflow-hidden rounded-3xl border border-border bg-black shadow-lift">
-            <video
-              controls
-              preload="none"
-              poster="https://www.heilsteinschule.swiss/media/Filme/Vorstellung_Film.png"
-              className="aspect-video w-full"
-            >
-              <source
-                src="https://www.heilsteinschule.swiss/media/Filme/Heilsteinschule_Schweiz_Vorstellung.webm"
-                type="video/webm"
-              />
+            <video controls preload="none" poster="https://www.heilsteinschule.swiss/media/Filme/Vorstellung_Film.png" className="aspect-video w-full">
+              <source src="https://www.heilsteinschule.swiss/media/Filme/Heilsteinschule_Schweiz_Vorstellung.webm" type="video/webm" />
             </video>
           </div>
         </Reveal>
-
+        <Reveal delay={0.15}>
+          <div className="mt-8 text-center">
+            <Link to="/lehrfilme" className="inline-flex items-center gap-2 rounded-full border border-border px-6 py-3 text-sm font-semibold text-amethyst transition hover:bg-muted">
+              <Video className="h-4 w-4" /> Weitere Lehrfilme ansehen <ArrowRight className="h-4 w-4" />
+            </Link>
+          </div>
+        </Reveal>
       </section>
 
-      {/* CTA */}
+      {/* 14. NEWSLETTER */}
+      <HomeNewsletter />
+
+      {/* 15. REGIONAL ACCESS */}
+      <section className="bg-quartz/60">
+        <div className="mx-auto max-w-5xl px-4 py-20 sm:px-6">
+          <Reveal>
+            <SectionHeading eyebrow="Regionen" title="Ausbildungsstandort für Ihre Region" subtitle="Finden Sie den passenden Ausbildungsstandort — je nach Region Wallbach oder Bern." />
+          </Reveal>
+          <Reveal delay={0.1}>
+            <div className="mt-8 grid gap-3 text-sm sm:grid-cols-2">
+              {[
+                { region: "Zürich", standort: "Wallbach" },
+                { region: "Basel", standort: "Wallbach" },
+                { region: "Aarau", standort: "Wallbach" },
+                { region: "Baden", standort: "Wallbach" },
+                { region: "Brugg", standort: "Wallbach" },
+                { region: "Olten", standort: "Wallbach" },
+                { region: "Bern & Berner Raum", standort: "Bern" },
+              ].map((r) => (
+                <div key={r.region} className="flex items-center justify-between rounded-xl border border-border bg-white px-4 py-3 shadow-soft">
+                  <span className="flex items-center gap-2 font-medium text-amethyst"><MapPin className="h-4 w-4 text-citrine-deep" /> {r.region}</span>
+                  <span className="text-muted-foreground">→ {r.standort}</span>
+                </div>
+              ))}
+            </div>
+            <div className="mt-8 text-center">
+              <Link to="/regionen" className="inline-flex items-center gap-2 text-sm font-semibold text-citrine-deep underline underline-offset-4 hover:text-citrine">
+                Alle Regionen ansehen <ArrowRight className="h-4 w-4" />
+              </Link>
+            </div>
+          </Reveal>
+        </div>
+      </section>
+
+      {/* 16. CTA */}
       <section className="relative overflow-hidden bg-amethyst text-white">
         <div className="absolute inset-0 opacity-20">
-          <OptimizedImage
-            src="https://heilsteinschule.swiss/media/wunderblock/Schule_Asp_n_he_Quelle.jpg"
-            alt=""
-            width={1600}
-            loading="eager"
-            className="h-full w-full object-cover"
-          />
+          <OptimizedImage src="https://heilsteinschule.swiss/media/wunderblock/Schule_Asp_n_he_Quelle.jpg" alt="" width={1600} loading="eager" className="h-full w-full object-cover" />
         </div>
         <div className="relative mx-auto max-w-4xl px-4 py-24 text-center sm:px-6">
           <Reveal>
@@ -292,17 +297,11 @@ export default function Home() {
               Steine werden zu Heilsteinen und Lebensbegleitern und berühren unsere Seele.
             </p>
             <div className="mt-9 flex flex-col justify-center gap-3 sm:flex-row">
-              <Link
-                to="/kontakt"
-                className="inline-flex items-center justify-center gap-2 rounded-full bg-citrine px-7 py-4 font-semibold text-amethyst-deep shadow-lift transition hover:bg-citrine-light"
-              >
-                Jetzt anfragen <ArrowRight className="h-4 w-4" />
+              <Link to="/ausbildung" className="inline-flex items-center justify-center gap-2 rounded-full bg-citrine px-7 py-4 font-semibold text-amethyst-deep shadow-lift transition hover:bg-citrine-light">
+                Ausbildung entdecken <ArrowRight className="h-4 w-4" />
               </Link>
-              <Link
-                to="/info-tag"
-                className="inline-flex items-center justify-center gap-2 rounded-full border border-white/30 px-7 py-4 font-semibold text-white transition hover:bg-white/10"
-              >
-                Info-Tag besuchen
+              <Link to="/info-tag" className="inline-flex items-center justify-center gap-2 rounded-full border border-white/30 px-7 py-4 font-semibold text-white transition hover:bg-white/10">
+                Informationsnachmittag besuchen
               </Link>
             </div>
           </Reveal>

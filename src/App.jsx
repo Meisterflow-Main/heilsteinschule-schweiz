@@ -39,6 +39,7 @@ import GeoreiseNordSued from '@/pages/GeoreiseNordSued';
 import Zermatt2022 from '@/pages/Zermatt2022';
 import HeilsteinMuseum2022 from '@/pages/HeilsteinMuseum2022';
 import Alpenseminar2025 from '@/pages/Alpenseminar2025';
+import OnlineShop from '@/pages/OnlineShop';
 // Add page imports here
 
 const AuthenticatedApp = () => {
@@ -100,6 +101,7 @@ const AuthenticatedApp = () => {
         <Route path="/zermatt-2022" element={<Zermatt2022 />} />
         <Route path="/heilstein-museum-2022" element={<HeilsteinMuseum2022 />} />
         <Route path="/alpenseminar-2025" element={<Alpenseminar2025 />} />
+        <Route path="/online-shop" element={<OnlineShop />} />
       </Route>
       <Route path="*" element={<PageNotFound />} />
     </Routes>

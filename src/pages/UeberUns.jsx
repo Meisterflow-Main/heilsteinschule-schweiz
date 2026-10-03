@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import { ArrowRight, Quote, BookOpen, Mountain, Heart, Brain, Hand, Footprints } from "lucide-react";
 import Reveal from "@/components/site/Reveal";
 import SectionHeading from "@/components/site/SectionHeading";
+import HistoryTimeline from "@/components/site/HistoryTimeline";
+import WernerKuehniMemorial from "@/components/site/WernerKuehniMemorial";
 
 const INTERVIEW = [
   {
@@ -216,7 +218,7 @@ export default function UeberUns() {
       </section>
 
       {/* Interview Q&A */}
-      <section className="mx-auto max-w-4xl px-4 py-20 sm:px-6">
+      <section id="interview" className="scroll-mt-24 mx-auto max-w-4xl px-4 py-20 sm:px-6">
         <Reveal>
           <SectionHeading
             eyebrow="Interview"
@@ -314,6 +316,16 @@ export default function UeberUns() {
             </div>
           </div>
         </Reveal>
+      </section>
+
+      {/* Werner Kühni — In liebevoller Erinnerung */}
+      <section id="werner-kuehni" className="scroll-mt-24">
+        <WernerKuehniMemorial />
+      </section>
+
+      {/* Historie Timeline */}
+      <section id="timeline" className="scroll-mt-24">
+        <HistoryTimeline />
       </section>
 
       {/* CTA */}
