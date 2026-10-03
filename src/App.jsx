@@ -34,6 +34,11 @@ import ArmbaenderDiopteia from '@/pages/ArmbaenderDiopteia';
 import Schultermine from '@/pages/Schultermine';
 import Schulorte from '@/pages/Schulorte';
 import GeologischeReisen from '@/pages/GeologischeReisen';
+import GlarnerlandEngadin from '@/pages/GlarnerlandEngadin';
+import GeoreiseNordSued from '@/pages/GeoreiseNordSued';
+import Zermatt2022 from '@/pages/Zermatt2022';
+import HeilsteinMuseum2022 from '@/pages/HeilsteinMuseum2022';
+import Alpenseminar2025 from '@/pages/Alpenseminar2025';
 // Add page imports here
 
 const AuthenticatedApp = () => {
@@ -90,6 +95,11 @@ const AuthenticatedApp = () => {
         <Route path="/schultermine" element={<Schultermine />} />
         <Route path="/schulorte" element={<Schulorte />} />
         <Route path="/geologische-reisen" element={<GeologischeReisen />} />
+        <Route path="/glarnerland-engadin" element={<GlarnerlandEngadin />} />
+        <Route path="/georeise-nord-sued-2021" element={<GeoreiseNordSued />} />
+        <Route path="/zermatt-2022" element={<Zermatt2022 />} />
+        <Route path="/heilstein-museum-2022" element={<HeilsteinMuseum2022 />} />
+        <Route path="/alpenseminar-2025" element={<Alpenseminar2025 />} />
       </Route>
       <Route path="*" element={<PageNotFound />} />
     </Routes>

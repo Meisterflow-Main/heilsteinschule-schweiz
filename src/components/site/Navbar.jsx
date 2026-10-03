@@ -271,11 +271,11 @@ export default function Navbar() {
                     </button>
                     <div className="invisible absolute left-full top-0 z-50 w-56 -ml-1 translate-x-1 pt-2 opacity-0 transition-all duration-200 group-hover/geo:visible group-hover/geo:translate-x-0 group-hover/geo:opacity-100">
                       <div className="glass rounded-2xl p-2 shadow-lift">
-                        <Link to="/geologische-reisen#glarnerland-engadin" className="block rounded-xl px-3 py-2 text-sm text-foreground/80 transition hover:bg-amethyst/5 hover:text-amethyst">Glarnerland – Engadin</Link>
-                        <Link to="/geologische-reisen" className="block rounded-xl px-3 py-2 text-sm text-foreground/80 transition hover:bg-amethyst/5 hover:text-amethyst">Georeise Nord – Süd 2021</Link>
-                        <Link to="/geologische-reisen" className="block rounded-xl px-3 py-2 text-sm text-foreground/80 transition hover:bg-amethyst/5 hover:text-amethyst">Zermatt 2022</Link>
-                        <Link to="/geologische-reisen" className="block rounded-xl px-3 py-2 text-sm text-foreground/80 transition hover:bg-amethyst/5 hover:text-amethyst">Heilstein Museum 2022</Link>
-                        <Link to="/geologische-reisen#alpen-seminare" className="block rounded-xl px-3 py-2 text-sm text-foreground/80 transition hover:bg-amethyst/5 hover:text-amethyst">Alpenseminar 2025</Link>
+                        <Link to="/glarnerland-engadin" className="block rounded-xl px-3 py-2 text-sm text-foreground/80 transition hover:bg-amethyst/5 hover:text-amethyst">Glarnerland – Engadin</Link>
+                        <Link to="/georeise-nord-sued-2021" className="block rounded-xl px-3 py-2 text-sm text-foreground/80 transition hover:bg-amethyst/5 hover:text-amethyst">Georeise Nord – Süd 2021</Link>
+                        <Link to="/zermatt-2022" className="block rounded-xl px-3 py-2 text-sm text-foreground/80 transition hover:bg-amethyst/5 hover:text-amethyst">Zermatt 2022</Link>
+                        <Link to="/heilstein-museum-2022" className="block rounded-xl px-3 py-2 text-sm text-foreground/80 transition hover:bg-amethyst/5 hover:text-amethyst">Heilstein Museum 2022</Link>
+                        <Link to="/alpenseminar-2025" className="block rounded-xl px-3 py-2 text-sm text-foreground/80 transition hover:bg-amethyst/5 hover:text-amethyst">Alpenseminar 2025</Link>
                       </div>
                     </div>
                   </div>
@@ -487,11 +487,11 @@ export default function Navbar() {
                   </button>
                   {mobileGeo && (
                     <div className="ml-3 rounded-lg bg-background/50 p-1">
-                      <Link to="/geologische-reisen#glarnerland-engadin" className="block rounded-lg px-3 py-2 text-xs text-foreground/75 transition hover:bg-amethyst/5 hover:text-amethyst">Glarnerland – Engadin</Link>
-                      <Link to="/geologische-reisen" className="block rounded-lg px-3 py-2 text-xs text-foreground/75 transition hover:bg-amethyst/5 hover:text-amethyst">Georeise Nord – Süd 2021</Link>
-                      <Link to="/geologische-reisen" className="block rounded-lg px-3 py-2 text-xs text-foreground/75 transition hover:bg-amethyst/5 hover:text-amethyst">Zermatt 2022</Link>
-                      <Link to="/geologische-reisen" className="block rounded-lg px-3 py-2 text-xs text-foreground/75 transition hover:bg-amethyst/5 hover:text-amethyst">Heilstein Museum 2022</Link>
-                      <Link to="/geologische-reisen#alpen-seminare" className="block rounded-lg px-3 py-2 text-xs text-foreground/75 transition hover:bg-amethyst/5 hover:text-amethyst">Alpenseminar 2025</Link>
+                      <Link to="/glarnerland-engadin" className="block rounded-lg px-3 py-2 text-xs text-foreground/75 transition hover:bg-amethyst/5 hover:text-amethyst">Glarnerland – Engadin</Link>
+                      <Link to="/georeise-nord-sued-2021" className="block rounded-lg px-3 py-2 text-xs text-foreground/75 transition hover:bg-amethyst/5 hover:text-amethyst">Georeise Nord – Süd 2021</Link>
+                      <Link to="/zermatt-2022" className="block rounded-lg px-3 py-2 text-xs text-foreground/75 transition hover:bg-amethyst/5 hover:text-amethyst">Zermatt 2022</Link>
+                      <Link to="/heilstein-museum-2022" className="block rounded-lg px-3 py-2 text-xs text-foreground/75 transition hover:bg-amethyst/5 hover:text-amethyst">Heilstein Museum 2022</Link>
+                      <Link to="/alpenseminar-2025" className="block rounded-lg px-3 py-2 text-xs text-foreground/75 transition hover:bg-amethyst/5 hover:text-amethyst">Alpenseminar 2025</Link>
                     </div>
                   )}
                   <button
