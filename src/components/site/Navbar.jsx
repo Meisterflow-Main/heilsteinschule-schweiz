@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X, Phone, ChevronDown, MapPin, Gem, GraduationCap, CalendarDays, MapPinned, BookOpen, Mountain } from "lucide-react";
+import { Menu, X, Phone, ChevronDown, ChevronRight, MapPin, Gem, GraduationCap, CalendarDays, MapPinned, BookOpen, Mountain } from "lucide-react";
 import { REGIONS } from "@/data/regions";
 
 const NAV = [
@@ -25,12 +25,14 @@ export default function Navbar() {
   const [mobileAusbildung, setMobileAusbildung] = useState(false);
   const [diversesOpen, setDiversesOpen] = useState(false);
   const [mobileDiverses, setMobileDiverses] = useState(false);
+  const [mobileGeo, setMobileGeo] = useState(false);
+  const [mobileBerichte, setMobileBerichte] = useState(false);
   const location = useLocation();
 
   const isRegion = location.pathname.startsWith("/regionen");
   const isAusbildung = ["/ausbildung", "/schultermine", "/schulorte"].includes(location.pathname);
   const isLaden = ["/laden-praxis", "/verkaufsladen-asp", "/granit-gneis", "/armbaender-kreation-diopteia"].includes(location.pathname);
-  const isDiverses = ["/michael-gienger", "/schueler-berichte", "/brunos-buch", "/geologische-reisen"].includes(location.pathname);
+  const isDiverses = ["/michael-gienger", "/schueler-berichte", "/brunos-buch", "/geologische-reisen", "/granit-gneis"].includes(location.pathname);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 24);
@@ -248,35 +250,50 @@ export default function Navbar() {
               >
                 <div className="glass rounded-2xl p-2 shadow-lift">
                   <Link
-                    to="/michael-gienger"
+                    to="/brunos-buch"
                     className="flex items-center gap-2 rounded-xl px-3 py-2 text-sm font-semibold text-amethyst transition hover:bg-amethyst/5"
                   >
-                    <BookOpen className="h-4 w-4 text-citrine-deep" /> Michael Gienger
+                    <BookOpen className="h-4 w-4 text-citrine-deep" /> Brunos Buch
                   </Link>
                   <Link
-                    to="/schueler-berichte"
+                    to="/michael-gienger"
                     className="flex items-center gap-2 rounded-xl px-3 py-2 text-sm text-foreground/80 transition hover:bg-amethyst/5 hover:text-amethyst"
                   >
-                    <BookOpen className="h-3.5 w-3.5 text-citrine-deep" /> Schüler-Berichte
+                    <BookOpen className="h-3.5 w-3.5 text-citrine-deep" /> Michael Gienger
                   </Link>
-                  <Link
-                    to="/brunos-buch"
-                    className="flex items-center gap-2 rounded-xl px-3 py-2 text-sm text-foreground/80 transition hover:bg-amethyst/5 hover:text-amethyst"
-                  >
-                    <BookOpen className="h-3.5 w-3.5 text-citrine-deep" /> Brunos Buch
-                  </Link>
-                  <Link
-                    to="/geologische-reisen"
-                    className="flex items-center gap-2 rounded-xl px-3 py-2 text-sm text-foreground/80 transition hover:bg-amethyst/5 hover:text-amethyst"
-                  >
-                    <BookOpen className="h-3.5 w-3.5 text-citrine-deep" /> Geologische Reisen
-                  </Link>
-                  <Link
-                    to="/geologische-reisen#alpen-seminare"
-                    className="ml-5 flex items-center gap-2 rounded-xl border-l border-border px-3 py-1.5 text-xs text-foreground/70 transition hover:bg-amethyst/5 hover:text-amethyst"
-                  >
-                    <Mountain className="h-3 w-3 text-citrine-deep" /> Alpen-Seminare
-                  </Link>
+                  {/* Geologische Reisen — fly-out */}
+                  <div className="group/geo relative">
+                    <button className="flex w-full items-center justify-between rounded-xl px-3 py-2 text-sm text-foreground/80 transition hover:bg-amethyst/5 hover:text-amethyst">
+                      <span className="inline-flex items-center gap-2">
+                        <BookOpen className="h-3.5 w-3.5 text-citrine-deep" /> Geologische Reisen
+                      </span>
+                      <ChevronRight className="h-3.5 w-3.5" />
+                    </button>
+                    <div className="invisible absolute left-full top-0 z-50 w-56 -ml-1 translate-x-1 pt-2 opacity-0 transition-all duration-200 group-hover/geo:visible group-hover/geo:translate-x-0 group-hover/geo:opacity-100">
+                      <div className="glass rounded-2xl p-2 shadow-lift">
+                        <Link to="/geologische-reisen" className="block rounded-xl px-3 py-2 text-sm text-foreground/80 transition hover:bg-amethyst/5 hover:text-amethyst">Glarnerland – Engadin</Link>
+                        <Link to="/geologische-reisen" className="block rounded-xl px-3 py-2 text-sm text-foreground/80 transition hover:bg-amethyst/5 hover:text-amethyst">Georeise Nord – Süd 2021</Link>
+                        <Link to="/geologische-reisen" className="block rounded-xl px-3 py-2 text-sm text-foreground/80 transition hover:bg-amethyst/5 hover:text-amethyst">Zermatt 2022</Link>
+                        <Link to="/geologische-reisen" className="block rounded-xl px-3 py-2 text-sm text-foreground/80 transition hover:bg-amethyst/5 hover:text-amethyst">Heilstein Museum 2022</Link>
+                        <Link to="/geologische-reisen#alpen-seminare" className="block rounded-xl px-3 py-2 text-sm text-foreground/80 transition hover:bg-amethyst/5 hover:text-amethyst">Alpenseminar 2025</Link>
+                      </div>
+                    </div>
+                  </div>
+                  {/* Berichte — fly-out */}
+                  <div className="group/berichte relative">
+                    <button className="flex w-full items-center justify-between rounded-xl px-3 py-2 text-sm text-foreground/80 transition hover:bg-amethyst/5 hover:text-amethyst">
+                      <span className="inline-flex items-center gap-2">
+                        <BookOpen className="h-3.5 w-3.5 text-citrine-deep" /> Berichte
+                      </span>
+                      <ChevronRight className="h-3.5 w-3.5" />
+                    </button>
+                    <div className="invisible absolute left-full top-0 z-50 w-56 -ml-1 translate-x-1 pt-2 opacity-0 transition-all duration-200 group-hover/berichte:visible group-hover/berichte:translate-x-0 group-hover/berichte:opacity-100">
+                      <div className="glass rounded-2xl p-2 shadow-lift">
+                        <Link to="/granit-gneis" className="block rounded-xl px-3 py-2 text-sm text-foreground/80 transition hover:bg-amethyst/5 hover:text-amethyst">Granit und Gneis</Link>
+                        <Link to="/schueler-berichte" className="block rounded-xl px-3 py-2 text-sm text-foreground/80 transition hover:bg-amethyst/5 hover:text-amethyst">Schüler-Berichte</Link>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -448,35 +465,50 @@ export default function Navbar() {
               {mobileDiverses && (
                 <div className="ml-3 rounded-xl bg-muted/50 p-1">
                   <Link
-                    to="/michael-gienger"
-                    className="block rounded-lg px-3 py-2 text-sm font-semibold text-amethyst transition hover:bg-amethyst/5"
-                  >
-                    Michael Gienger
-                  </Link>
-                  <Link
-                    to="/schueler-berichte"
-                    className="block rounded-lg px-3 py-2 text-sm text-foreground/75 transition hover:bg-amethyst/5 hover:text-amethyst"
-                  >
-                    Schüler-Berichte
-                  </Link>
-                  <Link
                     to="/brunos-buch"
-                    className="block rounded-lg px-3 py-2 text-sm text-foreground/75 transition hover:bg-amethyst/5 hover:text-amethyst"
+                    className="block rounded-lg px-3 py-2 text-sm font-semibold text-amethyst transition hover:bg-amethyst/5"
                   >
                     Brunos Buch
                   </Link>
                   <Link
-                    to="/geologische-reisen"
+                    to="/michael-gienger"
                     className="block rounded-lg px-3 py-2 text-sm text-foreground/75 transition hover:bg-amethyst/5 hover:text-amethyst"
                   >
-                    Geologische Reisen
+                    Michael Gienger
                   </Link>
-                  <Link
-                    to="/geologische-reisen#alpen-seminare"
-                    className="ml-4 block rounded-lg border-l border-border px-3 py-1.5 text-xs text-foreground/70 transition hover:bg-amethyst/5 hover:text-amethyst"
+                  <button
+                    onClick={() => setMobileGeo((o) => !o)}
+                    className="flex w-full items-center justify-between rounded-lg px-3 py-2 text-sm text-foreground/75 transition hover:bg-amethyst/5 hover:text-amethyst"
                   >
-                    Alpen-Seminare
-                  </Link>
+                    <span className="inline-flex items-center gap-2">
+                      <BookOpen className="h-3.5 w-3.5 text-citrine-deep" /> Geologische Reisen
+                    </span>
+                    <ChevronDown className={`h-4 w-4 transition-transform ${mobileGeo ? "rotate-180" : ""}`} />
+                  </button>
+                  {mobileGeo && (
+                    <div className="ml-3 rounded-lg bg-background/50 p-1">
+                      <Link to="/geologische-reisen" className="block rounded-lg px-3 py-2 text-xs text-foreground/75 transition hover:bg-amethyst/5 hover:text-amethyst">Glarnerland – Engadin</Link>
+                      <Link to="/geologische-reisen" className="block rounded-lg px-3 py-2 text-xs text-foreground/75 transition hover:bg-amethyst/5 hover:text-amethyst">Georeise Nord – Süd 2021</Link>
+                      <Link to="/geologische-reisen" className="block rounded-lg px-3 py-2 text-xs text-foreground/75 transition hover:bg-amethyst/5 hover:text-amethyst">Zermatt 2022</Link>
+                      <Link to="/geologische-reisen" className="block rounded-lg px-3 py-2 text-xs text-foreground/75 transition hover:bg-amethyst/5 hover:text-amethyst">Heilstein Museum 2022</Link>
+                      <Link to="/geologische-reisen#alpen-seminare" className="block rounded-lg px-3 py-2 text-xs text-foreground/75 transition hover:bg-amethyst/5 hover:text-amethyst">Alpenseminar 2025</Link>
+                    </div>
+                  )}
+                  <button
+                    onClick={() => setMobileBerichte((o) => !o)}
+                    className="flex w-full items-center justify-between rounded-lg px-3 py-2 text-sm text-foreground/75 transition hover:bg-amethyst/5 hover:text-amethyst"
+                  >
+                    <span className="inline-flex items-center gap-2">
+                      <BookOpen className="h-3.5 w-3.5 text-citrine-deep" /> Berichte
+                    </span>
+                    <ChevronDown className={`h-4 w-4 transition-transform ${mobileBerichte ? "rotate-180" : ""}`} />
+                  </button>
+                  {mobileBerichte && (
+                    <div className="ml-3 rounded-lg bg-background/50 p-1">
+                      <Link to="/granit-gneis" className="block rounded-lg px-3 py-2 text-xs text-foreground/75 transition hover:bg-amethyst/5 hover:text-amethyst">Granit und Gneis</Link>
+                      <Link to="/schueler-berichte" className="block rounded-lg px-3 py-2 text-xs text-foreground/75 transition hover:bg-amethyst/5 hover:text-amethyst">Schüler-Berichte</Link>
+                    </div>
+                  )}
                 </div>
               )}
               <a
