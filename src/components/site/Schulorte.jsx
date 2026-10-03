@@ -1,43 +1,39 @@
 import React from "react";
-import { MapPin, Clock, GraduationCap, Car, Train, ExternalLink } from "lucide-react";
+import { Link } from "react-router-dom";
+import { MapPin, Clock, GraduationCap, Mountain, ExternalLink } from "lucide-react";
 import Reveal from "@/components/site/Reveal";
 import SectionHeading from "@/components/site/SectionHeading";
 
 export const STANDORTE = [
   {
-    name: "Schule Asp",
-    ort: "Heilsteinshop-Asp, Dorfstrasse 22, 5025 Asp",
+    name: "Asp — Hauptsitz",
+    ort: "Dorfstrasse 22, 5025 Asp",
     img: "https://heilsteinschule.swiss/media/wunderblock/Schule_Asp_n_he_Quelle.jpg",
-    tage: "Donnerstag, 09:00–17:00 Uhr, 2× monatlich",
+    rolle: "Hauptsitz · Heilsteinshop · Praxis · Info-Nachmittag",
+    tage: "Klasse Asp 8: Do, 09:00–17:00, 2× monatlich",
     leitung: "Ruth Rios",
-    hinweis: "Hauptsitz und Laden · Parkplätze beim Haus vorhanden",
+    hinweis: "Hauptsitz der Heilsteinschule mit Heilsteinshop und Praxis. Info-Nachmittage finden hier statt. Parkplätze beim Haus vorhanden.",
   },
   {
-    name: "Wallbach AG (Fricktal)",
+    name: "Wallbach AG — Grundausbildung",
     ort: "Rheinstrasse 29, 4323 Wallbach AG",
     img: "https://heilsteinschule.swiss/media/wunderblock/wallbach-ag.jpg",
-    tage: "Donnerstag 09–17h (2×/Monat), Sa/So 1×/Monat",
+    rolle: "Grundausbildung · Klassengrösse min. 5, max. 8 Personen",
+    tage: "Do 09–17h (2×/Monat), Sa/So 1×/Monat",
     leitung: "Ruth Rios",
-    hinweis: "Nur Grundausbildung — keine Seminare · Parkplätze beim Haus vorhanden",
+    hinweis: "Standard-Standort für die Grundausbildung — keine Seminare. Parkplätze beim Haus vorhanden.",
     lat: 47.5583689,
     lng: 7.9050883,
   },
   {
-    name: "Schule Bern",
+    name: "Bern — Grundausbildung & Info",
     ort: "Kapellenstrasse 5 (4. Stock), 3011 Bern",
     img: "https://heilsteinschule.swiss/media/wunderblock/svnh-gebaeude.jpg",
+    rolle: "Grundausbildung & Info-Nachmittag · Klassengrösse min. 5, max. 8 Personen",
     tage: "Wochenende, 09:00–17:00 Uhr, 1× monatlich",
     leitung: "Ruth Rios",
-    hinweis: "Im selben Gebäude wie SVNH · Neue Klasse 2027 · 6 Min. ab HB",
+    hinweis: "Im selben Gebäude wie SVNH · 6 Min. ab HB",
     weg: "ÖV: Vom Hauptbahnhof Bern ca. 6 Min. zu Fuss — Zug in Richtung Welle 7 verlassen, Richtung Süden zum Hirschengraben, weiter auf die Monbijoustrasse, dann rechts in die Kapellenstrasse. Hausnummer 5 links. Auto: Nur blaue Zone (1 Std.) und City West Parking. Keine eigenen Parkplätze.",
-  },
-  {
-    name: "Schule Uster ZH",
-    ort: "Brauereistrasse 10, 8610 Uster",
-    img: "https://heilsteinschule.swiss/media/wunderblock/schulort-uster1.jpg",
-    tage: "Neue Klasse 2027 geplant",
-    leitung: "Sarah Ziegenhagen",
-    hinweis: "Parkplätze beim Haus vorhanden",
   },
 ];
 
@@ -48,8 +44,8 @@ export default function Schulorte({ withHeading = true }) {
         <Reveal>
           <SectionHeading
             eyebrow="Schulorte"
-            title="Asp · Wallbach · Bern · Uster"
-            subtitle="Vier Standorte in der Schweiz — finden Sie den Lernort, der zu Ihnen passt."
+            title="Asp · Wallbach · Bern"
+            subtitle="Drei Schulstandorte in der Schweiz — dazu das Alpenseminar in den Schweizer Alpen."
           />
         </Reveal>
       )}
@@ -70,6 +66,11 @@ export default function Schulorte({ withHeading = true }) {
                 </h3>
               </div>
               <div className="p-6">
+                {s.rolle && (
+                  <div className="mb-3 inline-flex rounded-full bg-citrine/10 px-3 py-1 text-xs font-medium text-citrine-deep">
+                    {s.rolle}
+                  </div>
+                )}
                 <div className="flex items-start gap-2 text-sm text-foreground/80">
                   <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-citrine-deep" /> {s.ort}
                 </div>
@@ -100,6 +101,19 @@ export default function Schulorte({ withHeading = true }) {
           </Reveal>
         ))}
       </div>
+      <Reveal>
+        <div className="mt-8 flex items-start gap-3 rounded-2xl border border-citrine/30 bg-citrine/5 p-5 text-sm leading-relaxed text-foreground/80">
+          <Mountain className="mt-0.5 h-5 w-5 shrink-0 text-citrine-deep" />
+          <span>
+            <strong className="text-amethyst">Alpenseminar in den Schweizer Alpen:</strong>{" "}
+            Das Alpenseminar ist ein obligatorischer praktischer Ausbildungsteil und findet
+            in den Schweizer Alpen statt — nicht an den regulären Schulstandorten.
+            <Link to="/alpenseminar-2025" className="ml-1 text-citrine-deep underline underline-offset-2 hover:text-citrine">
+              Mehr erfahren
+            </Link>.
+          </span>
+        </div>
+      </Reveal>
     </div>
   );
 }

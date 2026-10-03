@@ -23,7 +23,7 @@ export default function SchulortePage() {
             </div>
             <h1 className="font-heading text-4xl font-bold sm:text-5xl md:text-6xl">Schulorte</h1>
             <p className="mt-5 max-w-xl text-lg text-white/80">
-              Asp · Wallbach · Bern · Uster — vier Standorte der Heilsteinschule Schweiz.
+              Asp · Wallbach · Bern — drei Schulstandorte plus Alpenseminar in den Schweizer Alpen.
             </p>
           </Reveal>
         </div>

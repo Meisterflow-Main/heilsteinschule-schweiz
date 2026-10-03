@@ -245,7 +245,7 @@ export default function RegionLanding({ region }) {
       <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6">
         <motion.div initial="hidden" whileInView="show" viewport={{ once: true, margin: "-80px" }} variants={fadeUp}>
           <h2 className="font-heading text-2xl font-bold text-amethyst sm:text-3xl">Weitere Leistungen</h2>
-          <p className="mt-3 text-sm text-muted-foreground">Entdecke das gesamte Angebot der Heilsteinschule Schweiz.</p>
+          <p className="mt-3 text-sm text-muted-foreground">Entdecken Sie das gesamte Angebot der Heilsteinschule Schweiz.</p>
           <div className="mt-6 flex flex-wrap gap-2">
             {r.otherServices.map((s, i) => (
               <Link key={i} to={s.to} className="inline-flex items-center gap-1.5 rounded-full border border-border bg-white px-4 py-2 text-sm font-medium text-amethyst transition hover:border-citrine hover:bg-citrine/10">

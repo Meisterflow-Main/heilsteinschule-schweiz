@@ -8,7 +8,6 @@ export const TERMINE = [
   { ort: "Wallbach 1", beginn: "30. / 31. 01. 2027", tag: "Sa/So", stern: true },
   { ort: "Wallbach 2", beginn: "21. 01. 2027", tag: "Do", stern: true },
   { ort: "Bern 2", beginn: "23. / 24. 01. 2027", tag: "Sa/So", stern: true },
-  { ort: "Uster 1", beginn: "ab 2027 geplant", tag: "", stern: true },
 ];
 
 export const KALENDER = [

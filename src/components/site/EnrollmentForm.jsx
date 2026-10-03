@@ -6,7 +6,11 @@ import { Link } from "react-router-dom";
 const WEBHOOK_URL =
   "https://app.meisterflow.ch/api/webhooks/enquiries/a902bb23d7e98901900e3750083b670344a14683633ae15f";
 
-const STANDORTE = ["Schule Asp", "Wallbach AG", "Schule Bern"];
+const STANDORTE = [
+  "Wallbach (Grundausbildung)",
+  "Bern (Grundausbildung)",
+  "Asp (Hauptsitz — laufende Klasse Asp 8)",
+];
 const STARTS = [
   "Asp8 — ab 21.05.2026 (Donnerstags)",
   "Bern 2 — ab 23.01.2027 (Wochenenden)",

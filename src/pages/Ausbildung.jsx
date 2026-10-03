@@ -192,7 +192,7 @@ export default function Ausbildung() {
               <div>
                 <h3 className="font-heading text-xl font-semibold text-amethyst">Schulorte</h3>
                 <p className="mt-1 text-sm text-muted-foreground">
-                  Asp · Wallbach · Bern · Uster — vier Standorte mit Adressen, Kurszeiten und Wegbeschreibungen.
+                  Asp (Hauptsitz) · Wallbach (Grundausbildung) · Bern (Grundausbildung & Info) — dazu das Alpenseminar in den Schweizer Alpen.
                 </p>
               </div>
               <Link

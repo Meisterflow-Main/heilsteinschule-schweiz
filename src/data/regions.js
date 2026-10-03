@@ -34,9 +34,9 @@ export const REGIONS = [
     metaDescription: "SVNH-zertifizierte Heilsteinberater Ausbildung in Asp AG. Praxisnahe Steinheilkunde lernen – mit erfahrenem Dozententeam der Heilsteinschule Schweiz.",
     hero: {
       eyebrow: "Heilsteine in Asp",
-      h1: "Heilsteinberater Ausbildung in Asp – Steinheilkunde von Grund auf lernen",
+      h1: "Heilsteinschule Schweiz in Asp – Hauptsitz mit Heilsteinshop und Praxis",
       description:
-        "In Asp, dem Hauptsitz der Heilsteinschule Schweiz, absolvieren Sie die SVNH-zertifizierte Grundausbildung zum Heilsteinberater. Praxisnah, fundiert und mitten im Fricktal – dort, wo die Schule 2011 gegründet wurde.",
+        "Asp ist der Hauptsitz der Heilsteinschule Schweiz: Hier finden Sie den Heilsteinshop, die Praxis und die Schulungsräume. Kostenlose Info-Nachmittage finden hier statt. Die Grundausbildung wird standardmässig in Wallbach und Bern durchgeführt – Asp ist der Ursprungsort, an dem die Schule 2011 gegründet wurde.",
     },
     usps: [
       { icon: "Sparkles", title: "Seit 2011", description: "Über 250 ausgebildete Heilsteinberater" },
@@ -46,19 +46,19 @@ export const REGIONS = [
     ],
     contact: {
       intro:
-        "Der Hauptsitz in Asp ist zugleich Heilsteinshop, Praxis und Ausbildungsort. Persönliche Beratung erhalten Sie nach Vereinbarung.",
+        "Der Hauptsitz in Asp ist zugleich Heilsteinshop und Praxis. Persönliche Beratung erhalten Sie nach Vereinbarung. Die Grundausbildung wird standardmässig in Wallbach und Bern durchgeführt.",
       address: "Dorfstrasse 22, 5025 Asp",
       phone: PHONE,
       email: EMAIL,
     },
     services: {
       intro:
-        "In Asp bieten wir die vollständige Grundausbildung sowie kostenlose Info-Nachmittage an. Das Alpenseminar findet in den Schweizer Alpen statt. " + KLASSENGROESSE,
+        "Asp ist der Hauptsitz der Heilsteinschule Schweiz mit Heilsteinshop, Praxis und Schulungsräumen. Hier finden kostenlose Info-Nachmittage statt. Die Grundausbildung wird standardmässig in Wallbach und Bern durchgeführt (die laufende Klasse Asp 8 bildet eine Ausnahme). Das Alpenseminar findet in den Schweizer Alpen statt. " + KLASSENGROESSE,
       items: [
         {
           title: "Grundausbildung Heilsteinberater",
           description:
-            "Die SVNH-zertifizierte Ausbildung in Asp dauert mindestens drei Vierteljahre und vermittelt Steinheilkunde fundiert und praxisnah. Schulungsunterlagen und Zertifizierung sind im Preis von CHF 4250 enthalten. Zahlbar in 2 Raten.",
+            "Die SVNH-zertifizierte Ausbildung dauert mindestens drei Vierteljahre und vermittelt Steinheilkunde fundiert und praxisnah. Asp ist der Hauptsitz der Schule; die Grundausbildung findet standardmässig in Wallbach und Bern statt. Schulungsunterlagen und Zertifizierung sind im Preis von CHF 4250 enthalten. Zahlbar in 2 Raten.",
         },
         {
           title: "Alpenseminar",
@@ -382,7 +382,7 @@ export const REGIONS = [
     },
     finalCta: {
       title: "Steinheilkunde ab Zürich erleben",
-      text: "Melden Sie sich jetzt für die Heilsteinberater Ausbildung im Raum Zürich an und entdecken Sie die Kraft der Heilsteine.",
+      text: "Melden Sie sich jetzt für die Heilsteinberater Ausbildung am Standort Wallbach an – ideal für Teilnehmer aus dem Raum Zürich.",
       button: "Termin buchen",
     },
   },
@@ -428,7 +428,7 @@ export const REGIONS = [
         {
           title: "Info-Nachmittag für Basel",
           description:
-            "Am kostenlosen Info-Nachmittag in Asp lernen Sie die Heilsteinschule und die Steinheilkunde unverbindlich kennen – ideal für Interessierte aus Basel.",
+            "Am kostenlosen Info-Nachmittag in Asp oder Bern lernen Sie die Heilsteinschule und die Steinheilkunde unverbindlich kennen – ideal für Interessierte aus Basel.",
         },
       ],
     },
@@ -472,7 +472,7 @@ export const REGIONS = [
     },
     finalCta: {
       title: "Steinheilkunde ab Basel entdecken",
-      text: "Melden Sie sich jetzt für die Heilsteinberater Ausbildung im Raum Basel an und lernen Sie die Kraft der Heilsteine kennen.",
+      text: "Melden Sie sich jetzt für die Heilsteinberater Ausbildung am Standort Wallbach an – ideal für Teilnehmer aus dem Raum Basel.",
       button: "Termin buchen",
     },
   },
@@ -518,7 +518,7 @@ export const REGIONS = [
         {
           title: "Info-Nachmittag für Aarau",
           description:
-            "Am kostenlosen Info-Nachmittag in Asp lernen Sie die Heilsteinschule und die Steinheilkunde unverbindlich kennen – ideal für Interessierte aus Aarau.",
+            "Am kostenlosen Info-Nachmittag in Asp oder Bern lernen Sie die Heilsteinschule und die Steinheilkunde unverbindlich kennen – ideal für Interessierte aus Aarau.",
         },
       ],
     },
@@ -562,7 +562,7 @@ export const REGIONS = [
     },
     finalCta: {
       title: "Steinheilkunde ab Aarau erleben",
-      text: "Melden Sie sich jetzt für die Heilsteinberater Ausbildung im Raum Aarau an und entdecken Sie die Kraft der Heilsteine im Aargau.",
+      text: "Melden Sie sich jetzt für die Heilsteinberater Ausbildung am Standort Wallbach an – ideal für Teilnehmer aus dem Raum Aarau.",
       button: "Termin buchen",
     },
   },
@@ -608,7 +608,7 @@ export const REGIONS = [
         {
           title: "Info-Nachmittag für Baden",
           description:
-            "Am kostenlosen Info-Nachmittag in Asp lernen Sie die Heilsteinschule und die Steinheilkunde unverbindlich kennen – ideal für Interessierte aus Baden.",
+            "Am kostenlosen Info-Nachmittag in Asp oder Bern lernen Sie die Heilsteinschule und die Steinheilkunde unverbindlich kennen – ideal für Interessierte aus Baden.",
         },
       ],
     },
@@ -652,7 +652,7 @@ export const REGIONS = [
     },
     finalCta: {
       title: "Steinheilkunde ab Baden entdecken",
-      text: "Melden Sie sich jetzt für die Heilsteinberater Ausbildung im Raum Baden an und lernen Sie die Kraft der Heilsteine im Limmattal kennen.",
+      text: "Melden Sie sich jetzt für die Heilsteinberater Ausbildung am Standort Wallbach an – ideal für Teilnehmer aus dem Raum Baden.",
       button: "Termin buchen",
     },
   },
@@ -698,7 +698,7 @@ export const REGIONS = [
         {
           title: "Info-Nachmittag für Brugg",
           description:
-            "Am kostenlosen Info-Nachmittag in Asp lernen Sie die Heilsteinschule und die Steinheilkunde unverbindlich kennen – ideal für Interessierte aus Brugg.",
+            "Am kostenlosen Info-Nachmittag in Asp oder Bern lernen Sie die Heilsteinschule und die Steinheilkunde unverbindlich kennen – ideal für Interessierte aus Brugg.",
         },
       ],
     },
@@ -742,7 +742,7 @@ export const REGIONS = [
     },
     finalCta: {
       title: "Steinheilkunde ab Brugg erleben",
-      text: "Melden Sie sich jetzt für die Heilsteinberater Ausbildung im Raum Brugg an und entdecken Sie die Kraft der Heilsteine im Aargau.",
+      text: "Melden Sie sich jetzt für die Heilsteinberater Ausbildung am Standort Wallbach an – ideal für Teilnehmer aus dem Raum Brugg.",
       button: "Termin buchen",
     },
   },
@@ -788,7 +788,7 @@ export const REGIONS = [
         {
           title: "Info-Nachmittag für Olten",
           description:
-            "Am kostenlosen Info-Nachmittag in Asp lernen Sie die Heilsteinschule und die Steinheilkunde unverbindlich kennen – ideal für Interessierte aus Olten.",
+            "Am kostenlosen Info-Nachmittag in Asp oder Bern lernen Sie die Heilsteinschule und die Steinheilkunde unverbindlich kennen – ideal für Interessierte aus Olten.",
         },
       ],
     },
@@ -832,7 +832,7 @@ export const REGIONS = [
     },
     finalCta: {
       title: "Steinheilkunde ab Olten entdecken",
-      text: "Melden Sie sich jetzt für die Heilsteinberater Ausbildung im Raum Olten an und lernen Sie die Kraft der Heilsteine im Raum Solothurn kennen.",
+      text: "Melden Sie sich jetzt für die Heilsteinberater Ausbildung am Standort Wallbach an – ideal für Teilnehmer aus dem Raum Olten.",
       button: "Termin buchen",
     },
   },
