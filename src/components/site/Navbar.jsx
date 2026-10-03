@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X, Phone, ChevronDown, MapPin, Gem, GraduationCap, CalendarDays, MapPinned, BookOpen } from "lucide-react";
+import { Menu, X, Phone, ChevronDown, MapPin, Gem, GraduationCap, CalendarDays, MapPinned, BookOpen, Mountain } from "lucide-react";
 import { REGIONS } from "@/data/regions";
 
 const NAV = [
@@ -271,6 +271,12 @@ export default function Navbar() {
                   >
                     <BookOpen className="h-3.5 w-3.5 text-citrine-deep" /> Geologische Reisen
                   </Link>
+                  <Link
+                    to="/geologische-reisen#alpen-seminare"
+                    className="ml-5 flex items-center gap-2 rounded-xl border-l border-border px-3 py-1.5 text-xs text-foreground/70 transition hover:bg-amethyst/5 hover:text-amethyst"
+                  >
+                    <Mountain className="h-3 w-3 text-citrine-deep" /> Alpen-Seminare
+                  </Link>
                 </div>
               </div>
             </div>
@@ -464,6 +470,12 @@ export default function Navbar() {
                     className="block rounded-lg px-3 py-2 text-sm text-foreground/75 transition hover:bg-amethyst/5 hover:text-amethyst"
                   >
                     Geologische Reisen
+                  </Link>
+                  <Link
+                    to="/geologische-reisen#alpen-seminare"
+                    className="ml-4 block rounded-lg border-l border-border px-3 py-1.5 text-xs text-foreground/70 transition hover:bg-amethyst/5 hover:text-amethyst"
+                  >
+                    Alpen-Seminare
                   </Link>
                 </div>
               )}

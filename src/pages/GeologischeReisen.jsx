@@ -30,6 +30,25 @@ const LEGEND = [
 
 const GALLERY_BASE = "https://heilsteinschule.swiss/media/rfg-folders/geologische-reisen-gallery/";
 
+const ALPEN_BASE = "https://heilsteinschule.swiss/media/rfg-folders/alpen-seminare-gallery/";
+
+const ALPEN_GALLERY = [
+  { src: "rhone_gletscher_aussen_1024x768.jpg", year: "2019" },
+  { src: "rhone_gletscher-innen.jpg", year: "2019" },
+  { src: "Alpenseminar_2016_7.png", year: "2016" },
+  { src: "Alpenseminar_2016_6.png", year: "2016" },
+  { src: "Alpenseminar_2016_5.png", year: "2016" },
+  { src: "Alpenseminar_2016_4.png", year: "2016" },
+  { src: "Alpenseminar_2016_3.png", year: "2016" },
+  { src: "Alpenseminar_2016_2.png", year: "2016" },
+  { src: "Alpenseminar_2016_1.png", year: "2016" },
+  { src: "Bruno_2015_8.png", year: "2015" },
+  { src: "Bruno_2015_7.png", year: "2015" },
+  { src: "Bruno_2015_6.png", year: "2015" },
+  { src: "Bruno_2015_4.png", year: "2015" },
+  { src: "rhone-gletscher-2019_August_1024x768-1.jpg", year: "2015" },
+];
+
 const GALLERY = [
   { src: "20180726_101600.jpg", label: "A", caption: "Kloster Odilienberg" },
   { src: "thumbnail_IMG_1942.jpg", label: "A" },
@@ -164,6 +183,96 @@ export default function GeologischeReisen() {
               </Reveal>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Alpen-Seminare (Sub-Option) */}
+      <section id="alpen-seminare" className="mx-auto max-w-7xl scroll-mt-24 px-4 py-20 sm:px-6">
+        <Reveal>
+          <SectionHeading
+            eyebrow="5 Jahre u. älter"
+            title="Alpen-Seminare"
+            subtitle="Wir wandern und erforschen unser Gebirge. Unser Alpen-Seminar ist aufgebaut für jedermann/frau — wir machen keine Extremtouren."
+          />
+        </Reveal>
+
+        <div className="mt-12 grid gap-10 lg:grid-cols-2">
+          <Reveal>
+            <ul className="space-y-3">
+              {[
+                'Die 5 Tage in den Alpen bringen uns viele Erkenntnisse über das Vorhandensein von verschiedenen einheimischen Heilsteinen: Marmor, Serpentin, „Siderit“, Opalinuston, Pyrit, Kalkschiefer, Speckstein, Nephrit-Jade, Schneequarz, Magnetit und mehr.',
+                'Wir lernen dich, die Alpen zu lesen in ihrer Beschaffenheit wie Entstehung.',
+                'Wir dir zeigen Überschiebungen, Verwerfungen, Metamorphosen sowie Sedimentierungen (Bildungsprinzipien).',
+                'Du erlernst das Auffinden unserer Natur-Medizin unter freiem Himmel. Andere finden Kräuter, wir Heilsteine, sprich Mineralien — gerne als „Lebewesen“ bezeichnet.',
+                'Wir sind zu Fuss in Grindelwald, Grosse Scheidegg, Göschener-Alp und Oberalp unterwegs.',
+                'Wir nächtigen in einfachen Hotels mit einfachen Zimmern, werden jedoch genüsslich versorgt.',
+                'Wir verschieben uns mit dem Postauto und unseren Privat-PWs.',
+                'Es sind immer 2 ReisebegleiterInnen von uns mit dabei.',
+                'Wir organisieren an diesen 5 Tagen das Essen, reservieren die Unterkünfte und Postautofahrten.',
+                'Wir begleiten dich über alle Wanderungen und übernehmen sämtliche Eintritte.',
+                'Wir führen euch zu interessanten alpinen Nebenplätzen und wollen damit fesselnde Eindrücke schaffen.',
+                'Wir besuchen Natur-Schönheiten und werden Mutter Natur eindrücklich erleben.',
+              ].map((t, i) => (
+                <li key={i} className="flex items-start gap-3 text-sm leading-relaxed text-foreground/80">
+                  <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-citrine" />
+                  {t}
+                </li>
+              ))}
+            </ul>
+            <p className="mt-6 rounded-2xl border border-citrine/30 bg-citrine/5 p-4 text-sm font-medium text-amethyst">
+              5 Tage mit 4 Übernachtungen im alpinen Bereich. Wir sind mehrheitlich auf KALK, GRANIT und GNEIS unterwegs.
+            </p>
+          </Reveal>
+
+          <Reveal delay={0.1}>
+            <div className="grid gap-4 sm:grid-cols-2">
+              <figure className="overflow-hidden rounded-2xl border border-border bg-white shadow-soft">
+                <OptimizedImage
+                  src="https://heilsteinschule.swiss/media/backgrounds/156/Bruno_beim_kalk_pickeln.jpg"
+                  alt="Bruno beim Kalk pickeln"
+                  width={600}
+                  loading="lazy"
+                  className="aspect-[4/3] w-full object-cover"
+                />
+              </figure>
+              <figure className="overflow-hidden rounded-2xl border border-border bg-white shadow-soft">
+                <OptimizedImage
+                  src="https://heilsteinschule.swiss/media/backgrounds/156/Nebelsee.jpg"
+                  alt="Nebelsee in den Alpen"
+                  width={600}
+                  loading="lazy"
+                  className="aspect-[4/3] w-full object-cover"
+                />
+              </figure>
+            </div>
+          </Reveal>
+        </div>
+
+        {/* Galerie 2015 – 2019 */}
+        <Reveal>
+          <h3 className="mt-16 text-center font-heading text-2xl font-bold text-amethyst">
+            Alpen-Seminare 2015 – 2019
+          </h3>
+        </Reveal>
+        <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          {ALPEN_GALLERY.map((g, i) => (
+            <Reveal key={g.src + i} delay={(i % 4) * 0.05}>
+              <figure className="group overflow-hidden rounded-2xl border border-border bg-white shadow-soft transition hover:shadow-lift">
+                <div className="aspect-[4/3] overflow-hidden bg-muted">
+                  <OptimizedImage
+                    src={`${ALPEN_BASE}${g.src}`}
+                    alt={`Alpen-Seminar ${g.year}`}
+                    width={500}
+                    loading="lazy"
+                    className="h-full w-full object-cover transition duration-700 group-hover:scale-105"
+                  />
+                </div>
+                <figcaption className="px-3 py-2 text-center text-xs font-mono uppercase tracking-wider text-citrine-deep">
+                  {g.year}
+                </figcaption>
+              </figure>
+            </Reveal>
+          ))}
         </div>
       </section>
     </>
