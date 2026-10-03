@@ -43,13 +43,16 @@ export default function Home() {
       {/* 1. HERO */}
       <section className="relative overflow-hidden">
         <div className="absolute inset-0">
-          <OptimizedImage
-            src="https://heilsteinschule.swiss/media/Alpenseminar_2025/Alpenseminar_2025_Titelbild.jpg"
-            alt="Alpenseminar der Heilsteinschule Schweiz in den Schweizer Alpen"
-            width={1920}
-            loading="eager"
+          <video
+            autoPlay
+            muted
+            loop
+            playsInline
+            preload="auto"
             className="h-full w-full object-cover"
-          />
+          >
+            <source src="https://media.base44.com/videos/public/6aa92ec5274311c12da18ee6/1574e0313_Hero_crystal_video.mp4" type="video/mp4" />
+          </video>
           <div className="absolute inset-0 bg-gradient-to-b from-amethyst-deep/70 via-amethyst/40 to-amethyst-deep/60" />
           <div className="absolute inset-0 bg-gradient-to-r from-amethyst-deep/60 to-transparent" />
         </div>
@@ -85,6 +88,9 @@ export default function Home() {
 
       {/* 2. TRUST BAR */}
       <HomeTrustBar />
+
+      {/* 2B. MINERAL VIDEOS UNDER HERO */}
+      <MineralSelection />
 
       {/* 3. TRAINING OVERVIEW */}
       <HomeTrainingOverview />
@@ -202,9 +208,6 @@ export default function Home() {
 
       {/* 9. INQUIRY & REGISTRATION */}
       <HomeInquiryRegistration />
-
-      {/* 10. MINERALS IN PORTRAIT */}
-      <MineralSelection />
 
       {/* 11. FINAL CTA */}
       <section className="relative overflow-hidden bg-amethyst text-white">

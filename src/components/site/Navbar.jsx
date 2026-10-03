@@ -3,6 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import { Menu, X, Phone, ChevronDown, GraduationCap, MapPinned, CalendarDays, Mountain, Users, BookOpen, Clock, Quote, Heart, Play, Mail, FileText } from "lucide-react";
 
 const NAV_ITEMS = [
+  { label: "Start", to: "/" },
   {
     label: "Ausbildung",
     children: [
