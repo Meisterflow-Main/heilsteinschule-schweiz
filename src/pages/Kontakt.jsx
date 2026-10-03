@@ -70,8 +70,11 @@ export default function Kontakt() {
                 <div>
                   <h3 className="font-heading text-sm font-semibold text-amethyst">Öffnungszeiten Laden</h3>
                   <p className="mt-1 text-sm text-muted-foreground">
-                    Mittwoch 14:00 – 17:30 h<br />
-                    Samstag 10:00 – 16:00 h
+                    Dreimal im Monat geöffnet — aktuelle Termine finden Sie auf der Seite{" "}
+                    <a href="https://heilsteinschule.swiss/laden---praxis/" target="_blank" rel="noopener noreferrer" className="text-citrine-deep underline underline-offset-2 hover:text-citrine">
+                      Laden & Praxis
+                    </a>{" "}
+                    oder auf Anfrage per Telefon oder E-Mail.
                   </p>
                 </div>
               </div>

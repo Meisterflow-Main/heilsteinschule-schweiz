@@ -54,8 +54,12 @@ export default function LadenPraxis() {
                 <Clock className="h-4 w-4 text-citrine-deep" /> Dreimal pro Monat geöffnet
               </p>
               <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-                Der Heilsteinshop-Asp ist jeweils dreimal im Monat geöffnet. Die genauen Daten und Zeiten
-                erfahren Sie auf Anfrage — gerne per Telefon oder E-Mail.
+                Der Heilsteinshop-Asp ist dreimal im Monat geöffnet. Die genauen Daten und Zeiten finden Sie
+                auf der Seite{" "}
+                <a href="https://heilsteinschule.swiss/laden---praxis/" target="_blank" rel="noopener noreferrer" className="text-citrine-deep underline underline-offset-2 hover:text-citrine">
+                  Laden & Praxis
+                </a>{" "}
+                oder auf Anfrage per Telefon oder E-Mail.
               </p>
             </div>
             <div className="mt-6 rounded-2xl bg-citrine/10 p-5 text-sm text-amethyst">

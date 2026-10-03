@@ -16,7 +16,7 @@ const TEASERS = [
   },
   {
     title: "Laden Asp",
-    text: "Verkauf / Beratung — Offen Mittwoch und Samstag",
+    text: "Verkauf / Beratung — Dreimal im Monat geöffnet",
     img: "https://heilsteinschule.swiss/media/Laden/20240226_101223.jpg",
     to: "/laden-praxis",
   },
