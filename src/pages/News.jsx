@@ -1,8 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Calendar, ArrowRight, Newspaper } from "lucide-react";
+import { Calendar, ArrowRight, Newspaper, Mail, Loader2, CheckCircle2 } from "lucide-react";
 import Reveal from "@/components/site/Reveal";
 import SectionHeading from "@/components/site/SectionHeading";
+
+const NEWSLETTER_WEBHOOK = "https://app.meisterflow.ch/api/webhooks/enquiries/a902bb23d7e98901900e3750083b670344a14683633ae15f";
 
 const NEWS = [
   {
@@ -17,7 +19,7 @@ const NEWS = [
   {
     date: "03.09.2026",
     title: "Werner Kühni in Erinnerung",
-    img: "https://heilsteinschule.swiss/media/.news_img/werner_kuehni_news.png",
+    img: "https://heilsteinschule.swiss/media/Werner%20Kühni_passt_a_way.jpeg",
     text: "R.I.P. Werner Kühni! Unser letztes Treffen — Heilstein Museum in Stockholm mit Werner Kühni.",
     to: "https://heilsteinschule.swiss/diverses/geologische-reisen/heilstein-museum-2022/",
     external: true,
@@ -35,19 +37,18 @@ const NEWS = [
   {
     date: "07.03.2026",
     title: "Rückblick der Gesundheitsmesse",
-    img: "https://heilsteinschule.swiss/media/.news_img/svnh-logo.jpg",
-    aspect: "aspect-square",
-    text: "Wir waren Aussteller an der Gesundheitsmesse der SVNH in Sempach 7.3.26 — interessante Begegnungen und freudvolle Gespräche.",
-    to: "https://www.svnh.ch/",
-    external: true,
-    cta: "Zur SVNH",
+    img: "https://heilsteinschule.swiss/media/Messe_Sempach1_2026.jpeg",
+    text: "Wir waren Aussteller an der Gesundheitsmesse der SVNH in Sempach 7.3.26 — interessante Begegnungen und freudvolle Gespräche. Unser Einblick in die wundervolle Welt der Heilsteine durfte berühren.",
+    to: null,
+    external: false,
+    cta: "",
   },
   {
     date: "01.03.2026",
     title: "Aktion 40% auf ausgewählte Armbänder",
     img: "https://heilsteinschule.swiss/media/.news_img/20240226_100437.jpg",
     aspect: "aspect-square",
-    text: "Auf ausgewählte Armbänder der Kreation diopteia. Diese Armbänder möchten DIR gerne Unterstützung und Schönheit bringen.",
+    text: "Aktuell laufende Aktion: 40% Rabatt auf ausgewählte Armbänder der Kreation diopteia. Diese Armbänder möchten DIR gerne Unterstützung und Schönheit bringen.",
     to: "https://heilstein-shop.com/action/",
     external: true,
     cta: "Zur Aktion im Shop",
@@ -65,8 +66,8 @@ const NEWS = [
   {
     date: "17.10.2025",
     title: "Zertifizierung Lehrgang Asp6",
-    img: "https://heilsteinschule.swiss/media/.news_img/zertifizierung_lehrgang_asp6_39.jpg",
-    text: "Steinheilkunde Grundausbildung — herzliche Gratulation! Klassendurchschnitt mit grandiosen 84 Punkten.",
+    img: "https://heilsteinschule.swiss/media/Zertifizierung_Lehrgang_Asp6_13.jpg",
+    text: "Steinheilkunde Grundausbildung — herzliche Gratulation! Feierliche Übergabe der Zertifikate auf der Historischen Burgruine Alt-Tierstein. Klassendurchschnitt mit grandiosen 84 Punkten.",
     to: "https://heilsteinschule.swiss/posts/zertifizierung-lehrgang-asp6-37/",
     external: true,
     cta: "Weiterlesen",
@@ -74,19 +75,49 @@ const NEWS = [
 ];
 
 const NEWSLETTER = [
-  { d: "Oktober 2025", l: "Newsletter Oktober" },
-  { d: "September 2025", l: "Newsletter September 2025" },
-  { d: "März 2025", l: "Newsletter März 2025" },
-  { d: "Januar 2025", l: "Newsletter Januar 2025" },
-  { d: "Dezember 2024", l: "Newsletter Dezember 2024" },
-  { d: "November 2024", l: "Newsletter November 2024" },
-  { d: "Juni 2024", l: "Newsletter Juni 2024" },
-  { d: "April 2024", l: "Newsletter April 2024" },
-  { d: "März 2024", l: "Newsletter März 2024" },
-  { d: "Februar 2024", l: "Newsletter Februar 2024" },
+  { d: "Oktober 2025", l: "Newsletter Oktober 2025", url: "https://heilsteinschule.swiss/modules/tiny_newsletter/web.php?n=16&a=" },
+  { d: "September 2025", l: "Newsletter September 2025", url: "https://heilsteinschule.swiss/modules/tiny_newsletter/web.php?n=15&a=" },
+  { d: "März 2025", l: "Newsletter März 2025", url: "https://heilsteinschule.swiss/modules/tiny_newsletter/web.php?n=13&a=" },
+  { d: "Januar 2025", l: "Newsletter Januar 2025", url: "https://heilsteinschule.swiss/modules/tiny_newsletter/web.php?n=11&a=" },
+  { d: "Dezember 2024", l: "Newsletter Dezember 2024", url: "https://heilsteinschule.swiss/modules/tiny_newsletter/web.php?n=10&a=" },
+  { d: "November 2024", l: "Newsletter November 2024", url: "https://heilsteinschule.swiss/modules/tiny_newsletter/web.php?n=9&a=" },
+  { d: "Juni 2024", l: "Newsletter Juni 2024", url: "https://heilsteinschule.swiss/modules/tiny_newsletter/web.php?n=8&a=" },
+  { d: "April 2024", l: "Newsletter April 2024", url: "https://heilsteinschule.swiss/modules/tiny_newsletter/web.php?n=6&a=" },
+  { d: "März 2024", l: "Newsletter März 2024", url: "https://heilsteinschule.swiss/modules/tiny_newsletter/web.php?n=4&a=" },
+  { d: "Februar 2024", l: "Newsletter Februar 2024", url: "https://heilsteinschule.swiss/modules/tiny_newsletter/web.php?n=1&a=" },
 ];
 
 export default function News() {
+  const [nlName, setNlName] = React.useState("");
+  const [nlEmail, setNlEmail] = React.useState("");
+  const [nlConsent, setNlConsent] = React.useState(false);
+  const [nlStatus, setNlStatus] = React.useState("idle");
+
+  const handleNewsletterSubmit = async (e) => {
+    e.preventDefault();
+    if (!nlEmail.trim() || !nlConsent) return;
+    setNlStatus("loading");
+    try {
+      const res = await fetch(NEWSLETTER_WEBHOOK, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          name: nlName.trim() || "Newsletter Anmeldung",
+          email: nlEmail.trim(),
+          phone: "nicht angegeben",
+          description: "Newsletter Anmeldung über die News-Seite",
+        }),
+      });
+      if (!res.ok) throw new Error("error");
+      setNlStatus("success");
+      setNlName("");
+      setNlEmail("");
+      setNlConsent(false);
+    } catch {
+      setNlStatus("error");
+    }
+  };
+
   return (
     <>
       <section className="relative overflow-hidden bg-amethyst text-white">
@@ -161,7 +192,7 @@ export default function News() {
               {NEWSLETTER.map((nl) => (
                 <a
                   key={nl.l}
-                  href="https://heilsteinschule.swiss/kontaktaufnahme/spezielles/downloads/"
+                  href={nl.url}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center justify-between rounded-xl border border-border bg-white p-4 shadow-soft transition hover:border-citrine hover:shadow-lift"
@@ -175,13 +206,71 @@ export default function News() {
               ))}
             </div>
           </Reveal>
-          <div className="mt-10 text-center">
-            <Link
-              to="/kontakt"
-              className="inline-flex items-center gap-2 rounded-full bg-amethyst px-6 py-3 text-sm font-semibold text-white transition hover:bg-amethyst-deep"
-            >
-              Newsletter anmelden <ArrowRight className="h-4 w-4" />
-            </Link>
+          {/* Newsletter Registration Form */}
+          <div className="mt-16 mx-auto max-w-xl">
+            {nlStatus === "success" ? (
+              <Reveal>
+                <div className="rounded-2xl border border-citrine/30 bg-white p-8 text-center shadow-soft">
+                  <CheckCircle2 className="mx-auto mb-4 h-12 w-12 text-citrine-deep" />
+                  <h3 className="font-heading text-xl font-bold text-amethyst">Vielen Dank!</h3>
+                  <p className="mt-2 text-sm text-muted-foreground">Ihre Newsletter-Anmeldung ist eingegangen. Wir melden uns schnellstmöglich.</p>
+                  <button
+                    onClick={() => setNlStatus("idle")}
+                    className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-citrine-deep hover:underline"
+                  >
+                    Neue Anmeldung erfassen <ArrowRight className="h-4 w-4" />
+                  </button>
+                </div>
+              </Reveal>
+            ) : (
+              <Reveal delay={0.1}>
+                <div className="rounded-2xl border border-border bg-white p-8 shadow-soft">
+                  <h3 className="font-heading text-xl font-bold text-amethyst">Newsletter abonnieren</h3>
+                  <p className="mt-2 text-sm text-muted-foreground">Erhalten Sie News, Termine und Inspirationen rund um die Heilsteinschule Schweiz.</p>
+                  <form onSubmit={handleNewsletterSubmit} className="mt-6 space-y-4">
+                    <div className="flex items-center gap-3 rounded-xl border border-border bg-quartz/40 px-4 py-3">
+                      <Mail className="h-5 w-5 shrink-0 text-citrine-deep" />
+                      <input
+                        type="text"
+                        value={nlName}
+                        onChange={(e) => setNlName(e.target.value)}
+                        placeholder="Ihr Name (optional)"
+                        className="w-full bg-transparent text-sm text-foreground outline-none placeholder:text-muted-foreground"
+                      />
+                    </div>
+                    <div className="flex items-center gap-3 rounded-xl border border-border bg-quartz/40 px-4 py-3">
+                      <Mail className="h-5 w-5 shrink-0 text-citrine-deep" />
+                      <input
+                        type="email"
+                        value={nlEmail}
+                        onChange={(e) => setNlEmail(e.target.value)}
+                        placeholder="Ihre E-Mail-Adresse"
+                        required
+                        className="w-full bg-transparent text-sm text-foreground outline-none placeholder:text-muted-foreground"
+                      />
+                    </div>
+                    <label className="flex items-start gap-3 text-xs text-muted-foreground">
+                      <input type="checkbox" checked={nlConsent} onChange={(e) => setNlConsent(e.target.checked)} required className="mt-0.5 h-4 w-4 shrink-0 rounded border-border text-citrine focus:ring-citrine/20" />
+                      <span>Ich möchte den Newsletter abonnieren und stimme der Verarbeitung meiner Daten gemäss Datenschutzerklärung zu.</span>
+                    </label>
+                    <button
+                      type="submit"
+                      disabled={nlStatus === "loading" || !nlConsent || !nlEmail.trim()}
+                      className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-amethyst px-6 py-3.5 font-semibold text-white shadow-soft transition hover:bg-amethyst-soft disabled:cursor-not-allowed disabled:opacity-60"
+                    >
+                      {nlStatus === "loading" ? (
+                        <><Loader2 className="h-4 w-4 animate-spin" /> Wird gesendet…</>
+                      ) : (
+                        <>Newsletter abonnieren <ArrowRight className="h-4 w-4" /></>
+                      )}
+                    </button>
+                    {nlStatus === "error" && (
+                      <p className="text-xs text-destructive">Beim Senden ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut.</p>
+                    )}
+                  </form>
+                </div>
+              </Reveal>
+            )}
           </div>
         </div>
       </section>

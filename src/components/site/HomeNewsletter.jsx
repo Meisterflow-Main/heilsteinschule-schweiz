@@ -19,7 +19,12 @@ export default function HomeNewsletter() {
       const res = await fetch(WEBHOOK_URL, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ type: "newsletter_signup", email: email.trim() }),
+        body: JSON.stringify({
+          name: "Newsletter Anmeldung",
+          email: email.trim(),
+          phone: "nicht angegeben",
+          description: "Newsletter Anmeldung über die Startseite",
+        }),
       });
       if (!res.ok) throw new Error("error");
       setStatus("success");
