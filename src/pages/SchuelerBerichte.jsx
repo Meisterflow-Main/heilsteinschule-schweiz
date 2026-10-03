@@ -3,6 +3,7 @@ import { ExternalLink, Phone, Heart, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import Reveal from "@/components/site/Reveal";
 import SectionHeading from "@/components/site/SectionHeading";
+import AlpenseminarReport from "@/components/site/AlpenseminarReport";
 
 const SCHUELER = [
   {
@@ -123,6 +124,11 @@ export default function SchuelerBerichte() {
             </Reveal>
           ))}
         </div>
+      </section>
+
+      {/* Alpenseminar 2025 — Full Report */}
+      <section id="alpenseminar" className="scroll-mt-24">
+        <AlpenseminarReport />
       </section>
 
       {/* CTA */}

@@ -4,6 +4,7 @@ import { Check, GraduationCap, ArrowRight, FileText, HelpCircle } from "lucide-r
 import Reveal from "@/components/site/Reveal";
 import SectionHeading from "@/components/site/SectionHeading";
 import ExcursionReports from "@/components/site/ExcursionReports";
+import TrainingLocations from "@/components/site/TrainingLocations";
 
 const VORAUSSETZUNGEN = [
   "Freude an Steinen und den Heilkräften der Natur.",
@@ -180,6 +181,9 @@ export default function Ausbildung() {
           </Reveal>
         </div>
       </section>
+
+      {/* Schulorte — Wallbach, Bern, Asp */}
+      <TrainingLocations />
 
       {/* Exkursionen & Alpenseminar (Praktischer Ausbildungsteil) */}
       <ExcursionReports />
