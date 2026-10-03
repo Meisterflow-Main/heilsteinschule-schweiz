@@ -1,13 +1,12 @@
 import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X, Phone, ChevronDown, MapPin, Gem, GraduationCap, CalendarDays, MapPinned } from "lucide-react";
+import { Menu, X, Phone, ChevronDown, MapPin, Gem, GraduationCap, CalendarDays, MapPinned, BookOpen } from "lucide-react";
 import { REGIONS } from "@/data/regions";
 
 const NAV = [
   { label: "Start", to: "/" },
   { label: "Ausbildung", to: "/ausbildung" },
   { label: "News", to: "/news" },
-  { label: "Blog", to: "/blog" },
   { label: "Online Shop", href: "https://heilstein-shop.com/" },
   { label: "Lehrfilme", to: "/lehrfilme" },
   { label: "Über uns", to: "/ueber-uns" },
@@ -24,11 +23,14 @@ export default function Navbar() {
   const [mobileLaden, setMobileLaden] = useState(false);
   const [ausbildungOpen, setAusbildungOpen] = useState(false);
   const [mobileAusbildung, setMobileAusbildung] = useState(false);
+  const [diversesOpen, setDiversesOpen] = useState(false);
+  const [mobileDiverses, setMobileDiverses] = useState(false);
   const location = useLocation();
 
   const isRegion = location.pathname.startsWith("/regionen");
   const isAusbildung = ["/ausbildung", "/schultermine", "/schulorte"].includes(location.pathname);
   const isLaden = ["/laden-praxis", "/verkaufsladen-asp", "/granit-gneis", "/armbaender-kreation-diopteia"].includes(location.pathname);
+  const isDiverses = ["/michael-gienger", "/schueler-berichte", "/brunos-buch"].includes(location.pathname);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 24);
@@ -224,6 +226,48 @@ export default function Navbar() {
                 </div>
               </div>
             </div>
+            <div
+              className="relative"
+              onMouseEnter={() => setDiversesOpen(true)}
+              onMouseLeave={() => setDiversesOpen(false)}
+            >
+              <button
+                className={`relative inline-flex whitespace-nowrap items-center gap-1 rounded-full px-2 py-2 text-xs font-medium transition ${
+                  isDiverses ? "text-amethyst" : "text-foreground/70 hover:text-amethyst"
+                }`}
+                onClick={() => setDiversesOpen((o) => !o)}
+              >
+                Diverses
+                <ChevronDown className={`h-4 w-4 transition-transform ${diversesOpen ? "rotate-180" : ""}`} />
+                {isDiverses && <span className="absolute inset-x-3 -bottom-0.5 h-px bg-citrine" />}
+              </button>
+              <div
+                className={`absolute left-0 top-full z-50 w-60 pt-2 transition-all duration-200 ${
+                  diversesOpen ? "visible opacity-100 translate-y-0" : "invisible opacity-0 translate-y-1"
+                }`}
+              >
+                <div className="glass rounded-2xl p-2 shadow-lift">
+                  <Link
+                    to="/michael-gienger"
+                    className="flex items-center gap-2 rounded-xl px-3 py-2 text-sm font-semibold text-amethyst transition hover:bg-amethyst/5"
+                  >
+                    <BookOpen className="h-4 w-4 text-citrine-deep" /> Michael Gienger
+                  </Link>
+                  <Link
+                    to="/schueler-berichte"
+                    className="flex items-center gap-2 rounded-xl px-3 py-2 text-sm text-foreground/80 transition hover:bg-amethyst/5 hover:text-amethyst"
+                  >
+                    <BookOpen className="h-3.5 w-3.5 text-citrine-deep" /> Schüler-Berichte
+                  </Link>
+                  <Link
+                    to="/brunos-buch"
+                    className="flex items-center gap-2 rounded-xl px-3 py-2 text-sm text-foreground/80 transition hover:bg-amethyst/5 hover:text-amethyst"
+                  >
+                    <BookOpen className="h-3.5 w-3.5 text-citrine-deep" /> Brunos Buch
+                  </Link>
+                </div>
+              </div>
+            </div>
           </nav>
 
           <div className="flex items-center gap-2">
@@ -378,6 +422,37 @@ export default function Navbar() {
                       {r.city}
                     </Link>
                   ))}
+                </div>
+              )}
+              <button
+                onClick={() => setMobileDiverses((o) => !o)}
+                className="flex items-center justify-between rounded-xl px-4 py-3 text-base font-medium text-foreground/80 transition hover:bg-muted"
+              >
+                <span className="inline-flex items-center gap-2">
+                  <BookOpen className="h-4 w-4 text-citrine-deep" /> Diverses
+                </span>
+                <ChevronDown className={`h-4 w-4 transition-transform ${mobileDiverses ? "rotate-180" : ""}`} />
+              </button>
+              {mobileDiverses && (
+                <div className="ml-3 rounded-xl bg-muted/50 p-1">
+                  <Link
+                    to="/michael-gienger"
+                    className="block rounded-lg px-3 py-2 text-sm font-semibold text-amethyst transition hover:bg-amethyst/5"
+                  >
+                    Michael Gienger
+                  </Link>
+                  <Link
+                    to="/schueler-berichte"
+                    className="block rounded-lg px-3 py-2 text-sm text-foreground/75 transition hover:bg-amethyst/5 hover:text-amethyst"
+                  >
+                    Schüler-Berichte
+                  </Link>
+                  <Link
+                    to="/brunos-buch"
+                    className="block rounded-lg px-3 py-2 text-sm text-foreground/75 transition hover:bg-amethyst/5 hover:text-amethyst"
+                  >
+                    Brunos Buch
+                  </Link>
                 </div>
               )}
               <a
