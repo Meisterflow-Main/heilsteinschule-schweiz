@@ -118,7 +118,10 @@ export default function RegionLanding({ region }) {
                 <li className="flex items-start gap-3"><MapPin className="mt-0.5 h-5 w-5 shrink-0 text-citrine-deep" /><span className="text-foreground/80">{r.contact.address}</span></li>
                 <li><a href={`tel:${r.contact.phone.replace(/\s/g, "")}`} className="flex items-center gap-3 text-foreground/80 transition hover:text-amethyst"><Phone className="h-5 w-5 shrink-0 text-citrine-deep" /> {r.contact.phone}</a></li>
                 <li><a href={`mailto:${r.contact.email}`} className="flex items-center gap-3 text-foreground/80 transition hover:text-amethyst"><Mail className="h-5 w-5 shrink-0 text-citrine-deep" /> {r.contact.email}</a></li>
-                <li className="flex items-start gap-3"><Clock className="mt-0.5 h-5 w-5 shrink-0 text-citrine-deep" /><span className="text-foreground/80">{r.contact.hours}</span></li>
+                <li className="flex items-start gap-3">
+                  <Clock className="mt-0.5 h-5 w-5 shrink-0 text-citrine-deep" />
+                  <Link to="/laden-praxis" className="text-citrine-deep underline underline-offset-2 hover:text-citrine">Termine / Öffnungszeiten ansehen</Link>
+                </li>
               </ul>
             </div>
             <div className="flex flex-col justify-center gap-3">

@@ -14,7 +14,7 @@ const VORAUSSETZUNGEN = [
 
 const LEISTUNGEN = [
   "Ganzjähriger Start, Dauer mindestens ¾ Jahr",
-  "Klassengrösse: 5–6 Teilnehmer pro Kurs",
+  "Klassengrösse: min. 5, max. 8 Personen",
   "Sobald 5 Schüler angemeldet sind, wird der Schulbeginn festgelegt",
   "Persönlicher Zugang zur Cloud der Heilsteinschule",
 ];
