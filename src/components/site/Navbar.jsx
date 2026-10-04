@@ -30,7 +30,7 @@ const NAV_ITEMS = [
   {
     label: "Verkaufsladen Asp",
     children: [
-      { label: "Verkaufsladen Asp", to: "/verkaufsladen-asp", icon: Gem },
+      { label: "Heilsteine Verkauf + Lager in Asp", to: "/verkaufsladen-asp", icon: Gem },
       { label: "Armbänder - Kreation diopteia", to: "/armbaender-kreation-diopteia", icon: Sparkles },
     ],
   },
