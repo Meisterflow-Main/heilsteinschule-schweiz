@@ -43,6 +43,15 @@ const NAV_ITEMS = [
       { label: "Blog", to: "/blog", icon: FileText },
     ],
   },
+  {
+    label: "Diverses",
+    children: [
+      { label: "Brunos Buch", to: "/brunos-buch", icon: BookOpen },
+      { label: "Michael Gienger", to: "/michael-gienger", icon: Users },
+      { label: "Geologische Reisen", to: "/geologische-reisen", icon: Mountain },
+      { label: "Granit & Gneis", to: "/granit-gneis", icon: Mountain },
+    ],
+  },
   { label: "Kontakt", to: "/kontakt" },
 ];
 
@@ -51,6 +60,7 @@ const ACTIVE_PATHS = {
   "Die Schule": ["/ueber-uns", "/brunos-buch", "/michael-gienger"],
   "Verkaufsladen Asp": ["/verkaufsladen-asp", "/armbaender-kreation-diopteia", "/laden-praxis"],
   "Videos & Newsletter": ["/lehrfilme", "/news", "/blog"],
+  Diverses: ["/brunos-buch", "/michael-gienger", "/geologische-reisen", "/granit-gneis"],
 };
 
 export default function Navbar() {
