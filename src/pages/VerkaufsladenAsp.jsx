@@ -3,6 +3,7 @@ import { Gem, MapPin, Phone, ExternalLink } from "lucide-react";
 import Reveal from "@/components/site/Reveal";
 import SectionHeading from "@/components/site/SectionHeading";
 import OptimizedImage from "@/components/site/OptimizedImage";
+import HeilsteineAuswahl from "@/components/site/HeilsteineAuswahl";
 
 const GALLERY_BASE = "https://heilsteinschule.swiss/media/rfg-folders/heilsteine-lager-in-asp-gallery";
 
@@ -95,6 +96,8 @@ export default function VerkaufsladenAsp() {
           ))}
         </div>
       </section>
+
+      <HeilsteineAuswahl />
 
       <section className="bg-quartz/60">
         <div className="mx-auto max-w-5xl px-4 py-16 sm:px-6">
