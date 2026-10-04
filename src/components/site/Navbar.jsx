@@ -27,6 +27,7 @@ const NAV_ITEMS = [
   },
   { label: "Informationsnachmittag", to: "/info-tag" },
   { label: "Online-Shop", to: "/online-shop" },
+  { label: "Verkaufsladen Asp", to: "/verkaufsladen-asp" },
   { label: "Shop & Praxis", to: "/laden-praxis" },
   {
     label: "Videos & Newsletter",
