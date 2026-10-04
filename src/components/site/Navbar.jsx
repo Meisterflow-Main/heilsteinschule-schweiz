@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X, Phone, ChevronDown, GraduationCap, MapPinned, CalendarDays, Mountain, Users, BookOpen, Clock, Quote, Heart, Play, Mail, FileText } from "lucide-react";
+import { Menu, X, Phone, ChevronDown, GraduationCap, MapPinned, CalendarDays, Mountain, Users, BookOpen, Clock, Quote, Heart, Play, Mail, FileText, Gem, Sparkles } from "lucide-react";
 
 const NAV_ITEMS = [
   { label: "Start", to: "/" },
@@ -27,7 +27,13 @@ const NAV_ITEMS = [
   },
   { label: "Informationsnachmittag", to: "/info-tag" },
   { label: "Online-Shop", to: "/online-shop" },
-  { label: "Verkaufsladen Asp", to: "/verkaufsladen-asp" },
+  {
+    label: "Verkaufsladen Asp",
+    children: [
+      { label: "Verkaufsladen Asp", to: "/verkaufsladen-asp", icon: Gem },
+      { label: "Armbänder - Kreation diopteia", to: "/armbaender-kreation-diopteia", icon: Sparkles },
+    ],
+  },
   { label: "Shop & Praxis", to: "/laden-praxis" },
   {
     label: "Videos & Newsletter",
@@ -43,6 +49,7 @@ const NAV_ITEMS = [
 const ACTIVE_PATHS = {
   Ausbildung: ["/ausbildung", "/schulorte", "/schultermine", "/geologische-reisen", "/schueler-berichte", "/alpenseminar-2025", "/glarnerland-engadin", "/georeise-nord-sued-2021", "/zermatt-2022", "/heilstein-museum-2022", "/anmeldung", "/ausbildung-anmeldung", "/ausbildung-anfrage"],
   "Die Schule": ["/ueber-uns", "/brunos-buch", "/michael-gienger"],
+  "Verkaufsladen Asp": ["/verkaufsladen-asp", "/armbaender-kreation-diopteia"],
   "Videos & Newsletter": ["/lehrfilme", "/news", "/blog"],
 };
 
