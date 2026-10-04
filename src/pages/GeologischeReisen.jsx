@@ -1,8 +1,42 @@
 import React from "react";
-import { Mountain, MapPin, Calendar } from "lucide-react";
+import { Link } from "react-router-dom";
+import { Mountain, MapPin, Calendar, ArrowRight } from "lucide-react";
 import Reveal from "@/components/site/Reveal";
 import SectionHeading from "@/components/site/SectionHeading";
 import OptimizedImage from "@/components/site/OptimizedImage";
+
+const REISEBERICHTE = [
+  {
+    year: "2025",
+    title: "Alpenseminar 2025",
+    detail: "Alpines Seminar in den Schweizer Alpen",
+    to: "/alpenseminar-2025",
+  },
+  {
+    year: "2022",
+    title: "Zermatt 2022",
+    detail: "Geologische Reise Umgebung Zermatt — 6 Tage",
+    to: "/zermatt-2022",
+  },
+  {
+    year: "2022",
+    title: "Heilstein Museum 2022",
+    detail: "Besuch im Heilstein Museum — 3 Tage",
+    to: "/heilstein-museum-2022",
+  },
+  {
+    year: "2021",
+    title: "Glarnerland – Unterengadin 2021",
+    detail: "Geologische Reise durch Glarnerland und Unterengadin — 8 Tage",
+    to: "/glarnerland-engadin",
+  },
+  {
+    year: "2021",
+    title: "Georeise Nord – Süd 2021",
+    detail: "Georeise von Nord nach Süd — 8 Tage",
+    to: "/georeise-nord-sued-2021",
+  },
+];
 
 const EXKURSIONEN = [
   { years: "2011 – 2021", title: "Zentralalpen", detail: "13 Exkursionen · 65 Tage" },
@@ -126,6 +160,40 @@ export default function GeologischeReisen() {
               </div>
             </Reveal>
           ))}
+        </div>
+      </section>
+
+      {/* Reiseberichte — Links zu Einzelberichten */}
+      <section>
+        <div className="mx-auto max-w-7xl px-4 py-20 sm:px-6">
+          <Reveal>
+            <SectionHeading
+              eyebrow="Einzelberichte"
+              title="Reiseberichte"
+              subtitle="Ausführliche Bildberichte ausgewählter geologischer Reisen — von Glarnerland bis Zermatt."
+            />
+          </Reveal>
+          <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {REISEBERICHTE.map((r, i) => (
+              <Reveal key={r.to} delay={(i % 3) * 0.06}>
+                <Link
+                  to={r.to}
+                  className="group flex h-full flex-col justify-between rounded-2xl border border-border bg-white p-6 shadow-soft transition hover:-translate-y-1 hover:border-citrine hover:shadow-lift"
+                >
+                  <div>
+                    <div className="flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-citrine-deep">
+                      <Calendar className="h-3.5 w-3.5" /> {r.year}
+                    </div>
+                    <h3 className="mt-2 font-heading text-lg font-semibold text-amethyst">{r.title}</h3>
+                    <p className="mt-1 text-sm text-muted-foreground">{r.detail}</p>
+                  </div>
+                  <span className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-citrine-deep transition group-hover:gap-2.5">
+                    Zum Bericht <ArrowRight className="h-4 w-4" />
+                  </span>
+                </Link>
+              </Reveal>
+            ))}
+          </div>
         </div>
       </section>
 
