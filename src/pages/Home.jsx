@@ -78,8 +78,8 @@ export default function Home() {
               <Link to="/ausbildung" className="group inline-flex items-center justify-center gap-2 rounded-full bg-citrine px-7 py-4 font-semibold text-amethyst-deep shadow-lift transition hover:bg-citrine-light">
                 Ausbildung entdecken <ArrowRight className="h-4 w-4 transition group-hover:translate-x-1" />
               </Link>
-              <Link to="/info-tag" className="inline-flex items-center justify-center gap-2 rounded-full border border-white/30 px-7 py-4 font-semibold text-white transition hover:bg-white/10">
-                <Play className="h-4 w-4" /> Kostenloser Informationsnachmittag
+              <Link to="/info-nachmittag" className="inline-flex items-center justify-center gap-2 rounded-full border border-white/30 px-7 py-4 font-semibold text-white transition hover:bg-white/10">
+                <Play className="h-4 w-4" /> Kostenloser Info-Nachmittag
               </Link>
             </div>
           </motion.div>
@@ -228,8 +228,8 @@ export default function Home() {
               <Link to="/ausbildung-anfrage" className="inline-flex items-center justify-center gap-2 rounded-full bg-citrine px-7 py-4 font-semibold text-amethyst-deep shadow-lift transition hover:bg-citrine-light">
                 Jetzt anfragen <ArrowRight className="h-4 w-4" />
               </Link>
-              <Link to="/info-tag" className="inline-flex items-center justify-center gap-2 rounded-full border border-white/30 px-7 py-4 font-semibold text-white transition hover:bg-white/10">
-                <Play className="h-4 w-4" /> Informationsnachmittag besuchen
+              <Link to="/info-nachmittag" className="inline-flex items-center justify-center gap-2 rounded-full border border-white/30 px-7 py-4 font-semibold text-white transition hover:bg-white/10">
+                <Play className="h-4 w-4" /> Info-Nachmittag besuchen
               </Link>
             </div>
           </Reveal>

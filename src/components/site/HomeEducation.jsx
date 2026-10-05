@@ -58,8 +58,8 @@ export default function HomeEducation() {
           <Link to="/ausbildung" className="inline-flex items-center justify-center gap-2 rounded-full bg-citrine px-7 py-4 font-semibold text-amethyst-deep shadow-lift transition hover:bg-citrine-light">
             Ausbildung entdecken <ArrowRight className="h-4 w-4" />
           </Link>
-          <Link to="/info-tag" className="inline-flex items-center justify-center gap-2 rounded-full border border-border px-7 py-4 font-semibold text-amethyst transition hover:bg-muted">
-            <Play className="h-4 w-4" /> Zum Informationsnachmittag
+          <Link to="/info-nachmittag" className="inline-flex items-center justify-center gap-2 rounded-full border border-border px-7 py-4 font-semibold text-amethyst transition hover:bg-muted">
+            <Play className="h-4 w-4" /> Zum Info-Nachmittag
           </Link>
         </div>
       </Reveal>

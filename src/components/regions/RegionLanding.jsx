@@ -76,7 +76,7 @@ export default function RegionLanding({ region }) {
               {r.hero.description}
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
-              <Link to="/info-tag" className="inline-flex items-center gap-2 rounded-full bg-citrine px-6 py-3 text-sm font-semibold text-amethyst-deep shadow-lift transition hover:bg-citrine-light">
+              <Link to="/info-nachmittag" className="inline-flex items-center gap-2 rounded-full bg-citrine px-6 py-3 text-sm font-semibold text-amethyst-deep shadow-lift transition hover:bg-citrine-light">
                 <Calendar className="h-4 w-4" /> Jetzt Termin buchen
               </Link>
               <Link to="/ausbildung" className="inline-flex items-center gap-2 rounded-full border border-white/30 px-6 py-3 text-sm font-semibold text-white transition hover:bg-white/10">
@@ -278,7 +278,7 @@ export default function RegionLanding({ region }) {
         <motion.div initial="hidden" whileInView="show" viewport={{ once: true, margin: "-80px" }} variants={zoomIn} className="overflow-hidden rounded-3xl bg-gradient-to-br from-amethyst to-amethyst-deep p-10 text-center text-white shadow-lift sm:p-16">
           <h2 className="font-heading text-3xl font-bold sm:text-4xl">{r.finalCta.title}</h2>
           <p className="mx-auto mt-4 max-w-xl text-base leading-relaxed text-white/80 sm:text-lg">{r.finalCta.text}</p>
-          <Link to="/info-tag" className="mt-8 inline-flex items-center gap-2 rounded-full bg-citrine px-8 py-3.5 text-sm font-semibold text-amethyst-deep shadow-lift transition hover:bg-citrine-light">
+          <Link to="/info-nachmittag" className="mt-8 inline-flex items-center gap-2 rounded-full bg-citrine px-8 py-3.5 text-sm font-semibold text-amethyst-deep shadow-lift transition hover:bg-citrine-light">
             <Calendar className="h-4 w-4" /> {r.finalCta.button}
           </Link>
         </motion.div>

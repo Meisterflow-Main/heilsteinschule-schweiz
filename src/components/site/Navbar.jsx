@@ -25,7 +25,7 @@ const NAV_ITEMS = [
       { label: "Buch", to: "/brunos-buch", icon: BookOpen },
     ],
   },
-  { label: "Informationsnachmittag", to: "/info-tag" },
+  { label: "Info-Nachmittag", to: "/info-nachmittag" },
   { label: "Online-Shop", to: "/online-shop" },
   {
     label: "Verkaufsladen Asp",

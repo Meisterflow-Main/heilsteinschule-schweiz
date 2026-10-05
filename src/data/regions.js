@@ -254,9 +254,9 @@ export const REGIONS = [
     },
     whyUs: {
       intro:
-        "Bern als Ausbildungsstandort verbindet städtische Erreichbarkeit mit der langen Tradition der Heilsteinschule Schweiz. Vom Hauptbahnhof Bern sind es nur rund 6 Gehminuten zum Schulort.",
+        "Bern als Ausbildungsstandort verbindet städtische Erreichbarkeit mit der langen Tradition der Heilsteinschule Schweiz. Vom Hauptbahnhof Bern sind es nur rund 5 Gehminuten zum Schulort.",
       reasons: [
-        { headline: "Zentral in der Bundesstadt", description: "6 Gehminuten ab Hauptbahnhof Bern." },
+        { headline: "Zentral in der Bundesstadt", description: "5 Gehminuten ab Hauptbahnhof Bern." },
         { headline: "Erfahrene Dozenten", description: "Lehrpersonen mit eigener Heilsteinpraxis." },
         { headline: "SVNH-zertifiziert", description: "Anerkannter Steinheilkunde-Abschluss." },
         { headline: "Kleine Klassen", description: "Persönliche Betreuung in Bern." },

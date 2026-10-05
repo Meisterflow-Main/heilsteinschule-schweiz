@@ -16,7 +16,7 @@ const LOCATIONS = [
     name: "Bern",
     role: "Grundausbildung & Info-Nachmittag",
     icon: GraduationCap,
-    text: "Grundausbildung und kostenlose Info-Nachmittage im selben Gebäude wie der SVNH. 6 Min. ab Hauptbahnhof.",
+    text: "Grundausbildung und kostenlose Info-Nachmittage im selben Gebäude wie der SVNH. 5 Min. ab Hauptbahnhof.",
     color: "bg-amethyst/10 text-amethyst",
   },
   {

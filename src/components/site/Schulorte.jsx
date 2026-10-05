@@ -32,8 +32,8 @@ export const STANDORTE = [
     rolle: "Grundausbildung & Info-Nachmittag · Klassengrösse min. 5, max. 8 Personen",
     tage: "Wochenende, 09:00–17:00 Uhr, 1× monatlich",
     leitung: "Ruth Rios",
-    hinweis: "Im selben Gebäude wie SVNH · 6 Min. ab HB",
-    weg: "ÖV: Vom Hauptbahnhof Bern ca. 6 Min. zu Fuss — Zug in Richtung Welle 7 verlassen, Richtung Süden zum Hirschengraben, weiter auf die Monbijoustrasse, dann rechts in die Kapellenstrasse. Hausnummer 5 links. Auto: Nur blaue Zone (1 Std.) und City West Parking. Keine eigenen Parkplätze.",
+    hinweis: "Im selben Gebäude wie SVNH · 5 Min. ab HB",
+    weg: "ÖV: Vom Hauptbahnhof Bern ca. 5 Min. zu Fuss — Richtung Süden zum Hirschengraben, weiter auf die Monbijoustrasse, dann rechts in die Kapellenstrasse. Hausnummer 5 links. Auto: Nur blaue Zone (1 Std.) und City West Parking. Keine eigenen Parkplätze.",
   },
 ];
 
