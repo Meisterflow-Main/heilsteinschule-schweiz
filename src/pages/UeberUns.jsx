@@ -290,10 +290,10 @@ export default function UeberUns() {
           <div className="grid items-center gap-10 overflow-hidden rounded-3xl border border-border bg-white shadow-lift md:grid-cols-2">
             <div className="overflow-hidden">
               <img
-                src="https://heilsteinschule.swiss/media/Brunos_Buch/20251103_132034.jpg"
+                src="https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/8a71243c0_ReisezumirselbstKstenportrt.png"
                 alt="Buch - Reise zu mir selbst - Bruno Vogler Pfeiffer"
                 loading="lazy"
-                className="h-full w-full object-cover"
+                className="h-full w-full object-contain"
               />
             </div>
             <div className="p-8 sm:p-10">

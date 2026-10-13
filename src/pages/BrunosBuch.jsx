@@ -35,9 +35,9 @@ export default function BrunosBuch() {
           <Reveal>
             <div className="overflow-hidden rounded-3xl shadow-lift">
               <img
-                src="https://heilsteinschule.swiss/media/Brunos_Buch/20251103_132034.jpg"
+                src="https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/8a71243c0_ReisezumirselbstKstenportrt.png"
                 alt="Buch - Reise zu mir selbst - Bruno Vogler Pfeiffer"
-                className="aspect-[3/4] w-full object-cover"
+                className="w-full object-contain"
               />
             </div>
           </Reveal>
