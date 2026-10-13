@@ -1,10 +1,18 @@
 import React from "react";
 import Reveal from "@/components/site/Reveal";
 import SectionHeading from "@/components/site/SectionHeading";
-import OptimizedImage from "@/components/site/OptimizedImage";
 
-// Premium HD hero image (AI-generated) — shown uncropped at its natural ratio.
-const HERO = "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/028c7a3d1_generated_image.png";
+// Real school photos (user-provided) — each shown at its natural ratio, never cropped.
+const TILES = [
+  { src: "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/42a59ef70_ChatGPTImageSep29202609_57_12PM.png", alt: "Drei Teilnehmende mit Alpenseminar-Zertifikat der Heilsteinschule", caption: "Zertifikatsübergabe Alpenseminar" },
+  { src: "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/593594f8a_WhatsAppImage2026-09-22at0205381.jpeg", alt: "Teilnehmende stossen nach dem Alpenseminar an", caption: "Abschluss des Alpenseminars" },
+  { src: "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/3dca25c83_WhatsAppImage2026-09-22at0205382.jpeg", alt: "Zwei Personen betrachten eine Mineralien-Ausstellung im Museum", caption: "Museumsbesuch mit Heilsteinen" },
+  { src: "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/5ec3573c1_ChatGPTImageSep30202602_10_51AM.png", alt: "Bruno Vogler Pfeiffer präsentiert Rohsteine in der Schule", caption: "Heilsteine in der Praxis" },
+  { src: "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/bbcecc06d_ChatGPTImageSep29202610_14_46PM.png", alt: "Edelstein-Armbänder und Rohmineralien im Verkaufsladen", caption: "Kreation diopteia & Rohsteine" },
+  { src: "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/ec6224bb6_ChatGPTImageSep29202609_43_38PM.png", alt: "Klarer Bergkristall in der Hand", caption: "Bergkristall — hautnah" },
+  { src: "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/e378a82ac_ChatGPTImageSep29202609_44_50PM.png", alt: "Schwarzes Mineral mit Gold-Einschlüssen in der Hand", caption: "Mineralbestimmung vor Ort" },
+  { video: "https://media.base44.com/videos/public/6aa92ec5274311c12da18ee6/7ce114487_WhatsAppVideo2026-09-22at0210581.mp4", alt: "Kurzvideo einer Heilstein-Exkursion", caption: "Eindruck von der Exkursion" },
+];
 
 function SwissCrossBadge({ className = "" }) {
   return (
@@ -18,39 +26,57 @@ function SwissCrossBadge({ className = "" }) {
   );
 }
 
+function Tile({ item, featured }) {
+  return (
+    <figure className={`group relative mb-4 break-inside-avoid overflow-hidden rounded-2xl bg-card shadow-soft transition duration-500 hover:shadow-lift ${featured ? "sm:col-span-2" : ""}`}>
+      {item.video ? (
+        <video
+          src={item.video}
+          aria-label={item.alt}
+          muted
+          loop
+          autoPlay
+          playsInline
+          className="block w-full"
+        />
+      ) : (
+        <img
+          src={item.src}
+          alt={item.alt}
+          loading="lazy"
+          decoding="async"
+          className="block w-full transition duration-700 group-hover:scale-[1.03]"
+        />
+      )}
+      <figcaption className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-amethyst-deep/75 to-transparent p-4">
+        <p className="text-sm font-medium text-white">{item.caption}</p>
+      </figcaption>
+    </figure>
+  );
+}
+
 export default function HomeImageCollage() {
   return (
     <section className="bg-quartz/60">
       <div className="mx-auto max-w-7xl px-4 py-24 sm:px-6">
         <Reveal>
+          <div className="mb-8 flex items-center justify-center gap-3">
+            <SwissCrossBadge />
+          </div>
           <SectionHeading
             eyebrow="Schule in Aktion"
             title="Unterricht, Exkursionen und Menschen"
-            subtitle="Eindrücke aus dem Alpenseminar, den geologischen Exkursionen und dem Schulalltag — mit Kopf, Hand, Fuss und Herz."
+            subtitle="Echte Eindrücke aus dem Alpenseminar, den geologischen Exkursionen und dem Schulalltag — mit Kopf, Hand, Fuss und Herz."
           />
         </Reveal>
 
+        {/* Masonry collage — each image keeps its natural ratio, nothing cropped */}
         <Reveal delay={0.1}>
-          <figure className="group relative mt-10 overflow-hidden rounded-3xl shadow-lift">
-            {/* HD image at its natural aspect ratio — never cropped */}
-            <OptimizedImage
-              src={HERO}
-              alt="Heilsteinschule Schweiz — Exkursion in den Schweizer Alpen mit Heilsteinen"
-              width={1600}
-              className="block w-full transition duration-700 group-hover:scale-[1.02]"
-            />
-            <div className="absolute left-4 top-4">
-              <SwissCrossBadge />
-            </div>
-            <figcaption className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-amethyst-deep/70 to-transparent p-6">
-              <p className="font-heading text-base font-semibold text-white sm:text-lg">
-                Heilsteine erleben — mit Kopf, Hand, Fuss und Herz
-              </p>
-              <p className="mt-1 text-sm text-white/80">
-                Exkursionen und Unterricht der Heilsteinschule Schweiz in den Schweizer Alpen
-              </p>
-            </figcaption>
-          </figure>
+          <div className="mt-10 columns-1 gap-4 sm:columns-2 lg:columns-3">
+            {TILES.map((item, i) => (
+              <Tile key={i} item={item} />
+            ))}
+          </div>
         </Reveal>
       </div>
     </section>
