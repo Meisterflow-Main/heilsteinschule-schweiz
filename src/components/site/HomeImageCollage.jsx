@@ -4,14 +4,16 @@ import SectionHeading from "@/components/site/SectionHeading";
 
 // Real school photos (user-provided) — each shown at its natural ratio, never cropped.
 const TILES = [
+  { src: "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/4b005ed48_WhatsAppImage2026-09-23at105952.jpeg", alt: "Teilnehmende des Alpenseminars blicken auf einen vergletscherten Berg", caption: "Alpenseminar vor dem Gletscher" },
   { src: "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/42a59ef70_ChatGPTImageSep29202609_57_12PM.png", alt: "Drei Teilnehmende mit Alpenseminar-Zertifikat der Heilsteinschule", caption: "Zertifikatsübergabe Alpenseminar" },
   { src: "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/593594f8a_WhatsAppImage2026-09-22at0205381.jpeg", alt: "Teilnehmende stossen nach dem Alpenseminar an", caption: "Abschluss des Alpenseminars" },
+  { src: "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/e4e3bc278_WhatsAppImage2026-09-22at020536.jpeg", alt: "Zwei Personen untersuchen Heilsteine mit Taschenlampe am Tisch", caption: "Mineralbestimmung im Unterricht" },
+  { src: "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/65203f027_WhatsAppImage2026-09-22at0205367.jpeg", alt: "Unterrichtsraum der Heilsteinschule mit Heilsteinen und Fachbüchern", caption: "Unterrichtsraum mit Heilsteinen" },
+  { src: "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/04bd9393b_WhatsAppImage2026-09-22at0205353.jpeg", alt: "Seminarraum der Heilsteinschule mit Ordnern und Arbeitsmaterial", caption: "Seminarraum der Heilsteinschule" },
   { src: "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/3dca25c83_WhatsAppImage2026-09-22at0205382.jpeg", alt: "Zwei Personen betrachten eine Mineralien-Ausstellung im Museum", caption: "Museumsbesuch mit Heilsteinen" },
   { src: "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/5ec3573c1_ChatGPTImageSep30202602_10_51AM.png", alt: "Bruno Vogler Pfeiffer präsentiert Rohsteine in der Schule", caption: "Heilsteine in der Praxis" },
-  { src: "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/bbcecc06d_ChatGPTImageSep29202610_14_46PM.png", alt: "Edelstein-Armbänder und Rohmineralien im Verkaufsladen", caption: "Kreation diopteia & Rohsteine" },
   { src: "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/ec6224bb6_ChatGPTImageSep29202609_43_38PM.png", alt: "Klarer Bergkristall in der Hand", caption: "Bergkristall — hautnah" },
   { src: "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/e378a82ac_ChatGPTImageSep29202609_44_50PM.png", alt: "Schwarzes Mineral mit Gold-Einschlüssen in der Hand", caption: "Mineralbestimmung vor Ort" },
-  { video: "https://media.base44.com/videos/public/6aa92ec5274311c12da18ee6/7ce114487_WhatsAppVideo2026-09-22at0210581.mp4", alt: "Kurzvideo einer Heilstein-Exkursion", caption: "Eindruck von der Exkursion" },
 ];
 
 function SwissCrossBadge({ className = "" }) {
