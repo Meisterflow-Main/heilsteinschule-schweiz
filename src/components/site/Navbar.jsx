@@ -3,7 +3,6 @@ import { Link, useLocation } from "react-router-dom";
 import { Menu, X, Phone, ChevronDown, GraduationCap, MapPinned, CalendarDays, Mountain, Users, BookOpen, Clock, Quote, Heart, Play, Mail, FileText, Gem, Sparkles, Store, ExternalLink } from "lucide-react";
 
 const NAV_ITEMS = [
-  { label: "Start", to: "/" },
   {
     label: "Ausbildung",
     children: [
@@ -52,6 +51,21 @@ const NAV_ITEMS = [
       { label: "Granit & Gneis", to: "/granit-gneis", icon: Mountain },
     ],
   },
+  {
+    label: "Regionen",
+    children: [
+      { label: "Alle Regionen", to: "/regionen", icon: MapPinned },
+      { label: "Asp", to: "/regionen/asp", icon: MapPinned },
+      { label: "Wallbach", to: "/regionen/wallbach", icon: MapPinned },
+      { label: "Bern", to: "/regionen/bern", icon: MapPinned },
+      { label: "Zürich", to: "/regionen/zuerich", icon: MapPinned },
+      { label: "Basel", to: "/regionen/basel", icon: MapPinned },
+      { label: "Aarau", to: "/regionen/aarau", icon: MapPinned },
+      { label: "Baden", to: "/regionen/baden", icon: MapPinned },
+      { label: "Brugg", to: "/regionen/brugg", icon: MapPinned },
+      { label: "Olten", to: "/regionen/olten", icon: MapPinned },
+    ],
+  },
   { label: "Kontakt", to: "/kontakt" },
 ];
 
@@ -61,6 +75,7 @@ const ACTIVE_PATHS = {
   "Verkaufsladen Asp": ["/verkaufsladen-asp", "/armbaender-kreation-diopteia", "/laden-praxis"],
   "Videos & Newsletter": ["/lehrfilme", "/news", "/blog"],
   Diverses: ["/brunos-buch", "/michael-gienger", "/geologische-reisen", "/granit-gneis"],
+  Regionen: ["/regionen"],
 };
 
 export default function Navbar() {
