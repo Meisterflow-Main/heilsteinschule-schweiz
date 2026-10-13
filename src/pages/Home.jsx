@@ -213,9 +213,8 @@ export default function Home() {
       <section className="relative overflow-hidden bg-amethyst text-white">
         <div className="relative mx-auto max-w-4xl px-4 py-24 text-center sm:px-6">
           <Reveal>
-            <div className="mb-6 inline-flex items-center gap-2 rounded-full bg-white/10 px-4 py-2">
+            <div className="mb-6 inline-flex items-center rounded-full bg-white/10 px-3 py-2">
               <SwissCross className="h-5 w-5" />
-              <span className="text-xs font-bold uppercase tracking-[0.18em] text-white">Made in Switzerland</span>
             </div>
             <h2 className="font-heading text-3xl font-bold sm:text-4xl md:text-5xl">
               Vertrauen Sie auf die <span className="text-gradient-gold">Kräfte der Natur</span>

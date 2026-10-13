@@ -1,11 +1,10 @@
 import React from "react";
-import { ShieldCheck, Users, MapPin } from "lucide-react";
+import { ShieldCheck, Users } from "lucide-react";
 
 const ITEMS = [
   { icon: ShieldCheck, label: "Seit 2011" },
   { icon: ShieldCheck, label: "SVNH-zertifiziert" },
   { icon: Users, label: "5–8 Teilnehmer" },
-  { icon: MapPin, label: "Made in Switzerland" },
 ];
 
 export default function HomeTrustBar() {

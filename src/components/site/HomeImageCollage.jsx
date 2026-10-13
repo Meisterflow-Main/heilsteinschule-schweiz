@@ -21,7 +21,6 @@ function SwissCrossBadge({ className = "" }) {
         <rect x="13" y="6" width="6" height="20" fill="#FFFFFF" />
         <rect x="6" y="13" width="20" height="6" fill="#FFFFFF" />
       </svg>
-      <span className="text-xs font-bold uppercase tracking-[0.15em] text-amethyst">Made in Switzerland</span>
     </div>
   );
 }
