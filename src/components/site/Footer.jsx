@@ -27,7 +27,7 @@ const FOOTER_GROUPS = [
   {
     title: "Shop",
     links: [
-      { label: "Online-Shop", to: "/online-shop" },
+      { label: "Online-Shop", href: "https://heilstein-shop.com/" },
       { label: "Shop & Praxis", to: "/laden-praxis" },
       { label: "Produktsortiment", to: "/laden-praxis" },
       { label: "Beratung", to: "/laden-praxis" },
@@ -88,7 +88,11 @@ export default function Footer() {
               <ul className="mt-5 space-y-3 text-sm">
                 {group.links.map((l) => (
                   <li key={l.label}>
-                    <Link to={l.to} className="text-white/70 transition hover:text-citrine-light">{l.label}</Link>
+                    {l.href ? (
+                      <a href={l.href} target="_blank" rel="noopener noreferrer" className="text-white/70 transition hover:text-citrine-light">{l.label}</a>
+                    ) : (
+                      <Link to={l.to} className="text-white/70 transition hover:text-citrine-light">{l.label}</Link>
+                    )}
                   </li>
                 ))}
               </ul>

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X, Phone, ChevronDown, GraduationCap, MapPinned, CalendarDays, Mountain, Users, BookOpen, Clock, Quote, Heart, Play, Mail, FileText, Gem, Sparkles, Store } from "lucide-react";
+import { Menu, X, Phone, ChevronDown, GraduationCap, MapPinned, CalendarDays, Mountain, Users, BookOpen, Clock, Quote, Heart, Play, Mail, FileText, Gem, Sparkles, Store, ExternalLink } from "lucide-react";
 
 const NAV_ITEMS = [
   { label: "Start", to: "/" },
@@ -26,7 +26,7 @@ const NAV_ITEMS = [
     ],
   },
   { label: "Info-Nachmittag", to: "/info-nachmittag" },
-  { label: "Online-Shop", to: "/online-shop" },
+  { label: "Online-Shop", href: "https://heilstein-shop.com/" },
   {
     label: "Verkaufsladen Asp",
     children: [
@@ -124,6 +124,14 @@ export default function Navbar() {
                   </div>
                 );
               }
+              if (item.href) {
+                return (
+                  <a key={item.label} href={item.href} target="_blank" rel="noopener noreferrer" className="relative inline-flex items-center gap-1 whitespace-nowrap rounded-full px-2 py-2 text-xs font-medium text-foreground/70 transition hover:text-amethyst">
+                    {item.label}
+                    <ExternalLink className="h-3 w-3" />
+                  </a>
+                );
+              }
               return (
                 <Link key={item.label} to={item.to} className={`relative whitespace-nowrap rounded-full px-2 py-2 text-xs font-medium transition ${active ? "text-amethyst" : "text-foreground/70 hover:text-amethyst"}`}>
                   {item.label}
@@ -164,6 +172,14 @@ export default function Navbar() {
                         </div>
                       )}
                     </div>
+                  );
+                }
+                if (item.href) {
+                  return (
+                    <a key={item.label} href={item.href} target="_blank" rel="noopener noreferrer" className="flex items-center justify-between rounded-xl px-4 py-3 text-base font-medium text-foreground/80 transition hover:bg-muted">
+                      {item.label}
+                      <ExternalLink className="h-4 w-4 text-citrine-deep" />
+                    </a>
                   );
                 }
                 const active = isItemActive(item);
