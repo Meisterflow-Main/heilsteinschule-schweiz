@@ -352,9 +352,9 @@ export const REGIONS = [
     },
     whyUs: {
       intro:
-        "Zürich ist über die A1 und mit der S-Bahn gut ins Fricktal erreichbar. Der Schulstandort Wallbach liegt von Zürich aus in rund 50 Autominuten, mit dem öffentlichen Verkehr etwa eine Stunde. So profitieren Sie von der Grossstadt aus dennoch von persönlicher Betreuung und kleinen Klassen.",
+        "Zürich ist über die A1 und mit der S-Bahn gut ins Fricktal erreichbar. Der Schulstandort Wallbach liegt von Zürich aus in ca. 50 Autominuten, mit dem öffentlichen Verkehr etwa eine Stunde. So profitieren Sie von der Grossstadt aus dennoch von persönlicher Betreuung und kleinen Klassen.",
       reasons: [
-        { headline: "Schnell ab Zürich", description: "Wallbach im Fricktal in rund 50 Minuten." },
+        { headline: "Schnell ab Zürich", description: "Wallbach im Fricktal in ca. 50 Minuten." },
         { headline: "Ruhiger Lernort", description: "Wallbach liegt idyllisch an der Rheinstrasse im Fricktal." },
         { headline: "SVNH-zertifiziert", description: "Anerkannter Steinheilkunde-Abschluss." },
         { headline: "Kleine Klassen", description: "Persönliche Betreuung statt Anonymität." },
@@ -444,9 +444,9 @@ export const REGIONS = [
     },
     whyUs: {
       intro:
-        "Basel ist über die A3 und das Rheintal schnell im Fricktal. Der Schulstandort Wallbach liegt von Basel aus in rund 40 Autominuten. So profitieren Sie von der Stadt aus dennoch von persönlicher Betreuung.",
+        "Basel ist über die A3 und das Rheintal schnell im Fricktal. Der Schulstandort Wallbach liegt von Basel aus in ca. 25 Autominuten. So profitieren Sie von der Stadt aus dennoch von persönlicher Betreuung.",
       reasons: [
-        { headline: "Schnell ab Basel", description: "Wallbach im Fricktal in rund 40 Minuten." },
+        { headline: "Schnell ab Basel", description: "Wallbach im Fricktal in ca. 25 Minuten." },
         { headline: "Ruhiger Lernort", description: "Wallbach liegt idyllisch an der Rheinstrasse im Fricktal." },
         { headline: "SVNH-zertifiziert", description: "Anerkannter Steinheilkunde-Abschluss." },
         { headline: "Kleine Klassen", description: "Persönliche Betreuung in Wallbach." },
@@ -536,9 +536,9 @@ export const REGIONS = [
     },
     whyUs: {
       intro:
-        "Aarau liegt als Kantonshauptstadt zentral und ist über die A1 schnell im Fricktal. Der Schulstandort Wallbach liegt von Aarau aus in rund 30 Autominuten. So verbinden Sie städtisches Leben mit naturverbundener Steinheilkunde.",
+        "Aarau liegt als Kantonshauptstadt zentral und ist über die A1 schnell im Fricktal. Der Schulstandort Wallbach liegt von Aarau aus in ca. 35–45 Autominuten. So verbinden Sie städtisches Leben mit naturverbundener Steinheilkunde.",
       reasons: [
-        { headline: "Schnell ab Aarau", description: "Wallbach im Fricktal in rund 30 Minuten." },
+        { headline: "Schnell ab Aarau", description: "Wallbach im Fricktal in ca. 35–45 Minuten." },
         { headline: "Ruhiger Lernort", description: "Wallbach liegt idyllisch an der Rheinstrasse im Fricktal." },
         { headline: "SVNH-zertifiziert", description: "Anerkannter Steinheilkunde-Abschluss." },
         { headline: "Kleine Klassen", description: "Persönliche Betreuung in Wallbach." },
@@ -628,9 +628,9 @@ export const REGIONS = [
     },
     whyUs: {
       intro:
-        "Baden liegt verkehrsgünstig im Limmattal und ist über die A1 schnell im Fricktal. Der Schulstandort Wallbach liegt von Baden aus in rund 30 Autominuten. So profitieren Sie von der Thermalstadt aus von persönlicher Betreuung.",
+        "Baden liegt verkehrsgünstig im Limmattal und ist über die A1 schnell im Fricktal. Der Schulstandort Wallbach liegt von Baden aus in ca. 40–45 Autominuten. So profitieren Sie von der Thermalstadt aus von persönlicher Betreuung.",
       reasons: [
-        { headline: "Schnell ab Baden", description: "Wallbach im Fricktal in rund 30 Minuten." },
+        { headline: "Schnell ab Baden", description: "Wallbach im Fricktal in ca. 40–45 Minuten." },
         { headline: "Ruhiger Lernort", description: "Wallbach liegt idyllisch an der Rheinstrasse im Fricktal." },
         { headline: "SVNH-zertifiziert", description: "Anerkannter Steinheilkunde-Abschluss." },
         { headline: "Kleine Klassen", description: "Persönliche Betreuung in Wallbach." },
@@ -720,9 +720,9 @@ export const REGIONS = [
     },
     whyUs: {
       intro:
-        "Brugg liegt am Zusammenfluss von Aare, Reuss und Limmat und ist schnell im Fricktal. Der Schulstandort Wallbach liegt von Brugg aus in rund 25 Autominuten. So profitieren Sie von der historischen Stadt aus von persönlicher Betreuung.",
+        "Brugg liegt am Zusammenfluss von Aare, Reuss und Limmat und ist schnell im Fricktal. Der Schulstandort Wallbach liegt von Brugg aus in ca. 30–35 Autominuten. So profitieren Sie von der historischen Stadt aus von persönlicher Betreuung.",
       reasons: [
-        { headline: "Schnell ab Brugg", description: "Wallbach im Fricktal in rund 25 Minuten." },
+        { headline: "Schnell ab Brugg", description: "Wallbach im Fricktal in ca. 30–35 Minuten." },
         { headline: "Ruhiger Lernort", description: "Wallbach liegt idyllisch an der Rheinstrasse im Fricktal." },
         { headline: "SVNH-zertifiziert", description: "Anerkannter Steinheilkunde-Abschluss." },
         { headline: "Kleine Klassen", description: "Persönliche Betreuung in Wallbach." },
@@ -812,9 +812,9 @@ export const REGIONS = [
     },
     whyUs: {
       intro:
-        "Olten liegt als Eisenbahnknotenpunkt zentral und ist über die A1 schnell im Fricktal. Der Schulstandort Wallbach liegt von Olten aus in rund 35 Autominuten. So profitieren Sie von der Stadt aus von persönlicher Betreuung.",
+        "Olten liegt als Eisenbahnknotenpunkt zentral und ist über die A1 schnell im Fricktal. Der Schulstandort Wallbach liegt von Olten aus in ca. 40–50 Autominuten. So profitieren Sie von der Stadt aus von persönlicher Betreuung.",
       reasons: [
-        { headline: "Gut ab Olten erreichbar", description: "Wallbach im Fricktal in rund 35 Minuten." },
+        { headline: "Gut ab Olten erreichbar", description: "Wallbach im Fricktal in ca. 40–50 Minuten." },
         { headline: "Ruhiger Lernort", description: "Wallbach liegt idyllisch an der Rheinstrasse im Fricktal." },
         { headline: "SVNH-zertifiziert", description: "Anerkannter Steinheilkunde-Abschluss." },
         { headline: "Kleine Klassen", description: "Persönliche Betreuung in Wallbach." },
