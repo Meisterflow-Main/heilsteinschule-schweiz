@@ -106,7 +106,7 @@ export default function Home() {
       <section className="relative -mt-8 bg-amethyst-deep pb-20 text-center">
         <div className="mx-auto max-w-7xl px-4 sm:px-6">
           <Reveal>
-            <Link to="/#die-schule" className="inline-flex items-center gap-2 text-sm font-semibold text-citrine-light underline underline-offset-4 hover:text-citrine">
+            <Link to="/ueber-uns" className="inline-flex items-center gap-2 text-sm font-semibold text-citrine-light underline underline-offset-4 hover:text-citrine">
               Mehr über die Geschichte der Schule <ArrowRight className="h-4 w-4" />
             </Link>
           </Reveal>
@@ -135,7 +135,7 @@ export default function Home() {
       </section>
 
       {/* 7. SCHOOL & FOUNDER TEASER */}
-      <section id="die-schule" className="scroll-mt-24 bg-quartz/60">
+      <section className="bg-quartz/60">
         <div className="mx-auto max-w-7xl px-4 py-24 sm:px-6">
           <div className="grid items-center gap-12 lg:grid-cols-2">
             <Reveal>
