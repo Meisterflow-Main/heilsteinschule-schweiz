@@ -48,7 +48,7 @@ const NEWS = [
     date: "01.03.2026",
     title: "Aktion 40% auf ausgewählte Armbänder",
     img: "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/f4acbf042_ChatGPTImageSep29202610_14_46PM.png",
-    aspect: "aspect-square",
+    fit: "contain",
     text: "Aktuell laufende Aktion: 40% Rabatt auf ausgewählte Armbänder der Kreation diopteia. Diese Armbänder möchten DIR gerne Unterstützung und Schönheit bringen.",
     to: "https://heilstein-shop.com/action/",
     external: true,
@@ -146,7 +146,7 @@ export default function News() {
             <Reveal key={i} delay={(i % 3) * 0.08}>
               <article className="group flex h-full flex-col overflow-hidden rounded-2xl border border-border bg-white shadow-soft transition hover:-translate-y-1 hover:shadow-lift">
                 <div className={`${n.aspect ?? "aspect-[16/10]"} overflow-hidden bg-muted`}>
-                  <OptimizedImage src={n.img} width={800} alt={n.title} className={`h-full w-full object-cover transition duration-700 group-hover:scale-105 ${n.objectPos ?? ""}`} />
+                  <OptimizedImage src={n.img} width={800} alt={n.title} className={`h-full w-full ${n.fit === "contain" ? "object-contain" : "object-cover"} transition duration-700 ${n.fit === "contain" ? "" : "group-hover:scale-105"} ${n.objectPos ?? ""}`} />
                 </div>
                 <div className="flex flex-1 flex-col p-5">
                   <div className="flex items-center gap-2 text-xs text-muted-foreground">
