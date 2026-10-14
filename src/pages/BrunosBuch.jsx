@@ -35,7 +35,7 @@ export default function BrunosBuch() {
           <Reveal>
             <div className="overflow-hidden rounded-3xl shadow-lift">
               <img
-                src="https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/8a71243c0_ReisezumirselbstKstenportrt.png"
+                src="https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/9bef8f5de_Reisezumirselbst_MediterraneLebensreise.png"
                 alt="Buch - Reise zu mir selbst - Bruno Vogler Pfeiffer"
                 className="w-full object-contain"
               />
