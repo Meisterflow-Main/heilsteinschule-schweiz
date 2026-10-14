@@ -42,7 +42,7 @@ export default function BrunosBuch() {
             </div>
           </Reveal>
           <Reveal delay={0.1}>
-            <SectionHeading center={false} eyebrow="ISBN 9798269951614" title="Reise zu mir selbst" />
+            <SectionHeading center={false} title="Reise zu mir selbst" />
             <p className="mt-5 text-base leading-relaxed text-muted-foreground">
               Eine Lebensgeschichte zwischen Werkbank und Uniform: Aufgewachsen in der Schweiz der
               1950er/60er Jahre, führt der Weg vom Handwerk zur Polizei – und wieder zurück zu den
