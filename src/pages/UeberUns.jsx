@@ -181,6 +181,17 @@ export default function UeberUns() {
         </div>
       </section>
 
+      {/* Meine Reise */}
+      <section className="mx-auto max-w-7xl px-4 py-20 sm:px-6">
+        <Reveal>
+          <SectionHeading
+            eyebrow="Meine Reise"
+            title="Der Weg zur Heilsteinschule"
+            subtitle="Vier Stationen aus dem Leben von Bruno Vogler Pfeiffer — vom Handwerker über den Dienst zum Gründer der Heilsteinschule Schweiz."
+          />
+        </Reveal>
+      </section>
+
       {/* Team */}
       <section id="team" className="scroll-mt-24 mx-auto max-w-7xl px-4 py-20 sm:px-6">
         <Reveal>
