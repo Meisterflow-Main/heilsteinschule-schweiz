@@ -69,6 +69,7 @@ export const REGIONS = [
           title: "Info-Nachmittag Asp",
           description:
             "Kostenlos und unverbindlich: Am Info-Nachmittag in Asp lernen Sie die Schule, das Dozententeam und die Steinheilkunde kennen – ideal, bevor Sie sich für die Ausbildung entscheiden.",
+          link: "/info-nachmittag",
         },
       ],
     },
@@ -159,6 +160,7 @@ export const REGIONS = [
           title: "Info-Nachmittag in Asp oder Bern",
           description:
             "Kostenlose Info-Nachmittage finden in Asp und Bern statt – ideal, um vor der Anmeldung die Schule, das Dozententeam und die Steinheilkunde unverbindlich kennenzulernen.",
+          link: "/info-nachmittag",
         },
       ],
     },
@@ -249,6 +251,7 @@ export const REGIONS = [
           title: "Info-Nachmittag Bern",
           description:
             "Am kostenlosen Info-Nachmittag in Bern lernen Sie die Heilsteinschule, das Dozententeam und die Steinheilkunde unverbindlich kennen – ideal zum Schnuppern.",
+          link: "/info-nachmittag",
         },
       ],
     },
@@ -339,6 +342,7 @@ export const REGIONS = [
           title: "Info-Nachmittag für Zürich",
           description:
             "Kostenlose Info-Nachmittage finden in Asp und Bern statt – ideal für Interessierte aus Zürich, um die Heilsteinschule und die Steinheilkunde unverbindlich kennenzulernen.",
+          link: "/info-nachmittag",
         },
       ],
     },
@@ -429,6 +433,7 @@ export const REGIONS = [
           title: "Info-Nachmittag für Basel",
           description:
             "Am kostenlosen Info-Nachmittag in Asp oder Bern lernen Sie die Heilsteinschule und die Steinheilkunde unverbindlich kennen – ideal für Interessierte aus Basel.",
+          link: "/info-nachmittag",
         },
       ],
     },
@@ -519,6 +524,7 @@ export const REGIONS = [
           title: "Info-Nachmittag für Aarau",
           description:
             "Am kostenlosen Info-Nachmittag in Asp oder Bern lernen Sie die Heilsteinschule und die Steinheilkunde unverbindlich kennen – ideal für Interessierte aus Aarau.",
+          link: "/info-nachmittag",
         },
       ],
     },
@@ -609,6 +615,7 @@ export const REGIONS = [
           title: "Info-Nachmittag für Baden",
           description:
             "Am kostenlosen Info-Nachmittag in Asp oder Bern lernen Sie die Heilsteinschule und die Steinheilkunde unverbindlich kennen – ideal für Interessierte aus Baden.",
+          link: "/info-nachmittag",
         },
       ],
     },
@@ -699,6 +706,7 @@ export const REGIONS = [
           title: "Info-Nachmittag für Brugg",
           description:
             "Am kostenlosen Info-Nachmittag in Asp oder Bern lernen Sie die Heilsteinschule und die Steinheilkunde unverbindlich kennen – ideal für Interessierte aus Brugg.",
+          link: "/info-nachmittag",
         },
       ],
     },
@@ -789,6 +797,7 @@ export const REGIONS = [
           title: "Info-Nachmittag für Olten",
           description:
             "Am kostenlosen Info-Nachmittag in Asp oder Bern lernen Sie die Heilsteinschule und die Steinheilkunde unverbindlich kennen – ideal für Interessierte aus Olten.",
+          link: "/info-nachmittag",
         },
       ],
     },

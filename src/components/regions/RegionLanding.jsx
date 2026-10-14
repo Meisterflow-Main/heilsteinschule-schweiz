@@ -148,7 +148,7 @@ export default function RegionLanding({ region }) {
               <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-amethyst/10"><Sparkles className="h-6 w-6 text-amethyst" /></div>
               <h3 className="font-heading text-lg font-bold text-amethyst">{s.title}</h3>
               <p className="mt-2 flex-1 text-sm leading-relaxed text-muted-foreground">{s.description}</p>
-              <Link to="/ausbildung" className="mt-5 inline-flex items-center gap-1 text-sm font-semibold text-citrine-deep">Mehr erfahren <ArrowRight className="h-4 w-4 transition group-hover:translate-x-1" /></Link>
+              <Link to={s.link || "/ausbildung"} className="mt-5 inline-flex items-center gap-1 text-sm font-semibold text-citrine-deep">Mehr erfahren <ArrowRight className="h-4 w-4 transition group-hover:translate-x-1" /></Link>
             </motion.div>
           ))}
         </motion.div>
