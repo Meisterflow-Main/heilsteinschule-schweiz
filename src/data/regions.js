@@ -64,6 +64,7 @@ export const REGIONS = [
           title: "Alpenseminar",
           description:
             "Das Alpenseminar ist der praktische Ausbildungsteil und obligatorisch für das Schulzertifikat. Vier Übernachtungen mit Frühstück und Abendessen vertiefen das Erlernte in den Schweizer Alpen.",
+          link: "/ausbildung#exkursionen",
         },
         {
           title: "Info-Nachmittag Asp",
@@ -155,6 +156,7 @@ export const REGIONS = [
           title: "Alpenseminar in den Bergen",
           description:
             "Das praktische Alpenseminar vertieft das Wissen aus Wallbach mit vier Übernachtungen in den Alpen. Es ist obligatorisch für das Schulzertifikat der Heilsteinschule.",
+          link: "/ausbildung#exkursionen",
         },
         {
           title: "Info-Nachmittag in Asp oder Bern",
@@ -246,6 +248,7 @@ export const REGIONS = [
           title: "Alpenseminar",
           description:
             "Das Alpenseminar ergänzt die Berner Ausbildung mit vier Übernachtungen in den Bergen. Dieser praktische Teil ist obligatorisch für das Schulzertifikat.",
+          link: "/ausbildung#exkursionen",
         },
         {
           title: "Info-Nachmittag Bern",
@@ -337,6 +340,7 @@ export const REGIONS = [
           title: "Alpenseminar",
           description:
             "Das Alpenseminar vertieft die Ausbildung mit vier Übernachtungen in den Bergen und ist obligatorisch für das Schulzertifikat der Heilsteinschule.",
+          link: "/ausbildung#exkursionen",
         },
         {
           title: "Info-Nachmittag für Zürich",
@@ -428,6 +432,7 @@ export const REGIONS = [
           title: "Alpenseminar",
           description:
             "Das Alpenseminar vertieft die Basler Ausbildung mit vier Übernachtungen in den Bergen und ist obligatorisch für das Schulzertifikat der Heilsteinschule.",
+          link: "/ausbildung#exkursionen",
         },
         {
           title: "Info-Nachmittag für Basel",
@@ -519,6 +524,7 @@ export const REGIONS = [
           title: "Alpenseminar",
           description:
             "Das Alpenseminar vertieft die Aarauer Ausbildung mit vier Übernachtungen in den Bergen und ist obligatorisch für das Schulzertifikat der Heilsteinschule.",
+          link: "/ausbildung#exkursionen",
         },
         {
           title: "Info-Nachmittag für Aarau",
@@ -610,6 +616,7 @@ export const REGIONS = [
           title: "Alpenseminar",
           description:
             "Das Alpenseminar vertieft die Badener Ausbildung mit vier Übernachtungen in den Bergen und ist obligatorisch für das Schulzertifikat der Heilsteinschule.",
+          link: "/ausbildung#exkursionen",
         },
         {
           title: "Info-Nachmittag für Baden",
@@ -701,6 +708,7 @@ export const REGIONS = [
           title: "Alpenseminar",
           description:
             "Das Alpenseminar vertieft die Brugger Ausbildung mit vier Übernachtungen in den Bergen und ist obligatorisch für das Schulzertifikat der Heilsteinschule.",
+          link: "/ausbildung#exkursionen",
         },
         {
           title: "Info-Nachmittag für Brugg",
@@ -792,6 +800,7 @@ export const REGIONS = [
           title: "Alpenseminar",
           description:
             "Das Alpenseminar vertieft die Oltner Ausbildung mit vier Übernachtungen in den Bergen und ist obligatorisch für das Schulzertifikat der Heilsteinschule.",
+          link: "/ausbildung#exkursionen",
         },
         {
           title: "Info-Nachmittag für Olten",
