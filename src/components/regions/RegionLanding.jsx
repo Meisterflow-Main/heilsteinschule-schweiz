@@ -186,7 +186,9 @@ export default function RegionLanding({ region }) {
           <div className="grid gap-8 lg:grid-cols-2 lg:items-center">
             <div>
               <h2 className="font-heading text-3xl font-bold sm:text-4xl">Ausbildungskosten</h2>
-              <p className="mt-4 text-base leading-relaxed text-white/80 sm:text-lg">{r.costs.intro}</p>
+              <p className="mt-4 text-base leading-relaxed text-white/80 sm:text-lg">
+                Die SVNH-zertifizierte Ausbildung kostet CHF 4250 inklusive Schulungsunterlagen und Zertifizierung, zahlbar in 2 Raten. Die Anzahlung von CHF 250 reserviert Ihren Platz.
+              </p>
               <Link to="/kontakt" className="mt-6 inline-flex items-center gap-2 rounded-full bg-citrine px-6 py-3 text-sm font-semibold text-amethyst-deep transition hover:bg-citrine-light">
                 {r.costs.cta} <ArrowRight className="h-4 w-4" />
               </Link>
