@@ -185,7 +185,7 @@ export default function RegionLanding({ region }) {
         <motion.div initial="hidden" whileInView="show" viewport={{ once: true, margin: "-80px" }} variants={fadeUp} className="overflow-hidden rounded-3xl bg-amethyst p-8 text-white shadow-lift lg:p-12">
           <div className="grid gap-8 lg:grid-cols-2 lg:items-center">
             <div>
-              <h2 className="font-heading text-3xl font-bold sm:text-4xl">Ausbildungskosten in {r.city}</h2>
+              <h2 className="font-heading text-3xl font-bold sm:text-4xl">Ausbildungskosten</h2>
               <p className="mt-4 text-base leading-relaxed text-white/80 sm:text-lg">{r.costs.intro}</p>
               <Link to="/kontakt" className="mt-6 inline-flex items-center gap-2 rounded-full bg-citrine px-6 py-3 text-sm font-semibold text-amethyst-deep transition hover:bg-citrine-light">
                 {r.costs.cta} <ArrowRight className="h-4 w-4" />
