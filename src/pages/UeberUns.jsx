@@ -106,9 +106,25 @@ export default function UeberUns() {
               Mit Herz, Hand, Kopf und Fuss zum <span className="text-gradient-gold">Steinheilpraktiker</span>
             </h1>
             <p className="mt-5 max-w-xl text-lg text-white/80">
-              Wie Heilsteine zum Lebensbegleiter werden — ein Interview mit dem Gründer der
-              Heilsteinschule Schweiz. Erfahren Sie mehr über die zentralen Werte und Prinzipien der Schule.
+              Die Heilsteinschule Schweiz vermittelt seit 2011 die analytische Steinheilkunde nach
+              Michael Gienger — mit Kopf, Herz, Hand und Fuss. Wir bilden Steinheilpraktikerinnen und
+              Steinheilpraktiker aus, die Heilsteine als verlässliche Lebensbegleiter verstehen und
+              einsetzen. Erfahren Sie mehr über unsere Werte, unser Team und unsere Ausbildung.
             </p>
+            <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+              <Link
+                to="/ausbildung"
+                className="inline-flex items-center justify-center gap-2 rounded-full bg-citrine px-7 py-4 font-semibold text-amethyst-deep shadow-lift transition hover:bg-citrine-light"
+              >
+                Zur Ausbildung <ArrowRight className="h-4 w-4" />
+              </Link>
+              <Link
+                to="/info-nachmittag"
+                className="inline-flex items-center justify-center gap-2 rounded-full border border-white/30 px-7 py-4 font-semibold text-white transition hover:bg-white/10"
+              >
+                Info-Nachmittag
+              </Link>
+            </div>
           </Reveal>
         </div>
       </section>
