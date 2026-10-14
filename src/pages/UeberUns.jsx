@@ -311,7 +311,7 @@ export default function UeberUns() {
           <div className="grid items-center gap-10 overflow-hidden rounded-3xl border border-border bg-white shadow-lift md:grid-cols-2">
             <div className="overflow-hidden">
               <img
-                src="https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/8a71243c0_ReisezumirselbstKstenportrt.png"
+                src="https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/747d5b7a3_Reisezumirselbst_MediterraneLebensreise.png"
                 alt="Buch - Reise zu mir selbst - Bruno Vogler Pfeiffer"
                 loading="lazy"
                 className="h-full w-full object-contain"
