@@ -322,7 +322,7 @@ export default function UeberUns() {
                 <BookOpen className="h-3.5 w-3.5" /> Jetzt im Handel
               </div>
               <h3 className="font-heading text-2xl font-semibold text-amethyst">Reise zu mir selbst</h3>
-              <p className="mt-1 text-sm text-muted-foreground">ISBN 9798269951614 · Bruno Vogler Pfeiffer</p>
+              <p className="mt-1 text-sm text-muted-foreground">Bruno Vogler Pfeiffer</p>
               <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
                 Die Lebensgeschichte des Schulgründers — vom Handwerk über die Polizei zurück zu den
                 eigenen Wurzeln, über Reisen, Heilung und die Hinwendung zur Steinheilkunde. Eine
