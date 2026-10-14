@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { Calendar, ArrowRight, Newspaper, Mail, Loader2, CheckCircle2 } from "lucide-react";
 import Reveal from "@/components/site/Reveal";
 import SectionHeading from "@/components/site/SectionHeading";
+import OptimizedImage from "@/components/site/OptimizedImage";
 
 const NEWSLETTER_WEBHOOK = "https://app.meisterflow.ch/api/webhooks/enquiries/a902bb23d7e98901900e3750083b670344a14683633ae15f";
 
@@ -122,7 +123,7 @@ export default function News() {
     <>
       <section className="relative overflow-hidden bg-amethyst text-white">
         <div className="absolute inset-0 opacity-20">
-          <img src="https://heilsteinschule.swiss/media/Ruth_Bruno_Aug_25_2.jpg" alt="" className="h-full w-full object-cover" />
+          <OptimizedImage src="https://heilsteinschule.swiss/media/Ruth_Bruno_Aug_25_2.jpg" width={1600} alt="" className="h-full w-full object-cover" />
         </div>
         <div className="absolute inset-0 bg-gradient-to-r from-amethyst-deep via-amethyst/80 to-amethyst/40" />
         <div className="relative mx-auto max-w-7xl px-4 py-24 sm:px-6">
@@ -145,7 +146,7 @@ export default function News() {
             <Reveal key={i} delay={(i % 3) * 0.08}>
               <article className="group flex h-full flex-col overflow-hidden rounded-2xl border border-border bg-white shadow-soft transition hover:-translate-y-1 hover:shadow-lift">
                 <div className={`${n.aspect ?? "aspect-[16/10]"} overflow-hidden bg-muted`}>
-                  <img src={n.img} alt={n.title} loading="lazy" className={`h-full w-full object-cover transition duration-700 group-hover:scale-105 ${n.objectPos ?? ""}`} />
+                  <OptimizedImage src={n.img} width={800} alt={n.title} className={`h-full w-full object-cover transition duration-700 group-hover:scale-105 ${n.objectPos ?? ""}`} />
                 </div>
                 <div className="flex flex-1 flex-col p-5">
                   <div className="flex items-center gap-2 text-xs text-muted-foreground">
