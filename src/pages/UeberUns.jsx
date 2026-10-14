@@ -181,15 +181,9 @@ export default function UeberUns() {
         </div>
       </section>
 
-      {/* Meine Reise */}
-      <section className="mx-auto max-w-7xl px-4 py-20 sm:px-6">
-        <Reveal>
-          <SectionHeading
-            eyebrow="Meine Reise"
-            title="Der Weg zur Heilsteinschule"
-            subtitle="Vier Stationen aus dem Leben von Bruno Vogler Pfeiffer — vom Handwerker über den Dienst zum Gründer der Heilsteinschule Schweiz."
-          />
-        </Reveal>
+      {/* Historie Timeline */}
+      <section id="timeline" className="scroll-mt-24">
+        <HistoryTimeline />
       </section>
 
       {/* Team */}
@@ -348,11 +342,6 @@ export default function UeberUns() {
       {/* Werner Kühni — In liebevoller Erinnerung */}
       <section id="werner-kuehni" className="scroll-mt-24">
         <WernerKuehniMemorial />
-      </section>
-
-      {/* Historie Timeline */}
-      <section id="timeline" className="scroll-mt-24">
-        <HistoryTimeline />
       </section>
 
       {/* CTA */}
