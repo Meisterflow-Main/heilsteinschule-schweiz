@@ -29,7 +29,7 @@ const NEWS = [
   {
     date: "11.07.2026",
     title: "Neuer Standort Wallbach AG",
-    img: "https://heilsteinschule.swiss/media/.news_img/wallbach_innen.jpeg",
+    img: "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/4a4023a9b_ChatGPTImageSep29202610_11_06PM.png",
     text: "Neuer Ausbildungsstandort der Heilsteinschule Schweiz im Fricktal. Geplanter Lehrgangsstart: Donnerstag, 15. Oktober 2026.",
     to: "/ausbildung",
     external: false,
