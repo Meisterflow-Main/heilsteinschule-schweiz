@@ -265,7 +265,7 @@ export const REGIONS = [
         { headline: "Zentral in der Bundesstadt", description: "5 Gehminuten ab Hauptbahnhof Bern." },
         { headline: "Erfahrene Dozenten", description: "Lehrpersonen mit eigener Heilsteinpraxis." },
         { headline: "SVNH-zertifiziert", description: "Anerkannter Steinheilkunde-Abschluss." },
-        { headline: "Kleine Klassen", description: "Persönliche Betreuung in Bern." },
+        { headline: "Kleine Klassen", description: "Persönliche Betreuung in Bern – min. 5, max. 8 Personen." },
         { headline: "Flexible Schultage", description: "Nachholen an anderen Standorten möglich." },
       ],
       cta: "Jetzt Offerte anfordern",
