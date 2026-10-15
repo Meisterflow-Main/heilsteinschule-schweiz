@@ -99,6 +99,15 @@ export default function Home() {
 
       {/* 5. IMAGE COLLAGE */}
       <HomeImageCollage />
+      <section className="bg-quartz/60 pb-20 text-center">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6">
+          <Reveal>
+            <Link to="/ueber-uns" className="inline-flex items-center gap-2 text-sm font-semibold text-citrine-deep underline underline-offset-4 hover:text-citrine">
+              Zur Schule <ArrowRight className="h-4 w-4" />
+            </Link>
+          </Reveal>
+        </div>
+      </section>
 
       {/* 6. VIDEO */}
       <section className="mx-auto max-w-5xl px-4 py-24 sm:px-6">
