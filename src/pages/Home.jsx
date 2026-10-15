@@ -7,7 +7,6 @@ import SectionHeading from "@/components/site/SectionHeading";
 import OptimizedImage from "@/components/site/OptimizedImage";
 import LearningActivities from "@/components/site/LearningActivities";
 import MineralSelection from "@/components/site/MineralSelection";
-import HistoryTimeline from "@/components/site/HistoryTimeline";
 import HomeTrustBar from "@/components/site/HomeTrustBar";
 import HomeTrainingOverview from "@/components/site/HomeTrainingOverview";
 import HomeImageCollage from "@/components/site/HomeImageCollage";
@@ -100,18 +99,6 @@ export default function Home() {
 
       {/* 5. IMAGE COLLAGE */}
       <HomeImageCollage />
-
-      {/* 5B. TIMELINE TEASER */}
-      <HistoryTimeline />
-      <section className="relative -mt-8 bg-amethyst-deep pb-20 text-center">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6">
-          <Reveal>
-            <Link to="/ueber-uns" className="inline-flex items-center gap-2 text-sm font-semibold text-citrine-light underline underline-offset-4 hover:text-citrine">
-              Mehr über die Geschichte der Schule <ArrowRight className="h-4 w-4" />
-            </Link>
-          </Reveal>
-        </div>
-      </section>
 
       {/* 6. VIDEO */}
       <section className="mx-auto max-w-5xl px-4 py-24 sm:px-6">
