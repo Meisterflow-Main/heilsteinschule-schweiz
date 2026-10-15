@@ -57,8 +57,9 @@ const NEWS = [
   {
     date: "12.11.2025",
     title: "Reise zu mir selbst — Buch ISBN 9798269951614",
-    img: "https://heilsteinschule.swiss/media/Brunos_Buch/20251103_132034.jpg",
+    img: "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/4e5328fba_Reisezumirselbst_MediterraneLebensreise.png",
     aspect: "aspect-square",
+    fit: "contain",
     text: "Jetzt erhältlich. Das neue Buch von Bruno Vogler Pfeiffer — nur per Vorkasse erhältlich.",
     to: "/brunos-buch",
     external: false,
