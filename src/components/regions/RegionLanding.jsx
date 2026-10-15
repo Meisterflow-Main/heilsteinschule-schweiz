@@ -148,7 +148,7 @@ export default function RegionLanding({ region }) {
       {/* 4. LEISTUNGEN */}
       <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6">
         <motion.div initial="hidden" whileInView="show" viewport={{ once: true, margin: "-80px" }} variants={fadeUp} className="mx-auto max-w-2xl text-center">
-          <h2 className="font-heading text-3xl font-bold text-amethyst sm:text-4xl">Unsere Leistungen in {r.city}</h2>
+          <h2 className="font-heading text-3xl font-bold text-amethyst sm:text-4xl">Unsere Leistungen</h2>
           <p className="mt-4 text-base leading-relaxed text-muted-foreground sm:text-lg">{r.services.intro}</p>
         </motion.div>
         <motion.div initial="hidden" whileInView="show" viewport={{ once: true, margin: "-80px" }} variants={stagger} className="mt-12 grid gap-6 md:grid-cols-3">
@@ -167,7 +167,7 @@ export default function RegionLanding({ region }) {
       <section className="bg-quartz py-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6">
           <motion.div initial="hidden" whileInView="show" viewport={{ once: true, margin: "-80px" }} variants={fadeUp} className="max-w-2xl">
-            <h2 className="font-heading text-3xl font-bold text-amethyst sm:text-4xl">Warum Kundinnen aus {r.city} uns wählen</h2>
+            <h2 className="font-heading text-3xl font-bold text-amethyst sm:text-4xl">Warum Kundinnen uns wählen</h2>
             <p className="mt-4 text-base leading-relaxed text-muted-foreground sm:text-lg">{r.whyUs.intro}</p>
           </motion.div>
           <motion.div initial="hidden" whileInView="show" viewport={{ once: true, margin: "-80px" }} variants={stagger} className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
@@ -217,7 +217,7 @@ export default function RegionLanding({ region }) {
       {/* 7. BEWERTUNGEN */}
       <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6">
         <motion.div initial="hidden" whileInView="show" viewport={{ once: true, margin: "-80px" }} variants={fadeUp} className="mx-auto max-w-2xl text-center">
-          <h2 className="font-heading text-3xl font-bold text-amethyst sm:text-4xl">Bewertungen aus {r.city}</h2>
+          <h2 className="font-heading text-3xl font-bold text-amethyst sm:text-4xl">Bewertungen</h2>
           <p className="mt-4 text-base leading-relaxed text-muted-foreground sm:text-lg">{r.reviews.intro}</p>
           <div className="mt-8 inline-flex items-center gap-4 rounded-2xl border border-border bg-white px-8 py-5 shadow-soft">
             <div className="flex gap-1">{[...Array(5)].map((_, i) => <Star key={i} className="h-6 w-6 fill-citrine text-citrine" />)}</div>
@@ -271,7 +271,7 @@ export default function RegionLanding({ region }) {
       <section className="bg-amethyst-deep py-16 text-white">
         <div className="mx-auto max-w-7xl px-4 sm:px-6">
           <motion.div initial="hidden" whileInView="show" viewport={{ once: true, margin: "-80px" }} variants={fadeRight}>
-            <h2 className="font-heading text-2xl font-bold sm:text-3xl">Einzugsgebiet rund um {r.city}</h2>
+            <h2 className="font-heading text-2xl font-bold sm:text-3xl">Einzugsgebiet</h2>
             <p className="mt-3 max-w-2xl text-sm leading-relaxed text-white/80 sm:text-base">{r.area.intro}</p>
             <div className="mt-6 flex flex-wrap gap-2">
               {r.area.places.map((p, i) => (
