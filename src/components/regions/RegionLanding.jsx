@@ -8,6 +8,15 @@ import {
 
 const iconMap = { Sparkles, Award, Users, Hand };
 
+const GENERIC_FAQ = [
+  { q: "Was kostet die Heilsteinberater Ausbildung?", a: "Die SVNH-zertifizierte Grundausbildung kostet CHF 4250 inklusive Schulungsunterlagen und Zertifizierung, zahlbar in 2 Raten. Die Anzahlung von CHF 250 sichert Ihren Platz und wird an die erste Rate angerechnet." },
+  { q: "Wie lange dauert die Ausbildung?", a: "Die Ausbildung erstreckt sich über mindestens drei Vierteljahre. Maximal zwei Fehltage sind erlaubt, ausgefallene Schultage lassen sich in einer Parallelklasse nachholen." },
+  { q: "Kann ich mich online anmelden?", a: "Ja, die Anmeldung erfolgt online, schriftlich oder per E-Mail. Mit der Anzahlung von CHF 250 wird Ihre Anmeldung verbindlich und Ihr Platz reserviert." },
+  { q: "Brauche ich Vorkenntnisse in Steinheilkunde?", a: "Nein, Sie starten ohne Vorkenntnisse. Freude an Steinen, Offenheit für die Natur und ein offenes Herz genügen – das Dozententeam führt Sie Schritt für Schritt in die Steinheilkunde ein." },
+  { q: "Wo finden die Schultage statt?", a: "Die Schultage finden an unseren Schulstandorten statt. Die Klassen umfassen 5 bis 8 Personen, der Beginn wird festgelegt, sobald 5 Anmeldungen vorliegen." },
+  { q: "Ist das Alpenseminar verpflichtend?", a: "Ja, das Alpenseminar ist obligatorisch für das Zertifikat. Für vier Übernachtungen mit Halbpension fallen ca. CHF 490 an, zahlbar direkt im Seminarhotel." },
+];
+
 const fadeUp = {
   hidden: { opacity: 0, y: 24 },
   show: { opacity: 1, y: 0, transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] } },
@@ -232,11 +241,11 @@ export default function RegionLanding({ region }) {
       <section className="bg-quartz py-20">
         <div className="mx-auto max-w-3xl px-4 sm:px-6">
           <motion.div initial="hidden" whileInView="show" viewport={{ once: true, margin: "-80px" }} variants={fadeUp} className="text-center">
-            <h2 className="font-heading text-3xl font-bold text-amethyst sm:text-4xl">Häufige Fragen aus {r.city}</h2>
-            <p className="mt-4 text-base text-muted-foreground">Antworten zu Ausbildung, Kosten und Ablauf am Standort {r.city}.</p>
+            <h2 className="font-heading text-3xl font-bold text-amethyst sm:text-4xl">Häufige Fragen</h2>
+            <p className="mt-4 text-base text-muted-foreground">Antworten zu Ausbildung, Kosten und Ablauf.</p>
           </motion.div>
           <motion.div initial="hidden" whileInView="show" viewport={{ once: true, margin: "-80px" }} variants={stagger} className="mt-10 space-y-3">
-            {r.faq.map((f, i) => (
+            {GENERIC_FAQ.map((f, i) => (
               <motion.div key={i} variants={item}><FAQItem q={f.q} a={f.a} index={i} /></motion.div>
             ))}
           </motion.div>
