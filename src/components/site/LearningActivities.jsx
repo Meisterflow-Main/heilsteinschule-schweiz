@@ -13,6 +13,7 @@ const ACTIVITIES = [
     text: "Ruth Rios und Bruno Vogler Pfeiffer lehren mit Kopf, Hand, Fuss und Herz — analytisches Wissen und praktische Anwendung in Asp, Wallbach und Bern.",
     img: "https://heilsteinschule.swiss/media/Ruth_Bruno_Aug_25_2.jpg",
     hd: false,
+    to: "/ausbildung",
   },
   {
     icon: Compass,
@@ -20,6 +21,7 @@ const ACTIVITIES = [
     text: "Jura, Zentralalpen, Vogesen und mehr — wir erleben die Steine in der Natur und erfahren ihre Herkunft unmittelbar.",
     img: "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/718ef1e15_WhatsAppImage2026-09-22at02053610.jpeg",
     hd: true,
+    to: "/ausbildung#exkursionen",
   },
   {
     icon: Mountain,
@@ -27,6 +29,7 @@ const ACTIVITIES = [
     text: "Fünf Tage Hochalpen-Exkursion als praktischer Ausbildungsteil — vom Dozenten-Team begleitet, von der Rosenlaui-Gletscherschlucht bis zum Oberalppass.",
     img: "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/ffaf18a07_WhatsAppImage2026-09-23at105952.jpeg",
     hd: true,
+    to: "/ausbildung#exkursionen",
   },
 ];
 
@@ -44,7 +47,7 @@ export default function LearningActivities() {
         {ACTIVITIES.map((a, i) => (
           <Reveal key={a.label} delay={i * 0.1}>
             <Link
-              to="/ausbildung#exkursionen"
+              to={a.to}
               className="group flex h-full flex-col overflow-hidden rounded-3xl border border-border bg-white shadow-soft transition hover:-translate-y-1 hover:shadow-lift"
             >
               <div className="relative aspect-[4/3] overflow-hidden">
