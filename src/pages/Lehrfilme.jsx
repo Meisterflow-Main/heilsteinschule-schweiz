@@ -1,5 +1,5 @@
 import React from "react";
-import { Film } from "lucide-react";
+import { Film, ArrowRight } from "lucide-react";
 import Reveal from "@/components/site/Reveal";
 import SectionHeading from "@/components/site/SectionHeading";
 import VideoCard from "@/components/site/VideoCard";
@@ -65,6 +65,8 @@ const FILME = [
   },
 ];
 
+const YOUTUBE_PLAYLIST = "https://www.youtube.com/playlist?list=PLWzccsezPgzawwP81l_QXpmDPzDwnoQxU";
+
 export default function Lehrfilme() {
   return (
     <>
@@ -100,6 +102,50 @@ export default function Lehrfilme() {
               <VideoCard {...f} />
             </Reveal>
           ))}
+        </div>
+      </section>
+
+      {/* QR-Code: YouTube-Playlist */}
+      <section className="bg-quartz/60">
+        <div className="mx-auto max-w-4xl px-4 py-20 sm:px-6">
+          <Reveal>
+            <div className="flex flex-col items-center gap-8 rounded-3xl border border-border bg-white p-8 shadow-soft sm:flex-row sm:p-10">
+              <a
+                href={YOUTUBE_PLAYLIST}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="shrink-0 rounded-2xl border border-border bg-white p-3 shadow-soft transition hover:shadow-lift"
+                title="Alle Youtube Filme - Heilsteinschule Schweiz"
+              >
+                <img
+                  src="https://heilsteinschule.swiss/media/QR_back_to_school.png"
+                  alt="QR Code für Youtube Filme der Heilsteinschule Schweiz"
+                  className="h-40 w-40 object-contain sm:h-48 sm:w-48"
+                />
+              </a>
+              <div className="text-center sm:text-left">
+                <div className="mb-3 flex items-center justify-center gap-2 sm:justify-start">
+                  <span className="h-px w-8 bg-citrine" />
+                  <span className="font-mono text-xs uppercase tracking-[0.2em] text-citrine-deep">Youtube</span>
+                </div>
+                <h2 className="font-heading text-2xl font-bold text-amethyst sm:text-3xl">
+                  Weitere über 70ig Lehrfilme auf YouTube
+                </h2>
+                <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+                  Klick auf QR Code funktioniert — scannen Sie den Code mit dem Smartphone oder klicken Sie
+                  darauf, um direkt zur YouTube-Playlist der Heilsteinschule Schweiz zu gelangen.
+                </p>
+                <a
+                  href={YOUTUBE_PLAYLIST}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-6 inline-flex items-center gap-2 rounded-full bg-citrine px-6 py-3 text-sm font-semibold text-amethyst-deep shadow-soft transition hover:bg-citrine-light"
+                >
+                  Zur YouTube-Playlist <ArrowRight className="h-4 w-4" />
+                </a>
+              </div>
+            </div>
+          </Reveal>
         </div>
       </section>
     </>
