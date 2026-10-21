@@ -5,6 +5,7 @@ import {
   Sparkles, Award, Users, Hand, MapPin, Phone, Mail, Clock, Navigation,
   ChevronDown, Star, ArrowRight, CheckCircle2, Calendar,
 } from "lucide-react";
+import { GOOGLE_REVIEWS_URL } from "@/components/site/GoogleReviewCard";
 
 const iconMap = { Sparkles, Award, Users, Hand };
 
@@ -227,12 +228,12 @@ export default function RegionLanding({ region }) {
             </div>
           </div>
           <div className="mt-8 flex flex-wrap justify-center gap-3">
-            <Link to="/auftrag-bewerten" className="inline-flex items-center gap-2 rounded-full bg-amethyst px-6 py-3 text-sm font-semibold text-white transition hover:bg-amethyst-soft">
+            <a href={GOOGLE_REVIEWS_URL} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 rounded-full bg-amethyst px-6 py-3 text-sm font-semibold text-white transition hover:bg-amethyst-soft">
               Alle Bewertungen ansehen
-            </Link>
-            <Link to="/auftrag-bewerten" className="inline-flex items-center gap-2 rounded-full border border-border px-6 py-3 text-sm font-semibold text-amethyst transition hover:bg-muted">
+            </a>
+            <a href={GOOGLE_REVIEWS_URL} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 rounded-full border border-border px-6 py-3 text-sm font-semibold text-amethyst transition hover:bg-muted">
               Bewertung schreiben <Star className="h-4 w-4 text-citrine-deep" />
-            </Link>
+            </a>
           </div>
         </motion.div>
       </section>
