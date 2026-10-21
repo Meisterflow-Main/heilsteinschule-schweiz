@@ -29,7 +29,7 @@ const INTERVIEW = [
   },
   {
     q: "Wie können die Schüler das erlernte Wissen nach Abschluss der Ausbildung anwenden?",
-    a: "Ich sage immer, die Schule machst du in erster Linie für dich. Wenn du durch die Heilsteine, deine Lebensmitte, deine Gesundheit usw. gefunden hast, dann bist du bereit, dein Wissen, deine erfolgreichen Erfahrungen Dritten helfend zukommen zu lassen. Der Spruch «nur wer heil ist, darf heilen» gewinnt hier in seiner Bedeutung.",
+    a: "Ich sage immer, die Schule machst du in erster Linie für dich. Wenn du durch die Heilsteine, deine Lebensmitte, deine Gesundheit usw. gefunden hast, dann bist du bereit, dein Wissen, deine erfolgreichen Erfahrungen Dritten helfend zukommen zu lassen.",
   },
   {
     q: "Was ist das Besondere an der analytischen Steinheilkunde, die an der Heilsteinschule Schweiz gelehrt wird?",
