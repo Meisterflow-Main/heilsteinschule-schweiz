@@ -4,6 +4,7 @@ import { Mountain, MapPin, Calendar, ArrowRight } from "lucide-react";
 import Reveal from "@/components/site/Reveal";
 import SectionHeading from "@/components/site/SectionHeading";
 import OptimizedImage from "@/components/site/OptimizedImage";
+import AlpenseminarReport from "@/components/site/AlpenseminarReport";
 
 const REISEBERICHTE = [
   {
@@ -343,6 +344,11 @@ export default function GeologischeReisen() {
           ))}
         </div>
       </section>
+
+      {/* Alpenseminar 2025 — Rückblick von Pascal Bossard */}
+      <div id="alpenseminar" className="scroll-mt-24">
+        <AlpenseminarReport />
+      </div>
     </>
   );
 }

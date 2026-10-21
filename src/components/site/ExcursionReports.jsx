@@ -2,7 +2,6 @@ import React from "react";
 import { Calendar } from "lucide-react";
 import Reveal from "@/components/site/Reveal";
 import SectionHeading from "@/components/site/SectionHeading";
-import AlpenseminarReport from "@/components/site/AlpenseminarReport";
 
 const EXKURSIONEN = [
   { jahr: "2011–2021", ort: "Zentralalpen" },
@@ -47,10 +46,6 @@ export default function ExcursionReports() {
         </div>
       </section>
 
-      {/* Alpenseminar 2025 — Rückblick von Pascal Bossard */}
-      <div id="alpenseminar" className="scroll-mt-24">
-        <AlpenseminarReport />
-      </div>
     </>
   );
 }
