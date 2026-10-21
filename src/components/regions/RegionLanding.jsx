@@ -87,10 +87,10 @@ export default function RegionLanding({ region }) {
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <Link to="/info-nachmittag" className="inline-flex items-center gap-2 rounded-full bg-citrine px-6 py-3 text-sm font-semibold text-amethyst-deep shadow-lift transition hover:bg-citrine-light">
-                <Calendar className="h-4 w-4" /> Mehr Informationen
+                <Calendar className="h-4 w-4" /> Jetzt Infotermin buchen
               </Link>
               <Link to="/ausbildung" className="inline-flex items-center gap-2 rounded-full border border-white/30 px-6 py-3 text-sm font-semibold text-white transition hover:bg-white/10">
-                Preis berechnen <ArrowRight className="h-4 w-4" />
+                Mehr Informationen <ArrowRight className="h-4 w-4" />
               </Link>
             </div>
           </motion.div>
