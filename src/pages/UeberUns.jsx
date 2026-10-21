@@ -102,12 +102,12 @@ export default function UeberUns() {
               Über uns
             </div>
             <h1 className="max-w-3xl font-heading text-4xl font-bold leading-tight sm:text-5xl md:text-6xl">
-              Mit Herz, Hand, Kopf und Fuss zum <span className="text-gradient-gold">Steinheilpraktiker</span>
+              Mit Herz, Hand, Kopf und Fuss zum <span className="text-gradient-gold">Heilsteinberater</span>
             </h1>
             <p className="mt-5 max-w-xl text-lg text-white/80">
               Die Heilsteinschule Schweiz vermittelt seit 2011 die analytische Steinheilkunde nach
-              Michael Gienger — mit Kopf, Herz, Hand und Fuss. Wir bilden Steinheilpraktikerinnen und
-              Steinheilpraktiker aus, die Heilsteine als verlässliche Lebensbegleiter verstehen und
+              Michael Gienger — mit Kopf, Herz, Hand und Fuss. Wir bilden Heilsteinberaterinnen und
+              Heilsteinberater aus, die Heilsteine als verlässliche Lebensbegleiter verstehen und
               einsetzen. Erfahren Sie mehr über unsere Werte, unser Team und unsere Ausbildung.
             </p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
