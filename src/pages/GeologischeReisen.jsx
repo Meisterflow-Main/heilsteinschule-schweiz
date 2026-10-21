@@ -1,67 +1,9 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import { Mountain, MapPin, Calendar, ArrowRight } from "lucide-react";
+import { Mountain } from "lucide-react";
 import Reveal from "@/components/site/Reveal";
 import SectionHeading from "@/components/site/SectionHeading";
 import OptimizedImage from "@/components/site/OptimizedImage";
 import AlpenseminarReport from "@/components/site/AlpenseminarReport";
-
-const REISEBERICHTE = [
-  {
-    year: "2025",
-    title: "Alpenseminar 2025",
-    detail: "Alpines Seminar in den Schweizer Alpen",
-    to: "/alpenseminar-2025",
-  },
-  {
-    year: "2022",
-    title: "Zermatt 2022",
-    detail: "Geologische Reise Umgebung Zermatt — 6 Tage",
-    to: "/zermatt-2022",
-  },
-  {
-    year: "2022",
-    title: "Heilstein Museum 2022",
-    detail: "Besuch im Heilstein Museum — 3 Tage",
-    to: "/heilstein-museum-2022",
-  },
-  {
-    year: "2021",
-    title: "Glarnerland – Unterengadin 2021",
-    detail: "Geologische Reise durch Glarnerland und Unterengadin — 8 Tage",
-    to: "/glarnerland-engadin",
-  },
-  {
-    year: "2021",
-    title: "Georeise Nord – Süd 2021",
-    detail: "Georeise von Nord nach Süd — 8 Tage",
-    to: "/georeise-nord-sued-2021",
-  },
-];
-
-const EXKURSIONEN = [
-  { years: "2011 – 2021", title: "Zentralalpen", detail: "13 Exkursionen · 65 Tage" },
-  { years: "2015 – 2022", title: "Jura Exkursionen", detail: "12 Tage" },
-  { years: "2016", title: "Portugal / Auroca", detail: "7 Tage" },
-  { years: "2017", title: "Azoren", detail: "7 Tage" },
-  { years: "2013 – 2018", title: "Vogesen / Odilienberg", detail: "6 Tage" },
-  { years: "2018", title: "Idar-Oberstein", detail: "8 Tage" },
-  { years: "2020", title: "Berchtesgaden", detail: "4 Tage" },
-  { years: "2021", title: "Tessin", detail: "8 Tage" },
-  { years: "2021", title: "Engadin", detail: "8 Tage" },
-  { years: "2022", title: "Zermatt", detail: "6 Tage" },
-  { years: "2022", title: "Heilsteinmuseum", detail: "3 Tage" },
-];
-
-const LEGEND = [
-  { key: "A", title: "Kloster Odilienberg", text: "40 km ab Strasbourg, auf den Vogesen El Gran, 650 m hoch, erbaut 1318." },
-  { key: "B", title: "Beckenfels", text: "" },
-  { key: "B1", title: "Heidenmauer", text: "4000 Jahre alt." },
-  { key: "C", title: "Wald Mandalas", text: "" },
-  { key: "D", title: "Sonnenaufgang auf Vogesen", text: "" },
-  { key: "E", title: "Wasserbecken auf Beckenfels", text: "" },
-  { key: "F", title: "Druide", text: "" },
-];
 
 const GALLERY_BASE = "https://heilsteinschule.swiss/media/rfg-folders/geologische-reisen-gallery/";
 
@@ -82,28 +24,6 @@ const ALPEN_GALLERY = [
   { src: "Bruno_2015_6.png", year: "2015" },
   { src: "Bruno_2015_4.png", year: "2015" },
   { src: "rhone-gletscher-2019_August_1024x768-1.jpg", year: "2015" },
-];
-
-const GALLERY = [
-  { src: "20180726_101600.jpg", label: "A", caption: "Kloster Odilienberg" },
-  { src: "thumbnail_IMG_1942.jpg", label: "A" },
-  { src: "thumbnail_IMG_1943.jpg", label: "A" },
-  { src: "42274287_1537385089740245_723710888548237312_n.jpg", label: "B" },
-  { src: "42351460_1537385569740197_5451267724393054208_n.jpg", label: "B" },
-  { src: "20180726_104227.jpg", label: "B" },
-  { src: "42208833_1537385529740201_1629538453555249152_n.jpg", label: "B" },
-  { src: "20180919_145520.jpg", label: "B1" },
-  { src: "20180919_172151.jpg", label: "B1" },
-  { src: "20180726_131812.jpg", label: "B" },
-  { src: "thumbnail_IMG_2010.jpg", label: "B1" },
-  { src: "thumbnail_IMG_2005.jpg", label: "C", caption: "Wald Mandalas" },
-  { src: "42260153_1537307449748009_1034706421024817152_n.jpg", label: "C" },
-  { src: "42227710_1537307033081384_8519757991774257152_n.jpg", label: "C" },
-  { src: "42206926_1537307323081355_3330859460032724992_n.jpg", label: "C" },
-  { src: "42257191_1537408289737925_5422458587010039808_n.jpg", label: "E" },
-  { src: "thumbnail_IMG_1987.jpg", label: "D", caption: "Sonnenaufgang, Vogesen" },
-  { src: "42206876_1537306949748059_7403800891272200192_n.jpg", label: "D" },
-  { src: "42319623_1537307909747963_2981257424310108160_n.jpg", label: "F", caption: "Druide" },
 ];
 
 export default function GeologischeReisen() {
@@ -132,126 +52,6 @@ export default function GeologischeReisen() {
               und darüber hinaus. Ein Rückblick in Bildern.
             </p>
           </Reveal>
-        </div>
-      </section>
-
-      {/* Exkursionen Übersicht */}
-      <section className="mx-auto max-w-7xl px-4 py-20 sm:px-6">
-        <Reveal>
-          <SectionHeading
-            eyebrow="Rückblick"
-            title="Geologische Exkursionen"
-            subtitle="Von 2011 bis 2022 begleiteten Exkursionen die Ausbildung — in den Zentralalpen, dem Jura, auf den Azoren und bis nach Idar-Oberstein."
-          />
-        </Reveal>
-        <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {EXKURSIONEN.map((e, i) => (
-            <Reveal key={e.title + e.years} delay={(i % 3) * 0.06}>
-              <div className="flex h-full items-start gap-4 rounded-2xl border border-border bg-white p-5 shadow-soft transition hover:-translate-y-1 hover:border-citrine hover:shadow-lift">
-                <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-citrine/15 text-citrine-deep">
-                  <MapPin className="h-5 w-5" />
-                </div>
-                <div>
-                  <div className="flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-citrine-deep">
-                    <Calendar className="h-3.5 w-3.5" /> {e.years}
-                  </div>
-                  <h3 className="mt-1 font-heading text-base font-semibold text-amethyst">{e.title}</h3>
-                  <p className="mt-0.5 text-sm text-muted-foreground">{e.detail}</p>
-                </div>
-              </div>
-            </Reveal>
-          ))}
-        </div>
-      </section>
-
-      {/* Reiseberichte — Links zu Einzelberichten */}
-      <section>
-        <div className="mx-auto max-w-7xl px-4 py-20 sm:px-6">
-          <Reveal>
-            <SectionHeading
-              eyebrow="Einzelberichte"
-              title="Reiseberichte"
-              subtitle="Ausführliche Bildberichte ausgewählter geologischer Reisen — von Glarnerland bis Zermatt."
-            />
-          </Reveal>
-          <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {REISEBERICHTE.map((r, i) => (
-              <Reveal key={r.to} delay={(i % 3) * 0.06}>
-                <Link
-                  to={r.to}
-                  className="group flex h-full flex-col justify-between rounded-2xl border border-border bg-white p-6 shadow-soft transition hover:-translate-y-1 hover:border-citrine hover:shadow-lift"
-                >
-                  <div>
-                    <div className="flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-citrine-deep">
-                      <Calendar className="h-3.5 w-3.5" /> {r.year}
-                    </div>
-                    <h3 className="mt-2 font-heading text-lg font-semibold text-amethyst">{r.title}</h3>
-                    <p className="mt-1 text-sm text-muted-foreground">{r.detail}</p>
-                  </div>
-                  <span className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-citrine-deep transition group-hover:gap-2.5">
-                    Zum Bericht <ArrowRight className="h-4 w-4" />
-                  </span>
-                </Link>
-              </Reveal>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Vogesen / Odilienberg Galerie */}
-      <section className="bg-quartz/60">
-        <div className="mx-auto max-w-7xl px-4 py-20 sm:px-6">
-          <Reveal>
-            <SectionHeading
-              eyebrow="2013 – 2018 · 6 Tage"
-              title="Vogesen / Odilienberg"
-              subtitle="Kloster Odilienberg, Beckenfels, Heidenmauer, Wald-Mandalas, Sonnenaufgang und ein Druide — Eindrücke von der Exkursion in die Vogesen."
-            />
-          </Reveal>
-
-          {/* Legende */}
-          <Reveal delay={0.05}>
-            <div className="mx-auto mt-10 max-w-3xl rounded-2xl border border-border bg-white p-6 shadow-soft">
-              <div className="grid gap-3 sm:grid-cols-2">
-                {LEGEND.map((l) => (
-                  <div key={l.key} className="flex items-start gap-3">
-                    <span className="mt-0.5 flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-amethyst text-xs font-bold text-white">
-                      {l.key}
-                    </span>
-                    <div>
-                      <p className="text-sm font-semibold text-amethyst">{l.title}</p>
-                      {l.text && <p className="text-xs leading-relaxed text-muted-foreground">{l.text}</p>}
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </Reveal>
-
-          {/* Galerie */}
-          <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {GALLERY.map((g, i) => (
-              <Reveal key={g.src + i} delay={(i % 3) * 0.05}>
-                <figure className="group overflow-hidden rounded-2xl border border-border bg-white shadow-soft transition hover:shadow-lift">
-                  <div className="aspect-[4/3] overflow-hidden bg-muted">
-                    <OptimizedImage
-                      src={`${GALLERY_BASE}${g.src}`}
-                      alt={g.caption || `Vogesen / Odilienberg — ${g.label}`}
-                      width={600}
-                      loading="lazy"
-                      className="h-full w-full object-cover transition duration-700 group-hover:scale-105"
-                    />
-                  </div>
-                  <figcaption className="flex items-center gap-2 px-4 py-3 text-xs">
-                    <span className="flex h-6 w-6 items-center justify-center rounded-full bg-citrine/15 text-[0.65rem] font-bold text-citrine-deep">
-                      {g.label}
-                    </span>
-                    <span className="text-muted-foreground">{g.caption || LEGEND.find((l) => l.key === g.label)?.title}</span>
-                  </figcaption>
-                </figure>
-              </Reveal>
-            ))}
-          </div>
         </div>
       </section>
 
