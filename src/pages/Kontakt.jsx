@@ -3,6 +3,7 @@ import { Phone, Mail, MapPin, Clock } from "lucide-react";
 import Reveal from "@/components/site/Reveal";
 import SectionHeading from "@/components/site/SectionHeading";
 import ContactForm from "@/components/site/ContactForm";
+import GoogleReviewCard from "@/components/site/GoogleReviewCard";
 
 export default function Kontakt() {
   return (
@@ -90,6 +91,15 @@ export default function Kontakt() {
                 <ContactForm defaultDescription="" idPrefix="kontakt" />
               </div>
             </div>
+          </Reveal>
+        </div>
+      </section>
+
+      {/* Google-Bewertungen */}
+      <section className="bg-quartz/60">
+        <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6">
+          <Reveal>
+            <GoogleReviewCard />
           </Reveal>
         </div>
       </section>
