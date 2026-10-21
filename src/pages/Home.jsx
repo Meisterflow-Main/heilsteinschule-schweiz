@@ -88,9 +88,6 @@ export default function Home() {
       {/* 2. TRUST BAR */}
       <HomeTrustBar />
 
-      {/* 2B. MINERAL VIDEOS UNDER HERO */}
-      <MineralSelection />
-
       {/* 3. TRAINING OVERVIEW */}
       <HomeTrainingOverview />
 
@@ -201,6 +198,9 @@ export default function Home() {
           </Link>
         </div>
       </section>
+
+      {/* 8B. MINERAL SELECTION */}
+      <MineralSelection />
 
       {/* 9. INQUIRY & REGISTRATION */}
       <HomeInquiryRegistration />
