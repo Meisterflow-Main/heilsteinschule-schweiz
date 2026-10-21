@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import { Check, GraduationCap, ArrowRight, FileText, HelpCircle } from "lucide-react";
 import Reveal from "@/components/site/Reveal";
 import SectionHeading from "@/components/site/SectionHeading";
-import ExcursionReports from "@/components/site/ExcursionReports";
 import TrainingLocations from "@/components/site/TrainingLocations";
 
 const VORAUSSETZUNGEN = [
@@ -184,9 +183,6 @@ export default function Ausbildung() {
 
       {/* Schulorte — Wallbach, Münsingen, Asp */}
       <TrainingLocations />
-
-      {/* Exkursionen & Alpenseminar (Praktischer Ausbildungsteil) */}
-      <ExcursionReports />
 
       {/* Schulorte — Teaser zur separaten Seite */}
       <section className="bg-quartz/60">
