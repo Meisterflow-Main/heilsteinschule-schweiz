@@ -10,18 +10,6 @@ import InfoNachmittagForm from "@/components/site/InfoNachmittagForm";
 // Wenn alle Termine abgelaufen sind, zeigt das Formular "Weitere Termine folgen".
 const TERMINE = [
   {
-    id: "bern-2026-10-10",
-    datum: "2026-10-10",
-    displayDate: "Samstag, 10.10.2026",
-    time: "13:00–17:00 Uhr",
-    ort: "Münsingen",
-    address: "Kapellenstrasse 5 (4. Stock), 3110 Münsingen",
-    travelTime: "Nur ca. 5 Gehminuten ab Bahnhof Münsingen.",
-    img: "https://heilsteinschule.swiss/media/Info-Tag/Berner-Wappen.png",
-    travelInfo:
-      "ÖV: Vom Bahnhof Münsingen ca. 5 Min. zu Fuss. Auto: Keine eigenen Parkplätze.",
-  },
-  {
     id: "asp-2026-10-31",
     datum: "2026-10-31",
     displayDate: "Samstag, 31.10.2026",
