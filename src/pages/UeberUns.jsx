@@ -62,7 +62,7 @@ const INTERVIEW = [
     a: "Wir passen den Lehrplan basierend auf den Bedürfnissen unserer Schüler an und korrigieren so weit verbreitete Fehlinformationen über Steine im Internet durch fundiertes Wissen.",
   },
   {
-    q: "Was sind die wichtigsten Schwerpunkte Ihrer Arbeit als Naturheiler und Heilstein-Therapeut?",
+    q: "Was sind die wichtigsten Schwerpunkte Ihrer Arbeit?",
     a: "Mein Hauptziel ist das Wachstum der Schule und die Entwicklung eines qualifizierten Teams. Wir legen Wert auf analytisches Lernen, unterstützt durch medizinisches Verständnis. Dabei steht immer im Vordergrund: Heilung kommt von innen, wir und die Steine können nur dabei helfen.",
   },
 ];
