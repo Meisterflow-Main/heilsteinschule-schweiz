@@ -36,7 +36,7 @@ export const REGIONS = [
       eyebrow: "Heilsteine in Asp",
       h1: "Heilsteinschule Schweiz in Asp – Hauptsitz mit Heilsteinshop und Praxis",
       description:
-        "Asp ist der Hauptsitz der Heilsteinschule Schweiz: Hier finden Sie den Heilsteinshop, die Praxis und die Schulungsräume. Kostenlose Info-Nachmittage finden hier statt. Die Grundausbildung wird standardmässig in Wallbach und Münsingen durchgeführt – Asp ist der Ursprungsort, an dem die Schule 2011 gegründet wurde.",
+        "Asp ist der Hauptsitz der Heilsteinschule Schweiz: Hier finden Sie den Heilsteinshop, die Praxis und die Schulungsräume. Kostenlose Info-Nachmittage/-Abende finden hier statt. Die Grundausbildung wird standardmässig in Wallbach und Münsingen durchgeführt – Asp ist der Ursprungsort, an dem die Schule 2011 gegründet wurde.",
     },
     usps: [
       { icon: "Sparkles", title: "Seit 2011", description: "Über 250 ausgebildete Heilsteinberater" },
@@ -53,7 +53,7 @@ export const REGIONS = [
     },
     services: {
       intro:
-        "Asp ist der Hauptsitz der Heilsteinschule Schweiz mit Heilsteinshop, Praxis und Schulungsräumen. Hier finden kostenlose Info-Nachmittage statt. Die Grundausbildung wird standardmässig in Wallbach und Münsingen durchgeführt (die laufende Klasse Asp 8 bildet eine Ausnahme). Das Alpenseminar findet in den Schweizer Alpen statt. " + KLASSENGROESSE,
+        "Asp ist der Hauptsitz der Heilsteinschule Schweiz mit Heilsteinshop, Praxis und Schulungsräumen. Hier finden kostenlose Info-Nachmittage/-Abende statt. Die Grundausbildung wird standardmässig in Wallbach und Münsingen durchgeführt (die laufende Klasse Asp 8 bildet eine Ausnahme). Das Alpenseminar findet in den Schweizer Alpen statt. " + KLASSENGROESSE,
       items: [
         {
           title: "Grundausbildung Heilsteinberater",
@@ -67,9 +67,9 @@ export const REGIONS = [
           link: "/ausbildung#exkursionen",
         },
         {
-          title: "Info-Nachmittag Asp",
+          title: "Info-Nachmittag/-Abend Asp",
           description:
-            "Kostenlos und unverbindlich: Am Info-Nachmittag in Asp lernen Sie die Schule, das Dozententeam und die Steinheilkunde kennen – ideal, bevor Sie sich für die Ausbildung entscheiden.",
+            "Kostenlos und unverbindlich: Am Info-Nachmittag/-Abend in Asp lernen Sie die Schule, das Dozententeam und die Steinheilkunde kennen – ideal, bevor Sie sich für die Ausbildung entscheiden.",
           link: "/info-nachmittag",
         },
       ],
@@ -138,14 +138,14 @@ export const REGIONS = [
     ],
     contact: {
       intro:
-        "Der Schulstandort Wallbach liegt an der Rheinstrasse 29 im Fricktal, im Kanton Aargau nahe der deutschen Grenze und des Rheins. Hier findet die Grundausbildung und der Info-Nachmittag/Abend statt.",
+        "Der Schulstandort Wallbach liegt an der Rheinstrasse 29 im Fricktal, im Kanton Aargau nahe der deutschen Grenze und des Rheins. Hier findet die Grundausbildung und der Info-Nachmittag/-Abend statt.",
       address: WALLBACH_ADDRESS,
       phone: PHONE,
       email: EMAIL,
     },
     services: {
       intro:
-        "Am Standort Wallbach führen wir ausschliesslich die Grundausbildung durch – keine Seminare. Eng abgestimmt mit dem Hauptsitz in Asp. Info-Nachmittage finden in Asp und Münsingen statt. " + KLASSENGROESSE,
+        "Am Standort Wallbach führen wir die Grundausbildung durch – keine Seminare. Eng abgestimmt mit dem Hauptsitz in Asp. Info-Nachmittage/-Abende finden regelmässig statt. " + KLASSENGROESSE,
       items: [
         {
           title: "Grundausbildung Heilsteinberater",
@@ -161,7 +161,7 @@ export const REGIONS = [
         {
           title: "Info-Nachmittag/-Abend",
           description:
-            "Kostenlose Info-Nachmittage finden in Asp und Münsingen statt – ideal, um vor der Anmeldung die Schule, das Dozententeam und die Steinheilkunde unverbindlich kennenzulernen.",
+            "Kostenlose Info-Nachmittage/-Abende finden statt – ideal, um vor der Anmeldung die Schule, das Dozententeam und die Steinheilkunde unverbindlich kennenzulernen.",
           link: "/info-nachmittag",
         },
       ],
@@ -237,7 +237,7 @@ export const REGIONS = [
     },
     services: {
       intro:
-        "In Münsingen bieten wir die vollständige Grundausbildung sowie Info-Nachmittage an – eng vernetzt mit dem Hauptsitz in Asp. " + KLASSENGROESSE,
+        "In Münsingen bieten wir die vollständige Grundausbildung sowie Info-Nachmittage/-Abende an – eng vernetzt mit dem Hauptsitz in Asp. " + KLASSENGROESSE,
       items: [
         {
           title: "Grundausbildung Heilsteinberater",
@@ -251,9 +251,9 @@ export const REGIONS = [
           link: "/ausbildung#exkursionen",
         },
         {
-          title: "Info-Nachmittag Münsingen",
+          title: "Info-Nachmittag/-Abend Münsingen",
           description:
-            "Am kostenlosen Info-Nachmittag in Münsingen lernen Sie die Heilsteinschule, das Dozententeam und die Steinheilkunde unverbindlich kennen – ideal zum Schnuppern.",
+            "Am kostenlosen Info-Nachmittag/-Abend in Münsingen lernen Sie die Heilsteinschule, das Dozententeam und die Steinheilkunde unverbindlich kennen – ideal zum Schnuppern.",
           link: "/info-nachmittag",
         },
       ],
@@ -329,7 +329,7 @@ export const REGIONS = [
     },
     services: {
       intro:
-        "Im Raum Zürich bieten wir die Grundausbildung am Standort Wallbach an. Info-Nachmittage finden in Asp und Münsingen statt, das Alpenseminar in den Schweizer Alpen. " + KLASSENGROESSE,
+        "Im Raum Zürich bieten wir die Grundausbildung am Standort Wallbach an. Info-Nachmittage/-Abende finden statt, das Alpenseminar in den Schweizer Alpen. " + KLASSENGROESSE,
       items: [
         {
           title: "Grundausbildung Heilsteinberater",
@@ -343,9 +343,9 @@ export const REGIONS = [
           link: "/ausbildung#exkursionen",
         },
         {
-          title: "Info-Nachmittag für Zürich",
+          title: "Info-Nachmittag/-Abend für Zürich",
           description:
-            "Kostenlose Info-Nachmittage finden in Asp und Münsingen statt – ideal für Interessierte aus Zürich, um die Heilsteinschule und die Steinheilkunde unverbindlich kennenzulernen.",
+            "Kostenlose Info-Nachmittage/-Abende finden statt – ideal für Interessierte aus Zürich, um die Heilsteinschule und die Steinheilkunde unverbindlich kennenzulernen.",
           link: "/info-nachmittag",
         },
       ],
@@ -421,7 +421,7 @@ export const REGIONS = [
     },
     services: {
       intro:
-        "Im Raum Basel bieten wir die Grundausbildung am Standort Wallbach an – ergänzt durch Info-Nachmittage und das Alpenseminar in den Bergen. " + KLASSENGROESSE,
+        "Im Raum Basel bieten wir die Grundausbildung am Standort Wallbach an – ergänzt durch Info-Nachmittage/-Abende und das Alpenseminar in den Bergen. " + KLASSENGROESSE,
       items: [
         {
           title: "Grundausbildung Heilsteinberater",
@@ -435,7 +435,7 @@ export const REGIONS = [
           link: "/ausbildung#exkursionen",
         },
         {
-          title: "Info-Nachmittag für Basel",
+          title: "Info-Nachmittag/-Abend für Basel",
           description:
             "Am kostenlosen Info-Nachmittag/-Abend lernen Sie die Heilsteinschule und die Steinheilkunde unverbindlich kennen – ideal für Interessierte aus Basel.",
           link: "/info-nachmittag",
@@ -513,7 +513,7 @@ export const REGIONS = [
     },
     services: {
       intro:
-        "Im Raum Aarau bieten wir die Grundausbildung am Standort Wallbach an – ergänzt durch Info-Nachmittage und das Alpenseminar. " + KLASSENGROESSE,
+        "Im Raum Aarau bieten wir die Grundausbildung am Standort Wallbach an – ergänzt durch Info-Nachmittage/-Abende und das Alpenseminar. " + KLASSENGROESSE,
       items: [
         {
           title: "Grundausbildung Heilsteinberater",
@@ -527,7 +527,7 @@ export const REGIONS = [
           link: "/ausbildung#exkursionen",
         },
         {
-          title: "Info-Nachmittag für Aarau",
+          title: "Info-Nachmittag/-Abend für Aarau",
           description:
             "Am kostenlosen Info-Nachmittag/-Abend lernen Sie die Heilsteinschule und die Steinheilkunde unverbindlich kennen – ideal für Interessierte aus Aarau.",
           link: "/info-nachmittag",
@@ -605,7 +605,7 @@ export const REGIONS = [
     },
     services: {
       intro:
-        "Im Raum Baden bieten wir die Grundausbildung am Standort Wallbach an – ergänzt durch Info-Nachmittage und das Alpenseminar in den Bergen. " + KLASSENGROESSE,
+        "Im Raum Baden bieten wir die Grundausbildung am Standort Wallbach an – ergänzt durch Info-Nachmittage/-Abende und das Alpenseminar in den Bergen. " + KLASSENGROESSE,
       items: [
         {
           title: "Grundausbildung Heilsteinberater",
@@ -619,7 +619,7 @@ export const REGIONS = [
           link: "/ausbildung#exkursionen",
         },
         {
-          title: "Info-Nachmittag für Baden",
+          title: "Info-Nachmittag/-Abend für Baden",
           description:
             "Am kostenlosen Info-Nachmittag/-Abend lernen Sie die Heilsteinschule und die Steinheilkunde unverbindlich kennen – ideal für Interessierte aus Baden.",
           link: "/info-nachmittag",
@@ -697,7 +697,7 @@ export const REGIONS = [
     },
     services: {
       intro:
-        "Im Raum Brugg bieten wir die Grundausbildung am Standort Wallbach an – ergänzt durch Info-Nachmittage und das Alpenseminar in den Bergen. " + KLASSENGROESSE,
+        "Im Raum Brugg bieten wir die Grundausbildung am Standort Wallbach an – ergänzt durch Info-Nachmittage/-Abende und das Alpenseminar in den Bergen. " + KLASSENGROESSE,
       items: [
         {
           title: "Grundausbildung Heilsteinberater",
@@ -711,7 +711,7 @@ export const REGIONS = [
           link: "/ausbildung#exkursionen",
         },
         {
-          title: "Info-Nachmittag für Brugg",
+          title: "Info-Nachmittag/-Abend für Brugg",
           description:
             "Am kostenlosen Info-Nachmittag/-Abend lernen Sie die Heilsteinschule und die Steinheilkunde unverbindlich kennen – ideal für Interessierte aus Brugg.",
           link: "/info-nachmittag",
@@ -789,7 +789,7 @@ export const REGIONS = [
     },
     services: {
       intro:
-        "Im Raum Olten bieten wir die Grundausbildung am Standort Wallbach an – ergänzt durch Info-Nachmittage und das Alpenseminar in den Bergen. " + KLASSENGROESSE,
+        "Im Raum Olten bieten wir die Grundausbildung am Standort Wallbach an – ergänzt durch Info-Nachmittage/-Abende und das Alpenseminar in den Bergen. " + KLASSENGROESSE,
       items: [
         {
           title: "Grundausbildung Heilsteinberater",
@@ -803,7 +803,7 @@ export const REGIONS = [
           link: "/ausbildung#exkursionen",
         },
         {
-          title: "Info-Nachmittag für Olten",
+          title: "Info-Nachmittag/-Abend für Olten",
           description:
             "Am kostenlosen Info-Nachmittag/-Abend lernen Sie die Heilsteinschule und die Steinheilkunde unverbindlich kennen – ideal für Interessierte aus Olten.",
           link: "/info-nachmittag",
