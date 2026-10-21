@@ -7,7 +7,7 @@ const NAV_ITEMS = [
     label: "Ausbildung",
     children: [
       { label: "Ausbildung Übersicht", to: "/ausbildung", icon: GraduationCap },
-      { label: "Schulorte: Wallbach & Bern", to: "/schulorte", icon: MapPinned },
+      { label: "Schulorte: Wallbach & Münsingen", to: "/schulorte", icon: MapPinned },
       { label: "Kalender", to: "/schultermine", icon: CalendarDays },
       { label: "Exkursionen & Alpenseminar", to: "/geologische-reisen", icon: Mountain },
       { label: "Erfahrungsberichte", to: "/schueler-berichte", icon: Users },
@@ -57,7 +57,7 @@ const NAV_ITEMS = [
       { label: "Alle Regionen", to: "/regionen", icon: MapPinned },
       { label: "Asp", to: "/regionen/asp", icon: MapPinned },
       { label: "Wallbach", to: "/regionen/wallbach", icon: MapPinned },
-      { label: "Bern", to: "/regionen/bern", icon: MapPinned },
+      { label: "Münsingen", to: "/regionen/muensingen", icon: MapPinned },
       { label: "Zürich", to: "/regionen/zuerich", icon: MapPinned },
       { label: "Basel", to: "/regionen/basel", icon: MapPinned },
       { label: "Aarau", to: "/regionen/aarau", icon: MapPinned },

@@ -182,7 +182,7 @@ export default function Ausbildung() {
         </div>
       </section>
 
-      {/* Schulorte — Wallbach, Bern, Asp */}
+      {/* Schulorte — Wallbach, Münsingen, Asp */}
       <TrainingLocations />
 
       {/* Exkursionen & Alpenseminar (Praktischer Ausbildungsteil) */}
@@ -196,7 +196,7 @@ export default function Ausbildung() {
               <div>
                 <h3 className="font-heading text-xl font-semibold text-amethyst">Schulorte</h3>
                 <p className="mt-1 text-sm text-muted-foreground">
-                  Asp (Hauptsitz) · Wallbach (Grundausbildung) · Bern (Grundausbildung & Info-Nachmittag) — dazu das Alpenseminar in den Schweizer Alpen.
+                  Asp (Hauptsitz) · Wallbach (Grundausbildung) · Münsingen (Grundausbildung & Info-Nachmittag) — dazu das Alpenseminar in den Schweizer Alpen.
                 </p>
               </div>
               <Link

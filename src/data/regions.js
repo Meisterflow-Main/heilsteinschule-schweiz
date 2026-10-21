@@ -1,6 +1,6 @@
 // SEO-Landingpages für die Heilsteinschule Schweiz.
 // Hauptleistung: Heilsteinberater Ausbildung (SVNH-zertifizierte Grundausbildung).
-// Schulstandort Grundausbildung: Wallbach (alle nicht-Bern-Regionen) bzw. Bern (Bern-Raum).
+// Schulstandort Grundausbildung: Wallbach (alle nicht-Münsingen-Regionen) bzw. Münsingen (Münsingen-Raum).
 // Asp bleibt Hauptsitz mit Heilsteinshop; die Grundausbildung findet ausser für Asp in Wallbach statt.
 
 const PHONE = "+41 79 389 66 22";
@@ -36,7 +36,7 @@ export const REGIONS = [
       eyebrow: "Heilsteine in Asp",
       h1: "Heilsteinschule Schweiz in Asp – Hauptsitz mit Heilsteinshop und Praxis",
       description:
-        "Asp ist der Hauptsitz der Heilsteinschule Schweiz: Hier finden Sie den Heilsteinshop, die Praxis und die Schulungsräume. Kostenlose Info-Nachmittage finden hier statt. Die Grundausbildung wird standardmässig in Wallbach und Bern durchgeführt – Asp ist der Ursprungsort, an dem die Schule 2011 gegründet wurde.",
+        "Asp ist der Hauptsitz der Heilsteinschule Schweiz: Hier finden Sie den Heilsteinshop, die Praxis und die Schulungsräume. Kostenlose Info-Nachmittage finden hier statt. Die Grundausbildung wird standardmässig in Wallbach und Münsingen durchgeführt – Asp ist der Ursprungsort, an dem die Schule 2011 gegründet wurde.",
     },
     usps: [
       { icon: "Sparkles", title: "Seit 2011", description: "Über 250 ausgebildete Heilsteinberater" },
@@ -46,19 +46,19 @@ export const REGIONS = [
     ],
     contact: {
       intro:
-        "Der Hauptsitz in Asp ist zugleich Heilsteinshop und Praxis. Persönliche Beratung erhalten Sie nach Vereinbarung. Die Grundausbildung wird standardmässig in Wallbach und Bern durchgeführt.",
+        "Der Hauptsitz in Asp ist zugleich Heilsteinshop und Praxis. Persönliche Beratung erhalten Sie nach Vereinbarung. Die Grundausbildung wird standardmässig in Wallbach und Münsingen durchgeführt.",
       address: "Dorfstrasse 22, 5025 Asp",
       phone: PHONE,
       email: EMAIL,
     },
     services: {
       intro:
-        "Asp ist der Hauptsitz der Heilsteinschule Schweiz mit Heilsteinshop, Praxis und Schulungsräumen. Hier finden kostenlose Info-Nachmittage statt. Die Grundausbildung wird standardmässig in Wallbach und Bern durchgeführt (die laufende Klasse Asp 8 bildet eine Ausnahme). Das Alpenseminar findet in den Schweizer Alpen statt. " + KLASSENGROESSE,
+        "Asp ist der Hauptsitz der Heilsteinschule Schweiz mit Heilsteinshop, Praxis und Schulungsräumen. Hier finden kostenlose Info-Nachmittage statt. Die Grundausbildung wird standardmässig in Wallbach und Münsingen durchgeführt (die laufende Klasse Asp 8 bildet eine Ausnahme). Das Alpenseminar findet in den Schweizer Alpen statt. " + KLASSENGROESSE,
       items: [
         {
           title: "Grundausbildung Heilsteinberater",
           description:
-            "Die SVNH-zertifizierte Ausbildung dauert mindestens drei Vierteljahre und vermittelt Steinheilkunde fundiert und praxisnah. Asp ist der Hauptsitz der Schule; die Grundausbildung findet standardmässig in Wallbach und Bern statt. Schulungsunterlagen und Zertifizierung sind im Preis von CHF 4250 enthalten. Zahlbar in 2 Raten.",
+            "Die SVNH-zertifizierte Ausbildung dauert mindestens drei Vierteljahre und vermittelt Steinheilkunde fundiert und praxisnah. Asp ist der Hauptsitz der Schule; die Grundausbildung findet standardmässig in Wallbach und Münsingen statt. Schulungsunterlagen und Zertifizierung sind im Preis von CHF 4250 enthalten. Zahlbar in 2 Raten.",
         },
         {
           title: "Alpenseminar",
@@ -145,7 +145,7 @@ export const REGIONS = [
     },
     services: {
       intro:
-        "Am Standort Wallbach führen wir ausschliesslich die Grundausbildung durch – keine Seminare. Eng abgestimmt mit dem Hauptsitz in Asp. Info-Nachmittage finden in Asp und Bern statt. " + KLASSENGROESSE,
+        "Am Standort Wallbach führen wir ausschliesslich die Grundausbildung durch – keine Seminare. Eng abgestimmt mit dem Hauptsitz in Asp. Info-Nachmittage finden in Asp und Münsingen statt. " + KLASSENGROESSE,
       items: [
         {
           title: "Grundausbildung Heilsteinberater",
@@ -159,9 +159,9 @@ export const REGIONS = [
           link: "/ausbildung#exkursionen",
         },
         {
-          title: "Info-Nachmittag in Asp oder Bern",
+          title: "Info-Nachmittag in Asp oder Münsingen",
           description:
-            "Kostenlose Info-Nachmittage finden in Asp und Bern statt – ideal, um vor der Anmeldung die Schule, das Dozententeam und die Steinheilkunde unverbindlich kennenzulernen.",
+            "Kostenlose Info-Nachmittage finden in Asp und Münsingen statt – ideal, um vor der Anmeldung die Schule, das Dozententeam und die Steinheilkunde unverbindlich kennenzulernen.",
           link: "/info-nachmittag",
         },
       ],
@@ -211,16 +211,16 @@ export const REGIONS = [
     },
   },
   {
-    slug: "bern",
-    city: "Bern",
-    region: "Bern / Seeland",
-    metaTitle: "Heilsteinberater Ausbildung Bern | Heilsteinschule Schweiz",
-    metaDescription: "Heilsteinberater Ausbildung in Bern: SVNH-zertifiziert und praxisnah bei der Heilsteinschule Schweiz. Lernen Sie Steinheilkunde im Herzen der Bundesstadt.",
+    slug: "muensingen",
+    city: "Münsingen",
+    region: "Münsingen / Aaretal",
+    metaTitle: "Heilsteinberater Ausbildung Münsingen | Heilsteinschule Schweiz",
+    metaDescription: "Heilsteinberater Ausbildung in Münsingen: SVNH-zertifiziert und praxisnah bei der Heilsteinschule Schweiz. Lernen Sie Steinheilkunde im Herzen von Münsingen.",
     hero: {
-      eyebrow: "Heilsteine in Bern",
-      h1: "Heilsteinberater Ausbildung in Bern – Steinheilkunde in der Bundesstadt lernen",
+      eyebrow: "Heilsteine in Münsingen",
+      h1: "Heilsteinberater Ausbildung in Münsingen – Steinheilkunde in Münsingen lernen",
       description:
-        "In Bern vermittelt die Heilsteinschule Schweiz die SVNH-zertifizierte Ausbildung zum Heilsteinberater mitten in der Bundesstadt. Praxisnah, fundiert und mit Dozenten, die selbst in der Steinheilkunde tätig sind.",
+        "In Münsingen vermittelt die Heilsteinschule Schweiz die SVNH-zertifizierte Ausbildung zum Heilsteinberater mitten in Münsingen. Praxisnah, fundiert und mit Dozenten, die selbst in der Steinheilkunde tätig sind.",
     },
     usps: [
       { icon: "Sparkles", title: "Seit 2011", description: "Bewährte Steinheilkunde-Ausbildung" },
@@ -230,75 +230,75 @@ export const REGIONS = [
     ],
     contact: {
       intro:
-        "Der Schulstandort Bern liegt zentral in der Bundesstadt an der Kapellenstrasse 5, im selben Gebäude wie der Schweizerische Verband für Natürliches Heilen (SVNH). Beratung und Anmeldung laufen über den Hauptsitz der Heilsteinschule Schweiz in Asp.",
-      address: "Kapellenstrasse 5 (4. Stock), 3011 Bern",
+        "Der Schulstandort Münsingen liegt zentral an der Kapellenstrasse 5, im selben Gebäude wie der Schweizerische Verband für Natürliches Heilen (SVNH). Beratung und Anmeldung laufen über den Hauptsitz der Heilsteinschule Schweiz in Asp.",
+      address: "Kapellenstrasse 5 (4. Stock), 3110 Münsingen",
       phone: PHONE,
       email: EMAIL,
     },
     services: {
       intro:
-        "In Bern bieten wir die vollständige Grundausbildung sowie Info-Nachmittage an – eng vernetzt mit dem Hauptsitz in Asp. " + KLASSENGROESSE,
+        "In Münsingen bieten wir die vollständige Grundausbildung sowie Info-Nachmittage an – eng vernetzt mit dem Hauptsitz in Asp. " + KLASSENGROESSE,
       items: [
         {
           title: "Grundausbildung Heilsteinberater",
           description:
-            "Die SVNH-zertifizierte Ausbildung in Bern dauert mindestens drei Vierteljahre und umfasst Schulungsunterlagen und Zertifikat zum Preis von CHF 4250, zahlbar in 2 Raten.",
+            "Die SVNH-zertifizierte Ausbildung in Münsingen dauert mindestens drei Vierteljahre und umfasst Schulungsunterlagen und Zertifikat zum Preis von CHF 4250, zahlbar in 2 Raten.",
         },
         {
           title: "Alpenseminar",
           description:
-            "Das Alpenseminar ergänzt die Berner Ausbildung mit vier Übernachtungen in den Bergen. Dieser praktische Teil ist obligatorisch für das Schulzertifikat.",
+            "Das Alpenseminar ergänzt die Münsinger Ausbildung mit vier Übernachtungen in den Bergen. Dieser praktische Teil ist obligatorisch für das Schulzertifikat.",
           link: "/ausbildung#exkursionen",
         },
         {
-          title: "Info-Nachmittag Bern",
+          title: "Info-Nachmittag Münsingen",
           description:
-            "Am kostenlosen Info-Nachmittag in Bern lernen Sie die Heilsteinschule, das Dozententeam und die Steinheilkunde unverbindlich kennen – ideal zum Schnuppern.",
+            "Am kostenlosen Info-Nachmittag in Münsingen lernen Sie die Heilsteinschule, das Dozententeam und die Steinheilkunde unverbindlich kennen – ideal zum Schnuppern.",
           link: "/info-nachmittag",
         },
       ],
     },
     whyUs: {
       intro:
-        "Bern als Ausbildungsstandort verbindet städtische Erreichbarkeit mit der langen Tradition der Heilsteinschule Schweiz. Vom Hauptbahnhof Bern sind es nur rund 5 Gehminuten zum Schulort.",
+        "Münsingen als Ausbildungsstandort verbindet städtische Erreichbarkeit mit der langen Tradition der Heilsteinschule Schweiz. Vom Bahnhof Münsingen sind es nur rund 5 Gehminuten zum Schulort.",
       reasons: [
-        { headline: "Zentral in der Bundesstadt", description: "5 Gehminuten ab Hauptbahnhof Bern." },
+        { headline: "Zentral in Münsingen", description: "5 Gehminuten ab Bahnhof Münsingen." },
         { headline: "Erfahrene Dozenten", description: "Lehrpersonen mit eigener Heilsteinpraxis." },
         { headline: "SVNH-zertifiziert", description: "Anerkannter Steinheilkunde-Abschluss." },
-        { headline: "Kleine Klassen", description: "Persönliche Betreuung in Bern – min. 5, max. 8 Personen." },
+        { headline: "Kleine Klassen", description: "Persönliche Betreuung in Münsingen – min. 5, max. 8 Personen." },
         { headline: "Flexible Schultage", description: "Nachholen an anderen Standorten möglich." },
       ],
       cta: "Jetzt Offerte anfordern",
     },
     costs: {
       intro:
-        "Die Ausbildung in Bern kostet CHF 4250 inklusive Unterlagen und Zertifizierung, zahlbar in 2 Raten. Die Anzahlung von CHF 250 reserviert Ihren Platz in der Bundesstadt.",
+        "Die Ausbildung in Münsingen kostet CHF 4250 inklusive Unterlagen und Zertifizierung, zahlbar in 2 Raten. Die Anzahlung von CHF 250 reserviert Ihren Platz in Münsingen.",
       items: COSTS_ITEMS,
       cta: "Jetzt Offerte anfordern",
     },
     reviews: {
       intro:
-        "Absolventinnen und Absolventen aus Bern und dem Seeland schätzen die fundierte und herziggeführte Ausbildung der Heilsteinschule Schweiz.",
+        "Absolventinnen und Absolventen aus Münsingen und dem Seeland schätzen die fundierte und herziggeführte Ausbildung der Heilsteinschule Schweiz.",
       rating: "5.0",
       count: "Über 250 Absolventen",
     },
     faq: [
-      { q: "Was kostet die Heilsteinberater Ausbildung in Bern?", a: "Die SVNH-zertifizierte Grundausbildung in Bern kostet CHF 4250 inklusive Schulungsunterlagen und Zertifizierung, zahlbar in 2 Raten. Die Anzahlung von CHF 250 sichert Ihren Platz und wird an die erste Rate angerechnet." },
-      { q: "Wie lange dauert die Ausbildung in Bern?", a: "In Bern erstreckt sich die Ausbildung über mindestens drei Vierteljahre. Maximal zwei Fehltage sind erlaubt, ausgefallene Tage lassen sich in einer Parallelklasse nachholen." },
-      { q: "Kann ich mich online für Bern anmelden?", a: "Ja, die Anmeldung erfolgt online, schriftlich oder per E-Mail über den Hauptsitz in Asp. Mit der Anzahlung von CHF 250 wird Ihre Anmeldung für den Standort Bern verbindlich." },
-      { q: "Brauche ich Vorkenntnisse in Steinheilkunde?", a: "Nein, in Bern starten Sie ohne Vorkenntnisse. Wichtig sind Freude an Steinen und Offenheit – das Dozententeam führt Sie Schritt für Schritt in die Steinheilkunde ein." },
-      { q: "Wo finden die Schultage in Bern statt?", a: "Die Schultage finden am Schulstandort Bern an der Kapellenstrasse 5 statt, organisiert über den Hauptsitz in Asp. Die Klassen umfassen 5 bis 8 Personen, der Beginn wird festgelegt, sobald 5 Anmeldungen vorliegen." },
-      { q: "Ist das Alpenseminar für Bern verpflichtend?", a: "Ja, das Alpenseminar ist obligatorisch für das Zertifikat. Für vier Übernachtungen mit Halbpension fallen ca. CHF 490 an, zahlbar direkt im Seminarhotel." },
+      { q: "Was kostet die Heilsteinberater Ausbildung in Münsingen?", a: "Die SVNH-zertifizierte Grundausbildung in Münsingen kostet CHF 4250 inklusive Schulungsunterlagen und Zertifizierung, zahlbar in 2 Raten. Die Anzahlung von CHF 250 sichert Ihren Platz und wird an die erste Rate angerechnet." },
+      { q: "Wie lange dauert die Ausbildung in Münsingen?", a: "In Münsingen erstreckt sich die Ausbildung über mindestens drei Vierteljahre. Maximal zwei Fehltage sind erlaubt, ausgefallene Tage lassen sich in einer Parallelklasse nachholen." },
+      { q: "Kann ich mich online für Münsingen anmelden?", a: "Ja, die Anmeldung erfolgt online, schriftlich oder per E-Mail über den Hauptsitz in Asp. Mit der Anzahlung von CHF 250 wird Ihre Anmeldung für den Standort Münsingen verbindlich." },
+      { q: "Brauche ich Vorkenntnisse in Steinheilkunde?", a: "Nein, in Münsingen starten Sie ohne Vorkenntnisse. Wichtig sind Freude an Steinen und Offenheit – das Dozententeam führt Sie Schritt für Schritt in die Steinheilkunde ein." },
+      { q: "Wo finden die Schultage in Münsingen statt?", a: "Die Schultage finden am Schulstandort Münsingen an der Kapellenstrasse 5 statt, organisiert über den Hauptsitz in Asp. Die Klassen umfassen 5 bis 8 Personen, der Beginn wird festgelegt, sobald 5 Anmeldungen vorliegen." },
+      { q: "Ist das Alpenseminar für Münsingen verpflichtend?", a: "Ja, das Alpenseminar ist obligatorisch für das Zertifikat. Für vier Übernachtungen mit Halbpension fallen ca. CHF 490 an, zahlbar direkt im Seminarhotel." },
     ],
     otherServices: OTHER_SERVICES,
     area: {
       intro:
-        "Bern ist gut aus dem gesamten Kanton und dem Seeland erreichbar. Unser Einzugsgebiet umfasst die Bundesstadt und die umliegenden Gemeinden.",
-      places: ["Bern", "Ostermundigen", "Bümpliz", "Köniz", "Muri", "Belp", "Ittigen", "Zollikofen", "Steffisburg", "Thun"],
+        "Münsingen ist gut aus dem gesamten Kanton und dem Seeland erreichbar. Unser Einzugsgebiet umfasst Münsingen und die umliegenden Gemeinden.",
+      places: ["Münsingen", "Ostermundigen", "Bümpliz", "Köniz", "Muri", "Belp", "Ittigen", "Zollikofen", "Steffisburg", "Thun"],
     },
     finalCta: {
-      title: "Steinheilkunde in Bern entdecken",
-      text: "Melden Sie sich jetzt für die Heilsteinberater Ausbildung in Bern an und lernen Sie die Kraft der Heilsteine kennen.",
+      title: "Steinheilkunde in Münsingen entdecken",
+      text: "Melden Sie sich jetzt für die Heilsteinberater Ausbildung in Münsingen an und lernen Sie die Kraft der Heilsteine kennen.",
       button: "Termin buchen",
     },
   },
@@ -329,7 +329,7 @@ export const REGIONS = [
     },
     services: {
       intro:
-        "Im Raum Zürich bieten wir die Grundausbildung am Standort Wallbach an. Info-Nachmittage finden in Asp und Bern statt, das Alpenseminar in den Schweizer Alpen. " + KLASSENGROESSE,
+        "Im Raum Zürich bieten wir die Grundausbildung am Standort Wallbach an. Info-Nachmittage finden in Asp und Münsingen statt, das Alpenseminar in den Schweizer Alpen. " + KLASSENGROESSE,
       items: [
         {
           title: "Grundausbildung Heilsteinberater",
@@ -345,7 +345,7 @@ export const REGIONS = [
         {
           title: "Info-Nachmittag für Zürich",
           description:
-            "Kostenlose Info-Nachmittage finden in Asp und Bern statt – ideal für Interessierte aus Zürich, um die Heilsteinschule und die Steinheilkunde unverbindlich kennenzulernen.",
+            "Kostenlose Info-Nachmittage finden in Asp und Münsingen statt – ideal für Interessierte aus Zürich, um die Heilsteinschule und die Steinheilkunde unverbindlich kennenzulernen.",
           link: "/info-nachmittag",
         },
       ],
@@ -437,7 +437,7 @@ export const REGIONS = [
         {
           title: "Info-Nachmittag für Basel",
           description:
-            "Am kostenlosen Info-Nachmittag in Asp oder Bern lernen Sie die Heilsteinschule und die Steinheilkunde unverbindlich kennen – ideal für Interessierte aus Basel.",
+            "Am kostenlosen Info-Nachmittag in Asp oder Münsingen lernen Sie die Heilsteinschule und die Steinheilkunde unverbindlich kennen – ideal für Interessierte aus Basel.",
           link: "/info-nachmittag",
         },
       ],
@@ -529,7 +529,7 @@ export const REGIONS = [
         {
           title: "Info-Nachmittag für Aarau",
           description:
-            "Am kostenlosen Info-Nachmittag in Asp oder Bern lernen Sie die Heilsteinschule und die Steinheilkunde unverbindlich kennen – ideal für Interessierte aus Aarau.",
+            "Am kostenlosen Info-Nachmittag in Asp oder Münsingen lernen Sie die Heilsteinschule und die Steinheilkunde unverbindlich kennen – ideal für Interessierte aus Aarau.",
           link: "/info-nachmittag",
         },
       ],
@@ -621,7 +621,7 @@ export const REGIONS = [
         {
           title: "Info-Nachmittag für Baden",
           description:
-            "Am kostenlosen Info-Nachmittag in Asp oder Bern lernen Sie die Heilsteinschule und die Steinheilkunde unverbindlich kennen – ideal für Interessierte aus Baden.",
+            "Am kostenlosen Info-Nachmittag in Asp oder Münsingen lernen Sie die Heilsteinschule und die Steinheilkunde unverbindlich kennen – ideal für Interessierte aus Baden.",
           link: "/info-nachmittag",
         },
       ],
@@ -713,7 +713,7 @@ export const REGIONS = [
         {
           title: "Info-Nachmittag für Brugg",
           description:
-            "Am kostenlosen Info-Nachmittag in Asp oder Bern lernen Sie die Heilsteinschule und die Steinheilkunde unverbindlich kennen – ideal für Interessierte aus Brugg.",
+            "Am kostenlosen Info-Nachmittag in Asp oder Münsingen lernen Sie die Heilsteinschule und die Steinheilkunde unverbindlich kennen – ideal für Interessierte aus Brugg.",
           link: "/info-nachmittag",
         },
       ],
@@ -805,7 +805,7 @@ export const REGIONS = [
         {
           title: "Info-Nachmittag für Olten",
           description:
-            "Am kostenlosen Info-Nachmittag in Asp oder Bern lernen Sie die Heilsteinschule und die Steinheilkunde unverbindlich kennen – ideal für Interessierte aus Olten.",
+            "Am kostenlosen Info-Nachmittag in Asp oder Münsingen lernen Sie die Heilsteinschule und die Steinheilkunde unverbindlich kennen – ideal für Interessierte aus Olten.",
           link: "/info-nachmittag",
         },
       ],

@@ -16,10 +16,10 @@ const LOCATIONS = [
   },
   {
     icon: GraduationCap,
-    name: "Bern",
+    name: "Münsingen",
     role: "Grundausbildung & Info-Nachmittag",
     tag: "Basic Training + Info",
-    text: "Grundausbildung und kostenloser Info-Nachmittag in Bern — 5 Gehminuten ab Hauptbahnhof.",
+    text: "Grundausbildung und kostenloser Info-Nachmittag in Münsingen — 5 Gehminuten ab Bahnhof Münsingen.",
     classSize: "Klassengrösse: min. 5, max. 8 Personen",
     info: "Info-Nachmittag verfügbar",
     cta: { label: "Zur Anmeldung", to: "/ausbildung-anmeldung" },
@@ -43,7 +43,7 @@ export default function TrainingLocations() {
           <SectionHeading
             eyebrow="Schulorte"
             title="Wo findet die Ausbildung statt?"
-            subtitle="Die Grundausbildung erfolgt in Wallbach und Bern. Asp ist der Hauptsitz mit Shop, Praxis und praktischen Ausbildungsteilen."
+            subtitle="Die Grundausbildung erfolgt in Wallbach und Münsingen. Asp ist der Hauptsitz mit Shop, Praxis und praktischen Ausbildungsteilen."
           />
         </Reveal>
         <div className="mt-12 grid gap-6 md:grid-cols-3">

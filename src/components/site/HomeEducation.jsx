@@ -35,7 +35,7 @@ export default function HomeEducation() {
             <h3 className="mt-4 font-heading text-lg font-semibold text-amethyst">Schulorte</h3>
             <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
               <strong className="text-amethyst">Wallbach</strong> (Grundausbildung) und{" "}
-              <strong className="text-amethyst">Bern</strong> (Grundausbildung & Info-Nachmittag).
+              <strong className="text-amethyst">Münsingen</strong> (Grundausbildung & Info-Nachmittag).
               Asp ist der Hauptsitz mit Heilsteinshop und Praxis.
             </p>
           </div>

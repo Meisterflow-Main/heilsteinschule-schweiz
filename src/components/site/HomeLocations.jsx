@@ -13,10 +13,10 @@ const LOCATIONS = [
     color: "bg-amethyst/10 text-amethyst",
   },
   {
-    name: "Bern",
+    name: "Münsingen",
     role: "Grundausbildung & Info-Nachmittag",
     icon: GraduationCap,
-    text: "Grundausbildung und kostenlose Info-Nachmittage im selben Gebäude wie der SVNH. 5 Min. ab Hauptbahnhof.",
+    text: "Grundausbildung und kostenlose Info-Nachmittage im selben Gebäude wie der SVNH. 5 Min. ab Bahnhof Münsingen.",
     color: "bg-amethyst/10 text-amethyst",
   },
   {

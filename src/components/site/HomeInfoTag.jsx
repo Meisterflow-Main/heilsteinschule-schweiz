@@ -17,7 +17,7 @@ export default function HomeInfoTag() {
           <p className="mt-5 text-base leading-relaxed text-muted-foreground">
             Lernen Sie die Heilsteinschule Schweiz, das Dozententeam und die faszinierende Welt
             der Heilsteine kennen — ohne Verpflichtung. Der Info-Nachmittag findet in{" "}
-            <strong className="text-amethyst">Asp</strong> und <strong className="text-amethyst">Bern</strong> statt.
+            <strong className="text-amethyst">Asp</strong> und <strong className="text-amethyst">Münsingen</strong> statt.
           </p>
           <div className="mt-8 space-y-4">
             <div className="flex items-start gap-3">
@@ -26,7 +26,7 @@ export default function HomeInfoTag() {
             </div>
             <div className="flex items-start gap-3">
               <MapPin className="mt-0.5 h-5 w-5 shrink-0 text-citrine-deep" />
-              <p className="text-sm text-muted-foreground">In Asp (Fricktal, AG) und Bern (Kapellenstrasse 5).</p>
+              <p className="text-sm text-muted-foreground">In Asp (Fricktal, AG) und Münsingen (Kapellenstrasse 5).</p>
             </div>
             <div className="flex items-start gap-3">
               <Clock className="mt-0.5 h-5 w-5 shrink-0 text-citrine-deep" />

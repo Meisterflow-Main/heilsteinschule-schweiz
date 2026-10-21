@@ -26,14 +26,14 @@ export const STANDORTE = [
     lng: 7.9050883,
   },
   {
-    name: "Bern — Grundausbildung & Info",
-    ort: "Kapellenstrasse 5 (4. Stock), 3011 Bern",
+    name: "Münsingen — Grundausbildung & Info",
+    ort: "Kapellenstrasse 5 (4. Stock), 3110 Münsingen",
     img: "https://heilsteinschule.swiss/media/wunderblock/svnh-gebaeude.jpg",
     rolle: "Grundausbildung & Info-Nachmittag · Klassengrösse min. 5, max. 8 Personen",
     tage: "Wochenende, 09:00–17:00 Uhr, 1× monatlich",
     leitung: "Ruth Rios",
-    hinweis: "Im selben Gebäude wie SVNH · 5 Min. ab HB",
-    weg: "ÖV: Vom Hauptbahnhof Bern ca. 5 Min. zu Fuss — Richtung Süden zum Hirschengraben, weiter auf die Monbijoustrasse, dann rechts in die Kapellenstrasse. Hausnummer 5 links. Auto: Nur blaue Zone (1 Std.) und City West Parking. Keine eigenen Parkplätze.",
+    hinweis: "Im selben Gebäude wie SVNH · 5 Min. ab Bahnhof Münsingen",
+    weg: "ÖV: Vom Bahnhof Münsingen ca. 5 Min. zu Fuss. Auto: Keine eigenen Parkplätze.",
   },
 ];
 
@@ -44,7 +44,7 @@ export default function Schulorte({ withHeading = true }) {
         <Reveal>
           <SectionHeading
             eyebrow="Schulorte"
-            title="Asp · Wallbach · Bern"
+            title="Asp · Wallbach · Münsingen"
             subtitle="Drei Schulstandorte in der Schweiz — dazu das Alpenseminar in den Schweizer Alpen."
           />
         </Reveal>

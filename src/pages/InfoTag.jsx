@@ -14,12 +14,12 @@ const TERMINE = [
     datum: "2026-10-10",
     displayDate: "Samstag, 10.10.2026",
     time: "13:00–17:00 Uhr",
-    ort: "Bern",
-    address: "Kapellenstrasse 5 (4. Stock), 3011 Bern",
-    travelTime: "Nur ca. 5 Gehminuten ab Hauptbahnhof Bern.",
+    ort: "Münsingen",
+    address: "Kapellenstrasse 5 (4. Stock), 3110 Münsingen",
+    travelTime: "Nur ca. 5 Gehminuten ab Bahnhof Münsingen.",
     img: "https://heilsteinschule.swiss/media/Info-Tag/Berner-Wappen.png",
     travelInfo:
-      "ÖV: Vom Hauptbahnhof Bern ca. 5 Min. zu Fuss — Richtung Süden zum Hirschengraben, weiter auf die Monbijoustrasse, dann rechts in die Kapellenstrasse. Hausnummer 5 links. Auto: Nur blaue Zone (1 Std.) und City West Parking. Keine eigenen Parkplätze.",
+      "ÖV: Vom Bahnhof Münsingen ca. 5 Min. zu Fuss. Auto: Keine eigenen Parkplätze.",
   },
   {
     id: "asp-2026-10-31",
@@ -80,7 +80,7 @@ export default function InfoTag() {
             </div>
             <h1 className="font-heading text-4xl font-bold sm:text-5xl md:text-6xl">Info-Nachmittag</h1>
             <p className="mt-5 max-w-xl text-lg text-white/80">
-              Kostenloser Info-Nachmittag an der Heilsteinschule Schweiz in Asp und Bern —
+              Kostenloser Info-Nachmittag an der Heilsteinschule Schweiz in Asp und Münsingen —
               erfahren Sie mehr über die faszinierende Welt der Heilsteine und unsere Ausbildung.
             </p>
           </Reveal>
@@ -120,7 +120,7 @@ export default function InfoTag() {
             <SectionHeading
               eyebrow="Termine"
               title="Anstehende Info-Nachmittage"
-              subtitle="Der Info-Nachmittag findet in Bern und Asp statt. Wählen Sie unten Ihren Wunschtermin."
+              subtitle="Der Info-Nachmittag findet in Münsingen und Asp statt. Wählen Sie unten Ihren Wunschtermin."
             />
           </Reveal>
           <div className="mt-12 grid gap-6 sm:grid-cols-2">

@@ -43,7 +43,7 @@ const FOOTER_GROUPS = [
       { label: "Baden", to: "/regionen/baden" },
       { label: "Brugg", to: "/regionen/brugg" },
       { label: "Olten", to: "/regionen/olten" },
-      { label: "Bern", to: "/regionen/bern" },
+      { label: "Münsingen", to: "/regionen/muensingen" },
       { label: "Asp", to: "/regionen/asp" },
       { label: "Wallbach", to: "/regionen/wallbach" },
     ],

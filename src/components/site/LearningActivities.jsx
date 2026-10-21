@@ -10,7 +10,7 @@ const ACTIVITIES = [
   {
     icon: BookOpen,
     label: "Im Unterricht",
-    text: "Ruth Rios und Bruno Vogler Pfeiffer lehren mit Kopf, Hand, Fuss und Herz — analytisches Wissen und praktische Anwendung in Asp, Wallbach und Bern.",
+    text: "Ruth Rios und Bruno Vogler Pfeiffer lehren mit Kopf, Hand, Fuss und Herz — analytisches Wissen und praktische Anwendung in Asp, Wallbach und Münsingen.",
     img: "https://heilsteinschule.swiss/media/Ruth_Bruno_Aug_25_2.jpg",
     hd: false,
     to: "/ausbildung",

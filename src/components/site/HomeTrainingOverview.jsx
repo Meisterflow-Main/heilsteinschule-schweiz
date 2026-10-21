@@ -7,7 +7,7 @@ import SectionHeading from "@/components/site/SectionHeading";
 const FACTS = [
   { icon: Clock, label: "Dauer", value: "Mindestens ¾ Jahr" },
   { icon: Award, label: "Zertifizierung", value: "SVNH-Zertifizierung" },
-  { icon: MapPin, label: "Schulorte", value: "Wallbach & Bern" },
+  { icon: MapPin, label: "Schulorte", value: "Wallbach & Münsingen" },
   { icon: Users, label: "Teilnehmer", value: "5–8 Personen" },
   { icon: CreditCard, label: "Preis", value: "CHF 4'250.– inkl. Unterlagen & Zertifikat" },
   { icon: Calendar, label: "Starttermine", value: "Ganzjähriger Start — siehe Kalender" },

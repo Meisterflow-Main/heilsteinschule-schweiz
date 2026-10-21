@@ -7,11 +7,11 @@ import SectionHeading from "@/components/site/SectionHeading";
 export const TERMINE = [
   { ort: "Wallbach 1", beginn: "30. / 31. 01. 2027", tag: "Sa/So", stern: true },
   { ort: "Wallbach 2", beginn: "21. 01. 2027", tag: "Do", stern: true },
-  { ort: "Bern 2", beginn: "23. / 24. 01. 2027", tag: "Sa/So", stern: true },
+  { ort: "Münsingen 2", beginn: "23. / 24. 01. 2027", tag: "Sa/So", stern: true },
 ];
 
 export const KALENDER = [
-  { name: "Schulkalender Bern 2", groesse: "10.51 KB", start: "23.01.2027", rhythmus: "Wochenenden", dl: 3 },
+  { name: "Schulkalender Münsingen 2", groesse: "10.51 KB", start: "23.01.2027", rhythmus: "Wochenenden", dl: 3 },
   { name: "Schulkalender Asp 8", groesse: "166.91 KB", start: "21.05.2026", rhythmus: "Donnerstags", dl: 15 },
   { name: "Schulkalender Wallbach 2", groesse: "19.39 KB", start: "21.01.2027", rhythmus: "Donnerstags", dl: 23 },
   { name: "Schulkalender Wallbach 1", groesse: "10.54 KB", start: "30.01.2027", rhythmus: "Wochenenden", dl: 28 },

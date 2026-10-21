@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const TEASERS = [
   {
     title: "Info-Nachmittag",
-    text: "Asp / Bern — Interessiert mehr zu erfahren?",
+    text: "Asp / Münsingen — Interessiert mehr zu erfahren?",
     img: "https://heilsteinschule.swiss/media/teasers-pictures/info-tag.png",
     to: "/info-nachmittag",
   },
@@ -22,7 +22,7 @@ const TEASERS = [
   },
   {
     title: "Unsere Standorte",
-    text: "Schulen in: Asp, Wallbach und Bern",
+    text: "Schulen in: Asp, Wallbach und Münsingen",
     img: "https://heilsteinschule.swiss/media/teasers-pictures/uebersicht-alle-standorte.png",
     to: "/ausbildung",
   },
