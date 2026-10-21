@@ -138,7 +138,7 @@ export const REGIONS = [
     ],
     contact: {
       intro:
-        "Der Schulstandort Wallbach liegt an der Rheinstrasse 29 im Fricktal, im Kanton Aargau nahe der deutschen Grenze und des Rheins. Hier findet ausschliesslich die Grundausbildung statt – keine Seminare. Beratung und Anmeldung laufen über den Hauptsitz der Heilsteinschule Schweiz in Asp.",
+        "Der Schulstandort Wallbach liegt an der Rheinstrasse 29 im Fricktal, im Kanton Aargau nahe der deutschen Grenze und des Rheins. Hier findet die Grundausbildung und der Info-Nachmittag/Abend statt.",
       address: WALLBACH_ADDRESS,
       phone: PHONE,
       email: EMAIL,
