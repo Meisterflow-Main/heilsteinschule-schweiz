@@ -87,7 +87,7 @@ export default function MineralSelection() {
         <SectionHeading
           eyebrow="Mineralienauswahl"
           title="Einige Mineralien im Porträt"
-          subtitle="Jeder Heilstein wird einzeln in die Hand genommen, geprüft und ausgewählt. Mit Wissen, Gefühl und Intuition entscheiden wir, welche Mineralien als Lebensbegleiter dienen dürfen. Klicken Sie auf ein Porträt für die Beschreibung im Online-Shop."
+          subtitle="Jeder Heilstein wird einzeln in die Hand genommen, geprüft und ausgewählt. Mit Wissen, Gefühl und Intuition entscheiden wir, welche Mineralien als Lebensbegleiter dienen dürfen. Im Online-Shop finden Sie über 300 Heilsteine. Klicken Sie auf ein Porträt für die Beschreibung im Online-Shop."
         />
       </Reveal>
       <div className="mt-12 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4 sm:gap-6">
