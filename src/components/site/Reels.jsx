@@ -6,22 +6,22 @@ import SectionHeading from "@/components/site/SectionHeading";
 const REELS = [
   {
     src: "https://media.base44.com/videos/public/6aa92ec5274311c12da18ee6/a9e81d6e8_Reel_Steinanwendung.mp4",
-    title: "Steinanwendung erleben",
+    title: "Schauen",
     caption: "Heilsteine behutsam auflegen — Gelerntes am eigenen Körper erfahren.",
   },
   {
     src: "https://media.base44.com/videos/public/6aa92ec5274311c12da18ee6/da622bc2d_Reel_Laden.mp4",
-    title: "Heilsteinshop Asp",
+    title: "Fühlen",
     caption: "Rohsteine, Trommelsteine, Armbänder & mehr — GKS kontrolliert.",
   },
   {
     src: "https://media.base44.com/videos/public/6aa92ec5274311c12da18ee6/8e9ccd0c9_Reel_Ausbildung.mp4",
-    title: "Ausbildung mit Herz",
+    title: "Wissen",
     caption: "Mit Kopf, Hand, Fuss und Herz zum Heilsteinberater.",
   },
   {
     src: "https://heilsteinschule.swiss/media/Filme/Energiesteine_reinigen_und_aufladen.mp4",
-    title: "Energiesteine reinigen & aufladen",
+    title: "Entscheiden",
     caption: "Viele Steine haben besondere Eigenschaften — richtig reinigen und aufladen.",
   },
 ];
