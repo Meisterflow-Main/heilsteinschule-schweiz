@@ -48,7 +48,6 @@ const NAV_ITEMS = [
       { label: "Brunos Buch", to: "/brunos-buch", icon: BookOpen },
       { label: "Michael Gienger", to: "/michael-gienger", icon: Users },
       { label: "Geologische Reisen", to: "/geologische-reisen", icon: Mountain },
-      { label: "Granit & Gneis", to: "/granit-gneis", icon: Mountain },
     ],
   },
   {
