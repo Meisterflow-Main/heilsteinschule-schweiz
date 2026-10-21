@@ -42,18 +42,6 @@ const INTERVIEW = [
     imgAlt: "Trockener Steg, Zermatt, 3000 m ü. M., 3-tägige Georeise 2022",
   },
   {
-    q: "Warum ist es wichtig, die Wirkungen der Heilsteine am eigenen Körper zu erfahren?",
-    a: "Immer ist das, was dir selber «widerfahren» ist, unauslöschlich in dir gespeichert. Du erkennst umgehend, «gut oder unnötig».",
-  },
-  {
-    q: "Was ist das Besondere an der analytischen Steinheilkunde, die an der Heilsteinschule Schweiz gelehrt wird?",
-    a: "Das Besondere bei uns ist das analytische, wissenschaftliche Grundwissen, das wir vermitteln. Über 90 % des Wissens, welches im Internet über Steine zu finden ist, entzieht sich der analytischen Steinheilkunde. Entstehung, Chemismus, Kristallstruktur, die Farbe wie auch die Form bestimmen verlässlich, was ein Stein zu leisten vermag. Michael Gienger hat daran 30 Jahre geforscht und es in über 20 Büchern niedergeschrieben. Vor 12 Jahren kaufte ich von ihm die Lizenz, dieses Wissen der Steinheilkunde unverfälscht lehren zu dürfen.",
-  },
-  {
-    q: "Wie können Heilsteine als Lebensbegleiter dienen?",
-    a: "Präventiv sind Steine sehr verlässliche Begleiter, wenn man ihnen vertraut. Dasselbe gilt, wenn eine Situation akut ist, sprich in der Form einer Krankheit sich bemerkbar macht. Hier können wir hilfreich sein. Aber der Mensch muss wollen. Die Schüler erkennen, dass ein Stein auch in seelischer oder psychischer Hinsicht ein Unterstützer sein kann, indem er tägliche Schritte auf dem individuellen Lebensweg begleitet. Er kann die Stimmung erhellen und aber auch Mut geben, Unangenehmes anzugehen und anzuschauen. Er hilft, Spannungen zu lösen und Blockaden aufzulösen.",
-  },
-  {
     q: "Wie können Heilsteine dazu beitragen, dass Menschen in Kontakt mit ihrer inneren Berufung kommen?",
     a: "Hier verweise ich auf die Kristallstrukturen, siehe oben. Sie zeigen dir deinen Lebensstil auf, deine Berufung. Hier in der Schule lehren wir die Schüler, die eigene Struktur zu erkennen und bei Klienten sie ebenfalls zu finden. Und dann gibt es verschiedene Steine, die dem Menschen helfen, Erkenntnisse zu erlangen, wenn er bereit ist, sich seinen Lebensthemen zu stellen.",
   },
