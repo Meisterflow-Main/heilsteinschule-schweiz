@@ -10,7 +10,7 @@ const NAV_ITEMS = [
       { label: "Schulorte: Wallbach & Münsingen", to: "/schulorte", icon: MapPinned },
       { label: "Kalender", to: "/schultermine", icon: CalendarDays },
       { label: "Exkursionen & Alpenseminar", to: "/geologische-reisen", icon: Mountain },
-      { label: "Erfahrungsberichte", to: "/schueler-berichte", icon: Users },
+      { label: "Schülerberichte", to: "/schueler-berichte", icon: Users },
     ],
   },
   {
