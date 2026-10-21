@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { Quote, BookOpen, ArrowRight } from "lucide-react";
 import Reveal from "@/components/site/Reveal";
 import SectionHeading from "@/components/site/SectionHeading";
+import GiengerBooks from "@/components/site/GiengerBooks";
 
 const GALLERY = [
   { img: "https://heilsteinschule.swiss/media/rfg-folders/michael-gienger-gallery/Copacabana1.jpg", alt: "Copacabana Rio de Janeiro 3 Std. nach der Landung" },
@@ -145,6 +146,9 @@ export default function MichaelGienger() {
           ))}
         </div>
       </section>
+
+      {/* Bücher */}
+      <GiengerBooks />
 
       {/* CTA */}
       <section className="relative overflow-hidden bg-amethyst text-white">
