@@ -159,7 +159,7 @@ export const REGIONS = [
           link: "/ausbildung#exkursionen",
         },
         {
-          title: "Info-Nachmittag in Asp oder Münsingen",
+          title: "Info-Nachmittag/-Abend",
           description:
             "Kostenlose Info-Nachmittage finden in Asp und Münsingen statt – ideal, um vor der Anmeldung die Schule, das Dozententeam und die Steinheilkunde unverbindlich kennenzulernen.",
           link: "/info-nachmittag",
@@ -437,7 +437,7 @@ export const REGIONS = [
         {
           title: "Info-Nachmittag für Basel",
           description:
-            "Am kostenlosen Info-Nachmittag in Asp oder Münsingen lernen Sie die Heilsteinschule und die Steinheilkunde unverbindlich kennen – ideal für Interessierte aus Basel.",
+            "Am kostenlosen Info-Nachmittag/-Abend lernen Sie die Heilsteinschule und die Steinheilkunde unverbindlich kennen – ideal für Interessierte aus Basel.",
           link: "/info-nachmittag",
         },
       ],
@@ -529,7 +529,7 @@ export const REGIONS = [
         {
           title: "Info-Nachmittag für Aarau",
           description:
-            "Am kostenlosen Info-Nachmittag in Asp oder Münsingen lernen Sie die Heilsteinschule und die Steinheilkunde unverbindlich kennen – ideal für Interessierte aus Aarau.",
+            "Am kostenlosen Info-Nachmittag/-Abend lernen Sie die Heilsteinschule und die Steinheilkunde unverbindlich kennen – ideal für Interessierte aus Aarau.",
           link: "/info-nachmittag",
         },
       ],
@@ -621,7 +621,7 @@ export const REGIONS = [
         {
           title: "Info-Nachmittag für Baden",
           description:
-            "Am kostenlosen Info-Nachmittag in Asp oder Münsingen lernen Sie die Heilsteinschule und die Steinheilkunde unverbindlich kennen – ideal für Interessierte aus Baden.",
+            "Am kostenlosen Info-Nachmittag/-Abend lernen Sie die Heilsteinschule und die Steinheilkunde unverbindlich kennen – ideal für Interessierte aus Baden.",
           link: "/info-nachmittag",
         },
       ],
@@ -713,7 +713,7 @@ export const REGIONS = [
         {
           title: "Info-Nachmittag für Brugg",
           description:
-            "Am kostenlosen Info-Nachmittag in Asp oder Münsingen lernen Sie die Heilsteinschule und die Steinheilkunde unverbindlich kennen – ideal für Interessierte aus Brugg.",
+            "Am kostenlosen Info-Nachmittag/-Abend lernen Sie die Heilsteinschule und die Steinheilkunde unverbindlich kennen – ideal für Interessierte aus Brugg.",
           link: "/info-nachmittag",
         },
       ],
@@ -805,7 +805,7 @@ export const REGIONS = [
         {
           title: "Info-Nachmittag für Olten",
           description:
-            "Am kostenlosen Info-Nachmittag in Asp oder Münsingen lernen Sie die Heilsteinschule und die Steinheilkunde unverbindlich kennen – ideal für Interessierte aus Olten.",
+            "Am kostenlosen Info-Nachmittag/-Abend lernen Sie die Heilsteinschule und die Steinheilkunde unverbindlich kennen – ideal für Interessierte aus Olten.",
           link: "/info-nachmittag",
         },
       ],
