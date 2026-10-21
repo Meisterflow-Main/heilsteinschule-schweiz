@@ -9,7 +9,7 @@ import {
 const iconMap = { Sparkles, Award, Users, Hand };
 
 const GENERIC_FAQ = [
-  { q: "Was kostet die Heilsteinberater Ausbildung?", a: "Die SVNH-zertifizierte Grundausbildung kostet CHF 4250 inklusive Schulungsunterlagen und Zertifizierung, zahlbar in 2 Raten. Die Anzahlung von CHF 250 sichert Ihren Platz und wird an die erste Rate angerechnet." },
+  { q: "Was kostet die Heilsteinberater Ausbildung?", a: "Die SVNH-zertifizierte Grundausbildung kostet CHF 4250 inklusive Schulungsunterlagen und Zertifizierung. Ratenzahlung individuell auf Anfrage. Die Anzahlung von CHF 250 sichert Ihren Platz und wird an die erste Rate angerechnet." },
   { q: "Wie lange dauert die Ausbildung?", a: "Die Ausbildung erstreckt sich über mindestens drei Vierteljahre. Maximal zwei Fehltage sind erlaubt, ausgefallene Schultage lassen sich in einer Parallelklasse nachholen." },
   { q: "Kann ich mich online anmelden?", a: "Ja, die Anmeldung erfolgt online, schriftlich oder per E-Mail. Mit der Anzahlung von CHF 250 wird Ihre Anmeldung verbindlich und Ihr Platz reserviert." },
   { q: "Brauche ich Vorkenntnisse in Steinheilkunde?", a: "Nein, Sie starten ohne Vorkenntnisse. Freude an Steinen, Offenheit für die Natur und ein offenes Herz genügen – das Dozententeam führt Sie Schritt für Schritt in die Steinheilkunde ein." },
@@ -196,7 +196,7 @@ export default function RegionLanding({ region }) {
             <div>
               <h2 className="font-heading text-3xl font-bold sm:text-4xl">Ausbildungskosten</h2>
               <p className="mt-4 text-base leading-relaxed text-white/80 sm:text-lg">
-                Die SVNH-zertifizierte Ausbildung kostet CHF 4250 inklusive Schulungsunterlagen und Zertifizierung, zahlbar in 2 Raten. Die Anzahlung von CHF 250 reserviert Ihren Platz.
+                Die SVNH-zertifizierte Ausbildung kostet CHF 4250 inklusive Schulungsunterlagen und Zertifizierung. Ratenzahlung individuell auf Anfrage. Die Anzahlung von CHF 250 reserviert Ihren Platz.
               </p>
               <Link to="/kontakt" className="mt-6 inline-flex items-center gap-2 rounded-full bg-citrine px-6 py-3 text-sm font-semibold text-amethyst-deep transition hover:bg-citrine-light">
                 {r.costs.cta} <ArrowRight className="h-4 w-4" />

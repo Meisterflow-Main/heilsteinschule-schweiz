@@ -61,8 +61,8 @@ export default function Anmeldung() {
               ))}
             </ul>
             <div className="mt-5 rounded-xl bg-white/60 p-4 text-sm text-amethyst">
-              <strong>Ausbildungskosten:</strong> CHF 4'250.– inkl. Schulungsunterlagen und Zertifizierung,
-              zahlbar in 2 Raten. Nicht im Preis: Fachliteratur, Heilsteine, Reise-/Verpflegungskosten.
+              <strong>Ausbildungskosten:</strong> CHF 4'250.– inkl. Schulungsunterlagen und Zertifizierung.
+              Ratenzahlung individuell auf Anfrage. Nicht im Preis: Fachliteratur, Heilsteine, Reise-/Verpflegungskosten.
               Alpenseminar ca. CHF 490.– für 4 Übernachtungen mit Frühstück/Abendessen.
             </div>
             <Link

@@ -12,7 +12,7 @@ const KLASSENGROESSE = "Klassengrösse: min. 5, max. 8 Personen.";
 
 const COSTS_ITEMS = [
   "CHF 4250.– inkl. Unterlagen und Zertifikat",
-  "Zahlbar in 2 Raten (erste Rate 4 Wochen vor Kursbeginn)",
+  "Ratenzahlung individuell auf Anfrage",
   "Anzahlung CHF 250.– zur Platzreservation",
   "Alpenseminar ca. CHF 490.– für Übernachtungen",
 ];
@@ -58,7 +58,7 @@ export const REGIONS = [
         {
           title: "Grundausbildung Heilsteinberater",
           description:
-            "Die SVNH-zertifizierte Ausbildung dauert mindestens drei Vierteljahre und vermittelt Steinheilkunde fundiert und praxisnah. Asp ist der Hauptsitz der Schule; die Grundausbildung findet standardmässig in Wallbach und Münsingen statt. Schulungsunterlagen und Zertifizierung sind im Preis von CHF 4250 enthalten. Zahlbar in 2 Raten.",
+            "Die SVNH-zertifizierte Ausbildung dauert mindestens drei Vierteljahre und vermittelt Steinheilkunde fundiert und praxisnah. Asp ist der Hauptsitz der Schule; die Grundausbildung findet standardmässig in Wallbach und Münsingen statt. Schulungsunterlagen und Zertifizierung sind im Preis von CHF 4250 enthalten. Ratenzahlung individuell auf Anfrage.",
         },
         {
           title: "Alpenseminar",
@@ -88,7 +88,7 @@ export const REGIONS = [
     },
     costs: {
       intro:
-        "Die Ausbildungskosten in Asp betragen CHF 4250 inklusive Schulungsunterlagen und Zertifizierung, zahlbar in zwei Raten. Schüler erhalten im Heilsteinshop Asp 20% Rabatt.",
+        "Die Ausbildungskosten in Asp betragen CHF 4250 inklusive Schulungsunterlagen und Zertifizierung. Ratenzahlung individuell auf Anfrage. Schüler erhalten im Heilsteinshop Asp 20% Rabatt.",
       items: COSTS_ITEMS,
       cta: "Jetzt Offerte anfordern",
     },
@@ -150,7 +150,7 @@ export const REGIONS = [
         {
           title: "Grundausbildung Heilsteinberater",
           description:
-            "In Wallbach erlernen Sie die Steinheilkunde in mindestens drei Vierteljahren. SVNH-zertifiziert, inklusive Unterlagen und Zertifikat zum Gesamtpreis von CHF 4250, zahlbar in 2 Raten.",
+            "In Wallbach erlernen Sie die Steinheilkunde in mindestens drei Vierteljahren. SVNH-zertifiziert, inklusive Unterlagen und Zertifikat zum Gesamtpreis von CHF 4250. Ratenzahlung individuell auf Anfrage.",
         },
         {
           title: "Alpenseminar in den Bergen",
@@ -180,7 +180,7 @@ export const REGIONS = [
     },
     costs: {
       intro:
-        "Auch in Wallbach beträgt die Ausbildung CHF 4250 inklusive Unterlagen und Zertifizierung, zahlbar in 2 Raten. Die Anzahlung von CHF 250 reserviert Ihren Platz an der Schule.",
+        "Auch in Wallbach beträgt die Ausbildung CHF 4250 inklusive Unterlagen und Zertifizierung. Ratenzahlung individuell auf Anfrage. Die Anzahlung von CHF 250 reserviert Ihren Platz an der Schule.",
       items: COSTS_ITEMS,
       cta: "Jetzt Offerte anfordern",
     },
@@ -191,7 +191,7 @@ export const REGIONS = [
       count: "Über 250 Absolventen",
     },
     faq: [
-      { q: "Was kostet die Heilsteinberater Ausbildung in Wallbach?", a: "In Wallbach kostet die SVNH-zertifizierte Grundausbildung CHF 4250 inklusive Schulungsunterlagen und Zertifizierung, zahlbar in 2 Raten. Die Anzahlung von CHF 250 sichert Ihren Platz und wird an die erste Rate angerechnet." },
+      { q: "Was kostet die Heilsteinberater Ausbildung in Wallbach?", a: "In Wallbach kostet die SVNH-zertifizierte Grundausbildung CHF 4250 inklusive Schulungsunterlagen und Zertifizierung. Ratenzahlung individuell auf Anfrage. Die Anzahlung von CHF 250 sichert Ihren Platz und wird an die erste Rate angerechnet." },
       { q: "Wie lange dauert die Ausbildung in Wallbach?", a: "Die Ausbildung in Wallbach dauert mindestens drei Vierteljahre. Maximal zwei Fehltage sind erlaubt, Nachholtermine in einer Parallelklasse sind jederzeit möglich." },
       { q: "Kann ich mich online für Wallbach anmelden?", a: "Ja, die Anmeldung erfolgt online, schriftlich oder per E-Mail über den Hauptsitz in Asp. Mit der Anzahlung von CHF 250 wird Ihre Anmeldung für Wallbach verbindlich." },
       { q: "Brauche ich Vorkenntnisse in Steinheilkunde?", a: "Nein, in Wallbach starten Sie ohne Vorkenntnisse. Freude an Steinen und Offenheit für die Natur genügen – das Dozententeam führt Sie Schritt für Schritt in die Steinheilkunde ein." },
@@ -242,7 +242,7 @@ export const REGIONS = [
         {
           title: "Grundausbildung Heilsteinberater",
           description:
-            "Die SVNH-zertifizierte Ausbildung in Münsingen dauert mindestens drei Vierteljahre und umfasst Schulungsunterlagen und Zertifikat zum Preis von CHF 4250, zahlbar in 2 Raten.",
+            "Die SVNH-zertifizierte Ausbildung in Münsingen dauert mindestens drei Vierteljahre und umfasst Schulungsunterlagen und Zertifikat zum Preis von CHF 4250. Ratenzahlung individuell auf Anfrage.",
         },
         {
           title: "Alpenseminar",
@@ -272,7 +272,7 @@ export const REGIONS = [
     },
     costs: {
       intro:
-        "Die Ausbildung in Münsingen kostet CHF 4250 inklusive Unterlagen und Zertifizierung, zahlbar in 2 Raten. Die Anzahlung von CHF 250 reserviert Ihren Platz in Münsingen.",
+        "Die Ausbildung in Münsingen kostet CHF 4250 inklusive Unterlagen und Zertifizierung. Ratenzahlung individuell auf Anfrage. Die Anzahlung von CHF 250 reserviert Ihren Platz in Münsingen.",
       items: COSTS_ITEMS,
       cta: "Jetzt Offerte anfordern",
     },
@@ -283,7 +283,7 @@ export const REGIONS = [
       count: "Über 250 Absolventen",
     },
     faq: [
-      { q: "Was kostet die Heilsteinberater Ausbildung in Münsingen?", a: "Die SVNH-zertifizierte Grundausbildung in Münsingen kostet CHF 4250 inklusive Schulungsunterlagen und Zertifizierung, zahlbar in 2 Raten. Die Anzahlung von CHF 250 sichert Ihren Platz und wird an die erste Rate angerechnet." },
+      { q: "Was kostet die Heilsteinberater Ausbildung in Münsingen?", a: "Die SVNH-zertifizierte Grundausbildung in Münsingen kostet CHF 4250 inklusive Schulungsunterlagen und Zertifizierung. Ratenzahlung individuell auf Anfrage. Die Anzahlung von CHF 250 sichert Ihren Platz und wird an die erste Rate angerechnet." },
       { q: "Wie lange dauert die Ausbildung in Münsingen?", a: "In Münsingen erstreckt sich die Ausbildung über mindestens drei Vierteljahre. Maximal zwei Fehltage sind erlaubt, ausgefallene Tage lassen sich in einer Parallelklasse nachholen." },
       { q: "Kann ich mich online für Münsingen anmelden?", a: "Ja, die Anmeldung erfolgt online, schriftlich oder per E-Mail über den Hauptsitz in Asp. Mit der Anzahlung von CHF 250 wird Ihre Anmeldung für den Standort Münsingen verbindlich." },
       { q: "Brauche ich Vorkenntnisse in Steinheilkunde?", a: "Nein, in Münsingen starten Sie ohne Vorkenntnisse. Wichtig sind Freude an Steinen und Offenheit – das Dozententeam führt Sie Schritt für Schritt in die Steinheilkunde ein." },
@@ -334,7 +334,7 @@ export const REGIONS = [
         {
           title: "Grundausbildung Heilsteinberater",
           description:
-            "Die SVNH-zertifizierte Ausbildung für Zürich findet in Wallbach statt und dauert mindestens drei Vierteljahre. Unterlagen und Zertifikat sind im Preis von CHF 4250 enthalten. Zahlbar in 2 Raten.",
+            "Die SVNH-zertifizierte Ausbildung für Zürich findet in Wallbach statt und dauert mindestens drei Vierteljahre. Unterlagen und Zertifikat sind im Preis von CHF 4250 enthalten. Ratenzahlung individuell auf Anfrage.",
         },
         {
           title: "Alpenseminar",
@@ -364,7 +364,7 @@ export const REGIONS = [
     },
     costs: {
       intro:
-        "Die Ausbildung für Zürich kostet CHF 4250 inklusive Unterlagen und Zertifizierung, zahlbar in 2 Raten. Die Anzahlung von CHF 250 reserviert Ihren Platz am Standort Wallbach.",
+        "Die Ausbildung für Zürich kostet CHF 4250 inklusive Unterlagen und Zertifizierung. Ratenzahlung individuell auf Anfrage. Die Anzahlung von CHF 250 reserviert Ihren Platz am Standort Wallbach.",
       items: COSTS_ITEMS,
       cta: "Jetzt Offerte anfordern",
     },
@@ -375,7 +375,7 @@ export const REGIONS = [
       count: "Über 250 Absolventen",
     },
     faq: [
-      { q: "Was kostet die Heilsteinberater Ausbildung für Zürich?", a: "Die SVNH-zertifizierte Grundausbildung am Standort Wallbach kostet CHF 4250 inklusive Schulungsunterlagen und Zertifizierung, zahlbar in 2 Raten. Die Anzahlung von CHF 250 sichert Ihren Platz und wird an die erste Rate angerechnet." },
+      { q: "Was kostet die Heilsteinberater Ausbildung für Zürich?", a: "Die SVNH-zertifizierte Grundausbildung am Standort Wallbach kostet CHF 4250 inklusive Schulungsunterlagen und Zertifizierung. Ratenzahlung individuell auf Anfrage. Die Anzahlung von CHF 250 sichert Ihren Platz und wird an die erste Rate angerechnet." },
       { q: "Wie lange dauert die Ausbildung ab Zürich?", a: "Ab Zürich dauert die Ausbildung mindestens drei Vierteljahre am Standort Wallbach. Maximal zwei Fehltage sind erlaubt, Nachholtermine in einer Parallelklasse sind möglich." },
       { q: "Kann ich mich online für Zürich anmelden?", a: "Ja, die Anmeldung erfolgt online, schriftlich oder per E-Mail über den Hauptsitz in Asp. Mit der Anzahlung von CHF 250 wird Ihre Anmeldung für den Raum Zürich verbindlich." },
       { q: "Brauche ich Vorkenntnisse in Steinheilkunde?", a: "Nein, ab Zürich starten Sie ohne Vorkenntnisse. Freude an Steinen und ein offenes Herz genügen – das Dozententeam führt Sie Schritt für Schritt in die Steinheilkunde ein." },
@@ -426,7 +426,7 @@ export const REGIONS = [
         {
           title: "Grundausbildung Heilsteinberater",
           description:
-            "Die SVNH-zertifizierte Ausbildung für Basel findet in Wallbach statt und dauert mindestens drei Vierteljahre. Unterlagen und Zertifikat sind im Preis von CHF 4250 enthalten. Zahlbar in 2 Raten.",
+            "Die SVNH-zertifizierte Ausbildung für Basel findet in Wallbach statt und dauert mindestens drei Vierteljahre. Unterlagen und Zertifikat sind im Preis von CHF 4250 enthalten. Ratenzahlung individuell auf Anfrage.",
         },
         {
           title: "Alpenseminar",
@@ -456,7 +456,7 @@ export const REGIONS = [
     },
     costs: {
       intro:
-        "Die Ausbildung für Basel kostet CHF 4250 inklusive Unterlagen und Zertifizierung, zahlbar in 2 Raten. Die Anzahlung von CHF 250 reserviert Ihren Platz am Standort Wallbach.",
+        "Die Ausbildung für Basel kostet CHF 4250 inklusive Unterlagen und Zertifizierung. Ratenzahlung individuell auf Anfrage. Die Anzahlung von CHF 250 reserviert Ihren Platz am Standort Wallbach.",
       items: COSTS_ITEMS,
       cta: "Jetzt Offerte anfordern",
     },
@@ -467,7 +467,7 @@ export const REGIONS = [
       count: "Über 250 Absolventen",
     },
     faq: [
-      { q: "Was kostet die Heilsteinberater Ausbildung für Basel?", a: "Die SVNH-zertifizierte Grundausbildung am Standort Wallbach kostet CHF 4250 inklusive Schulungsunterlagen und Zertifizierung, zahlbar in 2 Raten. Die Anzahlung von CHF 250 sichert Ihren Platz und wird an die erste Rate angerechnet." },
+      { q: "Was kostet die Heilsteinberater Ausbildung für Basel?", a: "Die SVNH-zertifizierte Grundausbildung am Standort Wallbach kostet CHF 4250 inklusive Schulungsunterlagen und Zertifizierung. Ratenzahlung individuell auf Anfrage. Die Anzahlung von CHF 250 sichert Ihren Platz und wird an die erste Rate angerechnet." },
       { q: "Wie lange dauert die Ausbildung ab Basel?", a: "Ab Basel dauert die Ausbildung mindestens drei Vierteljahre am Standort Wallbach. Maximal zwei Fehltage sind erlaubt, ausgefallene Tage lassen sich in einer Parallelklasse nachholen." },
       { q: "Kann ich mich online für Basel anmelden?", a: "Ja, die Anmeldung erfolgt online, schriftlich oder per E-Mail über den Hauptsitz in Asp. Mit der Anzahlung von CHF 250 wird Ihre Anmeldung für den Raum Basel verbindlich." },
       { q: "Brauche ich Vorkenntnisse in Steinheilkunde?", a: "Nein, ab Basel starten Sie ohne Vorkenntnisse. Freude an Steinen und ein offenes Herz genügen – das Dozententeam führt Sie Schritt für Schritt in die Steinheilkunde ein." },
@@ -518,7 +518,7 @@ export const REGIONS = [
         {
           title: "Grundausbildung Heilsteinberater",
           description:
-            "Die SVNH-zertifizierte Ausbildung für Aarau findet in Wallbach statt und dauert mindestens drei Vierteljahre. Unterlagen und Zertifikat sind im Preis von CHF 4250 enthalten. Zahlbar in 2 Raten.",
+            "Die SVNH-zertifizierte Ausbildung für Aarau findet in Wallbach statt und dauert mindestens drei Vierteljahre. Unterlagen und Zertifikat sind im Preis von CHF 4250 enthalten. Ratenzahlung individuell auf Anfrage.",
         },
         {
           title: "Alpenseminar",
@@ -548,7 +548,7 @@ export const REGIONS = [
     },
     costs: {
       intro:
-        "Die Ausbildung für Aarau kostet CHF 4250 inklusive Unterlagen und Zertifizierung, zahlbar in 2 Raten. Die Anzahlung von CHF 250 reserviert Ihren Platz am Standort Wallbach.",
+        "Die Ausbildung für Aarau kostet CHF 4250 inklusive Unterlagen und Zertifizierung. Ratenzahlung individuell auf Anfrage. Die Anzahlung von CHF 250 reserviert Ihren Platz am Standort Wallbach.",
       items: COSTS_ITEMS,
       cta: "Jetzt Offerte anfordern",
     },
@@ -559,7 +559,7 @@ export const REGIONS = [
       count: "Über 250 Absolventen",
     },
     faq: [
-      { q: "Was kostet die Heilsteinberater Ausbildung für Aarau?", a: "Die SVNH-zertifizierte Grundausbildung am Standort Wallbach kostet CHF 4250 inklusive Schulungsunterlagen und Zertifizierung, zahlbar in 2 Raten. Die Anzahlung von CHF 250 sichert Ihren Platz und wird an die erste Rate angerechnet." },
+      { q: "Was kostet die Heilsteinberater Ausbildung für Aarau?", a: "Die SVNH-zertifizierte Grundausbildung am Standort Wallbach kostet CHF 4250 inklusive Schulungsunterlagen und Zertifizierung. Ratenzahlung individuell auf Anfrage. Die Anzahlung von CHF 250 sichert Ihren Platz und wird an die erste Rate angerechnet." },
       { q: "Wie lange dauert die Ausbildung ab Aarau?", a: "Ab Aarau dauert die Ausbildung mindestens drei Vierteljahre am Standort Wallbach. Maximal zwei Fehltage sind erlaubt, ausgefallene Tage lassen sich in einer Parallelklasse nachholen." },
       { q: "Kann ich mich online für Aarau anmelden?", a: "Ja, die Anmeldung erfolgt online, schriftlich oder per E-Mail über den Hauptsitz in Asp. Mit der Anzahlung von CHF 250 wird Ihre Anmeldung für den Raum Aarau verbindlich." },
       { q: "Brauche ich Vorkenntnisse in Steinheilkunde?", a: "Nein, ab Aarau starten Sie ohne Vorkenntnisse. Freude an Steinen und ein offenes Herz genügen – das Dozententeam führt Sie Schritt für Schritt in die Steinheilkunde ein." },
@@ -610,7 +610,7 @@ export const REGIONS = [
         {
           title: "Grundausbildung Heilsteinberater",
           description:
-            "Die SVNH-zertifizierte Ausbildung für Baden findet in Wallbach statt und dauert mindestens drei Vierteljahre. Unterlagen und Zertifikat sind im Preis von CHF 4250 enthalten. Zahlbar in 2 Raten.",
+            "Die SVNH-zertifizierte Ausbildung für Baden findet in Wallbach statt und dauert mindestens drei Vierteljahre. Unterlagen und Zertifikat sind im Preis von CHF 4250 enthalten. Ratenzahlung individuell auf Anfrage.",
         },
         {
           title: "Alpenseminar",
@@ -640,7 +640,7 @@ export const REGIONS = [
     },
     costs: {
       intro:
-        "Die Ausbildung für Baden kostet CHF 4250 inklusive Unterlagen und Zertifizierung, zahlbar in 2 Raten. Die Anzahlung von CHF 250 reserviert Ihren Platz am Standort Wallbach.",
+        "Die Ausbildung für Baden kostet CHF 4250 inklusive Unterlagen und Zertifizierung. Ratenzahlung individuell auf Anfrage. Die Anzahlung von CHF 250 reserviert Ihren Platz am Standort Wallbach.",
       items: COSTS_ITEMS,
       cta: "Jetzt Offerte anfordern",
     },
@@ -651,7 +651,7 @@ export const REGIONS = [
       count: "Über 250 Absolventen",
     },
     faq: [
-      { q: "Was kostet die Heilsteinberater Ausbildung für Baden?", a: "Die SVNH-zertifizierte Grundausbildung am Standort Wallbach kostet CHF 4250 inklusive Schulungsunterlagen und Zertifizierung, zahlbar in 2 Raten. Die Anzahlung von CHF 250 sichert Ihren Platz und wird an die erste Rate angerechnet." },
+      { q: "Was kostet die Heilsteinberater Ausbildung für Baden?", a: "Die SVNH-zertifizierte Grundausbildung am Standort Wallbach kostet CHF 4250 inklusive Schulungsunterlagen und Zertifizierung. Ratenzahlung individuell auf Anfrage. Die Anzahlung von CHF 250 sichert Ihren Platz und wird an die erste Rate angerechnet." },
       { q: "Wie lange dauert die Ausbildung ab Baden?", a: "Ab Baden dauert die Ausbildung mindestens drei Vierteljahre am Standort Wallbach. Maximal zwei Fehltage sind erlaubt, ausgefallene Tage lassen sich in einer Parallelklasse nachholen." },
       { q: "Kann ich mich online für Baden anmelden?", a: "Ja, die Anmeldung erfolgt online, schriftlich oder per E-Mail über den Hauptsitz in Asp. Mit der Anzahlung von CHF 250 wird Ihre Anmeldung für den Raum Baden verbindlich." },
       { q: "Brauche ich Vorkenntnisse in Steinheilkunde?", a: "Nein, ab Baden starten Sie ohne Vorkenntnisse. Freude an Steinen und ein offenes Herz genügen – das Dozententeam führt Sie Schritt für Schritt in die Steinheilkunde ein." },
@@ -702,7 +702,7 @@ export const REGIONS = [
         {
           title: "Grundausbildung Heilsteinberater",
           description:
-            "Die SVNH-zertifizierte Ausbildung für Brugg findet in Wallbach statt und dauert mindestens drei Vierteljahre. Unterlagen und Zertifikat sind im Preis von CHF 4250 enthalten. Zahlbar in 2 Raten.",
+            "Die SVNH-zertifizierte Ausbildung für Brugg findet in Wallbach statt und dauert mindestens drei Vierteljahre. Unterlagen und Zertifikat sind im Preis von CHF 4250 enthalten. Ratenzahlung individuell auf Anfrage.",
         },
         {
           title: "Alpenseminar",
@@ -732,7 +732,7 @@ export const REGIONS = [
     },
     costs: {
       intro:
-        "Die Ausbildung für Brugg kostet CHF 4250 inklusive Unterlagen und Zertifizierung, zahlbar in 2 Raten. Die Anzahlung von CHF 250 reserviert Ihren Platz am Standort Wallbach.",
+        "Die Ausbildung für Brugg kostet CHF 4250 inklusive Unterlagen und Zertifizierung. Ratenzahlung individuell auf Anfrage. Die Anzahlung von CHF 250 reserviert Ihren Platz am Standort Wallbach.",
       items: COSTS_ITEMS,
       cta: "Jetzt Offerte anfordern",
     },
@@ -743,7 +743,7 @@ export const REGIONS = [
       count: "Über 250 Absolventen",
     },
     faq: [
-      { q: "Was kostet die Heilsteinberater Ausbildung für Brugg?", a: "Die SVNH-zertifizierte Grundausbildung am Standort Wallbach kostet CHF 4250 inklusive Schulungsunterlagen und Zertifizierung, zahlbar in 2 Raten. Die Anzahlung von CHF 250 sichert Ihren Platz und wird an die erste Rate angerechnet." },
+      { q: "Was kostet die Heilsteinberater Ausbildung für Brugg?", a: "Die SVNH-zertifizierte Grundausbildung am Standort Wallbach kostet CHF 4250 inklusive Schulungsunterlagen und Zertifizierung. Ratenzahlung individuell auf Anfrage. Die Anzahlung von CHF 250 sichert Ihren Platz und wird an die erste Rate angerechnet." },
       { q: "Wie lange dauert die Ausbildung ab Brugg?", a: "Ab Brugg dauert die Ausbildung mindestens drei Vierteljahre am Standort Wallbach. Maximal zwei Fehltage sind erlaubt, ausgefallene Tage lassen sich in einer Parallelklasse nachholen." },
       { q: "Kann ich mich online für Brugg anmelden?", a: "Ja, die Anmeldung erfolgt online, schriftlich oder per E-Mail über den Hauptsitz in Asp. Mit der Anzahlung von CHF 250 wird Ihre Anmeldung für den Raum Brugg verbindlich." },
       { q: "Brauche ich Vorkenntnisse in Steinheilkunde?", a: "Nein, ab Brugg starten Sie ohne Vorkenntnisse. Freude an Steinen und ein offenes Herz genügen – das Dozententeam führt Sie Schritt für Schritt in die Steinheilkunde ein." },
@@ -794,7 +794,7 @@ export const REGIONS = [
         {
           title: "Grundausbildung Heilsteinberater",
           description:
-            "Die SVNH-zertifizierte Ausbildung für Olten findet in Wallbach statt und dauert mindestens drei Vierteljahre. Unterlagen und Zertifikat sind im Preis von CHF 4250 enthalten. Zahlbar in 2 Raten.",
+            "Die SVNH-zertifizierte Ausbildung für Olten findet in Wallbach statt und dauert mindestens drei Vierteljahre. Unterlagen und Zertifikat sind im Preis von CHF 4250 enthalten. Ratenzahlung individuell auf Anfrage.",
         },
         {
           title: "Alpenseminar",
@@ -824,7 +824,7 @@ export const REGIONS = [
     },
     costs: {
       intro:
-        "Die Ausbildung für Olten kostet CHF 4250 inklusive Unterlagen und Zertifizierung, zahlbar in 2 Raten. Die Anzahlung von CHF 250 reserviert Ihren Platz am Standort Wallbach.",
+        "Die Ausbildung für Olten kostet CHF 4250 inklusive Unterlagen und Zertifizierung. Ratenzahlung individuell auf Anfrage. Die Anzahlung von CHF 250 reserviert Ihren Platz am Standort Wallbach.",
       items: COSTS_ITEMS,
       cta: "Jetzt Offerte anfordern",
     },
@@ -835,7 +835,7 @@ export const REGIONS = [
       count: "Über 250 Absolventen",
     },
     faq: [
-      { q: "Was kostet die Heilsteinberater Ausbildung für Olten?", a: "Die SVNH-zertifizierte Grundausbildung am Standort Wallbach kostet CHF 4250 inklusive Schulungsunterlagen und Zertifizierung, zahlbar in 2 Raten. Die Anzahlung von CHF 250 sichert Ihren Platz und wird an die erste Rate angerechnet." },
+      { q: "Was kostet die Heilsteinberater Ausbildung für Olten?", a: "Die SVNH-zertifizierte Grundausbildung am Standort Wallbach kostet CHF 4250 inklusive Schulungsunterlagen und Zertifizierung. Ratenzahlung individuell auf Anfrage. Die Anzahlung von CHF 250 sichert Ihren Platz und wird an die erste Rate angerechnet." },
       { q: "Wie lange dauert die Ausbildung ab Olten?", a: "Ab Olten dauert die Ausbildung mindestens drei Vierteljahre am Standort Wallbach. Maximal zwei Fehltage sind erlaubt, ausgefallene Tage lassen sich in einer Parallelklasse nachholen." },
       { q: "Kann ich mich online für Olten anmelden?", a: "Ja, die Anmeldung erfolgt online, schriftlich oder per E-Mail über den Hauptsitz in Asp. Mit der Anzahlung von CHF 250 wird Ihre Anmeldung für den Raum Olten verbindlich." },
       { q: "Brauche ich Vorkenntnisse in Steinheilkunde?", a: "Nein, ab Olten starten Sie ohne Vorkenntnisse. Freude an Steinen und ein offenes Herz genügen – das Dozententeam führt Sie Schritt für Schritt in die Steinheilkunde ein." },

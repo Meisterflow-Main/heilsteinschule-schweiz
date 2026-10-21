@@ -43,7 +43,7 @@ export default function HomeTrainingOverview() {
       <Reveal delay={0.2}>
         <div className="mt-6 flex flex-col items-center gap-3 rounded-2xl bg-quartz p-5 text-center sm:flex-row sm:justify-between sm:text-left">
           <p className="text-sm text-muted-foreground">
-            <strong className="text-amethyst">Zahlbar in 2 Raten.</strong> Anzahlung CHF 250.– zur Platzreservation.
+            <strong className="text-amethyst">Ratenzahlung individuell auf Anfrage.</strong> Anzahlung CHF 250.– zur Platzreservation.
             Klassengrösse: min. 5, max. 8 Personen.
           </p>
           <Link

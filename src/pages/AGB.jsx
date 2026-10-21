@@ -9,7 +9,7 @@ const SECTIONS = [
   },
   {
     t: "Preise und Konditionen",
-    c: "Die Ausbildungskosten inkl. Schulungsunterlagen und Zertifizierung betragen CHF 4'250.–, zahlbar in 2 Raten: die erste Rate ist 4 Wochen vor Kursbeginn fällig, die zweite Rate 2 Wochen vor dem 13. Schultag. Im Preis nicht inbegriffen sind Fachliteratur, Heilsteine, Reisekosten, Verpflegung und Unterkunft. Für das Alpenseminar fallen zusätzlich ca. CHF 490.– an.",
+    c: "Die Ausbildungskosten inkl. Schulungsunterlagen und Zertifizierung betragen CHF 4'250.–. Ratenzahlung individuell auf Anfrage. Im Preis nicht inbegriffen sind Fachliteratur, Heilsteine, Reisekosten, Verpflegung und Unterkunft. Für das Alpenseminar fallen zusätzlich ca. CHF 490.– an.",
   },
   {
     t: "Rabatt und Spezielles",

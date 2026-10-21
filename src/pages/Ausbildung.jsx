@@ -84,7 +84,7 @@ export default function Ausbildung() {
                 <span className="font-heading text-4xl font-bold text-amethyst">CHF 4'250.–</span>
               </div>
               <p className="mt-1 text-sm text-muted-foreground">
-                Ausbildungskosten inkl. Schulungsunterlagen und Zertifizierung. Zahlbar in 2 Raten.
+                Ausbildungskosten inkl. Schulungsunterlagen und Zertifizierung. Ratenzahlung individuell auf Anfrage.
               </p>
               <div className="mt-6 space-y-2 border-t border-border pt-6">
                 {LEISTUNGEN.map((l) => (
