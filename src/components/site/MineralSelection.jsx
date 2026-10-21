@@ -6,10 +6,10 @@ import SectionHeading from "@/components/site/SectionHeading";
 const SHOP_HEILSTEINE = "https://heilstein-shop.com/heilsteine/";
 
 const VIDEOS = [
-  { src: "https://media.base44.com/videos/public/6aa92ec5274311c12da18ee6/270c228e7_WhatsAppVideo2026-09-22at0210583.mp4", label: "Prüfung", href: SHOP_HEILSTEINE },
-  { src: "https://media.base44.com/videos/public/6aa92ec5274311c12da18ee6/2847934fa_WhatsAppVideo2026-09-22at0210582.mp4", label: "Befühlen", href: SHOP_HEILSTEINE },
-  { src: "https://media.base44.com/videos/public/6aa92ec5274311c12da18ee6/df17ff5f2_WhatsAppVideo2026-09-22at0210581.mp4", label: "Vergleich", href: SHOP_HEILSTEINE },
-  { src: "https://media.base44.com/videos/public/6aa92ec5274311c12da18ee6/b6f4d6066_WhatsAppVideo2026-09-22at021058.mp4", label: "Entscheidung", href: SHOP_HEILSTEINE },
+  { src: "https://media.base44.com/videos/public/6aa92ec5274311c12da18ee6/270c228e7_WhatsAppVideo2026-09-22at0210583.mp4", label: "Schauen", href: SHOP_HEILSTEINE },
+  { src: "https://media.base44.com/videos/public/6aa92ec5274311c12da18ee6/2847934fa_WhatsAppVideo2026-09-22at0210582.mp4", label: "Fühlen", href: SHOP_HEILSTEINE },
+  { src: "https://media.base44.com/videos/public/6aa92ec5274311c12da18ee6/df17ff5f2_WhatsAppVideo2026-09-22at0210581.mp4", label: "Wissen", href: SHOP_HEILSTEINE },
+  { src: "https://media.base44.com/videos/public/6aa92ec5274311c12da18ee6/b6f4d6066_WhatsAppVideo2026-09-22at021058.mp4", label: "Entscheiden", href: SHOP_HEILSTEINE },
 ];
 
 const TRIM_SECONDS = 18;
