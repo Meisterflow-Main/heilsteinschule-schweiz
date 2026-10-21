@@ -22,8 +22,6 @@ const INTERVIEW = [
   {
     q: "Welche Methoden erlernen die Schüler, um Heilsteine bei Klienten einzusetzen?",
     a: "In der Heilsteinschule lernen die Schüler über Kristallstrukturen und ihre Verbindung zu individuellen Lebensstilen. Sie lernen, Heilsteine auf verschiedene Weisen einzusetzen, wie beispielsweise auf den Körper auflegen, in Wasser einlegen und für Meditation verwenden. Zudem vermitteln wir ihnen Geologische Reise über 4 Tage auf den Azoren. Respekt vor den Steinen und ihrer jahrtausendalten Geschichte. Diese Kenntnisse helfen ihnen, sich und anderen in Lebenssituationen wie Stress und Druck besser zu unterstützen.",
-    img: "https://heilsteinschule.swiss/media/Reise/Geologische_Reise_Azoren.png",
-    imgAlt: "Geologische Reise auf den Azoren",
   },
   {
     q: "Warum ist es wichtig, die Wirkungen der Heilsteine am eigenen Körper zu erfahren?",
