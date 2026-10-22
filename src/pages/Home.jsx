@@ -1,18 +1,16 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { ArrowRight, Play, Users, MapPin, Sparkles } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import Reveal from "@/components/site/Reveal";
 import SectionHeading from "@/components/site/SectionHeading";
 import OptimizedImage from "@/components/site/OptimizedImage";
-import LearningActivities from "@/components/site/LearningActivities";
-import MineralSelection from "@/components/site/MineralSelection";
-import HomeTrustBar from "@/components/site/HomeTrustBar";
 import HomeTrainingOverview from "@/components/site/HomeTrainingOverview";
 import TeachingMethod from "@/components/site/TeachingMethod";
 import HomeImageCollage from "@/components/site/HomeImageCollage";
+import HeroActivityCards from "@/components/site/HeroActivityCards";
 import SchoolVideoTeaser from "@/components/site/SchoolVideoTeaser";
-import HomeInquiryRegistration from "@/components/site/HomeInquiryRegistration";
+import HomeClosingCta from "@/components/site/HomeClosingCta";
 
 const TEAM = [
   { name: "Bruno Vogler Pfeiffer", role: "Schul-Gründer & Schulleiter", img: "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/e7dc15219_ChatGPTImageSep30202602_17_44AM.png" },
@@ -51,7 +49,7 @@ export default function Home() {
           <div className="absolute inset-0 bg-gradient-to-r from-amethyst-deep/60 to-transparent" />
         </div>
 
-        <div className="relative mx-auto flex min-h-[88vh] max-w-7xl flex-col justify-center px-4 py-28 sm:px-6">
+        <div className="relative mx-auto flex min-h-[80vh] max-w-7xl flex-col justify-center px-4 pt-28 pb-14 sm:px-6">
           <motion.div
             initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
@@ -59,34 +57,31 @@ export default function Home() {
             className="max-w-3xl"
           >
             <div className="mb-6 inline-flex items-center gap-2 rounded-full glass-dark px-4 py-1.5 text-xs font-medium uppercase tracking-wider text-citrine-light">
-              <SwissCross className="h-4 w-4" /> Seit 2011 · SVNH zertifiziert
+              <SwissCross className="h-4 w-4" /> Seit 2011 · SVNH-zertifiziert · 5–8 Teilnehmer
             </div>
             <h1 className="font-heading text-4xl font-bold leading-[1.05] text-white sm:text-5xl md:text-6xl lg:text-7xl">
-              Heilsteinkraft
-              <span className="block text-gradient-gold">erfahren, spüren, lernen</span>
+              Heilsteinberater-Ausbildung
+              <span className="block text-gradient-gold">mit SVNH-Zertifizierung</span>
             </h1>
             <p className="mt-7 max-w-xl text-lg leading-relaxed text-white/85">
               Zertifizierte Grundausbildung in der Schweiz — mit Kopf, Hand, Fuss und Herz.
             </p>
-            <div className="mt-9 flex flex-col gap-3 sm:flex-row">
-              <Link to="/ausbildung" className="group inline-flex items-center justify-center gap-2 rounded-full bg-citrine px-7 py-4 font-semibold text-amethyst-deep shadow-lift transition hover:bg-citrine-light">
-                Ausbildung entdecken <ArrowRight className="h-4 w-4 transition group-hover:translate-x-1" />
-              </Link>
-              <Link to="/info-nachmittag" className="inline-flex items-center justify-center gap-2 rounded-full border border-white/30 px-7 py-4 font-semibold text-white transition hover:bg-white/10">
-                <Play className="h-4 w-4" /> Kostenloser Info-Nachmittag/-Abend
+            <div className="mt-9">
+              <Link to="/ausbildung-anmeldung" className="group inline-flex items-center justify-center gap-2 rounded-full bg-citrine px-7 py-4 font-semibold text-amethyst-deep shadow-lift transition hover:bg-citrine-light">
+                Jetzt anmelden <ArrowRight className="h-4 w-4 transition group-hover:translate-x-1" />
               </Link>
             </div>
           </motion.div>
         </div>
+
+        {/* Drei-Karten-Block — gehört zum Hero */}
+        <HeroActivityCards />
       </section>
 
-      {/* 2. TRUST BAR */}
-      <HomeTrustBar />
-
-      {/* 3. TRAINING OVERVIEW */}
+      {/* 2. AUSBILDUNG AUF EINEN BLICK */}
       <HomeTrainingOverview />
 
-      {/* 3B. METHODE */}
+      {/* 3. METHODE */}
       <TeachingMethod />
 
       {/* 4. GALERIE */}
@@ -163,40 +158,8 @@ export default function Home() {
       {/* 7. VIDEO (kompakt) */}
       <SchoolVideoTeaser />
 
-      {/* 8. LEARNING WITH US */}
-      <LearningActivities />
-
-      {/* 8B. MINERAL SELECTION */}
-      <MineralSelection />
-
-      {/* 9. INQUIRY & REGISTRATION */}
-      <HomeInquiryRegistration />
-
-      {/* 11. FINAL CTA */}
-      <section className="relative overflow-hidden bg-amethyst text-white">
-        <div className="relative mx-auto max-w-4xl px-4 py-24 text-center sm:px-6">
-          <Reveal>
-            <div className="mb-6 inline-flex items-center rounded-full bg-white/10 px-3 py-2">
-              <SwissCross className="h-5 w-5" />
-            </div>
-            <h2 className="font-heading text-3xl font-bold sm:text-4xl md:text-5xl">
-              Vertrauen Sie auf die <span className="text-gradient-gold">Kräfte der Natur</span>
-            </h2>
-            <p className="mx-auto mt-5 max-w-xl text-lg text-white/75">
-              Begleiten Sie uns auf unserer Reise und lassen Sie sich von der Steinheilkunde begeistern.
-              Steine werden zu Heilsteinen und Lebensbegleitern und berühren unsere Seele.
-            </p>
-            <div className="mt-9 flex flex-col justify-center gap-3 sm:flex-row">
-              <Link to="/ausbildung-anfrage" className="inline-flex items-center justify-center gap-2 rounded-full bg-citrine px-7 py-4 font-semibold text-amethyst-deep shadow-lift transition hover:bg-citrine-light">
-                Jetzt anfragen <ArrowRight className="h-4 w-4" />
-              </Link>
-              <Link to="/info-nachmittag" className="inline-flex items-center justify-center gap-2 rounded-full border border-white/30 px-7 py-4 font-semibold text-white transition hover:bg-white/10">
-                <Play className="h-4 w-4" /> Info-Nachmittag/-Abend besuchen
-              </Link>
-            </div>
-          </Reveal>
-        </div>
-      </section>
+      {/* 8. ABSCHLUSS-CTA (konsolidiert) */}
+      <HomeClosingCta />
     </>
   );
 }
