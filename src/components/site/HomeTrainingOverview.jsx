@@ -19,7 +19,7 @@ export default function HomeTrainingOverview() {
       <Reveal>
         <SectionHeading
           eyebrow="Grundausbildung"
-          title="Heilsteinberater-Ausbildung mit SVNH-Zertifizierung"
+          title="Die Ausbildung auf einen Blick"
           subtitle="Fundierte, praxisnahe Steinheilkunde — mit Kopf, Hand, Fuss und Herz zum anerkannten Abschluss."
         />
       </Reveal>
