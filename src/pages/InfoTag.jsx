@@ -80,7 +80,7 @@ export default function InfoTag() {
         <Reveal>
           <SectionHeading
             eyebrow="Programm"
-            title="Was passiert am Info-Nachmittag?"
+            title="Was passiert am Info-Nachmittag/-Abend?"
             subtitle="Ein Nachmittag voller Eindrücke — lernen Sie die Schule, das Dozententeam und die Steinheilkunde unverbindlich kennen."
           />
         </Reveal>
@@ -107,8 +107,8 @@ export default function InfoTag() {
           <Reveal>
             <SectionHeading
               eyebrow="Termine"
-              title="Anstehende Info-Nachmittage"
-              subtitle="Der Info-Nachmittag findet in Münsingen und Asp statt. Wählen Sie unten Ihren Wunschtermin."
+              title="Anstehende Info-Nachmittage/-Abende"
+              subtitle="Der Info-Nachmittag/-Abend findet in Münsingen und Asp statt. Wählen Sie unten Ihren Wunschtermin."
             />
           </Reveal>
           <div className="mt-12 grid gap-6 sm:grid-cols-2">
@@ -120,7 +120,7 @@ export default function InfoTag() {
                     <CalendarDays className="h-3.5 w-3.5" /> {t.time}
                   </div>
                   <h3 className="mt-2 font-heading text-lg font-semibold text-amethyst">{t.displayDate}</h3>
-                  <p className="mt-1 text-sm font-medium text-amethyst">Kostenloser Info-Nachmittag in {t.ort}</p>
+                  <p className="mt-1 text-sm font-medium text-amethyst">Kostenloser Info-Nachmittag/-Abend in {t.ort}</p>
                   <div className="mt-3 flex items-start gap-2 text-sm text-foreground/80">
                     <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-citrine-deep" /> {t.address}
                   </div>
@@ -145,7 +145,7 @@ export default function InfoTag() {
         <Reveal>
           <SectionHeading
             eyebrow="Anmeldung"
-            title="Zum Info-Nachmittag anmelden"
+            title="Zum Info-Nachmittag/-Abend anmelden"
             subtitle="Wählen Sie einen Termin, geben Sie die Anzahl Personen an und senden Sie uns Ihre Anmeldung."
           />
         </Reveal>
