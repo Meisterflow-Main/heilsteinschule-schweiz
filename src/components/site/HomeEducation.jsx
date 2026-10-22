@@ -35,7 +35,7 @@ export default function HomeEducation() {
             <h3 className="mt-4 font-heading text-lg font-semibold text-amethyst">Schulorte</h3>
             <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
               <strong className="text-amethyst">Wallbach</strong> (Grundausbildung) und{" "}
-              <strong className="text-amethyst">Münsingen</strong> (Grundausbildung & Info-Nachmittag).
+              <strong className="text-amethyst">Münsingen</strong> (Grundausbildung & Info-Nachmittag/-Abend).
               Asp ist der Hauptsitz mit Heilsteinshop und Praxis.
             </p>
           </div>
@@ -59,7 +59,7 @@ export default function HomeEducation() {
             Ausbildung entdecken <ArrowRight className="h-4 w-4" />
           </Link>
           <Link to="/info-nachmittag" className="inline-flex items-center justify-center gap-2 rounded-full border border-border px-7 py-4 font-semibold text-amethyst transition hover:bg-muted">
-            <Play className="h-4 w-4" /> Zum Info-Nachmittag
+            <Play className="h-4 w-4" /> Zum Info-Nachmittag/-Abend
           </Link>
         </div>
       </Reveal>

@@ -12,11 +12,11 @@ export default function HomeInfoTag() {
           <SectionHeading
             center={false}
             eyebrow="Kostenlos & unverbindlich"
-            title="Info-Nachmittag"
+            title="Info-Nachmittag/-Abend"
           />
           <p className="mt-5 text-base leading-relaxed text-muted-foreground">
             Lernen Sie die Heilsteinschule Schweiz, das Dozententeam und die faszinierende Welt
-            der Heilsteine kennen — ohne Verpflichtung. Der Info-Nachmittag findet in{" "}
+            der Heilsteine kennen — ohne Verpflichtung. Der Info-Nachmittag/-Abend findet in{" "}
             <strong className="text-amethyst">Asp</strong> und <strong className="text-amethyst">Münsingen</strong> statt.
           </p>
           <div className="mt-8 space-y-4">
@@ -34,14 +34,14 @@ export default function HomeInfoTag() {
             </div>
           </div>
           <Link to="/info-nachmittag" className="mt-8 inline-flex items-center gap-2 rounded-full bg-citrine px-7 py-4 font-semibold text-amethyst-deep shadow-lift transition hover:bg-citrine-light">
-            <Calendar className="h-4 w-4" /> Zum Info-Nachmittag <ArrowRight className="h-4 w-4" />
+            <Calendar className="h-4 w-4" /> Zum Info-Nachmittag/-Abend <ArrowRight className="h-4 w-4" />
           </Link>
         </Reveal>
         <Reveal delay={0.1}>
           <div className="overflow-hidden rounded-3xl border border-border bg-white shadow-lift">
             <img
               src="https://heilsteinschule.swiss/media/Info-Tag/Info-Tag.png"
-              alt="Info-Nachmittag der Heilsteinschule Schweiz"
+              alt="Info-Nachmittag/-Abend der Heilsteinschule Schweiz"
               loading="lazy"
               className="aspect-[4/3] w-full object-cover"
             />

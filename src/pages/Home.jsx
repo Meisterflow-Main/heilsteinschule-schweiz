@@ -78,7 +78,7 @@ export default function Home() {
                 Ausbildung entdecken <ArrowRight className="h-4 w-4 transition group-hover:translate-x-1" />
               </Link>
               <Link to="/info-nachmittag" className="inline-flex items-center justify-center gap-2 rounded-full border border-white/30 px-7 py-4 font-semibold text-white transition hover:bg-white/10">
-                <Play className="h-4 w-4" /> Kostenloser Info-Nachmittag
+                <Play className="h-4 w-4" /> Kostenloser Info-Nachmittag/-Abend
               </Link>
             </div>
           </motion.div>
@@ -224,7 +224,7 @@ export default function Home() {
                 Jetzt anfragen <ArrowRight className="h-4 w-4" />
               </Link>
               <Link to="/info-nachmittag" className="inline-flex items-center justify-center gap-2 rounded-full border border-white/30 px-7 py-4 font-semibold text-white transition hover:bg-white/10">
-                <Play className="h-4 w-4" /> Info-Nachmittag besuchen
+                <Play className="h-4 w-4" /> Info-Nachmittag/-Abend besuchen
               </Link>
             </div>
           </Reveal>

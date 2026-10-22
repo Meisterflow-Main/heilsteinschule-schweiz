@@ -14,14 +14,14 @@ const LOCATIONS = [
   },
   {
     name: "Münsingen",
-    role: "Grundausbildung & Info-Nachmittag",
+    role: "Grundausbildung & Info-Nachmittag/-Abend",
     icon: GraduationCap,
-    text: "Grundausbildung und kostenlose Info-Nachmittage im selben Gebäude wie der SVNH. 5 Min. ab Bahnhof Münsingen.",
+    text: "Grundausbildung und kostenlose Info-Nachmittage/-Abende im selben Gebäude wie der SVNH. 5 Min. ab Bahnhof Münsingen.",
     color: "bg-amethyst/10 text-amethyst",
   },
   {
     name: "Asp",
-    role: "Hauptsitz · Shop & Praxis · Info-Nachmittag",
+    role: "Hauptsitz · Shop & Praxis · Info-Nachmittag/-Abend",
     icon: Store,
     text: "Hauptsitz der Heilsteinschule mit Heilsteinshop, Praxis und Schulungsräumen. Hier begann 2011 alles.",
     color: "bg-citrine/15 text-citrine-deep",

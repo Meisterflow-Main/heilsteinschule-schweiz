@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const TEASERS = [
   {
-    title: "Info-Nachmittag",
+    title: "Info-Nachmittag/-Abend",
     text: "Asp / Münsingen — Interessiert mehr zu erfahren?",
     img: "https://heilsteinschule.swiss/media/teasers-pictures/info-tag.png",
     to: "/info-nachmittag",

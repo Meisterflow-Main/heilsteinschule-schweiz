@@ -107,7 +107,7 @@ export default function UeberUns() {
                 to="/info-nachmittag"
                 className="inline-flex items-center justify-center gap-2 rounded-full border border-white/30 px-7 py-4 font-semibold text-white transition hover:bg-white/10"
               >
-                Info-Nachmittag
+                Info-Nachmittag/-Abend
               </Link>
             </div>
           </Reveal>

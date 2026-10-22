@@ -166,7 +166,7 @@ export default function Blog() {
               Bleiben Sie auf dem <span className="text-gradient-gold">Laufenden</span>
             </h2>
             <p className="mx-auto mt-4 max-w-xl text-lg text-white/75">
-              Besuchen Sie unseren Info-Nachmittag oder abonnieren Sie unsere News,
+              Besuchen Sie unseren Info-Nachmittag/-Abend oder abonnieren Sie unsere News,
               um keine Neuigkeiten der Heilsteinschule Schweiz zu verpassen.
             </p>
             <div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
@@ -174,7 +174,7 @@ export default function Blog() {
                 to="/info-nachmittag"
                 className="inline-flex items-center justify-center gap-2 rounded-full bg-citrine px-7 py-4 font-semibold text-amethyst-deep shadow-lift transition hover:bg-citrine-light"
               >
-                Info-Nachmittag besuchen <ArrowRight className="h-4 w-4" />
+                Info-Nachmittag/-Abend besuchen <ArrowRight className="h-4 w-4" />
               </Link>
               <Link
                 to="/news"
