@@ -132,31 +132,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 6. LEARNING WITH US */}
-      <LearningActivities />
-
-      {/* 6. VIDEO */}
-      <section className="mx-auto max-w-5xl px-4 py-24 sm:px-6">
-        <Reveal>
-          <SectionHeading eyebrow="Pädagogische Videos" title="Die Heilsteinschule Schweiz stellt sich vor" subtitle="Wir stellen uns gerne vor — ein Einblick in unsere Werte, unsere Methode und unsere Leidenschaft." />
-        </Reveal>
-        <Reveal delay={0.1}>
-          <div className="mt-10 overflow-hidden rounded-3xl border border-border bg-black shadow-lift">
-            <video controls preload="none" poster="https://www.heilsteinschule.swiss/media/Filme/Vorstellung_Film.png" className="aspect-video w-full">
-              <source src="https://www.heilsteinschule.swiss/media/Filme/Heilsteinschule_Schweiz_Vorstellung.webm" type="video/webm" />
-            </video>
-          </div>
-        </Reveal>
-        <Reveal delay={0.15}>
-          <div className="mt-8 text-center">
-            <Link to="/lehrfilme" className="inline-flex items-center gap-2 rounded-full border border-border px-6 py-3 text-sm font-semibold text-amethyst transition hover:bg-muted">
-              <Video className="h-4 w-4" /> Weitere Lehrfilme ansehen <ArrowRight className="h-4 w-4" />
-            </Link>
-          </div>
-        </Reveal>
-      </section>
-
-      {/* 8. TEAM TEASER */}
+      {/* 6. TEAM TEASER */}
       <section className="mx-auto max-w-7xl px-4 py-24 sm:px-6">
         <Reveal>
           <SectionHeading eyebrow="Unser Team" title="Menschen mit Herz für Heilsteine" subtitle="Dozentinnen und Dozenten, die ihre Leidenschaft für die Steinheilkunde weitergeben." />
@@ -181,6 +157,30 @@ export default function Home() {
             Gesamtes Team ansehen <ArrowRight className="h-4 w-4" />
           </Link>
         </div>
+      </section>
+
+      {/* 7. LEARNING WITH US */}
+      <LearningActivities />
+
+      {/* 6. VIDEO */}
+      <section className="mx-auto max-w-5xl px-4 py-24 sm:px-6">
+        <Reveal>
+          <SectionHeading eyebrow="Pädagogische Videos" title="Die Heilsteinschule Schweiz stellt sich vor" subtitle="Wir stellen uns gerne vor — ein Einblick in unsere Werte, unsere Methode und unsere Leidenschaft." />
+        </Reveal>
+        <Reveal delay={0.1}>
+          <div className="mt-10 overflow-hidden rounded-3xl border border-border bg-black shadow-lift">
+            <video controls preload="none" poster="https://www.heilsteinschule.swiss/media/Filme/Vorstellung_Film.png" className="aspect-video w-full">
+              <source src="https://www.heilsteinschule.swiss/media/Filme/Heilsteinschule_Schweiz_Vorstellung.webm" type="video/webm" />
+            </video>
+          </div>
+        </Reveal>
+        <Reveal delay={0.15}>
+          <div className="mt-8 text-center">
+            <Link to="/lehrfilme" className="inline-flex items-center gap-2 rounded-full border border-border px-6 py-3 text-sm font-semibold text-amethyst transition hover:bg-muted">
+              <Video className="h-4 w-4" /> Weitere Lehrfilme ansehen <ArrowRight className="h-4 w-4" />
+            </Link>
+          </div>
+        </Reveal>
       </section>
 
       {/* 8B. MINERAL SELECTION */}
