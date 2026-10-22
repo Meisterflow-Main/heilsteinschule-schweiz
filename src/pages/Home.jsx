@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { ArrowRight, Play, Users, Video, MapPin, Sparkles, Heart, Hand, Brain, Footprints } from "lucide-react";
+import { ArrowRight, Play, Users, Video, MapPin, Sparkles } from "lucide-react";
 import Reveal from "@/components/site/Reveal";
 import SectionHeading from "@/components/site/SectionHeading";
 import OptimizedImage from "@/components/site/OptimizedImage";
@@ -9,15 +9,9 @@ import LearningActivities from "@/components/site/LearningActivities";
 import MineralSelection from "@/components/site/MineralSelection";
 import HomeTrustBar from "@/components/site/HomeTrustBar";
 import HomeTrainingOverview from "@/components/site/HomeTrainingOverview";
+import TeachingMethod from "@/components/site/TeachingMethod";
 import HomeImageCollage from "@/components/site/HomeImageCollage";
 import HomeInquiryRegistration from "@/components/site/HomeInquiryRegistration";
-
-const PRINCIPLES = [
-  { icon: Brain, label: "Kopf", text: "Analytisches Wissen, welches erklärt, warum und wie die Heilsteine wirken." },
-  { icon: Hand, label: "Hand", text: "Die Kraft der Steine erleben und spüren, Methoden für Körper und Psyche erlernen." },
-  { icon: Footprints, label: "Fuss", text: "Die Steine unterwegs in den Alpen erfahren und die Mineralien unmittelbar erleben." },
-  { icon: Heart, label: "Herz", text: "Neugierde und Faszination als Startkapital — Liebe und Leidenschaft entstehen." },
-];
 
 const TEAM = [
   { name: "Bruno Vogler Pfeiffer", role: "Schul-Gründer & Schulleiter", img: "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/e7dc15219_ChatGPTImageSep30202602_17_44AM.png" },
@@ -91,6 +85,9 @@ export default function Home() {
       {/* 3. TRAINING OVERVIEW */}
       <HomeTrainingOverview />
 
+      {/* 3B. METHODE */}
+      <TeachingMethod />
+
       {/* 4. LEARNING WITH US */}
       <LearningActivities />
 
@@ -151,19 +148,6 @@ export default function Home() {
                 Steinheilkunde durchlief ich in Deutschland bei Michael Gienger, Werner Kühni und Walter
                 von Holst. Die Heilsteinschule Schweiz habe ich 2011 gegründet.
               </p>
-              <div className="mt-8 grid gap-4 sm:grid-cols-2">
-                {PRINCIPLES.map((p) => (
-                  <div key={p.label} className="flex gap-3 rounded-2xl border border-border bg-white p-4 shadow-soft">
-                    <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-citrine/15 text-citrine-deep">
-                      <p.icon className="h-5 w-5" />
-                    </div>
-                    <div>
-                      <h4 className="font-heading text-sm font-semibold text-amethyst">{p.label}</h4>
-                      <p className="mt-0.5 text-xs leading-relaxed text-muted-foreground">{p.text}</p>
-                    </div>
-                  </div>
-                ))}
-              </div>
               <Link to="/ueber-uns" className="mt-8 inline-flex items-center gap-2 text-sm font-semibold text-citrine-deep underline underline-offset-4 hover:text-citrine">
                 Mehr über uns <ArrowRight className="h-4 w-4" />
               </Link>
