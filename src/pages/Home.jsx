@@ -88,10 +88,7 @@ export default function Home() {
       {/* 3B. METHODE */}
       <TeachingMethod />
 
-      {/* 4. LEARNING WITH US */}
-      <LearningActivities />
-
-      {/* 5. IMAGE COLLAGE */}
+      {/* 4. GALERIE */}
       <HomeImageCollage />
       <section className="bg-quartz/60 pb-20 text-center">
         <div className="mx-auto max-w-7xl px-4 sm:px-6">
@@ -102,6 +99,9 @@ export default function Home() {
           </Reveal>
         </div>
       </section>
+
+      {/* 5. LEARNING WITH US */}
+      <LearningActivities />
 
       {/* 6. VIDEO */}
       <section className="mx-auto max-w-5xl px-4 py-24 sm:px-6">
