@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { ArrowRight, Play, Users, MapPin, Sparkles } from "lucide-react";
+import { ArrowRight, Play, Users, Video, MapPin, Sparkles, Heart, Hand, Brain, Footprints } from "lucide-react";
 import Reveal from "@/components/site/Reveal";
 import SectionHeading from "@/components/site/SectionHeading";
 import OptimizedImage from "@/components/site/OptimizedImage";
@@ -9,10 +9,15 @@ import LearningActivities from "@/components/site/LearningActivities";
 import MineralSelection from "@/components/site/MineralSelection";
 import HomeTrustBar from "@/components/site/HomeTrustBar";
 import HomeTrainingOverview from "@/components/site/HomeTrainingOverview";
-import TeachingMethod from "@/components/site/TeachingMethod";
 import HomeImageCollage from "@/components/site/HomeImageCollage";
-import SchoolVideoTeaser from "@/components/site/SchoolVideoTeaser";
 import HomeInquiryRegistration from "@/components/site/HomeInquiryRegistration";
+
+const PRINCIPLES = [
+  { icon: Brain, label: "Kopf", text: "Analytisches Wissen, welches erklärt, warum und wie die Heilsteine wirken." },
+  { icon: Hand, label: "Hand", text: "Die Kraft der Steine erleben und spüren, Methoden für Körper und Psyche erlernen." },
+  { icon: Footprints, label: "Fuss", text: "Die Steine unterwegs in den Alpen erfahren und die Mineralien unmittelbar erleben." },
+  { icon: Heart, label: "Herz", text: "Neugierde und Faszination als Startkapital — Liebe und Leidenschaft entstehen." },
+];
 
 const TEAM = [
   { name: "Bruno Vogler Pfeiffer", role: "Schul-Gründer & Schulleiter", img: "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/e7dc15219_ChatGPTImageSep30202602_17_44AM.png" },
@@ -83,15 +88,12 @@ export default function Home() {
       {/* 2. TRUST BAR */}
       <HomeTrustBar />
 
-      {/* 3. TRAINING OVERVIEW */}
-      <HomeTrainingOverview />
+      {/* 4. LEARNING WITH US */}
+      <LearningActivities />
 
-      {/* 3B. METHODE */}
-      <TeachingMethod />
-
-      {/* 4. GALERIE */}
+      {/* 5. IMAGE COLLAGE */}
       <HomeImageCollage />
-      <section className="pb-20 text-center">
+      <section className="bg-quartz/60 pb-20 text-center">
         <div className="mx-auto max-w-7xl px-4 sm:px-6">
           <Reveal>
             <Link to="/ueber-uns" className="inline-flex items-center gap-2 text-sm font-semibold text-citrine-deep underline underline-offset-4 hover:text-citrine">
@@ -101,7 +103,31 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 5. GRÜNDER-STORY */}
+      {/* 5B. TRAINING OVERVIEW */}
+      <HomeTrainingOverview />
+
+      {/* 6. VIDEO */}
+      <section className="mx-auto max-w-5xl px-4 py-24 sm:px-6">
+        <Reveal>
+          <SectionHeading eyebrow="Pädagogische Videos" title="Die Heilsteinschule Schweiz stellt sich vor" subtitle="Wir stellen uns gerne vor — ein Einblick in unsere Werte, unsere Methode und unsere Leidenschaft." />
+        </Reveal>
+        <Reveal delay={0.1}>
+          <div className="mt-10 overflow-hidden rounded-3xl border border-border bg-black shadow-lift">
+            <video controls preload="none" poster="https://www.heilsteinschule.swiss/media/Filme/Vorstellung_Film.png" className="aspect-video w-full">
+              <source src="https://www.heilsteinschule.swiss/media/Filme/Heilsteinschule_Schweiz_Vorstellung.webm" type="video/webm" />
+            </video>
+          </div>
+        </Reveal>
+        <Reveal delay={0.15}>
+          <div className="mt-8 text-center">
+            <Link to="/lehrfilme" className="inline-flex items-center gap-2 rounded-full border border-border px-6 py-3 text-sm font-semibold text-amethyst transition hover:bg-muted">
+              <Video className="h-4 w-4" /> Weitere Lehrfilme ansehen <ArrowRight className="h-4 w-4" />
+            </Link>
+          </div>
+        </Reveal>
+      </section>
+
+      {/* 7. SCHOOL & FOUNDER TEASER */}
       <section className="bg-quartz/60">
         <div className="mx-auto max-w-7xl px-4 py-24 sm:px-6">
           <div className="grid items-center gap-12 lg:grid-cols-2">
@@ -117,14 +143,27 @@ export default function Home() {
               </div>
             </Reveal>
             <Reveal delay={0.1}>
-              <SectionHeading center={false} eyebrow="Der Gründer" title="Bruno Vogler Pfeiffer" />
+              <SectionHeading center={false} eyebrow="Die Schule" title="Lehren und lernen mit Kopf, Hand, Fuss und Herz" />
               <p className="mt-5 text-base leading-relaxed text-muted-foreground">
                 Es ist mein innigster Wunsch, die Steinheilkunde den Menschen näher zu bringen. Die
-                Ausbildung ist ein Weg, den wir gemeinsam gehen. Seit 2008
+                Ausbildung ist ein Weg, den wir mit Kopf, Hand, Fuss und Herz gemeinsam gehen. Seit 2008
                 beschäftige ich mich professionell mit Heilsteinen, meine Ausbildung in analytischer
                 Steinheilkunde durchlief ich in Deutschland bei Michael Gienger, Werner Kühni und Walter
                 von Holst. Die Heilsteinschule Schweiz habe ich 2011 gegründet.
               </p>
+              <div className="mt-8 grid gap-4 sm:grid-cols-2">
+                {PRINCIPLES.map((p) => (
+                  <div key={p.label} className="flex gap-3 rounded-2xl border border-border bg-white p-4 shadow-soft">
+                    <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-citrine/15 text-citrine-deep">
+                      <p.icon className="h-5 w-5" />
+                    </div>
+                    <div>
+                      <h4 className="font-heading text-sm font-semibold text-amethyst">{p.label}</h4>
+                      <p className="mt-0.5 text-xs leading-relaxed text-muted-foreground">{p.text}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
               <Link to="/ueber-uns" className="mt-8 inline-flex items-center gap-2 text-sm font-semibold text-citrine-deep underline underline-offset-4 hover:text-citrine">
                 Mehr über uns <ArrowRight className="h-4 w-4" />
               </Link>
@@ -133,7 +172,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 6. TEAM TEASER */}
+      {/* 8. TEAM TEASER */}
       <section className="mx-auto max-w-7xl px-4 py-24 sm:px-6">
         <Reveal>
           <SectionHeading eyebrow="Unser Team" title="Menschen mit Herz für Heilsteine" subtitle="Dozentinnen und Dozenten, die ihre Leidenschaft für die Steinheilkunde weitergeben." />
@@ -159,12 +198,6 @@ export default function Home() {
           </Link>
         </div>
       </section>
-
-      {/* 7. VIDEO (kompakt) */}
-      <SchoolVideoTeaser />
-
-      {/* 8. LEARNING WITH US */}
-      <LearningActivities />
 
       {/* 8B. MINERAL SELECTION */}
       <MineralSelection />
