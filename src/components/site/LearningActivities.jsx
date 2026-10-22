@@ -40,7 +40,7 @@ export default function LearningActivities() {
         <SectionHeading
           eyebrow="Schule & Lernen"
           title="Lernen bei uns — Schule, Menschen & Naturerlebnis"
-          subtitle="Unterricht, geologische Exkursionen und das Alpenseminar: bei uns wird Heilsteinkraft mit Kopf, Hand, Fuss und Herz erfahren."
+          subtitle="Unterricht, geologische Exkursionen im Fricktal und das Alpenseminar: bei uns wird Heilsteinkraft mit Kopf, Hand, Fuss und Herz erfahren."
         />
       </Reveal>
       <div className="mt-12 grid gap-6 md:grid-cols-3">
