@@ -42,13 +42,13 @@ export default function GeologischeReisen() {
         <div className="relative mx-auto max-w-7xl px-4 py-24 sm:px-6">
           <Reveal>
             <div className="mb-4 inline-flex items-center gap-2 rounded-full glass-dark px-4 py-1.5 text-xs font-medium uppercase tracking-wider text-citrine-light">
-              <Mountain className="h-3.5 w-3.5" /> Diverses
+              <Mountain className="h-3.5 w-3.5" /> Ausbildung
             </div>
             <h1 className="font-heading text-4xl font-bold leading-tight sm:text-5xl md:text-6xl">
-              Geologische Reisen
+              Exkursionen &amp; Alpenseminar
             </h1>
             <p className="mt-5 max-w-xl text-lg text-white/80">
-              Geologische Exkursionen der Heilsteinschule Schweiz — unterwegs in den Alpen, im Jura
+              Exkursionen und Alpenseminare der Heilsteinschule Schweiz — unterwegs in den Alpen, im Jura
               und darüber hinaus. Ein Rückblick in Bildern.
             </p>
           </Reveal>

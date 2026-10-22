@@ -101,7 +101,7 @@ export default function GeoreiseNordSued() {
 
         <div className="mt-14 text-center">
           <Link to="/geologische-reisen" className="inline-flex items-center gap-2 text-sm font-semibold text-amethyst underline underline-offset-4 hover:text-citrine-deep">
-            <ArrowLeft className="h-4 w-4" /> Zurück zu Geologische Reisen
+            <ArrowLeft className="h-4 w-4" /> Zurück zu Exkursionen &amp; Alpenseminar
           </Link>
         </div>
       </section>

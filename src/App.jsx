@@ -40,6 +40,7 @@ import Zermatt2022 from '@/pages/Zermatt2022';
 import HeilsteinMuseum2022 from '@/pages/HeilsteinMuseum2022';
 import Alpenseminar2025 from '@/pages/Alpenseminar2025';
 import OnlineShop from '@/pages/OnlineShop';
+import DiversesGeologischeReisen from '@/pages/DiversesGeologischeReisen';
 // Add page imports here
 
 const AuthenticatedApp = () => {
@@ -97,6 +98,7 @@ const AuthenticatedApp = () => {
         <Route path="/schultermine" element={<Schultermine />} />
         <Route path="/schulorte" element={<Schulorte />} />
         <Route path="/geologische-reisen" element={<GeologischeReisen />} />
+        <Route path="/diverses/geologische-reisen" element={<DiversesGeologischeReisen />} />
         <Route path="/glarnerland-engadin" element={<GlarnerlandEngadin />} />
         <Route path="/georeise-nord-sued-2021" element={<GeoreiseNordSued />} />
         <Route path="/zermatt-2022" element={<Zermatt2022 />} />
