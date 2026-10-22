@@ -140,10 +140,10 @@ export default function Home() {
               </div>
             </Reveal>
             <Reveal delay={0.1}>
-              <SectionHeading center={false} eyebrow="Die Schule" title="Lehren und lernen mit Kopf, Hand, Fuss und Herz" />
+              <SectionHeading center={false} eyebrow="Der Gründer" title="Bruno Vogler Pfeiffer" />
               <p className="mt-5 text-base leading-relaxed text-muted-foreground">
                 Es ist mein innigster Wunsch, die Steinheilkunde den Menschen näher zu bringen. Die
-                Ausbildung ist ein Weg, den wir mit Kopf, Hand, Fuss und Herz gemeinsam gehen. Seit 2008
+                Ausbildung ist ein Weg, den wir gemeinsam gehen. Seit 2008
                 beschäftige ich mich professionell mit Heilsteinen, meine Ausbildung in analytischer
                 Steinheilkunde durchlief ich in Deutschland bei Michael Gienger, Werner Kühni und Walter
                 von Holst. Die Heilsteinschule Schweiz habe ich 2011 gegründet.
