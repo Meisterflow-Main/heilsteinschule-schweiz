@@ -1,5 +1,5 @@
 import React from "react";
-import { Mountain } from "lucide-react";
+import { ArrowRight, Mountain } from "lucide-react";
 import Reveal from "@/components/site/Reveal";
 import SectionHeading from "@/components/site/SectionHeading";
 import OptimizedImage from "@/components/site/OptimizedImage";
@@ -53,6 +53,28 @@ export default function GeologischeReisen() {
             </p>
           </Reveal>
         </div>
+      </section>
+
+      {/* Alpenseminar 2025 — Einstieg */}
+      <section className="mx-auto max-w-4xl px-4 pt-20 sm:px-6">
+        <Reveal>
+          <div className="mb-3 flex items-center justify-center gap-2">
+            <Mountain className="h-4 w-4 text-citrine-deep" />
+            <span className="font-mono text-xs uppercase tracking-[0.2em] text-citrine-deep">Alpenseminar 2025</span>
+          </div>
+          <SectionHeading
+            title="Exkursion zu den Heilsteinen der Schweizer Hochalpen"
+            subtitle="Ein 5-tägiger Rückblick von Pascal Bossard, Leiter Alpenseminar."
+          />
+          <div className="mt-8 text-center">
+            <a
+              href="#alpenseminar"
+              className="inline-flex items-center gap-2 rounded-full border border-border px-6 py-3 text-sm font-semibold text-amethyst transition hover:bg-muted"
+            >
+              <Mountain className="h-4 w-4" /> Zum Rückblick <ArrowRight className="h-4 w-4" />
+            </a>
+          </div>
+        </Reveal>
       </section>
 
       {/* Alpen-Seminare (Sub-Option) */}
