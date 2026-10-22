@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { ArrowRight, Play, Users, Video, MapPin, Sparkles } from "lucide-react";
+import { ArrowRight, Play, Users, MapPin, Sparkles } from "lucide-react";
 import Reveal from "@/components/site/Reveal";
 import SectionHeading from "@/components/site/SectionHeading";
 import OptimizedImage from "@/components/site/OptimizedImage";
@@ -11,6 +11,7 @@ import HomeTrustBar from "@/components/site/HomeTrustBar";
 import HomeTrainingOverview from "@/components/site/HomeTrainingOverview";
 import TeachingMethod from "@/components/site/TeachingMethod";
 import HomeImageCollage from "@/components/site/HomeImageCollage";
+import SchoolVideoTeaser from "@/components/site/SchoolVideoTeaser";
 import HomeInquiryRegistration from "@/components/site/HomeInquiryRegistration";
 
 const TEAM = [
@@ -159,29 +160,11 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 7. LEARNING WITH US */}
-      <LearningActivities />
+      {/* 7. VIDEO (kompakt) */}
+      <SchoolVideoTeaser />
 
-      {/* 6. VIDEO */}
-      <section className="mx-auto max-w-5xl px-4 py-24 sm:px-6">
-        <Reveal>
-          <SectionHeading eyebrow="Pädagogische Videos" title="Die Heilsteinschule Schweiz stellt sich vor" subtitle="Wir stellen uns gerne vor — ein Einblick in unsere Werte, unsere Methode und unsere Leidenschaft." />
-        </Reveal>
-        <Reveal delay={0.1}>
-          <div className="mt-10 overflow-hidden rounded-3xl border border-border bg-black shadow-lift">
-            <video controls preload="none" poster="https://www.heilsteinschule.swiss/media/Filme/Vorstellung_Film.png" className="aspect-video w-full">
-              <source src="https://www.heilsteinschule.swiss/media/Filme/Heilsteinschule_Schweiz_Vorstellung.webm" type="video/webm" />
-            </video>
-          </div>
-        </Reveal>
-        <Reveal delay={0.15}>
-          <div className="mt-8 text-center">
-            <Link to="/lehrfilme" className="inline-flex items-center gap-2 rounded-full border border-border px-6 py-3 text-sm font-semibold text-amethyst transition hover:bg-muted">
-              <Video className="h-4 w-4" /> Weitere Lehrfilme ansehen <ArrowRight className="h-4 w-4" />
-            </Link>
-          </div>
-        </Reveal>
-      </section>
+      {/* 8. LEARNING WITH US */}
+      <LearningActivities />
 
       {/* 8B. MINERAL SELECTION */}
       <MineralSelection />
