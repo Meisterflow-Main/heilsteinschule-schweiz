@@ -33,13 +33,13 @@ const ACTIVITIES = [
 
 export default function HeroActivityCards() {
   return (
-    <section className="mx-auto max-w-7xl px-4 pt-16 pb-2 sm:px-6">
+    <div className="relative mx-auto max-w-7xl px-4 pb-20 sm:px-6">
       <div className="grid gap-5 md:grid-cols-3">
         {ACTIVITIES.map((a) => (
           <Link
             key={a.label}
             to={a.to}
-            className="group flex h-full flex-col overflow-hidden rounded-2xl border border-border bg-white shadow-soft transition hover:-translate-y-1 hover:border-citrine hover:shadow-lift"
+            className="group flex h-full flex-col overflow-hidden rounded-2xl border border-white/15 bg-white/95 shadow-lift backdrop-blur transition hover:-translate-y-1 hover:bg-white"
           >
             <div className="relative aspect-[16/10] overflow-hidden">
               {a.hd ? (
@@ -74,6 +74,6 @@ export default function HeroActivityCards() {
           </Link>
         ))}
       </div>
-    </section>
+    </div>
   );
 }

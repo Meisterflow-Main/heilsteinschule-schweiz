@@ -73,10 +73,10 @@ export default function Home() {
             </div>
           </motion.div>
         </div>
-      </section>
 
-      {/* 1B. DREI-KARTEN-BLOCK — direkt unter dem Hero */}
-      <HeroActivityCards />
+        {/* Drei-Karten-Block — gehört zum Hero */}
+        <HeroActivityCards />
+      </section>
 
       {/* 2. AUSBILDUNG AUF EINEN BLICK */}
       <HomeTrainingOverview />
