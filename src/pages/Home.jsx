@@ -90,7 +90,7 @@ export default function Home() {
 
       {/* 4. GALERIE */}
       <HomeImageCollage />
-      <section className="bg-quartz/60 pb-20 text-center">
+      <section className="pb-20 text-center">
         <div className="mx-auto max-w-7xl px-4 sm:px-6">
           <Reveal>
             <Link to="/ueber-uns" className="inline-flex items-center gap-2 text-sm font-semibold text-citrine-deep underline underline-offset-4 hover:text-citrine">
@@ -100,31 +100,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 5. LEARNING WITH US */}
-      <LearningActivities />
-
-      {/* 6. VIDEO */}
-      <section className="mx-auto max-w-5xl px-4 py-24 sm:px-6">
-        <Reveal>
-          <SectionHeading eyebrow="Pädagogische Videos" title="Die Heilsteinschule Schweiz stellt sich vor" subtitle="Wir stellen uns gerne vor — ein Einblick in unsere Werte, unsere Methode und unsere Leidenschaft." />
-        </Reveal>
-        <Reveal delay={0.1}>
-          <div className="mt-10 overflow-hidden rounded-3xl border border-border bg-black shadow-lift">
-            <video controls preload="none" poster="https://www.heilsteinschule.swiss/media/Filme/Vorstellung_Film.png" className="aspect-video w-full">
-              <source src="https://www.heilsteinschule.swiss/media/Filme/Heilsteinschule_Schweiz_Vorstellung.webm" type="video/webm" />
-            </video>
-          </div>
-        </Reveal>
-        <Reveal delay={0.15}>
-          <div className="mt-8 text-center">
-            <Link to="/lehrfilme" className="inline-flex items-center gap-2 rounded-full border border-border px-6 py-3 text-sm font-semibold text-amethyst transition hover:bg-muted">
-              <Video className="h-4 w-4" /> Weitere Lehrfilme ansehen <ArrowRight className="h-4 w-4" />
-            </Link>
-          </div>
-        </Reveal>
-      </section>
-
-      {/* 7. SCHOOL & FOUNDER TEASER */}
+      {/* 5. GRÜNDER-STORY */}
       <section className="bg-quartz/60">
         <div className="mx-auto max-w-7xl px-4 py-24 sm:px-6">
           <div className="grid items-center gap-12 lg:grid-cols-2">
@@ -154,6 +130,30 @@ export default function Home() {
             </Reveal>
           </div>
         </div>
+      </section>
+
+      {/* 6. LEARNING WITH US */}
+      <LearningActivities />
+
+      {/* 6. VIDEO */}
+      <section className="mx-auto max-w-5xl px-4 py-24 sm:px-6">
+        <Reveal>
+          <SectionHeading eyebrow="Pädagogische Videos" title="Die Heilsteinschule Schweiz stellt sich vor" subtitle="Wir stellen uns gerne vor — ein Einblick in unsere Werte, unsere Methode und unsere Leidenschaft." />
+        </Reveal>
+        <Reveal delay={0.1}>
+          <div className="mt-10 overflow-hidden rounded-3xl border border-border bg-black shadow-lift">
+            <video controls preload="none" poster="https://www.heilsteinschule.swiss/media/Filme/Vorstellung_Film.png" className="aspect-video w-full">
+              <source src="https://www.heilsteinschule.swiss/media/Filme/Heilsteinschule_Schweiz_Vorstellung.webm" type="video/webm" />
+            </video>
+          </div>
+        </Reveal>
+        <Reveal delay={0.15}>
+          <div className="mt-8 text-center">
+            <Link to="/lehrfilme" className="inline-flex items-center gap-2 rounded-full border border-border px-6 py-3 text-sm font-semibold text-amethyst transition hover:bg-muted">
+              <Video className="h-4 w-4" /> Weitere Lehrfilme ansehen <ArrowRight className="h-4 w-4" />
+            </Link>
+          </div>
+        </Reveal>
       </section>
 
       {/* 8. TEAM TEASER */}
