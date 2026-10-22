@@ -20,7 +20,7 @@ export default function HomeTrainingOverview() {
         <SectionHeading
           eyebrow="Grundausbildung"
           title="Die Ausbildung auf einen Blick"
-          subtitle="Fundierte, praxisnahe Steinheilkunde — mit Kopf, Hand, Fuss und Herz zum anerkannten Abschluss."
+          subtitle="Fundierte, praxisnahe Steinheilkunde — mit Kopf, Herz, Hand und Fuss zum anerkannten Abschluss."
         />
       </Reveal>
 

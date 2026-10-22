@@ -26,7 +26,7 @@ export default function StoneCollage() {
         <SectionHeading
           eyebrow="Schule in Aktion"
           title="Unterricht, Exkursionen und Menschen"
-          subtitle="Eindrücke aus dem Alpenseminar, den geologischen Exkursionen und dem Schulalltag — mit Kopf, Hand, Fuss und Herz."
+          subtitle="Eindrücke aus dem Alpenseminar, den geologischen Exkursionen und dem Schulalltag — mit Kopf, Herz, Hand und Fuss."
         />
       </Reveal>
 

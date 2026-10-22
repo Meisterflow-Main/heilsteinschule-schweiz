@@ -38,7 +38,7 @@ export default function Ausbildung() {
             </h1>
             <p className="mt-5 max-w-xl text-lg text-white/80">
               Ruth Rios und Bruno Vogler Pfeiffer begleiten Sie auf dem Weg zum Heilsteinberater —
-              mit Kopf, Hand, Fuss und Herz.
+              mit Kopf, Herz, Hand und Fuss.
             </p>
           </Reveal>
         </div>

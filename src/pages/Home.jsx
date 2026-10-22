@@ -14,9 +14,9 @@ import HomeInquiryRegistration from "@/components/site/HomeInquiryRegistration";
 
 const PRINCIPLES = [
   { icon: Brain, label: "Kopf", text: "Analytisches Wissen, welches erklärt, warum und wie die Heilsteine wirken." },
+  { icon: Heart, label: "Herz", text: "Neugierde und Faszination als Startkapital — Liebe und Leidenschaft entstehen." },
   { icon: Hand, label: "Hand", text: "Die Kraft der Steine erleben und spüren, Methoden für Körper und Psyche erlernen." },
   { icon: Footprints, label: "Fuss", text: "Die Steine unterwegs in den Alpen erfahren und die Mineralien unmittelbar erleben." },
-  { icon: Heart, label: "Herz", text: "Neugierde und Faszination als Startkapital — Liebe und Leidenschaft entstehen." },
 ];
 
 const TEAM = [
@@ -71,7 +71,7 @@ export default function Home() {
               <span className="block text-gradient-gold">erfahren, spüren, lernen</span>
             </h1>
             <p className="mt-7 max-w-xl text-lg leading-relaxed text-white/85">
-              Zertifizierte Grundausbildung in der Schweiz — mit Kopf, Hand, Fuss und Herz.
+              Zertifizierte Grundausbildung in der Schweiz — mit Kopf, Herz, Hand und Fuss.
             </p>
             <div className="mt-9 flex flex-col gap-3 sm:flex-row">
               <Link to="/ausbildung" className="group inline-flex items-center justify-center gap-2 rounded-full bg-citrine px-7 py-4 font-semibold text-amethyst-deep shadow-lift transition hover:bg-citrine-light">
@@ -143,10 +143,10 @@ export default function Home() {
               </div>
             </Reveal>
             <Reveal delay={0.1}>
-              <SectionHeading center={false} eyebrow="Die Schule" title="Lehren und lernen mit Kopf, Hand, Fuss und Herz" />
+              <SectionHeading center={false} eyebrow="Die Schule" title="Lehren und lernen mit Kopf, Herz, Hand und Fuss" />
               <p className="mt-5 text-base leading-relaxed text-muted-foreground">
                 Es ist mein innigster Wunsch, die Steinheilkunde den Menschen näher zu bringen. Die
-                Ausbildung ist ein Weg, den wir mit Kopf, Hand, Fuss und Herz gemeinsam gehen. Seit 2008
+                Ausbildung ist ein Weg, den wir mit Kopf, Herz, Hand und Fuss gemeinsam gehen. Seit 2008
                 beschäftige ich mich professionell mit Heilsteinen, meine Ausbildung in analytischer
                 Steinheilkunde durchlief ich in Deutschland bei Michael Gienger, Werner Kühni und Walter
                 von Holst. Die Heilsteinschule Schweiz habe ich 2011 gegründet.

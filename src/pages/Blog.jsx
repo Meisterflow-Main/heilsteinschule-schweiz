@@ -53,7 +53,7 @@ export default function Blog() {
             </h1>
             <p className="mt-5 max-w-xl text-lg text-white/80">
               Fachwissen, Anwendungstipps und Geschichten rund um die Heilsteine —
-              von Kopf, Hand, Fuss und Herz.
+              von Kopf, Herz, Hand und Fuss.
             </p>
           </Reveal>
         </div>

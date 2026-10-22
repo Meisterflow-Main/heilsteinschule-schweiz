@@ -11,7 +11,7 @@ export default function HomeEducation() {
         <SectionHeading
           eyebrow="Ausbildung"
           title="Heilsteinberater-Ausbildung mit SVNH-Zertifizierung"
-          subtitle="Fundierte, praxisnahe Steinheilkunde — mit Kopf, Hand, Fuss und Herz zum anerkannten Abschluss."
+          subtitle="Fundierte, praxisnahe Steinheilkunde — mit Kopf, Herz, Hand und Fuss zum anerkannten Abschluss."
         />
       </Reveal>
       <div className="mt-12 grid gap-6 md:grid-cols-3">

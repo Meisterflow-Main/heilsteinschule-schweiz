@@ -20,7 +20,7 @@ export default function Kontakt() {
             </div>
             <h1 className="font-heading text-4xl font-bold sm:text-5xl md:text-6xl">Kontakt</h1>
             <p className="mt-5 max-w-xl text-lg text-white/80">
-              Die Heilsteinschule Schweiz: mit Herz, Hand, Kopf und Fuss zum Heilsteinberater.
+              Die Heilsteinschule Schweiz: mit Kopf, Herz, Hand und Fuss zum Heilsteinberater.
               Schreiben Sie uns — wir freuen uns auf Ihre Nachricht.
             </p>
           </Reveal>

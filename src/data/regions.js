@@ -42,7 +42,7 @@ export const REGIONS = [
       { icon: "Sparkles", title: "Seit 2011", description: "Über 250 ausgebildete Heilsteinberater" },
       { icon: "Award", title: "SVNH-zertifiziert", description: "Anerkannte Qualität in Steinheilkunde" },
       { icon: "Users", title: "Erfahrenes Team", description: "Dozenten mit Praxiserfahrung" },
-      { icon: "Hand", title: "Praxisnah", description: "Lernen mit Kopf, Hand und Herz" },
+      { icon: "Hand", title: "Praxisnah", description: "Lernen mit Kopf, Herz und Hand" },
     ],
     contact: {
       intro:

@@ -17,7 +17,7 @@ const REELS = [
   {
     src: "https://media.base44.com/videos/public/6aa92ec5274311c12da18ee6/8e9ccd0c9_Reel_Ausbildung.mp4",
     title: "Ausbildung mit Herz",
-    caption: "Mit Kopf, Hand, Fuss und Herz zum Heilsteinberater.",
+    caption: "Mit Kopf, Herz, Hand und Fuss zum Heilsteinberater.",
   },
   {
     src: "https://heilsteinschule.swiss/media/Filme/Energiesteine_reinigen_und_aufladen.mp4",

@@ -38,7 +38,7 @@ const PROGRAMM = [
   {
     icon: Users,
     title: "Lernansatz",
-    text: "Entdecken Sie die Philosophie des Lernens mit Kopf, Hand, Fuss und Herz.",
+    text: "Entdecken Sie die Philosophie des Lernens mit Kopf, Herz, Hand und Fuss.",
   },
   {
     icon: MessageSquare,

@@ -5,9 +5,9 @@ import SectionHeading from "@/components/site/SectionHeading";
 
 const PRINCIPLES = [
   { icon: Brain, label: "Kopf", text: "Analytisches Wissen, welches erklärt, warum und wie die Heilsteine wirken." },
+  { icon: Heart, label: "Herz", text: "Neugierde und Faszination als Startkapital — Liebe und Leidenschaft entstehen." },
   { icon: Hand, label: "Hand", text: "Die Kraft der Steine erleben und spüren, Methoden für Körper und Psyche erlernen." },
   { icon: Footprints, label: "Fuss", text: "Die Steine unterwegs in den Alpen erfahren und die Mineralien unmittelbar erleben." },
-  { icon: Heart, label: "Herz", text: "Neugierde und Faszination als Startkapital — Liebe und Leidenschaft entstehen." },
 ];
 
 export default function TeachingMethod() {
@@ -16,8 +16,8 @@ export default function TeachingMethod() {
       <Reveal>
         <SectionHeading
           eyebrow="Unsere Methode"
-          title="Kopf, Hand, Fuss und Herz"
-          subtitle="Analytisches Wissen, praktisches Erleben, Naturerfahrung und Herzensbildung gehören bei uns zusammen."
+          title="Kopf, Herz, Hand und Fuss"
+          subtitle="Analytisches Wissen, Herzensbildung, praktisches Erleben und Naturerfahrung gehören bei uns zusammen."
         />
       </Reveal>
       <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">

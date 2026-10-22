@@ -10,7 +10,7 @@ const ACTIVITIES = [
   {
     icon: BookOpen,
     label: "Im Unterricht",
-    text: "Ruth Rios und Bruno Vogler Pfeiffer lehren mit Kopf, Hand, Fuss und Herz — analytisches Wissen und praktische Anwendung in Asp, Wallbach und Münsingen.",
+    text: "Ruth Rios und Bruno Vogler Pfeiffer lehren mit Kopf, Herz, Hand und Fuss — analytisches Wissen und praktische Anwendung in Asp, Wallbach und Münsingen.",
     img: "https://heilsteinschule.swiss/media/Ruth_Bruno_Aug_25_2.jpg",
     hd: false,
     to: "/ausbildung",
@@ -40,7 +40,7 @@ export default function LearningActivities() {
         <SectionHeading
           eyebrow="Schule & Lernen"
           title="Lernen bei uns — Schule, Menschen & Naturerlebnis"
-          subtitle="Unterricht, geologische Exkursionen im Fricktal und das Alpenseminar: bei uns wird Heilsteinkraft mit Kopf, Hand, Fuss und Herz erfahren."
+          subtitle="Unterricht, geologische Exkursionen im Fricktal und das Alpenseminar: bei uns wird Heilsteinkraft mit Kopf, Herz, Hand und Fuss erfahren."
         />
       </Reveal>
       <div className="mt-12 grid gap-6 md:grid-cols-3">

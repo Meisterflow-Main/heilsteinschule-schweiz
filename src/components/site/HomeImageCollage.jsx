@@ -68,7 +68,7 @@ export default function HomeImageCollage() {
           <SectionHeading
             eyebrow="Schule in Aktion"
             title="Unterricht, Exkursionen und Menschen"
-            subtitle="Echte Eindrücke aus dem Alpenseminar, den geologischen Exkursionen und dem Schulalltag — mit Kopf, Hand, Fuss und Herz."
+            subtitle="Echte Eindrücke aus dem Alpenseminar, den geologischen Exkursionen und dem Schulalltag — mit Kopf, Herz, Hand und Fuss."
           />
         </Reveal>
 
