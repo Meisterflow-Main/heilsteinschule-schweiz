@@ -3,11 +3,13 @@ import { Link } from "react-router-dom";
 import { Play, Video, ArrowRight } from "lucide-react";
 import Reveal from "@/components/site/Reveal";
 
+const SHOP_HEILSTEINE = "https://heilstein-shop.com/heilsteine/";
+
 export default function SchoolVideoTeaser() {
   const [open, setOpen] = useState(false);
 
   return (
-    <section className="mx-auto max-w-3xl px-4 pb-20 sm:px-6">
+    <section className="mx-auto max-w-3xl px-4 pb-16 sm:px-6">
       <Reveal>
         <div className="rounded-3xl border border-border bg-white p-6 text-center shadow-soft sm:p-8">
           <h2 className="font-heading text-xl font-semibold text-amethyst sm:text-2xl">
@@ -39,6 +41,19 @@ export default function SchoolVideoTeaser() {
             </div>
           )}
         </div>
+      </Reveal>
+
+      <Reveal delay={0.1}>
+        <p className="mt-6 text-center text-sm text-muted-foreground">
+          <a
+            href={SHOP_HEILSTEINE}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-1.5 underline underline-offset-4 transition hover:text-citrine-deep"
+          >
+            Mineralien im Porträt <ArrowRight className="h-3.5 w-3.5" /> Shop
+          </a>
+        </p>
       </Reveal>
     </section>
   );
