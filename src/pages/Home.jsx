@@ -88,6 +88,9 @@ export default function Home() {
       {/* 2. TRUST BAR */}
       <HomeTrustBar />
 
+      {/* 3. TRAINING OVERVIEW */}
+      <HomeTrainingOverview />
+
       {/* 4. LEARNING WITH US */}
       <LearningActivities />
 
@@ -102,9 +105,6 @@ export default function Home() {
           </Reveal>
         </div>
       </section>
-
-      {/* 5B. TRAINING OVERVIEW */}
-      <HomeTrainingOverview />
 
       {/* 6. VIDEO */}
       <section className="mx-auto max-w-5xl px-4 py-24 sm:px-6">
