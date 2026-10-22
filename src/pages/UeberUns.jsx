@@ -68,9 +68,9 @@ const TEAM = [
 
 const PRINCIPLES = [
   { icon: Brain, label: "Kopf", text: "Analytisches Wissen, welches erklärt, warum und wie die Heilsteine wirken." },
+  { icon: Heart, label: "Herz", text: "Neugierde und Faszination als Startkapital — Liebe und Leidenschaft entstehen." },
   { icon: Hand, label: "Hand", text: "Die Kraft der Steine erleben und spüren, Methoden für Körper und Psyche erlernen." },
   { icon: Footprints, label: "Fuss", text: "Die Steine unterwegs in den Alpen erfahren und die Mineralien unmittelbar erleben." },
-  { icon: Heart, label: "Herz", text: "Neugierde und Faszination als Startkapital — Liebe und Leidenschaft entstehen." },
 ];
 
 export default function UeberUns() {
@@ -203,7 +203,7 @@ export default function UeberUns() {
           <Reveal>
             <SectionHeading
               eyebrow="Unser Leitbild"
-              title="Lehren und lernen mit Kopf, Hand, Fuss und Herz"
+              title="Lehren und lernen mit Kopf, Herz, Hand und Fuss"
               subtitle="Die Schüler sollen Gelerntes erfahren und erspüren — nur Erlerntes bleibt nicht lange."
             />
           </Reveal>
