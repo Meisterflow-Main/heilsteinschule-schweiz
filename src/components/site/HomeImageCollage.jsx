@@ -15,7 +15,7 @@ const TILES = [
   { src: "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/8027a548b_SchultagAsp8.jpg", alt: "Zwei Teilnehmende im Gespräch an einem Tisch mit Mineralienkiste", caption: "Austausch im Unterricht" },
   { src: "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/12669f54c_Fadenquarz.jpg", alt: "Fadenquarz-Kristall in der Hand gehalten", caption: "Fadenquarz in der Hand" },
   { src: "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/38436a220_Zertifikat1.jpg", alt: "Gruppe von Absolventinnen und Absolventen mit SVNH-Zertifikaten im Freien", caption: "Zertifikate der SVNH übergeben" },
-  { src: "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/3e923ecc4_Schrl1.jpg", alt: "Teilnehmerin hält einen grossen, dunklen Stein in beiden Händen", caption: "Ein Fund aus der Region" },
+  { src: "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/3e923ecc4_Schrl1.jpg", alt: "Teilnehmerin hält einen grossen, dunklen Stein in beiden Händen" },
   { src: "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/b4f1cbdec_LehrgangAsp81.jpg", alt: "Gruppenbild des Lehrgangs von oben fotografiert", caption: "Der Lehrgang von oben" },
   { src: "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/8c77ce246_Steineerkennen1.jpg", alt: "Zwei Teilnehmerinnen bestimmen Heilsteine am Tisch", caption: "Steine erkennen und bestimmen" },
 ];
@@ -54,9 +54,11 @@ function Tile({ item, featured }) {
           className="block w-full transition duration-700 group-hover:scale-[1.03]"
         />
       )}
-      <figcaption className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-amethyst-deep/75 to-transparent p-4">
-        <p className="text-sm font-medium text-white">{item.caption}</p>
-      </figcaption>
+      {item.caption && (
+        <figcaption className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-amethyst-deep/75 to-transparent p-4">
+          <p className="text-sm font-medium text-white">{item.caption}</p>
+        </figcaption>
+      )}
     </figure>
   );
 }
