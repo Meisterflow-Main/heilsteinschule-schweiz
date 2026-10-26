@@ -1,10 +1,10 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import { ArrowRight, BookOpen, MapPin } from "lucide-react";
+import { MapPin } from "lucide-react";
 import Reveal from "@/components/site/Reveal";
 import SectionHeading from "@/components/site/SectionHeading";
 import { Image } from "@/components/ui/image";
 import JuratagGallery from "@/components/site/JuratagGallery";
+import JuratagBookSection from "@/components/site/JuratagBookSection";
 
 const BASE = "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/";
 const GROUP_IMG = BASE + "5118c0523_IMG-20260823-WA0019.jpg";
@@ -56,17 +56,13 @@ export default function JuratagFricktal() {
               Die Eindrücke dieser Tage und die Geschichten dahinter finden Sie in Bruno Vogler Pfeiffers
               Buch «Reise zu mir selbst».
             </p>
-            <Link
-              to="/brunos-buch"
-              className="mt-8 inline-flex items-center gap-2 rounded-full bg-citrine px-7 py-3.5 text-sm font-semibold text-amethyst-deep shadow-lift transition hover:bg-citrine-light"
-            >
-              <BookOpen className="h-4 w-4" /> «Reise zu mir selbst» <ArrowRight className="h-4 w-4" />
-            </Link>
           </Reveal>
         </div>
       </section>
 
       <JuratagGallery />
+
+      <JuratagBookSection />
     </>
   );
 }
