@@ -12,8 +12,8 @@ const TILES = [
   { src: "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/04bd9393b_WhatsAppImage2026-09-22at0205353.jpeg", alt: "Seminarraum der Heilsteinschule mit Ordnern und Arbeitsmaterial", caption: "Seminarraum der Heilsteinschule" },
   { src: "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/3dca25c83_WhatsAppImage2026-09-22at0205382.jpeg", alt: "Zwei Personen betrachten eine Mineralien-Ausstellung im Museum", caption: "Museumsbesuch mit Heilsteinen" },
   { src: "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/5ec3573c1_ChatGPTImageSep30202602_10_51AM.png", alt: "Bruno Vogler Pfeiffer präsentiert Rohsteine in der Schule", caption: "Heilsteine in der Praxis" },
-  { src: "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/ec6224bb6_ChatGPTImageSep29202609_43_38PM.png", alt: "Klarer Bergkristall in der Hand", caption: "Bergkristall — hautnah" },
-  { src: "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/e378a82ac_ChatGPTImageSep29202609_44_50PM.png", alt: "Schwarzes Mineral mit Gold-Einschlüssen in der Hand", caption: "Mineralbestimmung vor Ort" },
+  { src: "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/8027a548b_SchultagAsp8.jpg", alt: "Zwei Teilnehmende im Gespräch an einem Tisch mit Mineralienkiste", caption: "Austausch im Unterricht" },
+  { src: "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/12669f54c_Fadenquarz.jpg", alt: "Fadenquarz-Kristall in der Hand gehalten", caption: "Fadenquarz in der Hand" },
 ];
 
 function SwissCrossBadge({ className = "" }) {
