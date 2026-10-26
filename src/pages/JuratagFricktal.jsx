@@ -4,9 +4,11 @@ import { ArrowRight, BookOpen, MapPin } from "lucide-react";
 import Reveal from "@/components/site/Reveal";
 import SectionHeading from "@/components/site/SectionHeading";
 import { Image } from "@/components/ui/image";
+import JuratagGallery from "@/components/site/JuratagGallery";
 
-const JURATAG_IMG =
-  "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/718ef1e15_WhatsAppImage2026-09-22at02053610.jpeg";
+const BASE = "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/";
+const GROUP_IMG = BASE + "5118c0523_IMG-20260823-WA0019.jpg";
+const COLLECTING_IMG = BASE + "df015e336_20260823_111023.jpg";
 
 export default function JuratagFricktal() {
   return (
@@ -14,7 +16,7 @@ export default function JuratagFricktal() {
       {/* Hero */}
       <section className="relative overflow-hidden bg-amethyst text-white">
         <div className="absolute inset-0 opacity-30">
-          <Image src={JURATAG_IMG} alt="Juratag im Fricktal" className="h-full w-full" fittingType="fill" />
+          <Image src={GROUP_IMG} alt="Juratag im Fricktal" className="h-full w-full" fittingType="fill" />
         </div>
         <div className="absolute inset-0 bg-gradient-to-r from-amethyst-deep via-amethyst/85 to-amethyst/40" />
         <div className="relative mx-auto max-w-7xl px-4 py-24 sm:px-6">
@@ -36,8 +38,8 @@ export default function JuratagFricktal() {
           <Reveal>
             <div className="overflow-hidden rounded-3xl shadow-lift">
               <Image
-                src={JURATAG_IMG}
-                alt="Juratag im Fricktal"
+                src={COLLECTING_IMG}
+                alt="Steine sammeln am Hang im Fricktal"
                 className="aspect-[4/3] w-full"
                 fittingType="fill"
               />
@@ -63,6 +65,8 @@ export default function JuratagFricktal() {
           </Reveal>
         </div>
       </section>
+
+      <JuratagGallery />
     </>
   );
 }
