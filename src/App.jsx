@@ -25,6 +25,7 @@ import Blog from '@/pages/Blog';
 import UeberUns from '@/pages/UeberUns';
 import SchuelerBerichte from '@/pages/SchuelerBerichte';
 import BrunosBuch from '@/pages/BrunosBuch';
+import JuratagFricktal from '@/pages/JuratagFricktal';
 import MichaelGienger from '@/pages/MichaelGienger';
 import FrageAusbildung from '@/pages/FrageAusbildung';
 import Anmeldung from '@/pages/Anmeldung';
@@ -89,6 +90,7 @@ const AuthenticatedApp = () => {
         <Route path="/ueber-uns" element={<UeberUns />} />
         <Route path="/schueler-berichte" element={<SchuelerBerichte />} />
         <Route path="/brunos-buch" element={<BrunosBuch />} />
+        <Route path="/juratag-im-fricktal" element={<JuratagFricktal />} />
         <Route path="/michael-gienger" element={<MichaelGienger />} />
         <Route path="/ausbildung-anfrage" element={<FrageAusbildung />} />
         <Route path="/ausbildung-anmeldung" element={<Anmeldung />} />

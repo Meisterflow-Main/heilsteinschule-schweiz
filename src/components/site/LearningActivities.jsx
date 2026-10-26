@@ -21,7 +21,7 @@ const ACTIVITIES = [
     text: "Jura, Zentralalpen, Vogesen und mehr — wir erleben die Steine in der Natur und erfahren ihre Herkunft unmittelbar.",
     img: "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/718ef1e15_WhatsAppImage2026-09-22at02053610.jpeg",
     hd: true,
-    to: "/ausbildung#exkursionen",
+    to: "/juratag-im-fricktal",
   },
   {
     icon: Mountain,
