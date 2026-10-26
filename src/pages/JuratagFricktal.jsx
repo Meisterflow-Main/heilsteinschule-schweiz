@@ -1,14 +1,12 @@
 import React from "react";
 import { MapPin } from "lucide-react";
 import Reveal from "@/components/site/Reveal";
-import SectionHeading from "@/components/site/SectionHeading";
 import { Image } from "@/components/ui/image";
 import JuratagGallery from "@/components/site/JuratagGallery";
 import JuratagBookSection from "@/components/site/JuratagBookSection";
 
 const BASE = "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/";
 const GROUP_IMG = BASE + "5118c0523_IMG-20260823-WA0019.jpg";
-const COLLECTING_IMG = BASE + "df015e336_20260823_111023.jpg";
 
 export default function JuratagFricktal() {
   return (
@@ -27,34 +25,6 @@ export default function JuratagFricktal() {
             <h1 className="font-heading text-4xl font-bold sm:text-5xl md:text-6xl">Juratag im Fricktal</h1>
             <p className="mt-5 max-w-xl text-lg text-white/80">
               Ein Tag im Jura — wir erleben die Steine in der Natur und erfahren ihre Herkunft unmittelbar.
-            </p>
-          </Reveal>
-        </div>
-      </section>
-
-      {/* Juratag & Buch */}
-      <section className="mx-auto max-w-5xl px-4 py-20 sm:px-6">
-        <div className="grid items-center gap-12 lg:grid-cols-2">
-          <Reveal>
-            <div className="overflow-hidden rounded-3xl shadow-lift">
-              <Image
-                src={COLLECTING_IMG}
-                alt="Steine sammeln am Hang im Fricktal"
-                className="aspect-[4/3] w-full"
-                fittingType="fill"
-              />
-            </div>
-          </Reveal>
-          <Reveal delay={0.1}>
-            <SectionHeading center={false} eyebrow="Aus der Praxis" title="Dem Jura auf der Spur" />
-            <p className="mt-5 text-base leading-relaxed text-muted-foreground">
-              Am Juratag im Fricktal sind wir mit dem Dozenten-Team der Heilsteinschule Schweiz unterwegs:
-              Jura, Zentralalpen, Vogesen und mehr — wir erleben die Steine in der Natur und erfahren ihre
-              Herkunft unmittelbar.
-            </p>
-            <p className="mt-4 text-base leading-relaxed text-muted-foreground">
-              Die Eindrücke dieser Tage und die Geschichten dahinter finden Sie in Bruno Vogler Pfeiffers
-              Buch «Reise zu mir selbst».
             </p>
           </Reveal>
         </div>
