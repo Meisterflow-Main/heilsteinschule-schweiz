@@ -1,5 +1,5 @@
 import React from "react";
-import { CalendarDays, MapPin, Phone, Mail, Clock, Users, HandHeart, GraduationCap, MessageSquare, ArrowRight, Train } from "lucide-react";
+import { CalendarDays, MapPin, Phone, Mail, Clock, Users, HandHeart, GraduationCap, MessageSquare, ArrowRight, Train, Newspaper } from "lucide-react";
 import Reveal from "@/components/site/Reveal";
 import SectionHeading from "@/components/site/SectionHeading";
 import InfoNachmittagForm from "@/components/site/InfoNachmittagForm";
@@ -136,6 +136,30 @@ export default function InfoTag() {
               <Clock className="mr-1.5 inline h-4 w-4 text-citrine-deep" />
               Weitere Termine folgen. Neue Daten werden hier veröffentlicht, sobald sie feststehen.
             </p>
+          </Reveal>
+
+          <Reveal delay={0.2}>
+            <div className="mt-6 flex flex-col items-center justify-between gap-4 rounded-2xl border border-border bg-white p-6 text-center shadow-soft sm:flex-row sm:text-left">
+              <div className="flex items-center gap-3">
+                <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-citrine/15 text-citrine-deep">
+                  <Newspaper className="h-5 w-5" />
+                </span>
+                <div>
+                  <h3 className="font-heading text-base font-semibold text-amethyst">Aktueller Newsletter</h3>
+                  <p className="mt-0.5 text-sm text-muted-foreground">
+                    Alle Termine und Neuigkeiten der Heilsteinschule Schweiz im Überblick.
+                  </p>
+                </div>
+              </div>
+              <a
+                href="https://heilsteinschule.swiss/modules/tiny_newsletter/web.php?n=17&a="
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex shrink-0 items-center justify-center gap-2 rounded-full bg-citrine px-5 py-2.5 text-sm font-semibold text-amethyst-deep shadow-soft transition hover:bg-citrine-light"
+              >
+                Newsletter ansehen <ArrowRight className="h-4 w-4" />
+              </a>
+            </div>
           </Reveal>
         </div>
       </section>
