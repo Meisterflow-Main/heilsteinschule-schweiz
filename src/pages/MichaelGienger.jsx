@@ -14,6 +14,12 @@ const GALLERY = [
   { img: "https://heilsteinschule.swiss/media/rfg-folders/michael-gienger-gallery/Michael_Ginger_Pedro.jpg", alt: "Michael Ginger im Pegmatit. Der einheimische Pedro zeigt uns seinen gefundenen Muskovit" },
   { img: "https://heilsteinschule.swiss/media/rfg-folders/michael-gienger-gallery/Michael_Buchseite_555.jpg", alt: "Michael schlägt in seinem Buch 555 nach" },
   { img: "https://heilsteinschule.swiss/media/rfg-folders/michael-gienger-gallery/Michael_Bergkristall_Waschen.jpg", alt: "Michael Ginger beim Abwaschen eines gefundenen Bergkristalls" },
+  { img: "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/d424a7d17_P1070098.JPG", alt: "Die Fundstücke werden gemeinsam begutachtet" },
+  { img: "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/35ae78efe_P1060952.JPG", alt: "Blick in einen Tagebau in Minas Gerais" },
+  { img: "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/61beab918_P1060097.JPG", alt: "Sieben und Waschen der gefundenen Mineralien" },
+  { img: "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/0aa5bceee_P1060631.JPG", alt: "Auf dem Weg zum Schacht im Fels" },
+  { img: "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/49882f1c6_P1060199.JPG", alt: "Unter Tage — die Funde werden geborgen" },
+  { img: "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/d27ab101e_Brasilien08448.jpg", alt: "Bergkristall mit Turmalin-Nadeln aus Brasilien" },
 ];
 
 export default function MichaelGienger() {
