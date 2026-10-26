@@ -96,32 +96,28 @@ export default function AlpenseminarReport() {
           ))}
         </div>
 
-        {/* Zitat Pascal Bossard — daneben Allalin-Gabbro aus dem Alpenseminar */}
+        {/* Zitat Pascal Bossard */}
         <Reveal delay={0.1}>
-          <div className="mt-10 grid items-stretch gap-6 lg:grid-cols-2">
-            <div className="flex flex-col justify-center rounded-2xl bg-citrine/10 p-6 text-center">
-              <p className="text-sm italic leading-relaxed text-amethyst">
-                „Rückblickend wurde ich nach dem/den Highlights an diesem Alpenseminar gefragt. Es waren in
-                meiner Betrachtung die Teilnehmer, mit Begeisterung für die Natur und die Steine. Des
-                Weiteren durfte ich grosse Freude und eine harmonische Zusammenarbeit im Leiterteam
-                erfahren. Wir freuen uns schon heute auf ein weiteres Alpenseminar 2026."
-              </p>
-              <p className="mt-3 text-sm font-semibold text-citrine-deep">— Pascal Bossard, Leiter Alpenseminar</p>
-            </div>
-            <figure className="overflow-hidden rounded-2xl border border-border shadow-soft">
-              <img
-                src={ALLALIN_GABBRO_IMG}
-                alt="Allalin-Gabbro aus dem Alpenseminar"
-                loading="lazy"
-                className="h-full w-full object-cover"
-              />
-            </figure>
+          <div className="mt-10 rounded-2xl bg-citrine/10 p-6 text-center">
+            <p className="text-sm italic leading-relaxed text-amethyst">
+              „Rückblickend wurde ich nach dem/den Highlights an diesem Alpenseminar gefragt. Es waren in
+              meiner Betrachtung die Teilnehmer, mit Begeisterung für die Natur und die Steine. Des
+              Weiteren durfte ich grosse Freude und eine harmonische Zusammenarbeit im Leiterteam
+              erfahren. Wir freuen uns schon heute auf ein weiteres Alpenseminar 2026."
+            </p>
+            <p className="mt-3 text-sm font-semibold text-citrine-deep">— Pascal Bossard, Leiter Alpenseminar</p>
           </div>
         </Reveal>
 
+        {/* Gruppenbild des Leiterteams — Allalin-Gabbro daneben */}
         <Reveal delay={0.15}>
-          <div className="mt-6 overflow-hidden rounded-2xl border border-border shadow-soft">
-            <img src={BACKVIEW_IMG} alt="Rückblick und Vorfreude auf das Alpenseminar 2026" loading="lazy" className="h-full w-full object-cover" />
+          <div className="mt-6 grid gap-6 sm:grid-cols-2">
+            <figure className="overflow-hidden rounded-2xl border border-border shadow-soft">
+              <img src={BACKVIEW_IMG} alt="Rückblick und Vorfreude auf das Alpenseminar 2026" loading="lazy" className="h-full w-full object-cover" />
+            </figure>
+            <figure className="overflow-hidden rounded-2xl border border-border shadow-soft">
+              <img src={ALLALIN_GABBRO_IMG} alt="Allalin-Gabbro aus dem Alpenseminar" loading="lazy" className="h-full w-full object-cover" />
+            </figure>
           </div>
         </Reveal>
       </div>
