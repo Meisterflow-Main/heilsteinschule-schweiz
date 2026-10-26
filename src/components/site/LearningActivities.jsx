@@ -29,7 +29,7 @@ const ACTIVITIES = [
     text: "Fünf Tage Hochalpen-Exkursion als praktischer Ausbildungsteil — vom Dozenten-Team begleitet, von der Rosenlaui-Gletscherschlucht bis zum Oberalppass.",
     img: "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/ffaf18a07_WhatsAppImage2026-09-23at105952.jpeg",
     hd: true,
-    to: "/ausbildung#exkursionen",
+    to: "/alpenseminar-2025",
   },
 ];
 
