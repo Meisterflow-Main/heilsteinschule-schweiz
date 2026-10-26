@@ -130,36 +130,34 @@ export default function InfoTag() {
                 </div>
               </Reveal>
             ))}
+            <Reveal delay={TERMINE.length * 0.1}>
+              <div className="flex h-full flex-col rounded-3xl border border-border bg-white p-7 shadow-soft transition hover:shadow-lift">
+                <span className="flex h-20 w-20 items-center justify-center rounded-2xl bg-citrine/15 text-citrine-deep">
+                  <Newspaper className="h-9 w-9" />
+                </span>
+                <div className="mt-5 flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-citrine-deep">
+                  <Newspaper className="h-3.5 w-3.5" /> Newsletter
+                </div>
+                <h3 className="mt-2 font-heading text-lg font-semibold text-amethyst">Aktueller Newsletter</h3>
+                <p className="mt-1 text-sm leading-relaxed text-muted-foreground">
+                  Alle Termine und Neuigkeiten der Heilsteinschule Schweiz im Überblick.
+                </p>
+                <a
+                  href="https://heilsteinschule.swiss/modules/tiny_newsletter/web.php?n=17&a="
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-5 inline-flex w-fit items-center gap-2 rounded-full bg-citrine px-5 py-2.5 text-sm font-semibold text-amethyst-deep shadow-soft transition hover:bg-citrine-light"
+                >
+                  Newsletter ansehen <ArrowRight className="h-4 w-4" />
+                </a>
+              </div>
+            </Reveal>
           </div>
           <Reveal delay={0.15}>
             <p className="mt-8 text-center text-sm text-muted-foreground">
               <Clock className="mr-1.5 inline h-4 w-4 text-citrine-deep" />
               Weitere Termine folgen. Neue Daten werden hier veröffentlicht, sobald sie feststehen.
             </p>
-          </Reveal>
-
-          <Reveal delay={0.2}>
-            <div className="mt-6 flex flex-col items-center justify-between gap-4 rounded-2xl border border-border bg-white p-6 text-center shadow-soft sm:flex-row sm:text-left">
-              <div className="flex items-center gap-3">
-                <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-citrine/15 text-citrine-deep">
-                  <Newspaper className="h-5 w-5" />
-                </span>
-                <div>
-                  <h3 className="font-heading text-base font-semibold text-amethyst">Aktueller Newsletter</h3>
-                  <p className="mt-0.5 text-sm text-muted-foreground">
-                    Alle Termine und Neuigkeiten der Heilsteinschule Schweiz im Überblick.
-                  </p>
-                </div>
-              </div>
-              <a
-                href="https://heilsteinschule.swiss/modules/tiny_newsletter/web.php?n=17&a="
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex shrink-0 items-center justify-center gap-2 rounded-full bg-citrine px-5 py-2.5 text-sm font-semibold text-amethyst-deep shadow-soft transition hover:bg-citrine-light"
-              >
-                Newsletter ansehen <ArrowRight className="h-4 w-4" />
-              </a>
-            </div>
           </Reveal>
         </div>
       </section>
