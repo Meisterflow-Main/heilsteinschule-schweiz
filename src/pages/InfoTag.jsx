@@ -132,9 +132,11 @@ export default function InfoTag() {
             ))}
             <Reveal delay={TERMINE.length * 0.1}>
               <div className="flex h-full flex-col rounded-3xl border border-border bg-white p-7 shadow-soft transition hover:shadow-lift">
-                <span className="flex h-20 w-20 items-center justify-center rounded-2xl bg-citrine/15 text-citrine-deep">
-                  <Newspaper className="h-9 w-9" />
-                </span>
+                <img
+                  src="https://heilsteinschule.swiss/modules/tiny_newsletter/templates/latest-topics/header.jpg"
+                  alt="Newsletter Heilsteinschule Schweiz"
+                  className="h-20 w-full rounded-2xl object-cover"
+                />
                 <div className="mt-5 flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-citrine-deep">
                   <Newspaper className="h-3.5 w-3.5" /> Newsletter
                 </div>
