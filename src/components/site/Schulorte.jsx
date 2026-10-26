@@ -108,7 +108,7 @@ export default function Schulorte({ withHeading = true }) {
             <strong className="text-amethyst">Alpenseminar in den Schweizer Alpen:</strong>{" "}
             Das Alpenseminar ist ein obligatorischer praktischer Ausbildungsteil und findet
             in den Schweizer Alpen statt — nicht an den regulären Schulstandorten.
-            <Link to="/alpenseminar-2025" className="ml-1 text-citrine-deep underline underline-offset-2 hover:text-citrine">
+            <Link to="/geologische-reisen" className="ml-1 text-citrine-deep underline underline-offset-2 hover:text-citrine">
               Mehr erfahren
             </Link>.
           </span>
