@@ -25,6 +25,20 @@ const BOOKS = [
     text: "Zwölf Heilsteine für die Tasche: Von Allergien bis Zahnschmerzen finden Sie für Anliegen aller Art den richtigen Stein. Das handliche Büchlein bietet die Essenz der modernen Steinheilkunde.",
     url: "https://heilstein-shop.com/bakery/die-heilsteine-taschenapotheke-60/",
   },
+  {
+    title: "Die Steinheilkunde – das Handbuch",
+    price: "sFr 45,00",
+    img: "https://heilstein-shop.com/media/bakery/images/item61/Die-Steinheilkunde.png",
+    text: "Das massgebliche, umfassende Handbuch zur Steinheilkunde als eigenständige naturheilkundliche Methode: Grundlagen und ausführliche Beschreibungen von mehr als einhundert gut erforschten Heilsteinen. Vom Autor von letzter Hand durchgesehen.",
+    url: "https://heilstein-shop.com/bakery/die-steinheilkunde-das-handbuch-61/",
+  },
+  {
+    title: "Heilsteine – 555 Steine von A–Z",
+    price: "sFr 13,00",
+    img: "https://heilstein-shop.com/media/bakery/images/item44/Heilsteine-555-Stein-von-a-z.png",
+    text: "Die wichtigsten Informationen zu 555 Heilsteinen: knapp und übersichtlich und doch sorgfältig und genau wird jeder Stein in Wort und Bild dargestellt. Ein umfassendes Verzeichnis aktueller Heilsteine.",
+    url: "https://heilstein-shop.com/bakery/heilsteine-555-steine-von-a-z-michael-gienger-44/",
+  },
 ];
 
 export default function GiengerBooks() {
