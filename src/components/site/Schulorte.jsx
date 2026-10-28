@@ -29,6 +29,7 @@ export const STANDORTE = [
     name: "Münsingen — Grundausbildung & Info",
     ort: "Kapellenstrasse 5 (4. Stock), 3110 Münsingen",
     img: "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/cea421d21_20261027_175231.jpg",
+    imgs: ["https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/1fa9c228f_20261025_172212.jpg"],
     rolle: "Grundausbildung & Info-Nachmittag/-Abend · Klassengrösse min. 5, max. 8 Personen",
     tage: "Wochenende, 09:00–17:00 Uhr, 1× monatlich",
     leitung: "Ruth Rios",
@@ -66,6 +67,20 @@ export default function Schulorte({ withHeading = true }) {
                 </h3>
               </div>
               <div className="p-6">
+                {s.imgs?.length > 0 && (
+                  <div className="mb-4 flex gap-3">
+                    {s.imgs.map((src) => (
+                      <div key={src} className="flex-1 overflow-hidden rounded-xl border border-border">
+                        <img
+                          src={src}
+                          alt={`${s.name} — Schulungsraum`}
+                          loading="lazy"
+                          className="aspect-[4/3] w-full object-cover"
+                        />
+                      </div>
+                    ))}
+                  </div>
+                )}
                 {s.rolle && (
                   <div className="mb-3 inline-flex rounded-full bg-citrine/10 px-3 py-1 text-xs font-medium text-citrine-deep">
                     {s.rolle}
