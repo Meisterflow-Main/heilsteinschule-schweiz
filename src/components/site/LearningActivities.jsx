@@ -18,7 +18,7 @@ const ACTIVITIES = [
   {
     icon: Compass,
     label: "Juratag im Fricktal",
-    text: "Jura, Zentralalpen, Vogesen und mehr — wir erleben die Steine in der Natur und erfahren ihre Herkunft unmittelbar.",
+    text: "Jura und mehr — wir erleben die Steine in der Natur und erfahren ihre Herkunft unmittelbar.",
     img: "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/5118c0523_IMG-20260823-WA0019.jpg",
     hd: true,
     to: "/juratag-im-fricktal",
