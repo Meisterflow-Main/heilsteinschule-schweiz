@@ -61,10 +61,15 @@ export default function Schulorte({ withHeading = true }) {
                   loading="lazy"
                   className="h-full w-full object-cover transition duration-700 group-hover:scale-105"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-amethyst/60 to-transparent" />
-                <h3 className="absolute bottom-4 left-5 font-heading text-xl font-semibold text-white">
-                  {s.name}
-                </h3>
+                <div className="absolute inset-0 bg-gradient-to-t from-amethyst/75 via-amethyst/20 to-transparent" />
+                <div className="absolute inset-x-5 bottom-4 flex flex-wrap items-center gap-x-3 gap-y-1.5">
+                  <h3 className="font-heading text-xl font-semibold text-white">{s.name}</h3>
+                  {s.rolle && (
+                    <span className="rounded-full bg-white/15 px-2.5 py-1 text-[11px] font-medium leading-snug text-white ring-1 ring-white/30 backdrop-blur-sm">
+                      {s.rolle}
+                    </span>
+                  )}
+                </div>
               </div>
               <div className="p-6">
                 {s.imgs?.length > 0 && (
@@ -79,11 +84,6 @@ export default function Schulorte({ withHeading = true }) {
                         />
                       </div>
                     ))}
-                  </div>
-                )}
-                {s.rolle && (
-                  <div className="mb-3 inline-flex rounded-full bg-citrine/10 px-3 py-1 text-xs font-medium text-citrine-deep">
-                    {s.rolle}
                   </div>
                 )}
                 <div className="flex items-start gap-2 text-sm text-foreground/80">
