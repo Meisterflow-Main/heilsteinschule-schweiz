@@ -37,7 +37,7 @@ const EINBLICKE = [
 
 const ITEMS = [
   ...STEINE.map((name) => ({ img: `${AUSWAHL_BASE}/${name}.jpg`, label: name, alt: `Heilsteinshop Asp - ${name}` })),
-  ...EINBLICKE.map((e) => ({ img: e.img, label: e.label, alt: `Heilsteinshop Asp - ${e.label}` })),
+  ...EINBLICKE.map((e) => ({ img: e.img, label: e.label, contain: true, alt: `Heilsteinshop Asp - ${e.label}` })),
 ];
 
 export default function HeilsteineAuswahl() {
@@ -54,13 +54,15 @@ export default function HeilsteineAuswahl() {
         {ITEMS.map((item, i) => (
           <Reveal key={item.img} delay={(i % 4) * 0.04}>
             <figure className="group overflow-hidden rounded-xl border border-border bg-muted shadow-soft">
-              <div className="aspect-square overflow-hidden">
+              <div className={`aspect-square overflow-hidden ${item.contain ? "bg-quartz p-2" : ""}`}>
                 <OptimizedImage
                   src={item.img}
                   alt={item.alt}
                   width={500}
                   loading="lazy"
-                  className="h-full w-full object-cover transition duration-700 group-hover:scale-105"
+                  className={`h-full w-full transition duration-700 group-hover:scale-105 ${
+                    item.contain ? "object-contain" : "object-cover"
+                  }`}
                 />
               </div>
               <figcaption className="flex items-center gap-1.5 px-3 py-2 text-xs text-muted-foreground">
