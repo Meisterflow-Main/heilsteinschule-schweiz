@@ -28,7 +28,7 @@ export const STANDORTE = [
   {
     name: "Münsingen — Grundausbildung & Info",
     ort: "Kapellenstrasse 5 (4. Stock), 3110 Münsingen",
-    img: "https://heilsteinschule.swiss/media/wunderblock/svnh-gebaeude.jpg",
+    img: "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/cea421d21_20261027_175231.jpg",
     rolle: "Grundausbildung & Info-Nachmittag/-Abend · Klassengrösse min. 5, max. 8 Personen",
     tage: "Wochenende, 09:00–17:00 Uhr, 1× monatlich",
     leitung: "Ruth Rios",
