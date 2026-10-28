@@ -60,7 +60,7 @@ const ARTICLE_IMG = "https://heilsteinschule.swiss/media/.news_img/nfz.webp";
 const TEAM = [
   { name: "Bruno Vogler Pfeiffer", role: "Schul-Gründer und Schulleiter", img: "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/e7dc15219_ChatGPTImageSep30202602_17_44AM.png" },
   { name: "Ruth Rios", role: "Hauptdozentin der Heilsteinschule", img: "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/460e2670f_ChatGPTImageSep21202602_29_12PM.png" },
-  { name: "Bluette Caruso", role: "Dozentin, Münsingen", img: "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/898ffbd08_20261025_171101.jpg" },
+  { name: "Bluette Caruso", role: "Dozentin, Münsingen", img: "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/898ffbd08_20261025_171101.jpg", fit: "contain" },
   { name: "Pascal Bossard", role: "Leiter Alpenseminar", img: "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/057e4eb82_ChatGPTImageSep21202602_32_05PM.png" },
   { name: "Joe Schnarwiler", role: "Dozent", img: "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/8ed080c78_ChatGPTImageSep21202602_36_58PM.png" },
   { name: "Maja Pfeiffer", role: "StV Schulleitung und Leitung Heilsteinshop-Asp", img: "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/d3b26ef85_ChatGPTImageSep21202602_40_48PM.png" },
@@ -186,7 +186,14 @@ export default function UeberUns() {
             <Reveal key={m.name} delay={i * 0.06}>
               <div className="group overflow-hidden rounded-2xl border border-border bg-white shadow-soft transition hover:-translate-y-1 hover:shadow-lift">
                 <div className="aspect-square overflow-hidden bg-muted">
-                  <img src={m.img} alt={m.name} loading="lazy" className="h-full w-full object-cover transition duration-700 group-hover:scale-105" />
+                  <img
+                    src={m.img}
+                    alt={m.name}
+                    loading="lazy"
+                    className={`h-full w-full transition duration-700 group-hover:scale-105 ${
+                      m.fit === "contain" ? "bg-white object-contain" : "object-cover"
+                    }`}
+                  />
                 </div>
                 <div className="p-4 text-center">
                   <h3 className="font-heading text-base font-semibold text-amethyst">{m.name}</h3>
