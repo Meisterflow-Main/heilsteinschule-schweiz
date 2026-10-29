@@ -140,7 +140,7 @@ export default function InfoTag() {
                 <div className="mt-5 flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-citrine-deep">
                   <Newspaper className="h-3.5 w-3.5" /> Newsletter
                 </div>
-                <h3 className="mt-2 font-heading text-lg font-semibold text-amethyst">Aktueller Newsletter</h3>
+                <h3 className="mt-2 font-heading text-lg font-semibold text-amethyst">16. Januar 2027 von 09:00 Uhr – 17:00 Uhr</h3>
                 <p className="mt-1 text-sm leading-relaxed text-muted-foreground">
                   Alle Termine und Neuigkeiten der Heilsteinschule Schweiz im Überblick.
                 </p>
