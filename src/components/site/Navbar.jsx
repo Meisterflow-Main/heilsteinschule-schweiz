@@ -111,8 +111,8 @@ export default function Navbar() {
     <header className={`sticky top-0 z-50 transition-all duration-500 ${scrolled ? "py-2" : "py-3"}`}>
       <div className="mx-auto max-w-7xl px-4 sm:px-6">
         <div className="flex items-center justify-between rounded-2xl glass px-4 py-2.5 shadow-soft transition-all duration-500">
-          <Link to="/" className="flex items-center rounded-xl transition-all duration-500" aria-label="Heilsteinschule Schweiz Startseite">
-            <img src="https://heilsteinschule.swiss/media/LogoName.png" alt="Heilsteinschule Schweiz Logo" className="h-14 w-auto rounded-xl bg-white object-contain p-2 shadow-soft sm:h-16" />
+          <Link to="/" className="flex shrink-0 items-center rounded-xl transition-all duration-500" aria-label="Heilsteinschule Schweiz Startseite">
+            <img src="https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/2d5efb176_HeilsteinschuleSchweizLogo.png" alt="Heilsteinschule Schweiz Logo" className="h-10 w-auto shrink-0 object-contain sm:h-11" />
           </Link>
 
           <nav className="hidden items-center gap-0 lg:flex">
