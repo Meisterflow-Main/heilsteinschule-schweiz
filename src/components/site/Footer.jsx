@@ -69,9 +69,9 @@ export default function Footer() {
   return (
     <footer className="relative mt-24 bg-amethyst text-white">
       <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6">
-        <div className="grid gap-12 lg:grid-cols-6">
-          <div className="lg:col-span-1">
-            <img src="https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/2d5efb176_HeilsteinschuleSchweizLogo.png" alt="Heilsteinschule Schweiz" className="h-12 w-auto object-contain" />
+        <div className="grid gap-12 lg:grid-cols-[minmax(210px,1.3fr)_repeat(5,minmax(0,1fr))]">
+          <div>
+            <img src="https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/2d5efb176_HeilsteinschuleSchweizLogo.png" alt="Heilsteinschule Schweiz" className="h-auto w-full max-w-[240px] object-contain" />
             <p className="mt-5 max-w-xs text-sm leading-relaxed text-white/70">
               Heilsteinkraft erfahren, spüren, lernen. Mit Kopf, Herz, Hand und Fuss zum
               Heilsteinberater. Zertifiziert vom SVNH.

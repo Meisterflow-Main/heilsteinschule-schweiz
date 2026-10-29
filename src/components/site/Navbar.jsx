@@ -112,7 +112,7 @@ export default function Navbar() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6">
         <div className="flex items-center justify-between rounded-2xl glass px-4 py-2.5 shadow-soft transition-all duration-500">
           <Link to="/" className="flex shrink-0 items-center rounded-xl transition-all duration-500" aria-label="Heilsteinschule Schweiz Startseite">
-            <img src="https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/2d5efb176_HeilsteinschuleSchweizLogo.png" alt="Heilsteinschule Schweiz Logo" className="h-10 w-auto shrink-0 object-contain sm:h-11" />
+            <img src="https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/2d5efb176_HeilsteinschuleSchweizLogo.png" alt="Heilsteinschule Schweiz Logo" className="h-12 w-auto shrink-0 object-contain sm:h-14" />
           </Link>
 
           <nav className="hidden items-center gap-0 lg:flex">
@@ -121,7 +121,7 @@ export default function Navbar() {
               if (item.children) {
                 return (
                   <div key={item.label} className="relative" onMouseEnter={() => setOpenDropdown(item.label)} onMouseLeave={() => setOpenDropdown(null)}>
-                    <button className={`relative inline-flex whitespace-nowrap items-center gap-1 rounded-full px-2 py-2 text-xs font-medium transition ${active ? "text-amethyst" : "text-foreground/70 hover:text-amethyst"}`} onClick={() => setOpenDropdown((o) => (o === item.label ? null : item.label))}>
+                    <button className={`relative inline-flex whitespace-nowrap items-center gap-1 rounded-full px-1 py-2 text-[11px] font-medium transition ${active ? "text-amethyst" : "text-foreground/70 hover:text-amethyst"}`} onClick={() => setOpenDropdown((o) => (o === item.label ? null : item.label))}>
                       {item.label}
                       <ChevronDown className={`h-4 w-4 transition-transform ${openDropdown === item.label ? "rotate-180" : ""}`} />
                       {active && <span className="absolute inset-x-3 -bottom-0.5 h-px bg-citrine" />}
@@ -140,14 +140,14 @@ export default function Navbar() {
               }
               if (item.href) {
                 return (
-                  <a key={item.label} href={item.href} target="_blank" rel="noopener noreferrer" className="relative inline-flex items-center gap-1 whitespace-nowrap rounded-full px-2 py-2 text-xs font-medium text-foreground/70 transition hover:text-amethyst">
+                  <a key={item.label} href={item.href} target="_blank" rel="noopener noreferrer" className="relative inline-flex items-center gap-1 whitespace-nowrap rounded-full px-1 py-2 text-[11px] font-medium text-foreground/70 transition hover:text-amethyst">
                     {item.label}
                     <ExternalLink className="h-3 w-3" />
                   </a>
                 );
               }
               return (
-                <Link key={item.label} to={item.to} className={`relative whitespace-nowrap rounded-full px-2 py-2 text-xs font-medium transition ${active ? "text-amethyst" : "text-foreground/70 hover:text-amethyst"}`}>
+                <Link key={item.label} to={item.to} className={`relative whitespace-nowrap rounded-full px-1 py-2 text-[11px] font-medium transition ${active ? "text-amethyst" : "text-foreground/70 hover:text-amethyst"}`}>
                   {item.label}
                   {active && <span className="absolute inset-x-3 -bottom-0.5 h-px bg-citrine" />}
                 </Link>
