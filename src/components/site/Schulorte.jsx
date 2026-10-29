@@ -29,12 +29,12 @@ export const STANDORTE = [
     name: "Münsingen — Grundausbildung & Info",
     ort: "Kapellenstrasse 5 (4. Stock), 3110 Münsingen",
     img: "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/cea421d21_20261027_175231.jpg",
-    imgs: ["https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/1fa9c228f_20261025_172212.jpg"],
     aussen: {
       label: "Aussenansicht Münsingen",
       imgs: [
         "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/f5d7917fb_20260908_134212.jpg",
         "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/6c3a3e993_20260908_134227.jpg",
+        "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/1fa9c228f_20261025_172212.jpg",
       ],
     },
     rolle: "Grundausbildung & Info-Nachmittag/-Abend · Klassengrösse min. 5, max. 8 Personen",
@@ -98,14 +98,19 @@ export default function Schulorte({ withHeading = true }) {
                     <p className="mb-2 font-mono text-[10px] uppercase tracking-[0.18em] text-citrine-deep">
                       {s.aussen.label}
                     </p>
-                    <div className="flex gap-3">
-                      {s.aussen.imgs.map((src) => (
-                        <div key={src} className="flex-1 overflow-hidden rounded-xl border border-border">
+                    <div className="grid aspect-[16/10] grid-cols-3 grid-rows-2 gap-2">
+                      {s.aussen.imgs.map((src, idx) => (
+                        <div
+                          key={src}
+                          className={`overflow-hidden rounded-xl border border-border ${
+                            idx === 0 ? "col-span-2 row-span-2" : ""
+                          }`}
+                        >
                           <img
                             src={src}
-                            alt={s.aussen.label}
+                            alt={`${s.aussen.label} — Ansicht ${idx + 1}`}
                             loading="lazy"
-                            className="aspect-[4/3] w-full object-cover"
+                            className="h-full w-full object-cover"
                           />
                         </div>
                       ))}
