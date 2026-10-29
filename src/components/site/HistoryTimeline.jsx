@@ -19,7 +19,7 @@ const TIMELINE = [
     year: "1987",
     img: "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/53397d677_ChatGPTImageSep29202603_38_20PM.png",
     title: "Im Dienst",
-    text: "Nach der Handwerkszeit und Auslandreisen absolviert er 1982 die Polizeirekrutenschule und dient bis 1990 bei der Kapo Aargau — Verantwortung im Dienst, bevor es ihn in die Wirtschaft zieht.",
+    text: "Nach der Handwerkszeit und Auslandreisen absolviert er 1983 die Polizeirekrutenschule und dient bis 1990 bei der Kapo Aargau — Verantwortung im Dienst, bevor es ihn in die Wirtschaft zieht.",
   },
   {
     year: "2011",
