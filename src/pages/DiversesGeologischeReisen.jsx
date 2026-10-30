@@ -2,7 +2,6 @@ import React from "react";
 import { Mountain } from "lucide-react";
 import Reveal from "@/components/site/Reveal";
 import SectionHeading from "@/components/site/SectionHeading";
-import OptimizedImage from "@/components/site/OptimizedImage";
 import VogesenGallery from "@/components/site/VogesenGallery";
 
 const EXKURSIONEN = [
@@ -62,28 +61,6 @@ export default function DiversesGeologischeReisen() {
               </div>
             </Reveal>
           ))}
-        </div>
-      </section>
-
-      <section className="bg-quartz/60">
-        <div className="mx-auto max-w-4xl px-4 py-20 sm:px-6">
-          <Reveal>
-            <SectionHeading eyebrow="Impression" title="Walenstadt, Winter 2015" />
-          </Reveal>
-          <Reveal delay={0.08}>
-            <figure className="mt-10 overflow-hidden rounded-3xl border border-border bg-white shadow-lift">
-              <OptimizedImage
-                src="https://heilsteinschule.swiss/media/vslider/Walenstadt_1.jpg"
-                alt="Walenstadt, Winter 2015"
-                width={1200}
-                loading="lazy"
-                className="h-auto w-full"
-              />
-              <figcaption className="px-5 py-4 text-center text-sm text-muted-foreground">
-                Walenstadt, Winter 2015 — eine unserer Exkursionen an den Walensee.
-              </figcaption>
-            </figure>
-          </Reveal>
         </div>
       </section>
 
