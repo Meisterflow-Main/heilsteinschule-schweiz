@@ -28,15 +28,11 @@ export const STANDORTE = [
   {
     name: "Münsingen — Grundausbildung & Info",
     ort: "Sägegasse 2 (3. Stock), 3110 Münsingen",
-    img: "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/cea421d21_20261027_175231.jpg",
-    aussen: {
-      label: "Aussenansicht Münsingen",
-      imgs: [
-        "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/f5d7917fb_20260908_134212.jpg",
-        "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/6c3a3e993_20260908_134227.jpg",
-        "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/1fa9c228f_20261025_172212.jpg",
-      ],
-    },
+    img: "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/f5d7917fb_20260908_134212.jpg",
+    imgs: [
+      "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/6c3a3e993_20260908_134227.jpg",
+      "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/cea421d21_20261027_175231.jpg",
+    ],
     rolle: "Grundausbildung & Info-Nachmittag/-Abend · Klassengrösse min. 5, max. 8 Personen",
     tage: "Wochenende, 09:00–17:00 Uhr, 1× monatlich",
     leitung: "Bluette Caruso",
@@ -82,40 +78,16 @@ export default function Schulorte({ withHeading = true }) {
               <div className="p-6">
                 {s.imgs?.length > 0 && (
                   <div className="mb-4 flex gap-3">
-                    {s.imgs.map((src) => (
+                    {s.imgs.map((src, idx) => (
                       <div key={src} className="flex-1 overflow-hidden rounded-xl border border-border">
                         <img
                           src={src}
-                          alt={`${s.name} — Schulungsraum`}
+                          alt={`${s.name} — Ansicht ${idx + 1}`}
                           loading="lazy"
                           className="aspect-[4/3] w-full object-cover"
                         />
                       </div>
                     ))}
-                  </div>
-                )}
-                {s.aussen && (
-                  <div className="mb-4">
-                    <p className="mb-2 font-mono text-[10px] uppercase tracking-[0.18em] text-citrine-deep">
-                      {s.aussen.label}
-                    </p>
-                    <div className="grid aspect-[16/10] grid-cols-3 grid-rows-2 gap-2">
-                      {s.aussen.imgs.map((src, idx) => (
-                        <div
-                          key={src}
-                          className={`overflow-hidden rounded-xl border border-border ${
-                            idx === 0 ? "col-span-2 row-span-2" : ""
-                          }`}
-                        >
-                          <img
-                            src={src}
-                            alt={`${s.aussen.label} — Ansicht ${idx + 1}`}
-                            loading="lazy"
-                            className="h-full w-full object-cover"
-                          />
-                        </div>
-                      ))}
-                    </div>
                   </div>
                 )}
                 <div className="flex items-start gap-2 text-sm text-foreground/80">
