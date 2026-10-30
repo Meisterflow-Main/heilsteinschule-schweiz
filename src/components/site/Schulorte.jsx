@@ -20,7 +20,7 @@ export const STANDORTE = [
     ort: "Rheinstrasse 29, 4323 Wallbach AG",
     img: "https://heilsteinschule.swiss/media/wunderblock/wallbach-ag.jpg",
     rolle: "Grundausbildung · Klassengrösse min. 5, max. 8 Personen",
-    tage: "Do 09–17h (2×/Monat), Sa/So 1×/Monat",
+    tage: "Donnerstag 09:00–17:00 Uhr, 2× monatlich — oder Samstag/Sonntag 09:00–17:00 Uhr, 1× monatlich. Pro Klasse gilt eine dieser Varianten, nicht beide.",
     leitung: "Ruth Rios",
     hinweis: "Standard-Standort für die Grundausbildung — keine Seminare. Parkplätze beim Haus vorhanden.",
     mapsQuery: "Rheinstrasse 29, 4323 Wallbach",
