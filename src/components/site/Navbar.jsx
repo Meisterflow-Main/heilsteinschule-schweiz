@@ -21,7 +21,7 @@ const NAV_ITEMS = [
       { label: "Team", to: "/ueber-uns#team", icon: Users },
       { label: "Interview", to: "/ueber-uns#interview", icon: Quote },
       { label: "Werner Kühni", to: "/ueber-uns#werner-kuehni", icon: Heart },
-      { label: "Buch", to: "/brunos-buch", icon: BookOpen },
+      { label: "Brunos Buch", to: "/brunos-buch", icon: BookOpen },
     ],
   },
   { label: "Info-Nachmittag/-Abend", to: "/info-nachmittag" },
