@@ -61,8 +61,9 @@ export default function GeologischeReisen() {
       </div>
 
       {/* Alpen-Seminare (Sub-Option) */}
-      <section id="alpen-seminare" className="scroll-mt-24 border-y border-border bg-white">
-        <div className="mx-auto max-w-7xl px-4 py-20 sm:px-6">
+      <section id="alpen-seminare" className="scroll-mt-24 bg-quartz py-16">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6">
+        <div className="rounded-3xl border border-border bg-white p-6 shadow-soft sm:p-10">
         <div>
           <SectionHeading
             eyebrow="5 Jahre u. älter"
@@ -148,6 +149,7 @@ export default function GeologischeReisen() {
               </figure>
             </div>
           ))}
+        </div>
         </div>
         </div>
       </section>
