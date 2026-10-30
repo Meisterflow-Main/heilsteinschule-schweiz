@@ -230,8 +230,8 @@ export const REGIONS = [
     ],
     contact: {
       intro:
-        "Der Schulstandort Münsingen liegt zentral an der Kapellenstrasse 5, im selben Gebäude wie der Schweizerische Verband für Natürliches Heilen (SVNH). Beratung und Anmeldung laufen über den Hauptsitz der Heilsteinschule Schweiz in Asp.",
-      address: "Kapellenstrasse 5 (4. Stock), 3110 Münsingen",
+        "Der Schulstandort Münsingen liegt zentral an der Sägegasse 2, nur 2 Gehminuten vom Bahnhof Münsingen entfernt — Parkplätze sind vor dem Haus vorhanden. Beratung und Anmeldung laufen über den Hauptsitz der Heilsteinschule Schweiz in Asp.",
+      address: "Sägegasse 2 (3. Stock), 3110 Münsingen",
       phone: PHONE,
       email: EMAIL,
     },
@@ -260,9 +260,9 @@ export const REGIONS = [
     },
     whyUs: {
       intro:
-        "Münsingen als Ausbildungsstandort verbindet städtische Erreichbarkeit mit der langen Tradition der Heilsteinschule Schweiz. Vom Bahnhof Münsingen sind es nur rund 5 Gehminuten zum Schulort.",
+        "Münsingen als Ausbildungsstandort verbindet städtische Erreichbarkeit mit der langen Tradition der Heilsteinschule Schweiz. Vom Bahnhof Münsingen sind es nur rund 2 Gehminuten zum Schulort, Parkplätze stehen vor dem Haus zur Verfügung.",
       reasons: [
-        { headline: "Zentral in Münsingen", description: "5 Gehminuten ab Bahnhof Münsingen." },
+        { headline: "Zentral in Münsingen", description: "2 Gehminuten ab Bahnhof Münsingen." },
         { headline: "Erfahrene Dozenten", description: "Lehrpersonen mit eigener Heilsteinpraxis." },
         { headline: "SVNH-zertifiziert", description: "Anerkannter Steinheilkunde-Abschluss." },
         { headline: "Kleine Klassen", description: "Persönliche Betreuung in Münsingen – min. 5, max. 8 Personen." },
@@ -287,7 +287,7 @@ export const REGIONS = [
       { q: "Wie lange dauert die Ausbildung in Münsingen?", a: "In Münsingen erstreckt sich die Ausbildung über mindestens drei Vierteljahre. Maximal zwei Fehltage sind erlaubt, ausgefallene Tage lassen sich in einer Parallelklasse nachholen." },
       { q: "Kann ich mich online für Münsingen anmelden?", a: "Ja, die Anmeldung erfolgt online, schriftlich oder per E-Mail über den Hauptsitz in Asp. Mit der Anzahlung von CHF 250 wird Ihre Anmeldung für den Standort Münsingen verbindlich." },
       { q: "Brauche ich Vorkenntnisse in Steinheilkunde?", a: "Nein, in Münsingen starten Sie ohne Vorkenntnisse. Wichtig sind Freude an Steinen und Offenheit – das Dozententeam führt Sie Schritt für Schritt in die Steinheilkunde ein." },
-      { q: "Wo finden die Schultage in Münsingen statt?", a: "Die Schultage finden am Schulstandort Münsingen an der Kapellenstrasse 5 statt, organisiert über den Hauptsitz in Asp. Die Klassen umfassen 5 bis 8 Personen, der Beginn wird festgelegt, sobald 5 Anmeldungen vorliegen." },
+      { q: "Wo finden die Schultage in Münsingen statt?", a: "Die Schultage finden am Schulstandort Münsingen an der Sägegasse 2 statt, organisiert über den Hauptsitz in Asp. Die Klassen umfassen 5 bis 8 Personen, der Beginn wird festgelegt, sobald 5 Anmeldungen vorliegen." },
       { q: "Ist das Alpenseminar für Münsingen verpflichtend?", a: "Ja, das Alpenseminar ist obligatorisch für das Zertifikat. Für vier Übernachtungen mit Halbpension fallen ca. CHF 490 an, zahlbar direkt im Seminarhotel." },
     ],
     otherServices: OTHER_SERVICES,

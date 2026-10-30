@@ -19,7 +19,7 @@ const LOCATIONS = [
     name: "Münsingen",
     role: "Grundausbildung & Info-Nachmittag/-Abend",
     tag: "Basic Training + Info",
-    text: "Grundausbildung und kostenloser Info-Nachmittag/-Abend in Münsingen — 5 Gehminuten ab Bahnhof Münsingen.",
+    text: "Grundausbildung und kostenloser Info-Nachmittag/-Abend in Münsingen — 2 Gehminuten ab Bahnhof Münsingen, Parkplätze vor dem Haus.",
     classSize: "Klassengrösse: min. 5, max. 8 Personen",
     info: "Info-Nachmittag/-Abend verfügbar",
     cta: { label: "Zur Anmeldung", to: "/ausbildung-anmeldung" },

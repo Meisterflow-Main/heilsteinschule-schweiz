@@ -26,7 +26,7 @@ export default function HomeInfoTag() {
             </div>
             <div className="flex items-start gap-3">
               <MapPin className="mt-0.5 h-5 w-5 shrink-0 text-citrine-deep" />
-              <p className="text-sm text-muted-foreground">In Asp (Fricktal, AG) und Münsingen (Kapellenstrasse 5).</p>
+              <p className="text-sm text-muted-foreground">In Asp (Fricktal, AG) und Münsingen (Sägegasse 2).</p>
             </div>
             <div className="flex items-start gap-3">
               <Clock className="mt-0.5 h-5 w-5 shrink-0 text-citrine-deep" />

@@ -16,7 +16,7 @@ const LOCATIONS = [
     name: "Münsingen",
     role: "Grundausbildung & Info-Nachmittag/-Abend",
     icon: GraduationCap,
-    text: "Grundausbildung und kostenlose Info-Nachmittage/-Abende im selben Gebäude wie der SVNH. 5 Min. ab Bahnhof Münsingen.",
+    text: "Grundausbildung und kostenlose Info-Nachmittage/-Abende an der Sägegasse 2 — 2 Min. ab Bahnhof Münsingen, Parkplätze vor dem Haus.",
     color: "bg-amethyst/10 text-amethyst",
   },
   {

@@ -13,6 +13,7 @@ export const STANDORTE = [
     tage: "Klasse Asp 8: Do, 09:00–17:00, 2× monatlich",
     leitung: "Ruth Rios",
     hinweis: "Hauptsitz der Heilsteinschule mit Heilsteinshop und Praxis. Info-Nachmittage/-Abende finden hier statt. Parkplätze beim Haus vorhanden.",
+    mapsQuery: "Dorfstrasse 22, 5025 Asp",
   },
   {
     name: "Wallbach AG — Grundausbildung",
@@ -22,12 +23,11 @@ export const STANDORTE = [
     tage: "Do 09–17h (2×/Monat), Sa/So 1×/Monat",
     leitung: "Ruth Rios",
     hinweis: "Standard-Standort für die Grundausbildung — keine Seminare. Parkplätze beim Haus vorhanden.",
-    lat: 47.5583689,
-    lng: 7.9050883,
+    mapsQuery: "Rheinstrasse 29, 4323 Wallbach",
   },
   {
     name: "Münsingen — Grundausbildung & Info",
-    ort: "Kapellenstrasse 5 (4. Stock), 3110 Münsingen",
+    ort: "Sägegasse 2 (3. Stock), 3110 Münsingen",
     img: "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/cea421d21_20261027_175231.jpg",
     aussen: {
       label: "Aussenansicht Münsingen",
@@ -39,9 +39,10 @@ export const STANDORTE = [
     },
     rolle: "Grundausbildung & Info-Nachmittag/-Abend · Klassengrösse min. 5, max. 8 Personen",
     tage: "Wochenende, 09:00–17:00 Uhr, 1× monatlich",
-    leitung: "Ruth Rios",
-    hinweis: "Im selben Gebäude wie SVNH · 5 Min. ab Bahnhof Münsingen",
-    weg: "ÖV: Vom Bahnhof Münsingen ca. 5 Min. zu Fuss. Auto: Keine eigenen Parkplätze.",
+    leitung: "Bluette Caruso",
+    hinweis: "2 Min. ab Bahnhof Münsingen · Parkplätze vor dem Haus",
+    weg: "ÖV: Vom Bahnhof Münsingen ca. 2 Min. zu Fuss. Auto: Parkplätze vor dem Haus vorhanden.",
+    mapsQuery: "Sägegasse 2, 3110 Münsingen",
   },
 ];
 
@@ -132,14 +133,15 @@ export default function Schulorte({ withHeading = true }) {
                     <strong className="text-amethyst">Wegbeschreibung:</strong> {s.weg}
                   </div>
                 )}
-                {s.lat && s.lng && (
+                {s.mapsQuery && (
                   <a
-                    href={`https://www.google.com/maps?q=${s.lat},${s.lng}`}
+                    href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(s.mapsQuery)}`}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="mt-3 inline-flex items-center gap-1.5 text-xs font-medium text-citrine-deep hover:underline"
+                    className="mt-4 inline-flex items-center gap-1.5 rounded-full border border-citrine/40 bg-citrine/10 px-3.5 py-2 text-xs font-semibold text-citrine-deep transition hover:bg-citrine/20"
                   >
-                    <MapPin className="h-3.5 w-3.5" /> Auf Karte ansehen
+                    <MapPin className="h-3.5 w-3.5" /> Auf Google Maps öffnen
+                    <ExternalLink className="h-3 w-3" />
                   </a>
                 )}
               </div>
