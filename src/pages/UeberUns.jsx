@@ -4,7 +4,6 @@ import { ArrowRight, Quote, BookOpen, Mountain, Heart, Brain, Hand, Footprints }
 import Reveal from "@/components/site/Reveal";
 import SectionHeading from "@/components/site/SectionHeading";
 import HistoryTimeline from "@/components/site/HistoryTimeline";
-import WernerKuehniMemorial from "@/components/site/WernerKuehniMemorial";
 
 const INTERVIEW = [
   {
@@ -330,11 +329,6 @@ export default function UeberUns() {
             </div>
           </div>
         </Reveal>
-      </section>
-
-      {/* Werner Kühni — In liebevoller Erinnerung */}
-      <section id="werner-kuehni" className="scroll-mt-24">
-        <WernerKuehniMemorial />
       </section>
 
       {/* CTA */}
