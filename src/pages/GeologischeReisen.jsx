@@ -62,16 +62,16 @@ export default function GeologischeReisen() {
 
       {/* Alpen-Seminare (Sub-Option) */}
       <section id="alpen-seminare" className="mx-auto max-w-7xl scroll-mt-24 px-4 py-20 sm:px-6">
-        <Reveal>
+        <div>
           <SectionHeading
             eyebrow="5 Jahre u. älter"
             title="Alpen-Seminare"
             subtitle="Wir wandern und erforschen unser Gebirge. Unser Alpen-Seminar ist aufgebaut für jedermann/frau — wir machen keine Extremtouren."
           />
-        </Reveal>
+        </div>
 
         <div className="mt-12 grid gap-10 lg:grid-cols-2">
-          <Reveal>
+          <div>
             <ul className="space-y-3">
               {[
                 'Die 5 Tage in den Alpen bringen uns viele Erkenntnisse über das Vorhandensein von verschiedenen einheimischen Heilsteinen: Marmor, Serpentin, „Siderit“, Opalinuston, Pyrit, Kalkschiefer, Speckstein, Nephrit-Jade, Schneequarz, Magnetit und mehr.',
@@ -96,9 +96,9 @@ export default function GeologischeReisen() {
             <p className="mt-6 rounded-2xl border border-citrine/30 bg-citrine/5 p-4 text-sm font-medium text-amethyst">
               5 Tage mit 4 Übernachtungen im alpinen Bereich. Wir sind mehrheitlich auf KALK, GRANIT und GNEIS unterwegs.
             </p>
-          </Reveal>
+          </div>
 
-          <Reveal delay={0.1}>
+          <div>
             <div className="grid gap-4 sm:grid-cols-2">
               <figure className="overflow-hidden rounded-2xl border border-border bg-white shadow-soft">
                 <OptimizedImage
@@ -106,7 +106,7 @@ export default function GeologischeReisen() {
                   alt="Bruno beim Kalk pickeln"
                   width={600}
                   loading="lazy"
-                  className="aspect-[4/3] w-full object-cover"
+                  className="aspect-[4/3] w-full bg-white object-cover"
                 />
               </figure>
               <figure className="overflow-hidden rounded-2xl border border-border bg-white shadow-soft">
@@ -115,22 +115,22 @@ export default function GeologischeReisen() {
                   alt="Nebelsee in den Alpen"
                   width={600}
                   loading="lazy"
-                  className="aspect-[4/3] w-full object-cover"
+                  className="aspect-[4/3] w-full bg-white object-cover"
                 />
               </figure>
             </div>
-          </Reveal>
+          </div>
         </div>
 
         {/* Galerie 2015 – 2019 */}
-        <Reveal>
+        <div>
           <h3 className="mt-16 text-center font-heading text-2xl font-bold text-amethyst">
             Alpen-Seminare 2015 – 2019
           </h3>
-        </Reveal>
+        </div>
         <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {ALPEN_GALLERY.map((g, i) => (
-            <Reveal key={g.src + i} delay={(i % 4) * 0.05}>
+            <div key={g.src + i}>
               <figure className="group overflow-hidden rounded-2xl border border-border bg-white shadow-soft transition hover:shadow-lift">
                 <div className="aspect-[4/3] overflow-hidden bg-muted">
                   <OptimizedImage
@@ -138,14 +138,14 @@ export default function GeologischeReisen() {
                     alt={`Alpen-Seminar ${g.year}`}
                     width={500}
                     loading="lazy"
-                    className="h-full w-full object-cover transition duration-700 group-hover:scale-105"
+                    className="h-full w-full bg-white object-cover transition duration-700 group-hover:scale-105"
                   />
                 </div>
                 <figcaption className="px-3 py-2 text-center text-xs font-mono uppercase tracking-wider text-citrine-deep">
                   {g.year}
                 </figcaption>
               </figure>
-            </Reveal>
+            </div>
           ))}
         </div>
       </section>
