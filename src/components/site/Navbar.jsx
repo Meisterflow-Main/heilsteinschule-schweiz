@@ -20,7 +20,6 @@ const NAV_ITEMS = [
       { label: "Timeline", to: "/ueber-uns#timeline", icon: Clock },
       { label: "Team", to: "/ueber-uns#team", icon: Users },
       { label: "Interview", to: "/ueber-uns#interview", icon: Quote },
-      { label: "Werner Kühni", to: "/ueber-uns#werner-kuehni", icon: Heart },
       { label: "Brunos Buch", to: "/brunos-buch", icon: BookOpen },
     ],
   },
@@ -47,6 +46,7 @@ const NAV_ITEMS = [
     children: [
       { label: "Brunos Buch", to: "/brunos-buch", icon: BookOpen },
       { label: "Michael Gienger", to: "/michael-gienger", icon: Users },
+      { label: "Werner Kühni", to: "/ueber-uns#werner-kuehni", icon: Heart },
       { label: "Geologische Reisen", to: "/diverses/geologische-reisen", icon: Mountain },
     ],
   },

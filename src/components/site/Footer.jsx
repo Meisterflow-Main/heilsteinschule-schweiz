@@ -20,7 +20,6 @@ const FOOTER_GROUPS = [
       { label: "Timeline", to: "/ueber-uns#timeline" },
       { label: "Team", to: "/ueber-uns#team" },
       { label: "Interview", to: "/ueber-uns#interview" },
-      { label: "Werner Kühni", to: "/ueber-uns#werner-kuehni" },
       { label: "Brunos Buch", to: "/brunos-buch" },
     ],
   },
