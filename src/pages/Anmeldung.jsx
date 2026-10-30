@@ -65,11 +65,15 @@ export default function Anmeldung() {
               Ratenzahlung individuell auf Anfrage. Nicht im Preis: Fachliteratur, Heilsteine, Reise-/Verpflegungskosten.
               Alpenseminar ca. CHF 490.– für 4 Übernachtungen mit Frühstück/Abendessen.
             </div>
+            <p className="mt-4 text-sm leading-relaxed text-foreground/80">
+              Die Zustimmung zu den AGB ist für die Anmeldung verbindlich. Ohne Akzeptieren der
+              AGB kann die Anmeldung nicht abgeschickt werden.
+            </p>
             <Link
               to="/agb"
-              className="mt-4 inline-flex items-center gap-1.5 text-sm font-medium text-citrine-deep underline underline-offset-2 hover:text-citrine"
+              className="mt-4 inline-flex items-center gap-2 rounded-full border border-citrine/40 bg-white px-5 py-2.5 text-sm font-semibold text-amethyst transition hover:bg-citrine/10"
             >
-              <FileText className="h-4 w-4" /> Vollständige AGB ansehen
+              <FileText className="h-4 w-4 text-citrine-deep" /> AGB vollständig lesen
             </Link>
           </div>
         </Reveal>

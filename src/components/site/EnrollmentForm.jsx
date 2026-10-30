@@ -41,7 +41,7 @@ export default function EnrollmentForm({ idPrefix = "enrol", showTerms = true })
     else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.email)) e.email = "Bitte geben Sie eine gültige E-Mail-Adresse ein.";
     if (!form.standort) e.standort = "Bitte wählen Sie einen Schulort.";
     if (!form.start) e.start = "Bitte wählen Sie einen gewünschten Start.";
-    if (!form.confirm) e.confirm = "Bitte bestätigen Sie die verbindliche Anmeldung.";
+    if (!form.confirm) e.confirm = "Bitte akzeptieren Sie die AGB, um die Anmeldung abzuschliessen.";
     setErrors(e);
     return Object.keys(e).length === 0;
   };
@@ -239,10 +239,13 @@ export default function EnrollmentForm({ idPrefix = "enrol", showTerms = true })
             className="mt-0.5 h-4 w-4 shrink-0 rounded border-border text-citrine focus:ring-citrine/20"
           />
           <span>
-            Ich habe die <strong className="text-amethyst">Anmeldebedingungen</strong> und die{" "}
-            <Link to="/agb" className="text-citrine-deep underline underline-offset-2">AGB</Link> gelesen
-            und akzeptiert. Ich bestätige die <strong className="text-amethyst">verbindliche Anmeldung</strong>{" "}
-            mit der Anzahlung von <strong>CHF 250.–</strong> zur Platzreservation.
+            Ich habe die{" "}
+            <Link to="/agb" className="font-semibold text-citrine-deep underline underline-offset-2">
+              Allgemeinen Geschäftsbedingungen (AGB)
+            </Link>{" "}
+            gelesen und <strong className="text-amethyst">akzeptiere sie verbindlich</strong>. Damit
+            bestätige ich auch die <strong className="text-amethyst">verbindliche Anmeldung</strong> mit
+            der Anzahlung von <strong>CHF 250.–</strong> zur Platzreservation.
             <span className="text-citrine-deep">*</span>
           </span>
         </label>
