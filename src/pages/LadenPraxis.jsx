@@ -56,17 +56,25 @@ export default function LadenPraxis() {
                 <Clock className="h-4 w-4 text-citrine-deep" /> Aktuelle Öffnungstermine
               </p>
               <p className="mt-3 text-sm text-muted-foreground">
-                Der Heilsteinshop-Asp ist dreimal im Monat geöffnet. Die jeweils aktuellen
-                Termine finden Sie laufend auf unserer Website.
+                Der Heilsteinshop-Asp ist dreimal im Monat geöffnet. Die nächsten
+                Öffnungstermine:
               </p>
-              <a
-                href="https://heilsteinschule.swiss/laden---praxis/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-citrine-deep underline underline-offset-2 hover:text-citrine"
-              >
-                Aktuelle Termine ansehen <ExternalLink className="h-3.5 w-3.5" />
-              </a>
+              {upcomingDates.length > 0 ? (
+                <ul className="mt-4 flex flex-wrap gap-2">
+                  {upcomingDates.map((d) => (
+                    <li
+                      key={d.date}
+                      className="rounded-full border border-citrine/40 bg-citrine/10 px-3 py-1.5 text-xs font-semibold text-citrine-deep"
+                    >
+                      {d.label}
+                    </li>
+                  ))}
+                </ul>
+              ) : (
+                <p className="mt-4 text-sm text-muted-foreground">
+                  Die nächsten Termine werden in Kürze bekannt gegeben — rufen Sie uns gerne an.
+                </p>
+              )}
             </div>
             <div className="mt-6 rounded-2xl bg-citrine/10 p-5 text-sm text-amethyst">
               Ausserhalb der Öffnungszeiten: bitte rufen Sie uns an oder schreiben Sie eine E-Mail.
