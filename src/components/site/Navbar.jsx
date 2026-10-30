@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X, Phone, ChevronDown, GraduationCap, MapPinned, CalendarDays, Mountain, Users, BookOpen, Clock, Quote, Heart, Play, Mail, FileText, Gem, Sparkles, Store, ExternalLink } from "lucide-react";
+import { Menu, X, Phone, ChevronDown, GraduationCap, MapPinned, CalendarDays, Mountain, Users, BookOpen, Clock, Quote, Heart, Play, Mail, Gem, Sparkles, Store, ExternalLink } from "lucide-react";
 
 const NAV_ITEMS = [
   {
@@ -38,7 +38,6 @@ const NAV_ITEMS = [
     children: [
       { label: "Lehrfilme", to: "/lehrfilme", icon: Play },
       { label: "News & Newsletter", to: "/news", icon: Mail },
-      { label: "Blog", to: "/blog", icon: FileText },
     ],
   },
   {
@@ -72,7 +71,7 @@ const ACTIVE_PATHS = {
   Ausbildung: ["/ausbildung", "/schulorte", "/schultermine", "/geologische-reisen", "/schueler-berichte", "/alpenseminar-2025", "/glarnerland-engadin", "/georeise-nord-sued-2021", "/zermatt-2022", "/heilstein-museum-2022", "/anmeldung", "/ausbildung-anmeldung", "/ausbildung-anfrage"],
   "Die Schule": ["/ueber-uns", "/brunos-buch", "/michael-gienger"],
   "Verkaufsladen Asp": ["/verkaufsladen-asp", "/armbaender-kreation-diopteia", "/laden-praxis"],
-  "Videos & Newsletter": ["/lehrfilme", "/news", "/blog"],
+  "Videos & Newsletter": ["/lehrfilme", "/news"],
   Diverses: ["/brunos-buch", "/michael-gienger", "/werner-kuehni", "/diverses/geologische-reisen", "/granit-gneis"],
   Regionen: ["/regionen"],
 };
