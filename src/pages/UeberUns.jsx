@@ -268,7 +268,12 @@ export default function UeberUns() {
       <section className="bg-quartz/60">
         <div className="mx-auto max-w-4xl px-4 py-20 sm:px-6">
           <Reveal>
-            <div className="overflow-hidden rounded-3xl border border-border bg-white shadow-lift">
+            <a
+              href="https://media.base44.com/files/public/6aa92ec5274311c12da18ee6/5963e684c_Steimandli-vo-Asp.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block overflow-hidden rounded-3xl border border-border bg-white shadow-lift transition hover:-translate-y-1"
+            >
               <div className="grid gap-0 md:grid-cols-2">
                 <div className="overflow-hidden">
                   <img
@@ -290,9 +295,12 @@ export default function UeberUns() {
                     S'Steinmanndli von Asp — Bruno Vogler Pfeiffer in der Werkstatt mit vielen gefundenen
                     Heilsteinen.
                   </p>
+                  <span className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-citrine-deep underline underline-offset-4">
+                    Ganzen Artikel lesen (PDF)
+                  </span>
                 </div>
               </div>
-            </div>
+            </a>
           </Reveal>
         </div>
       </section>
