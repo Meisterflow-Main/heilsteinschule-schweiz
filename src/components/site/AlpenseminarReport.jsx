@@ -50,7 +50,7 @@ const ALLALIN_GABBRO_IMG = "https://media.base44.com/images/public/6aa92ec527431
 
 export default function AlpenseminarReport() {
   return (
-    <section className="bg-quartz/60">
+    <section className="bg-quartz">
       <div className="mx-auto max-w-5xl px-4 py-20 sm:px-6">
         <Reveal>
           <div className="mb-3 flex items-center justify-center gap-2">
@@ -98,7 +98,7 @@ export default function AlpenseminarReport() {
 
         {/* Zitat Pascal Bossard */}
         <Reveal delay={0.1}>
-          <div className="mt-10 rounded-2xl bg-citrine/10 p-6 text-center">
+          <div className="mt-10 rounded-2xl border border-citrine/40 bg-secondary p-6 text-center">
             <p className="text-sm italic leading-relaxed text-amethyst">
               „Rückblickend wurde ich nach dem/den Highlights an diesem Alpenseminar gefragt. Es waren in
               meiner Betrachtung die Teilnehmer, mit Begeisterung für die Natur und die Steine. Des

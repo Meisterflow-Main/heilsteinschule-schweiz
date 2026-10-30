@@ -61,7 +61,8 @@ export default function GeologischeReisen() {
       </div>
 
       {/* Alpen-Seminare (Sub-Option) */}
-      <section id="alpen-seminare" className="mx-auto max-w-7xl scroll-mt-24 px-4 py-20 sm:px-6">
+      <section id="alpen-seminare" className="scroll-mt-24 border-y border-border bg-white">
+        <div className="mx-auto max-w-7xl px-4 py-20 sm:px-6">
         <div>
           <SectionHeading
             eyebrow="5 Jahre u. älter"
@@ -93,7 +94,7 @@ export default function GeologischeReisen() {
                 </li>
               ))}
             </ul>
-            <p className="mt-6 rounded-2xl border border-citrine/30 bg-citrine/5 p-4 text-sm font-medium text-amethyst">
+            <p className="mt-6 rounded-2xl border border-citrine/40 bg-secondary p-4 text-sm font-medium text-amethyst">
               5 Tage mit 4 Übernachtungen im alpinen Bereich. Wir sind mehrheitlich auf KALK, GRANIT und GNEIS unterwegs.
             </p>
           </div>
@@ -104,7 +105,7 @@ export default function GeologischeReisen() {
                 <OptimizedImage
                   src="https://heilsteinschule.swiss/media/backgrounds/156/Bruno_beim_kalk_pickeln.jpg"
                   alt="Bruno beim Kalk pickeln"
-                  width={600}
+                  width={1000}
                   loading="lazy"
                   className="aspect-[4/3] w-full bg-white object-cover"
                 />
@@ -113,7 +114,7 @@ export default function GeologischeReisen() {
                 <OptimizedImage
                   src="https://heilsteinschule.swiss/media/backgrounds/156/Nebelsee.jpg"
                   alt="Nebelsee in den Alpen"
-                  width={600}
+                  width={1000}
                   loading="lazy"
                   className="aspect-[4/3] w-full bg-white object-cover"
                 />
@@ -136,7 +137,7 @@ export default function GeologischeReisen() {
                   <OptimizedImage
                     src={`${ALPEN_BASE}${g.src}`}
                     alt={`Alpen-Seminar ${g.year}`}
-                    width={500}
+                    width={1000}
                     loading="lazy"
                     className="h-full w-full bg-white object-cover transition duration-700 group-hover:scale-105"
                   />
@@ -147,6 +148,7 @@ export default function GeologischeReisen() {
               </figure>
             </div>
           ))}
+        </div>
         </div>
       </section>
 
