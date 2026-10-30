@@ -145,7 +145,7 @@ export const REGIONS = [
     },
     services: {
       intro:
-        "Am Standort Wallbach führen wir die Grundausbildung durch – keine Seminare. Eng abgestimmt mit dem Hauptsitz in Asp. Info-Nachmittage/-Abende finden regelmässig statt. " + KLASSENGROESSE,
+        "Am Standort Wallbach führen wir die Grundausbildung durch. Eng abgestimmt mit dem Hauptsitz in Asp. Info-Nachmittage/-Abende finden regelmässig statt. " + KLASSENGROESSE,
       items: [
         {
           title: "Grundausbildung Heilsteinberater",

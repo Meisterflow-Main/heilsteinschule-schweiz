@@ -22,7 +22,7 @@ export const STANDORTE = [
     rolle: "Grundausbildung · Klassengrösse min. 5, max. 8 Personen",
     tage: "Donnerstag 09:00–17:00 Uhr, 2× monatlich — oder Samstag/Sonntag 09:00–17:00 Uhr, 1× monatlich. Pro Klasse gilt eine dieser Varianten, nicht beide.",
     leitung: "Ruth Rios",
-    hinweis: "Standard-Standort für die Grundausbildung — keine Seminare. Parkplätze beim Haus vorhanden.",
+    hinweis: "Standard-Standort für die Grundausbildung. Parkplätze beim Haus vorhanden.",
     mapsQuery: "Rheinstrasse 29, 4323 Wallbach",
   },
   {
