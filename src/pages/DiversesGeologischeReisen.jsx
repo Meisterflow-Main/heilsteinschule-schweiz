@@ -3,6 +3,7 @@ import { Mountain } from "lucide-react";
 import Reveal from "@/components/site/Reveal";
 import SectionHeading from "@/components/site/SectionHeading";
 import VogesenGallery from "@/components/site/VogesenGallery";
+import HeilsteinmuseumGallery from "@/components/site/HeilsteinmuseumGallery";
 
 const EXKURSIONEN = [
   { period: "2011 – 2021", place: "Zentralalpen", detail: "13 × · 65 Tage" },
@@ -63,6 +64,8 @@ export default function DiversesGeologischeReisen() {
           ))}
         </div>
       </section>
+
+      <HeilsteinmuseumGallery />
 
       <VogesenGallery />
     </>
