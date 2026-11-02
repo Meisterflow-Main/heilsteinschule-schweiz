@@ -1,5 +1,6 @@
 import React from "react";
-import { CalendarDays, MapPin, Phone, Mail, Clock, Users, HandHeart, GraduationCap, MessageSquare, ArrowRight, Train, Newspaper } from "lucide-react";
+import { CalendarDays, MapPin, Phone, Mail, Clock, Users, HandHeart, GraduationCap, MessageSquare, ArrowRight, Train, Newspaper, Check } from "lucide-react";
+import { Link } from "react-router-dom";
 import Reveal from "@/components/site/Reveal";
 import SectionHeading from "@/components/site/SectionHeading";
 import InfoNachmittagForm from "@/components/site/InfoNachmittagForm";
@@ -22,6 +23,24 @@ const TERMINE = [
       "Asp liegt im Fricktal, Kanton Aargau. Parkplätze beim Haus vorhanden.",
   },
 ];
+
+// ─── Tagesseminar ──────────────────────────────────────────────────────────
+const TAGESSEMINAR = {
+  time: "09:00–17:00 Uhr",
+  displayDate: "Samstag, 16. Januar 2027",
+  ort: "Asp",
+  title: "Die 24 Heilsteine der Hildegard von Bingen",
+  leitung: "Tagesseminar in Asp mit Bruno Vogler Pfeiffer",
+  inklusive: [
+    "Kurskosten inklusive Mittagessen",
+    "Fachbuch über Hildegard von Bingen",
+    "Kursunterlagen",
+    "Zwischenverpflegung",
+  ],
+  preis: "Fr. 258.00",
+  hinweis: "Anmeldung entspricht def. Buchung",
+  img: "https://heilsteinschule.swiss/media/Info-Tag/Argauer-wappen.png",
+};
 
 // ─── Programm ──────────────────────────────────────────────────────────────
 const PROGRAMM = [
@@ -131,6 +150,35 @@ export default function InfoTag() {
               </Reveal>
             ))}
             <Reveal delay={TERMINE.length * 0.1}>
+              <div className="flex h-full flex-col rounded-3xl border border-citrine bg-white p-7 shadow-soft transition hover:shadow-lift">
+                <img src={TAGESSEMINAR.img} alt={`Wappen ${TAGESSEMINAR.ort}`} className="h-20 w-20 object-contain" />
+                <div className="mt-5 flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-citrine-deep">
+                  <CalendarDays className="h-3.5 w-3.5" /> {TAGESSEMINAR.time}
+                </div>
+                <h3 className="mt-2 font-heading text-lg font-semibold text-amethyst">{TAGESSEMINAR.displayDate}</h3>
+                <p className="mt-1 text-sm font-medium text-amethyst">{TAGESSEMINAR.leitung}</p>
+                <h4 className="mt-4 font-heading text-base font-semibold text-amethyst">{TAGESSEMINAR.title}</h4>
+                <ul className="mt-3 space-y-1.5">
+                  {TAGESSEMINAR.inklusive.map((item) => (
+                    <li key={item} className="flex items-start gap-2 text-sm text-foreground/80">
+                      <Check className="mt-0.5 h-4 w-4 shrink-0 text-citrine-deep" /> {item}
+                    </li>
+                  ))}
+                </ul>
+                <div className="mt-4 flex items-center justify-between gap-3 border-t border-border pt-4">
+                  <span className="text-sm font-medium text-muted-foreground">Kurskosten Total</span>
+                  <span className="font-heading text-xl font-bold text-amethyst">{TAGESSEMINAR.preis}</span>
+                </div>
+                <p className="mt-2 text-xs text-muted-foreground">{TAGESSEMINAR.hinweis}</p>
+                <Link
+                  to="/kontakt"
+                  className="mt-5 inline-flex w-fit items-center gap-2 rounded-full bg-citrine px-5 py-2.5 text-sm font-semibold text-amethyst-deep shadow-soft transition hover:bg-citrine-light"
+                >
+                  Anmelden <ArrowRight className="h-4 w-4" />
+                </Link>
+              </div>
+            </Reveal>
+            <Reveal delay={TERMINE.length * 0.1 + 0.05}>
               <div className="flex h-full flex-col rounded-3xl border border-border bg-white p-7 shadow-soft transition hover:shadow-lift">
                 <img
                   src="https://heilsteinschule.swiss/modules/tiny_newsletter/templates/latest-topics/header.jpg"
@@ -140,7 +188,7 @@ export default function InfoTag() {
                 <div className="mt-5 flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-citrine-deep">
                   <Newspaper className="h-3.5 w-3.5" /> Newsletter
                 </div>
-                <h3 className="mt-2 font-heading text-lg font-semibold text-amethyst">16. Januar 2027 von 09:00 Uhr – 17:00 Uhr</h3>
+                <h3 className="mt-2 font-heading text-lg font-semibold text-amethyst">Newsletter der Heilsteinschule Schweiz</h3>
                 <p className="mt-1 text-sm leading-relaxed text-muted-foreground">
                   Alle Termine und Neuigkeiten der Heilsteinschule Schweiz im Überblick.
                 </p>
