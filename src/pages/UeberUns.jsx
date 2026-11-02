@@ -62,7 +62,7 @@ const TEAM = [
   { name: "Bluette Caruso", role: "Dozentin, Münsingen", img: "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/9fe3b989c_WarmPortraitwithDreadlocksandGoldJewelry.png" },
   { name: "Pascal Bossard", role: "Leiter Alpenseminar", img: "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/057e4eb82_ChatGPTImageSep21202602_32_05PM.png" },
   { name: "Joe Schnarwiler", role: "Dozent", img: "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/8ed080c78_ChatGPTImageSep21202602_36_58PM.png" },
-  { name: "Maja Pfeiffer", role: "StV Schulleitung und Leitung Heilsteinshop-Asp", img: "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/d3b26ef85_ChatGPTImageSep21202602_40_48PM.png" },
+  { name: "Maja Pfeiffer", role: "StV Schulleitung und Leitung Heilsteinshop-Asp", img: "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/88a47e948_DGN_2460.JPG" },
   { name: "Judith von Rotz", role: "Buchhaltung und Rechnungswesen", img: "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/1a6cef69a_ChatGPTImageSep21202602_42_52PM.png" },
 ];
 
