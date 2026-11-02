@@ -231,7 +231,7 @@ export const REGIONS = [
     contact: {
       intro:
         "Der Schulstandort Münsingen liegt zentral an der Sägegasse 2, nur 2 Gehminuten vom Bahnhof Münsingen entfernt — Parkplätze sind vor dem Haus vorhanden. Beratung und Anmeldung laufen über den Hauptsitz der Heilsteinschule Schweiz in Asp.",
-      address: "Sägegasse 2 (3. Stock), 3110 Münsingen",
+      address: "Sägegasse 2 (2. Stock), 3110 Münsingen",
       phone: PHONE,
       email: EMAIL,
     },

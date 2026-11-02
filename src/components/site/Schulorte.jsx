@@ -27,7 +27,7 @@ export const STANDORTE = [
   },
   {
     name: "Münsingen — Grundausbildung & Info",
-    ort: "Sägegasse 2 (3. Stock), 3110 Münsingen",
+    ort: "Sägegasse 2 (2. Stock), 3110 Münsingen",
     img: "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/f5d7917fb_20260908_134212.jpg",
     imgs: [
       "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/6c3a3e993_20260908_134227.jpg",
