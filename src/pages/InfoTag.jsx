@@ -129,26 +129,8 @@ export default function InfoTag() {
               subtitle="Der Info-Nachmittag/-Abend findet in Münsingen und Asp statt. Wählen Sie unten Ihren Wunschtermin."
             />
           </Reveal>
-          <div className="mt-12 grid gap-6 sm:grid-cols-2">
-            {TERMINE.map((t, i) => (
-              <Reveal key={t.id} delay={i * 0.1}>
-                <div className="flex h-full flex-col rounded-3xl border border-border bg-white p-7 shadow-soft transition hover:shadow-lift">
-                  <img src={t.img} alt={`Wappen ${t.ort}`} className="h-20 w-20 object-contain" />
-                  <div className="mt-5 flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-citrine-deep">
-                    <CalendarDays className="h-3.5 w-3.5" /> {t.time}
-                  </div>
-                  <h3 className="mt-2 font-heading text-lg font-semibold text-amethyst">{t.displayDate}</h3>
-                  <p className="mt-1 text-sm font-medium text-amethyst">Kostenloser Info-Nachmittag/-Abend in {t.ort}</p>
-                  <div className="mt-3 flex items-start gap-2 text-sm text-foreground/80">
-                    <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-citrine-deep" /> {t.address}
-                  </div>
-                  <div className="mt-2 flex items-start gap-2 text-sm text-foreground/80">
-                    <Train className="mt-0.5 h-4 w-4 shrink-0 text-citrine-deep" /> {t.travelTime}
-                  </div>
-                </div>
-              </Reveal>
-            ))}
-            <Reveal delay={TERMINE.length * 0.1}>
+          <div className="mx-auto mt-12 grid max-w-xl gap-6">
+            <Reveal delay={0.1}>
               <div className="flex h-full flex-col rounded-3xl border border-citrine bg-white p-7 shadow-soft transition hover:shadow-lift">
                 <div className="flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-citrine-deep">
                   <CalendarDays className="h-3.5 w-3.5" /> {TAGESSEMINAR.time}
@@ -174,30 +156,6 @@ export default function InfoTag() {
                 >
                   Anmelden <ArrowRight className="h-4 w-4" />
                 </Link>
-              </div>
-            </Reveal>
-            <Reveal delay={TERMINE.length * 0.1 + 0.05}>
-              <div className="flex h-full flex-col rounded-3xl border border-border bg-white p-7 shadow-soft transition hover:shadow-lift">
-                <img
-                  src="https://heilsteinschule.swiss/modules/tiny_newsletter/templates/latest-topics/header.jpg"
-                  alt="Newsletter Heilsteinschule Schweiz"
-                  className="h-20 w-full rounded-2xl object-cover"
-                />
-                <div className="mt-5 flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-citrine-deep">
-                  <Newspaper className="h-3.5 w-3.5" /> Newsletter
-                </div>
-                <h3 className="mt-2 font-heading text-lg font-semibold text-amethyst">Newsletter der Heilsteinschule Schweiz</h3>
-                <p className="mt-1 text-sm leading-relaxed text-muted-foreground">
-                  Alle Termine und Neuigkeiten der Heilsteinschule Schweiz im Überblick.
-                </p>
-                <a
-                  href="https://heilsteinschule.swiss/modules/tiny_newsletter/web.php?n=17&a="
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="mt-5 inline-flex w-fit items-center gap-2 rounded-full bg-citrine px-5 py-2.5 text-sm font-semibold text-amethyst-deep shadow-soft transition hover:bg-citrine-light"
-                >
-                  Newsletter ansehen <ArrowRight className="h-4 w-4" />
-                </a>
               </div>
             </Reveal>
           </div>
