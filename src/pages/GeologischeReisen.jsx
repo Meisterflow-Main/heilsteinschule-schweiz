@@ -10,6 +10,10 @@ const GALLERY_BASE = "https://heilsteinschule.swiss/media/rfg-folders/geologisch
 const ALPEN_BASE = "https://heilsteinschule.swiss/media/rfg-folders/alpen-seminare-gallery/";
 
 const ALPEN_GALLERY = [
+  {
+    src: "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/55c51aa2e_1334-1101-max.jpg",
+    year: "2025",
+  },
   { src: "rhone_gletscher_aussen_1024x768.jpg", year: "2019" },
   { src: "rhone_gletscher-innen.jpg", year: "2019" },
   { src: "Alpenseminar_2016_7.png", year: "2016" },
@@ -107,7 +111,7 @@ export default function GeologischeReisen() {
         {/* Galerie 2015 – 2019 */}
         <div>
           <h3 className="mt-16 text-center font-heading text-2xl font-bold text-amethyst">
-            Alpen-Seminare 2015 – 2019
+            Alpen-Seminare 2015 – 2025
           </h3>
         </div>
         <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
@@ -116,7 +120,7 @@ export default function GeologischeReisen() {
               <figure className="group overflow-hidden rounded-2xl border border-border bg-white shadow-soft transition hover:shadow-lift">
                 <div className="aspect-[4/3] overflow-hidden bg-muted">
                   <OptimizedImage
-                    src={`${ALPEN_BASE}${g.src}`}
+                    src={g.src.startsWith("http") ? g.src : `${ALPEN_BASE}${g.src}`}
                     alt={`Alpen-Seminar ${g.year}`}
                     width={1000}
                     loading="lazy"
