@@ -34,14 +34,6 @@ const ALPENSEMINAR_TAGE = [
     tag: "5. Tag — 29.06.2025",
     title: "Zertifikatsübergabe",
     text: "Feierliche Übergabe der Zertifikate an die Schüler/-innen der Heilsteinschule, welche bereits abgeschlossen haben. Ein würdiger Abschluss des Seminars — siehe auch das Zitat von Pascal Bossard unten.",
-    imgs: [
-      "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/58499c23c_ChatGPTImageSep29202609_46_32PM.png",
-      "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/4f0020866_ChatGPTImageSep29202609_50_08PM.png",
-      "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/1db3a3465_ChatGPTImageSep29202609_58_23PM.png",
-      "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/60d9c1562_ChatGPTImageSep29202609_57_12PM.png",
-      "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/5b9f237d2_ChatGPTImageSep29202609_53_17PM.png",
-      "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/1acaf1b1f_ChatGPTImageSep29202609_51_55PM.png",
-    ],
   },
 ];
 
