@@ -72,7 +72,7 @@ export default function GeologischeReisen() {
           />
         </div>
 
-        <div className="mt-12 grid gap-10 lg:grid-cols-2">
+        <div className="mt-12 grid max-w-3xl gap-10">
           <div>
             <ul className="space-y-3">
               {[
@@ -100,28 +100,6 @@ export default function GeologischeReisen() {
             </p>
           </div>
 
-          <div>
-            <div className="grid gap-4 sm:grid-cols-2">
-              <figure className="overflow-hidden rounded-2xl border border-border bg-white shadow-soft">
-                <OptimizedImage
-                  src="https://heilsteinschule.swiss/media/backgrounds/156/Bruno_beim_kalk_pickeln.jpg"
-                  alt="Bruno beim Kalk pickeln"
-                  width={1000}
-                  loading="lazy"
-                  className="aspect-[4/3] w-full bg-white object-cover"
-                />
-              </figure>
-              <figure className="overflow-hidden rounded-2xl border border-border bg-white shadow-soft">
-                <OptimizedImage
-                  src="https://heilsteinschule.swiss/media/backgrounds/156/Nebelsee.jpg"
-                  alt="Nebelsee in den Alpen"
-                  width={1000}
-                  loading="lazy"
-                  className="aspect-[4/3] w-full bg-white object-cover"
-                />
-              </figure>
-            </div>
-          </div>
         </div>
 
         {/* Galerie 2015 – 2019 */}
