@@ -68,8 +68,10 @@ export default function GeologischeReisen() {
           <SectionHeading
             eyebrow="5 Jahre u. älter"
             title="Alpen-Seminare"
-            subtitle="Wir wandern und erforschen unser Gebirge. Unser Alpen-Seminar ist aufgebaut für jedermann/frau — wir machen keine Extremtouren."
           />
+          <p className="mx-auto mt-4 max-w-2xl text-center text-base leading-relaxed text-amethyst sm:text-lg">
+            Wir wandern und erforschen unser Gebirge. Unser Alpen-Seminar ist aufgebaut für jedermann/frau — wir machen keine Extremtouren.
+          </p>
         </div>
 
         <div className="mt-12 grid max-w-3xl gap-10">
