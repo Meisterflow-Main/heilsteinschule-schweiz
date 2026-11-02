@@ -27,7 +27,7 @@ const TERMINE = [
 // ─── Tagesseminar ──────────────────────────────────────────────────────────
 const TAGESSEMINAR = {
   time: "09:00–17:00 Uhr",
-  displayDate: "Samstag, 16. Januar 2027",
+  displayDate: "16. Januar 2027",
   ort: "Asp",
   title: "Die 24 Heilsteine der Hildegard von Bingen",
   leitung: "Tagesseminar in Asp mit Bruno Vogler Pfeiffer",
@@ -39,7 +39,6 @@ const TAGESSEMINAR = {
   ],
   preis: "Fr. 258.00",
   hinweis: "Anmeldung entspricht def. Buchung",
-  img: "https://heilsteinschule.swiss/media/Info-Tag/Argauer-wappen.png",
 };
 
 // ─── Programm ──────────────────────────────────────────────────────────────
@@ -151,8 +150,7 @@ export default function InfoTag() {
             ))}
             <Reveal delay={TERMINE.length * 0.1}>
               <div className="flex h-full flex-col rounded-3xl border border-citrine bg-white p-7 shadow-soft transition hover:shadow-lift">
-                <img src={TAGESSEMINAR.img} alt={`Wappen ${TAGESSEMINAR.ort}`} className="h-20 w-20 object-contain" />
-                <div className="mt-5 flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-citrine-deep">
+                <div className="flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-citrine-deep">
                   <CalendarDays className="h-3.5 w-3.5" /> {TAGESSEMINAR.time}
                 </div>
                 <h3 className="mt-2 font-heading text-lg font-semibold text-amethyst">{TAGESSEMINAR.displayDate}</h3>
