@@ -6,6 +6,7 @@ import Reveal from "@/components/site/Reveal";
 import SectionHeading from "@/components/site/SectionHeading";
 import OptimizedImage from "@/components/site/OptimizedImage";
 import LearningActivities from "@/components/site/LearningActivities";
+import HomeIntro from "@/components/site/HomeIntro";
 import HomeTrustBar from "@/components/site/HomeTrustBar";
 import HomeTrainingOverview from "@/components/site/HomeTrainingOverview";
 import HomeImageCollage from "@/components/site/HomeImageCollage";
@@ -83,6 +84,9 @@ export default function Home() {
           </motion.div>
         </div>
       </section>
+
+      {/* 1B. INTRO STATEMENT */}
+      <HomeIntro />
 
       {/* 2. TRUST BAR */}
       <HomeTrustBar />
