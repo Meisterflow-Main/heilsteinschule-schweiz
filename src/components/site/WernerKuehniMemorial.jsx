@@ -2,6 +2,8 @@ import React from "react";
 import { Heart } from "lucide-react";
 import Reveal from "@/components/site/Reveal";
 
+const WERNER_IMG = "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/fe29109e8_WhatsAppImage2026-09-23at1101521.jpeg";
+
 export default function WernerKuehniMemorial() {
   return (
     <section className="relative overflow-hidden bg-amethyst-deep py-24">
@@ -10,6 +12,14 @@ export default function WernerKuehniMemorial() {
       </div>
       <div className="relative mx-auto max-w-2xl px-4 text-center sm:px-6">
         <Reveal>
+          <div className="mx-auto mb-8 max-w-[16rem] overflow-hidden rounded-3xl border border-citrine/30 shadow-lift">
+            <img
+              src={WERNER_IMG}
+              alt="In liebevoller Erinnerung an Werner Kühni"
+              loading="lazy"
+              className="aspect-[3/4] w-full object-cover"
+            />
+          </div>
           <div className="mb-3 flex items-center justify-center gap-2">
             <span className="h-px w-8 bg-citrine/60" />
             <span className="font-mono text-xs uppercase tracking-[0.2em] text-citrine-light">
