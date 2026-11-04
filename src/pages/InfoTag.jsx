@@ -118,7 +118,7 @@ export default function InfoTag() {
           <Reveal>
             <SectionHeading
               eyebrow="Termine"
-              title="Anstehende Info-Nachmittage/-Abende"
+              title="Anstehende Info-Anlässe & Seminare"
               subtitle="Der Info-Nachmittag/-Abend findet in Münsingen und Asp statt. Wählen Sie unten Ihren Wunschtermin."
             />
           </Reveal>
