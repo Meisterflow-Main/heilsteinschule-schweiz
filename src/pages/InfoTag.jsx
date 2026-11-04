@@ -1,28 +1,8 @@
 import React from "react";
-import { CalendarDays, MapPin, Phone, Mail, Clock, Users, HandHeart, GraduationCap, MessageSquare, ArrowRight, Train, Newspaper } from "lucide-react";
+import { CalendarDays, MapPin, Phone, Mail, Users, HandHeart, GraduationCap, MessageSquare, ArrowRight, Train, Newspaper } from "lucide-react";
 import Reveal from "@/components/site/Reveal";
 import SectionHeading from "@/components/site/SectionHeading";
-import InfoNachmittagForm from "@/components/site/InfoNachmittagForm";
 import InfoAnlaesseTermine from "@/components/site/InfoAnlaesseTermine";
-
-// ─── Info-Nachmittag Termine ───────────────────────────────────────────────
-// Um einen neuen Termin hinzuzufügen: einfach hier einen Eintrag ergänzen.
-// Abgelaufene Termine (Datum in der Vergangenheit) werden automatisch ausgeblendet.
-// Wenn alle Termine abgelaufen sind, zeigt das Formular "Weitere Termine folgen".
-const TERMINE = [
-  {
-    id: "asp-2026-10-31",
-    datum: "2026-10-31",
-    displayDate: "Samstag, 31.10.2026",
-    time: "13:00–17:00 Uhr",
-    ort: "Asp",
-    address: "Dorfstr. 22, 5025 Asp",
-    travelTime: "15 Auto-Min. von Aarau.",
-    img: "https://heilsteinschule.swiss/media/Info-Tag/Argauer-wappen.png",
-    travelInfo:
-      "Asp liegt im Fricktal, Kanton Aargau. Parkplätze beim Haus vorhanden.",
-  },
-];
 
 // ─── Infoanlass ────────────────────────────────────────────────────────────
 const INFOABEND = {
@@ -143,29 +123,7 @@ export default function InfoTag() {
             />
           </Reveal>
           <InfoAnlaesseTermine infoabend={INFOABEND} seminar={TAGESSEMINAR} />
-          <Reveal delay={0.15}>
-            <p className="mt-8 text-center text-sm text-muted-foreground">
-              <Clock className="mr-1.5 inline h-4 w-4 text-citrine-deep" />
-              Weitere Termine folgen. Neue Daten werden hier veröffentlicht, sobald sie feststehen.
-            </p>
-          </Reveal>
         </div>
-      </section>
-
-      {/* ANMELDUNG / FORMULAR */}
-      <section id="anmeldung" className="mx-auto max-w-3xl scroll-mt-24 px-4 py-20 sm:px-6">
-        <Reveal>
-          <SectionHeading
-            eyebrow="Anmeldung"
-            title="Zum Info-Nachmittag/-Abend anmelden"
-            subtitle="Wählen Sie einen Termin, geben Sie die Anzahl Personen an und senden Sie uns Ihre Anmeldung."
-          />
-        </Reveal>
-        <Reveal delay={0.1}>
-          <div className="mt-10 rounded-3xl border border-border bg-white p-6 shadow-soft sm:p-8">
-            <InfoNachmittagForm termine={TERMINE} idPrefix="infon" />
-          </div>
-        </Reveal>
       </section>
 
       {/* DIREKTE KONTAKTMÖGLICHKEITEN */}

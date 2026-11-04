@@ -53,12 +53,12 @@ export default function InfoAnlaesseTermine({ infoabend, seminar }) {
             </Row>
           </div>
           <div className="mt-auto pt-6">
-            <a
-              href="#anmeldung"
+            <Link
+              to="/kontakt"
               className="inline-flex w-fit items-center gap-2 rounded-full bg-citrine px-5 py-2.5 text-sm font-semibold text-amethyst-deep shadow-soft transition hover:bg-citrine-light"
             >
               Online anmelden <ArrowRight className="h-4 w-4" />
-            </a>
+            </Link>
           </div>
         </div>
       </Reveal>
