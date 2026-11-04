@@ -23,7 +23,14 @@ const NAV_ITEMS = [
       { label: "Brunos Buch", to: "/brunos-buch", icon: BookOpen },
     ],
   },
-  { label: "Infoanlässe & Seminare", to: "/infoanlaesse-seminare" },
+  {
+    label: "Infoanlässe & Seminare",
+    children: [
+      { label: "Übersicht", to: "/infoanlaesse-seminare", icon: CalendarDays },
+      { label: "Infoanlässe (Info-Nachmittag/-Abend)", to: "/infoanlaesse", icon: Clock, wide: true },
+      { label: "Seminare", to: "/seminare", icon: GraduationCap },
+    ],
+  },
   { label: "Online-Shop", href: "https://heilstein-shop.com/" },
   {
     label: "Verkaufsladen Asp",
@@ -72,6 +79,7 @@ const ACTIVE_PATHS = {
   "Die Schule": ["/ueber-uns", "/brunos-buch", "/michael-gienger"],
   "Verkaufsladen Asp": ["/verkaufsladen-asp", "/armbaender-kreation-diopteia", "/laden-praxis"],
   "Videos & Newsletter": ["/lehrfilme", "/news"],
+  "Infoanlässe & Seminare": ["/infoanlaesse-seminare", "/infoanlaesse", "/seminare", "/info-tag", "/info-nachmittag"],
   Diverses: ["/brunos-buch", "/michael-gienger", "/werner-kuehni", "/diverses/geologische-reisen", "/granit-gneis"],
   Regionen: ["/regionen"],
 };
@@ -125,7 +133,7 @@ export default function Navbar() {
                       <ChevronDown className={`h-4 w-4 transition-transform ${openDropdown === item.label ? "rotate-180" : ""}`} />
                       {active && <span className="absolute inset-x-3 -bottom-0.5 h-px bg-citrine" />}
                     </button>
-                    <div className={`absolute left-0 top-full z-50 w-60 pt-2 transition-all duration-200 ${openDropdown === item.label ? "visible opacity-100 translate-y-0" : "invisible opacity-0 translate-y-1"}`}>
+                    <div className={`absolute left-0 top-full z-50 ${item.children.some((c) => c.wide) ? "w-72" : "w-60"} pt-2 transition-all duration-200 ${openDropdown === item.label ? "visible opacity-100 translate-y-0" : "invisible opacity-0 translate-y-1"}`}>
                       <div className="glass rounded-2xl p-2 shadow-lift">
                         {item.children.map((c) => (
                           <Link key={c.to} to={c.to} className="flex items-center gap-2 rounded-xl px-3 py-2 text-sm text-foreground/80 transition hover:bg-amethyst/5 hover:text-amethyst">

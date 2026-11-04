@@ -1,93 +1,10 @@
 import React from "react";
-import { CalendarDays, MapPin, Phone, Mail, Users, HandHeart, GraduationCap, MessageSquare, ArrowRight, Clock, Wallet, Check } from "lucide-react";
+import { Link } from "react-router-dom";
+import { CalendarDays, Phone, Mail, ArrowRight } from "lucide-react";
 import Reveal from "@/components/site/Reveal";
 import SectionHeading from "@/components/site/SectionHeading";
 import InfoAnlaesseTermine from "@/components/site/InfoAnlaesseTermine";
-
-// ─── Infoanlass ────────────────────────────────────────────────────────────
-const INFOABEND = {
-  title: "Infoabend – Analytische Steinheilkunde",
-  description: "SVNH-zertifizierter Lehrgang in analytischer Steinheilkunde",
-  displayDate: "Freitag, 13.11.2026",
-  time: "Ab 19:30 Uhr",
-  kosten: "Kostenlos",
-  venue: "Praxis-Sunnestei",
-  address: "Sägengasse 2, 3110 Münsingen",
-  phone: "+41 79 389 66 22",
-  phoneHref: "+41793896622",
-};
-
-// ─── Tagesseminar ──────────────────────────────────────────────────────────
-const TAGESSEMINAR = {
-  time: "09:00–17:00 Uhr",
-  displayDate: "16. Januar 2027",
-  ort: "Asp",
-  title: "Die 24 Heilsteine der Hildegard von Bingen",
-  leitung: "Tagesseminar in Asp mit Bruno Vogler Pfeiffer",
-  inklusive: [
-    "Kurskosten inklusive Mittagessen",
-    "Fachbuch über Hildegard von Bingen",
-    "Kursunterlagen",
-    "Zwischenverpflegung",
-  ],
-  preis: "Fr. 258.00",
-  hinweis: "Anmeldung entspricht def. Buchung",
-};
-
-// ─── Programm Infoanlass ───────────────────────────────────────────────────
-const PROGRAMM = [
-  {
-    icon: HandHeart,
-    title: "Begrüssung & Vorstellung",
-    text: "Lernen Sie die Heilsteinschule Schweiz und die Menschen dahinter kennen.",
-  },
-  {
-    icon: GraduationCap,
-    title: "Die Ausbildung",
-    text: "Erfahren Sie, was die Grundausbildung umfasst und wie sie strukturiert ist.",
-  },
-  {
-    icon: Users,
-    title: "Lernansatz",
-    text: "Entdecken Sie die Philosophie des Lernens mit Kopf, Herz, Hand und Fuss.",
-  },
-  {
-    icon: MessageSquare,
-    title: "Fragen & Austausch",
-    text: "Stellen Sie individuelle Fragen und sprechen Sie mit dem Team.",
-  },
-  {
-    icon: ArrowRight,
-    title: "Nächste Schritte",
-    text: "Informationen zu Terminen, Standorten, Anmeldung und dem weiteren Vorgehen.",
-  },
-];
-
-// ─── Infoanlass oder Seminar? ──────────────────────────────────────────────
-const FORMATE = [
-  {
-    icon: CalendarDays,
-    label: "Infoanlässe",
-    title: "Kostenlos & unverbindlich",
-    text: "Am Info-Nachmittag/-Abend lernen Sie die Schule, das Dozententeam und die Steinheilkunde kennen — ohne Kosten und ohne Verpflichtung. Sie erhalten einen Überblick über die Ausbildung und können direkt Fragen stellen.",
-    fakten: [
-      { icon: Clock, text: "Ein Nachmittag bzw. Abend" },
-      { icon: MapPin, text: "Münsingen und Asp" },
-      { icon: Wallet, text: "Kostenlos" },
-    ],
-  },
-  {
-    icon: GraduationCap,
-    label: "Seminare",
-    title: "Fachwissen an einem Tag",
-    text: "Die Tagesseminare vertiefen ein Thema der Steinheilkunde — zum Beispiel die 24 Heilsteine der Hildegard von Bingen. Kurskosten inklusive Mittagessen, Zwischenverpflegung, Kursunterlagen und Fachbuch.",
-    fakten: [
-      { icon: Clock, text: "09:00–17:00 Uhr" },
-      { icon: MapPin, text: "Asp" },
-      { icon: Users, text: "Mit Bruno Vogler Pfeiffer" },
-    ],
-  },
-];
+import { INFOABEND, TAGESSEMINAR, PROGRAMM, FORMATE } from "@/data/infoanlaesse";
 
 export default function InfoAnlaesseSeminare() {
   return (
@@ -140,6 +57,12 @@ export default function InfoAnlaesseSeminare() {
                     </div>
                   ))}
                 </div>
+                <Link
+                  to={f.label === "Infoanlässe" ? "/infoanlaesse" : "/seminare"}
+                  className="mt-5 inline-flex w-fit items-center gap-2 text-sm font-semibold text-amethyst underline underline-offset-4 transition hover:text-citrine-deep"
+                >
+                  Mehr erfahren <ArrowRight className="h-4 w-4" />
+                </Link>
               </div>
             </Reveal>
           ))}
@@ -186,42 +109,8 @@ export default function InfoAnlaesseSeminare() {
         <InfoAnlaesseTermine infoabend={INFOABEND} seminar={TAGESSEMINAR} />
       </section>
 
-      {/* SEMINARINHALTE */}
-      <section className="bg-quartz/60">
-        <div className="mx-auto max-w-4xl px-4 py-16 sm:px-6">
-          <Reveal>
-            <div className="rounded-3xl border border-border bg-white p-7 shadow-soft sm:p-9">
-              <span className="font-mono text-xs uppercase tracking-[0.2em] text-citrine-deep">Tagesseminar</span>
-              <h3 className="mt-2 font-heading text-2xl font-semibold text-amethyst">{TAGESSEMINAR.title}</h3>
-              <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-                {TAGESSEMINAR.displayDate} · {TAGESSEMINAR.time} · {TAGESSEMINAR.ort} — {TAGESSEMINAR.leitung}
-              </p>
-              <div className="mt-6 grid gap-2 sm:grid-cols-2">
-                {TAGESSEMINAR.inklusive.map((item) => (
-                  <div key={item} className="flex items-start gap-2 text-sm text-foreground/80">
-                    <Check className="mt-0.5 h-4 w-4 shrink-0 text-citrine-deep" /> {item}
-                  </div>
-                ))}
-              </div>
-              <div className="mt-6 flex flex-col gap-2 border-t border-border pt-5 sm:flex-row sm:items-center sm:justify-between">
-                <div>
-                  <span className="font-heading text-xl font-bold text-amethyst">{TAGESSEMINAR.preis}</span>
-                  <p className="text-xs text-muted-foreground">{TAGESSEMINAR.hinweis}</p>
-                </div>
-                <a
-                  href="mailto:anfragen@heilsteinschule.ch"
-                  className="inline-flex items-center justify-center gap-2 rounded-full bg-citrine px-5 py-2.5 text-sm font-semibold text-amethyst-deep shadow-soft transition hover:bg-citrine-light"
-                >
-                  <Mail className="h-4 w-4" /> Seminar anfragen
-                </a>
-              </div>
-            </div>
-          </Reveal>
-        </div>
-      </section>
-
       {/* DIREKTE KONTAKTMÖGLICHKEITEN */}
-      <section className="mx-auto max-w-3xl px-4 py-16 sm:px-6">
+      <section className="mx-auto max-w-3xl px-4 pb-20 sm:px-6">
         <Reveal>
           <div className="flex flex-col gap-4 rounded-2xl border border-border bg-white p-6 text-center shadow-soft sm:flex-row sm:items-center sm:justify-around sm:text-left">
             <div>

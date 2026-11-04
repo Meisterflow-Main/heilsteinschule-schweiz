@@ -14,6 +14,8 @@ import LadenPraxis from '@/pages/LadenPraxis';
 import Lehrfilme from '@/pages/Lehrfilme';
 import Kontakt from '@/pages/Kontakt';
 import InfoAnlaesseSeminare from '@/pages/InfoAnlaesseSeminare';
+import InfoAnlaesse from '@/pages/InfoAnlaesse';
+import Seminare from '@/pages/Seminare';
 import AuftragBewerten from '@/pages/AuftragBewerten';
 import Impressum from '@/pages/Impressum';
 import Datenschutz from '@/pages/Datenschutz';
@@ -78,6 +80,8 @@ const AuthenticatedApp = () => {
         <Route path="/lehrfilme" element={<Lehrfilme />} />
         <Route path="/kontakt" element={<Kontakt />} />
         <Route path="/infoanlaesse-seminare" element={<InfoAnlaesseSeminare />} />
+        <Route path="/infoanlaesse" element={<InfoAnlaesse />} />
+        <Route path="/seminare" element={<Seminare />} />
         <Route path="/info-tag" element={<InfoAnlaesseSeminare />} />
         <Route path="/info-nachmittag" element={<InfoAnlaesseSeminare />} />
         <Route path="/auftrag-bewerten" element={<AuftragBewerten />} />
