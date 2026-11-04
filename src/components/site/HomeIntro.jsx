@@ -30,19 +30,30 @@ export default function HomeIntro() {
               </span>
             </div>
 
-            <p className="font-heading text-xl leading-relaxed text-amethyst sm:text-2xl">
-              Seit 2008 beschäftige ich mich professionell mit Heilsteinen. Meine Ausbildung in analytischer
-              Steinheilkunde durchlief ich in Deutschland bei Michael Gienger, Werner Kühni und Walter von Holst.
+            <p className="font-heading text-lg leading-relaxed text-amethyst sm:text-xl">
+              Seit 2011 widmen wir uns mit grosser Leidenschaft der analytischen Steinheilkunde. Unser Wissen
+              basiert auf langjähriger Erfahrung und fundierten Ausbildungen in Deutschland bei Michael Gienger,
+              Werner Kühni und Walter von Holst. Aus dem Herzenswunsch heraus, die faszinierende Welt der
+              Heilsteine allen Menschen zugänglich zu machen, wurde die Heilsteinschule Schweiz gegründet.
             </p>
 
             <p className="mt-5 text-base leading-relaxed text-muted-foreground sm:text-lg">
-              Es ist mein innigster Wunsch, die analytische Steinheilkunde allen Menschen zugänglich zu machen.
-              Aus diesem Grund wurde die Heilsteinschule Schweiz im Jahr 2011 gegründet.
+              Wir verbinden fundiertes theoretisches Wissen mit praktischer Erfahrung und der unmittelbaren
+              Begegnung mit den Steinen. Unser Unterricht folgt dem Leitgedanken Kopf, Herz, Hand und Fuss:
+              verstehen, fühlen, anwenden und erleben. Dazu gehören auch gemeinsame Erfahrungen in der Natur
+              und unterwegs in den Alpen.
             </p>
 
             <p className="mt-5 text-base leading-relaxed text-muted-foreground sm:text-lg">
-              Sie ist GKS-zertifiziert (gemmologisch kontrollierte Steinqualität) und zertifiziert vom SVNH
-              nach AL2 (Schweizerischer Verband für natürliches Heilen).
+              Als GKS-zertifizierte Schule für gemmologisch kontrollierte Steinqualität und vom Schweizerischen
+              Verband für Natürliches Heilen (SVNH) nach AL2 zertifiziert, legen wir grossen Wert auf Qualität
+              und fundierte Wissensvermittlung.
+            </p>
+
+            <p className="mt-5 text-base leading-relaxed text-muted-foreground sm:text-lg">
+              Unsere grösste Motivation ist die Liebe und Faszination für die Schönheit und Vielfalt der Steine.
+              Wir möchten diese Begeisterung weitergeben und Menschen dabei begleiten, Heilsteine nicht nur
+              kennenzulernen, sondern sie als wertvolle Lebensbegleiter zu entdecken.
             </p>
 
             <div className="mt-7 flex flex-wrap gap-2">
