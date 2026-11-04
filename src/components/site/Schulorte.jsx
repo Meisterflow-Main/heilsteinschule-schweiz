@@ -80,9 +80,9 @@ export default function Schulorte({ withHeading = true }) {
               </div>
               <div className="p-6">
                 {s.imgs?.length > 0 && (
-                  <div className="mb-4 flex gap-3">
+                  <div className="mb-4 grid grid-cols-2 gap-3">
                     {s.imgs.map((src, idx) => (
-                      <div key={src} className="flex-1 overflow-hidden rounded-xl border border-border">
+                      <div key={src} className="overflow-hidden rounded-xl border border-border">
                         <img
                           src={src}
                           alt={`${s.name} — Ansicht ${idx + 1}`}
