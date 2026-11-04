@@ -45,12 +45,6 @@ export default function HomeIntro() {
             </p>
 
             <p className="mt-5 text-base leading-relaxed text-muted-foreground sm:text-lg">
-              Als GKS-zertifizierte Schule für gemmologisch kontrollierte Steinqualität und vom Schweizerischen
-              Verband für Natürliches Heilen (SVNH) nach AL2 zertifiziert, legen wir grossen Wert auf Qualität
-              und fundierte Wissensvermittlung.
-            </p>
-
-            <p className="mt-5 text-base leading-relaxed text-muted-foreground sm:text-lg">
               Unsere grösste Motivation ist die Liebe und Faszination für die Schönheit und Vielfalt der Steine.
               Wir möchten diese Begeisterung weitergeben und Menschen dabei begleiten, Heilsteine nicht nur
               kennenzulernen, sondern sie als wertvolle Lebensbegleiter zu entdecken.
