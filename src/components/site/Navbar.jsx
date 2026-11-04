@@ -23,7 +23,7 @@ const NAV_ITEMS = [
       { label: "Brunos Buch", to: "/brunos-buch", icon: BookOpen },
     ],
   },
-  { label: "Info-Nachmittag/-Abend", to: "/info-nachmittag" },
+  { label: "Infoanlässe & Seminare", to: "/info-nachmittag" },
   { label: "Online-Shop", href: "https://heilstein-shop.com/" },
   {
     label: "Verkaufsladen Asp",
