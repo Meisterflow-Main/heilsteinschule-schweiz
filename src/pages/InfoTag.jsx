@@ -1,9 +1,9 @@
 import React from "react";
-import { CalendarDays, MapPin, Phone, Mail, Clock, Users, HandHeart, GraduationCap, MessageSquare, ArrowRight, Train, Newspaper, Check } from "lucide-react";
-import { Link } from "react-router-dom";
+import { CalendarDays, MapPin, Phone, Mail, Clock, Users, HandHeart, GraduationCap, MessageSquare, ArrowRight, Train, Newspaper } from "lucide-react";
 import Reveal from "@/components/site/Reveal";
 import SectionHeading from "@/components/site/SectionHeading";
 import InfoNachmittagForm from "@/components/site/InfoNachmittagForm";
+import InfoAnlaesseTermine from "@/components/site/InfoAnlaesseTermine";
 
 // ─── Info-Nachmittag Termine ───────────────────────────────────────────────
 // Um einen neuen Termin hinzuzufügen: einfach hier einen Eintrag ergänzen.
@@ -23,6 +23,19 @@ const TERMINE = [
       "Asp liegt im Fricktal, Kanton Aargau. Parkplätze beim Haus vorhanden.",
   },
 ];
+
+// ─── Infoanlass ────────────────────────────────────────────────────────────
+const INFOABEND = {
+  title: "Infoabend – Analytische Steinheilkunde",
+  description: "SVNH-zertifizierter Lehrgang in analytischer Steinheilkunde",
+  displayDate: "Freitag, 13.11.2026",
+  time: "Ab 19:30 Uhr",
+  kosten: "Kostenlos",
+  venue: "Praxis-Sunnestei",
+  address: "Sägengasse 2, 3110 Münsingen",
+  phone: "+41 79 389 66 22",
+  phoneHref: "+41793896622",
+};
 
 // ─── Tagesseminar ──────────────────────────────────────────────────────────
 const TAGESSEMINAR = {
@@ -129,36 +142,7 @@ export default function InfoTag() {
               subtitle="Der Info-Nachmittag/-Abend findet in Münsingen und Asp statt. Wählen Sie unten Ihren Wunschtermin."
             />
           </Reveal>
-          <div className="mx-auto mt-12 grid max-w-xl gap-6">
-            <Reveal delay={0.1}>
-              <div className="flex h-full flex-col rounded-3xl border border-citrine bg-white p-7 shadow-soft transition hover:shadow-lift">
-                <div className="flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-citrine-deep">
-                  <CalendarDays className="h-3.5 w-3.5" /> {TAGESSEMINAR.time}
-                </div>
-                <h3 className="mt-2 font-heading text-lg font-semibold text-amethyst">{TAGESSEMINAR.displayDate}</h3>
-                <p className="mt-1 text-sm font-medium text-amethyst">{TAGESSEMINAR.leitung}</p>
-                <h4 className="mt-4 font-heading text-base font-semibold text-amethyst">{TAGESSEMINAR.title}</h4>
-                <ul className="mt-3 space-y-1.5">
-                  {TAGESSEMINAR.inklusive.map((item) => (
-                    <li key={item} className="flex items-start gap-2 text-sm text-foreground/80">
-                      <Check className="mt-0.5 h-4 w-4 shrink-0 text-citrine-deep" /> {item}
-                    </li>
-                  ))}
-                </ul>
-                <div className="mt-4 flex items-center justify-between gap-3 border-t border-border pt-4">
-                  <span className="text-sm font-medium text-muted-foreground">Kurskosten Total</span>
-                  <span className="font-heading text-xl font-bold text-amethyst">{TAGESSEMINAR.preis}</span>
-                </div>
-                <p className="mt-2 text-xs text-muted-foreground">{TAGESSEMINAR.hinweis}</p>
-                <Link
-                  to="/kontakt"
-                  className="mt-5 inline-flex w-fit items-center gap-2 rounded-full bg-citrine px-5 py-2.5 text-sm font-semibold text-amethyst-deep shadow-soft transition hover:bg-citrine-light"
-                >
-                  Anmelden <ArrowRight className="h-4 w-4" />
-                </Link>
-              </div>
-            </Reveal>
-          </div>
+          <InfoAnlaesseTermine infoabend={INFOABEND} seminar={TAGESSEMINAR} />
           <Reveal delay={0.15}>
             <p className="mt-8 text-center text-sm text-muted-foreground">
               <Clock className="mr-1.5 inline h-4 w-4 text-citrine-deep" />
@@ -169,7 +153,7 @@ export default function InfoTag() {
       </section>
 
       {/* ANMELDUNG / FORMULAR */}
-      <section className="mx-auto max-w-3xl px-4 py-20 sm:px-6">
+      <section id="anmeldung" className="mx-auto max-w-3xl scroll-mt-24 px-4 py-20 sm:px-6">
         <Reveal>
           <SectionHeading
             eyebrow="Anmeldung"
