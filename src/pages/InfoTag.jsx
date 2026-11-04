@@ -77,7 +77,7 @@ export default function InfoTag() {
             <div className="mb-4 inline-flex items-center gap-2 rounded-full glass-dark px-4 py-1.5 text-xs font-medium uppercase tracking-wider text-citrine-light">
               <CalendarDays className="h-3.5 w-3.5" /> Kostenlos & unverbindlich
             </div>
-            <h1 className="font-heading text-4xl font-bold sm:text-5xl md:text-6xl">Info-Nachmittag/-Abend</h1>
+            <h1 className="font-heading text-4xl font-bold sm:text-5xl md:text-6xl">Infoanlässe &amp; Seminare</h1>
             <p className="mt-5 max-w-xl text-lg text-white/80">
               Kostenloser Info-Nachmittag/-Abend an der Heilsteinschule Schweiz in Asp und Münsingen —
               erfahren Sie mehr über die faszinierende Welt der Heilsteine und unsere Ausbildung.
