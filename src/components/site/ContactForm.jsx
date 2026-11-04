@@ -1,17 +1,19 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Loader2, CheckCircle2, AlertCircle, Send } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const WEBHOOK_URL =
   "https://app.meisterflow.ch/api/webhooks/enquiries/a902bb23d7e98901900e3750083b670344a14683633ae15f";
 
-export default function ContactForm({ defaultDescription = "", compact = false, idPrefix = "", inquiryType = "allgemeine_anfrage", availableDates = null }) {
+export default function ContactForm({ defaultDescription = "", compact = false, idPrefix = "", inquiryType = "allgemeine_anfrage", availableDates = null, showTerms = false }) {
   const [form, setForm] = useState({
     name: "",
     email: "",
     phone: "",
     preferredDate: "",
     description: defaultDescription,
+    confirm: false,
     company: "", // honeypot
   });
   const [status, setStatus] = useState("idle"); // idle | loading | success | error
@@ -24,13 +26,14 @@ export default function ContactForm({ defaultDescription = "", compact = false, 
     if (!form.email.trim()) e.email = "Bitte geben Sie Ihre E-Mail-Adresse ein.";
     else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.email)) e.email = "Bitte geben Sie eine gültige E-Mail-Adresse ein.";
     if (!form.description.trim()) e.description = "Bitte geben Sie eine Nachricht ein.";
+    if (showTerms && !form.confirm) e.confirm = "Bitte akzeptieren Sie die AGB, um die Anfrage abzuschliessen.";
     setErrors(e);
     return Object.keys(e).length === 0;
   };
 
   const handleChange = (e) => {
-    const { name, value } = e.target;
-    setForm((f) => ({ ...f, [name]: value }));
+    const { name, value, type, checked } = e.target;
+    setForm((f) => ({ ...f, [name]: type === "checkbox" ? checked : value }));
   };
 
   const handleSubmit = async (e) => {
@@ -55,7 +58,7 @@ export default function ContactForm({ defaultDescription = "", compact = false, 
       if (!res.ok) throw new Error("Network response was not ok");
       setStatus("success");
       setSubmittedOnce(true);
-      setForm({ name: "", email: "", phone: "", preferredDate: "", description: defaultDescription, company: "" });
+      setForm({ name: "", email: "", phone: "", preferredDate: "", description: defaultDescription, confirm: false, company: "" });
     } catch (err) {
       setStatus("error");
     }
@@ -201,6 +204,31 @@ export default function ContactForm({ defaultDescription = "", compact = false, 
           {errors.description && <p className="mt-1 text-xs text-destructive">{errors.description}</p>}
         </div>
       </div>
+
+      {showTerms && (
+        <>
+          <label className="flex items-start gap-3 rounded-xl bg-quartz p-4 text-sm text-foreground/80">
+            <input
+              type="checkbox"
+              name="confirm"
+              checked={form.confirm}
+              onChange={handleChange}
+              className="mt-0.5 h-4 w-4 shrink-0 rounded border-border text-citrine focus:ring-citrine/20"
+            />
+            <span>
+              Ich habe die{" "}
+              <Link to="/agb" className="font-semibold text-citrine-deep underline underline-offset-2">
+                Allgemeinen Geschäftsbedingungen (AGB)
+              </Link>{" "}
+              gelesen und <strong className="text-amethyst">akzeptiere sie verbindlich</strong>. Damit
+              bestätige ich auch die <strong className="text-amethyst">verbindliche Anmeldung</strong> mit
+              der Anzahlung von <strong>CHF 250.–</strong> zur Platzreservation.
+              <span className="text-citrine-deep">*</span>
+            </span>
+          </label>
+          {errors.confirm && <p className="text-xs text-destructive">{errors.confirm}</p>}
+        </>
+      )}
 
       {status === "error" && (
         <div className="flex items-center gap-2 rounded-xl border border-destructive/30 bg-destructive/5 px-4 py-3 text-sm text-destructive">

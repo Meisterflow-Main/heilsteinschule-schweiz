@@ -88,7 +88,7 @@ export default function Kontakt() {
               <h3 className="font-heading text-xl font-semibold text-amethyst">Schreiben Sie uns</h3>
               <p className="mt-1 text-sm text-muted-foreground">Wir melden uns schnellstmöglich bei Ihnen.</p>
               <div className="mt-6">
-                <ContactForm defaultDescription="" idPrefix="kontakt" />
+                <ContactForm defaultDescription="" idPrefix="kontakt" showTerms />
               </div>
             </div>
           </Reveal>
