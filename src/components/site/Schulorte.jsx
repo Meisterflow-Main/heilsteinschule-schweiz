@@ -19,6 +19,9 @@ export const STANDORTE = [
     name: "Wallbach AG — Grundausbildung",
     ort: "Rheinstrasse 29, 4323 Wallbach AG",
     img: "https://heilsteinschule.swiss/media/wunderblock/wallbach-ag.jpg",
+    imgs: [
+      "https://base44.app/api/apps/6aa92ec5274311c12da18ee6/files/mp/public/6aa92ec5274311c12da18ee6/a81bacd44_wallbach-innen.png",
+    ],
     rolle: "Grundausbildung · Klassengrösse min. 5, max. 8 Personen",
     tage: "Donnerstag 09:00–17:00 Uhr, 2× monatlich — oder Samstag/Sonntag 09:00–17:00 Uhr, 1× monatlich. Pro Klasse gilt eine dieser Varianten, nicht beide.",
     leitung: "Ruth Rios",
