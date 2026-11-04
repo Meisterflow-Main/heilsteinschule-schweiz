@@ -9,7 +9,6 @@ import ScrollToTop from './components/ScrollToTop';
 import Layout from '@/components/site/Layout';
 import Home from '@/pages/Home';
 import Ausbildung from '@/pages/Ausbildung';
-import AusbildungModule from '@/pages/AusbildungModule';
 import News from '@/pages/News';
 import LadenPraxis from '@/pages/LadenPraxis';
 import Lehrfilme from '@/pages/Lehrfilme';
@@ -74,7 +73,6 @@ const AuthenticatedApp = () => {
       <Route element={<Layout />}>
         <Route path="/" element={<Home />} />
         <Route path="/ausbildung" element={<Ausbildung />} />
-        <Route path="/ausbildung/module" element={<AusbildungModule />} />
         <Route path="/news" element={<News />} />
         <Route path="/laden-praxis" element={<LadenPraxis />} />
         <Route path="/lehrfilme" element={<Lehrfilme />} />
