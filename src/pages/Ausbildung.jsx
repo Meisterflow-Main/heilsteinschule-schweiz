@@ -127,6 +127,28 @@ export default function Ausbildung() {
         </div>
       </section>
 
+      {/* Die drei Module — Teaser zur separaten Seite */}
+      <section className="bg-quartz/60">
+        <div className="mx-auto max-w-5xl px-4 py-20 sm:px-6">
+          <Reveal>
+            <div className="flex flex-col items-center gap-4 rounded-3xl border border-border bg-white p-8 text-center shadow-soft sm:flex-row sm:justify-between sm:text-left">
+              <div>
+                <h3 className="font-heading text-xl font-semibold text-amethyst">Die drei Module der Ausbildung</h3>
+                <p className="mt-1 text-sm text-muted-foreground">
+                  Modul 1 Grundlagen · Modul 2 Vertiefung & Anwendung · Modul 3 Beratung, Natur und Zertifizierung.
+                </p>
+              </div>
+              <Link
+                to="/ausbildung/module"
+                className="inline-flex shrink-0 items-center gap-2 rounded-full bg-citrine px-6 py-3 text-sm font-semibold text-amethyst-deep shadow-soft transition hover:bg-citrine-light"
+              >
+                Zur Modul-Übersicht <ArrowRight className="h-4 w-4" />
+              </Link>
+            </div>
+          </Reveal>
+        </div>
+      </section>
+
       {/* Rabatt & Spezielles */}
       <section className="mx-auto max-w-7xl px-4 py-20 sm:px-6">
         <div className="grid gap-6 md:grid-cols-2">
