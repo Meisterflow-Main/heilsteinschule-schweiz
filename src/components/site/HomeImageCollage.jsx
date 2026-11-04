@@ -5,7 +5,7 @@ import SectionHeading from "@/components/site/SectionHeading";
 // Real school photos (user-provided) — each shown at its natural ratio, never cropped.
 const TILES = [
   { src: "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/4b005ed48_WhatsAppImage2026-09-23at105952.jpeg", alt: "Teilnehmende des Alpenseminars blicken auf einen vergletscherten Berg", caption: "Alpenseminar vor dem Gletscher" },
-  { src: "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/42a59ef70_ChatGPTImageSep29202609_57_12PM.png", alt: "Drei Teilnehmende mit Alpenseminar-Zertifikat der Heilsteinschule", caption: "Zertifikatsübergabe Alpenseminar" },
+  { src: "https://base44.app/api/apps/6aa92ec5274311c12da18ee6/files/mp/public/6aa92ec5274311c12da18ee6/16bf81670_zertifikatsuebergabe-alpenseminar.jpg", alt: "Drei Teilnehmende mit Alpenseminar-Zertifikat der Heilsteinschule im Wald", caption: "Zertifikatsübergabe Alpenseminar" },
   { src: "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/593594f8a_WhatsAppImage2026-09-22at0205381.jpeg", alt: "Teilnehmende stossen nach dem Alpenseminar an", caption: "Abschluss des Alpenseminars" },
   { src: "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/e4e3bc278_WhatsAppImage2026-09-22at020536.jpeg", alt: "Zwei Personen untersuchen Heilsteine mit Taschenlampe am Tisch", caption: "Mineralbestimmung im Unterricht" },
   { src: "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/65203f027_WhatsAppImage2026-09-22at0205367.jpeg", alt: "Unterrichtsraum der Heilsteinschule mit Heilsteinen und Fachbüchern", caption: "Unterrichtsraum mit Heilsteinen" },
