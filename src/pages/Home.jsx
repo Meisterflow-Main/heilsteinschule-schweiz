@@ -6,7 +6,6 @@ import Reveal from "@/components/site/Reveal";
 import SectionHeading from "@/components/site/SectionHeading";
 import OptimizedImage from "@/components/site/OptimizedImage";
 import LearningActivities from "@/components/site/LearningActivities";
-import MineralSelection from "@/components/site/MineralSelection";
 import HomeTrustBar from "@/components/site/HomeTrustBar";
 import HomeTrainingOverview from "@/components/site/HomeTrainingOverview";
 import HomeImageCollage from "@/components/site/HomeImageCollage";
@@ -198,9 +197,6 @@ export default function Home() {
           </Link>
         </div>
       </section>
-
-      {/* 8B. MINERAL SELECTION */}
-      <MineralSelection />
 
       {/* 9. INQUIRY & REGISTRATION */}
       <HomeInquiryRegistration />

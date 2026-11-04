@@ -4,6 +4,7 @@ import Reveal from "@/components/site/Reveal";
 import SectionHeading from "@/components/site/SectionHeading";
 import OptimizedImage from "@/components/site/OptimizedImage";
 import HeilsteineAuswahl from "@/components/site/HeilsteineAuswahl";
+import MineralSelection from "@/components/site/MineralSelection";
 
 const GALLERY_BASE = "https://heilsteinschule.swiss/media/rfg-folders/heilsteine-lager-in-asp-gallery";
 
@@ -96,6 +97,8 @@ export default function VerkaufsladenAsp() {
           ))}
         </div>
       </section>
+
+      <MineralSelection />
 
       <HeilsteineAuswahl />
 
