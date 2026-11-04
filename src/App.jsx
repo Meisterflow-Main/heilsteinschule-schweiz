@@ -13,7 +13,7 @@ import News from '@/pages/News';
 import LadenPraxis from '@/pages/LadenPraxis';
 import Lehrfilme from '@/pages/Lehrfilme';
 import Kontakt from '@/pages/Kontakt';
-import InfoTag from '@/pages/InfoTag';
+import InfoAnlaesseSeminare from '@/pages/InfoAnlaesseSeminare';
 import AuftragBewerten from '@/pages/AuftragBewerten';
 import Impressum from '@/pages/Impressum';
 import Datenschutz from '@/pages/Datenschutz';
@@ -77,8 +77,9 @@ const AuthenticatedApp = () => {
         <Route path="/laden-praxis" element={<LadenPraxis />} />
         <Route path="/lehrfilme" element={<Lehrfilme />} />
         <Route path="/kontakt" element={<Kontakt />} />
-        <Route path="/info-tag" element={<InfoTag />} />
-        <Route path="/info-nachmittag" element={<InfoTag />} />
+        <Route path="/infoanlaesse-seminare" element={<InfoAnlaesseSeminare />} />
+        <Route path="/info-tag" element={<InfoAnlaesseSeminare />} />
+        <Route path="/info-nachmittag" element={<InfoAnlaesseSeminare />} />
         <Route path="/auftrag-bewerten" element={<AuftragBewerten />} />
         <Route path="/impressum" element={<Impressum />} />
         <Route path="/datenschutz" element={<Datenschutz />} />
