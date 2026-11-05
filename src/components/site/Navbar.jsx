@@ -50,7 +50,6 @@ const NAV_ITEMS = [
   {
     label: "Diverses",
     children: [
-      { label: "Brunos Buch", to: "/brunos-buch", icon: BookOpen },
       { label: "Michael Gienger", to: "/michael-gienger", icon: Users },
       { label: "Werner Kühni", to: "/werner-kuehni", icon: Heart },
       { label: "Geologische Reisen", to: "/diverses/geologische-reisen", icon: Mountain },
@@ -80,7 +79,7 @@ const ACTIVE_PATHS = {
   "Verkaufsladen Asp": ["/verkaufsladen-asp", "/armbaender-kreation-diopteia", "/laden-praxis"],
   "Videos & Newsletter": ["/lehrfilme", "/news"],
   "Infoanlässe & Seminare": ["/infoanlaesse-seminare", "/infoanlaesse", "/seminare", "/info-tag", "/info-nachmittag"],
-  Diverses: ["/brunos-buch", "/michael-gienger", "/werner-kuehni", "/diverses/geologische-reisen", "/granit-gneis"],
+  Diverses: ["/michael-gienger", "/werner-kuehni", "/diverses/geologische-reisen", "/granit-gneis"],
   Regionen: ["/regionen"],
 };
 
