@@ -8,7 +8,7 @@ export const INFOABEND = {
   time: "Ab 19:30 Uhr",
   kosten: "Kostenlos",
   venue: "Praxis-Sunnestei",
-  address: "Sägengasse 2, 3110 Münsingen",
+  address: "Sägegasse 2, 3110 Münsingen",
   phone: "+41 79 389 66 22",
   phoneHref: "+41793896622",
 };
