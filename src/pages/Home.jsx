@@ -1,7 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { ArrowRight, Play, Users, Video, MapPin, Sparkles, Heart, Hand, Brain, Footprints } from "lucide-react";
+import { ArrowRight, Play, Users, Video, MapPin, Sparkles, Heart, Hand, Brain, Footprints, Star } from "lucide-react";
+import { GOOGLE_REVIEWS_URL } from "@/components/site/GoogleReviewCard";
 import Reveal from "@/components/site/Reveal";
 import SectionHeading from "@/components/site/SectionHeading";
 import OptimizedImage from "@/components/site/OptimizedImage";
@@ -80,6 +81,9 @@ export default function Home() {
               <Link to="/info-nachmittag" className="inline-flex items-center justify-center gap-2 rounded-full border border-white/30 px-7 py-4 font-semibold text-white transition hover:bg-white/10">
                 <Play className="h-4 w-4" /> Kostenloser Info-Nachmittag/-Abend
               </Link>
+              <a href={GOOGLE_REVIEWS_URL} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 rounded-full glass-dark px-7 py-4 font-semibold text-white transition hover:bg-white/15">
+                <Star className="h-4 w-4 fill-citrine text-citrine" /> Auf Google bewerten
+              </a>
             </div>
           </motion.div>
         </div>
