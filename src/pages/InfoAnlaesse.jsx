@@ -33,7 +33,7 @@ export default function InfoAnlaesse() {
         <Reveal>
           <SectionHeading
             eyebrow="Programm"
-            title="Was passiert am Info-Nachmittag/-Abend?"
+            title="Was passiert an den Infoanlässen?"
             subtitle="Ein Nachmittag voller Eindrücke — lernen Sie die Schule, das Dozententeam und die Steinheilkunde unverbindlich kennen."
           />
         </Reveal>
