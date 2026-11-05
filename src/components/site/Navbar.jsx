@@ -26,8 +26,7 @@ const NAV_ITEMS = [
   {
     label: "Infoanlässe & Seminare",
     children: [
-      { label: "Übersicht", to: "/infoanlaesse-seminare", icon: CalendarDays },
-      { label: "Infoanlässe (Info-Nachmittag/-Abend)", to: "/infoanlaesse", icon: Clock, wide: true },
+      { label: "Infoanlässe", to: "/infoanlaesse", icon: Clock },
       { label: "Seminare", to: "/seminare", icon: GraduationCap },
     ],
   },
