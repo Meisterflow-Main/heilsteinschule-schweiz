@@ -6,7 +6,7 @@ import Reveal from "@/components/site/Reveal";
 import SectionHeading from "@/components/site/SectionHeading";
 
 // >>> Bitte hier den echten Google-Bewertungs-Link eintragen <<<
-const GOOGLE_REVIEW_LINK = "https://www.google.com/search?q=Heilsteinschule+Schweiz+Asp";
+const GOOGLE_REVIEW_LINK = "https://search.google.com/local/writereview?placeid=ChIJVxaKoeE4kEcROaMKmfGkyww";
 const WEBHOOK_URL =
   "https://app.meisterflow.ch/api/webhooks/enquiries/a902bb23d7e98901900e3750083b670344a14683633ae15f";
 

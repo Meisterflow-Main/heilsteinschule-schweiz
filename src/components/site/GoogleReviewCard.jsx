@@ -2,7 +2,7 @@ import React from "react";
 import { Star } from "lucide-react";
 
 export const GOOGLE_REVIEWS_URL =
-  "https://www.google.com/maps/place/Heilsteinschule+Schweiz/@47.4445398,8.0479169,18.39z/data=!4m6!3m5!1s0x479038e1a18a1657:0xccba4f1990aa339!8m2!3d47.4439564!4d8.0495757!16s%2Fg%2F11h52zq5_y?entry=ttu&g_ep=EgoyMDI2MTAxOC4wIKXMDSoASAFQAw%3D%3D";
+  "https://search.google.com/local/writereview?placeid=ChIJVxaKoeE4kEcROaMKmfGkyww";
 
 export default function GoogleReviewCard({
   title = "Bewerten Sie uns auf Google",
