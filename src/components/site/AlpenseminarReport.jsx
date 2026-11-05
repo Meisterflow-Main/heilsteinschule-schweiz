@@ -8,7 +8,7 @@ const ALPENSEMINAR_TAGE = [
     tag: "1. Tag — 25.06.2025",
     title: "Innertkirchen & Rosenlaui Gletscherschlucht",
     text: "Die Exkursion startet in Innertkirchen, am Gadmerwasser Fluss. Hier finden wir Gneis, Calcit und interessante Heilsteine wie zum Beispiel Amphibolit, ein metamorphes Gestein, das aus Hornblende (dunkel) und Plagioklas-Feldspat (hell) besteht. Dieses beliebte Gestein wird auch «Salz und Pfeffer» Stein genannt. Anschliessend besuchen wir auf 1370 m ü. M. die Rosenlaui Gletscherschlucht. Eine imposante Schlucht mit wuchtigen Wasserfällen und fantastischen Felsformationen, aus tosend, sprudelnd, schäumendem Gletscherwasser geformt. Wir erkunden begeistert, auf dem gut gesicherten, 573 Meter langen Weg mit 12 Tunneln und 215 Treppenstufen, diese Sehenswürdigkeit inmitten prächtiger Bergwelt. Danach Weiterfahrt Richtung Schwarzwaldalp.",
-    img: "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/47c0266f3_ChatGPTImageSep29202609_42_30PM.png",
+    img: "https://base44.app/api/apps/6aa92ec5274311c12da18ee6/files/mp/public/6aa92ec5274311c12da18ee6/ca25797fc_1334-1101-max1.jpg",
   },
   {
     tag: "2. Tag — 26.06.2025",
