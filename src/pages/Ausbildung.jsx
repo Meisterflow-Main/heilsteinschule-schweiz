@@ -5,6 +5,7 @@ import Reveal from "@/components/site/Reveal";
 import SectionHeading from "@/components/site/SectionHeading";
 import TrainingLocations from "@/components/site/TrainingLocations";
 import AusbildungModules from "@/components/site/AusbildungModules";
+import Modul1Grundlagen from "@/components/site/Modul1Grundlagen";
 
 const VORAUSSETZUNGEN = [
   "Freude an Steinen und den Heilkräften der Natur.",
@@ -130,6 +131,9 @@ export default function Ausbildung() {
 
       {/* Die drei Module der Ausbildung */}
       <AusbildungModules />
+
+      {/* Modul 1 — Die vier Grundlagen */}
+      <Modul1Grundlagen />
 
       {/* Rabatt & Spezielles */}
       <section className="mx-auto max-w-7xl px-4 py-20 sm:px-6">
