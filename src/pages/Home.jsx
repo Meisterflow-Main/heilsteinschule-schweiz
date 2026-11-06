@@ -65,7 +65,7 @@ export default function Home() {
             className="max-w-3xl"
           >
             <div className="mb-6 inline-flex items-center gap-2 rounded-full glass-dark px-4 py-1.5 text-xs font-medium uppercase tracking-wider text-citrine-light">
-              <SwissCross className="h-4 w-4" /> Seit 2011 · SVNH zertifiziert
+              <SwissCross className="h-4 w-4" /> Seit 2008 · SVNH zertifiziert
             </div>
             <h1 className="font-heading text-4xl font-bold leading-[1.05] text-white sm:text-5xl md:text-6xl lg:text-7xl">
               Heilsteinkraft
@@ -156,7 +156,7 @@ export default function Home() {
                 Ausbildung ist ein Weg, den wir mit Kopf, Herz, Hand und Fuss gemeinsam gehen. Seit 2008
                 beschäftige ich mich professionell mit Heilsteinen, meine Ausbildung in analytischer
                 Steinheilkunde durchlief ich in Deutschland bei Michael Gienger, Werner Kühni und Walter
-                von Holst. Die Heilsteinschule Schweiz habe ich 2011 gegründet.
+                von Holst. Die Heilsteinschule Schweiz habe ich 2008 gegründet.
               </p>
               <div className="mt-8 grid gap-4 sm:grid-cols-2">
                 {PRINCIPLES.map((p) => (

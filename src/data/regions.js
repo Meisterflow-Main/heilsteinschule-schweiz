@@ -36,10 +36,10 @@ export const REGIONS = [
       eyebrow: "Heilsteine in Asp",
       h1: "Heilsteinschule Schweiz in Asp – Hauptsitz mit Heilsteinshop und Praxis",
       description:
-        "Asp ist der Hauptsitz der Heilsteinschule Schweiz: Hier finden Sie den Heilsteinshop, die Praxis und die Schulungsräume. Kostenlose Info-Nachmittage/-Abende finden hier statt. Die Grundausbildung wird standardmässig in Wallbach und Münsingen durchgeführt – Asp ist der Ursprungsort, an dem die Schule 2011 gegründet wurde.",
+        "Asp ist der Hauptsitz der Heilsteinschule Schweiz: Hier finden Sie den Heilsteinshop, die Praxis und die Schulungsräume. Kostenlose Info-Nachmittage/-Abende finden hier statt. Die Grundausbildung wird standardmässig in Wallbach und Münsingen durchgeführt – Asp ist der Ursprungsort, an dem die Schule 2008 gegründet wurde.",
     },
     usps: [
-      { icon: "Sparkles", title: "Seit 2011", description: "Über 250 ausgebildete Heilsteinberater" },
+      { icon: "Sparkles", title: "Seit 2008", description: "Über 250 ausgebildete Heilsteinberater" },
       { icon: "Award", title: "SVNH-zertifiziert", description: "Anerkannte Qualität in Steinheilkunde" },
       { icon: "Users", title: "Erfahrenes Team", description: "Dozenten mit Praxiserfahrung" },
       { icon: "Hand", title: "Praxisnah", description: "Lernen mit Kopf, Herz und Hand" },
@@ -76,9 +76,9 @@ export const REGIONS = [
     },
     whyUs: {
       intro:
-        "Asp ist der Ursprungsort der Heilsteinschule Schweiz. Hier begann 2011 alles, hier steht bis heute der Heilsteinshop mit Praxis und Schulungsräumen.",
+        "Asp ist der Ursprungsort der Heilsteinschule Schweiz. Hier begann 2008 alles, hier steht bis heute der Heilsteinshop mit Praxis und Schulungsräumen.",
       reasons: [
-        { headline: "Gründungsort seit 2011", description: "Über 14 Jahre Ausbildungserfahrung im Fricktal." },
+        { headline: "Gründungsort seit 2008", description: "Über 18 Jahre Ausbildungserfahrung im Fricktal." },
         { headline: "Heilsteinshop vor Ort", description: "Laden und Praxis direkt an der Schule in Asp." },
         { headline: "Zentrale Lage im Aargau", description: "Gut erreichbar aus dem ganzen Fricktal." },
         { headline: "SVNH-zertifizierte Ausbildung", description: "Anerkannter Abschluss in Steinheilkunde." },
@@ -131,7 +131,7 @@ export const REGIONS = [
         "In Wallbach verbindet die Heilsteinschule Schweiz fundierte Steinheilkunde mit persönlicher Atmosphäre. Die SVNH-zertifizierte Ausbildung zum Heilsteinberater verläuft praxisnah und ist ideal für Interessierte aus dem ganzen Fricktal.",
     },
     usps: [
-      { icon: "Sparkles", title: "Seit 2011", description: "Langjährige Erfahrung in Steinheilkunde" },
+      { icon: "Sparkles", title: "Seit 2008", description: "Langjährige Erfahrung in Steinheilkunde" },
       { icon: "Award", title: "SVNH-zertifiziert", description: "Anerkannter Ausbildungszweig" },
       { icon: "Users", title: "Dozententeam", description: "Kleine Klassen mit 5 bis 8 Personen" },
       { icon: "Hand", title: "Praxisnah", description: "Steine direkt in die Hand nehmen" },
@@ -223,7 +223,7 @@ export const REGIONS = [
         "In Münsingen vermittelt die Heilsteinschule Schweiz die SVNH-zertifizierte Ausbildung zum Heilsteinberater mitten in Münsingen. Praxisnah, fundiert und mit Dozenten, die selbst in der Steinheilkunde tätig sind.",
     },
     usps: [
-      { icon: "Sparkles", title: "Seit 2011", description: "Bewährte Steinheilkunde-Ausbildung" },
+      { icon: "Sparkles", title: "Seit 2008", description: "Bewährte Steinheilkunde-Ausbildung" },
       { icon: "Award", title: "SVNH-zertifiziert", description: "Offiziell anerkannter Abschluss" },
       { icon: "Users", title: "Praxiserfahrene Dozenten", description: "Unterricht aus der eigenen Praxis" },
       { icon: "Hand", title: "Praxisnah", description: "Steine begreifen, nicht nur lesen" },
@@ -315,7 +315,7 @@ export const REGIONS = [
         "Für Interessierte aus Zürich führt die Heilsteinschule Schweiz die SVNH-zertifizierte Ausbildung zum Heilsteinberater am nahen Standort Wallbach im Fricktal durch. Praxisnah, fundiert und mit Dozenten, die selbst in der Steinheilkunde arbeiten.",
     },
     usps: [
-      { icon: "Sparkles", title: "Seit 2011", description: "Über 250 ausgebildete Berater" },
+      { icon: "Sparkles", title: "Seit 2008", description: "Über 250 ausgebildete Berater" },
       { icon: "Award", title: "SVNH-zertifiziert", description: "Anerkannter Steinheilkunde-Abschluss" },
       { icon: "Users", title: "Erfahrenes Team", description: "Dozenten mit Praxiserfahrung" },
       { icon: "Hand", title: "Praxisnah", description: "Steine begreifen, nicht nur lesen" },
@@ -407,7 +407,7 @@ export const REGIONS = [
         "Für Interessierte aus Basel führt die Heilsteinschule Schweiz die SVNH-zertifizierte Ausbildung zum Heilsteinberater am nahen Standort Wallbach im Fricktal durch. Praxisnah, fundiert und mit Dozenten aus eigener Heilsteinpraxis.",
     },
     usps: [
-      { icon: "Sparkles", title: "Seit 2011", description: "Langjährige Ausbildungstradition" },
+      { icon: "Sparkles", title: "Seit 2008", description: "Langjährige Ausbildungstradition" },
       { icon: "Award", title: "SVNH-zertifiziert", description: "Anerkannter Steinheilkunde-Abschluss" },
       { icon: "Users", title: "Erfahrenes Team", description: "Dozenten mit Praxiserfahrung" },
       { icon: "Hand", title: "Praxisnah", description: "Steine direkt in die Hand nehmen" },
@@ -499,7 +499,7 @@ export const REGIONS = [
         "Für Interessierte aus Aarau führt die Heilsteinschule Schweiz die SVNH-zertifizierte Ausbildung zum Heilsteinberater am nahen Standort Wallbach im Fricktal durch. Praxisnah, fundiert und mit Dozenten aus eigener Heilsteinpraxis.",
     },
     usps: [
-      { icon: "Sparkles", title: "Seit 2011", description: "Bewährte Steinheilkunde-Schule" },
+      { icon: "Sparkles", title: "Seit 2008", description: "Bewährte Steinheilkunde-Schule" },
       { icon: "Award", title: "SVNH-zertifiziert", description: "Anerkannter Steinheilkunde-Abschluss" },
       { icon: "Users", title: "Erfahrenes Team", description: "Dozenten mit Praxiserfahrung" },
       { icon: "Hand", title: "Praxisnah", description: "Steine begreifen, nicht nur lesen" },
@@ -591,7 +591,7 @@ export const REGIONS = [
         "Für Interessierte aus Baden führt die Heilsteinschule Schweiz die SVNH-zertifizierte Ausbildung zum Heilsteinberater am nahen Standort Wallbach im Fricktal durch. Praxisnah, fundiert und mit Dozenten, die selbst in der Steinheilkunde tätig sind.",
     },
     usps: [
-      { icon: "Sparkles", title: "Seit 2011", description: "Etablierte Steinheilkunde-Ausbildung" },
+      { icon: "Sparkles", title: "Seit 2008", description: "Etablierte Steinheilkunde-Ausbildung" },
       { icon: "Award", title: "SVNH-zertifiziert", description: "Offiziell anerkannter Abschluss" },
       { icon: "Users", title: "Erfahrenes Team", description: "Dozenten mit Praxiserfahrung" },
       { icon: "Hand", title: "Praxisnah", description: "Steine direkt in die Hand nehmen" },
@@ -683,7 +683,7 @@ export const REGIONS = [
         "Für Interessierte aus Brugg führt die Heilsteinschule Schweiz die SVNH-zertifizierte Ausbildung zum Heilsteinberater am nahen Standort Wallbach im Fricktal durch. Praxisnah, fundiert und mit Dozenten, die ihre Leidenschaft für Heilsteine weitergeben.",
     },
     usps: [
-      { icon: "Sparkles", title: "Seit 2011", description: "Über 250 ausgebildete Berater" },
+      { icon: "Sparkles", title: "Seit 2008", description: "Über 250 ausgebildete Berater" },
       { icon: "Award", title: "SVNH-zertifiziert", description: "Anerkannter Steinheilkunde-Abschluss" },
       { icon: "Users", title: "Erfahrenes Team", description: "Dozenten mit Praxiserfahrung" },
       { icon: "Hand", title: "Praxisnah", description: "Steine begreifen, nicht nur lesen" },
@@ -775,7 +775,7 @@ export const REGIONS = [
         "Für Interessierte aus Olten führt die Heilsteinschule Schweiz die SVNH-zertifizierte Ausbildung zum Heilsteinberater am nahen Standort Wallbach im Fricktal durch. Praxisnah, fundiert und mit Dozenten, die selbst in der Steinheilkunde arbeiten.",
     },
     usps: [
-      { icon: "Sparkles", title: "Seit 2011", description: "Bewährte Steinheilkunde-Schule" },
+      { icon: "Sparkles", title: "Seit 2008", description: "Bewährte Steinheilkunde-Schule" },
       { icon: "Award", title: "SVNH-zertifiziert", description: "Offiziell anerkannter Abschluss" },
       { icon: "Users", title: "Erfahrenes Team", description: "Dozenten mit Praxiserfahrung" },
       { icon: "Hand", title: "Praxisnah", description: "Steine direkt in die Hand nehmen" },

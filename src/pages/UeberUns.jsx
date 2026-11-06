@@ -91,7 +91,7 @@ export default function UeberUns() {
               Mit Kopf, Herz, Hand und Fuss zum <span className="text-gradient-gold">Heilsteinberater</span>
             </h1>
             <p className="mt-5 max-w-xl text-lg text-white/80">
-              Die Heilsteinschule Schweiz vermittelt seit 2011 die analytische Steinheilkunde nach
+              Die Heilsteinschule Schweiz vermittelt seit 2008 die analytische Steinheilkunde nach
               Michael Gienger — mit Kopf, Herz, Hand und Fuss. Wir bilden Heilsteinberaterinnen und
               Heilsteinberater aus, die Heilsteine als verlässliche Lebensbegleiter verstehen und
               einsetzen. Erfahren Sie mehr über unsere Werte, unser Team und unsere Ausbildung.
@@ -151,7 +151,7 @@ export default function UeberUns() {
               <p className="mt-4 text-base leading-relaxed text-muted-foreground">
                 Seit 2008 beschäftige ich mich professionell mit Heilsteinen. Meine Ausbildung in
                 analytischer Steinheilkunde durchlief ich in Deutschland bei Michael Gienger, Werner Kühni
-                und Walter von Holst. Die Heilsteinschule Schweiz habe ich im Jahr 2011 gegründet. Sie ist
+                und Walter von Holst. Die Heilsteinschule Schweiz habe ich im Jahr 2008 gegründet. Sie ist
                 zertifiziert vom SVNH, unser dazugehöriger Heilsteinshop-Asp ist GKS zertifiziert.
               </p>
               <p className="mt-4 text-base leading-relaxed text-muted-foreground">

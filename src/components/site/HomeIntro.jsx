@@ -31,7 +31,7 @@ export default function HomeIntro() {
             </div>
 
             <p className="font-heading text-lg leading-relaxed text-amethyst sm:text-xl">
-              Seit 2011 widmen wir uns mit grosser Leidenschaft der analytischen Steinheilkunde. Unser Wissen
+              Seit 2008 widmen wir uns mit grosser Leidenschaft der analytischen Steinheilkunde. Unser Wissen
               basiert auf langjähriger Erfahrung und fundierten Ausbildungen in Deutschland bei Michael Gienger,
               Werner Kühni und Walter von Holst. Aus dem Herzenswunsch heraus, die faszinierende Welt der
               Heilsteine allen Menschen zugänglich zu machen, wurde die Heilsteinschule Schweiz gegründet.

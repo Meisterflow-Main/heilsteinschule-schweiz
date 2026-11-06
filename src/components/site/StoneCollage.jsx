@@ -80,7 +80,7 @@ export default function StoneCollage() {
                 className="mt-2 text-[0.55rem] font-semibold uppercase tracking-[0.12em] sm:text-[0.65rem]"
                 style={{ color: "#C19A3B" }}
               >
-                SVNH zertifiziert · Seit 2011
+                SVNH zertifiziert · Seit 2008
               </p>
 
               <div className="mt-4 rounded-xl bg-white p-1.5 sm:p-2">

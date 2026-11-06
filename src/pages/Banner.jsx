@@ -136,7 +136,7 @@ export default function Banner() {
                 className="mt-3 text-[0.65rem] font-semibold uppercase tracking-[0.15em] sm:text-xs"
                 style={{ color: "#C19A3B" }}
               >
-                SVNH zertifiziert · Seit 2011
+                SVNH zertifiziert · Seit 2008
               </p>
 
               <div className="mt-6 rounded-2xl bg-white p-2.5 shadow-lg">

@@ -23,7 +23,7 @@ const LOCATIONS = [
     name: "Asp",
     role: "Hauptsitz · Shop & Praxis · Info-Nachmittag/-Abend",
     icon: Store,
-    text: "Hauptsitz der Heilsteinschule mit Heilsteinshop, Praxis und Schulungsräumen. Hier begann 2011 alles.",
+    text: "Hauptsitz der Heilsteinschule mit Heilsteinshop, Praxis und Schulungsräumen. Hier begann 2008 alles.",
     color: "bg-citrine/15 text-citrine-deep",
   },
   {

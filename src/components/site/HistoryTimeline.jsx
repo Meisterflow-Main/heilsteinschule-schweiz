@@ -22,7 +22,7 @@ const TIMELINE = [
     text: "Nach der Handwerkszeit und Auslandreisen absolviert er 1983 die Polizeirekrutenschule und dient bis 1990 bei der Kapo Aargau — Verantwortung im Dienst, bevor es ihn in die Wirtschaft zieht.",
   },
   {
-    year: "2011",
+    year: "2008",
     img: "https://media.base44.com/images/public/6aa92ec5274311c12da18ee6/a2da5d70c_ChatGPTImageSep30202602_17_44AM.png",
     title: "Gründung der Heilsteinschule",
     text: "Nach der Ausbildung in analytischer Steinheilkunde bei Michael Gienger gründet Bruno Vogler Pfeiffer die Heilsteinschule Schweiz und bildet bis heute über 250 Personen aus.",
