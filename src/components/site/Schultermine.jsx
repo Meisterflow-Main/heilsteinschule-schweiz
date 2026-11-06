@@ -11,6 +11,7 @@ export const TERMINE = [
 ];
 
 export const KALENDER = [
+  { name: "Schulkalender Bern 2", zeitraum: "Januar 2027 bis Oktober 2027" },
   { name: "Schulkalender Münsingen 2", groesse: "10.51 KB", start: "23.01.2027", rhythmus: "Wochenenden", dl: 3 },
   { name: "Schulkalender Wallbach 2", groesse: "19.39 KB", start: "21.01.2027", rhythmus: "Donnerstags", dl: 23 },
   { name: "Schulkalender Wallbach 1", groesse: "10.54 KB", start: "30.01.2027", rhythmus: "Wochenenden", dl: 28 },
@@ -93,17 +94,25 @@ export default function Schultermine({ withHeading = true }) {
                 <h3 className="font-heading text-lg font-semibold text-amethyst">{k.name}</h3>
               </div>
               <p className="mt-3 text-sm text-muted-foreground">
-                Start {k.start} · <strong>{k.rhythmus}</strong>
+                {k.zeitraum ? (
+                  k.zeitraum
+                ) : (
+                  <>
+                    Start {k.start} · <strong>{k.rhythmus}</strong>
+                  </>
+                )}
               </p>
-              <p className="text-xs text-muted-foreground">{k.groesse}</p>
-              <a
-                href={`https://heilsteinschule.swiss/ausbildung/schultermine/?dl=${k.dl}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-4 inline-flex items-center gap-1.5 text-sm font-medium text-citrine-deep hover:underline"
-              >
-                <Download className="h-4 w-4" /> Download
-              </a>
+              {k.groesse && <p className="text-xs text-muted-foreground">{k.groesse}</p>}
+              {k.dl && (
+                <a
+                  href={`https://heilsteinschule.swiss/ausbildung/schultermine/?dl=${k.dl}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-4 inline-flex items-center gap-1.5 text-sm font-medium text-citrine-deep hover:underline"
+                >
+                  <Download className="h-4 w-4" /> Download
+                </a>
+              )}
             </div>
           </Reveal>
         ))}
