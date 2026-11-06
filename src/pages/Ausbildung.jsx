@@ -39,7 +39,7 @@ export default function Ausbildung() {
               Zertifizierte Grundausbildung der <span className="text-gradient-gold">Heilsteinschule Schweiz</span>
             </h1>
             <p className="mt-5 max-w-xl text-lg text-white/80">
-              Ruth Rios und Bruno Vogler Pfeiffer begleiten Sie auf dem Weg zum Heilsteinberater —
+              Ruth Rios, Bluette Caruso und Bruno Vogler Pfeiffer begleiten Sie auf dem Weg zum Heilsteinberater —
               mit Kopf, Herz, Hand und Fuss.
             </p>
           </Reveal>
