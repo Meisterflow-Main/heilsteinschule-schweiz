@@ -12,7 +12,6 @@ export const TERMINE = [
 
 export const KALENDER = [
   { name: "Schulkalender Münsingen 2", groesse: "10.51 KB", start: "23.01.2027", rhythmus: "Wochenenden", dl: 3 },
-  { name: "Schulkalender Asp 8", groesse: "166.91 KB", start: "21.05.2026", rhythmus: "Donnerstags", dl: 15 },
   { name: "Schulkalender Wallbach 2", groesse: "19.39 KB", start: "21.01.2027", rhythmus: "Donnerstags", dl: 23 },
   { name: "Schulkalender Wallbach 1", groesse: "10.54 KB", start: "30.01.2027", rhythmus: "Wochenenden", dl: 28 },
 ];
@@ -111,7 +110,7 @@ export default function Schultermine({ withHeading = true }) {
       </div>
 
       <Reveal>
-        <div className="mt-8 text-center text-xs text-muted-foreground">Zeige 4 von insgesamt 4 Dateien</div>
+        <div className="mt-8 text-center text-xs text-muted-foreground">Zeige {KALENDER.length} von insgesamt {KALENDER.length} Dateien</div>
       </Reveal>
     </div>
   );
