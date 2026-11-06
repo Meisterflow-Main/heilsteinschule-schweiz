@@ -130,7 +130,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-6 flex justify-center border-t border-white/10 pt-6 text-center">
-          <a href="https://meisterflow.ch" target="_blank" rel="noopener noreferrer" className="text-xs text-white/40 transition hover:text-citrine-light">
+          <a href="https://meisterflow.ch" target="_blank" rel="noopener noreferrer" className="text-xs text-white/60 transition hover:text-citrine-light">
             Website erstellt von MeisterFlow
           </a>
         </div>
