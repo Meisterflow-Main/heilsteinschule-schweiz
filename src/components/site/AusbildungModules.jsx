@@ -48,28 +48,23 @@ const MODULE = [
     items: [
       {
         nr: "1",
-        title: "Heilsteine kennenlernen und Fälschungen erkennen",
-        text: "Vertiefte Kenntnisse über verschiedene Heilsteine und Kristalle erwerben, ihre Eigenschaften kennenlernen und echte Steine von Fälschungen und Imitationen unterscheiden.",
+        title: "Heilsteine kennen lernen, Fälschungen erkennen",
       },
       {
         nr: "2",
-        title: "Heilsteine und Kristalle praktisch anwenden",
-        text: "Unterschiedliche Anwendungsmöglichkeiten von Heilsteinen und Kristallen kennenlernen. Dazu gehören Heilsteinwasser sowie die Anwendung und Wirkung von Steinen in Wohn- und Arbeitsräumen.",
+        title: "Heilsteine und Kristalle anwenden, Heilsteinwasser und Wirkung im Raum",
       },
       {
         nr: "3",
-        title: "Krankheitsbilder und psychische Herausforderungen",
-        text: "Sich mit verschiedenen Krankheitsbildern und psychischen Problemen auseinandersetzen und die unterstützende Rolle der Steinheilkunde auf dem persönlichen Lebensweg kennenlernen.",
+        title: "Krankheitsbilder, psychische Probleme, Unterstützung auf dem Lebensweg",
       },
       {
         nr: "4",
-        title: "Strahlenschutz und ergänzende Themenbereiche",
-        text: "Beschäftigung mit Strahlenschutz, ätherischen Ölen und kolloidalem Silber sowie deren Einordnung in die ergänzenden Themen der Steinheilkunde.",
+        title: "Strahlenschutz, ätherische Öle, kolloidales Silber",
       },
       {
         nr: "5",
-        title: "Analytisches und intuitives Wissen entwickeln",
-        text: "Das analytische Verständnis und die intuitive Wahrnehmung schulen, um Heilsteine bewusster zu erkennen, ihre Eigenschaften besser zu verstehen und sie gezielt anzuwenden.",
+        title: "Analytisches und intuitives Wissen erlangen",
       },
     ],
     closing:
@@ -146,7 +141,7 @@ function ModulBox({ m, index }) {
               <div>
                 <p className="text-sm font-semibold leading-snug text-amethyst">{it.title}</p>
                 {it.lead && <p className="mt-0.5 text-xs font-medium text-citrine-deep">{it.lead}</p>}
-                <p className="mt-1 text-xs leading-relaxed text-foreground/75">{it.text}</p>
+                {it.text && <p className="mt-1 text-xs leading-relaxed text-foreground/75">{it.text}</p>}
               </div>
             </li>
           ))}
