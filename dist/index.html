@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="https://heilsteinschule.swiss/media/Arrow.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#2B1B4D" />
+    <title>Heilsteinschule Schweiz: Heilsteinkraft erfahren, spüren, lernen</title>
+    <meta name="description" content="An der Heilsteinschule Schweiz wird mit Kopf, Herz, Hand und Fuss gelehrt und gelernt. Zertifizierte Grundausbildung in analytischer Steinheilkunde nach Michael Gienger, Werner Kühni und Walter von Holst. Schulen in Asp, Wallbach, Münsingen und Uster." />
+    <meta name="keywords" content="Heilsteinschule, Heilsteine, Steinheilkunde, Edelsteine, Ausbildung, SVNH, Gienger, Kühni, Asp, Münsingen, Uster, Wallbach, Heilsteinberater" />
+    <meta name="author" content="Heilsteinschule Schweiz, Bruno Vogler Pfeiffer" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="de_CH" />
+    <meta property="og:site_name" content="Heilsteinschule Schweiz" />
+    <meta property="og:title" content="Heilsteinschule Schweiz: Heilsteinkraft erfahren, spüren, lernen" />
+    <meta property="og:description" content="Zertifizierte Grundausbildung in analytischer Steinheilkunde. Mit Kopf, Herz, Hand und Fuss zum Heilsteinberater." />
+    <meta property="og:image" content="https://heilsteinschule.swiss/media/wunderblock/SchuleWeb72x.jpg" />
+    <meta property="og:url" content="https://www.heilsteinschule.swiss/" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Heilsteinschule Schweiz" />
+    <meta name="twitter:description" content="Heilsteinkraft erfahren, spüren, lernen. Zertifizierte Ausbildung in analytischer Steinheilkunde." />
+    <meta name="twitter:image" content="https://heilsteinschule.swiss/media/wunderblock/SchuleWeb72x.jpg" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "EducationalOrganization",
+      "name": "Heilsteinschule Schweiz",
+      "alternateName": "Heilsteinshop-Asp",
+      "url": "https://www.heilsteinschule.swiss/",
+      "logo": "https://heilsteinschule.swiss/media/LogoName.png",
+      "image": "https://heilsteinschule.swiss/media/wunderblock/SchuleWeb72x.jpg",
+      "description": "Zertifizierte Grundausbildung in analytischer Steinheilkunde. Mit Kopf, Herz, Hand und Fuss zum Heilsteinberater.",
+      "founder": {
+        "@type": "Person",
+        "name": "Bruno Vogler Pfeiffer"
+      },
+      "foundingDate": "2011",
+      "telephone": "+41793896622",
+      "email": "info@heilsteinschule.ch",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Dorfstrasse 22",
+        "postalCode": "5025",
+        "addressLocality": "Asp",
+        "addressCountry": "CH"
+      },
+      "areaServed": ["Asp", "Wallbach", "Münsingen", "Uster"],
+      "sameAs": ["https://www.facebook.com/groups/1905182292833468"]
+    }
+    </script>
+    <script type="module" crossorigin src="/assets/index-Cfl2GQDO.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-BM4DyiYV.css">
+    <script type="module">
+if (window.self === window.top) {
+  let lastPath = "";
+  // The visitor's analytics_storage choice from window.__b44Consent; null until one is known.
+  let consentGranted = null;
+  function getPageNameFromPath(path) {
+    const segments = path.split("/").filter(Boolean);
+    return segments[0] || null;
+  }
+  // Same rules as @base44/sdk analytics. Read on every send: the server sets the meta.
+  function analyticsMode() {
+    const meta = document.querySelector('meta[name="base44-analytics"]');
+    return meta ? meta.getAttribute("content") : null;
+  }
+  function deniedBefore() {
+    try {
+      return window.localStorage.getItem("base44_analytics_denied") === "1";
+    } catch (e) {
+      return false;
+    }
+  }
+  function mayTrack() {
+    const mode = analyticsMode();
+    if (mode === "off") return false;
+    if (mode === "consent") return consentGranted === true;
+    if (mode === "on") return consentGranted === null ? !deniedBefore() : consentGranted;
+    return true;
+  }
+  function trackPageView() {
+    if (!mayTrack()) return;
+    const path = window.location.pathname;
+    if (path === lastPath) return;
+    lastPath = path;
+    const pageName = getPageNameFromPath(path) || "home";
+    const appId = "";
+    if (!appId) return;
+    fetch(`/api/app-logs/${appId}/log-user-in-app/${pageName}`, {
+      method: "POST",
+    }).catch(() => {});
+  }
+  const originalPushState = history.pushState.bind(history);
+  history.pushState = function (...args) {
+    originalPushState(...args);
+    trackPageView();
+  };
+  const originalReplaceState = history.replaceState.bind(history);
+  history.replaceState = function (...args) {
+    originalReplaceState(...args);
+    trackPageView();
+  };
+  window.addEventListener("popstate", trackPageView);
+  // A module script runs after the head's classic scripts, so the listener exists by now.
+  // Without it, "consent" never sends and "on" relies on the saved Decline only.
+  try {
+    if (window.__b44Consent) {
+      window.__b44Consent.on(
+        "analytics_storage",
+        function () {
+          consentGranted = true;
+          trackPageView();
+        },
+        function () {
+          consentGranted = false;
+          // A later grant sends the page the visitor is on, even one they saw before.
+          lastPath = "";
+        }
+      );
+    }
+  } catch (e) {}
+  trackPageView();
+}
+</script>
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
