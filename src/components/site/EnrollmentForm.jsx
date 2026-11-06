@@ -12,7 +12,6 @@ const STANDORTE = [
   "Asp (Hauptsitz — laufende Klasse Asp 8)",
 ];
 const STARTS = [
-  "Asp8 — ab 21.05.2026 (Donnerstags)",
   "Münsingen 2 — ab 23.01.2027 (Wochenenden)",
   "Wallbach 1 — ab 30.01.2027 (Wochenenden)",
   "Wallbach 2 — ab 21.01.2027 (Donnerstags)",
