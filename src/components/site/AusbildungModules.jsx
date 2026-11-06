@@ -10,33 +10,27 @@ const MODULE = [
     title: "Grundlagen der analytischen Steinheilkunde",
     icon: BookOpen,
     subtitle:
-      "Die analytische Steinheilkunde nach Michael Gienger basiert auf vier wesentlichen Grundlagen: der geologischen Entstehung, der Kristallstruktur, der chemischen Zusammensetzung und der Farbe der Heilsteine.",
-    intro:
-      "Im Rahmen der Ausbildung vermitteln wir geologische Grundkenntnisse sowie ein fundiertes Verständnis für die Entstehung und die unterschiedlichen Eigenschaften der Heilsteine. Dabei betrachten wir die Zusammenhänge zwischen den vier Grundlagen und dem menschlichen Erleben:",
+      "Dies sind die 4 Grundlagen der analytischen Steinheilkunde nach Michael Gienger: Wir vermitteln geologische Grundkenntnisse, Entstehung, Farbenlehre, chemische Zusammensetzung der Heilsteine und Kristallstrukturen.",
     items: [
       {
         nr: "1",
         title: "Entstehung",
-        lead: "in Beziehung zu Lebenssituationen",
-        text: "Die Entstehungsgeschichte eines Heilsteins steht in Beziehung zu verschiedenen Lebenssituationen und deren Erfahrungen.",
+        text: "steht in Beziehung zu Lebenssituationen",
       },
       {
         nr: "2",
         title: "Kristallstruktur",
-        lead: "Spiegel der menschlichen Grundhaltung",
-        text: "Die Kristallstruktur eines Heilsteins spiegelt die grundlegende Haltung und innere Ausrichtung des Menschen wider.",
+        text: "spiegelt die Grundhaltung des Menschen wider",
       },
       {
         nr: "3",
-        title: "Chemische Zusammensetzung",
-        lead: "Verbindung zu Stoffwechselprozessen",
-        text: "Die chemische Zusammensetzung der Heilsteine steht in Verbindung mit den Stoffwechselprozessen des menschlichen Körpers.",
+        title: "Zusammensetzung",
+        text: "ist die Verbindung zu Stoffwechselprozessen",
       },
       {
         nr: "4",
-        title: "Farbenlehre",
-        lead: "Einfluss auf Körper und Psyche",
-        text: "Die Farbe eines Heilsteins beeinflusst die Organsysteme sowie seelische und mentale Reaktionen und das geistige Erleben.",
+        title: "Farbe",
+        text: "beeinflusst Organsysteme und seelische/mentale Reaktionen, sowie geistiges Erleben",
       },
     ],
     closing:
