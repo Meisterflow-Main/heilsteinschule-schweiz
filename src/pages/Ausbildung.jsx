@@ -7,6 +7,7 @@ import TrainingLocations from "@/components/site/TrainingLocations";
 import AusbildungModules from "@/components/site/AusbildungModules";
 import Modul1Grundlagen from "@/components/site/Modul1Grundlagen";
 import Modul2Praxis from "@/components/site/Modul2Praxis";
+import Modul3Abschluss from "@/components/site/Modul3Abschluss";
 
 const VORAUSSETZUNGEN = [
   "Freude an Steinen und den Heilkräften der Natur.",
@@ -138,6 +139,9 @@ export default function Ausbildung() {
 
       {/* Modul 2 — Vertiefung und praktische Anwendung */}
       <Modul2Praxis />
+
+      {/* Modul 3 — Beratung, Natur und Zertifizierung */}
+      <Modul3Abschluss />
 
       {/* Rabatt & Spezielles */}
       <section className="mx-auto max-w-7xl px-4 py-20 sm:px-6">
