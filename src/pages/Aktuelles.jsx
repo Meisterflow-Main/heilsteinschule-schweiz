@@ -89,7 +89,7 @@ const NEWSLETTER = [
   { d: "Februar 2024", l: "Newsletter Februar 2024", url: "https://heilsteinschule.swiss/modules/tiny_newsletter/web.php?n=1&a=" },
 ];
 
-export default function News() {
+export default function Aktuelles() {
   const [nlName, setNlName] = React.useState("");
   const [nlEmail, setNlEmail] = React.useState("");
   const [nlConsent, setNlConsent] = React.useState(false);

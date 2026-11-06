@@ -9,7 +9,8 @@ import ScrollToTop from './components/ScrollToTop';
 import Layout from '@/components/site/Layout';
 import Home from '@/pages/Home';
 import Ausbildung from '@/pages/Ausbildung';
-import News from '@/pages/News';
+import Aktuelles from '@/pages/Aktuelles';
+import AnalytischeSteinheilkunde from '@/pages/AnalytischeSteinheilkunde';
 import LadenPraxis from '@/pages/LadenPraxis';
 import Lehrfilme from '@/pages/Lehrfilme';
 import Kontakt from '@/pages/Kontakt';
@@ -75,7 +76,8 @@ const AuthenticatedApp = () => {
       <Route element={<Layout />}>
         <Route path="/" element={<Home />} />
         <Route path="/ausbildung" element={<Ausbildung />} />
-        <Route path="/news" element={<News />} />
+        <Route path="/news" element={<Aktuelles />} />
+        <Route path="/analytische-steinheilkunde" element={<AnalytischeSteinheilkunde />} />
         <Route path="/laden-praxis" element={<LadenPraxis />} />
         <Route path="/lehrfilme" element={<Lehrfilme />} />
         <Route path="/kontakt" element={<Kontakt />} />

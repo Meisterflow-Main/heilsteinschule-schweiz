@@ -1,0 +1,56 @@
+{
+  "name": "Heilstein",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Name des Heilsteins, z. B. Amethyst oder Rosenquarz."
+    },
+    "description": {
+      "type": "string",
+      "description": "Beschreibung des Steins nach der analytischen Steinheilkunde."
+    },
+    "farbe": {
+      "type": "string",
+      "description": "Farbe und Farbwirkung des Steins."
+    },
+    "kristallsystem": {
+      "type": "string",
+      "description": "Kristallstruktur bzw. Kristallsystem des Steins."
+    },
+    "zusammensetzung": {
+      "type": "string",
+      "description": "Chemische Zusammensetzung und enthaltene Mineralien."
+    },
+    "anwendung": {
+      "type": "string",
+      "description": "Typische Anwendung in Beratung und Praxis."
+    },
+    "fundorte": {
+      "type": "string",
+      "description": "Wichtige Fundorte, insbesondere in der Schweiz."
+    }
+  },
+  "required": [
+    "name",
+    "description"
+  ],
+  "rls": {
+    "read": {},
+    "create": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "update": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "delete": {
+      "user_condition": {
+        "role": "admin"
+      }
+    }
+  }
+}

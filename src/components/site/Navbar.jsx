@@ -10,6 +10,7 @@ const NAV_ITEMS = [
       { label: "Schulorte: Wallbach & Münsingen", to: "/schulorte", icon: MapPinned },
       { label: "Kalender", to: "/schultermine", icon: CalendarDays },
       { label: "Exkursionen & Alpenseminar", to: "/geologische-reisen", icon: Mountain },
+      { label: "Analytische Steinheilkunde", to: "/analytische-steinheilkunde", icon: Gem },
       { label: "Schülerberichte", to: "/schueler-berichte", icon: Users },
     ],
   },
@@ -73,7 +74,7 @@ const NAV_ITEMS = [
 ];
 
 const ACTIVE_PATHS = {
-  Ausbildung: ["/ausbildung", "/schulorte", "/schultermine", "/geologische-reisen", "/schueler-berichte", "/alpenseminar-2025", "/glarnerland-engadin", "/georeise-nord-sued-2021", "/zermatt-2022", "/heilstein-museum-2022", "/anmeldung", "/ausbildung-anmeldung", "/ausbildung-anfrage"],
+  Ausbildung: ["/ausbildung", "/analytische-steinheilkunde", "/schulorte", "/schultermine", "/geologische-reisen", "/schueler-berichte", "/alpenseminar-2025", "/glarnerland-engadin", "/georeise-nord-sued-2021", "/zermatt-2022", "/heilstein-museum-2022", "/anmeldung", "/ausbildung-anmeldung", "/ausbildung-anfrage"],
   "Die Schule": ["/ueber-uns", "/brunos-buch", "/michael-gienger"],
   "Verkaufsladen Asp": ["/verkaufsladen-asp", "/armbaender-kreation-diopteia", "/laden-praxis"],
   "Videos & Newsletter": ["/lehrfilme", "/news"],
