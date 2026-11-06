@@ -4,7 +4,7 @@ import Reveal from "@/components/site/Reveal";
 
 const ZERTIFIKATE = ["GKS-zertifiziert", "SVNH-zertifiziert nach AL2"];
 
-const INTRO_IMG = "https://base44.app/api/apps/6aa92ec5274311c12da18ee6/files/mp/public/6aa92ec5274311c12da18ee6/c4bc3321f_heilsteinschule-berg.jpg";
+const INTRO_IMG = "https://base44.app/api/apps/6aa92ec5274311c12da18ee6/files/mp/public/6aa92ec5274311c12da18ee6/1b4640672_image1.jpeg";
 
 export default function HomeIntro() {
   return (
@@ -15,9 +15,9 @@ export default function HomeIntro() {
             <div className="overflow-hidden rounded-3xl border border-border shadow-lift">
               <img
                 src={INTRO_IMG}
-                alt="Teilnehmerinnen der Heilsteinschule Schweiz im Hoodie vor Berg und Gletscher"
+                alt="Gruppe der Heilsteinschule Schweiz auf der Wiese vor Berg und Gletscher"
                 loading="lazy"
-                className="aspect-[4/5] w-full object-cover"
+                className="aspect-[4/3] w-full object-cover"
               />
             </div>
           </Reveal>
