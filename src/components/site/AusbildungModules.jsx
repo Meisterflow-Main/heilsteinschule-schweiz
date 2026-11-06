@@ -81,33 +81,27 @@ const MODULE = [
     items: [
       {
         nr: "1",
-        title: "Heilsteinberatung und Integration in die Praxis",
-        text: "Wie finde ich den passenden Heilstein? Wie kann ich mein erworbenes Wissen sinnvoll und gezielt in meine eigene Praxis integrieren? Wir vermitteln Grundlagen für eine fundierte und individuelle Heilsteinberatung.",
+        title: "Wie finde ich den richtigen Heilstein? Wie kann ich mein Wissen in meine Praxis integrieren?",
       },
       {
         nr: "2",
-        title: "Selbsterfahrung und persönliche Entwicklung",
-        text: "Durch praktische Übungen und eigene Erfahrungen vertiefen die Teilnehmenden ihr Verständnis für Heilsteine und gewinnen Sicherheit im Umgang mit deren Anwendungsmöglichkeiten.",
+        title: "Selbsterfahrung und Erfahrungen erlangen",
       },
       {
         nr: "3",
-        title: "Exkursion ins Fricktal",
-        text: "Die Natur hautnah erleben: Bei einer Exkursion ins Fricktal lernen die Teilnehmenden, Versteinerungen zu finden und sich mit der Geomantie auseinanderzusetzen.",
+        title: "Exkursion im Fricktal, Versteinerungen finden, Geomantie erfahren",
       },
       {
         nr: "4",
-        title: "Alpenseminar – obligatorischer Praxisteil",
-        text: "Das Alpenseminar ist ein obligatorischer Bestandteil der Ausbildung. Dabei begeben sich die Teilnehmenden auf die Suche nach Schweizer Heilsteinen und vertiefen ihre praktischen Kenntnisse direkt in der Natur.",
+        title: "Das Alpenseminar als obligatorischer Praxisteil, Schweizer Heilsteine finden",
       },
       {
         nr: "5",
-        title: "Ausführliche Ausbildungsunterlagen und Cloud-Zugang",
-        text: "Alle Teilnehmenden erhalten ausführliche Ausbildungsunterlagen sowie Zugang zur Heilsteinschule-Cloud mit ergänzenden Lernmaterialien.",
+        title: "Ausführliche Unterlagen und Zugang zur Heilsteinschule-Cloud",
       },
       {
         nr: "6",
-        title: "Abschlussprüfung und Zertifizierung",
-        text: "Nach erfolgreichem Abschluss der Ausbildung und bestandener Prüfung wird das SVNH-Zertifikat feierlich überreicht.",
+        title: "Abschlussprüfung und Überreichen des SVNH Zertifikats",
       },
     ],
     closing:
