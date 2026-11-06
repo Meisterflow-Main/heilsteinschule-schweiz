@@ -156,7 +156,7 @@ function ModulBox({ m, index }) {
 
 export default function AusbildungModules() {
   return (
-    <section className="bg-quartz/60">
+    <section id="module" className="scroll-mt-24 bg-quartz/60">
       <div className="mx-auto max-w-7xl px-4 py-20 sm:px-6">
         <Reveal>
           <SectionHeading

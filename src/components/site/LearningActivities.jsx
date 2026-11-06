@@ -13,7 +13,7 @@ const ACTIVITIES = [
     text: "Ruth Rios, Bluette Caruso und Bruno Vogler Pfeiffer lehren mit Kopf, Herz, Hand und Fuss — analytisches Wissen und praktische Anwendung in Asp, Wallbach und Münsingen.",
     img: "https://heilsteinschule.swiss/media/Ruth_Bruno_Aug_25_2.jpg",
     hd: false,
-    to: "/ausbildung",
+    to: "/ausbildung#module",
   },
   {
     icon: Compass,
