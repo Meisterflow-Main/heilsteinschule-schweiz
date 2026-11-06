@@ -186,7 +186,12 @@ export default function AGB() {
             <p>Dorfstrasse 22</p>
             <p>5025 Asp</p>
             <p>Tel. 079 389 66 22</p>
-            <p>E-Mail info(at)heilsteinschule(dot)ch</p>
+            <p>
+              E-Mail{" "}
+              <a href="mailto:anfragen@heilsteinschule.ch" className="text-citrine-deep underline underline-offset-2 hover:text-citrine">
+                anfragen@heilsteinschule.ch
+              </a>
+            </p>
           </div>
         </div>
       </Reveal>
