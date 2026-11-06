@@ -128,48 +128,44 @@ const MODULE = [
 
 function ModulBox({ m, index }) {
   return (
-    <Reveal delay={index * 0.06}>
-      <div className="rounded-3xl border border-border bg-white p-8 shadow-soft sm:p-10">
-        <div className="flex flex-wrap items-start justify-between gap-4">
-          <div className="flex items-start gap-4">
-            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-citrine/15 text-citrine-deep">
-              <m.icon className="h-6 w-6" />
-            </div>
-            <div>
-              <p className="font-mono text-xs uppercase tracking-[0.2em] text-citrine-deep">{m.step}</p>
-              <h3 className="mt-1.5 font-heading text-2xl font-semibold leading-snug text-amethyst">{m.title}</h3>
-            </div>
+    <Reveal delay={index * 0.08}>
+      <div className="flex h-full flex-col rounded-3xl border border-border bg-white p-8 shadow-soft">
+        <div className="flex items-center justify-between">
+          <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-citrine/15 text-citrine-deep">
+            <m.icon className="h-6 w-6" />
           </div>
           <span className="rounded-full bg-quartz px-3 py-1 font-mono text-[11px] uppercase tracking-[0.15em] text-amethyst">
             {m.tag}
           </span>
         </div>
+        <p className="mt-5 font-mono text-xs uppercase tracking-[0.2em] text-citrine-deep">{m.step}</p>
+        <h3 className="mt-2 font-heading text-xl font-semibold leading-snug text-amethyst">{m.title}</h3>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{m.subtitle}</p>
+        {m.intro && <p className="mt-3 text-sm font-medium text-amethyst">{m.intro}</p>}
 
-        <p className="mt-5 text-sm leading-relaxed text-muted-foreground sm:text-base">{m.subtitle}</p>
-        {m.intro && <p className="mt-4 text-sm font-medium text-amethyst">{m.intro}</p>}
-
-        <div className="mt-5 grid gap-4 border-t border-border pt-6 md:grid-cols-2">
+        <ul className="mt-5 space-y-3 border-t border-border pt-5">
           {m.items.map((it) => (
-            <div key={it.nr} className="flex gap-4 rounded-2xl bg-quartz/60 p-5">
-              <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-citrine/20 font-mono text-xs font-semibold text-citrine-deep">
+            <li key={it.nr} className="flex gap-3">
+              <span className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-citrine/20 font-mono text-[11px] font-semibold text-citrine-deep">
                 {it.nr}
               </span>
               <div>
-                <h4 className="font-heading text-base font-semibold leading-snug text-amethyst">{it.title}</h4>
-                {it.lead && <p className="mt-0.5 text-xs font-medium uppercase tracking-wide text-citrine-deep">{it.lead}</p>}
-                <p className="mt-2 text-sm leading-relaxed text-foreground/80">{it.text}</p>
+                <p className="text-sm font-semibold leading-snug text-amethyst">{it.title}</p>
+                {it.lead && <p className="mt-0.5 text-xs font-medium text-citrine-deep">{it.lead}</p>}
+                <p className="mt-1 text-xs leading-relaxed text-foreground/75">{it.text}</p>
               </div>
-            </div>
+            </li>
           ))}
+        </ul>
+
+        <div className="mt-auto pt-5">
+          {m.closing && (
+            <p className="rounded-2xl border border-citrine/30 bg-citrine/5 p-4 text-xs leading-relaxed text-amethyst">
+              {m.closing}
+            </p>
+          )}
+          {m.note && <p className="mt-3 text-[11px] leading-relaxed text-muted-foreground">{m.note}</p>}
         </div>
-
-        {m.closing && (
-          <p className="mt-6 rounded-2xl border border-citrine/30 bg-citrine/5 p-5 text-sm leading-relaxed text-amethyst">
-            {m.closing}
-          </p>
-        )}
-
-        {m.note && <p className="mt-4 text-xs leading-relaxed text-muted-foreground">{m.note}</p>}
       </div>
     </Reveal>
   );
@@ -186,7 +182,7 @@ export default function AusbildungModules() {
             subtitle="Aufbauend, praxisnah und Schritt für Schritt — vom ersten Verständnis der Steine bis zum Schulzertifikat."
           />
         </Reveal>
-        <div className="mt-12 space-y-6">
+        <div className="mt-12 grid gap-6 lg:grid-cols-3">
           {MODULE.map((m, i) => (
             <ModulBox key={m.step} m={m} index={i} />
           ))}
