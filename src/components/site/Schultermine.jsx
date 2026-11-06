@@ -11,8 +11,7 @@ export const TERMINE = [
 ];
 
 export const KALENDER = [
-  { name: "Schulkalender Bern 2", zeitraum: "Januar 2027 bis Oktober 2027" },
-  { name: "Schulkalender Münsingen 2", groesse: "10.51 KB", start: "23.01.2027", rhythmus: "Wochenenden", dl: 3 },
+  { name: "Schulkalender Bern 2", zeitraum: "Januar 2027 bis Oktober 2027", groesse: "10.51 KB", dl: 3 },
   { name: "Schulkalender Wallbach 2", groesse: "19.39 KB", start: "21.01.2027", rhythmus: "Donnerstags", dl: 23 },
   { name: "Schulkalender Wallbach 1", groesse: "10.54 KB", start: "30.01.2027", rhythmus: "Wochenenden", dl: 28 },
 ];
