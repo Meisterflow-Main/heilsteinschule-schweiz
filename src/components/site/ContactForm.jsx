@@ -43,16 +43,21 @@ export default function ContactForm({ defaultDescription = "", compact = false, 
     if (!validate()) return;
     setStatus("loading");
     try {
+      const dateLabel = availableDates?.find((d) => d.date === form.preferredDate)?.label;
+      const descriptionParts = [];
+      if (inquiryType && inquiryType !== "allgemeine_anfrage") {
+        descriptionParts.push(`Anliegen: ${inquiryType.replace(/_/g, " ")}`);
+      }
+      if (form.preferredDate) descriptionParts.push(`Wunschtermin: ${dateLabel || form.preferredDate}`);
+      descriptionParts.push(form.description.trim());
       const res = await fetch(WEBHOOK_URL, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          type: inquiryType,
           name: form.name.trim(),
           email: form.email.trim(),
-          phone: form.phone.trim(),
-          preferred_date: form.preferredDate || null,
-          description: form.description.trim(),
+          phone: form.phone.trim() || "nicht angegeben",
+          description: descriptionParts.join("\n"),
         }),
       });
       if (!res.ok) throw new Error("Network response was not ok");

@@ -36,7 +36,7 @@ export default function AuftragBewerten() {
         body: JSON.stringify({
           name: name || "Anonym",
           email: "feedback@heilsteinschule.swiss",
-          phone: "",
+          phone: "nicht angegeben",
           description: `[CRITICAL_FEEDBACK] Sterne: ${rating}/5 | Q1: ${answers[0]}/5 | Q2: ${answers[1]}/5 | Q3: ${answers[2]}/5 | Kritik: ${kritik}`,
         }),
       });

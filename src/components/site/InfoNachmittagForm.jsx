@@ -63,8 +63,8 @@ export default function InfoNachmittagForm({ termine = [], idPrefix = "infon" })
         body: JSON.stringify({
           name: form.name.trim(),
           email: form.email.trim(),
-          phone: form.phone.trim(),
-          description: descriptionParts.join(" | "),
+          phone: form.phone.trim() || "nicht angegeben",
+          description: descriptionParts.join("\n"),
         }),
       });
       if (!res.ok) throw new Error("Network response was not ok");

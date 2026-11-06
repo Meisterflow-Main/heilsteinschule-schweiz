@@ -57,17 +57,20 @@ export default function EnrollmentForm({ idPrefix = "enrol", showTerms = true })
     if (!validate()) return;
     setStatus("loading");
     try {
+      const descriptionParts = [
+        "Verbindliche Anmeldung Grundausbildung",
+        `Schulort: ${form.standort}`,
+        `Gewünschter Start: ${form.start}`,
+      ];
+      if (form.message.trim()) descriptionParts.push(`Anmerkungen: ${form.message.trim()}`);
       const res = await fetch(WEBHOOK_URL, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          type: "ausbildung_anmeldung",
           name: form.name.trim(),
           email: form.email.trim(),
-          phone: form.phone.trim(),
-          standort: form.standort,
-          start: form.start,
-          description: form.message.trim(),
+          phone: form.phone.trim() || "nicht angegeben",
+          description: descriptionParts.join("\n"),
         }),
       });
       if (!res.ok) throw new Error("Network response was not ok");
