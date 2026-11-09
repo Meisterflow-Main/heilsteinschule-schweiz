@@ -6,6 +6,16 @@ import ContactForm from "@/components/site/ContactForm";
 import GoogleReviewCard from "@/components/site/GoogleReviewCard";
 
 export default function Kontakt() {
+  const anlass = new URLSearchParams(window.location.search).get("anlass");
+  const isInfoanlass = anlass === "Infoanlass";
+  const isSeminar = anlass === "Seminar";
+  const topic = isInfoanlass ? "Infoanlass" : isSeminar ? "Seminar" : "Kontaktanfrage";
+  const defaultDescription = isInfoanlass
+    ? "Anmeldung Infoanlass: "
+    : isSeminar
+      ? "Anmeldung Seminar: "
+      : "";
+
   return (
     <>
       <section className="relative overflow-hidden bg-amethyst text-white">
@@ -91,7 +101,12 @@ export default function Kontakt() {
                 Sie werden nach der Anmeldung von uns kontaktiert.
               </div>
               <div className="mt-6">
-                <ContactForm defaultDescription="" idPrefix="kontakt" />
+                <ContactForm
+                  defaultDescription={defaultDescription}
+                  idPrefix="kontakt"
+                  inquiryType={isInfoanlass || isSeminar ? `${topic.toLowerCase()}_anmeldung` : "allgemeine_anfrage"}
+                  topic={topic}
+                />
               </div>
             </div>
           </Reveal>

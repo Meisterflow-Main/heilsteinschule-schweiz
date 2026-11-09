@@ -30,7 +30,7 @@ export default function SeminarCard({ seminar, delay = 0 }) {
           </div>
           <p className="mt-2 text-xs text-muted-foreground">{seminar.hinweis}</p>
           <Link
-            to="/kontakt"
+            to="/kontakt?anlass=Seminar"
             className="mt-5 inline-flex w-fit items-center gap-2 rounded-full bg-citrine px-5 py-2.5 text-sm font-semibold text-amethyst-deep shadow-soft transition hover:bg-citrine-light"
           >
             Anmelden <ArrowRight className="h-4 w-4" />

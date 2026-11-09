@@ -2,9 +2,7 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { Loader2, CheckCircle2, AlertCircle, GraduationCap } from "lucide-react";
 import { Link } from "react-router-dom";
-
-const WEBHOOK_URL =
-  "https://app.meisterflow.ch/api/webhooks/enquiries/a902bb23d7e98901900e3750083b670344a14683633ae15f";
+import { sendAnfrage } from "@/lib/anfrage";
 
 const STANDORTE = [
   "Wallbach (Grundausbildung)",
@@ -63,17 +61,13 @@ export default function EnrollmentForm({ idPrefix = "enrol", showTerms = true })
         `Gewünschter Start: ${form.start}`,
       ];
       if (form.message.trim()) descriptionParts.push(`Anmerkungen: ${form.message.trim()}`);
-      const res = await fetch(WEBHOOK_URL, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          name: form.name.trim(),
-          email: form.email.trim(),
-          phone: form.phone.trim() || "nicht angegeben",
-          description: descriptionParts.join("\n"),
-        }),
+      await sendAnfrage({
+        topic: "Anmeldung Grundausbildung",
+        name: form.name.trim(),
+        email: form.email.trim(),
+        phone: form.phone.trim(),
+        message: descriptionParts.join("\n"),
       });
-      if (!res.ok) throw new Error("Network response was not ok");
       setStatus("success");
       setSubmittedOnce(true);
       setForm({ name: "", email: "", phone: "", standort: "", start: "", message: "", confirm: false, website: "" });

@@ -208,7 +208,7 @@ export default function LadenPraxis() {
           </Reveal>
           <Reveal delay={0.1}>
             <div className="mt-10 rounded-3xl border border-border bg-white p-6 shadow-soft sm:p-8">
-              <ContactForm defaultDescription="Beratung / Termin im Heilsteinshop-Asp" idPrefix="laden" inquiryType="termin_beratung" compact availableDates={upcomingDates} />
+              <ContactForm defaultDescription="Beratung / Termin im Heilsteinshop-Asp" idPrefix="laden" inquiryType="termin_beratung" topic="Terminanfrage Laden" compact availableDates={upcomingDates} />
             </div>
           </Reveal>
           <div className="mt-8 flex items-center justify-center gap-2 text-sm text-muted-foreground">

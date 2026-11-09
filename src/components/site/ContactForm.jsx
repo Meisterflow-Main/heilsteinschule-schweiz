@@ -2,11 +2,9 @@ import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Loader2, CheckCircle2, AlertCircle, Send } from "lucide-react";
 import { Link } from "react-router-dom";
+import { sendAnfrage } from "@/lib/anfrage";
 
-const WEBHOOK_URL =
-  "https://app.meisterflow.ch/api/webhooks/enquiries/a902bb23d7e98901900e3750083b670344a14683633ae15f";
-
-export default function ContactForm({ defaultDescription = "", compact = false, idPrefix = "", inquiryType = "allgemeine_anfrage", availableDates = null, showTerms = false }) {
+export default function ContactForm({ defaultDescription = "", compact = false, idPrefix = "", inquiryType = "allgemeine_anfrage", availableDates = null, showTerms = false, topic = "Kontaktanfrage" }) {
   const [form, setForm] = useState({
     name: "",
     email: "",
@@ -50,17 +48,13 @@ export default function ContactForm({ defaultDescription = "", compact = false, 
       }
       if (form.preferredDate) descriptionParts.push(`Wunschtermin: ${dateLabel || form.preferredDate}`);
       descriptionParts.push(form.description.trim());
-      const res = await fetch(WEBHOOK_URL, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          name: form.name.trim(),
-          email: form.email.trim(),
-          phone: form.phone.trim() || "nicht angegeben",
-          description: descriptionParts.join("\n"),
-        }),
+      await sendAnfrage({
+        topic,
+        name: form.name.trim(),
+        email: form.email.trim(),
+        phone: form.phone.trim(),
+        message: descriptionParts.join("\n"),
       });
-      if (!res.ok) throw new Error("Network response was not ok");
       setStatus("success");
       setSubmittedOnce(true);
       setForm({ name: "", email: "", phone: "", preferredDate: "", description: defaultDescription, confirm: false, company: "" });
