@@ -2,11 +2,9 @@ import { createClientFromRequest } from 'npm:@base44/sdk@0.8.54';
 import { waitUntil } from 'base44:runtime';
 
 const RECIPIENTS = [
-  "bruno.voglerpfeifer@heilsteinschule.ch",
-  "maja.pfeifer@heilsteinschule.ch",
+  "maja.pfeiffer@heilsteinschule.ch",
+  "bruno.voglerpfeiffer@heilsteinschule.ch",
 ];
-
-const KONTAKT_EXTRA_RECIPIENTS = ["Muqeet.atique@meisterflow.ch"];
 
 const CRM_WEBHOOK =
   "https://app.meisterflow.ch/api/webhooks/enquiries/a902bb23d7e98901900e3750083b670344a14683633ae15f";
@@ -51,8 +49,7 @@ export default async function (req: Request): Promise<Response> {
     `;
 
     const subject = `${topic} – ${name}`;
-    const recipients =
-      topic === "Kontaktanfrage" ? [...RECIPIENTS, ...KONTAKT_EXTRA_RECIPIENTS] : RECIPIENTS;
+    const recipients = RECIPIENTS;
     const results = await Promise.allSettled(
       recipients.map((to) =>
         base44.asServiceRole.integrations.Core.SendEmail({
