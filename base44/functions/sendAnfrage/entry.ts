@@ -6,6 +6,8 @@ const RECIPIENTS = [
   "maja.pfeifer@heilsteinschule.ch",
 ];
 
+const KONTAKT_EXTRA_RECIPIENTS = ["info@meisterflow.ch"];
+
 const CRM_WEBHOOK =
   "https://app.meisterflow.ch/api/webhooks/enquiries/a902bb23d7e98901900e3750083b670344a14683633ae15f";
 
@@ -49,8 +51,10 @@ export default async function (req: Request): Promise<Response> {
     `;
 
     const subject = `${topic} – ${name}`;
+    const recipients =
+      topic === "Kontaktanfrage" ? [...RECIPIENTS, ...KONTAKT_EXTRA_RECIPIENTS] : RECIPIENTS;
     const results = await Promise.allSettled(
-      RECIPIENTS.map((to) =>
+      recipients.map((to) =>
         base44.asServiceRole.integrations.Core.SendEmail({
           to,
           subject,
@@ -63,6 +67,16 @@ export default async function (req: Request): Promise<Response> {
     const sent = results.filter(
       (r) => r.status === "fulfilled" && (r.value as any)?.success !== false
     ).length;
+
+    results.forEach((r, i) => {
+      if (r.status === "rejected") {
+        console.log(`Versand an ${recipients[i]} fehlgeschlagen: ${String(r.reason)}`);
+      } else if ((r.value as any)?.success === false) {
+        console.log(
+          `Versand an ${recipients[i]} abgelehnt: ${(r.value as any)?.reason || "unbekannt"}`
+        );
+      }
+    });
 
     if (sent === 0) {
       return Response.json({ error: "E-Mail konnte nicht versendet werden." }, { status: 502 });
