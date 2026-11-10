@@ -12,7 +12,7 @@ export default function ContactForm({ defaultDescription = "", compact = false, 
     preferredDate: "",
     description: defaultDescription,
     confirm: false,
-    company: "", // honeypot
+    hp_trap: "", // honeypot
   });
   const [status, setStatus] = useState("idle"); // idle | loading | success | error
   const [errors, setErrors] = useState({});
@@ -36,7 +36,7 @@ export default function ContactForm({ defaultDescription = "", compact = false, 
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    if (form.company) return; // honeypot triggered
+    if (form.hp_trap) return; // honeypot triggered
     if (submittedOnce) return; // duplicate protection
     if (!validate()) return;
     setStatus("loading");
@@ -57,7 +57,7 @@ export default function ContactForm({ defaultDescription = "", compact = false, 
       });
       setStatus("success");
       setSubmittedOnce(true);
-      setForm({ name: "", email: "", phone: "", preferredDate: "", description: defaultDescription, confirm: false, company: "" });
+      setForm({ name: "", email: "", phone: "", preferredDate: "", description: defaultDescription, confirm: false, hp_trap: "" });
     } catch (err) {
       setStatus("error");
     }
@@ -90,8 +90,8 @@ export default function ContactForm({ defaultDescription = "", compact = false, 
       {/* Honeypot */}
       <input
         type="text"
-        name="company"
-        value={form.company}
+        name="hp_trap"
+        value={form.hp_trap}
         onChange={handleChange}
         tabIndex={-1}
         autoComplete="off"

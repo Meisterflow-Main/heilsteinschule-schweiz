@@ -17,7 +17,7 @@ export default function InfoNachmittagForm({ termine = [], idPrefix = "infon" })
     termin: "",
     personen: "1",
     nachricht: "",
-    company: "", // honeypot
+    hp_trap: "", // honeypot
   });
   const [status, setStatus] = useState("idle"); // idle | loading | success | error
   const [errors, setErrors] = useState({});
@@ -43,7 +43,7 @@ export default function InfoNachmittagForm({ termine = [], idPrefix = "infon" })
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    if (form.company) return; // honeypot
+    if (form.hp_trap) return; // honeypot
     if (submittedOnce) return; // duplicate protection
     if (!validate()) return;
     setStatus("loading");
@@ -69,7 +69,7 @@ export default function InfoNachmittagForm({ termine = [], idPrefix = "infon" })
       });
       setStatus("success");
       setSubmittedOnce(true);
-      setForm({ name: "", email: "", phone: "", termin: "", personen: "1", nachricht: "", company: "" });
+      setForm({ name: "", email: "", phone: "", termin: "", personen: "1", nachricht: "", hp_trap: "" });
     } catch (err) {
       setStatus("error");
     }
@@ -143,8 +143,8 @@ export default function InfoNachmittagForm({ termine = [], idPrefix = "infon" })
       {/* Honeypot */}
       <input
         type="text"
-        name="company"
-        value={form.company}
+        name="hp_trap"
+        value={form.hp_trap}
         onChange={handleChange}
         tabIndex={-1}
         autoComplete="off"
