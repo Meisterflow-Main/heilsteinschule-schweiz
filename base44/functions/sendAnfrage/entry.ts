@@ -6,6 +6,11 @@ const RECIPIENTS = [
   "bruno.voglerpfeiffer@heilsteinschule.ch",
 ];
 
+// Zusätzliche Empfänger pro Anliegen (z. B. Kontaktformular).
+const EXTRA_RECIPIENTS: Record<string, string[]> = {
+  Kontaktanfrage: ["Muqeet.atique@meisterflow.ch"],
+};
+
 const CRM_WEBHOOK =
   "https://app.meisterflow.ch/api/webhooks/enquiries/a902bb23d7e98901900e3750083b670344a14683633ae15f";
 
@@ -49,7 +54,7 @@ export default async function (req: Request): Promise<Response> {
     `;
 
     const subject = `${topic} – ${name}`;
-    const recipients = RECIPIENTS;
+    const recipients = [...RECIPIENTS, ...(EXTRA_RECIPIENTS[topic] || [])];
     const results = await Promise.allSettled(
       recipients.map((to) =>
         base44.asServiceRole.integrations.Core.SendEmail({
