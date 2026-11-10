@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { ArrowRight, Play, Users, Video, MapPin, Sparkles, Heart, Hand, Brain, Footprints, Star, Youtube } from "lucide-react";
-import YouTubePreview from "@/components/site/YouTubePreview";
+import YouTubeEmbed from "@/components/site/YouTubeEmbed";
 import { GOOGLE_REVIEWS_URL } from "@/components/site/GoogleReviewCard";
 import Reveal from "@/components/site/Reveal";
 import SectionHeading from "@/components/site/SectionHeading";
@@ -123,7 +123,7 @@ export default function Home() {
         </Reveal>
         <Reveal delay={0.1}>
           <div className="mt-10 overflow-hidden rounded-3xl border border-border bg-quartz shadow-lift">
-            <YouTubePreview id="Xy5rBRUfoSs" title="Die Heilsteinschule Schweiz stellt sich vor" />
+            <YouTubeEmbed id="Xy5rBRUfoSs" title="Die Heilsteinschule Schweiz stellt sich vor" autoplay={false} />
           </div>
         </Reveal>
         <Reveal delay={0.15}>
