@@ -6,7 +6,7 @@ const RECIPIENTS = [
   "maja.pfeifer@heilsteinschule.ch",
 ];
 
-const KONTAKT_EXTRA_RECIPIENTS = ["info@meisterflow.ch"];
+const KONTAKT_EXTRA_RECIPIENTS = ["Muqeet.atique@meisterflow.ch"];
 
 const CRM_WEBHOOK =
   "https://app.meisterflow.ch/api/webhooks/enquiries/a902bb23d7e98901900e3750083b670344a14683633ae15f";
