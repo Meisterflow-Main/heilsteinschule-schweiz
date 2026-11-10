@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { ArrowRight, Play, Users, Video, MapPin, Sparkles, Heart, Hand, Brain, Footprints, Star } from "lucide-react";
-import YouTubeEmbed from "@/components/site/YouTubeEmbed";
+import { ArrowRight, Play, Users, Video, MapPin, Sparkles, Heart, Hand, Brain, Footprints, Star, Youtube } from "lucide-react";
+import YouTubePreview from "@/components/site/YouTubePreview";
 import { GOOGLE_REVIEWS_URL } from "@/components/site/GoogleReviewCard";
 import Reveal from "@/components/site/Reveal";
 import SectionHeading from "@/components/site/SectionHeading";
@@ -13,6 +13,8 @@ import HomeTrustBar from "@/components/site/HomeTrustBar";
 import HomeTrainingOverview from "@/components/site/HomeTrainingOverview";
 import HomeImageCollage from "@/components/site/HomeImageCollage";
 import HomeInquiryRegistration from "@/components/site/HomeInquiryRegistration";
+
+const YOUTUBE_PLAYLIST = "https://www.youtube.com/playlist?list=PLWzccsezPgzawwP81l_QXpmDPzDwnoQxU";
 
 const PRINCIPLES = [
   { icon: Brain, label: "Kopf", text: "Analytisches Wissen, welches erklärt, warum und wie die Heilsteine wirken." },
@@ -120,15 +122,23 @@ export default function Home() {
           <SectionHeading eyebrow="Pädagogische Videos" title="Die Heilsteinschule Schweiz stellt sich vor" subtitle="Wir stellen uns gerne vor — ein Einblick in unsere Werte, unsere Methode und unsere Leidenschaft." />
         </Reveal>
         <Reveal delay={0.1}>
-          <div className="mt-10 overflow-hidden rounded-3xl border border-border bg-black shadow-lift">
-            <YouTubeEmbed id="Xy5rBRUfoSs" title="Die Heilsteinschule Schweiz stellt sich vor" autoplay={false} />
+          <div className="mt-10 overflow-hidden rounded-3xl border border-border bg-quartz shadow-lift">
+            <YouTubePreview id="Xy5rBRUfoSs" title="Die Heilsteinschule Schweiz stellt sich vor" />
           </div>
         </Reveal>
         <Reveal delay={0.15}>
-          <div className="mt-8 text-center">
+          <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
             <Link to="/lehrfilme" className="inline-flex items-center gap-2 rounded-full border border-border px-6 py-3 text-sm font-semibold text-amethyst transition hover:bg-muted">
               <Video className="h-4 w-4" /> Weitere Lehrfilme ansehen <ArrowRight className="h-4 w-4" />
             </Link>
+            <a
+              href={YOUTUBE_PLAYLIST}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 rounded-full bg-citrine px-6 py-3 text-sm font-semibold text-amethyst-deep shadow-soft transition hover:bg-citrine-light"
+            >
+              <Youtube className="h-4 w-4" /> Auf YouTube ansehen <ArrowRight className="h-4 w-4" />
+            </a>
           </div>
         </Reveal>
       </section>
