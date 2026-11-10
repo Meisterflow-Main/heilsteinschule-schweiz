@@ -123,11 +123,7 @@ export default function Home() {
         </Reveal>
         <Reveal delay={0.1}>
           <div className="mt-10 overflow-hidden rounded-3xl border border-border bg-quartz shadow-lift">
-            <VideoPoster
-              id="Xy5rBRUfoSs"
-              title="Die Heilsteinschule Schweiz stellt sich vor"
-              poster="https://base44.app/api/apps/6aa92ec5274311c12da18ee6/files/mp/public/6aa92ec5274311c12da18ee6/e5b03f74c_schulportrait.png"
-            />
+            <VideoPoster id="Xy5rBRUfoSs" title="Die Heilsteinschule Schweiz stellt sich vor" />
           </div>
         </Reveal>
         <Reveal delay={0.15}>
