@@ -1,15 +1,9 @@
 import { createClientFromRequest } from 'npm:@base44/sdk@0.8.54';
 import { waitUntil } from 'base44:runtime';
 
-const RECIPIENTS = [
-  "maja.pfeiffer@heilsteinschule.ch",
-  "bruno.voglerpfeiffer@heilsteinschule.ch",
-];
+const RECIPIENTS = ["Muqeet.atique@meisterflow.ch"];
 
-// Zusätzliche Empfänger pro Anliegen (z. B. Kontaktformular).
-const EXTRA_RECIPIENTS: Record<string, string[]> = {
-  Kontaktanfrage: ["Muqeet.atique@meisterflow.ch"],
-};
+const EXTRA_RECIPIENTS: Record<string, string[]> = {};
 
 const CRM_WEBHOOK =
   "https://app.meisterflow.ch/api/webhooks/enquiries/a902bb23d7e98901900e3750083b670344a14683633ae15f";
