@@ -105,7 +105,10 @@ export default function Lehrfilme() {
                 title="Alle Youtube Filme - Heilsteinschule Schweiz"
               >
                 <img
-                  src="https://heilsteinschule.swiss/media/QR_back_to_school.png"
+                  src={`https://api.qrserver.com/v1/create-qr-code/?size=480x480&margin=10&data=${encodeURIComponent(YOUTUBE_PLAYLIST)}`}
+                  onError={(e) => {
+                    e.currentTarget.src = `https://quickchart.io/qr?size=480&margin=1&text=${encodeURIComponent(YOUTUBE_PLAYLIST)}`;
+                  }}
                   alt="QR Code für Youtube Filme der Heilsteinschule Schweiz"
                   className="h-40 w-40 object-contain sm:h-48 sm:w-48"
                 />
