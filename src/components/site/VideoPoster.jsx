@@ -3,7 +3,7 @@ import { Play } from "lucide-react";
 import YouTubeEmbed from "@/components/site/YouTubeEmbed";
 
 // Vorschaubild des Films — erst beim Klick startet das Video.
-export default function VideoPoster({ id, title = "Lehrfilm" }) {
+export default function VideoPoster({ id, title = "Lehrfilm", poster }) {
   const [playing, setPlaying] = useState(false);
 
   if (playing) return <YouTubeEmbed id={id} title={title} autoplay />;
@@ -16,7 +16,7 @@ export default function VideoPoster({ id, title = "Lehrfilm" }) {
       className="group relative block aspect-video w-full overflow-hidden bg-quartz"
     >
       <img
-        src={`https://i.ytimg.com/vi/${id}/maxresdefault.jpg`}
+        src={poster || `https://i.ytimg.com/vi/${id}/maxresdefault.jpg`}
         alt={title}
         loading="lazy"
         onError={(e) => {
