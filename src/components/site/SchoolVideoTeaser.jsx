@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { Play, Video, ArrowRight } from "lucide-react";
 import Reveal from "@/components/site/Reveal";
+import YouTubeEmbed from "@/components/site/YouTubeEmbed";
 
 const SHOP_HEILSTEINE = "https://heilstein-shop.com/heilsteine/";
 
@@ -35,9 +36,7 @@ export default function SchoolVideoTeaser() {
           </div>
           {open && (
             <div className="mt-6 overflow-hidden rounded-2xl border border-border bg-black shadow-lift">
-              <video controls preload="none" poster="https://www.heilsteinschule.swiss/media/Filme/Vorstellung_Film.png" className="aspect-video w-full">
-                <source src="https://www.heilsteinschule.swiss/media/Filme/Heilsteinschule_Schweiz_Vorstellung.webm" type="video/webm" />
-              </video>
+              <YouTubeEmbed id="Xy5rBRUfoSs" title="Die Heilsteinschule Schweiz stellt sich vor" />
             </div>
           )}
         </div>

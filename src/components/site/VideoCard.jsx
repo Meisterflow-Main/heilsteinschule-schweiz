@@ -1,22 +1,22 @@
 import React, { useState } from "react";
 import { Play, ExternalLink } from "lucide-react";
+import YouTubeEmbed from "@/components/site/YouTubeEmbed";
 
 /**
- * VideoCard — Thumbnail mit Play-Button-Overlay, Video wird erst beim Klick geladen.
- * Poster wird mit object-contain gezeigt (kein Cropping), dunkler Hintergrund.
+ * VideoCard — Thumbnail mit Play-Button-Overlay, der Film wird erst beim Klick geladen.
+ * Der Film läuft als YouTube-Einbettung, das Vorschaubild kommt von YouTube.
  */
-export default function VideoCard({ title, category, date, dateLabel, text, img, src, shop }) {
+export default function VideoCard({ title, category, date, dateLabel, text, youtubeId, shop }) {
   const [playing, setPlaying] = useState(false);
 
   const label = `${category} · ${dateLabel || date}`;
+  const thumbnail = `https://i.ytimg.com/vi/${youtubeId}/maxresdefault.jpg`;
 
   return (
     <div className="overflow-hidden rounded-2xl border border-border bg-white shadow-soft transition hover:shadow-lift">
       <div className="relative aspect-video w-full overflow-hidden bg-black">
         {playing ? (
-          <video controls autoPlay preload="auto" className="h-full w-full object-contain">
-            <source src={src} type="video/mp4" />
-          </video>
+          <YouTubeEmbed id={youtubeId} title={title} />
         ) : (
           <button
             onClick={() => setPlaying(true)}
@@ -24,10 +24,13 @@ export default function VideoCard({ title, category, date, dateLabel, text, img,
             aria-label={`Video abspielen: ${title}`}
           >
             <img
-              src={img}
+              src={thumbnail}
               alt={title}
               loading="lazy"
-              className="h-full w-full object-contain"
+              onError={(e) => {
+                e.currentTarget.src = `https://i.ytimg.com/vi/${youtubeId}/hqdefault.jpg`;
+              }}
+              className="h-full w-full object-cover"
             />
             <span className="absolute inset-0 flex items-center justify-center bg-black/30 transition group-hover:bg-black/40">
               <span className="flex h-16 w-16 items-center justify-center rounded-full bg-citrine/90 shadow-lift transition group-hover:scale-110">

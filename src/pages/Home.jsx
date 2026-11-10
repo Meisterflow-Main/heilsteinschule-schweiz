@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { ArrowRight, Play, Users, Video, MapPin, Sparkles, Heart, Hand, Brain, Footprints, Star } from "lucide-react";
+import YouTubeEmbed from "@/components/site/YouTubeEmbed";
 import { GOOGLE_REVIEWS_URL } from "@/components/site/GoogleReviewCard";
 import Reveal from "@/components/site/Reveal";
 import SectionHeading from "@/components/site/SectionHeading";
@@ -120,9 +121,7 @@ export default function Home() {
         </Reveal>
         <Reveal delay={0.1}>
           <div className="mt-10 overflow-hidden rounded-3xl border border-border bg-black shadow-lift">
-            <video controls preload="none" poster="https://www.heilsteinschule.swiss/media/Filme/Vorstellung_Film.png" className="aspect-video w-full">
-              <source src="https://www.heilsteinschule.swiss/media/Filme/Heilsteinschule_Schweiz_Vorstellung.webm" type="video/webm" />
-            </video>
+            <YouTubeEmbed id="Xy5rBRUfoSs" title="Die Heilsteinschule Schweiz stellt sich vor" autoplay={false} />
           </div>
         </Reveal>
         <Reveal delay={0.15}>
