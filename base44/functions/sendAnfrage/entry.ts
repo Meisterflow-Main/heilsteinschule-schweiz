@@ -1,7 +1,7 @@
 import { createClientFromRequest } from 'npm:@base44/sdk@0.8.54';
 import { waitUntil } from 'base44:runtime';
 
-const RECIPIENTS = ["guliver.kalamba@meisterflow.ch"];
+const RECIPIENTS = ["maja.pfeiffer@heilsteinschule.ch"];
 
 const EXTRA_RECIPIENTS: Record<string, string[]> = {};
 
