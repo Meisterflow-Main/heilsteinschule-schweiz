@@ -1,6 +1,6 @@
 import { createClientFromRequest } from 'npm:@base44/sdk@0.8.54';
 
-const RECIPIENTS = ["maja.pfeiffer@heilsteinschule.ch"];
+const RECIPIENTS = ["maja.pfeiffer@heilsteinschule.ch", "noreply@heilsteinschule.ch"];
 
 const EXTRA_RECIPIENTS: Record<string, string[]> = {};
 
