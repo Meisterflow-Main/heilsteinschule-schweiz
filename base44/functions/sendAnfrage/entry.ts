@@ -1,12 +1,8 @@
 import { createClientFromRequest } from 'npm:@base44/sdk@0.8.54';
-import { waitUntil } from 'base44:runtime';
 
 const RECIPIENTS = ["maja.pfeiffer@heilsteinschule.ch"];
 
 const EXTRA_RECIPIENTS: Record<string, string[]> = {};
-
-const CRM_WEBHOOK =
-  "https://app.meisterflow.ch/api/webhooks/enquiries/a902bb23d7e98901900e3750083b670344a14683633ae15f";
 
 const TOPICS = ["Kontaktanfrage", "Infoanlass", "Seminar", "Anmeldung Grundausbildung", "Terminanfrage Laden"];
 
@@ -77,20 +73,6 @@ export default async function (req: Request): Promise<Response> {
     if (sent === 0) {
       return Response.json({ error: "E-Mail konnte nicht versendet werden." }, { status: 502 });
     }
-
-    waitUntil(
-      fetch(CRM_WEBHOOK, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          name,
-          email,
-          phone,
-          description: `${topic}\n${message}`,
-        }),
-        signal: AbortSignal.timeout(10000),
-      }).catch(() => undefined)
-    );
 
     return Response.json({ ok: true, sent });
   } catch (error: any) {
