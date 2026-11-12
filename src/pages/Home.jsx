@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { ArrowRight, Play, Users, Video, MapPin, Sparkles, Heart, Hand, Brain, Footprints, Star, Youtube } from "lucide-react";
-import VideoPoster from "@/components/site/VideoPoster";
 import { GOOGLE_REVIEWS_URL } from "@/components/site/GoogleReviewCard";
 import Reveal from "@/components/site/Reveal";
 import SectionHeading from "@/components/site/SectionHeading";
@@ -15,6 +14,8 @@ import HomeImageCollage from "@/components/site/HomeImageCollage";
 import HomeInquiryRegistration from "@/components/site/HomeInquiryRegistration";
 
 const YOUTUBE_PLAYLIST = "https://www.youtube.com/playlist?list=PLWzccsezPgzawwP81l_QXpmDPzDwnoQxU";
+const INTRO_VIDEO = "https://base44.app/api/apps/6aa92ec5274311c12da18ee6/files/mp/public/6aa92ec5274311c12da18ee6/57a1d7a2c_Heilsteinschule-Schweiz-Vorstellung.mp4";
+const INTRO_POSTER = "https://base44.app/api/apps/6aa92ec5274311c12da18ee6/files/mp/public/6aa92ec5274311c12da18ee6/ef1f3e7ca_heilsteinschule-video-thumbnail.png";
 
 const PRINCIPLES = [
   { icon: Brain, label: "Kopf", text: "Analytisches Wissen, welches erklärt, warum und wie die Heilsteine wirken." },
@@ -122,12 +123,18 @@ export default function Home() {
           <SectionHeading eyebrow="Pädagogische Videos" title="Die Heilsteinschule Schweiz stellt sich vor" subtitle="Wir stellen uns gerne vor — ein Einblick in unsere Werte, unsere Methode und unsere Leidenschaft." />
         </Reveal>
         <Reveal delay={0.1}>
-          <div className="mt-10 overflow-hidden rounded-3xl border border-border bg-quartz shadow-lift">
-            <VideoPoster
-              id="Xy5rBRUfoSs"
-              title="Die Heilsteinschule Schweiz stellt sich vor"
-              poster="https://base44.app/api/apps/6aa92ec5274311c12da18ee6/files/mp/public/6aa92ec5274311c12da18ee6/ef1f3e7ca_heilsteinschule-video-thumbnail.png"
-            />
+          <div className="mt-10 overflow-hidden rounded-3xl border border-border bg-black shadow-lift">
+            <video
+              className="aspect-video w-full"
+              controls
+              playsInline
+              preload="metadata"
+              poster={INTRO_POSTER}
+              aria-label="Die Heilsteinschule Schweiz stellt sich vor"
+            >
+              <source src={INTRO_VIDEO} type="video/mp4" />
+              Ihr Browser kann dieses Video nicht abspielen.
+            </video>
           </div>
         </Reveal>
         <Reveal delay={0.15}>
